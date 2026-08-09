@@ -31,6 +31,7 @@ def main():
     shutil.copy(out, DOCS / "index.html")
     shutil.copy(out, HIST / f"{day}.html")
     shutil.copy(src_dir / "latest.txt", DOCS / "latest.txt")
+    shutil.copy(src_dir / "full.html", DOCS / "full.html")
     man = src_dir / "manual.html"
     if man.exists():
         shutil.copy(man, DOCS / "manual.html")
