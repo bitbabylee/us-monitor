@@ -115,8 +115,9 @@ def load() -> dict:
                 try:
                     from .m6_dashboard import OUT_DIR
                     # 只导当日强信号的原图（全导 34 张 6MB, 且弱信号/旧日期用处不大）
+                    days3 = sorted({r["信号日"] for r in d["rows"]}, reverse=True)[:3]
                     want = {r["代码"] for r in d["rows"]
-                            if r["信号"] == "strong" and r["信号日"] == d.get("date")}
+                            if r["信号"] == "strong" and r["信号日"] in days3}
                     d["images"] = export_pages(pdf, OUT_DIR / "bogo", only=want)
                 except Exception as exc:
                     print(f"WARN: 导出波哥单页图失败 {exc}", file=sys.stderr)
@@ -176,3 +177,48 @@ def run() -> dict:
 
 if __name__ == "__main__":
     run()
+
+
+def build_page() -> Path:
+    """独立页面: 波哥近三日美股强信号(市场:ticker + 七维数据 + 原图), 每日更新"""
+    import html as H
+    from . import tv
+    from .m6_dashboard import OUT_DIR
+    d = cross(load())
+    rows = d.get("rows", [])
+    imgs = d.get("images", {})
+    tv.warm([r["代码"] for r in rows])
+    days3 = sorted({r["信号日"] for r in rows}, reverse=True)[:3]
+    strong = [r for r in rows if r["信号"] == "strong" and r["信号日"] in days3]
+
+    css = """
+:root{color-scheme:light dark}
+body{margin:0;padding:18px 14px;background:#fcfcfb;color:#111;
+ font:14px/1.6 ui-monospace,Menlo,Consolas,monospace}
+@media(prefers-color-scheme:dark){body{background:#111110;color:#e8e6dd}}
+a{color:#2a78d6} img{max-width:100%;border:1px solid #8883;border-radius:6px}
+.blk{margin:18px 0;padding-bottom:14px;border-bottom:1px dashed #8885}
+"""
+    parts = [f'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+             f'<title>波哥强信号 近3日</title><style>{css}</style>'
+             f'<pre>[<a href="index.html">← 日报</a>] [<a href="full.html">全量</a>]\n\n'
+             f'{"=" * 48}\n  波哥七维 · 近3日美股强信号  {H.escape(d.get("title") or "")[:34]}\n'
+             f'  信号日: {" / ".join(days3)} · 共 {len(strong)} 只\n{"=" * 48}</pre>']
+    for r in strong:
+        sym = tv.symbol(r["代码"])
+        url = "https://www.tradingview.com/symbols/" + sym.replace(":", "-") + "/"
+        parts.append(
+            f'<div class="blk"><pre><b>{H.escape(sym)}</b> {H.escape(r["中文名"])}'
+            f' · {H.escape(r["主题"])}\n信号日 {H.escape(r["信号日"])} · Fit {H.escape(r["Fit"])}'
+            f' · 胜率 {H.escape(r["胜率"])}% · CA {H.escape(r["CA%"])}% · Pnls {H.escape(r["Pnls%"])}%'
+            f' · 当日 {H.escape(r["当日%"])}%'
+            f'{" · 🔗本池交集" if r.get("交集") else ""}'
+            f' · <a href="{url}" target="_blank">TV↗</a></pre>'
+            + (f'<img loading="lazy" src="{H.escape(imgs[r["代码"]])}">' if r["代码"] in imgs else "")
+            + "</div>")
+    parts.append('<pre>数据: 波哥系统每日 PDF · CA/Pnls/胜率/Fit 为波哥自己的回测口径, 未独立复核\n'
+                 '仅供研究, 不构成投资建议</pre>')
+    out = OUT_DIR / "bogo.html"
+    out.write_text("".join(parts), encoding="utf-8")
+    print(f"✅ 波哥强信号页: {out}（{len(strong)} 只）")
+    return out

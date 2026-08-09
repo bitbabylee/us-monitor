@@ -48,6 +48,10 @@ a { color:#2a78d6; }
 
 def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
             keep, drop, bogo, cal, pre_df) -> str:
+    from . import tv
+    rows_b = (bogo or {}).get("rows", [])
+    tv.warm(C.all_daily_tickers() + [r["代码"] for r in rows_b])
+    S = tv.symbol                      # 'PLTR' -> 'NASDAQ:PLTR'
     L = []
     bar, thin = "=" * W, "-" * W
     date = col(daily, "Close", C.BENCHMARK).index[-1].strftime("%Y-%m-%d")
@@ -62,15 +66,16 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
           f" · 阶段{gao['phase'].split()[0]} · 宏观{gao['macro_passed']}/{len(gao['macro'])}"
           f" · 风格:{regime}"]
     if keep:
-        cc = " ".join(f"{tk}({pat.strip('【】')[:5]}·{(sig.get(tk) or '—')[:1]})" for tk, pat, _ in keep)
+        cc = " ".join(f"{S(tk)}({pat.strip('【】')[:5]}·{(sig.get(tk) or '—')[:1]})" for tk, pat, _ in keep)
         L.append(f"  候选: {cc}")
     else:
         L.append("  候选: 无")
     if drop:
-        L.append(f"  否决: {' '.join(tk for tk, _, _ in drop)}（{'财报' if any('财报' in c for _, _, c in drop) else '板块背离'}）")
+        L.append("  否决: " + " ".join(
+            f"{S(tk)}({'财报' if '财报' in c else '板块背离'})" for tk, _, c in drop))
     risks = []
     today_ny = dt.datetime.now(NY).date()
-    near = [f"{d:%m-%d}{tk}" for d, tk in cal if (d - today_ny).days <= 1]
+    near = [f"{d:%m-%d}{S(tk)}{chr(10003) if tk in C.EARNINGS_VERIFIED else chr(63)}" for d, tk in cal if (d - today_ny).days <= 1]
     if near:
         risks.append("财报临近: " + " ".join(near))
     if not gao.get("jpy_ok", True):
@@ -100,49 +105,69 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
     t_hot = theme_df[theme_df["诊断"].str.contains("🔥")]
     t_cold = theme_df[theme_df["诊断"].str.contains("🧊")]
     L.append("【板块】")
-    L.append("  强: " + (" ".join(f"{r['代码']}{r['超额Alpha']:+.1f}%" for _, r in strong.iterrows()) or "无"))
+    L.append("  强: " + (" ".join(f"{S(r['代码'])}{r['超额Alpha']:+.1f}%" for _, r in strong.iterrows()) or "无"))
     if len(dump):
-        L.append("  🚨砸盘: " + " ".join(f"{r['代码']}{r['超额Alpha']:+.1f}%(量{r['量倍']:.1f}x)"
+        L.append("  🚨砸盘: " + " ".join(f"{S(r['代码'])}{r['超额Alpha']:+.1f}%(量{r['量倍']:.1f}x)"
                                         for _, r in dump.iterrows()))
     if len(t_hot):
-        L.append("  主题🔥: " + " ".join(f"{r['主题'].split('/')[0][-6:]}{r['超额Alpha']:+.1f}%[{r['领头羊'].split()[0]}]"
+        L.append("  主题🔥: " + " ".join(f"{r['主题'].split('/')[0][-6:]}{r['超额Alpha']:+.1f}%[{S(r['领头羊'].split()[0])}]"
                                         for _, r in t_hot.iterrows()))
     if len(t_cold):
         L.append("  主题🧊: " + " ".join(f"{r['主题'].split('/')[0][-6:]}{r['超额Alpha']:+.1f}%"
                                         for _, r in t_cold.iterrows()))
     L.append(thin)
 
-    # ── 个股（只列有信号的）──
+    # ── 波哥（近三天强信号, 放个股最上面）──
+    if rows_b:
+        days3 = sorted({r["信号日"] for r in rows_b}, reverse=True)[:3]
+        s3 = [r for r in rows_b if r["信号"] == "strong" and r["信号日"] in days3]
+        ov = [S(r["代码"]) for r in bogo.get("overlap", [])]
+        L.append("【波哥七维】近3日strong:")
+        for d0 in days3:
+            grp = [r for r in s3 if r["信号日"] == d0]
+            if grp:
+                L.append(f"  {d0}: " + " ".join(
+                    f"{S(r['代码'])}(Fit{r['Fit']})" for r in grp))
+        L.append(f"  与本池交集: {' '.join(ov) or '无'}")
+        L.append(thin)
+
+    # ── 个股（按行动分类, 不是平铺）──
     L.append("【个股信号】")
     hits = wl_df[wl_df["标记"] != "⚪"]
+    execu, wait, clash, earn = [], [], [], []
     for _, r in hits.iterrows():
-        efl = f"  ‼️{r['财报'][:16]}" if r["财报"] else ""
-        L.append(f"  {r['标记']}{r['代码']:>5} {r['形态'].strip('【】')}"
-                 f"  日内:{(sig.get(r['代码']) or '—')[:14]}{efl}")
+        tk, pat = r["代码"], r["形态"].strip("【】")[:8]
+        s_ = sig.get(tk, "")
+        item = f"{S(tk)}[{r['标记']}{pat}"
+        if r["财报"]:
+            vfy = "✓" if tk in C.EARNINGS_VERIFIED else "?"
+            earn.append(f"{item}] {r['财报'][:12]}{vfy}")
+        elif s_.startswith(("🟢", "🔥")):
+            execu.append(f"{item}+{s_[:6].strip()}]")
+        elif s_.startswith("🔴"):
+            clash.append(f"{item}/日内{s_[:6].strip()}]")
+        else:
+            wait.append(f"{item}] {(s_[:5] or '—')}")
+    if execu:
+        L.append("  ▶ 日线+日内同向: " + " ".join(execu))
+    if wait:
+        L.append("  ▶ 等时机(日内未给买点): " + " ".join(wait))
+    if clash:
+        L.append("  ▶ 冲突(日线买点/日内破位): " + " ".join(clash))
+    if earn:
+        L.append("  ▶ 财报窗口(信号作废): " + " ".join(earn))
     if hits.empty:
         L.append("  无日线形态触发")
-    # 日内例外（非观望非未成型, 且不在上面出现过）
     if intra_df is not None and not intra_df.empty:
         shown = set(hits["代码"])
         act = intra_df[~intra_df["信号"].str.startswith(("⚪", "⏳")) & ~intra_df["代码"].isin(shown)]
         if len(act):
-            L.append("  其余日内异动: " + " ".join(f"{r['代码']}{r['信号'][:2]}" for _, r in act.iterrows()))
-    # 盘前大动
+            L.append("  其余日内异动: " + " ".join(f"{S(r['代码'])}{r['信号'][:2]}" for _, r in act.iterrows()))
     if pre_df is not None and len(pre_df):
         mv = pre_df[pre_df["涨跌"].abs() >= C.EXT_MOVE_ALERT]
         if len(mv):
-            L.append("  盘前/盘后±2%: " + " ".join(f"{r['代码']}{r['涨跌']:+.1f}%" for _, r in mv.iterrows()))
+            L.append("  盘前/盘后±2%: " + " ".join(f"{S(r['代码'])}{r['涨跌']:+.1f}%" for _, r in mv.iterrows()))
     L.append(thin)
-
-    # ── 波哥 ──
-    rows = (bogo or {}).get("rows", [])
-    if rows:
-        d0 = bogo.get("date")
-        s_today = [r["代码"] for r in rows if r["信号"] == "strong" and r["信号日"] == d0]
-        ov = [r["代码"] for r in bogo.get("overlap", [])]
-        L += ["【波哥七维】",
-              f"  当日strong: {' '.join(s_today) or '无'} · 全单{len(rows)}只"
-              f" · 与本池交集: {' '.join(ov) or '无'}", thin]
 
     # ── 财报（未来7日, 一行一天）──
     wk = ["一", "二", "三", "四", "五", "六", "日"]
@@ -151,7 +176,7 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
         by = {}
         for d, tk in nxt:
             by.setdefault(d, []).append(tk)
-        L.append("【财报7日】 " + " · ".join(f"{d:%m-%d}(周{wk[d.weekday()]}){'/'.join(v)}"
+        L.append("【财报7日】(✓=已核实官方公告 ?=仅来自yahoo/xlsx需二次核实) " + " · ".join(f"{d:%m-%d}(周{wk[d.weekday()]}){'/'.join(S(x) + ('✓' if x in C.EARNINGS_VERIFIED else '?') for x in v)}"
                                           for d, v in sorted(by.items())))
     L += [bar, "免责: 信息整理非投资建议 · 各方法互相独立且未回测, 详见手册", bar]
     return "\n".join(L)
@@ -211,7 +236,7 @@ def build(with_intraday=True) -> Path:
 
     out = OUT_DIR / f"dashboard_{date}.html"
     out.write_text(page(f"波哥信号 {date}",
-                        '[<a href="full.html">全量明细</a>] [<a href="rich.html">图形版</a>] '
+                        '[<a href="bogo.html">波哥强信号</a>] [<a href="full.html">全量明细</a>] [<a href="rich.html">图形版</a>] '
                         '[<a href="manual.html">手册</a>] [<a href="history.html">历史</a>]',
                         digest), encoding="utf-8")
     shutil.copy(out, OUT_DIR / "latest.html")

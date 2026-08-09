@@ -32,6 +32,12 @@ def main():
     shutil.copy(out, HIST / f"{day}.html")
     shutil.copy(src_dir / "latest.txt", DOCS / "latest.txt")
     shutil.copy(src_dir / "full.html", DOCS / "full.html")
+    try:
+        from us_monitor import m13_bogo
+        m13_bogo.build_page()
+        shutil.copy(src_dir / "bogo.html", DOCS / "bogo.html")
+    except Exception as exc:
+        print(f"WARN: 波哥页 {exc}")
     man = src_dir / "manual.html"
     if man.exists():
         shutil.copy(man, DOCS / "manual.html")

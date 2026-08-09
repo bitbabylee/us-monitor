@@ -126,6 +126,11 @@ EARNINGS_OVERRIDE = {
     "AMAT": ["2026-08-13"],   # 已核实: FQ3 8/13盘后(官方新闻稿)
     "CRDO": ["2026-09-09"],   # 已核实: FQ1'27 9/9盘后; 原 08-13/09-02 均为错误推测
 }
+# 已人工核实过财报日期的标的（官方公告/IR WebSearch 过）; 不在此名单的财报日期
+# 一律标 "?" 提示二次核实 —— yahoo/xlsx 都出过错(AMD缺漏/BE过期/SNDK事后撤行)
+EARNINGS_VERIFIED = {"AMD", "ANET", "CAT", "SNDK", "LLY", "AAOI", "NET",
+                     "NBIS", "AMAT", "CRDO", "RKLB", "LITE", "BE"}
+
 # 剔除清单: 任何源里确认错误的日期在这里删掉（override 只能加不能减）
 # 2026-08-05 逐一 WebSearch 核实过:
 EARNINGS_REMOVE = {
