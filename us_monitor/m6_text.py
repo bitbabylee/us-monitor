@@ -49,8 +49,7 @@ a { color:#2a78d6; }
 def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
             keep, drop, bogo, cal, pre_df) -> str:
     from . import tv
-    rows_b = (bogo or {}).get("rows", [])
-    tv.warm(C.all_daily_tickers() + [r["代码"] for r in rows_b])
+    tv.warm(C.all_daily_tickers())
     S = tv.symbol                      # 'PLTR' -> 'NASDAQ:PLTR'
     L = []
     bar, thin = "=" * W, "-" * W
@@ -84,7 +83,7 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
     L += ["【口径】各节相互独立·未互相验证:",
           "  仓位=CAMSLIM(欧奈尔) 阶段=高老师 宏观=Brendon 均独立",
           "  个股信号=日线形态×日内择时(同一价格两个粒度的串联,",
-          "  资格+时机, 不构成互证) · 波哥独立, 唯一交叉点=🔗交集",
+          "  资格+时机, 不构成互证) · 波哥系统独立成页, 与本报无交互",
           thin]
 
     # ── 大盘 ──
@@ -120,20 +119,6 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
         L.append("  主题🧊: " + " ".join(f"{r['主题'].split('/')[0][-6:]}{r['超额Alpha']:+.1f}%"
                                         for _, r in t_cold.iterrows()))
     L.append(thin)
-
-    # ── 波哥（近三天强信号, 放个股最上面）──
-    if rows_b:
-        days3 = sorted({r["信号日"] for r in rows_b}, reverse=True)[:3]
-        s3 = [r for r in rows_b if r["信号"] == "strong" and r["信号日"] in days3]
-        ov = [S(r["代码"]) for r in bogo.get("overlap", [])]
-        L.append("【波哥七维】近3日strong:")
-        for d0 in days3:
-            grp = [r for r in s3 if r["信号日"] == d0]
-            if grp:
-                L.append(f"  {d0}: " + " ".join(
-                    f"{S(r['代码'])}(Fit{r['Fit']})" for r in grp))
-        L.append(f"  与本池交集: {' '.join(ov) or '无'}")
-        L.append(thin)
 
     # ── 个股（按行动分类, 不是平铺）──
     L.append("【个股信号】= 日线资格 × 日内时机（同源串联）")
@@ -240,7 +225,7 @@ def build(with_intraday=True) -> Path:
 
     out = OUT_DIR / f"dashboard_{date}.html"
     out.write_text(page(f"波哥信号 {date}",
-                        '[<a href="bogo.html">波哥强信号</a>] [<a href="rich.html">图形版(全量明细)</a>] '
+                        '[<a href="rich.html">图形版</a>] '
                         '[<a href="manual.html">手册</a>] [<a href="history.html">历史</a>]',
                         digest), encoding="utf-8")
     shutil.copy(out, OUT_DIR / "latest.html")

@@ -201,7 +201,7 @@ a{color:#2a78d6} img{max-width:100%;border:1px solid #8883;border-radius:6px}
 """
     parts = [f'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
              f'<title>波哥强信号 近3日</title><style>{css}</style>'
-             f'<pre>[<a href="index.html">← 日报</a>] [<a href="rich.html">图形版</a>]\n\n'
+             f'<pre>'
              f'{"=" * 48}\n  波哥七维 · 近3日美股强信号  {H.escape(d.get("title") or "")[:34]}\n'
              f'  信号日: {" / ".join(days3)} · 共 {len(strong)} 只\n{"=" * 48}</pre>']
     for r in strong:
@@ -212,7 +212,7 @@ a{color:#2a78d6} img{max-width:100%;border:1px solid #8883;border-radius:6px}
             f' · {H.escape(r["主题"])}\n信号日 {H.escape(r["信号日"])} · Fit {H.escape(r["Fit"])}'
             f' · 胜率 {H.escape(r["胜率"])}% · CA {H.escape(r["CA%"])}% · Pnls {H.escape(r["Pnls%"])}%'
             f' · 当日 {H.escape(r["当日%"])}%'
-            f'{" · 🔗本池交集" if r.get("交集") else ""}'
+            f''
             f' · <a href="{url}" target="_blank">TV↗</a></pre>'
             + (f'<img loading="lazy" src="{H.escape(imgs[r["代码"]])}">' if r["代码"] in imgs else "")
             + "</div>")

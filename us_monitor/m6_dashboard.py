@@ -674,10 +674,7 @@ def build(with_intraday=True, daily=None, refresh_sec=None) -> Path:
             pre_df = m9_premarket.run(daily)
         except Exception:
             pre_df = None
-        try:
-            bogo = m13_bogo.run()
-        except Exception as e:
-            bogo = {"rows": [], "title": None, "error": str(e)}
+        bogo = {"rows": []}   # 波哥独立成页, 不进本看板
         try:    # 季度数据, 每天抓一次即可; 站点结构变了会自己标"未验证"
             capex_ev = m12_capex.run(refresh=True)
         except Exception as e:
@@ -713,8 +710,7 @@ def build(with_intraday=True, daily=None, refresh_sec=None) -> Path:
                sec_sectors(sec_df) + sec_themes(theme_df) + sec_capex(capex_ev))
         + fold("③ 个股 · 日内信号与形态明细",
                sec_intraday(intra_df) + sec_premarket(pre_df) + sec_watchlist(wl_df))
-        + fold("🧭 波哥七维 + 财报雷达",
-               sec_bogo(bogo) + sec_earnings(cal, eflags))
+        + fold("📅 财报雷达", sec_earnings(cal, eflags))
         + '''<script>if(new URLSearchParams(location.search).has("full"))
 document.querySelectorAll("details").forEach(d=>d.open=true);</script>''')
     page = (f'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'

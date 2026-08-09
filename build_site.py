@@ -41,14 +41,19 @@ def main():
     if man.exists():
         shutil.copy(man, DOCS / "manual.html")
 
-    # 整页 PNG（Chrome 可用时）—— 供 Lark 推送 / 手机查看
+    # 整页 PNG 只保留最新一张（供 Lark）; 历史不存 PNG——每天 2-3MB 太占仓库
     try:
         from us_monitor import shot
-        png = shot.capture(DOCS / "index.html", DOCS / "latest.png")
-        if png:
-            shutil.copy(png, HIST / f"{day}.png")
+        shot.capture(DOCS / "index.html", DOCS / "latest.png")
     except Exception as exc:
         print(f"WARN: 截图跳过 {exc}")
+    # 历史只留文本版最近 60 天
+    hist = sorted(HIST.glob("*.html"), reverse=True)
+    for f in hist[60:]:
+        f.unlink()
+        (HIST / f"{f.stem}.png").unlink(missing_ok=True)
+    for f in HIST.glob("*.png"):          # 清掉既往存的 PNG
+        f.unlink()
 
     # 波哥原图（本地生成时才有；云端沿用仓库里已提交的）
     bogo_src = src_dir / "bogo"
