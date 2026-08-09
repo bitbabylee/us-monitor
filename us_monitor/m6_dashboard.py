@@ -90,6 +90,12 @@ th.l, td.l { text-align:left; }
 .fc.drop { border-left-color:var(--critical); opacity:.75; }
 .fc b { font-size:15px; } .fc .ctx { color:var(--ink2); font-size:12px; margin-top:4px; }
 .footer { color:var(--muted); font-size:11px; margin-top:16px; }
+details.fold { margin-top:14px; }
+details.fold > summary { cursor:pointer; font-size:14px; font-weight:600; color:var(--ink);
+  padding:10px 14px; background:var(--surface); border:1px solid var(--border);
+  border-radius:10px; list-style-position:inside; }
+details.fold[open] > summary { border-radius:10px 10px 0 0; border-bottom:none; }
+details.fold > summary:hover { background:color-mix(in srgb, var(--ink) 4%, var(--surface)); }
 """
 
 
@@ -338,13 +344,67 @@ def bogo_gallery(d):
             f'gap:12px;margin-top:10px">{cells}</div></details>')
 
 
+
+
+def chip(txt, cls="b-muted"):
+    return f'<span class="badge {cls}" style="margin:2px 6px 2px 0">{txt}</span>'
+
+
+def sec_digest(m1, cam, gao, keep, drop, intra_df, eflags, cal):
+    """今日一页纸 —— 默认唯一展开的内容: 状态行 + 候选 + 风险"""
+    sig = {} if intra_df is None or intra_df.empty else dict(zip(intra_df["代码"], intra_df["信号"]))
+    # 状态行
+    ph = gao.get("phase", "—")
+    ph_cls = "b-good" if ph.startswith("C1") else "b-warn" if ph.startswith("P1") else "b-critical"
+    st = (chip(f'仓位上限 <b>{esc(cam.get("exposure","—"))}</b>',
+               "b-good" if "100" in str(cam.get("exposure")) else "b-warn")
+          + chip(f'派发日 <b>{cam.get("dist_n",0):g}</b>',
+                 "b-good" if cam.get("dist_n",9) <= 2 else "b-warn" if cam.get("dist_n",9) <= 4 else "b-critical")
+          + chip(f'阶段 <b>{esc(ph.split(" ")[0])}</b>', ph_cls)
+          + chip(f'宏观 <b>{gao.get("macro_passed",0)}/{len(gao.get("macro",[]))}</b>',
+                 "b-good" if gao.get("macro_passed",0) >= 3 else "b-warn")
+          + chip(f'SPX {m1["spx"]:,.0f} ({m1["dev50"]:+.1f}%)')
+          + chip(f'VIX {m1["vix"]:.1f}'))
+    # 候选行（芯片式, 不是大卡）
+    def tkchip(tk, pat):
+        s_ = sig.get(tk, "")
+        emo = s_[:2].strip() if s_ else "—"
+        return chip(f'{tv.link(tk, show_exchange=False)} {esc(pat.strip("【】")[:10])} {esc(emo)}',
+                    "b-good" if s_.startswith(("🟢","🔥")) else "b-warn" if s_ else "b-muted")
+    cand = "".join(tkchip(tk, pat) for tk, pat, _ in keep) or '<span style="color:var(--muted)">今日无候选</span>'
+    vetoed = "、".join(tk for tk, _, _ in drop)
+    # 风险行
+    risks = []
+    for d_, tk in cal:
+        from .data import NY as _NY
+        import datetime as _dt
+        dd = (d_ - _dt.datetime.now(_NY).date()).days
+        if dd <= 1:
+            risks.append(f'{"今晚" if dd == 0 else "明天"}财报: {esc(tk)}')
+    if not gao.get("jpy_ok", True):
+        risks.append(f'日元 {gao.get("jpy_state","")}')
+    risk_line = (" · ".join(risks)) if risks else "无近端风险事件"
+    return f"""
+<div class="card" style="border:2px solid var(--pos)">
+<h2 style="font-size:16px;color:var(--ink)">📌 今日一页纸</h2>
+<div style="margin:6px 0">{st}</div>
+<div style="margin:10px 0 4px"><b style="font-size:13px">候选（{len(keep)}）</b>
+<span style="color:var(--muted);font-size:11px">形态+板块确认+无财报风险 · 徽章尾部=日内信号 ·
+详情见下方折叠区 · ⚠️未回测</span><br>{cand}</div>
+{f'<div class="ctx">⛔ 已否决: {vetoed}</div>' if vetoed else ''}
+<div class="ctx" style="margin-top:6px">⚠️ {risk_line}</div>
+</div>"""
+
+
+def fold(title, inner, open_=False):
+    """折叠区块 —— 默认收起, 点标题展开; ?full=1 时全展开(截图用)"""
+    return (f'<details class="fold"{" open" if open_ else ""}>'
+            f'<summary>{title}</summary>{inner}</details>')
+
+
 def nav():
     """顶部锚点导航 —— 页面 7000px+, 没有导航要滚很久"""
-    items = [("macro", "① 宏观"), ("gao", "阶段/宏观层"),
-             ("sector", "② 板块"), ("sectors", "板块榜"), ("capex", "AI资本"),
-             ("stock", "③ 个股"), ("intraday", "日内信号"),
-             ("bogo", "波哥七维"), ("earn", "财报"), ("watch", "观察池"),
-             ("ops", "④ 候选清单")]
+    items = []
     links = "".join(
         f'<a href="#{i}" style="padding:4px 10px;border:1px solid var(--border);'
         f'border-radius:999px;color:var(--ink2);text-decoration:none;font-size:12px;'
@@ -641,22 +701,22 @@ def build(with_intraday=True, daily=None, refresh_sec=None) -> Path:
     stamp = dt.datetime.now().strftime("%H:%M:%S")
     meta_refresh = (f'<meta http-equiv="refresh" content="{refresh_sec}">'
                     if refresh_sec else "")
-    # ── 自上而下: 宏观 → 板块 → 个股 → 最终落在「交易机会」──
+    # ── 摘要置顶, 其余全部折叠（?full=1 全展开, 截图用）──
     body = (
         nav()
-        + tier("macro", "① 宏观", "大盘环境决定今天能下多大注")
-        + sec_tiles(m1) + sec_camslim(cam) + sec_gao(gao) + sec_alerts(alert_cards)
-
-        + tier("sector", "② 板块", "资金去哪了 —— 个股信号必须有板块背书")
-        + sec_sectors(sec_df) + sec_themes(theme_df) + sec_capex(capex_ev)
-
-        + tier("stock", "③ 个股", "信号、形态与时机")
-        + sec_intraday(intra_df)
-        + sec_premarket(pre_df) + sec_bogo(bogo)
-        + sec_earnings(cal, eflags) + sec_watchlist(wl_df)
-
-        + tier("ops", "④ 候选清单", "以上各层过滤后的剩余项 —— 是待研究名单, 不是买入建议")
-        + sec_opportunities(keep, drop, intra_df, bogo, cam, gao))
+        + sec_digest(m1, cam, gao, keep, drop, intra_df, eflags, cal)
+        + fold("📋 候选清单详情（含日内动作与止损依据 · 未回测）",
+               sec_opportunities(keep, drop, intra_df, bogo, cam, gao))
+        + fold("① 宏观 · 大盘环境与仓位依据",
+               sec_tiles(m1) + sec_camslim(cam) + sec_gao(gao) + sec_alerts(alert_cards))
+        + fold("② 板块 · 资金流向",
+               sec_sectors(sec_df) + sec_themes(theme_df) + sec_capex(capex_ev))
+        + fold("③ 个股 · 日内信号与形态明细",
+               sec_intraday(intra_df) + sec_premarket(pre_df) + sec_watchlist(wl_df))
+        + fold("🧭 波哥七维 + 财报雷达",
+               sec_bogo(bogo) + sec_earnings(cal, eflags))
+        + '''<script>if(new URLSearchParams(location.search).has("full"))
+document.querySelectorAll("details").forEach(d=>d.open=true);</script>''')
     page = (f'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'{meta_refresh}<title>波哥信号仪表盘 {date}</title><style>{CSS}</style>'
             f'<h1>📡 波哥信号 · 美股监控仪表盘 <small>日线数据日 {date} · 本地生成 {stamp}'

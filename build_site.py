@@ -17,18 +17,20 @@ NY = timezone(timedelta(hours=-4))          # 粗略 ET，仅用于文件名与�
 def main():
     DOCS.mkdir(exist_ok=True)
     HIST.mkdir(exist_ok=True)
-    from us_monitor import m6_dashboard as D, manual
+    from us_monitor import m6_dashboard as D, m6_text as T, manual
 
     no_intraday = "--no-intraday" in sys.argv
-    out = D.build(with_intraday=not no_intraday)
+    rich = D.build(with_intraday=not no_intraday)      # 图形版 → rich.html
+    shutil.copy(rich, DOCS / "rich.html")
+    out = T.build(with_intraday=not no_intraday)       # 文本版 = 首页（姐姐原版审美）
     manual.build()
 
     src_dir = D.OUT_DIR
     day = out.stem.replace("dashboard_", "")
 
-    # index.html = 最新；history/ 存每日归档
     shutil.copy(out, DOCS / "index.html")
     shutil.copy(out, HIST / f"{day}.html")
+    shutil.copy(src_dir / "latest.txt", DOCS / "latest.txt")
     man = src_dir / "manual.html"
     if man.exists():
         shutil.copy(man, DOCS / "manual.html")
