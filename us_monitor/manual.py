@@ -38,6 +38,7 @@ table { margin:10px 0; }
 
 def build() -> Path:
     h = f"""<div class="wrap">
+<p><a href="index.html" style="color:var(--pos)">← 回到看板</a> · <a href="history.html" style="color:var(--pos)">历史归档</a></p>
 <h1>📖 波哥信号系统 · 使用手册 <small>每个信号是什么意思、看到了该干什么</small></h1>
 
 <div class="tip"><b>先记住一件事：这套系统分三层，回答三个不同的问题。</b><br>

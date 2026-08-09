@@ -138,6 +138,12 @@ EARNINGS_REMOVE = {
     "CRDO": ["2026-08-13", "2026-09-02"],  # 均错; 实际 9/9盘后(历史节奏是3/6/9/12月初,8月中不可能)
 }
 
+# ── 模块13：波哥七维信号聚合 ────────────────────────
+BOGO_DIRS = [                       # 找 `MMDD us 1630 bo sig.pdf` 的目录(按序探测)
+    "/Users/clair/My Drive (0xamberlbb01@gmail.com)/波哥信号归档",
+    "/Users/clair/My Drive/波哥信号归档",
+]
+
 # ── 模块12：AI 资本周期看门狗（capexcycle.com, 季度频率）──
 CAPEX_OCF_ALERT = 100      # Capex/OCF > 此% → 靠外部融资扩张
 RPO_GAP_ALERT = 0          # (Capex增速−RPO增速) > 此pp → 需求见顶预警（转正即警）

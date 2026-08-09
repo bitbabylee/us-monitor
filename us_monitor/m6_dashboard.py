@@ -22,7 +22,7 @@ from . import earnings
 from . import tv
 from .data import fetch_daily, fetch_intraday
 from . import (m1_macro, m2_sectors, m3_themes, m4_watchlist, m5_intraday,
-               m7_gao, m8_alerts, m9_premarket, m10_camslim, m12_capex)
+               m7_gao, m8_alerts, m9_premarket, m10_camslim, m12_capex, m13_bogo)
 from .run_all import compute_crosscheck
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "dashboard"
@@ -199,11 +199,101 @@ def cta_row(r):
             f'⚠️ 趋势跟踪复制的模型估算，非真实仓位读数</span></td></tr>')
 
 
+def sec_opportunities(keep, drop, intra_df, bogo, cam, gao):
+    """🎯 最终落点：今日交易机会 —— 把所有过滤层的结果汇成一张可执行清单"""
+    sig = {} if intra_df is None or intra_df.empty else dict(zip(intra_df["代码"], intra_df["信号"]))
+    det = {} if intra_df is None or intra_df.empty else dict(zip(intra_df["代码"], intra_df["细节"]))
+    bogo_map = {r["代码"]: r for r in (bogo or {}).get("rows", [])}
+
+    ready, wait, avoid = [], [], []
+    for tk, pat, ctx in keep:
+        s = sig.get(tk, "")
+        row = (tk, pat, ctx, s, det.get(tk, ""), bogo_map.get(tk))
+        (ready if s.startswith(("🟢", "🔥")) else wait).append(row)
+    for tk, pat, ctx in drop:
+        avoid.append((tk, pat, ctx, sig.get(tk, ""), det.get(tk, ""), bogo_map.get(tk)))
+
+    expo = cam.get("exposure", "—")
+    phase = gao.get("phase", "—")
+
+    def card(r, kind):
+        tk, pat, ctx, s, d, bg = r
+        border = {"ready": "var(--good)", "wait": "var(--warn)", "avoid": "var(--critical)"}[kind]
+        bgline = (f'<div class="ctx">🔗 波哥七维: <b>{esc(bg["信号"])}</b> · Fit {esc(bg["Fit"])} '
+                  f'· 胜率 {esc(bg["胜率"])}% · {esc(bg["主题"][:22])}</div>' if bg else "")
+        return (f'<div class="fc" style="border-left-color:{border}">'
+                f'{tv.link(tk)} <span style="color:var(--ink2)">{esc(pat)}</span>'
+                f'<div class="ctx">{esc(ctx)}</div>'
+                f'<div class="ctx">日内: {sig_badge(s) if s else "—"}'
+                + (f' <span style="color:var(--muted)">{esc(d[:44])}</span>' if d else "")
+                + f'</div>{bgline}</div>')
+
+    def block(title, sub, rows, kind):
+        if not rows:
+            return (f'<div style="margin-top:12px"><b>{esc(title)}</b> '
+                    f'<span style="color:var(--muted);font-size:12px">{esc(sub)}</span>'
+                    f'<div class="ctx">— 无 —</div></div>')
+        return (f'<div style="margin-top:12px"><b>{esc(title)}（{len(rows)}）</b> '
+                f'<span style="color:var(--muted);font-size:12px">{esc(sub)}</span>'
+                f'<div class="focus" style="margin-top:6px">'
+                + "".join(card(r, kind) for r in rows) + "</div></div>")
+
+    # 波哥强信号但不在本系统池 —— 作为「可考虑纳入观察」的补充线索
+    extra = [r for r in (bogo or {}).get("rows", [])
+             if r["信号"] == "strong" and not r.get("交集")][:8]
+    extra_html = ("".join(
+        f'<span class="badge b-muted" style="margin:2px 4px 2px 0">{tv.link(r["代码"], bold=False, show_exchange=False)}'
+        f' {esc(r["主题"][:14])}</span>' for r in extra)
+        if extra else '<span style="color:var(--muted)">—</span>')
+
+    return f"""
+<div class="card" id="ops" style="border:2px solid var(--good)">
+<h2 style="font-size:16px;color:var(--ink)">🎯 今日交易机会 <small style="color:var(--muted)">
+四层过滤后的最终落点 · 仓位上限 {esc(expo)} · 阶段 {esc(phase)}</small></h2>
+<p class="ctx">读法：先看仓位上限决定总投入，再从「可执行」里挑，
+「等信号」放自选盯盘，「勿碰」今天不看。每张卡都标了日内动作和止损依据。</p>
+{block("✅ 可执行", "日线形态 + 板块资金确认 + 无财报风险 + 日内已给买点", ready, "ready")}
+{block("⏳ 等信号", "标的过关但日内时机未到 —— 等站回 VWAP 或放量突破", wait, "wait")}
+{block("⛔ 今日勿碰", "被财报窗口或板块背离否决", avoid, "avoid")}
+<div style="margin-top:14px"><b>📋 波哥强信号补充线索</b>
+<span style="color:var(--muted);font-size:12px">（七维回测选出但不在本系统池，可考虑纳入观察）</span>
+<div style="margin-top:6px">{extra_html}</div></div>
+<p class="ctx" style="margin-top:12px;color:var(--muted)">
+⚠️ 本清单是过滤结果不是买入建议。系统只负责排除不该做的，做不做、做多大由你决定。</p></div>"""
+
+
+def sec_bogo(d):
+    """波哥七维信号汇总表"""
+    rows = (d or {}).get("rows", [])
+    if not rows:
+        return ('<div class="card" id="bogo"><h2>🧭 波哥七维信号</h2>'
+                '<p class="ctx">未找到当日 PDF（本地生成时可用）</p></div>')
+    tr = "".join(
+        f'<tr class="{"hit" if r.get("交集") else ""}">'
+        f'<td class="l"><span class="badge {"b-good" if r["信号"]=="strong" else "b-muted"}">'
+        f'{esc(r["信号"])}</span></td><td class="l">{tv.link(r["代码"])}</td>'
+        f'<td class="l">{esc(r["中文名"])}</td><td>{esc(r["当日%"])}</td>'
+        f'<td>{esc(r["Fit"])}</td><td>{esc(r["胜率"])}</td><td>{esc(r["CA%"])}</td>'
+        f'<td>{esc(r["Pnls%"])}</td>'
+        f'<td class="l" style="white-space:normal">{"🔗 " if r.get("交集") else ""}{esc(r["主题"])}</td></tr>'
+        for r in rows)
+    stale = ' <span class="badge b-warn">上次快照</span>' if d.get("stale") else ""
+    return f"""
+<div class="card" id="bogo"><h2>🧭 波哥七维信号 <small style="color:var(--muted)">
+{esc(d.get('title') or '')[:60]} · 交集 {len(d.get('overlap', []))} 只{stale}</small></h2>
+<p class="ctx">波哥系统＝【回测+基本面七维】选股；本系统＝【技术面+资金面】过滤器。
+高亮行 🔗 ＝ 两套独立方法共同覆盖，信号质量最高。</p>
+<table><tr><th class="l">信号</th><th class="l">代码</th><th class="l">名称</th>
+<th>当日%</th><th>Fit</th><th>胜率</th><th>CA%</th><th>Pnls%</th>
+<th class="l">主题</th></tr>{tr}</table></div>"""
+
+
 def nav():
     """顶部锚点导航 —— 页面 7000px+, 没有导航要滚很久"""
-    items = [("act", "① 今天做什么"), ("focus", "聚焦清单"), ("intraday", "日内信号"),
-             ("why", "② 为什么"), ("gao", "阶段/宏观"), ("earn", "财报"),
-             ("bg", "③ 环境背景"), ("sectors", "板块"), ("watch", "观察池")]
+    items = [("ops", "🎯 交易机会"), ("macro", "① 宏观"), ("gao", "阶段/宏观层"),
+             ("sector", "② 板块"), ("sectors", "板块榜"), ("capex", "AI资本"),
+             ("stock", "③ 个股"), ("focus", "聚焦清单"), ("intraday", "日内信号"),
+             ("bogo", "波哥七维"), ("earn", "财报"), ("watch", "观察池")]
     links = "".join(
         f'<a href="#{i}" style="padding:4px 10px;border:1px solid var(--border);'
         f'border-radius:999px;color:var(--ink2);text-decoration:none;font-size:12px;'
@@ -225,7 +315,7 @@ def sec_capex(ev):
     if not ev:
         return ""
     if ev.get("error"):
-        return (f'<div class="card"><h2>🏗️ AI 资本周期看门狗</h2>'
+        return (f'<div class="card" id="capex"><h2>🏗️ AI 资本周期看门狗</h2>'
                 f'<p class="ctx"><span class="badge b-muted">未验证</span> {esc(ev["error"])}</p></div>')
     rows = "".join(
         f'<tr><td class="l">{esc(metric)}</td><td class="l">{tv.link(tk)}</td>'
@@ -237,7 +327,7 @@ def sec_capex(ev):
     al = ("".join(f'<div class="ctx">{esc(a)}</div>' for a in ev["alerts"])
           if ev["alerts"] else '<div class="ctx">✅ 无指标越线</div>')
     return f"""
-<div class="card"><h2>🏗️ AI 资本周期看门狗 <small style="color:var(--muted)">
+<div class="card" id="capex"><h2>🏗️ AI 资本周期看门狗 <small style="color:var(--muted)">
 capexcycle.com · SEC/XBRL · 最新季 {esc(ev['quarter'] or '—')} · 抓取 {esc(ev['fetched'] or '—')}</small></h2>
 <p class="ctx" style="margin-bottom:8px">给「AI算力 / 云计算 / AI电网」三个主题提供
 <b>基本面否决权</b>——技术信号滞后, 资本开支的拐点先在这里出现。
@@ -473,6 +563,10 @@ def build(with_intraday=True, daily=None, refresh_sec=None) -> Path:
             pre_df = m9_premarket.run(daily)
         except Exception:
             pre_df = None
+        try:
+            bogo = m13_bogo.run()
+        except Exception as e:
+            bogo = {"rows": [], "title": None, "error": str(e)}
         try:    # 季度数据, 每天抓一次即可; 站点结构变了会自己标"未验证"
             capex_ev = m12_capex.run(refresh=True)
         except Exception as e:
@@ -496,20 +590,21 @@ def build(with_intraday=True, daily=None, refresh_sec=None) -> Path:
     stamp = dt.datetime.now().strftime("%H:%M:%S")
     meta_refresh = (f'<meta http-equiv="refresh" content="{refresh_sec}">'
                     if refresh_sec else "")
-    # ── 三层结构: 做什么 → 为什么 → 背景。决策信息置顶, 参考资料下沉 ──
+    # ── 自上而下: 宏观 → 板块 → 个股 → 最终落在「交易机会」──
     body = (
         nav()
-        + tier("act", "① 今天做什么", "决策层 · 仓位上限 → 标的 → 时机")
-        + sec_tiles(m1) + sec_camslim(cam)
+        + sec_opportunities(keep, drop, intra_df, bogo, cam, gao)
+
+        + tier("macro", "① 宏观", "大盘环境决定今天能下多大注")
+        + sec_tiles(m1) + sec_camslim(cam) + sec_gao(gao) + sec_alerts(alert_cards)
+
+        + tier("sector", "② 板块", "资金去哪了 —— 个股信号必须有板块背书")
+        + sec_sectors(sec_df) + sec_themes(theme_df) + sec_capex(capex_ev)
+
+        + tier("stock", "③ 个股", "信号、形态与时机")
         + sec_focus(keep, drop, intra_df) + sec_intraday(intra_df)
-
-        + tier("why", "② 为什么", "论据层 · 支撑上面判断的证据")
-        + sec_premarket(pre_df) + sec_gao(gao)
-        + sec_alerts(alert_cards) + sec_earnings(cal, eflags)
-
-        + tier("bg", "③ 环境背景", "参考层 · 不必每天细看, 用于交叉验证与复盘")
-        + sec_sectors(sec_df) + sec_themes(theme_df)
-        + sec_watchlist(wl_df) + sec_capex(capex_ev))
+        + sec_premarket(pre_df) + sec_bogo(bogo)
+        + sec_earnings(cal, eflags) + sec_watchlist(wl_df))
     page = (f'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'{meta_refresh}<title>波哥信号仪表盘 {date}</title><style>{CSS}</style>'
             f'<h1>📡 波哥信号 · 美股监控仪表盘 <small>日线数据日 {date} · 本地生成 {stamp}'
