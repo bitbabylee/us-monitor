@@ -609,7 +609,7 @@ def build(with_intraday=True, daily=None, refresh_sec=None) -> Path:
             f'{meta_refresh}<title>波哥信号仪表盘 {date}</title><style>{CSS}</style>'
             f'<h1>📡 波哥信号 · 美股监控仪表盘 <small>日线数据日 {date} · 本地生成 {stamp}'
             f' · 超额基准 {C.BENCHMARK} · '
-            f'<a href="使用手册.html" style="color:var(--pos)">📖 使用手册（看不懂点这里）</a>'
+            f'<a href="manual.html" style="color:var(--pos)">📖 使用手册（看不懂点这里）</a>'
             f'</small></h1>'
             f'{body}<p class="footer">阈值配置见 us_monitor/config.py · 仅供研究, 不构成投资建议</p>')
 

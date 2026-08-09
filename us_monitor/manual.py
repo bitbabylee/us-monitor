@@ -241,7 +241,7 @@ def build() -> Path:
     page = (f'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>波哥信号系统 · 使用手册</title><style>{CSS}{EXTRA_CSS}</style>{h}')
     OUT_DIR.mkdir(exist_ok=True)
-    out = OUT_DIR / "使用手册.html"
+    out = OUT_DIR / "manual.html"
     out.write_text(page, encoding="utf-8")
     print(f"✅ 使用手册已生成: {out}")
     return out

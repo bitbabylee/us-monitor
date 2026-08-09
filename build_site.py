@@ -29,7 +29,7 @@ def main():
     # index.html = 最新；history/ 存每日归档
     shutil.copy(out, DOCS / "index.html")
     shutil.copy(out, HIST / f"{day}.html")
-    man = src_dir / "使用手册.html"
+    man = src_dir / "manual.html"
     if man.exists():
         shutil.copy(man, DOCS / "manual.html")
 
