@@ -1,4 +1,4 @@
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>波哥信号系统 · 使用手册</title><style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>使用手册 · 按来源分章</title><style>
 :root {
   color-scheme: light;
   --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e;
@@ -61,225 +61,144 @@ th.l, td.l { text-align:left; }
 .fc b { font-size:15px; } .fc .ctx { color:var(--ink2); font-size:12px; margin-top:4px; }
 .footer { color:var(--muted); font-size:11px; margin-top:16px; }
 
-.wrap { max-width: 900px; margin: 0 auto; }
-h2 { font-size:17px; color:var(--ink); margin:26px 0 10px; padding-bottom:6px;
+.wrap { max-width: 920px; margin: 0 auto; }
+h2 { font-size:17px; color:var(--ink); margin:30px 0 4px; padding-bottom:6px;
      border-bottom:2px solid var(--pos); }
 h3 { font-size:15px; margin:18px 0 6px; }
 p, li { color:var(--ink2); line-height:1.75; }
 li { margin-bottom:5px; }
+.src { display:flex; gap:14px; flex-wrap:wrap; font-size:12.5px; color:var(--muted);
+       margin:4px 0 12px; }
+.src b { color:var(--ink2); }
 .sig { background:var(--surface); border:1px solid var(--border); border-left:4px solid var(--pos);
        border-radius:8px; padding:12px 16px; margin:12px 0; }
 .sig.warn { border-left-color:var(--warn); }
 .sig.bad { border-left-color:var(--critical); }
 .sig .name { font-size:15px; font-weight:650; color:var(--ink); }
-.sig .one { color:var(--ink); margin:6px 0; }
 .sig .do { background:color-mix(in srgb, var(--pos) 10%, transparent);
            border-radius:6px; padding:8px 12px; margin-top:8px; color:var(--ink); }
-.sig.bad .do { background:color-mix(in srgb, var(--critical) 12%, transparent); }
-.sig.warn .do { background:color-mix(in srgb, var(--warn) 14%, transparent); }
 .tip { background:color-mix(in srgb, var(--pos) 7%, transparent); border-radius:8px;
        padding:12px 16px; margin:14px 0; }
-.step { display:flex; gap:12px; margin:10px 0; align-items:flex-start; }
-.step .n { flex:0 0 30px; height:30px; border-radius:50%; background:var(--pos); color:#fff;
-           display:flex; align-items:center; justify-content:center; font-weight:700; }
+.warnbox { background:color-mix(in srgb, var(--warn) 13%, transparent); border-radius:8px;
+       padding:12px 16px; margin:14px 0; color:var(--ink); }
 table { margin:10px 0; }
 </style><div class="wrap">
-<p><a href="index.html" style="color:var(--pos)">← 回到看板</a> · <a href="history.html" style="color:var(--pos)">历史归档</a></p>
-<h1>📖 波哥信号系统 · 使用手册 <small>每个信号是什么意思、看到了该干什么</small></h1>
+<p><a href="index.html" style="color:var(--pos)">← 回到看板</a> ·
+<a href="history.html" style="color:var(--pos)">历史归档</a></p>
+<h1>📖 使用手册 <small>按来源分章 —— 这不是一套系统，是几套独立方法的并置</small></h1>
 
-<div class="tip"><b>先记住一件事：这套系统分三层，回答三个不同的问题。</b><br>
-① <b>大盘层</b>问「现在能下多大注」 → ② <b>个股层</b>问「下注在哪只」 →
-③ <b>日内层</b>问「现在这一刻能不能动手」。<br>
-三层都过关才出手。任何一层亮红灯，后面的都不用看了。</div>
+<div class="warnbox"><b>先读这段，这是整本手册最重要的话。</b><br>
+看板上的方法来自<b>不同的人</b>：朋友的日频监控、高老师的双指数模型、Brendon 的宏观五信号、
+博主的 0.618 模板、欧奈尔的派发日体系、波哥的七维回测。它们是<b>互相独立</b>的思路，
+被并排放在一个页面上，<b>不代表它们互相认可或构成一个整体</b>。<br><br>
+验证状态用徽章标注：<span class="badge b-warn">未回测</span> = 只是忠实复刻，无已知胜率；
+带「250日回放」的 = 已在观察池近一年数据上重放过（口径：信号日收盘买入的裸收益 vs 随机买入，
+不含止损/仓位/滑点）。<b>回放不是回测策略收益，只是信号质量的粗测。</b><br><br>
+<b>各家结论冲突是常态</b>（比如 CAMSLIM 说满仓、高老师说不买）——冲突不是谁错了，
+是它们看的东西不同。怎么裁决见最后一章。</div>
 
-<h2>第一层 · 大盘：现在能下多大注</h2>
+<h2>第一章 · 朋友的微观资金监控</h2>
+<div class="src"><span><b>来源:</b> 朋友的 Colab 脚本与每日截图（逐版复刻+对齐）</span>
+<span><b>覆盖:</b> 大盘简报 / 板块榜 / 主题榜 / 日线形态 / 日内VWAP / CAMSLIM看板</span></div>
+<p>核心思想两条：<b>① 所有涨跌先减掉 SPY 变成「超额」</b>（剔除大盘噪音看相对强弱）；
+<b>② 用成交量确认资金参与度</b>（涨跌×量倍才能区分主力行为和随波逐流）。</p>
 
-<h3>📊 派发日（Distribution Day）—— 最重要的一个数</h3>
-<p><b>是什么：</b>指数当天<b>收跌超过 0.2% 且成交量比前一天大</b>，就记一个派发日。
-跌得有量 = 大机构在出货，不是散户瞎砸。系统数最近 25 个交易日里有几天这样。</p>
-<p><b>为什么重要：</b>大盘顶部不是一天砸出来的，是机构在高位连续派发堆出来的。
-这个数就是在数「有多少机构在偷偷卖」。</p>
+<h3>日线买点形态（原生 3 个 + 本系统补 2 个）</h3>
+<div class="sig"><div class="name">💡 Pocket Pivot 口袋支点 <span class="badge b-good">250日回放: T+10 超额 +0.77pp (n=122)</span></div>
+<p>收阳且成交量超过近 10 日所有阴线的最大量 = 有人在盘整区偷偷扫货（散户没那个量）。
+形态学出处是 Gil Morales/欧奈尔系，按朋友的截图版式复刻。</p>
+<div class="do">位置早、成本低。小仓试，止损放近期低点。</div></div>
 
-<div class="sig bad"><div class="name">派发日 停在 6-7-8 不下来</div>
-<div class="one">机构<b>一直在卖</b>，市场是卖方主导。你买什么都容易被人家卖出去。</div>
-<div class="do"><b>怎么做：</b>不是完全不能做，但要——只做<b>最强势</b>的那几只；
-突破、追高都要谨慎；<b>止损带窄一点</b>（错了赶紧走）；总仓位压住。</div></div>
+<div class="sig bad"><div class="name">🟢 10 EMA 强动能回调 <span class="badge b-good">250日回放: T+10 超额 +0.97pp (n=249)</span></div>
+<p>多头排列中缩量回踩 10 日线企稳（Qullamaggie 式）。
+<b>注意：250 日回放里这是唯一超额为负的形态（样本 1090，最可靠的一个负结论）——
+早前版本手册说它"性价比最高"，被数据否定，特此更正。</b>可能原因：观察池强势股多、
+随便买的基准本来就高；或阈值太松导致信号泛滥（n=1090 远多于其他形态）。</p>
+<div class="do">在收紧阈值或单独回测前，把它当「位置参考」而不是「买点信号」。</div></div>
 
-<div class="sig warn"><div class="name">从高位（6-8）突然降到 4</div>
-<div class="one">在卖的机构少了，卖压真的小了。但这只是<b>第一天</b>。</div>
-<div class="do"><b>怎么做：</b><b>别一次满仓</b>。第一天变 4 先给 20%，第二天还站在 4 才加到 40%，
-一天加一档。给市场时间证明它是真的缓解了。</div></div>
+<div class="sig"><div class="name">🚀 超跌反弹起爆点 <span class="badge b-good">250日回放: T+10 超额 +1.42pp (n=90)</span></div>
+<p>RSI 跌破 32 后收阳。抢反弹不是买趋势。</p>
+<div class="do">只做短线，止损更严，别当底部抄底。</div></div>
 
-<div class="sig"><div class="name">降到 0-2</div>
-<div class="one">机构不卖了，市场是买方主导。</div>
-<div class="do"><b>怎么做：</b>强势股突破的成功率明显提高，可以放手做，仓位可以给足。</div></div>
+<div class="sig warn"><div class="name">📦 20日箱体突破 <span class="badge b-critical">250日回放: T+10 超额 -1.47pp (n=27) — 未跑赢随机买入</span> ·
+🌊 EMA金叉 <span class="badge b-muted">回放样本不足(n=7)</span></div>
+<p><b>这两个不是朋友原版的</b>——是复刻时为凑齐截图里"5大形态"补的（截图只看得到 3 个）。
+箱体突破回放显示 T+5 为负、T+10 转正（突破后先洗盘再走）；金叉数字漂亮但样本太小，别当真。</p></div>
 
-<h3>💰 建议仓位</h3>
-<p>公式：<code>min(100, max(20,
-(6 − 派发日) × 20))</code></p>
-<p><b>这是仓位<u>上限</u>，不是叫你买满。</b>显示 40% 的意思是：这个市场环境下，
-你的钱最多投 40%，剩下 60% 拿现金等更好的时候。
-它<b>不告诉你买什么</b>（那是第二层的活），只告诉你<b>该下多大注</b>。</p>
+<h3>日内 VWAP / ORB 八档信号 <span class="badge b-warn">未回测</span></h3>
+<p>VWAP=当日真金白银的平均成本（「团购成本价」）。铁律：<b>VWAP 下方不做多</b>。
+八档按危险度排序：止损(-1.5%) → 锁润(15m结构破位) → 强主升浪(&gt;2.5%
+持有勿追) → 弱突破预警(&lt;0.5x) → 双顶警告 → 放量突破ORB(≥1.2x)
+→ 放量站回VWAP → 观望。跳空闸门（低开2.0%作废 / 高开3.0%勿追）是本系统补的。
+<b>日内信号无法用日线数据回放，完全未验证。</b></p>
 
-<h3>📐 阶段状态（P0 → P1 → C1）</h3>
-<p>用 QQQ（大盘）和 SMH（半导体＝进攻先锋）两个指数打分。
-核心思想：<b>真正的反弹必须由先锋带头</b>——半导体不涨，科技股的反弹都是假的。</p>
+<h3>CAMSLIM 派发日（欧奈尔/IBD 体系，朋友的实现）</h3>
+<p>数「机构出货日」定总仓位：收跌≥0.2%且放量=派发日，25日窗口。
+仓位=min(100, max(20, (6−派发日)×20))
+——从朋友看板 6 个历史时点反推，价格指标 6/6 对齐。
+<span class="badge b-good">已对原版 6 时点校验</span>（但欧奈尔体系本身在本池的有效性未测）。
+爬坡层（卖压降档后逐日加仓 20%/40%/60%/80%）是按你的经验加的，
+原版数据显示它没有这层。</p>
+
+<h2>第二章 · 高老师的双指数阶段模型</h2>
+<div class="src"><span><b>来源:</b> 高老师日报（逐题复刻，失效位/共识分逐项对齐）</span>
+<span><b>覆盖:</b> P0→P1→C1 阶段判定</span> <span><span class="badge b-warn">未回测</span></span></div>
+<p>灵魂是 <b>SMH/QQQ 比值</b>：半导体是进攻先锋，<b>真反弹必须先锋带头</b>。
+两道关卡（恐慌释放 4 题 / 资金共识 5 题），必选题一票否决——防止"看到几个好消息就上头"。
+它天生保守：宁可错过，不可做错。注意它和 CAMSLIM 经常打架（口径不同：它看科技先锋，
+CAMSLIM 看标普整体）。</p>
+
+<h2>第三章 · Brendon 的宏观五信号</h2>
+<div class="src"><span><b>来源:</b> Brendon docx（好友群转述）+ 本系统自动化</span>
+<span><span class="badge b-warn">未回测</span></span></div>
+<p>底部确认计分卡（≥3/5 确认见底）：①站上20日线 ②SMH连续3日跑赢
+③CTA转多（无真数据——本系统用趋势模型估算并明确标注，连高盛发的也是估算）
+④ATR分位&lt;80%（波动收敛。ATR 是绝对值不分方向：高=多空还在剧烈换手）
+⑤10Y≤4.5% 且信用利差稳（HYG/LQD 5日不恶化）。
+USD/JPY 套息开关（破 155.04 告警）是 2026-08 美日联手干预汇市后本系统补的。</p>
+
+<h2>第四章 · 博主的 0.618 模板与确认位</h2>
+<div class="src"><span><b>来源:</b> zsxq 帖子（hello231101 归档）· 2015 创业板类比</span>
+<span><span class="badge b-warn">未回测</span></span></div>
+<p>暴跌后的反弹通常到前高 0.618 回撤位滞涨、随后走第二腿——所以 0.618 是<b>卖点不是买点</b>。
+锚位（峰/低）本系统改为每日重算，并补了原版没有的<b>失效条件</b>：站上 0.786 位或前高，模板作废。
+事件确认位（如 680）是史料，触发一次即归档。<b>这是单一历史类比，不是统计规律。</b></p>
+
+<h2>第五章 · 波哥的七维信号</h2>
+<div class="src"><span><b>来源:</b> 波哥系统每日 PDF（只做解析聚合，不改动其结论）</span>
+<span><b>验证:</b> 表内 CA%/Pnls%/胜率/Fit 是波哥自己的回测值，口径未独立复核</span></div>
+<p>与本页其他方法完全独立的选股来源。🔗 = 该标的同时在本系统观察池——两套独立方法共同覆盖，
+值得优先研究；但「都覆盖」≠「都看多」，要点开各自的信号方向看。原图（当日强信号）可在表内 🖼 查看。</p>
+
+<h2>第六章 · TradingView 筛选流水线</h2>
+<div class="src"><span><b>来源:</b> 别人分享的 6 个 screener（复刻其筛选条件）</span>
+<span><span class="badge b-warn">未回测</span></span></div>
+<p>RVOL（相对量≥1.5 找资金异动）· Compression（10日/60日
+ADR ≤0.9 找蓄势——贴近前高的压缩才是惜售）· Gappers（跳空≥2.0%）。
+命令行工具（m11），不进看板。</p>
+
+<h2>第七章 · 本系统自己加的层</h2>
+<div class="src"><span><b>来源:</b> 复刻过程中为堵漏洞新增（不属于任何一家）</span></div>
 <ul>
-<li><b>P0 恐慌未释放</b>：还在跌，别接飞刀，空仓/防守</li>
-<li><b>P1 恐慌已释放</b>：跌势止住了，但买家还没回来 → <b>不买，等</b></li>
-<li><b>C1 资金共识</b>：买家确认回来了 → 可以按纪律分批试仓</li>
-</ul>
-<p><b>必选题一票否决</b>：有几道题是必答的（比如 SMH/QQQ 比值要站上 20 日均线），
-不管其他几题多好看，必选题不过就升不了级。这是防止「看到几个好消息就上头」。</p>
-
-<h3>🌍 宏观确认层（4 个自动 + 1 个估算）</h3>
-<table><tr><th class="l">指标</th><th class="l">通过条件</th><th class="l">人话</th></tr>
-<tr><td class="l">ATR14 一年分位</td><td class="l">&lt; 80%</td>
-<td class="l">市场每天上蹿下跳的幅度回到正常了没有。还在高位＝恐慌没消化完</td></tr>
-<tr><td class="l">10Y 美债收益率</td><td class="l">≤ 4.5%</td>
-<td class="l">利率是所有资产的定价锚。太高＝压着科技股估值抬不起头</td></tr>
-<tr><td class="l">HYG/LQD 信用利差</td><td class="l">5 日变化 &gt; -0.2%</td>
-<td class="l">垃圾债有没有被抛售。债市先崩＝要出系统性风险；债市稳＝股市只是自己在调整</td></tr>
-<tr><td class="l">USD/JPY</td><td class="l">&gt; 157（破 155.04 告警）</td>
-<td class="l">全球有上万亿美元是「借日元买美股」。日元一涨，这些人被迫卖股还钱，会连锁踩踏</td></tr>
-<tr><td class="l">CTA 仓位</td><td class="l">≥ +20 净多</td>
-<td class="l">趋势跟踪基金是行情放大器：趋势翻多它们被迫追买，翻空被迫砸卖。
-<b>注意这是模型估算，不是真实仓位</b>（连高盛发的也是估算）</td></tr></table>
-
-<h2>第二层 · 个股：下注在哪只</h2>
-
-<h3>五大日线买点形态</h3>
-
-<div class="sig"><div class="name">💡 Pocket Pivot 口袋支点</div>
-<div class="one">今天收阳线，而且<b>成交量超过了近 10 天所有下跌日的最大量</b>。</div>
-<p>正常盘整时，涨的时候量该缩、跌的时候量该放（散户在割肉）。
-一旦上涨的量超过了近期最大的下跌量，说明<b>有人在偷偷扫货</b>——散户没那个量，只可能是机构。
-叫「口袋」是因为它藏在口袋里，还没被大众发现。</p>
-<div class="do"><b>怎么做：</b>机构刚开始建仓，位置早、成本低。可以小仓试，止损放近期低点。</div></div>
-
-<div class="sig"><div class="name">📦 20 日箱体突破</div>
-<div class="one">收盘创 20 日新高，且成交量放大 1.2 倍以上确认。</div>
-<p>和口袋支点的区别：口袋支点是「机构刚开始买」（还在箱体里），
-箱体突破是「机构已经买到突破了」（所有人都看见了）。
-好处是上方没有套牢盘，坏处是位置高、容易买在假突破。</p>
-<div class="do"><b>怎么做：</b>放量才算数（缩量突破多半是骗人的）。止损放回箱体内。</div></div>
-
-<div class="sig"><div class="name">🟢 10 EMA 强动能回调 —— 性价比最高</div>
-<div class="one">上升趋势中，最低价踩到 10 日均线，<b>缩量</b>企稳后收回来。</div>
-<p>10 日均线是强势股的「生命线」，主升浪里每次踩到都有人接。
-<b>缩量最关键</b>：放量跌到均线＝有人出货，支撑要破；缩量跌到均线＝只是没人买，
-获利盘歇口气，一有买盘就弹。</p>
-<div class="do"><b>怎么做：</b>这是<b>最好的建仓位</b>——止损就放 10EMA 下方一点点，
-错误成本被这条线量化了，上方是主升浪的空间。跌破就走，别摊平。</div></div>
-
-<div class="sig"><div class="name">🌊 EMA10/21 金叉启动</div>
-<div class="one">短均线（10日）向上穿过长均线（21日），趋势由跌转涨。</div>
-<div class="do"><b>怎么做：</b>趋势刚转向，位置好但还需确认。适合小仓位埋伏，等放量再加。</div></div>
-
-<div class="sig warn"><div class="name">🚀 超跌反弹起爆点</div>
-<div class="one">RSI 跌破 32（超卖）之后，今天收阳企稳。</div>
-<p>抛售衰竭了，容易有一波修复性反弹。但注意：<b>这是抢反弹不是买趋势</b>，
-下跌趋势可能还没结束。</p>
-<div class="do"><b>怎么做：</b>只做短线，快进快出，止损要更严格。别当成底部抄底。</div></div>
-
-<h3>三个资金指标（判断上涨是不是真的有钱推）</h3>
-<ul>
-<li><b>量倍</b>＝当天成交量 ÷ 20 日平均量。回答「有没有人来」。1.0x 是平量，2x 以上是明显异动。
-<b>无量的大涨随时可以无量跌回去。</b></li>
-<li><b>CMF 资金流</b>（-1 ~ +1）：看收盘价在当天振幅的哪个位置，用成交量加权 20 天。
-正数＝买方吸筹，负数＝卖方派发。<b>如果涨了但 CMF 是负的，说明拉高的过程一直有人在卖</b>——
-这是冲高回落的高危信号。</li>
-<li><b>MFI</b>（0-100）：带成交量的 RSI。>80 超买（追高危险），&lt;20 超卖（可能反弹）。</li>
+<li><b>财报否决</b> <span class="badge b-warn">未回测</span>：财报前7日/后2日一票否决。
+依据是 AMD(-8%)/ANET(+14%) 同晚一反一正的实例——财报日的形态≈掷硬币。三层数据源+人工核实清单。</li>
+<li><b>板块共振 Cross-Check</b> <span class="badge b-warn">未回测</span>：个股信号需板块或主题超额为正背书。</li>
+<li><b>AI 资本周期看门狗</b>：capexcycle.com 季度数据（SEC/XBRL），只判 AI 主线是否成立，不择时。</li>
+<li><b>信号回放（m14）</b>：本页各徽章的来源。回放≠回测，只测裸收益差。</li>
 </ul>
 
-<h3>🔗 板块共振 Cross-Check（自动缩减标的）</h3>
-<p>个股有买点还不够，还要问：<b>它所在的板块/主题今天是不是也在涨？</b>
-系统要求「板块 ETF 超额为正 <b>或</b> 所属主题超额为正」才保留，否则降级为「仅观察」。</p>
-<div class="tip"><b>为什么：</b>孤军奋战的信号不可信。机构建仓通常是<b>整个板块一起买</b>，
-一只票涨而板块不动，多半是消息面或游资，持续性差。</div>
+<h2>最后 · 各家冲突时怎么读</h2>
+<div class="tip">
+<p><b>先分清各家在回答什么问题</b>：CAMSLIM 答「大盘机构在不在卖」（标普口径），
+高老师答「科技进攻主线修好没有」（QQQ/SMH 口径），Brendon 答「宏观环境松没松绑」，
+博主答「这波反弹走到什么位置了」。<b>它们同时分歧是常态</b>——2026-08 初就同时出现过：
+CAMSLIM 满仓（SPX 创新高）+ 高老师不买（半导体没确认）。</p>
+<p><b>实用裁决顺序</b>（这是本系统的观点，不代表任何一家）：<br>
+① 有人喊「危险」永远优先于有人喊「机会」（止损/否决类一票优先）<br>
+② 仓位上限听最保守的那家<br>
+③ 个股方向要求至少两套独立方法同向（如波哥 strong + 本系统形态）<br>
+④ 记住谁都没被充分验证——任何单一信号都不构成行动理由</p></div>
 
-<h2>第三层 · 日内：现在这一刻能不能动手</h2>
-
-<h3>先理解 VWAP —— 日内交易的圣经</h3>
-<p><b>VWAP = 成交量加权平均价</b>，就是「今天所有真金白银换手的平均成本」。
-从开盘累计计算，收盘归零，第二天重来。</p>
-<ul>
-<li><b>价格在 VWAP 上方</b>＝今天进场的人平均在赚钱，拿得住，主力愿意抬轿</li>
-<li><b>跌破 VWAP</b>＝今天买入的人集体被套，随时可能踩踏 → <b>系统的铁律：VWAP 下方不做多</b></li>
-</ul>
-<p>打个比方：VWAP 就是今天这只股票的「团购成本价」。在成本价下方接货是捡便宜，
-在上方 4% 追高就是替别人抬轿。</p>
-
-<h3>八档日内信号（按危险程度排序，命中即停）</h3>
-
-<div class="sig bad"><div class="name">🔴 规避 / 止损（破位走弱）</div>
-<div class="one">跌破开盘 30 分钟的最低价，或低于 VWAP -1.5%。</div>
-<div class="do"><b>怎么做：</b>保命第一。有仓位就走，没仓位别碰。</div></div>
-
-<div class="sig bad"><div class="name">🔴 锁定利润（高位 15m 结构破位）</div>
-<div class="one">涨了不少（偏离 VWAP 超过 0.7%），但<b>跌破了前一根 15 分钟 K 的低点或 15m 8EMA</b>。</div>
-<p>15 分钟结构是持仓者的「离场哨」：涨的时候只要防线不破就拿着，防线一破就该分批兑现。</p>
-<div class="do"><b>怎么做：</b>分批锁利润，不用一次清光，但要开始减。</div></div>
-
-<div class="sig"><div class="name">🔥 强主升浪（切勿卖飞！）</div>
-<div class="one">偏离 VWAP 超过 2.5%，<b>但 15 分钟结构完好没破</b>。</div>
-<div class="do"><b>怎么做：</b>拿住别卖，把止损<b>上移</b>到 15m 8EMA，让利润奔跑。
-但也<b>不要在这个位置追进</b>——已经离平均成本太远了。</div></div>
-
-<div class="sig"><div class="name">🟢 强动能买点（放量突破 ORB）</div>
-<div class="one"><b>ORB = 开盘区间突破</b>。突破开盘 30 分钟的最高价，
-站稳 VWAP，且 15 分钟量能 ≥ 1.2 倍。</div>
-<p>开盘头半小时是隔夜消息和大单集中释放的时段，它的高低点是当天多空第一道分界线。
-向上突破 + 放量 + 站稳 VWAP ＝ 早盘抛压消化完了，买方还在加力。</p>
-<div class="do"><b>怎么做：</b>可以进场追强势。止损放开盘区间低点或 VWAP。</div></div>
-
-<div class="sig"><div class="name">🟢 黄金买点（放量站回 VWAP）</div>
-<div class="one">价格回踩后重新站上 VWAP（偏离 0~1.0%），
-且 15 分钟量能 ≥ 1.2 倍。</div>
-<p>和 ORB 突破的区别：ORB 是<b>追强势</b>（高位向上突破），黄金买点是<b>抄回踩</b>（跌到平均成本又站回来）。
-<b>「放量」是灵魂</b>：缩量站回只说明没人卖；放量站回说明<b>有大资金在这个位置主动接货</b>。</p>
-<div class="do"><b>怎么做：</b>这是低吸位，风险收益比比追高好。止损就放 VWAP 下方。</div></div>
-
-<div class="sig warn"><div class="name">🟡 弱突破预警（缩量突破 ORB）</div>
-<div class="one">突破了开盘高点，但量能不到 0.5 倍。</div>
-<div class="do"><b>怎么做：</b>警惕诱多假突破。宁可等放量确认再进，也别赌。</div></div>
-
-<div class="sig warn"><div class="name">🟡 警告：临近前高（谨防双顶）</div>
-<div class="one">从日内低点已经拉升超过 2.5%，且逼近前期高点。</div>
-<div class="do"><b>怎么做：</b>切勿在前高附近追高。要么等突破确认，要么等回踩。</div></div>
-
-<div class="sig warn"><div class="name">🟡 跳空低开，买点降级</div>
-<div class="one">今天开盘比昨收低了 2.0% 以上。</div>
-<p>昨天那个买点信号的前提是「在昨收附近能上车」。低开 2% 以上说明隔夜出了事，前提被推翻了。</p>
-<div class="do"><b>怎么做：</b>昨天的信号作废，等企稳后重新评估。
-（反过来高开 3.0% 以上，信号保留但标「勿追，等回踩 VWAP」）</div></div>
-
-<h2>第四层 · 财报：什么绝对不能碰</h2>
-<div class="sig bad"><div class="name">⚠️ 财报前 7 日内 / 📊 财报后 2 日内</div>
-<div class="one">再漂亮的形态，只要落在这个窗口，<b>系统一票否决</b>。</div>
-<p><b>为什么：</b>财报是掷硬币。8/4 那晚 AMD（-8%）和 ANET（+14%）同一天出财报，
-一反一正——技术形态在这种时候<b>完全无效</b>。财报后 2 天叫「价格发现期」，
-市场在重新定价，财报前的形态已经作废。</p>
-<div class="do"><b>怎么做：</b>不碰。想赌财报是另一回事，但那不叫交易系统，叫赌博。
-持仓遇到财报，自己决定是减仓避险还是扛过去——但别用技术信号骗自己。</div></div>
-
-<h2>把三层串起来：完整决策流程</h2>
-<div class="step"><div class="n">1</div><div><b>看派发日和建议仓位</b> → 决定今天总共能投多少钱。
-派发 6-8 就压到 20-40%，别想着满仓。</div></div>
-<div class="step"><div class="n">2</div><div><b>看阶段状态和宏观层</b> → 还在 P1「不买等」就以观望为主，
-宏观 4 项通过不到 2 项也要谨慎。</div></div>
-<div class="step"><div class="n">3</div><div><b>看聚焦清单</b>（已经帮你过滤过了）→ 这些是日线有形态 + 板块资金确认 +
-没有财报风险的标的。清单为空就是今天没得做。</div></div>
-<div class="step"><div class="n">4</div><div><b>看日内信号决定时机</b> → 清单里的票，日内是 🟢 才动手，
-⚪ 观望就等，🔴 就别碰。</div></div>
-<div class="step"><div class="n">5</div><div><b>进场就设止损</b> → 每个信号都标了止损位（VWAP、开盘区间低点、10EMA）。
-<b>止损不是可选项。</b></div></div>
-
-<div class="tip"><b>最后提醒：这套系统是过滤器，不是印钞机。</b><br>
-它的价值在于<b>帮你不做什么</b>——不在财报前赌博、不追没有板块支持的孤股、
-不在机构派发期满仓、不在 VWAP 下方接飞刀。<br>
-过滤完剩下的机会，才轮到你判断要不要做、做多大。<b>系统给概率，决定权在你。</b></div>
-
-<p class="footer">阈值全部可在 us_monitor/config.py 调整，改完这份手册会自动同步 ·
+<p class="footer">阈值全在 us_monitor/config.py，改完重跑 manual 自动同步 ·
 仅供研究，不构成投资建议</p>
 </div>
