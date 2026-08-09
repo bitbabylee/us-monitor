@@ -82,7 +82,8 @@ def symbol(tk: str) -> str:
 
 
 def url(tk: str) -> str:
-    return "https://www.tradingview.com/symbols/" + symbol(tk).replace(":", "-") + "/"
+    """图表页(不是 overview 页) —— 登录状态下打开用户自己的图表布局"""
+    return "https://www.tradingview.com/chart/?symbol=" + symbol(tk).replace(":", "%3A")
 
 
 def link(tk: str, bold=True, show_exchange=True) -> str:

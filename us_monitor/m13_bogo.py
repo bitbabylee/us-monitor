@@ -180,45 +180,97 @@ if __name__ == "__main__":
 
 
 def build_page() -> Path:
-    """独立页面: 波哥近三日美股强信号(市场:ticker + 七维数据 + 原图), 每日更新"""
+    """公开页: 完整七维表(强+弱) + 仅近3日强信号带原图明细。无私人引用。"""
     import html as H
     from . import tv
     from .m6_dashboard import OUT_DIR
-    d = cross(load())
+    d = load()
     rows = d.get("rows", [])
     imgs = d.get("images", {})
     tv.warm([r["代码"] for r in rows])
     days3 = sorted({r["信号日"] for r in rows}, reverse=True)[:3]
-    strong = [r for r in rows if r["信号"] == "strong" and r["信号日"] in days3]
+    latest = d.get("date")
+    strong3 = [r for r in rows if r["信号"] == "strong" and r["信号日"] in days3]
 
     css = """
-:root{color-scheme:light dark}
-body{margin:0;padding:18px 14px;background:#fcfcfb;color:#111;
- font:14px/1.6 ui-monospace,Menlo,Consolas,monospace}
-@media(prefers-color-scheme:dark){body{background:#111110;color:#e8e6dd}}
-a{color:#2a78d6} img{max-width:100%;border:1px solid #8883;border-radius:6px}
-.blk{margin:18px 0;padding-bottom:14px;border-bottom:1px dashed #8885}
+:root{color-scheme:light dark;--ink:#111;--ink2:#555;--mut:#888;--bd:#8883;
+--good:#0ca30c;--pos:#2a78d6;--bg:#fcfcfb;--sf:#fff}
+@media(prefers-color-scheme:dark){:root{--ink:#e8e6dd;--ink2:#b5b3a8;--mut:#888;
+--bg:#111110;--sf:#1a1a19}}
+body{margin:0;padding:14px 10px;background:var(--bg);color:var(--ink);
+ font:12.5px/1.45 system-ui,-apple-system,sans-serif;max-width:1100px;margin:auto}
+h1{font-size:15px;margin:6px 0 2px} .sub{color:var(--mut);font-size:11px;margin-bottom:8px}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th{color:var(--mut);font-weight:500;font-size:11px;text-align:right;padding:2px 6px;
+ border-bottom:1px solid var(--bd);white-space:nowrap}
+td{padding:2px 6px;text-align:right;border-bottom:1px solid var(--bd);
+ white-space:nowrap;font-size:12px}
+th.l,td.l{text-align:left}
+a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--mut)}
+.tag{display:inline-block;padding:0 6px;border-radius:999px;font-size:11px;border:1px solid}
+.st{color:var(--good);border-color:var(--good)} .wk{color:var(--mut);border-color:var(--bd)}
+.new{color:var(--good);border-color:var(--good)} .old{color:var(--mut);border:none}
+.blk{margin:16px 0;padding-bottom:12px;border-bottom:1px dashed var(--bd)}
+.blk pre{margin:0 0 6px;font:12px/1.5 ui-monospace,Menlo,monospace;white-space:pre-wrap}
+img{max-width:100%;border:1px solid var(--bd);border-radius:6px}
+.ex{color:var(--mut);font-size:10px}
 """
-    parts = [f'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-             f'<title>波哥强信号 近3日</title><style>{css}</style>'
-             f'<pre>'
-             f'{"=" * 48}\n  波哥七维 · 近3日美股强信号  {H.escape(d.get("title") or "")[:34]}\n'
-             f'  信号日: {" / ".join(days3)} · 共 {len(strong)} 只\n{"=" * 48}</pre>']
-    for r in strong:
-        sym = tv.symbol(r["代码"])
-        url = "https://www.tradingview.com/symbols/" + sym.replace(":", "-") + "/"
-        parts.append(
-            f'<div class="blk"><pre><b>{H.escape(sym)}</b> {H.escape(r["中文名"])}'
-            f' · {H.escape(r["主题"])}\n信号日 {H.escape(r["信号日"])} · Fit {H.escape(r["Fit"])}'
-            f' · 胜率 {H.escape(r["胜率"])}% · CA {H.escape(r["CA%"])}% · Pnls {H.escape(r["Pnls%"])}%'
-            f' · 当日 {H.escape(r["当日%"])}%'
-            f''
-            f' · <a href="{url}" target="_blank">TV↗</a></pre>'
-            + (f'<img loading="lazy" src="{H.escape(imgs[r["代码"]])}">' if r["代码"] in imgs else "")
-            + "</div>")
-    parts.append('<pre>数据: 波哥系统每日 PDF · CA/Pnls/胜率/Fit 为波哥自己的回测口径, 未独立复核\n'
-                 '仅供研究, 不构成投资建议</pre>')
+
+    def sym(tk):
+        s_ = tv.symbol(tk)
+        ex, _, code = s_.partition(":")
+        url = "https://www.tradingview.com/chart/?symbol=" + s_.replace(":", "%3A")
+        return f'<a href="{url}" target="_blank"><span class="ex">{ex}:</span><b>{code}</b></a>'
+
+    def day_cell(r):
+        d0 = r["信号日"]
+        if d0 == latest:
+            return f'<span class="tag new">{H.escape(d0)} 新</span>'
+        return f'<span class="old">{H.escape(d0)}</span>'
+
+    tr = "".join(
+        f'<tr><td class="l"><span class="tag {"st" if r["信号"]=="strong" else "wk"}">'
+        f'{r["信号"]}</span></td>'
+        f'<td class="l">{sym(r["代码"])}'
+        + (' 🖼' if r["代码"] in imgs and r in strong3 else '') + '</td>'
+        f'<td class="l">{H.escape(r["中文名"])}</td>'
+        f'<td class="l">{day_cell(r)}</td>'
+        f'<td>{H.escape(r["当日%"])}</td><td>{H.escape(r["Fit"])}</td>'
+        f'<td>{H.escape(r["胜率"])}</td><td>{H.escape(r["CA%"])}</td>'
+        f'<td>{H.escape(r["Pnls%"])}</td>'
+        f'<td class="l" style="white-space:normal">{H.escape(r["主题"])}</td></tr>'
+        for r in rows)
+
+    blocks = []
+    for r in strong3:
+        s_ = tv.symbol(r["代码"])
+        url = "https://www.tradingview.com/chart/?symbol=" + s_.replace(":", "%3A")
+        blocks.append(
+            f'<div class="blk" id="d-{r["代码"]}"><pre><b>{H.escape(s_)}</b> '
+            f'{H.escape(r["中文名"])} · {H.escape(r["主题"])}\n'
+            f'信号日 {H.escape(r["信号日"])} · Fit {H.escape(r["Fit"])} · 胜率 '
+            f'{H.escape(r["胜率"])}% · CA {H.escape(r["CA%"])}% · Pnls '
+            f'{H.escape(r["Pnls%"])}% · 当日 {H.escape(r["当日%"])}% · '
+            f'<a href="{url}" target="_blank">TV↗</a></pre>'
+            + (f'<img loading="lazy" src="{H.escape(imgs[r["代码"]])}">'
+               if r["代码"] in imgs else "") + "</div>")
+
+    page = (f'<meta charset="utf-8">'
+            f'<meta name="viewport" content="width=device-width,initial-scale=1">'
+            f'<title>波哥七维信号</title><style>{css}</style>'
+            f'<h1>波哥系统七维信号汇总</h1>'
+            f'<div class="sub">{H.escape(d.get("title") or "")[:70]} · '
+            f'共 {len(rows)} 只（强 {sum(1 for r in rows if r["信号"]=="strong")}）· '
+            f'下方明细图仅近3日强信号（{" / ".join(days3)}）</div>'
+            f'<table><tr><th class="l">信号</th><th class="l">代码</th>'
+            f'<th class="l">名称</th><th class="l">信号日</th><th>当日%</th><th>Fit</th>'
+            f'<th>胜率</th><th>CA%</th><th>Pnls%</th><th class="l">主题</th></tr>'
+            f'{tr}</table>'
+            f'<h1 style="margin-top:18px">近3日强信号 · 明细图（{len(blocks)}）</h1>'
+            + "".join(blocks)
+            + '<div class="sub">CA/Pnls/胜率/Fit 为波哥系统自身回测口径 · '
+              '信息整理非投资建议</div>')
     out = OUT_DIR / "bogo.html"
-    out.write_text("".join(parts), encoding="utf-8")
-    print(f"✅ 波哥强信号页: {out}（{len(strong)} 只）")
+    out.write_text(page, encoding="utf-8")
+    print(f"✅ 波哥公开页: 表 {len(rows)} 行 + 强信号明细 {len(blocks)} 块")
     return out
