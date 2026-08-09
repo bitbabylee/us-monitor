@@ -31,7 +31,6 @@ def main():
     shutil.copy(out, DOCS / "index.html")
     shutil.copy(out, HIST / f"{day}.html")
     shutil.copy(src_dir / "latest.txt", DOCS / "latest.txt")
-    shutil.copy(src_dir / "full.html", DOCS / "full.html")
     try:
         from us_monitor import m13_bogo
         m13_bogo.build_page()

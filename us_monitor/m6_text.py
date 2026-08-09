@@ -81,7 +81,11 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
     if not gao.get("jpy_ok", True):
         risks.append(f"日元⚠️{gao['jpy']:.1f}")
     L.append(f"  风险: {' · '.join(risks) if risks else '无近端风险事件'}")
-    L.append(thin)
+    L += ["【口径】各节相互独立·未互相验证:",
+          "  仓位=CAMSLIM(欧奈尔) 阶段=高老师 宏观=Brendon 均独立",
+          "  个股信号=日线形态×日内择时(同一价格两个粒度的串联,",
+          "  资格+时机, 不构成互证) · 波哥独立, 唯一交叉点=🔗交集",
+          thin]
 
     # ── 大盘 ──
     hot = "⚠️偏热" if m1["rsi"] > C.RSI_HOT else "中性"
@@ -132,7 +136,7 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
         L.append(thin)
 
     # ── 个股（按行动分类, 不是平铺）──
-    L.append("【个股信号】")
+    L.append("【个股信号】= 日线资格 × 日内时机（同源串联）")
     hits = wl_df[wl_df["标记"] != "⚪"]
     execu, wait, clash, earn = [], [], [], []
     for _, r in hits.iterrows():
@@ -236,16 +240,12 @@ def build(with_intraday=True) -> Path:
 
     out = OUT_DIR / f"dashboard_{date}.html"
     out.write_text(page(f"波哥信号 {date}",
-                        '[<a href="bogo.html">波哥强信号</a>] [<a href="full.html">全量明细</a>] [<a href="rich.html">图形版</a>] '
+                        '[<a href="bogo.html">波哥强信号</a>] [<a href="rich.html">图形版(全量明细)</a>] '
                         '[<a href="manual.html">手册</a>] [<a href="history.html">历史</a>]',
                         digest), encoding="utf-8")
     shutil.copy(out, OUT_DIR / "latest.html")
 
-    (OUT_DIR / "full.html").write_text(
-        page(f"波哥信号 全量 {date}", '[<a href="latest.html">← 精编版</a>]', full_text),
-        encoding="utf-8")
-
-    print(f"✅ 精编版: {out}（{len(digest.splitlines())} 行）+ full.html", file=sys.stderr)
+    print(f"✅ 精编版: {out}（{len(digest.splitlines())} 行）", file=sys.stderr)
     return out
 
 

@@ -201,7 +201,7 @@ a{color:#2a78d6} img{max-width:100%;border:1px solid #8883;border-radius:6px}
 """
     parts = [f'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
              f'<title>波哥强信号 近3日</title><style>{css}</style>'
-             f'<pre>[<a href="index.html">← 日报</a>] [<a href="full.html">全量</a>]\n\n'
+             f'<pre>[<a href="index.html">← 日报</a>] [<a href="rich.html">图形版</a>]\n\n'
              f'{"=" * 48}\n  波哥七维 · 近3日美股强信号  {H.escape(d.get("title") or "")[:34]}\n'
              f'  信号日: {" / ".join(days3)} · 共 {len(strong)} 只\n{"=" * 48}</pre>']
     for r in strong:
