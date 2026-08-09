@@ -406,5 +406,10 @@
    "当日%": "+3.02",
    "信号": "weak"
   }
- ]
+ ],
+ "images": {
+  "MKSI": "bogo/MKSI.png",
+  "CSTM": "bogo/CSTM.png",
+  "CEG": "bogo/CEG.png"
+ }
 }

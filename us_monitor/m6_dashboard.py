@@ -248,18 +248,22 @@ def sec_opportunities(keep, drop, intra_df, bogo, cam, gao):
 
     return f"""
 <div class="card" id="ops" style="border:2px solid var(--good)">
-<h2 style="font-size:16px;color:var(--ink)">🎯 今日交易机会 <small style="color:var(--muted)">
-四层过滤后的最终落点 · 仓位上限 {esc(expo)} · 阶段 {esc(phase)}</small></h2>
-<p class="ctx">读法：先看仓位上限决定总投入，再从「可执行」里挑，
-「等信号」放自选盯盘，「勿碰」今天不看。每张卡都标了日内动作和止损依据。</p>
-{block("✅ 可执行", "日线形态 + 板块资金确认 + 无财报风险 + 日内已给买点", ready, "ready")}
-{block("⏳ 等信号", "标的过关但日内时机未到 —— 等站回 VWAP 或放量突破", wait, "wait")}
-{block("⛔ 今日勿碰", "被财报窗口或板块背离否决", avoid, "avoid")}
+<h2 style="font-size:16px;color:var(--ink)">📋 今日候选清单 <small style="color:var(--muted)">
+各层过滤后的剩余项 · 仓位上限 {esc(expo)} · 阶段 {esc(phase)}</small></h2>
+<div class="ctx" style="background:color-mix(in srgb,var(--warn) 12%,transparent);
+border-radius:6px;padding:10px 12px;margin-bottom:8px">
+<b>⚠️ 这份清单的性质：</b>它是「<b>没有被任何一层否决</b>」的剩余项，<b>不等于</b>「值得买」。
+所有阈值都来自复刻与教科书默认值，<b>尚未做过任何历史回测验证</b>，没有已知胜率。
+把它当<b>待研究名单</b>：从这里开始做功课，而不是照着下单。</div>
+<p class="ctx">读法：先看仓位上限决定总投入，再逐个自己判断。每张卡标了日内动作和止损依据。</p>
+{block("① 四层全过", "日线形态 + 板块资金确认 + 无财报风险 + 日内有买点信号", ready, "ready")}
+{block("② 标的过关·时机未到", "等站回 VWAP 或放量突破", wait, "wait")}
+{block("③ 已被否决", "财报窗口或板块背离 —— 记录下来是为了让你知道系统排除了什么", avoid, "avoid")}
 <div style="margin-top:14px"><b>📋 波哥强信号补充线索</b>
 <span style="color:var(--muted);font-size:12px">（七维回测选出但不在本系统池，可考虑纳入观察）</span>
 <div style="margin-top:6px">{extra_html}</div></div>
 <p class="ctx" style="margin-top:12px;color:var(--muted)">
-⚠️ 本清单是过滤结果不是买入建议。系统只负责排除不该做的，做不做、做多大由你决定。</p></div>"""
+系统只负责排除不该做的。剩下的做不做、做多大、止损放哪，由你判断并承担。</p></div>"""
 
 
 def sec_bogo(d):
@@ -268,10 +272,21 @@ def sec_bogo(d):
     if not rows:
         return ('<div class="card" id="bogo"><h2>🧭 波哥七维信号</h2>'
                 '<p class="ctx">未找到当日 PDF（本地生成时可用）</p></div>')
+    imgs = (d or {}).get("images", {})
+
+    def code_cell(r):
+        """有原图的代码加一个 🖼 展开按钮（点开显示波哥 PDF 那一页）"""
+        link = tv.link(r["代码"])
+        src = imgs.get(r["代码"])
+        if not src:
+            return link
+        return (f'{link} <a href="{esc(src)}" target="_blank" title="波哥原图"'
+                f' style="text-decoration:none">🖼</a>')
+
     tr = "".join(
         f'<tr class="{"hit" if r.get("交集") else ""}">'
         f'<td class="l"><span class="badge {"b-good" if r["信号"]=="strong" else "b-muted"}">'
-        f'{esc(r["信号"])}</span></td><td class="l">{tv.link(r["代码"])}</td>'
+        f'{esc(r["信号"])}</span></td><td class="l">{code_cell(r)}</td>'
         f'<td class="l">{esc(r["中文名"])}</td><td>{esc(r["当日%"])}</td>'
         f'<td>{esc(r["Fit"])}</td><td>{esc(r["胜率"])}</td><td>{esc(r["CA%"])}</td>'
         f'<td>{esc(r["Pnls%"])}</td>'
@@ -285,15 +300,38 @@ def sec_bogo(d):
 高亮行 🔗 ＝ 两套独立方法共同覆盖，信号质量最高。</p>
 <table><tr><th class="l">信号</th><th class="l">代码</th><th class="l">名称</th>
 <th>当日%</th><th>Fit</th><th>胜率</th><th>CA%</th><th>Pnls%</th>
-<th class="l">主题</th></tr>{tr}</table></div>"""
+<th class="l">主题</th></tr>{tr}</table>
+{bogo_gallery(d)}</div>"""
+
+
+def bogo_gallery(d):
+    """波哥原图画廊 —— 与本系统池交集的标的优先展示"""
+    imgs = (d or {}).get("images", {})
+    if not imgs:
+        return ""
+    rows = (d or {}).get("rows", [])
+    order = ([r for r in rows if r.get("交集")] + [r for r in rows if not r.get("交集")])
+    cells = "".join(
+        f'<figure style="margin:0"><a href="{esc(imgs[r["代码"]])}" target="_blank">'
+        f'<img src="{esc(imgs[r["代码"]])}" loading="lazy" alt="{esc(r["代码"])}"'
+        f' style="width:100%;border:1px solid var(--border);border-radius:6px"></a>'
+        f'<figcaption style="font-size:12px;color:var(--ink2);margin-top:3px">'
+        f'{"🔗 " if r.get("交集") else ""}<b>{esc(r["代码"])}</b> {esc(r["中文名"])}'
+        f' · {esc(r["信号"])}</figcaption></figure>'
+        for r in order if r["代码"] in imgs)
+    return (f'<details style="margin-top:12px"><summary style="cursor:pointer;'
+            f'color:var(--ink2);font-size:13px">🖼 波哥原图 · 当日强信号（{len(imgs)} 张，点开）</summary>'
+            f'<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));'
+            f'gap:12px;margin-top:10px">{cells}</div></details>')
 
 
 def nav():
     """顶部锚点导航 —— 页面 7000px+, 没有导航要滚很久"""
-    items = [("ops", "🎯 交易机会"), ("macro", "① 宏观"), ("gao", "阶段/宏观层"),
+    items = [("macro", "① 宏观"), ("gao", "阶段/宏观层"),
              ("sector", "② 板块"), ("sectors", "板块榜"), ("capex", "AI资本"),
              ("stock", "③ 个股"), ("focus", "聚焦清单"), ("intraday", "日内信号"),
-             ("bogo", "波哥七维"), ("earn", "财报"), ("watch", "观察池")]
+             ("bogo", "波哥七维"), ("earn", "财报"), ("watch", "观察池"),
+             ("ops", "④ 候选清单")]
     links = "".join(
         f'<a href="#{i}" style="padding:4px 10px;border:1px solid var(--border);'
         f'border-radius:999px;color:var(--ink2);text-decoration:none;font-size:12px;'
@@ -593,8 +631,6 @@ def build(with_intraday=True, daily=None, refresh_sec=None) -> Path:
     # ── 自上而下: 宏观 → 板块 → 个股 → 最终落在「交易机会」──
     body = (
         nav()
-        + sec_opportunities(keep, drop, intra_df, bogo, cam, gao)
-
         + tier("macro", "① 宏观", "大盘环境决定今天能下多大注")
         + sec_tiles(m1) + sec_camslim(cam) + sec_gao(gao) + sec_alerts(alert_cards)
 
@@ -604,7 +640,10 @@ def build(with_intraday=True, daily=None, refresh_sec=None) -> Path:
         + tier("stock", "③ 个股", "信号、形态与时机")
         + sec_focus(keep, drop, intra_df) + sec_intraday(intra_df)
         + sec_premarket(pre_df) + sec_bogo(bogo)
-        + sec_earnings(cal, eflags) + sec_watchlist(wl_df))
+        + sec_earnings(cal, eflags) + sec_watchlist(wl_df)
+
+        + tier("ops", "④ 候选清单", "以上各层过滤后的剩余项 —— 是待研究名单, 不是买入建议")
+        + sec_opportunities(keep, drop, intra_df, bogo, cam, gao))
     page = (f'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'{meta_refresh}<title>波哥信号仪表盘 {date}</title><style>{CSS}</style>'
             f'<h1>📡 波哥信号 · 美股监控仪表盘 <small>日线数据日 {date} · 本地生成 {stamp}'

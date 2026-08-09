@@ -42,6 +42,13 @@ def main():
     except Exception as exc:
         print(f"WARN: 截图跳过 {exc}")
 
+    # 波哥原图（本地生成时才有；云端沿用仓库里已提交的）
+    bogo_src = src_dir / "bogo"
+    if bogo_src.exists():
+        (DOCS / "bogo").mkdir(exist_ok=True)
+        for f in bogo_src.glob("*.png"):
+            shutil.copy(f, DOCS / "bogo" / f.name)
+
     _write_history_index()
     print(f"✅ 站点已生成: docs/index.html (数据日 {day})")
 

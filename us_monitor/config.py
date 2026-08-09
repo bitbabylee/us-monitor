@@ -139,6 +139,7 @@ EARNINGS_REMOVE = {
 }
 
 # ── 模块13：波哥七维信号聚合 ────────────────────────
+BOGO_IMG_SCALE = 1.6        # PDF 单页图导出倍率(1.0≈72dpi; 1.6≈115dpi, 体积/清晰度折中)
 BOGO_DIRS = [                       # 找 `MMDD us 1630 bo sig.pdf` 的目录(按序探测)
     "/Users/clair/My Drive (0xamberlbb01@gmail.com)/波哥信号归档",
     "/Users/clair/My Drive/波哥信号归档",

@@ -75,6 +75,29 @@ def parse(pdf: Path) -> dict:
             "source": pdf.name, "rows": rows}
 
 
+def export_pages(pdf: Path, out_dir: Path, scale: float = None, only=None) -> dict:
+    """把 PDF 第 2 页起的每只票单页图导成 PNG。返回 {代码: 相对路径}。
+    页首格式固定为 `CODE 中文名 · 主题`, 用它认代码。"""
+    import fitz
+    scale = scale or C.BOGO_IMG_SCALE
+    out_dir.mkdir(parents=True, exist_ok=True)
+    mapping, doc = {}, fitz.open(pdf)
+    for i in range(1, doc.page_count):
+        head = (doc[i].get_text() or "").split("\n")[0].strip()
+        m = re.match(r"([A-Z0-9.!]{1,8})\s", head)
+        if not m:
+            continue                       # 末页是 TradingView 链接页, 跳过
+        code = m.group(1)
+        if only is not None and code not in only:
+            continue
+        png = out_dir / f"{code}.png"
+        if not png.exists():               # 已导出的不重复渲染
+            doc[i].get_pixmap(matrix=fitz.Matrix(scale, scale)).save(png)
+        mapping[code] = f"{out_dir.name}/{png.name}"
+    doc.close()
+    return mapping
+
+
 def _num(s, default=None):
     try:
         return float(str(s).replace("+", "").replace("%", "").strip())
@@ -89,6 +112,15 @@ def load() -> dict:
         try:
             d = parse(pdf)
             if d["rows"]:
+                try:
+                    from .m6_dashboard import OUT_DIR
+                    # 只导当日强信号的原图（全导 34 张 6MB, 且弱信号/旧日期用处不大）
+                    want = {r["代码"] for r in d["rows"]
+                            if r["信号"] == "strong" and r["信号日"] == d.get("date")}
+                    d["images"] = export_pages(pdf, OUT_DIR / "bogo", only=want)
+                except Exception as exc:
+                    print(f"WARN: 导出波哥单页图失败 {exc}", file=sys.stderr)
+                    d["images"] = {}
                 STORE.write_text(json.dumps(d, ensure_ascii=False, indent=1))
                 return d
         except Exception as exc:
