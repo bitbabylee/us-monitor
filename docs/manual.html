@@ -60,6 +60,12 @@ th.l, td.l { text-align:left; }
 .fc.drop { border-left-color:var(--critical); opacity:.75; }
 .fc b { font-size:15px; } .fc .ctx { color:var(--ink2); font-size:12px; margin-top:4px; }
 .footer { color:var(--muted); font-size:11px; margin-top:16px; }
+details.fold { margin-top:14px; }
+details.fold > summary { cursor:pointer; font-size:14px; font-weight:600; color:var(--ink);
+  padding:10px 14px; background:var(--surface); border:1px solid var(--border);
+  border-radius:10px; list-style-position:inside; }
+details.fold[open] > summary { border-radius:10px 10px 0 0; border-bottom:none; }
+details.fold > summary:hover { background:color-mix(in srgb, var(--ink) 4%, var(--surface)); }
 
 .wrap { max-width: 920px; margin: 0 auto; }
 h2 { font-size:17px; color:var(--ink); margin:30px 0 4px; padding-bottom:6px;
