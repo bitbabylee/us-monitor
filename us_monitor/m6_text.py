@@ -37,7 +37,7 @@ WRAP_CSS = """
 body { margin:0; padding:18px 14px; background:#fcfcfb; color:#111; }
 @media (prefers-color-scheme: dark) { body { background:#111110; color:#e8e6dd; } }
 pre { margin:0; font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-      white-space:pre; overflow-x:auto; }
+      white-space:pre-wrap; overflow-wrap:anywhere; }
 @media (max-width:640px) {
   body { padding:12px 8px; }
   pre { font-size:12px; white-space:pre-wrap; overflow-wrap:anywhere; }
@@ -46,128 +46,150 @@ a { color:#2a78d6; }
 """
 
 
+SHORT_PAT = {"Pocket Pivot 口袋支点": "口袋支点", "20日箱体突破": "箱体突破",
+             "EMA10/21 金叉启动": "EMA金叉", "10 EMA 强动能回调": "10EMA回调",
+             "超跌反弹起爆点": "超跌反弹"}
+
+
+def _sp(pat):
+    return SHORT_PAT.get(pat.strip("【】"), pat.strip("【】")[:6])
+
+
+def _ss(sig):
+    """日内信号短名: 去括号尾巴 '🟢 稳健买点（温和...' -> '🟢稳健买点'"""
+    return (sig or "—").split("（")[0].replace(" ", "")[:10]
+
+
 def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
             keep, drop, bogo, cal, pre_df) -> str:
     from . import tv
     tv.warm(C.all_daily_tickers())
-    S = tv.symbol                      # 'PLTR' -> 'NASDAQ:PLTR'
+    S = tv.symbol
     L = []
     bar, thin = "=" * W, "-" * W
     date = col(daily, "Close", C.BENCHMARK).index[-1].strftime("%Y-%m-%d")
     sig = {} if intra_df is None or intra_df.empty else dict(zip(intra_df["代码"], intra_df["信号"]))
-
-    L += [bar, f"  波哥信号 · 美股日报  数据日 {date} · 生成 {dt.datetime.now():%m-%d %H:%M}", bar]
-
-    # ── 一页结论 ──
-    regime = "抱团MAGS" if m1["regime"] == "MAGS" else "广义动量MTUM"
-    L += ["【结论】",
-          f"  仓位上限 {cam['exposure']}（派发日{cam['dist_n']:g}/{cam['status'].split()[0]}）"
-          f" · 阶段{gao['phase'].split()[0]} · 宏观{gao['macro_passed']}/{len(gao['macro'])}"
-          f" · 风格:{regime}"]
-    if keep:
-        cc = " ".join(f"{S(tk)}({pat.strip('【】')[:5]}·{(sig.get(tk) or '—')[:1]})" for tk, pat, _ in keep)
-        L.append(f"  候选: {cc}")
-    else:
-        L.append("  候选: 无")
-    if drop:
-        L.append("  否决: " + " ".join(
-            f"{S(tk)}({'财报' if '财报' in c else '板块背离'})" for tk, _, c in drop))
-    risks = []
+    det = {} if intra_df is None or intra_df.empty else dict(zip(intra_df["代码"], intra_df["细节"]))
     today_ny = dt.datetime.now(NY).date()
-    near = [f"{d:%m-%d}{S(tk)}{chr(10003) if tk in C.EARNINGS_VERIFIED else chr(63)}" for d, tk in cal if (d - today_ny).days <= 1]
+    vfy = lambda tk: "✓" if tk in C.EARNINGS_VERIFIED else "?"
+
+    L += [bar, f"  波哥信号 · 美股日报  {date} · 生成 {dt.datetime.now():%m-%d %H:%M}", bar]
+
+    # ── 结论: 一行 ──
+    regime = "抱团MAGS" if m1["regime"] == "MAGS" else "动量MTUM"
+    L += [f"【结论】仓位上限 {cam['exposure']} · 阶段{gao['phase'].split(' ')[0]}"
+          f" · 宏观{gao['macro_passed']}/{len(gao['macro'])} · {regime}", thin]
+
+    # ── 候选/否决/风险: 一项一行, 列对齐 ──
+    L.append(f"【候选】{len(keep)} 只（形态+板块确认+无财报风险·未回测）")
+    for tk, pat, _ in keep:
+        s_ = sig.get(tk, "—")
+        L.append(f"  {S(tk):<13} {_sp(pat):<9} 日内:{_ss(s_)}")
+    if not keep:
+        L.append("  无")
+    if drop:
+        L.append("【否决】")
+        for tk, _, c in drop:
+            why = "财报窗口" if "财报" in c else "板块背离"
+            L.append(f"  {S(tk):<13} {why}{vfy(tk) if '财报' in c else ''}")
+    near = [f"{d:%m-%d} {S(tk)}{vfy(tk)}" for d, tk in cal if (d - today_ny).days <= 1]
+    risk = []
     if near:
-        risks.append("财报临近: " + " ".join(near))
+        risk.append("财报临近 " + " · ".join(near))
     if not gao.get("jpy_ok", True):
-        risks.append(f"日元⚠️{gao['jpy']:.1f}")
-    L.append(f"  风险: {' · '.join(risks) if risks else '无近端风险事件'}")
-    L += ["【口径】各节相互独立·未互相验证:",
-          "  仓位=CAMSLIM(欧奈尔) 阶段=高老师 宏观=Brendon 均独立",
-          "  个股信号=日线形态×日内择时(同一价格两个粒度的串联,",
-          "  资格+时机, 不构成互证) · 波哥系统独立成页, 与本报无交互",
-          thin]
+        risk.append(f"日元⚠️{gao['jpy']:.1f}")
+    L += [f"【风险】{' · '.join(risk) if risk else '无近端风险事件'}", thin]
 
-    # ── 大盘 ──
-    hot = "⚠️偏热" if m1["rsi"] > C.RSI_HOT else "中性"
+    # ── 大盘: 每行一个主题 ──
+    hot = "⚠️偏热" if m1["rsi"] > C.RSI_HOT else ""
     L += ["【大盘】",
-          f"  SPX {m1['spx']:.0f} (MA50{m1['dev50']:+.1f}%) · RSI {m1['rsi']:.0f}{hot}"
-          f" · VIX {m1['vix']:.1f} · MTUM/MAGS {m1['mtum_mags']:.2f}"
-          f"({'破' if m1['regime'] == 'MAGS' else '上'}20日均)"]
+          f"  SPX {m1['spx']:.0f} (MA50{m1['dev50']:+.1f}%) · RSI {m1['rsi']:.0f}{hot} · VIX {m1['vix']:.1f}",
+          f"  风格: MTUM/MAGS {m1['mtum_mags']:.2f} {'跌破' if m1['regime']=='MAGS' else '站上'}20日均 → {regime}"]
     spark = "".join("▁▂▃▄▅▆▇█"[min(int(n), 7)] for _, n in cam["traj"][-25:])
-    L.append(f"  派发轨迹 {spark} ({cam['traj'][0][1]:g}→{cam['dist_n']:g})"
-             + (f" · {cam['ramp_note'][:26]}" if cam.get("ramp_note") else ""))
+    L.append(f"  派发 {spark} ({cam['dist_n']:g}) → 仓位{cam['exposure']}")
     miss = [n.replace("(必选)", "*") for n, ok, _ in gao["consensus"] if not ok]
-    L.append(f"  阶段{gao['phase']}: 恐慌{gao['p_score']}/4 共识{gao['c_score']}/5"
-             + (f" 缺:{';'.join(m[:14] for m in miss)}" if miss else ""))
-    mac = " ".join(f"{'✅' if ok else '✗'}{name.split()[0]}{cur}"
-                   for _, name, cur, _, _, ok, _ in gao["macro"])
-    L += [f"  宏观 {mac}", thin]
-
-    # ── 板块（只列 🔥 和 🚨）──
-    strong = sec_df[sec_df["诊断"].str.contains("🔥")]
-    dump = sec_df[sec_df["诊断"].str.contains("🚨")]
-    t_hot = theme_df[theme_df["诊断"].str.contains("🔥")]
-    t_cold = theme_df[theme_df["诊断"].str.contains("🧊")]
-    L.append("【板块】")
-    L.append("  强: " + (" ".join(f"{S(r['代码'])}{r['超额Alpha']:+.1f}%" for _, r in strong.iterrows()) or "无"))
-    if len(dump):
-        L.append("  🚨砸盘: " + " ".join(f"{S(r['代码'])}{r['超额Alpha']:+.1f}%(量{r['量倍']:.1f}x)"
-                                        for _, r in dump.iterrows()))
-    if len(t_hot):
-        L.append("  主题🔥: " + " ".join(f"{r['主题'].split('/')[0][-6:]}{r['超额Alpha']:+.1f}%[{S(r['领头羊'].split()[0])}]"
-                                        for _, r in t_hot.iterrows()))
-    if len(t_cold):
-        L.append("  主题🧊: " + " ".join(f"{r['主题'].split('/')[0][-6:]}{r['超额Alpha']:+.1f}%"
-                                        for _, r in t_cold.iterrows()))
+    L.append(f"  阶段{gao['phase']} 恐慌{gao['p_score']}/4 共识{gao['c_score']}/5"
+             + (f" 缺:{miss[0][:12]}" if miss else ""))
+    L.append("  宏观 " + " ".join(f"{'✅' if ok else '✗'}{name.split()[0]}{cur}"
+                                 for _, name, cur, _, _, ok, _ in gao["macro"]))
     L.append(thin)
 
-    # ── 个股（按行动分类, 不是平铺）──
-    L.append("【个股信号】= 日线资格 × 日内时机（同源串联）")
+    # ── 板块: 一类一行, 主题竖排 ──
+    strong = sec_df[sec_df["诊断"].str.contains("🔥")]
+    dump = sec_df[sec_df["诊断"].str.contains("🚨")]
+    L.append("【板块】")
+    L.append("  强: " + (" · ".join(f"{S(r['代码'])}{r['超额Alpha']:+.1f}%"
+                                   for _, r in strong.iterrows()) or "无"))
+    if len(dump):
+        L.append("  🚨砸盘: " + " · ".join(f"{S(r['代码'])}{r['超额Alpha']:+.1f}%(量{r['量倍']:.1f}x)"
+                                          for _, r in dump.iterrows()))
+    t_hot = theme_df[theme_df["诊断"].str.contains("🔥")]
+    for _, r in t_hot.iterrows():
+        nm = r["主题"].split("/")[0].replace("\ufe0f", "").strip()[-6:]
+        L.append(f"  主题🔥 {nm:<7}{r['超额Alpha']:+.1f}%  龙头 {S(r['领头羊'].split()[0])}")
+    t_cold = theme_df[theme_df["诊断"].str.contains("🧊")]
+    for _, r in t_cold.iterrows():
+        nm = r["主题"].split("/")[0].strip()[-6:]
+        L.append(f"  主题🧊 {nm:<7}{r['超额Alpha']:+.1f}%")
+    L.append(thin)
+
+    # ── 个股: 分类, 一票一行 ──
+    L.append("【个股信号】日线资格 × 日内时机（同源串联·未回测）")
     hits = wl_df[wl_df["标记"] != "⚪"]
-    execu, wait, clash, earn = [], [], [], []
+    cats = {"exec": [], "wait": [], "clash": [], "earn": []}
     for _, r in hits.iterrows():
-        tk, pat = r["代码"], r["形态"].strip("【】")[:8]
+        tk = r["代码"]
         s_ = sig.get(tk, "")
-        item = f"{S(tk)}[{r['标记']}{pat}"
         if r["财报"]:
-            vfy = "✓" if tk in C.EARNINGS_VERIFIED else "?"
-            earn.append(f"{item}] {r['财报'][:12]}{vfy}")
+            cats["earn"].append((r, s_))
         elif s_.startswith(("🟢", "🔥")):
-            execu.append(f"{item}+{s_[:6].strip()}]")
+            cats["exec"].append((r, s_))
         elif s_.startswith("🔴"):
-            clash.append(f"{item}/日内{s_[:6].strip()}]")
+            cats["clash"].append((r, s_))
         else:
-            wait.append(f"{item}] {(s_[:5] or '—')}")
-    if execu:
-        L.append("  ▶ 日线+日内同向: " + " ".join(execu))
-    if wait:
-        L.append("  ▶ 等时机(日内未给买点): " + " ".join(wait))
-    if clash:
-        L.append("  ▶ 冲突(日线买点/日内破位): " + " ".join(clash))
-    if earn:
-        L.append("  ▶ 财报窗口(信号作废): " + " ".join(earn))
+            cats["wait"].append((r, s_))
+    def emit(key, title):
+        if not cats[key]:
+            return
+        L.append(f" ▶ {title}")
+        for r, s_ in cats[key]:
+            tail = (f"{r['财报'][:14]}{vfy(r['代码'])}" if key == "earn" else _ss(s_))
+            L.append(f"   {S(r['代码']):<13} {r['标记']}{_sp(r['形态']):<9} {tail}")
+    emit("exec", "日线+日内同向")
+    emit("wait", "等时机（日内未给买点）")
+    emit("clash", "冲突（日线买点/日内破位）")
+    emit("earn", "财报窗口（信号作废）")
     if hits.empty:
         L.append("  无日线形态触发")
     if intra_df is not None and not intra_df.empty:
         shown = set(hits["代码"])
         act = intra_df[~intra_df["信号"].str.startswith(("⚪", "⏳")) & ~intra_df["代码"].isin(shown)]
         if len(act):
-            L.append("  其余日内异动: " + " ".join(f"{S(r['代码'])}{r['信号'][:2]}" for _, r in act.iterrows()))
+            items = [f"{S(r['代码'])}{r['信号'][:2]}" for _, r in act.iterrows()]
+            for k in range(0, len(items), 4):        # 每行最多4个
+                L.append(("  日内异动: " if k == 0 else "            ") + " ".join(items[k:k+4]))
     if pre_df is not None and len(pre_df):
         mv = pre_df[pre_df["涨跌"].abs() >= C.EXT_MOVE_ALERT]
         if len(mv):
-            L.append("  盘前/盘后±2%: " + " ".join(f"{S(r['代码'])}{r['涨跌']:+.1f}%" for _, r in mv.iterrows()))
+            L.append("  盘前±2%: " + " ".join(f"{S(r['代码'])}{r['涨跌']:+.1f}%" for _, r in mv.iterrows()))
     L.append(thin)
 
-    # ── 财报（未来7日, 一行一天）──
-    wk = ["一", "二", "三", "四", "五", "六", "日"]
+    # ── 财报: 一天一行 ──
     nxt = [(d, tk) for d, tk in cal if (d - today_ny).days <= 7]
     if nxt:
+        wk = ["一", "二", "三", "四", "五", "六", "日"]
         by = {}
         for d, tk in nxt:
             by.setdefault(d, []).append(tk)
-        L.append("【财报7日】(✓=已核实官方公告 ?=仅来自yahoo/xlsx需二次核实) " + " · ".join(f"{d:%m-%d}(周{wk[d.weekday()]}){'/'.join(S(x) + ('✓' if x in C.EARNINGS_VERIFIED else '?') for x in v)}"
-                                          for d, v in sorted(by.items())))
-    L += [bar, "免责: 信息整理非投资建议 · 各方法互相独立且未回测, 详见手册", bar]
+        L.append("【财报7日】✓=已核官方 ?=仅yahoo/xlsx待核")
+        for d, v in sorted(by.items()):
+            L.append(f"  {d:%m-%d} 周{wk[d.weekday()]}  " + " ".join(f"{S(x)}{vfy(x)}" for x in v))
+        L.append(thin)
+
+    # ── 口径移到底部 ──
+    L += ["【口径】仓位=CAMSLIM 阶段=高老师 宏观=Brendon 均独立未互证;",
+          "  个股=日线×日内同源串联; 波哥独立成页与本报无交互",
+          bar, "免责: 信息整理非投资建议 · 全部方法未回测", bar]
     return "\n".join(L)
 
 
