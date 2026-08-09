@@ -30,7 +30,7 @@ from . import (m1_macro, m2_sectors, m3_themes, m4_watchlist, m5_intraday,
 from .run_all import compute_crosscheck, cross_check
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "dashboard"
-W = 64
+W = 48   # 48字符≈360px, iPhone竖屏不横滚
 
 WRAP_CSS = """
 :root { color-scheme: light dark; }
@@ -38,6 +38,10 @@ body { margin:0; padding:18px 14px; background:#fcfcfb; color:#111; }
 @media (prefers-color-scheme: dark) { body { background:#111110; color:#e8e6dd; } }
 pre { margin:0; font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
       white-space:pre; overflow-x:auto; }
+@media (max-width:640px) {
+  body { padding:12px 8px; }
+  pre { font-size:12px; white-space:pre-wrap; overflow-wrap:anywhere; }
+}
 a { color:#2a78d6; }
 """
 
