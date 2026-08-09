@@ -1,11 +1,15 @@
 ================================================
-  波哥信号 · 美股日报  数据日 2026-08-07 · 生成 08-09 05:45
+  波哥信号 · 美股日报  数据日 2026-08-07 · 生成 08-09 05:50
 ================================================
 【结论】
   仓位上限 100%（派发日0/CONFIRMED） · 阶段C1 · 宏观2/4 · 风格:抱团MAGS
   候选: NASDAQ:AAOI(EMA10·🔴) NYSE:LLY(EMA10·🟢) NASDAQ:QQQ(EMA10·🟡) NASDAQ:AXTI(20日箱体·🔥) NASDAQ:PLTR(Pocke·🟢) NYSE:SNOW(20日箱体·⚪) AMEX:GDX(Pocke·🟢)
   否决: NASDAQ:RKLB(财报) NASDAQ:LITE(财报) NASDAQ:SPCX(板块背离)
   风险: 财报临近: 08-10NASDAQ:RKLB✓
+【口径】各节相互独立·未互相验证:
+  仓位=CAMSLIM(欧奈尔) 阶段=高老师 宏观=Brendon 均独立
+  个股信号=日线形态×日内择时(同一价格两个粒度的串联,
+  资格+时机, 不构成互证) · 波哥独立, 唯一交叉点=🔗交集
 ------------------------------------------------
 【大盘】
   SPX 7758 (MA50+3.5%) · RSI 70⚠️偏热 · VIX 14.9 · MTUM/MAGS 4.47(破20日均)
@@ -22,7 +26,7 @@
   08-06: NASDAQ:SIMO(Fit6.48) AMEX:UUUU(Fit6.34) NYSE:SDRL(Fit5.01) NYSE:TRGP(Fit4.50) NYSE:FRO(Fit3.53) NYSE:OXY(Fit2.45) NYSE:DHT(Fit2.18) AMEX:PXJ(Fit2.18) NYSE:LLY(Fit1.10)
   与本池交集: NASDAQ:CEG NYSE:LLY NASDAQ:TSLA NASDAQ:MU NASDAQ:AMD NYSE:TSM
 ------------------------------------------------
-【个股信号】
+【个股信号】= 日线资格 × 日内时机（同源串联）
   ▶ 日线+日内同向: NYSE:LLY[🌊EMA10/21+🟢 稳健买点] NASDAQ:AXTI[📦20日箱体突破+🔥 强主升浪] NASDAQ:PLTR[💡Pocket P+🟢 突破买点] NASDAQ:SPCX[💡Pocket P+🔥 强主升浪] AMEX:GDX[💡Pocket P+🟢 黄金买点]
   ▶ 等时机(日内未给买点): NASDAQ:QQQ[🌊EMA10/21] 🟡 警告: NYSE:SNOW[📦20日箱体突破] ⚪ 观望
   ▶ 冲突(日线买点/日内破位): NASDAQ:AAOI[🌊EMA10/21/日内🔴 规避/止]
