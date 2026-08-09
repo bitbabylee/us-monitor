@@ -1,11 +1,11 @@
 ================================================
-  波哥信号 · 美股日报  数据日 2026-08-07 · 生成 08-09 05:40
+  波哥信号 · 美股日报  数据日 2026-08-07 · 生成 08-09 05:45
 ================================================
 【结论】
   仓位上限 100%（派发日0/CONFIRMED） · 阶段C1 · 宏观2/4 · 风格:抱团MAGS
-  候选: AAOI(EMA10·🔴) LLY(EMA10·🟢) QQQ(EMA10·🟡) AXTI(20日箱体·🔥) PLTR(Pocke·🟢) SNOW(20日箱体·⚪) GDX(Pocke·🟢)
-  否决: RKLB LITE SPCX（财报）
-  风险: 财报临近: 08-10RKLB
+  候选: NASDAQ:AAOI(EMA10·🔴) NYSE:LLY(EMA10·🟢) NASDAQ:QQQ(EMA10·🟡) NASDAQ:AXTI(20日箱体·🔥) NASDAQ:PLTR(Pocke·🟢) NYSE:SNOW(20日箱体·⚪) AMEX:GDX(Pocke·🟢)
+  否决: NASDAQ:RKLB(财报) NASDAQ:LITE(财报) NASDAQ:SPCX(板块背离)
+  风险: 财报临近: 08-10NASDAQ:RKLB✓
 ------------------------------------------------
 【大盘】
   SPX 7758 (MA50+3.5%) · RSI 70⚠️偏热 · VIX 14.9 · MTUM/MAGS 4.47(破20日均)
@@ -14,27 +14,23 @@
   宏观 ✗ATR1484% ✗10Y4.66% ✅HYG/LQD0.7472 ✅USD/JPY157.74
 ------------------------------------------------
 【板块】
-  强: GDX+6.5% SOXX+1.4%
-  主题🔥: 🪙 黄金+5.7%[NEM] ️ 网络安全+4.4%[PLTR] ☁️ 云计算+3.9%[MDB] 🚀 军工+2.3%[AVAV]
+  强: AMEX:GDX+6.5% NASDAQ:SOXX+1.4%
+  主题🔥: 🪙 黄金+5.7%[NYSE:NEM] ️ 网络安全+4.4%[NASDAQ:PLTR] ☁️ 云计算+3.9%[NASDAQ:MDB] 🚀 军工+2.3%[NASDAQ:AVAV]
+------------------------------------------------
+【波哥七维】近3日strong:
+  08-07: NASDAQ:MKSI(Fit4.68) NYSE:CSTM(Fit4.03) NASDAQ:CEG(Fit1.14)
+  08-06: NASDAQ:SIMO(Fit6.48) AMEX:UUUU(Fit6.34) NYSE:SDRL(Fit5.01) NYSE:TRGP(Fit4.50) NYSE:FRO(Fit3.53) NYSE:OXY(Fit2.45) NYSE:DHT(Fit2.18) AMEX:PXJ(Fit2.18) NYSE:LLY(Fit1.10)
+  与本池交集: NASDAQ:CEG NYSE:LLY NASDAQ:TSLA NASDAQ:MU NASDAQ:AMD NYSE:TSM
 ------------------------------------------------
 【个股信号】
-  💡 RKLB Pocket Pivot 口袋支点  日内:🟢 强动能买点（放量突破 O  ‼️⚠️ 1日后(08-10)财报,
-  📦 LITE 20日箱体突破  日内:⚪ 观望  ‼️⚠️ 2日后(08-11)财报,
-  🌊 AAOI EMA10/21 金叉启动  日内:🔴 规避/止损（破位走弱）
-  🌊  LLY EMA10/21 金叉启动  日内:🟢 稳健买点（温和站回 VW
-  🌊  QQQ EMA10/21 金叉启动  日内:🟡 警告: 临近前高（谨防双
-  📦 AXTI 20日箱体突破  日内:🔥 强主升浪（切勿卖飞!）
-  💡 PLTR Pocket Pivot 口袋支点  日内:🟢 突破买点（ORB动能）
-  📦 SNOW 20日箱体突破  日内:⚪ 观望
-  💡 SPCX Pocket Pivot 口袋支点  日内:🔥 强主升浪（切勿卖飞!）
-  💡  GDX Pocket Pivot 口袋支点  日内:🟢 黄金买点（放量站回 VW
-  其余日内异动: BE🔴  AMAT🟢  SMH🟢  GEV🟢  CAT🔴  NET🔴  ANET🔴  CRDO🔥  AMD🟢 
-  盘前/盘后±2%: AXTI+2.1%
+  ▶ 日线+日内同向: NYSE:LLY[🌊EMA10/21+🟢 稳健买点] NASDAQ:AXTI[📦20日箱体突破+🔥 强主升浪] NASDAQ:PLTR[💡Pocket P+🟢 突破买点] NASDAQ:SPCX[💡Pocket P+🔥 强主升浪] AMEX:GDX[💡Pocket P+🟢 黄金买点]
+  ▶ 等时机(日内未给买点): NASDAQ:QQQ[🌊EMA10/21] 🟡 警告: NYSE:SNOW[📦20日箱体突破] ⚪ 观望
+  ▶ 冲突(日线买点/日内破位): NASDAQ:AAOI[🌊EMA10/21/日内🔴 规避/止]
+  ▶ 财报窗口(信号作废): NASDAQ:RKLB[💡Pocket P] ⚠️ 1日后(08-10✓ NASDAQ:LITE[📦20日箱体突破] ⚠️ 2日后(08-11✓
+  其余日内异动: NYSE:BE🔴  NASDAQ:AMAT🟢  NASDAQ:SMH🟢  NYSE:GEV🟢  NYSE:CAT🔴  NYSE:NET🔴  NYSE:ANET🔴  NASDAQ:CRDO🔥  NASDAQ:AMD🟢 
+  盘前/盘后±2%: NASDAQ:AXTI+2.1%
 ------------------------------------------------
-【波哥七维】
-  当日strong: MKSI CSTM CEG · 全单31只 · 与本池交集: CEG LLY TSLA MU AMD TSM
-------------------------------------------------
-【财报7日】 08-10(周一)RKLB · 08-11(周二)LITE · 08-12(周三)NBIS · 08-13(周四)AMAT
+【财报7日】(✓=已核实官方公告 ?=仅来自yahoo/xlsx需二次核实) 08-10(周一)NASDAQ:RKLB✓ · 08-11(周二)NASDAQ:LITE✓ · 08-12(周三)NASDAQ:NBIS✓ · 08-13(周四)NASDAQ:AMAT✓
 ================================================
 免责: 信息整理非投资建议 · 各方法互相独立且未回测, 详见手册
 ================================================
