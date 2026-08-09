@@ -273,6 +273,8 @@ def sec_bogo(d):
         return ('<div class="card" id="bogo"><h2>🧭 波哥七维信号</h2>'
                 '<p class="ctx">未找到当日 PDF（本地生成时可用）</p></div>')
     imgs = (d or {}).get("images", {})
+    for r in (d or {}).get("rows", []):
+        r["_latest"] = (d or {}).get("date")
 
     def code_cell(r):
         """有原图的代码加一个 🖼 展开按钮（点开显示波哥 PDF 那一页）"""
@@ -287,7 +289,8 @@ def sec_bogo(d):
         f'<tr class="{"hit" if r.get("交集") else ""}">'
         f'<td class="l"><span class="badge {"b-good" if r["信号"]=="strong" else "b-muted"}">'
         f'{esc(r["信号"])}</span></td><td class="l">{code_cell(r)}</td>'
-        f'<td class="l">{esc(r["中文名"])}</td><td>{esc(r["当日%"])}</td>'
+        f'<td class="l">{esc(r["中文名"])}</td>'
+        f'<td class="l">{sig_date(r)}</td><td>{esc(r["当日%"])}</td>' 
         f'<td>{esc(r["Fit"])}</td><td>{esc(r["胜率"])}</td><td>{esc(r["CA%"])}</td>'
         f'<td>{esc(r["Pnls%"])}</td>'
         f'<td class="l" style="white-space:normal">{"🔗 " if r.get("交集") else ""}{esc(r["主题"])}</td></tr>'
@@ -299,9 +302,19 @@ def sec_bogo(d):
 <p class="ctx">波哥系统＝【回测+基本面七维】选股；本系统＝【技术面+资金面】过滤器。
 高亮行 🔗 ＝ 两套独立方法共同覆盖，信号质量最高。</p>
 <table><tr><th class="l">信号</th><th class="l">代码</th><th class="l">名称</th>
-<th>当日%</th><th>Fit</th><th>胜率</th><th>CA%</th><th>Pnls%</th>
+<th class="l">信号日</th><th>当日%</th><th>Fit</th><th>胜率</th><th>CA%</th><th>Pnls%</th>
 <th class="l">主题</th></tr>{tr}</table>
 {bogo_gallery(d)}</div>"""
+
+
+
+def sig_date(r):
+    """信号日列: 当日的高亮, 旧日期灰显（表按新日期在前排序）"""
+    day = r.get("信号日", "")
+    latest = r.get("_latest") or ""
+    if day and latest and day == latest:
+        return f'<span class="badge b-good">{esc(day)} 新</span>'
+    return f'<span style="color:var(--muted)">{esc(day)}</span>'
 
 
 def bogo_gallery(d):
@@ -329,7 +342,7 @@ def nav():
     """顶部锚点导航 —— 页面 7000px+, 没有导航要滚很久"""
     items = [("macro", "① 宏观"), ("gao", "阶段/宏观层"),
              ("sector", "② 板块"), ("sectors", "板块榜"), ("capex", "AI资本"),
-             ("stock", "③ 个股"), ("focus", "聚焦清单"), ("intraday", "日内信号"),
+             ("stock", "③ 个股"), ("intraday", "日内信号"),
              ("bogo", "波哥七维"), ("earn", "财报"), ("watch", "观察池"),
              ("ops", "④ 候选清单")]
     links = "".join(
@@ -638,7 +651,7 @@ def build(with_intraday=True, daily=None, refresh_sec=None) -> Path:
         + sec_sectors(sec_df) + sec_themes(theme_df) + sec_capex(capex_ev)
 
         + tier("stock", "③ 个股", "信号、形态与时机")
-        + sec_focus(keep, drop, intra_df) + sec_intraday(intra_df)
+        + sec_intraday(intra_df)
         + sec_premarket(pre_df) + sec_bogo(bogo)
         + sec_earnings(cal, eflags) + sec_watchlist(wl_df)
 
