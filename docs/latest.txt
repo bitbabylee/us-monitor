@@ -1,28 +1,28 @@
 ================================================
-  波哥信号 · 美股日报  2026-08-07 · 生成 08-09 06:12
+  波哥信号 · 美股日报  2026-08-07 · 生成 08-10 09:57
 ================================================
 【结论】仓位上限 100% · 阶段C1 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
-【候选】7 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:AAOI   EMA金叉     日内:🔴规避/止损
+【候选】8 只（形态+板块确认+无财报风险·未回测）
+  NASDAQ:LITE   箱体突破      日内:🔴规避/止损
+  NASDAQ:AAOI   EMA金叉     日内:⚪观望
   NYSE:LLY      EMA金叉     日内:🟢稳健买点
-  NASDAQ:QQQ    EMA金叉     日内:🟡警告:临近前高
-  NASDAQ:AXTI   箱体突破      日内:🔥强主升浪
-  NASDAQ:PLTR   口袋支点      日内:🟢突破买点
+  NASDAQ:QQQ    EMA金叉     日内:🟢稳健买点
+  NASDAQ:AXTI   箱体突破      日内:⚪观望
+  NASDAQ:PLTR   口袋支点      日内:⚪观望
   NYSE:SNOW     箱体突破      日内:⚪观望
-  AMEX:GDX      口袋支点      日内:🟢黄金买点
+  AMEX:GDX      口袋支点      日内:⚪观望
 【否决】
-  NASDAQ:RKLB   财报窗口✓
-  NASDAQ:LITE   财报窗口✓
+  NASDAQ:RKLB   板块背离
   NASDAQ:SPCX   板块背离
-【风险】财报临近 08-10 NASDAQ:RKLB✓
+【风险】无近端风险事件
 ------------------------------------------------
 【大盘】
   SPX 7758 (MA50+3.5%) · RSI 70⚠️偏热 · VIX 14.9
   风格: MTUM/MAGS 4.47 跌破20日均 → 抱团MAGS
   派发 ▁▂▄▃▂▄▄▃▅▆▆▅▅▇▆▆▆▇▆▅▂▁▁▁▁ (0) → 仓位100%
   阶段C1 资金共识 恐慌4/4 共识4/5 缺:近三日突破20日线伴随放
-  宏观 ✗ATR1484% ✗10Y4.66% ✅HYG/LQD0.7472 ✅USD/JPY157.74
+  宏观 ✗ATR1484% ✗10Y4.66% ✅HYG/LQD0.7472 ✅USD/JPY158.41
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+6.5% · NASDAQ:SOXX+1.4%
@@ -34,26 +34,22 @@
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
    NYSE:LLY      🌊EMA金叉     🟢稳健买点
-   NASDAQ:AXTI   📦箱体突破      🔥强主升浪
-   NASDAQ:PLTR   💡口袋支点      🟢突破买点
-   NASDAQ:SPCX   💡口袋支点      🔥强主升浪
-   AMEX:GDX      💡口袋支点      🟢黄金买点
+   NASDAQ:QQQ    🌊EMA金叉     🟢稳健买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:QQQ    🌊EMA金叉     🟡警告:临近前高
+   NASDAQ:RKLB   💡口袋支点      ⚪观望
+   NASDAQ:AAOI   🌊EMA金叉     ⚪观望
+   NASDAQ:AXTI   📦箱体突破      ⚪观望
+   NASDAQ:PLTR   💡口袋支点      ⚪观望
    NYSE:SNOW     📦箱体突破      ⚪观望
+   NASDAQ:SPCX   💡口袋支点      ⚪观望
+   AMEX:GDX      💡口袋支点      ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NASDAQ:AAOI   🌊EMA金叉     🔴规避/止损
- ▶ 财报窗口（信号作废）
-   NASDAQ:RKLB   💡口袋支点      ⚠️ 1日后(08-10)财✓
-   NASDAQ:LITE   📦箱体突破      ⚠️ 2日后(08-11)财✓
-  日内异动: NYSE:BE🔴  NASDAQ:AMAT🟢  NASDAQ:SMH🟢  NYSE:GEV🟢 
-            NYSE:CAT🔴  NYSE:NET🔴  NYSE:ANET🔴  NASDAQ:CRDO🔥 
-            NASDAQ:AMD🟢 
-  盘前±2%: NASDAQ:AXTI+2.1%
+   NASDAQ:LITE   📦箱体突破      🔴规避/止损
+  日内异动: NASDAQ:MSFT🟢  NYSE:NET🟢  NASDAQ:HOOD🟢  NASDAQ:AMD🟢 
+            NASDAQ:CIBR🟢 
+  盘前±2%: NASDAQ:AAOI+5.5% NASDAQ:INTC-4.4% NASDAQ:CRWD+4.3% NASDAQ:AXTI-3.6% NASDAQ:LITE-3.3% NASDAQ:SNDK+2.6% NYSE:SNOW+2.5% AMEX:GDX-2.4% NASDAQ:CIBR+2.2% NASDAQ:PLTR+2.1%
 ------------------------------------------------
 【财报7日】✓=已核官方 ?=仅yahoo/xlsx待核
-  08-10 周一  NASDAQ:RKLB✓
-  08-11 周二  NASDAQ:LITE✓
   08-12 周三  NASDAQ:NBIS✓
   08-13 周四  NASDAQ:AMAT✓
 ------------------------------------------------
