@@ -198,6 +198,15 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
         if wkly:
             L.append("  资金面周频(环境非信号):")
             L += ["  " + ln.lstrip() for ln in wkly["lines"]]
+        today_cn = dt.date.today()
+        rvs = [(dt.date.fromisoformat(d), s) for d, s in getattr(C, "CN_REVIEWS", [])]
+        due = [(d, s) for d, s in rvs if (d - today_cn).days >= -3]
+        if due:
+            L.append("  复评节点(到期强制重估):")
+            for d, s in due:
+                n = (d - today_cn).days
+                flag = "🔔到期" if n <= 3 else f"T-{n}"
+                L.append(f"  {d:%m-%d} {flag} {s}")
         L.append(thin)
 
     # ── 口径移到底部 ──
