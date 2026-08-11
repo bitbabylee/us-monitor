@@ -37,6 +37,13 @@ def main():
         shutil.copy(src_dir / "bogo.html", DOCS / "bogo.html")
     except Exception as exc:
         print(f"WARN: 波哥页 {exc}")
+    try:
+        from us_monitor import m15_bogo_cn
+        m15_bogo_cn.build_page()
+        shutil.copy(src_dir / "bogo_cn.html", DOCS / "bogo_cn.html")
+        shutil.copy(src_dir / "bogo.html", DOCS / "bogo.html")  # tabs四批合一主页,必须晚于m13的拷贝以覆盖其单页版
+    except Exception as exc:
+        print(f"WARN: 波哥A股页 {exc}")
     man = src_dir / "manual.html"
     if man.exists():
         shutil.copy(man, DOCS / "manual.html")
@@ -61,6 +68,13 @@ def main():
         (DOCS / "bogo").mkdir(exist_ok=True)
         for f in bogo_src.glob("*.png"):
             shutil.copy(f, DOCS / "bogo" / f.name)
+    cn_src = src_dir / "bogo_cn"
+    if cn_src.exists():
+        for sub in cn_src.iterdir():
+            if sub.is_dir():
+                (DOCS / "bogo_cn" / sub.name).mkdir(parents=True, exist_ok=True)
+                for f in sub.glob("*.png"):
+                    shutil.copy(f, DOCS / "bogo_cn" / sub.name / f.name)
 
     _write_history_index()
     print(f"✅ 站点已生成: docs/index.html (数据日 {day})")
