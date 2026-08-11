@@ -153,9 +153,13 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
             f'当日 {H.escape(r["当日%"])}%{link}</pre>'
             + (f'<img loading="lazy" src="{img_prefix}{H.escape(imgs[r["代码"]])}">'
                if r["代码"] in imgs else "") + "</div>")
+    src = d.get("source") or ""
+    rpt = f"{src[:2]}-{src[2:4]}" if len(src) >= 4 and src[:4].isdigit() else ""
     return (f'<div class="sec"><h1>{H.escape(label)}</h1>'
-            f'<div class="sub">{H.escape((d.get("title") or "")[:70])} · 来源 '
-            f'{H.escape(d.get("source") or "")} · 共 {len(rows)} 只'
+            f'<div class="sub">'
+            + (f'<b>报告日 {H.escape(rpt)}</b> · 最新信号 {H.escape(newest)} · ' if rpt else "")
+            + f'{H.escape((d.get("title") or "")[:70])} · 来源 '
+            f'{H.escape(src)} · 共 {len(rows)} 只'
             f'（强 {sum(1 for r in rows if r["信号"]=="strong")}）</div>'
             f'<table><tr><th class="l">信号</th><th class="l">代码</th>'
             f'<th class="l">名称</th><th class="l">信号日</th><th>当日%</th><th>Fit</th>'
