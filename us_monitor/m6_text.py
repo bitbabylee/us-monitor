@@ -27,7 +27,7 @@ from . import earnings
 from .data import fetch_daily, fetch_intraday, col, NY
 from . import (m1_macro, m2_sectors, m3_themes, m4_watchlist, m5_intraday,
                m7_gao, m8_alerts, m9_premarket, m10_camslim, m12_capex, m13_bogo,
-               m15_cn, m16_weekly)
+               m15_cn, m16_weekly, m17_optflow)
 from .run_all import compute_crosscheck, cross_check
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "dashboard"
@@ -62,7 +62,7 @@ def _ss(sig):
 
 
 def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
-            keep, drop, bogo, cal, pre_df, cn=None, wkly=None) -> str:
+            keep, drop, bogo, cal, pre_df, cn=None, wkly=None, opt=None) -> str:
     from . import tv
     tv.warm(C.all_daily_tickers())
     S = tv.symbol
@@ -175,6 +175,12 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
             L.append("  盘前±2%: " + " ".join(f"{S(r['代码'])}{r['涨跌']:+.1f}%" for _, r in mv.iterrows()))
     L.append(thin)
 
+    # ── 期权异动: 佐证层, 不进信号链 ──
+    if opt:
+        L.append("【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证")
+        L += opt["lines"]
+        L.append(thin)
+
     # ── 财报: 一天一行 ──
     nxt = [(d, tk) for d, tk in cal if (d - today_ny).days <= 7]
     if nxt:
@@ -262,12 +268,18 @@ def build(with_intraday=True) -> Path:
         except Exception as exc:
             wk = None
             print(f"【A股资金面周频】失败: {exc}")
+        print()
+        try:
+            opt = m17_optflow.run()
+        except Exception as exc:
+            opt = None
+            print(f"【期权异动】失败: {exc}")
     full_text = buf.getvalue()
 
     keep, drop = compute_crosscheck(sec_df, theme_df, wl_df)
     cal = earnings.upcoming(C.WATCHLIST, days=14)
     digest = _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
-                     keep, drop, bogo, cal, pre_df, cn, wk)
+                     keep, drop, bogo, cal, pre_df, cn, wk, opt)
 
     OUT_DIR.mkdir(exist_ok=True)
     date = col(daily, "Close", C.BENCHMARK).index[-1].strftime("%Y-%m-%d")
