@@ -35,7 +35,13 @@ table{border-collapse:collapse;width:100%;background:var(--sf);font-size:12px}
 th,td{border:1px solid var(--bd);padding:3px 6px;text-align:right;white-space:nowrap}
 th.l,td.l{text-align:left}
 tr.s td{font-weight:600}
-.new{background:#0ca30c22;border-radius:3px;padding:0 3px;font-size:11px}
+.tag{display:inline-block;padding:0 6px;border-radius:999px;font-size:11px;border:1px solid}
+.st{color:var(--good);border-color:var(--good)}
+.wk{color:var(--mut);border-color:var(--bd)}
+.new{color:var(--good);border-color:var(--good);font-weight:700}
+.old{color:var(--mut)}
+tr.hot td{background:#0ca30c14}
+.fitg{color:var(--good);font-weight:700}
 .blk{margin:12px 0;background:var(--sf);border:1px solid var(--bd);border-radius:6px;padding:8px}
 .blk pre{margin:0 0 6px;white-space:pre-wrap;font-size:12px}
 .blk img{max-width:100%;border-radius:4px}
@@ -111,14 +117,27 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
     days3 = sorted({r["信号日"] for r in rows}, reverse=True)[:3]
     newest = days3[0] if days3 else ""
     strong3 = [r for r in rows if r["信号"] == "strong" and r["信号日"] in days3]
+    def _day(r):
+        d0 = r["信号日"]
+        if d0 == newest:
+            return f'<span class="tag new">{H.escape(d0)} 新</span>'
+        return f'<span class="old">{H.escape(d0)}</span>'
+    def _fit(r):
+        try:
+            g = float(r["Fit"]) >= 4
+        except (TypeError, ValueError):
+            g = False
+        return f'<td class="fitg">{H.escape(r["Fit"])}</td>' if g else f'<td>{H.escape(r["Fit"])}</td>'
+    def _cls(r):
+        c = ("s" if r["信号"] == "strong" else "") + (" hot" if r["信号日"] == newest else "")
+        return f' class="{c.strip()}"' if c.strip() else ""
     tr = "".join(
-        f'<tr{" class=s" if r["信号"]=="strong" else ""}>'
-        f'<td class="l">{H.escape(r["信号"])}</td>'
+        f'<tr{_cls(r)}>'
+        f'<td class="l"><span class="tag {"st" if r["信号"]=="strong" else "wk"}">{H.escape(r["信号"])}</span></td>'
         f'<td class="l"><b>{H.escape(r["代码"])}</b></td>'
         f'<td class="l">{H.escape(r["中文名"])}</td>'
-        f'<td class="l">{H.escape(r["信号日"])}'
-        + (' <span class="new">新</span>' if r["信号日"] == newest else "")
-        + f'</td><td>{H.escape(r["当日%"])}</td><td>{H.escape(r["Fit"])}</td>'
+        f'<td class="l">{_day(r)}</td>'
+        f'<td>{H.escape(r["当日%"])}</td>{_fit(r)}'
         f'<td>{H.escape(r["胜率"])}</td><td>{H.escape(r["CA%"])}</td>'
         f'<td>{H.escape(r["Pnls%"])}</td>'
         f'<td class="l" style="white-space:normal">{H.escape(r["主题"])}</td></tr>'
