@@ -121,10 +121,8 @@ def load() -> dict:
             if d["rows"]:
                 try:
                     from .m6_dashboard import OUT_DIR
-                    # 只导当日强信号的原图（全导 34 张 6MB, 且弱信号/旧日期用处不大）
-                    days3 = sorted({r["信号日"] for r in d["rows"]}, reverse=True)[:3]
-                    want = {r["代码"] for r in d["rows"]
-                            if r["信号"] == "strong" and r["信号日"] in days3}
+                    # 2026-08-11 起全清单导图(强+弱,用户要求);同名png缓存,增量渲染
+                    want = {r["代码"] for r in d["rows"]}
                     d["images"] = export_pages(pdf, OUT_DIR / "bogo", only=want)
                 except Exception as exc:
                     print(f"WARN: 导出波哥单页图失败 {exc}", file=sys.stderr)

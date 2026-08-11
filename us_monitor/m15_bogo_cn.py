@@ -71,9 +71,7 @@ def load() -> dict:
         if pdf:
             try:
                 d = m13.parse(pdf)
-                days3 = sorted({r["信号日"] for r in d["rows"]}, reverse=True)[:3]
-                want = {r["代码"] for r in d["rows"]
-                        if r["信号"] == "strong" and r["信号日"] in days3}
+                want = {r["代码"] for r in d["rows"]}   # 全清单导图(强+弱)
                 try:
                     d["images"] = m13.export_pages(pdf, OUT_DIR / "bogo_cn" / key, only=want)
                 except Exception as exc:
@@ -116,7 +114,7 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
     imgs = d.get("images", {})
     days3 = sorted({r["信号日"] for r in rows}, reverse=True)[:3]
     newest = days3[0] if days3 else ""
-    strong3 = [r for r in rows if r["信号"] == "strong" and r["信号日"] in days3]
+    detail_rows = rows   # 明细图=全清单(强+弱), 2026-08-11 用户要求
     def _day(r):
         d0 = r["信号日"]
         if d0 == newest:
@@ -143,7 +141,7 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
         f'<td class="l" style="white-space:normal">{H.escape(r["主题"])}</td></tr>'
         for r in rows)
     blocks = []
-    for r in strong3:
+    for r in detail_rows:
         s_, url = _tvurl(r["代码"])
         link = f' · <a href="{url}" target="_blank">TV↗</a>' if url else ""
         blocks.append(
@@ -164,7 +162,7 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
             f'<table><tr><th class="l">信号</th><th class="l">代码</th>'
             f'<th class="l">名称</th><th class="l">信号日</th><th>当日%</th><th>Fit</th>'
             f'<th>胜率</th><th>CA%</th><th>Pnls%</th><th class="l">主题</th></tr>{tr}</table>'
-            + (f'<h1 style="margin-top:14px;font-size:14px">近3日强信号 · 明细图（{len(blocks)}）</h1>'
+            + (f'<h1 style="margin-top:14px;font-size:14px">全清单 · 明细图 强+弱（{len(blocks)}）</h1>'
                + "".join(blocks) if blocks else "")
             + "</div>")
 
