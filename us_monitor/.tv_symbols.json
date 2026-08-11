@@ -18,6 +18,7 @@
  "CAT": "NYSE:CAT",
  "CEG": "NASDAQ:CEG",
  "CIBR": "NASDAQ:CIBR",
+ "COHU": "NASDAQ:COHU",
  "COIN": "NASDAQ:COIN",
  "CRDO": "NASDAQ:CRDO",
  "CRWD": "NASDAQ:CRWD",
@@ -31,7 +32,9 @@
  "EFXT": "NYSE:EFXT",
  "ESTC": "NYSE:ESTC",
  "ETN": "NYSE:ETN",
+ "FORM": "NASDAQ:FORM",
  "FRO": "NYSE:FRO",
+ "FTAI": "NASDAQ:FTAI",
  "GDX": "AMEX:GDX",
  "GEV": "NYSE:GEV",
  "GFS": "NASDAQ:GFS",
@@ -113,5 +116,6 @@
  "XLV": "AMEX:XLV",
  "XLY": "AMEX:XLY",
  "XYZ": "NYSE:XYZ",
+ "YM1!": "NASDAQ:YM1!",
  "ZS": "NASDAQ:ZS"
 }
