@@ -26,7 +26,8 @@ from . import config as C
 from . import earnings
 from .data import fetch_daily, fetch_intraday, col, NY
 from . import (m1_macro, m2_sectors, m3_themes, m4_watchlist, m5_intraday,
-               m7_gao, m8_alerts, m9_premarket, m10_camslim, m12_capex, m13_bogo)
+               m7_gao, m8_alerts, m9_premarket, m10_camslim, m12_capex, m13_bogo,
+               m15_cn)
 from .run_all import compute_crosscheck, cross_check
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "dashboard"
@@ -61,7 +62,7 @@ def _ss(sig):
 
 
 def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
-            keep, drop, bogo, cal, pre_df) -> str:
+            keep, drop, bogo, cal, pre_df, cn=None) -> str:
     from . import tv
     tv.warm(C.all_daily_tickers())
     S = tv.symbol
@@ -186,6 +187,16 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
             L.append(f"  {d:%m-%d} 周{wk[d.weekday()]}  " + " ".join(f"{S(x)}{vfy(x)}" for x in v))
         L.append(thin)
 
+    # ── A股重演: 五条件判定, 一条一行 ──
+    if cn:
+        L.append(f"【A股重演】反转/反弹五条件 (截至{cn['date']}·独立体系)")
+        L.append(f"  判定: {cn['verdict']}  反转条件 {cn['score']}/{cn['valid']}")
+        for name, ok, detail in cn["checks"]:
+            mark = "？" if ok is None else ("✅" if bool(ok) else "✗")
+            L.append(f"  {mark}{name} {detail}")
+        L.append("  四棒5日α: " + " ".join(f"{n}{a:+.0f}" for n, a in cn["batons"]))
+        L.append(thin)
+
     # ── 口径移到底部 ──
     L += ["【口径】仓位=CAMSLIM 阶段=高老师 宏观=Brendon 均独立未互证;",
           "  个股=日线×日内同源串联; 波哥独立成页与本报无交互",
@@ -227,12 +238,18 @@ def build(with_intraday=True) -> Path:
             m12_capex.run(refresh=True)
         except Exception as exc:
             print(f"【AI 资本周期看门狗】未验证: {exc}")
+        print()
+        try:
+            cn = m15_cn.run()
+        except Exception as exc:
+            cn = None
+            print(f"【A股重演监控】失败: {exc}")
     full_text = buf.getvalue()
 
     keep, drop = compute_crosscheck(sec_df, theme_df, wl_df)
     cal = earnings.upcoming(C.WATCHLIST, days=14)
     digest = _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
-                     keep, drop, bogo, cal, pre_df)
+                     keep, drop, bogo, cal, pre_df, cn)
 
     OUT_DIR.mkdir(exist_ok=True)
     date = col(daily, "Close", C.BENCHMARK).index[-1].strftime("%Y-%m-%d")
