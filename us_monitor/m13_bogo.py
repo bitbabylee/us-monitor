@@ -45,13 +45,17 @@ def parse(pdf: Path) -> dict:
         title = (page.extract_text() or "").split("\n")[0]
         words = page.extract_words()
 
-    lines = defaultdict(list)
-    for w in words:
-        lines[round(w["top"] / 3)].append(w)
+    # 行聚类: 按 top 间距切行(旧版 round(top/3) 分桶会把边界行劈两半丢行, 0810 ch1520 的 159363 教训)
+    clusters = []
+    for w in sorted(words, key=lambda w: w["top"]):
+        if clusters and abs(w["top"] - clusters[-1][0]) <= 2.5:
+            clusters[-1][1].append(w)
+        else:
+            clusters.append((w["top"], [w]))
 
     rows, tag = [], None
-    for k in sorted(lines):
-        line = sorted(lines[k], key=lambda w: w["x0"])
+    for _, ws in clusters:
+        line = sorted(ws, key=lambda w: w["x0"])
         first = line[0]["text"]
         if first in ("strong", "weak"):
             tag = first
@@ -70,6 +74,9 @@ def parse(pdf: Path) -> dict:
         cell["信号"] = tag
         rows.append(cell)
 
+    n_claim = re.search(r"全清单(\d+)只", title)
+    if n_claim and int(n_claim.group(1)) != len(rows):
+        print(f"WARN: {pdf.name} 解析{len(rows)}行 != 标题全清单{n_claim.group(1)}只(疑似丢行)", file=sys.stderr)
     m = re.search(r"US盘后\s*([\d-]+)", title)
     return {"title": title, "date": m.group(1) if m else None,
             "source": pdf.name, "rows": rows}
