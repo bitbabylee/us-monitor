@@ -107,6 +107,10 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
     L += ["【大盘】",
           f"  SPX {m1['spx']:.0f} (MA50{m1['dev50']:+.1f}%) · RSI {m1['rsi']:.0f}{hot} · VIX {m1['vix']:.1f}",
           f"  风格: MTUM/MAGS {m1['mtum_mags']:.2f} {'跌破' if m1['regime']=='MAGS' else '站上'}20日均 → {regime}"]
+    if m1.get("factors"):
+        L.append("  日性质(因子ETF超额·非纯因子): "
+                 + " ".join(f"{n}{v:+.1f}" for n, v in m1["factors"].items())
+                 + f" → {m1['day_nature']}")
     spark = "".join("▁▂▃▄▅▆▇█"[min(int(n), 7)] for _, n in cam["traj"][-25:])
     L.append(f"  派发 {spark} ({cam['dist_n']:g}/吸{cam.get('acc_n', '?')}) → 仓位{cam['exposure']}")
     miss = [n.replace("(必选)", "*") for n, ok, _ in gao["consensus"] if not ok]

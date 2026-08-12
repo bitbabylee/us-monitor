@@ -71,7 +71,8 @@ WATCHLIST = [
 def all_daily_tickers():
     """全部日线标的（run_all / m6 / live 共用, 别再各自维护清单）"""
     return (list(MACRO_TICKERS.values()) + [BENCHMARK] + list(SECTORS) + WATCHLIST
-            + [t for m in THEMES.values() for t in m] + GAO_EXTRA + CTA_PROXY_ETFS)
+            + [t for m in THEMES.values() for t in m] + GAO_EXTRA + CTA_PROXY_ETFS
+            + ["SPHB", "USMV", "VLUE"])   # 因子行(MTUM已在宏观池)
 
 
 # 个股 → 板块ETF / 主题 的映射（cross-check 用；没写的自动归 XLK）
@@ -267,3 +268,6 @@ CN_REVIEWS = [
     ("2026-09-09", "苹果发布会·iPhone18逻辑验真(果链腿去留)"),
     ("2026-10-30", "Q3财报兑现+中期选举前·跟随整体降仓评估"),
 ]
+
+# ── 日性质因子行(借鉴沈老板 Pure Factor 榜): 因子ETF对SPY的当日超额 ──
+FACTOR_ETFS = {"MTUM": "动量", "SPHB": "高贝", "USMV": "低波", "VLUE": "价值"}

@@ -64,6 +64,12 @@ def run(daily: pd.DataFrame) -> pd.DataFrame:
             close = col(daily, "Close", tk)
             high, low = col(daily, "High", tk), col(daily, "Low", tk)
             open_, vol = col(daily, "Open", tk), col(daily, "Volume", tk)
+            # 五序列共同对齐: 各字段NaN模式可能不同(批量下载日期并集),
+            # 不对齐会让布尔掩码索引错位崩溃
+            sub = pd.concat({"c": close, "h": high, "l": low,
+                             "o": open_, "v": vol}, axis=1).dropna()
+            close, high, low = sub["c"], sub["h"], sub["l"]
+            open_, vol = sub["o"], sub["v"]
             if len(close) < 30:
                 continue
         except (KeyError, IndexError):
