@@ -8,9 +8,17 @@ BENCHMARK = "SPY"          # 超额 Alpha 的基准
 
 # ── 数据源 ──────────────────────────────────────────
 DATA_SOURCE = "ib"         # "ib" = IB优先(TWS没开自动降级yfinance) / "yf" = 只用yfinance
-IB_PORTS = [7496, 7497, 4001, 4002]   # TWS实盘/模拟, Gateway实盘/模拟, 依次探测
+IB_PORTS = [7496, 7497, 4001, 4002]   # (旧 TWS Socket API 路径, 保留兼容; Lite账户不可用)
 IB_CLIENT_ID = 27          # 别和你其他 IB 脚本的 clientId 撞车
 IB_PACING_SLEEP = 0.35     # 每个历史请求间隔秒数（IB pacing 限速保护）
+
+# ── Client Portal Web API (2026-08-12 起主用) ──
+# 走 clientportal.gw 本地网关(REST), Lite/Pro 账户都支持, 不需要 TWS/IB Gateway。
+# 启动: cd ~/Downloads/clientportal.gw && bash bin/run.sh root/conf.yaml
+# 然后浏览器 https://localhost:5055 登录一次(会话约几小时过期, 需重登)
+IBW_BASE = "https://localhost:5055/v1/api"   # 5000 被 macOS 隔空播放接收器占用, 改 5055
+IBW_TIMEOUT = 20
+IBW_PACING_SLEEP = 0.15    # Web API 限速较宽松
 
 # ── 模块1：大盘量化诊断 ─────────────────────────────
 MACRO_TICKERS = {
@@ -271,3 +279,40 @@ CN_REVIEWS = [
 
 # ── 日性质因子行(借鉴沈老板 Pure Factor 榜): 因子ETF对SPY的当日超额 ──
 FACTOR_ETFS = {"MTUM": "动量", "SPHB": "高贝", "USMV": "低波", "VLUE": "价值"}
+
+# ── 模块19：全市场主题雷达（对标沈老板主题榜, z-score 排序）──
+# 覆盖池外的主题, 解决"只看得见观察池、看不见钱去哪"的盲区。
+# 只做发现与排序, 不产生买卖信号; 个股仍只在 WATCHLIST 里出信号。
+RADAR_ETFS = {
+    # 硬资产/资源
+    "URA": "铀核能", "COPX": "铜矿", "SIL": "白银矿", "SILJ": "小白银矿",
+    "REMX": "稀土", "LIT": "锂电池", "XME": "金属矿业", "PICK": "全球矿业",
+    "SLX": "钢铁", "WOOD": "木材", "MOO": "农业", "DBA": "农产品",
+    "GDXJ": "小金矿", "SLV": "白银", "GLD": "黄金", "USO": "原油",
+    "UNG": "天然气", "DBC": "大宗商品",
+    # 科技/AI 细分
+    "QTUM": "量子计算", "IGV": "软件", "SKYY": "云计算", "HACK": "网络安全",
+    "BOTZ": "机器人", "ROBO": "自动化", "AIQ": "AI主题", "WCLD": "云软件",
+    "ARKQ": "自动驾驶科技", "PRNT": "3D打印", "FINX": "金融科技",
+    # 能源转型/电力
+    "ICLN": "清洁能源", "FAN": "风电", "NLR": "核能", "PBW": "新能源创新",
+    "TAN": "太阳能",
+    # 出行/工业/地产
+    "DRIV": "电动车", "KARS": "电动出行", "PAVE": "基建", "ITB": "住宅建筑",
+    "XHB": "地产链", "JETS": "航空", "XRT": "零售",
+    # 医疗/生物
+    "XBI": "生物科技", "ARKG": "基因组", "IHI": "医疗器械", "XHE": "医疗设备",
+    "PPH": "制药",
+    # 金融/加密
+    "KRE": "区域银行", "KBE": "银行", "BITQ": "加密公司", "BLOK": "区块链",
+    # 太空/军工/娱乐
+    "ARKX": "太空", "UFO": "卫星", "ESPO": "电竞", "HERO": "游戏",
+    # 风格/宽基(参照系)
+    "IWM": "小盘", "IPO": "新股", "MAGS": "七巨头", "SMH": "半导体",
+    "MTUM": "动量", "SPHB": "高贝", "USMV": "低波", "VLUE": "价值",
+    "TLT": "长债", "UUP": "美元", "MJ": "大麻",
+}
+RADAR_Z_WIN = 60           # z-score 的历史波动窗口(日)
+RADAR_RS_SHORT = 10        # 短窗 RS(≈2周)
+RADAR_RS_LONG = 50         # 长窗 RS(≈10周)
+RADAR_TOP_N = 5            # 日报里展示的头尾数量

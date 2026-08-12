@@ -27,7 +27,7 @@ from . import earnings
 from .data import fetch_daily, fetch_intraday, col, NY
 from . import (m1_macro, m2_sectors, m3_themes, m4_watchlist, m5_intraday,
                m7_gao, m8_alerts, m9_premarket, m10_camslim, m12_capex, m13_bogo,
-               m15_cn, m16_weekly, m17_optflow, m18_trend)
+               m15_cn, m16_weekly, m17_optflow, m18_trend, m19_radar)
 from .run_all import compute_crosscheck, cross_check
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "dashboard"
@@ -63,7 +63,7 @@ def _ss(sig):
 
 def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
             keep, drop, bogo, cal, pre_df, cn=None, wkly=None, opt=None,
-            trd=None) -> str:
+            trd=None, rad=None) -> str:
     from . import tv
     tv.warm(C.all_daily_tickers())
     S = tv.symbol
@@ -119,6 +119,12 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
     L.append("  宏观 " + " ".join(f"{'✅' if ok else '✗'}{name.split()[0]}{cur}"
                                  for _, name, cur, _, _, ok, _ in gao["macro"]))
     L.append(thin)
+
+    # ── 全市场主题雷达: 池外资金去向, 只做发现 ──
+    if rad and rad["lines"]:
+        L.append("【全市场主题雷达】65主题ETF·z分排序(池外发现·不给信号)")
+        L += rad["lines"]
+        L.append(thin)
 
     # ── 板块: 一类一行, 主题竖排 ──
     strong = sec_df[sec_df["诊断"].str.contains("🔥")]
@@ -293,12 +299,18 @@ def build(with_intraday=True) -> Path:
         except Exception as exc:
             trd = None
             print(f"【走势中频】失败: {exc}")
+        print()
+        try:
+            rad = m19_radar.run(daily)
+        except Exception as exc:
+            rad = None
+            print(f"【主题雷达】失败: {exc}")
     full_text = buf.getvalue()
 
     keep, drop = compute_crosscheck(sec_df, theme_df, wl_df)
     cal = earnings.upcoming(C.WATCHLIST, days=14)
     digest = _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
-                     keep, drop, bogo, cal, pre_df, cn, wk, opt, trd)
+                     keep, drop, bogo, cal, pre_df, cn, wk, opt, trd, rad)
 
     OUT_DIR.mkdir(exist_ok=True)
     date = col(daily, "Close", C.BENCHMARK).index[-1].strftime("%Y-%m-%d")
