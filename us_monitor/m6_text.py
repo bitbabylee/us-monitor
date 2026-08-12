@@ -27,7 +27,7 @@ from . import earnings
 from .data import fetch_daily, fetch_intraday, col, NY
 from . import (m1_macro, m2_sectors, m3_themes, m4_watchlist, m5_intraday,
                m7_gao, m8_alerts, m9_premarket, m10_camslim, m12_capex, m13_bogo,
-               m15_cn, m16_weekly, m17_optflow)
+               m15_cn, m16_weekly, m17_optflow, m18_trend)
 from .run_all import compute_crosscheck, cross_check
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "dashboard"
@@ -62,7 +62,8 @@ def _ss(sig):
 
 
 def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
-            keep, drop, bogo, cal, pre_df, cn=None, wkly=None, opt=None) -> str:
+            keep, drop, bogo, cal, pre_df, cn=None, wkly=None, opt=None,
+            trd=None) -> str:
     from . import tv
     tv.warm(C.all_daily_tickers())
     S = tv.symbol
@@ -175,6 +176,12 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
             L.append("  盘前±2%: " + " ".join(f"{S(r['代码'])}{r['涨跌']:+.1f}%" for _, r in mv.iterrows()))
     L.append(thin)
 
+    # ── 走势中频: 只报广度与迁移, 全表看控制台 ──
+    if trd:
+        L.append("【走势中频】Weinstein阶段·周~月尺度(中美混池)")
+        L += trd["lines"]
+        L.append(thin)
+
     # ── 期权异动: 佐证层, 不进信号链 ──
     if opt:
         L.append("【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证")
@@ -274,12 +281,18 @@ def build(with_intraday=True) -> Path:
         except Exception as exc:
             opt = None
             print(f"【期权异动】失败: {exc}")
+        print()
+        try:
+            trd = m18_trend.run(daily)
+        except Exception as exc:
+            trd = None
+            print(f"【走势中频】失败: {exc}")
     full_text = buf.getvalue()
 
     keep, drop = compute_crosscheck(sec_df, theme_df, wl_df)
     cal = earnings.upcoming(C.WATCHLIST, days=14)
     digest = _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
-                     keep, drop, bogo, cal, pre_df, cn, wk, opt)
+                     keep, drop, bogo, cal, pre_df, cn, wk, opt, trd)
 
     OUT_DIR.mkdir(exist_ok=True)
     date = col(daily, "Close", C.BENCHMARK).index[-1].strftime("%Y-%m-%d")
