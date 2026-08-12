@@ -70,13 +70,28 @@ def _retrace(px, swing_hi, swing_lo):
     return max(0.0, (swing_hi - px) / (swing_hi - swing_lo) * 100)
 
 
-def _analyze(name, c):
+def _analyze(name, c, tk=None):
     stage, slope = _stage(c)
     struct, sh, sl = _structure(c)
     r = _retrace(c.iloc[-1], sh, sl)
     warn = "⚠️结构受损" if (r is not None and r > 62 and stage.startswith("S2")) else ""
-    return {"name": name, "stage": stage, "slope": slope, "struct": struct,
-            "retrace": r, "warn": warn}
+    # 红绿灯: 把4个技术字段压成1个动作档位
+    if stage.startswith("S2") and (r is None or r <= 38) and struct != "LH/LL":
+        light, why = "🟢", "趋势健康·浅回撤"
+    elif stage.startswith("S2") and not warn:
+        light = "🟡"
+        why = ("高点仍在走低·结构未转多" if struct == "LH/LL" and (r is None or r <= 38)
+               else f"回撤{r:.0f}%偏深" if r is not None else "结构待明")
+    elif stage.startswith("S2"):
+        light, why = "🔴", f"名义上升但已回吐{r:.0f}%"
+    elif stage.startswith("S1"):
+        light, why = "🟡", "筑底中·未确认"
+    else:
+        light, why = "🔴", ("筑顶·MA150转平/向下" if stage.startswith("S3") else "下降趋势")
+    from . import tv
+    return {"name": name, "sym": tv.symbol(tk or name), "stage": stage,
+            "slope": slope, "struct": struct,
+            "retrace": r, "warn": warn, "light": light, "why": why}
 
 
 def run(daily=None) -> dict:
@@ -109,7 +124,7 @@ def run(daily=None) -> dict:
         try:
             c = dfc["Close"][tk].dropna()
             if len(c) >= 170:
-                rows.append(_analyze(C.CN_NAMES.get(tk, tk), c))
+                rows.append(_analyze(C.CN_NAMES.get(tk, tk), c, tk))
         except Exception:
             pass
 
@@ -128,26 +143,33 @@ def run(daily=None) -> dict:
                for k in ("S1", "S2", "S3", "S4")}
     pct2 = breadth["S2"] * 100 // n
 
+    buckets = {k: [r for r in rows if r["light"] == k] for k in ("🟢", "🟡", "🔴")}
+    key = lambda r: (r["retrace"] if r["retrace"] is not None else 99)
+
     print("=" * 96)
-    print("【走势中频 — Weinstein阶段×摆动结构×波段回撤】(周~月尺度)")
-    print(f"  广度: S2上升 {breadth['S2']} | S1筑底 {breadth['S1']} | "
-          f"S3筑顶 {breadth['S3']} | S4下降 {breadth['S4']}  (S2占比{pct2}%)")
+    print("【走势中频 — 三档红绿灯】(周~月尺度; 🟢可买区 🟡等待 🔴回避)")
+    print(f"  大环境: 上升趋势占比 {pct2}%  (S2上升{breadth['S2']} S1筑底{breadth['S1']} "
+          f"S3筑顶{breadth['S3']} S4下降{breadth['S4']})")
     if moves:
-        print("  迁移: " + " · ".join(moves))
-    for r in sorted(rows, key=lambda x: x["stage"]):
-        rt = f"回撤{r['retrace']:.0f}%" if r["retrace"] is not None else ""
-        print(f"  {r['name']:<10} {r['stage']}  {r['struct']:<6} {rt:<8} "
-              f"MA150斜率{r['slope']:+.1f}% {r['warn']}")
+        print("  📣 本期变化: " + " · ".join(moves))
+    for k, title in (("🟢", "可买区 — 趋势健康、回撤浅，日线信号可执行"),
+                     ("🟡", "等待区 — 趋势在但位置不好/未确认，只观察"),
+                     ("🔴", "回避区 — 趋势失效或名存实亡，日线信号一律降级")):
+        b = sorted(buckets[k], key=key)
+        print(f"  {k} {title}  ({len(b)})")
+        for r in b:
+            tag = f"{r['sym']}" + (f"({r['name']})" if r["sym"].split(":")[-1] != r["name"] else "")
+            print(f"     {tag:<20} {r['why']}")
+    print("  口径: S2/S1/S3/S4=Weinstein阶段(MA150) · 回撤=最近一段涨浪回吐比例")
     print("=" * 96)
 
-    dmg = [r["name"] for r in rows if r["warn"]]
-    lines = [f"  广度 S2:{breadth['S2']} S1:{breadth['S1']} "
-             f"S3:{breadth['S3']} S4:{breadth['S4']} (S2占比{pct2}%)"]
-    if moves:
-        lines.append("  迁移: " + " · ".join(moves[:6]))
-    if dmg:
-        lines.append("  ⚠️S2结构受损(回撤>62%): " + " ".join(dmg[:6]))
-    return {"lines": lines, "rows": rows, "moves": moves}
+    nm = lambda k: " ".join(
+        r["sym"] + (f"({r['name']})" if r["sym"].split(":")[-1] != r["name"] else "")
+        for r in sorted(buckets[k], key=key))
+    lines = [f"  上升趋势占比 {pct2}%" + (f" · 📣{' · '.join(moves[:3])}" if moves else ""),
+             f"  🟢可买区({len(buckets['🟢'])}): " + (nm("🟢") or "无"),
+             f"  🔴回避区({len(buckets['🔴'])}): " + (nm("🔴") or "无")]
+    return {"lines": lines, "rows": rows, "moves": moves, "buckets": buckets}
 
 
 if __name__ == "__main__":

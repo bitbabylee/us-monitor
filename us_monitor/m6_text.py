@@ -305,11 +305,21 @@ def build(with_intraday=True) -> Path:
 
     (OUT_DIR / "latest.txt").write_text(digest, encoding="utf-8")
 
+    def _clickable(escaped: str) -> str:
+        """把正文里所有 '交易所:代码' 变成 TradingView 图表链接(转义后再替换, 防注入)。"""
+        import re as _re
+        return _re.sub(
+            r"\b([A-Z]{2,6}):([A-Z0-9]{1,6})\b",   # NASDAQ 有6个字母, 别写成{2,5}
+            lambda m: (f'<a href="https://www.tradingview.com/chart/?symbol='
+                       f'{m.group(1)}%3A{m.group(2)}" target="_blank" '
+                       f'rel="noopener" style="color:inherit">{m.group(0)}</a>'),
+            escaped)
+
     def page(title, links, text):
         return (f'<meta charset="utf-8">'
                 f'<meta name="viewport" content="width=device-width,initial-scale=1">'
                 f'<title>{title}</title><style>{WRAP_CSS}</style>'
-                f'<pre>{links}\n\n' + html.escape(text) + "</pre>")
+                f'<pre>{links}\n\n' + _clickable(html.escape(text)) + "</pre>")
 
     out = OUT_DIR / f"dashboard_{date}.html"
     out.write_text(page(f"波哥信号 {date}",

@@ -72,8 +72,20 @@ def warm(tickers):
     return _MAP
 
 
+def _cn(tk: str):
+    """A股 yfinance 后缀 → TradingView 交易所前缀; 非A股返回 None。"""
+    if tk.endswith(".SZ"):
+        return f"SZSE:{tk[:-3]}"
+    if tk.endswith(".SS"):
+        return f"SSE:{tk[:-3]}"
+    return None
+
+
 def symbol(tk: str) -> str:
     """返回 'NASDAQ:AAPL' 形式"""
+    cn = _cn(tk)
+    if cn:
+        return cn
     if tk in _MAP:
         return _MAP[tk]
     if tk in SPECIAL:
