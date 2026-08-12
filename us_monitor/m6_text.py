@@ -108,7 +108,7 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
           f"  SPX {m1['spx']:.0f} (MA50{m1['dev50']:+.1f}%) · RSI {m1['rsi']:.0f}{hot} · VIX {m1['vix']:.1f}",
           f"  风格: MTUM/MAGS {m1['mtum_mags']:.2f} {'跌破' if m1['regime']=='MAGS' else '站上'}20日均 → {regime}"]
     spark = "".join("▁▂▃▄▅▆▇█"[min(int(n), 7)] for _, n in cam["traj"][-25:])
-    L.append(f"  派发 {spark} ({cam['dist_n']:g}) → 仓位{cam['exposure']}")
+    L.append(f"  派发 {spark} ({cam['dist_n']:g}/吸{cam.get('acc_n', '?')}) → 仓位{cam['exposure']}")
     miss = [n.replace("(必选)", "*") for n, ok, _ in gao["consensus"] if not ok]
     L.append(f"  阶段{gao['phase']} 恐慌{gao['p_score']}/4 共识{gao['c_score']}/5"
              + (f" 缺:{miss[0][:12]}" if miss else ""))
@@ -207,7 +207,9 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
         for name, ok, detail in cn["checks"]:
             mark = "？" if ok is None else ("✅" if bool(ok) else "✗")
             L.append(f"  {mark}{name} {detail}")
-        L.append("  四棒5日α: " + " ".join(f"{n}{a:+.0f}" for n, a in cn["batons"]))
+        L.append("  四棒5日α(领/改/弱/落·↑↓=加速): "
+                 + " ".join(f"{n}{a:+.0f}{q}{'↑' if acc > 0 else '↓'}"
+                            for n, a, q, acc in cn["batons"]))
         if wkly:
             L.append("  资金面周频(环境非信号):")
             L += ["  " + ln.lstrip() for ln in wkly["lines"]]

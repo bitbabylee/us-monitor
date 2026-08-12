@@ -122,13 +122,30 @@ def _c5_anchor(df):
 
 
 def _batons(df):
-    """四棒+探测器: 等权 5 日收益 - 沪深300 同期 = 超额。"""
-    bench = _ret(_close(df, C.CN_BENCH), C.CN_RS_N)
+    """四棒+探测器: 等权超额 + RRG式象限(RS_60水平 × RS_5动量) + 5日加速度。
+    象限: 领=双正 改=长负短正 弱=长正短负 落=双负 (借鉴沈老板 Leadership 四象限)"""
+    bench = _close(df, C.CN_BENCH)
+
+    def alpha(members, n, off=0):
+        rets = []
+        for t in members:
+            s = _close(df, t)
+            if s is None or len(s) <= n + off + 1:
+                continue
+            s2 = s.iloc[:-off] if off else s
+            b2 = bench.iloc[:-off] if off else bench
+            rets.append(_ret(s2, n) - _ret(b2, n))
+        return sum(rets) / len(rets) if rets else float("nan")
+
     out = []
     for name, members in C.CN_BATONS.items():
-        rets = [_ret(_close(df, t), C.CN_RS_N) for t in members if _close(df, t) is not None]
-        alpha = (sum(rets) / len(rets) - bench) if rets else float("nan")
-        out.append((name, alpha))
+        a5 = alpha(members, C.CN_RS_N)
+        a60 = alpha(members, 60)
+        accel = a5 - alpha(members, C.CN_RS_N, off=C.CN_RS_N)
+        quad = ("领" if a60 > 0 and a5 > 0 else
+                "改" if a5 > 0 else
+                "弱" if a60 > 0 else "落")
+        out.append((name, a5, quad, accel))
     return out
 
 
@@ -146,6 +163,7 @@ def run(df=None) -> dict:
                "反弹定性" if score <= 1 else "中性观察")
     batons = _batons(df)
     lead = max((b for b in batons if b[1] == b[1]), key=lambda x: x[1], default=None)
+    fmt_b = lambda b: f"{b[0]}{b[1]:+.1f}%{b[2]}{'↑' if b[3] > 0 else '↓'}"
 
     date = _close(df, C.CN_INDEX)
     date = date.index[-1].strftime("%m-%d") if date is not None else "?"
@@ -155,7 +173,7 @@ def run(df=None) -> dict:
         mark = "？" if ok is None else ("✅" if bool(ok) else "✗")
         print(f"  {mark} {name}  {detail}")
     print(f"  → 判定: {verdict}（反转条件 {score}/{valid}）")
-    print("  四棒5日超额: " + "  ".join(f"{n}{a:+.1f}%" for n, a in batons))
+    print("  四棒5日超额(象限/加速): " + "  ".join(fmt_b(b) for b in batons))
     if lead:
         note = "⚠️探测器领跑=新逻辑苗头" if lead[0] == "探测" else f"当前棒:{lead[0]}"
         print(f"  {note} · 重演序: PCB→光→液冷→存储")
