@@ -182,7 +182,7 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
 
     # ── 走势中频: 只报广度与迁移, 全表看控制台 ──
     if trd:
-        L.append("【走势中频】Weinstein阶段·周~月尺度(中美混池)")
+        L.append("【走势中频】只给资格·不给买点(时机仍看日线形态×日内)")
         L += trd["lines"]
         L.append(thin)
 

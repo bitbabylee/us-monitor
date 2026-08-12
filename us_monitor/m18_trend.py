@@ -23,6 +23,9 @@ from .data import col
 
 STATE = Path(__file__).parent / ".trend_state.json"
 SWING_W = 5          # 分形窗口: ±5 日极值为摆动点
+EXT_CHASE = 5.0      # 高于20日枢轴(箱顶)此% → 追高区(欧奈尔: 枢轴上方5%内才可买)
+# 注: 用"距枢轴"而非"距EMA21"判追高——突破票天然远离均线, EMA21口径会把
+# 刚站上买点的票误判成追高(实测 NET 距EMA21+9% 但距枢轴仅-1.2%)。
 FLAT = 0.5           # MA150 20日斜率 ±此% 内视为走平
 US_EXTRA = ["SPY", "QQQ", "SMH"]
 
@@ -74,10 +77,16 @@ def _analyze(name, c, tk=None):
     stage, slope = _stage(c)
     struct, sh, sl = _structure(c)
     r = _retrace(c.iloc[-1], sh, sl)
+    ema21 = c.ewm(span=21).mean().iloc[-1]
+    d21 = (c.iloc[-1] / ema21 - 1) * 100        # 距21日线(回调买法参考)
+    pivot = c.iloc[-21:-1].max()                # 20日箱顶 = 突破买点枢轴
+    ext = (c.iloc[-1] / pivot - 1) * 100        # 距枢轴 → 判追高
     warn = "⚠️结构受损" if (r is not None and r > 62 and stage.startswith("S2")) else ""
     # 红绿灯: 把4个技术字段压成1个动作档位
     if stage.startswith("S2") and (r is None or r <= 38) and struct != "LH/LL":
-        light, why = "🟢", "趋势健康·浅回撤"
+        light = "🟢"
+        why = (f"趋势健康·但已超枢轴{ext:.0f}%·追高区等回踩" if ext > EXT_CHASE
+               else f"趋势健康·距枢轴{ext:+.0f}%(EMA21{d21:+.0f}%)·在买点区")
     elif stage.startswith("S2") and not warn:
         light = "🟡"
         why = ("高点仍在走低·结构未转多" if struct == "LH/LL" and (r is None or r <= 38)
@@ -90,7 +99,7 @@ def _analyze(name, c, tk=None):
         light, why = "🔴", ("筑顶·MA150转平/向下" if stage.startswith("S3") else "下降趋势")
     from . import tv
     return {"name": name, "sym": tv.symbol(tk or name), "stage": stage,
-            "slope": slope, "struct": struct,
+            "slope": slope, "struct": struct, "ext": ext,
             "retrace": r, "warn": warn, "light": light, "why": why}
 
 
@@ -147,14 +156,14 @@ def run(daily=None) -> dict:
     key = lambda r: (r["retrace"] if r["retrace"] is not None else 99)
 
     print("=" * 96)
-    print("【走势中频 — 三档红绿灯】(周~月尺度; 🟢可买区 🟡等待 🔴回避)")
+    print("【走势中频 — 资格三档】(周~月尺度; 只给资格不给买点, 时机看日线形态+日内)")
     print(f"  大环境: 上升趋势占比 {pct2}%  (S2上升{breadth['S2']} S1筑底{breadth['S1']} "
           f"S3筑顶{breadth['S3']} S4下降{breadth['S4']})")
     if moves:
         print("  📣 本期变化: " + " · ".join(moves))
-    for k, title in (("🟢", "可买区 — 趋势健康、回撤浅，日线信号可执行"),
-                     ("🟡", "等待区 — 趋势在但位置不好/未确认，只观察"),
-                     ("🔴", "回避区 — 趋势失效或名存实亡，日线信号一律降级")):
+    for k, title in (("🟢", "合格 — 趋势健康(≠现在能买, 仍需日线信号+不追高)"),
+                     ("🟡", "待定 — 趋势在但位置差/未确认，只观察"),
+                     ("🔴", "淘汰 — 趋势失效或名存实亡，日线信号一律降级")):
         b = sorted(buckets[k], key=key)
         print(f"  {k} {title}  ({len(b)})")
         for r in b:
@@ -166,9 +175,15 @@ def run(daily=None) -> dict:
     nm = lambda k: " ".join(
         r["sym"] + (f"({r['name']})" if r["sym"].split(":")[-1] != r["name"] else "")
         for r in sorted(buckets[k], key=key))
+    chase = [r for r in buckets["🟢"] if r["ext"] > EXT_CHASE]
+    ready = [r for r in buckets["🟢"] if r["ext"] <= EXT_CHASE]
+    tag = lambda rs: " ".join(
+        r["sym"] + (f"({r['name']})" if r["sym"].split(":")[-1] != r["name"] else "")
+        for r in sorted(rs, key=key)) or "无"
     lines = [f"  上升趋势占比 {pct2}%" + (f" · 📣{' · '.join(moves[:3])}" if moves else ""),
-             f"  🟢可买区({len(buckets['🟢'])}): " + (nm("🟢") or "无"),
-             f"  🔴回避区({len(buckets['🔴'])}): " + (nm("🔴") or "无")]
+             f"  🟢合格·在买点区({len(ready)}): " + tag(ready),
+             f"  🟢合格·追高区勿追({len(chase)}): " + tag(chase),
+             f"  🔴淘汰({len(buckets['🔴'])}): " + (nm("🔴") or "无")]
     return {"lines": lines, "rows": rows, "moves": moves, "buckets": buckets}
 
 
