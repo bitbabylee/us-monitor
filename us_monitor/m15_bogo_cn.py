@@ -153,9 +153,13 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
                if r["代码"] in imgs else "") + "</div>")
     src = d.get("source") or ""
     rpt = f"{src[:2]}-{src[2:4]}" if len(src) >= 4 and src[:4].isdigit() else ""
+    # 报告日 != 今天 → 上游当天没发源件(缺件日), 明示而不是让人误以为是当日数据
+    import datetime as _dt
+    stale = bool(rpt) and src[:4] != _dt.date.today().strftime("%m%d")
+    warn = (f'<span style="color:#c0392b;font-weight:700">⚠ 上游今日未发件，以下为 {H.escape(rpt)} 批数据</span> · '
+            if stale else "")
     return (f'<div class="sec"><h1>{H.escape(label)}</h1>'
-            f'<div class="sub">'
-            + (f'<b>报告日 {H.escape(rpt)}</b> · 最新信号 {H.escape(newest)} · ' if rpt else "")
+            f'<div class="sub">' + warn
             + f'{H.escape((d.get("title") or "")[:70])} · 来源 '
             f'{H.escape(src)} · 共 {len(rows)} 只'
             f'（强 {sum(1 for r in rows if r["信号"]=="strong")}）</div>'
@@ -194,7 +198,7 @@ if(location.hash)go(location.hash.slice(1));</script>"""
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>波哥七维信号</title><style>{CSS}{tabcss}</style>'
             f'<h1>波哥系统七维信号汇总</h1>'
-            f'<div class="tabs">{"".join(btns)}</div>'
+            f'<div class="tabs">{"".join(btns)}<a class="tab" href="summary.html" style="text-decoration:none">汇总⭱</a></div>'
             + "".join(panels) + js
             + '<div class="sub" style="margin-top:16px">CA/Pnls/胜率/Fit 为波哥系统自身'
               '回测口径 · 信息整理非投资建议</div>')

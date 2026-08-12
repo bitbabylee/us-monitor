@@ -42,6 +42,9 @@ def main():
         m15_bogo_cn.build_page()
         shutil.copy(src_dir / "bogo_cn.html", DOCS / "bogo_cn.html")
         shutil.copy(src_dir / "bogo.html", DOCS / "bogo.html")  # tabs四批合一主页,必须晚于m13的拷贝以覆盖其单页版
+        from us_monitor import m16_summary
+        m16_summary.build_page()
+        shutil.copy(src_dir / "summary.html", DOCS / "summary.html")
     except Exception as exc:
         print(f"WARN: 波哥A股页 {exc}")
     man = src_dir / "manual.html"
