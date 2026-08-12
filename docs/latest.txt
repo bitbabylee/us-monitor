@@ -1,42 +1,53 @@
 ================================================
-  波哥信号 · 美股日报  2026-08-11 · 生成 08-12 03:50
+  波哥信号 · 美股日报  2026-08-11 · 生成 08-12 05:14
 ================================================
 【结论】仓位上限 100% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
-【候选】3 只（形态+板块确认+无财报风险·未回测）
+【候选】8 只（形态+板块确认+无财报风险·未回测）
   NASDAQ:INTC   口袋支点      日内:🟢强动能买点
   NASDAQ:QQQ    10EMA回调   日内:🔴规避/止损
+  NYSE:NET      箱体突破      日内:⚪观望
   NASDAQ:CRWD   口袋支点      日内:⚪观望
+  NYSE:ANET     10EMA回调   日内:🟢强动能买点
+  NASDAQ:CRDO   EMA金叉     日内:🟡警告:临近前高
+  NASDAQ:PLTR   箱体突破      日内:⚪观望
+  NASDAQ:CIBR   口袋支点      日内:⚪观望
 【风险】财报临近 08-12 NASDAQ:NBIS✓ · 08-13 NASDAQ:AMAT✓
 ------------------------------------------------
 【大盘】
   SPX 7728 (MA50+3.0%) · RSI 65⚠️偏热 · VIX 15.3
-  风格: MTUM/MAGS 4.51 跌破20日均 → 抱团MAGS
-  日性质(因子ETF超额·非纯因子): 动量+0.7 高贝+0.9 低波+0.2 价值+0.5 → 风偏进攻日
+  风格: MTUM/MAGS 4.45 跌破20日均 → 抱团MAGS
+  日性质(因子ETF超额·非纯因子): 高贝+0.9 低波+0.2 → 中性日
   派发 ▄▃▂▄▄▃▅▆▆▅▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁ (0/吸4) → 仓位100%
   阶段P0 恐慌未释放 恐慌1/4 共识2/5 缺:双指数五日收益率均为正
   宏观 ✅ATR1480% ✗10Y4.68% ✅HYG/LQD0.7502 ✅USD/JPY159.16
 ------------------------------------------------
 【板块】
   强: AMEX:XLE+1.6% · AMEX:XLU+1.5% · NASDAQ:SOXX+1.2%
-  主题🔥 ⚡ AI电网 +3.8%  龙头 NYSE:SMR
+  主题🔥 🛡 网络安全 +3.7%  龙头 NASDAQ:CRWD
+  主题🔥 ☁ 云计算  +2.9%  龙头 NASDAQ:DDOG
+  主题🧊 ⚡ AI电网 -2.2%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
    NASDAQ:INTC   💡口袋支点      🟢强动能买点
+   NYSE:ANET     🟢10EMA回调   🟢强动能买点
  ▶ 等时机（日内未给买点）
+   NYSE:NET      📦箱体突破      ⚪观望
    NASDAQ:CRWD   💡口袋支点      ⚪观望
+   NASDAQ:CRDO   🌊EMA金叉     🟡警告:临近前高
+   NASDAQ:PLTR   📦箱体突破      ⚪观望
+   NASDAQ:CIBR   💡口袋支点      ⚪观望
  ▶ 冲突（日线买点/日内破位）
    NASDAQ:QQQ    🟢10EMA回调   🔴规避/止损
   日内异动: NASDAQ:NBIS🟢  NASDAQ:RKLB🔴  NASDAQ:LITE🟢  NASDAQ:MSFT🟢 
             NYSE:LLY🔴  NASDAQ:AMAT🔴  NASDAQ:SNDK🟢  NYSE:CAT🔴 
-            NYSE:ANET🟢  NASDAQ:CRDO🟢  NASDAQ:AMD🔴  NASDAQ:AXTI🟢 
-            NYSE:SNOW🟢  AMEX:GDX🟢 
-  盘前±2%: NASDAQ:NBIS+7.9% NASDAQ:LITE+2.4%
+            NASDAQ:AMD🔴  NASDAQ:AXTI🟢  NYSE:SNOW🟢  AMEX:GDX🟢 
+  盘前±2%: NASDAQ:NBIS+14.5% NASDAQ:LITE+8.9% NASDAQ:AXTI+7.2% NASDAQ:SNDK+7.2% NASDAQ:CRDO+6.7% NYSE:ANET+5.4% NASDAQ:AAOI+5.1% NYSE:GEV+3.5% NYSE:BE+3.4% NASDAQ:MU+3.3% NASDAQ:SPCX-2.9% NASDAQ:INTC+2.1% NASDAQ:AMAT+2.1%
 ------------------------------------------------
 【走势中频】Weinstein阶段·周~月尺度(中美混池)
   广度 S2:36 S1:5 S3:4 S4:3 (S2占比75%)
-  ⚠️S2结构受损(回撤>62%): BE INTC 旭创 江波龙 兆易 圣泉
+  ⚠️S2结构受损(回撤>62%): BE INTC SNDK 旭创 江波龙 兆易
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: SNDK≈$260M MUC$254M QQQ≈$93M PLTRC$89M SPCX≈$79M
