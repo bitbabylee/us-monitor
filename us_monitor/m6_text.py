@@ -112,10 +112,19 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
         for tk, _, c in drop:
             why = "财报窗口" if "财报" in c else "板块背离"
             L.append(f"  {S(tk):<13} {why}{vfy(tk) if '财报' in c else ''}")
-    near = [f"{d:%m-%d} {S(tk)}{vfy(tk)}" for d, tk in cal if (d - today_ny).days <= 1]
+    # 财报风险行: 区分 已出/今日待出/明日 —— 收盘后构建时当日财报已落地,
+    # 再写"临近"会误导(NBIS 8/12盘前已出仍显示"临近"的教训)
+    after_close = dt.datetime.now(NY).hour >= 16
+    near = []
+    for d, tk in cal:
+        dd = (d - today_ny).days
+        if dd == 0:
+            near.append(f"今日{S(tk)}{vfy(tk)}" + ("已出·观察期" if after_close else "待出·回避"))
+        elif dd == 1:
+            near.append(f"明日 {S(tk)}{vfy(tk)}")
     risk = []
     if near:
-        risk.append("财报临近 " + " · ".join(near))
+        risk.append("财报 " + " · ".join(near))
     if not gao.get("jpy_ok", True):
         risk.append(f"日元⚠️{gao['jpy']:.1f}")
     L += [f"【风险】{' · '.join(risk) if risk else '无近端风险事件'}"]
@@ -154,7 +163,7 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
 
     # ── 全市场主题雷达: 池外资金去向, 只做发现 ──
     if rad and rad["lines"]:
-        L.append("【全市场主题雷达】65主题ETF·z分排序(池外发现·不给信号)")
+        L.append("【主题雷达】今天钱去哪了(池外65主题·不给信号)")
         L += rad["lines"]
         L.append(thin)
 

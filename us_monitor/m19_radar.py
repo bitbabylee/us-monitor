@@ -80,13 +80,11 @@ def run(daily=None) -> dict:
 
     from . import tv
     tv.warm(list(C.RADAR_ETFS))
-    # 注意: 符号后必须留空格, 否则 "AMEX:MJz+1.8" 会让日报的链接正则匹配不到
-    lines = [f"  强: " + "  ".join(f"{tv.symbol(r['tk'])} {r['name']}z{r['z']:+.1f}"
-                                   for r in top),
-             f"  弱: " + "  ".join(f"{tv.symbol(r['tk'])} {r['name']}z{r['z']:+.1f}"
-                                   for r in reversed(bot))]
+    # 日报只说人话结论: 钱进/钱出(纯名字) + 下一棒候选(带可点符号, 符号后留空格防链接正则失配)
+    lines = ["  钱进: " + "·".join(r["name"] for r in top)
+             + "   钱出: " + "·".join(r["name"] for r in reversed(bot))]
     if improving:
-        lines.append("  改善象限(下一棒候选): "
+        lines.append("  下一棒候选(长期落后·短期转强): "
                      + "  ".join(f"{tv.symbol(r['tk'])} {r['name']}" for r in improving[:5]))
     return {"lines": lines, "rows": rows, "improving": improving}
 
