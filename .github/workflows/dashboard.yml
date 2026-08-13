@@ -35,8 +35,9 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
-      - name: 安装 Chromium（整页截图 + capexcycle 抓取用）
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq chromium-browser || sudo snap install chromium
+      - name: 验证 Chrome（整页截图 + capexcycle 抓取用）
+        # GitHub ubuntu-latest 已预装 Google Chrome；避免 Snapcraft 临时 503 阻断整站发布。
+        run: google-chrome --version
 
       - name: 生成看板
         run: python3 build_site.py
