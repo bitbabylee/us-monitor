@@ -38,7 +38,7 @@
 | m10 | CAMSLIM 派发日体系（欧奈尔/IBD） |
 | m11 | 筛选器（RVOL / Compression / Gappers） |
 | m12 | AI 资本周期看门狗（capexcycle.com 季度数据） |
-| m19 | 全量 ETF 涨幅榜（5/21/63日涨幅 + 持续性；完整列表可筛选并点击查看详情） |
+| m19 | 全量 ETF 涨幅榜（5/21/63日涨幅 + 持续性 + 基金规模AUM + 成交量；完整列表可筛选并点击查看详情） |
 
 阈值集中在 `us_monitor/config.py`。
 
