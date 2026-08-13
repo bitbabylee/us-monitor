@@ -1,5 +1,5 @@
 ================================================
-  波哥信号 · 美股日报  2026-08-12 · 生成 08-12 20:05
+  波哥信号 · 美股日报  2026-08-12 · 生成 08-12 20:37
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -23,17 +23,17 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7748 (MA50+3.3%) · RSI 75⚠️偏热 · VIX 14.6
+  SPX 7748 (MA50+3.2%) · RSI 71⚠️偏热 · VIX 14.6
   风格: MTUM/MAGS 4.65 站上20日均 → 动量MTUM
-  日性质(因子ETF超额·非纯因子): 动量+2.2 高贝+1.4 低波-0.2 价值+1.2 → 风偏进攻日
-  派发 ▃▂▄▄▃▅▆▆▅▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁ (0/吸4) → 仓位100%
+  日性质(因子ETF超额·非纯因子): 动量+1.8 高贝+1.4 低波-0.2 价值+1.0 → 风偏进攻日
+  派发 ▁▂▄▃▂▄▄▃▅▆▆▇▇▇▆▇▆▂▁▁▁▁▁▁▁ (0/吸4) → 仓位100%
   阶段C1 资金共识 恐慌3/4 共识4/5 缺:近三日突破20日线伴随放
-  宏观 ✅ATR1476% ✗10Y4.68% ✅HYG/LQD0.7502 ✅USD/JPY159.32
+  宏观 ✅ATR1476% ✗10Y4.68% ✅HYG/LQD0.7502 ✅USD/JPY159.31
 ------------------------------------------------
 【全市场主题雷达】65主题ETF·z分排序(池外发现·不给信号)
-  强: AMEX:MJ 大麻z+2.4  AMEX:FAN 风电z+2.1  AMEX:DBA 农产品z+1.1  AMEX:MTUM 动量z+1.0  AMEX:IPO 新股z+0.9
-  弱: NASDAQ:ESPO 电竞z-1.2  AMEX:ITB 住宅建筑z-1.1  NASDAQ:HERO 游戏z-0.9  AMEX:XHB 地产链z-0.9  AMEX:XRT 零售z-0.7
-  改善象限(下一棒候选): AMEX:SILJ 小白银矿  AMEX:SIL 白银矿  AMEX:URA 铀核能  AMEX:XME 金属矿业  AMEX:REMX 稀土
+  强: AMEX:FAN 风电z+2.1  AMEX:DBA 农产品z+1.1  AMEX:IPO 新股z+1.1  NASDAQ:QTUM 量子计算z+0.9  AMEX:MTUM 动量z+0.8
+  弱: AMEX:ITB 住宅建筑z-1.1  AMEX:XHB 地产链z-0.9  NASDAQ:ESPO 电竞z-0.8  AMEX:XRT 零售z-0.7  AMEX:MAGS 七巨头z-0.6
+  改善象限(下一棒候选): AMEX:SILJ 小白银矿  AMEX:SIL 白银矿  AMEX:URA 铀核能  NASDAQ:QTUM 量子计算  AMEX:ARKX 太空
 ------------------------------------------------
 【板块】
   强: NASDAQ:SOXX+2.1% · AMEX:XLK+1.2%
@@ -52,7 +52,7 @@
    NASDAQ:SPCX   📦箱体突破      🔴锁定利润
  ▶ 财报窗口（信号作废）
    NASDAQ:NBIS   💡口袋支点      ⚠️ 今日(盘后?)财报, ✓
-  日内异动: NASDAQ:AAOI🔴  NASDAQ:MSFT🔴  NASDAQ:SMH🔴  NASDAQ:QQQ🔴 
+  日内异动: NASDAQ:AAOI🟢  NASDAQ:MSFT🔴  NASDAQ:SMH🔴  NASDAQ:QQQ🔴 
             NYSE:CAT🔴  NASDAQ:CRWD🟢  NASDAQ:HOOD🟢  NASDAQ:PLTR🟢 
             NASDAQ:CIBR🟢  AMEX:GDX🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🟢 
@@ -69,6 +69,12 @@
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
+【波哥七维·外部体系】32只(强10)·⚠️旧快照
+  今日强信号: NYSE:DELL NYSE:BE🔗 NYSE:HXL NYSE:FRO NYSE:GNK NASDAQ:FTAI NASDAQ:FORM NYSE:GEV🔗
+  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:BE NYSE:GEV NASDAQ:CORZ NASDAQ:MU NASDAQ:LITE NASDAQ:AAOI NASDAQ:AMD NASDAQ:INTC
+  池外强信号(仅提示, 不入信号链): NYSE:DELL NYSE:HXL NYSE:FRO NYSE:GNK NASDAQ:FTAI NASDAQ:FORM
+  说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
+------------------------------------------------
 【A股重演】反转/反弹五条件 (截至08-11·独立体系)
   判定: 中性观察  反转条件 3/5
   ✗①龙头前高 距前高 胜宏-29% 生益-23% 富联-18%
