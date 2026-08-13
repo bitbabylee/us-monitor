@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-12 收盘(ET)
-  生成 08-12 23:26 纽约 = 08-13 11:26 北京
+  生成 08-12 23:30 纽约 = 08-13 11:30 北京
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -58,7 +58,7 @@
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🟢 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 69% · 📣江波龙 S2↑→S1⌐
+  上升趋势占比 69%
   🟢合格·在买点区(6): NYSE:GEV NYSE:NET NASDAQ:CRWD NASDAQ:CIBR NYSE:SNOW AMEX:SPY
   🟢合格·追高区勿追(1): NASDAQ:NBIS
   🔴淘汰(13): NASDAQ:MSFT NASDAQ:PLTR AMEX:GDX NASDAQ:IREN SSE:601138(富联) SZSE:002837(英维克) SZSE:300476(胜宏) NASDAQ:RIOT NASDAQ:INTC NASDAQ:HOOD SSE:605589(圣泉) SSE:603986(兆易) NASDAQ:HUT
