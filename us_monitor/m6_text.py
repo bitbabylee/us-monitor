@@ -280,7 +280,7 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
         L.append(thin)
 
     # ── 口径移到底部 ──
-    L += ["【口径】仓位=CAMSLIM 阶段=高老师 宏观=Brendon 均独立未互证;",
+    L += ["【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;",
           "  个股=日线×日内同源串联; 波哥独立成页与本报无交互",
           bar, "免责: 信息整理非投资建议 · 全部方法未回测", bar]
     return "\n".join(L)
