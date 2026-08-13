@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-12 收盘(ET)
-  生成 08-13 07:59 纽约 = 08-13 19:59 北京
+  生成 08-13 08:18 纽约 = 08-13 20:18 北京
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -31,8 +31,8 @@
   宏观 ✅ATR1476% ✗10Y4.68% ✅HYG/LQD0.7502 ✅USD/JPY159.26
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:CRAK 炼化下游  AMEX:IHI 医疗器械  AMEX:ARKG 基因组
-  短线改善: AMEX:XBI 生物科技  AMEX:XME 金属矿业  AMEX:PICK 全球矿业  NASDAQ:QTUM 量子计算  AMEX:OIH 油服
+  涨幅优先: NASDAQ:SKYY 云计算  AMEX:CRAK 炼化下游  AMEX:IHI 医疗器械  AMEX:ARKG 基因组  NASDAQ:WCLD 云软件
+  短线改善: AMEX:GLD 黄金  AMEX:XBI 生物科技  AMEX:XME 金属矿业  AMEX:PRNT 3D打印  AMEX:DBC 大宗商品
 ------------------------------------------------
 【板块】
   强: NASDAQ:SOXX+2.1% · AMEX:XLK+1.2%
@@ -55,7 +55,7 @@
             NYSE:CAT🔴  NASDAQ:CRWD🟢  NASDAQ:HOOD🟢  NASDAQ:PLTR🟢 
             NASDAQ:CIBR🟢  AMEX:GDX🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🟢 
-  盘前±2%: NASDAQ:IREN+5.9% NASDAQ:NBIS-3.7% NASDAQ:AXTI-3.6% NASDAQ:AAOI-2.2% NASDAQ:RKLB-2.1%
+  盘前±2%: NASDAQ:AXTI-4.4% NASDAQ:NBIS-4.2% NASDAQ:IREN+3.9% NASDAQ:AAOI-3.0% NASDAQ:RKLB-3.0% NASDAQ:LITE-2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 69%
@@ -69,7 +69,7 @@
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】32只(强10)·⚠️旧快照
+【波哥七维·外部体系】32只(强10)
   今日强信号: NYSE:DELL NYSE:BE🔗 NYSE:HXL NYSE:FRO NYSE:GNK NASDAQ:FTAI NASDAQ:FORM NYSE:GEV🔗
   🔗两套方法共同覆盖(独立得出, 非互证): NYSE:BE NYSE:GEV NASDAQ:CORZ NASDAQ:MU NASDAQ:LITE NASDAQ:AAOI NASDAQ:AMD NASDAQ:INTC
   池外强信号(仅提示, 不入信号链): NYSE:DELL NYSE:HXL NYSE:FRO NYSE:GNK NASDAQ:FTAI NASDAQ:FORM
