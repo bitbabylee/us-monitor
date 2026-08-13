@@ -328,6 +328,31 @@ RADAR_RS_SHORT = 10        # 短窗 RS(≈2周)
 RADAR_RS_LONG = 50         # 长窗 RS(≈10周)
 RADAR_TOP_N = 5            # 日报里展示的头尾数量
 
+# ETF 涨幅榜（2026-08-13）：ETF 的首要任务是捕捉价格趋势，主题解释不参与主分。
+# 分数使用全宇宙百分位，避免高波品种仅靠单日暴涨长期霸榜：
+# 5日 25% + 21日 40% + 63日 25% + 近21日上涨天数占比 10%。
+ETF_RETURN_WINDOWS = (5, 21, 63)
+ETF_SCORE_WEIGHTS = {5: 0.25, 21: 0.40, 63: 0.25, "consistency": 0.10}
+ETF_TIER_LEADER = 80       # 且 21/63日涨幅均为正
+ETF_TIER_STRONG = 65       # 且 21日涨幅为正
+ETF_CHASE_ADR_MULT = 1.5   # 突破20日枢轴超过 max(5%, 1.5×ADR20) 才标追高
+
+# 页面分组仅用于筛选与解释，不进入涨幅评分。
+RADAR_GROUPS = {
+    "硬资产/资源": ["IEO", "OIH", "CRAK", "URA", "COPX", "SIL", "SILJ",
+                    "REMX", "LIT", "XME", "PICK", "SLX", "WOOD", "MOO", "DBA",
+                    "GDXJ", "SLV", "GLD", "USO", "UNG", "DBC"],
+    "科技/AI": ["QTUM", "IGV", "SKYY", "HACK", "BOTZ", "ROBO", "AIQ", "WCLD",
+                "ARKQ", "PRNT", "FINX"],
+    "能源转型/电力": ["ICLN", "FAN", "NLR", "PBW", "TAN"],
+    "工业/地产/出行": ["DRIV", "KARS", "PAVE", "ITB", "XHB", "JETS", "XRT"],
+    "医疗/生物": ["XBI", "ARKG", "IHI", "XHE", "PPH"],
+    "金融/加密": ["KRE", "KBE", "BITQ", "BLOK"],
+    "太空/军工/娱乐": ["ARKX", "UFO", "ESPO", "HERO"],
+    "宽基/风格/宏观": ["IWM", "IPO", "MAGS", "SMH", "MTUM", "SPHB", "USMV",
+                       "VLUE", "TLT", "UUP", "MJ"],
+}
+
 # ── 模块20：恐慌买入计划(补"只会买强势不会抄底"的缺口, 2026-08-13) ──
 # 阈值由 7/29 那轮实测反推: 当时派发压力 7、SPX 距60日高 -5.3% → 两条都该亮
 PANIC_DIST = 6             # 派发日≥此 → 卖压高位

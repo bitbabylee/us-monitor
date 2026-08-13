@@ -264,6 +264,8 @@ img{max-width:100%;border:1px solid var(--bd);border-radius:6px}
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>波哥七维信号</title><style>{css}</style>'
             f'<h1>波哥系统七维信号汇总</h1>'
+            f'<div class="sub"><a href="etf.html">ETF涨幅榜⭱</a> · '
+            f'<a href="summary.html">历史汇总⭱</a></div>'
             f'<div class="sub">{H.escape(d.get("title") or "")[:70]} · '
             f'共 {len(rows)} 只（强 {sum(1 for r in rows if r["信号"]=="strong")}）· '
             f'下方明细图仅近3日强信号（{" / ".join(days3)}）</div>'
