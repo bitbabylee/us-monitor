@@ -47,9 +47,9 @@ a { color:#2a78d6; }
 /* 视觉分层: 三层大标题 / 段标题 / 分隔线 —— 纯文本正文靠这三档拉开层次 */
 .tier { display:block; margin:22px 0 2px; font-weight:700; font-size:15px;
         letter-spacing:3px; color:#b8792a; }
-.sec  { font-weight:700; color:#0b6b57; }
+.sec  { font-weight:700; color:#33312c; }
 @media (prefers-color-scheme: dark) {
-  .tier { color:#e0a955; } .sec { color:#54c9a7; } a { color:#6ab0f3; }
+  .tier { color:#e0a955; } .sec { color:#efece2; } a { color:#6ab0f3; }
 }
 .rule { color:#c9c6bd; }
 @media (prefers-color-scheme: dark) { .rule { color:#3a3a37; } }
@@ -226,6 +226,28 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
 
     # ═══ 第三层 参考区: 独立体系与背景 ═══
     L += ["", "③ 参 考 —— 独立体系 / 背景", bar]
+
+    # ── 波哥七维: 外部独立体系, 只做对照, 不参与本报共振过滤 ──
+    if bogo and bogo.get("rows"):
+        rows_b = bogo["rows"]
+        strong_b = [r for r in rows_b if r["信号"] == "strong"]
+        ov = bogo.get("overlap", [])
+        mine_pool = set(C.WATCHLIST)
+        L.append(f"【波哥七维·外部体系】{len(rows_b)}只(强{len(strong_b)})"
+                 + ("·⚠️旧快照" if bogo.get("stale") else ""))
+        if strong_b:
+            L.append("  今日强信号: "
+                     + " ".join(f"{S(r['代码'])}{'🔗' if r['交集'] else ''}"
+                                for r in strong_b[:8]))
+        if ov:
+            L.append("  🔗两套方法共同覆盖(独立得出, 非互证): "
+                     + " ".join(S(r["代码"]) for r in ov[:8]))
+        outside = [r for r in strong_b if r["代码"] not in mine_pool][:6]
+        if outside:
+            L.append("  池外强信号(仅提示, 不入信号链): "
+                     + " ".join(S(r["代码"]) for r in outside))
+        L.append("  说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定")
+        L.append(thin)
 
     # ── A股重演: 五条件判定, 一条一行 ──
     if cn:
