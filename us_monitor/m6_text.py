@@ -44,6 +44,15 @@ pre { margin:0; font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospa
   pre { font-size:12px; white-space:pre-wrap; overflow-wrap:anywhere; }
 }
 a { color:#2a78d6; }
+/* 视觉分层: 三层大标题 / 段标题 / 分隔线 —— 纯文本正文靠这三档拉开层次 */
+.tier { display:block; margin:22px 0 2px; font-weight:700; font-size:15px;
+        letter-spacing:3px; color:#b8792a; }
+.sec  { font-weight:700; color:#0b6b57; }
+@media (prefers-color-scheme: dark) {
+  .tier { color:#e0a955; } .sec { color:#54c9a7; } a { color:#6ab0f3; }
+}
+.rule { color:#c9c6bd; }
+@media (prefers-color-scheme: dark) { .rule { color:#3a3a37; } }
 """
 
 
@@ -77,6 +86,9 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
 
     L += [bar, f"  波哥信号 · 美股日报  {date} · 生成 {dt.datetime.now():%m-%d %H:%M}", bar]
 
+    # ═══ 第一层 决策区: 今天做什么 ═══
+    L += ["", "① 决 策 —— 今天做什么", bar]
+
     # ── 结论: 一行 ──
     regime = "抱团MAGS" if m1["regime"] == "MAGS" else "动量MTUM"
     L += [f"【结论】仓位上限 {cam['exposure']} · 阶段{gao['phase'].split(' ')[0]}"
@@ -100,7 +112,21 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
         risk.append("财报临近 " + " · ".join(near))
     if not gao.get("jpy_ok", True):
         risk.append(f"日元⚠️{gao['jpy']:.1f}")
-    L += [f"【风险】{' · '.join(risk) if risk else '无近端风险事件'}", thin]
+    L += [f"【风险】{' · '.join(risk) if risk else '无近端风险事件'}"]
+    nxt7 = [(d, tk) for d, tk in cal if (d - today_ny).days <= 7]
+    if nxt7:
+        wk7 = ["一", "二", "三", "四", "五", "六", "日"]
+        L.append("【财报7日】✓已核 ?待核 —— 窗口内信号一律作废")
+        by7 = {}
+        for d, tk in nxt7:
+            by7.setdefault(d, []).append(tk)
+        for d, v in sorted(by7.items()):
+            L.append(f"  {d:%m-%d} 周{wk7[d.weekday()]}  "
+                     + " ".join(f"{S(x)}{vfy(x)}" for x in v))
+    L.append(thin)
+
+    # ═══ 第二层 证据区: 凭什么 ═══
+    L += ["", "② 证 据 —— 凭什么这么判", bar]
 
     # ── 大盘: 每行一个主题 ──
     hot = "⚠️偏热" if m1["rsi"] > C.RSI_HOT else ""
@@ -198,17 +224,8 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
         L += opt["lines"]
         L.append(thin)
 
-    # ── 财报: 一天一行 ──
-    nxt = [(d, tk) for d, tk in cal if (d - today_ny).days <= 7]
-    if nxt:
-        wk = ["一", "二", "三", "四", "五", "六", "日"]
-        by = {}
-        for d, tk in nxt:
-            by.setdefault(d, []).append(tk)
-        L.append("【财报7日】✓=已核官方 ?=仅yahoo/xlsx待核")
-        for d, v in sorted(by.items()):
-            L.append(f"  {d:%m-%d} 周{wk[d.weekday()]}  " + " ".join(f"{S(x)}{vfy(x)}" for x in v))
-        L.append(thin)
+    # ═══ 第三层 参考区: 独立体系与背景 ═══
+    L += ["", "③ 参 考 —— 独立体系 / 背景", bar]
 
     # ── A股重演: 五条件判定, 一条一行 ──
     if cn:
@@ -317,6 +334,14 @@ def build(with_intraday=True) -> Path:
 
     (OUT_DIR / "latest.txt").write_text(digest, encoding="utf-8")
 
+    def _style(s: str) -> str:
+        """给纯文本正文加三档视觉层次(转义后处理, 只包裹不改内容)。"""
+        import re as _re
+        s = _re.sub(r"^([①②③] .+)$", r'<span class="tier">\1</span>', s, flags=_re.M)
+        s = _re.sub(r"^(【[^】]+】.*)$", r'<span class="sec">\1</span>', s, flags=_re.M)
+        s = _re.sub(r"^([=-]{20,})$", r'<span class="rule">\1</span>', s, flags=_re.M)
+        return s
+
     def _clickable(escaped: str) -> str:
         """把正文里所有 '交易所:代码' 变成 TradingView 图表链接(转义后再替换, 防注入)。"""
         import re as _re
@@ -331,7 +356,7 @@ def build(with_intraday=True) -> Path:
         return (f'<meta charset="utf-8">'
                 f'<meta name="viewport" content="width=device-width,initial-scale=1">'
                 f'<title>{title}</title><style>{WRAP_CSS}</style>'
-                f'<pre>{links}\n\n' + _clickable(html.escape(text)) + "</pre>")
+                f'<pre>{links}\n\n' + _style(_clickable(html.escape(text))) + "</pre>")
 
     out = OUT_DIR / f"dashboard_{date}.html"
     out.write_text(page(f"波哥信号 {date}",

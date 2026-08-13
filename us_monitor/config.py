@@ -65,6 +65,9 @@ THEMES = {
     "🏦 降息受益/数字金融":   ["COIN", "HOOD", "SOFI", "XYZ"],
     "🪙 黄金/贵金属矿业":     ["GDX", "NEM", "GOLD", "AEM", "WPM", "AGI"],
     "💊 减肥药/GLP-1龙头":   ["NVO", "LLY", "VKTX"],
+    # 矿场转AI数据中心: 核心资产是"已并网电力"(美国电网排队3-4年), 按
+    # 电力转化质量×每瓦估值分档(didier AI电力转化矩阵 2026-08-12)
+    "🔌 矿转AIDC/算力电力": ["IREN", "CORZ", "RIOT", "CIFR", "HUT", "WULF", "APLD"],
 }
 THEME_HOT_ALPHA = 2.0      # 组合平均超额高于此 → 强势领涨
 THEME_WEAK_ALPHA = -2.0    # 低于此 → 弱势领跌
@@ -74,6 +77,8 @@ WATCHLIST = [
     "BE", "NBIS", "RKLB", "LITE", "AAOI", "MSFT", "LLY", "INTC", "AMAT",
     "SMH", "GEV", "SNDK", "QQQ", "CAT", "NET", "CRWD", "ANET", "CRDO",
     "HOOD", "AMD", "MU", "AXTI", "PLTR", "CIBR", "SNOW", "SPCX", "GDX",
+    # 矿转AIDC(2026-08-13 加入): RIOT已有Anthropic 191MW/20年长约
+    "IREN", "CORZ", "RIOT", "CIFR", "HUT", "WULF", "APLD",
 ]
 
 def all_daily_tickers():
@@ -93,6 +98,9 @@ TICKER_SECTOR = {
     "GDX": "GDX",   # 黄金矿业自成板块, cross-check 时用自身超额确认
     "NET": "XLK", "CRWD": "XLK", "SNOW": "XLK", "PLTR": "XLK",
     "CIBR": "XLK", "NBIS": "XLK", "QQQ": "XLK",
+    # 矿转AIDC: 用公用事业(电力)做板块确认, 比科技板块更贴近其驱动因子
+    "IREN": "XLU", "CORZ": "XLU", "RIOT": "XLU", "CIFR": "XLU",
+    "HUT": "XLU", "WULF": "XLU", "APLD": "XLU",
 }
 
 # ── 日线形态买点阈值 ────────────────────────────────
