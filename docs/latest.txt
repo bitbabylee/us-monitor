@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-12 收盘(ET)
-  生成 08-13 06:08 纽约 = 08-13 18:08 北京
+  生成 08-13 07:59 纽约 = 08-13 19:59 北京
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -31,8 +31,8 @@
   宏观 ✅ATR1476% ✗10Y4.68% ✅HYG/LQD0.7502 ✅USD/JPY159.26
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  钱进: 大麻·风电·农产品·动量·新股   钱出: 电竞·住宅建筑·游戏·地产链·零售
-  下一棒候选(长期落后·短期转强): AMEX:SILJ 小白银矿  AMEX:SIL 白银矿  AMEX:URA 铀核能  AMEX:XME 金属矿业  AMEX:REMX 稀土
+  涨幅优先: NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:CRAK 炼化下游  AMEX:IHI 医疗器械  AMEX:ARKG 基因组
+  短线改善: AMEX:XBI 生物科技  AMEX:XME 金属矿业  AMEX:PICK 全球矿业  NASDAQ:QTUM 量子计算  AMEX:OIH 油服
 ------------------------------------------------
 【板块】
   强: NASDAQ:SOXX+2.1% · AMEX:XLK+1.2%
@@ -55,7 +55,7 @@
             NYSE:CAT🔴  NASDAQ:CRWD🟢  NASDAQ:HOOD🟢  NASDAQ:PLTR🟢 
             NASDAQ:CIBR🟢  AMEX:GDX🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🟢 
-  盘前±2%: NASDAQ:NBIS-3.7% NASDAQ:AXTI-3.4% NASDAQ:AAOI-2.3%
+  盘前±2%: NASDAQ:IREN+5.9% NASDAQ:NBIS-3.7% NASDAQ:AXTI-3.6% NASDAQ:AAOI-2.2% NASDAQ:RKLB-2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 69%
@@ -64,7 +64,7 @@
   🔴淘汰(14): NASDAQ:MSFT NASDAQ:PLTR AMEX:GDX NASDAQ:IREN SSE:601138(富联) SZSE:002837(英维克) SZSE:300476(胜宏) NASDAQ:RIOT SZSE:300308(旭创) NASDAQ:INTC NASDAQ:HOOD SSE:605589(圣泉) SSE:603986(兆易) NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: NBISC$507M SPCXC$334M SNDK≈$294M MU≈$222M LITEC$162M
+  今日: NBISC$507M(v/oi5.4) SPCXC$334M(v/oi6.1) SNDK≈$294M(v/oi5.6) MU≈$222M(v/oi6.9) LITEC$162M(v/oi4.1)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
