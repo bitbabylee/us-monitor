@@ -14,19 +14,22 @@ from __future__ import annotations
 import html as H
 import json
 import math
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
 import yfinance as yf
 
 from . import config as C
-from .data import col
+from .data import NY, col
 
 _LAST_RESULT: dict | None = None
 TV_LIST_FILENAME = "etf_top22_tv.txt"
 TV_SYMBOLS_FILENAME = "etf_top22_symbols.txt"
 TV_LIST_TIERS = ("领涨", "强势", "改善")
 TV_LIST_LIMIT = 22
+META_CACHE = Path(__file__).resolve().parent / ".etf_meta_cache.json"
 
 
 def universe() -> dict[str, dict[str, str]]:
@@ -96,6 +99,49 @@ def _load(daily=None) -> dict[str, pd.DataFrame]:
     return frames
 
 
+def _fetch_aum(tk: str) -> float | None:
+    """取 ETF 基金总资产；失败只影响该字段，不中断看板。"""
+    try:
+        value = (yf.Ticker(tk).get_info() or {}).get("totalAssets")
+        value = _finite(value)
+        return value if value is not None and value > 0 else None
+    except Exception:
+        return None
+
+
+def _load_aum(tickers, force: bool = False) -> dict[str, float | None]:
+    """每天并发刷新一次 AUM；接口抖动时保留上次成功值。"""
+    today = datetime.now(NY).date().isoformat()
+    cached: dict = {}
+    if META_CACHE.exists():
+        try:
+            cached = json.loads(META_CACHE.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            cached = {}
+    old = cached.get("aum", {}) if isinstance(cached.get("aum", {}), dict) else {}
+    if not force and cached.get("fetched") == today and set(tickers) <= set(old):
+        return {tk: _finite(old.get(tk)) for tk in tickers}
+
+    fresh = {}
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = {pool.submit(_fetch_aum, tk): tk for tk in tickers}
+        for future in as_completed(futures):
+            tk = futures[future]
+            value = future.result()
+            if value is not None:
+                fresh[tk] = value
+    merged = {tk: fresh.get(tk, _finite(old.get(tk))) for tk in tickers}
+    try:
+        META_CACHE.write_text(
+            json.dumps({"fetched": today, "aum": merged}, ensure_ascii=False, indent=1),
+            encoding="utf-8",
+        )
+    except OSError as exc:
+        print(f"WARN: ETF AUM 缓存写入失败: {exc}")
+    print(f"ETF AUM: 本次取得 {len(fresh)}/{len(tickers)}，页面可用 {sum(v is not None for v in merged.values())}/{len(tickers)}")
+    return merged
+
+
 def _ret(s: pd.Series, n: int) -> float | None:
     if len(s) <= n or not s.iloc[-n - 1]:
         return None
@@ -107,12 +153,13 @@ def _finite(v):
 
 
 def _raw_row(tk: str, meta: dict, frame: pd.DataFrame | None,
-             benchmark: pd.DataFrame | None) -> dict:
+             benchmark: pd.DataFrame | None, aum: float | None = None) -> dict:
     base = {
         "tk": tk, "name": meta["name"], "group": meta["group"],
         "date": None, "score": None, "rank": None, "tier": "数据缺失",
         "trend": "—", "position": "—", "why": "没有取得足够的已完结日线数据",
-        "risk": "数据缺失，不能比较涨幅", "missing": True,
+        "risk": "数据缺失，不能比较涨幅", "aum": _finite(aum),
+        "volume": None, "avg_volume21": None, "volume_ratio": None, "missing": True,
     }
     if frame is None or len(frame.get("Close", [])) < max(C.ETF_RETURN_WINDOWS) + 2:
         return base
@@ -166,6 +213,14 @@ def _raw_row(tk: str, meta: dict, frame: pd.DataFrame | None,
     sd = daily_ret.tail(C.RADAR_Z_WIN).std() * 100 if len(daily_ret) else None
     z = chg / sd if sd and math.isfinite(sd) else None
     stale = b is not None and len(b) and s.index[-1] != b.index[-1]
+    volume = avg_volume21 = volume_ratio = None
+    if "Volume" in frame:
+        volumes = frame["Volume"].dropna()
+        if len(volumes):
+            volume = _finite(volumes.iloc[-1])
+            avg_volume21 = _finite(volumes.tail(21).mean())
+            if avg_volume21:
+                volume_ratio = _finite(volume / avg_volume21)
 
     base.update({
         "date": str(s.index[-1].date()), "price": _finite(px),
@@ -174,17 +229,22 @@ def _raw_row(tk: str, meta: dict, frame: pd.DataFrame | None,
         "consistency": _finite(consistency), "ma20": _finite(ma20),
         "ma50": _finite(ma50), "ma200": _finite(ma200), "adr20": _finite(adr20),
         "ext20": _finite(ext20), "chg": _finite(chg), "z": _finite(z),
+        "aum": _finite(aum), "volume": volume, "avg_volume21": avg_volume21,
+        "volume_ratio": volume_ratio,
         "quad": quad, "trend": trend, "position": position,
         "stale": stale, "missing": False,
     })
     return base
 
 
-def analyze_frames(frames: dict[str, pd.DataFrame], metas: dict | None = None) -> dict:
+def analyze_frames(frames: dict[str, pd.DataFrame], metas: dict | None = None,
+                   aum: dict[str, float | None] | None = None) -> dict:
     """纯计算入口，供生产与合成数据测试共同使用。"""
     metas = metas or universe()
+    aum = aum or {}
     benchmark = frames.get(C.BENCHMARK)
-    rows = [_raw_row(tk, meta, frames.get(tk), benchmark) for tk, meta in metas.items()]
+    rows = [_raw_row(tk, meta, frames.get(tk), benchmark, aum.get(tk))
+            for tk, meta in metas.items()]
     valid = [r for r in rows if not r["missing"]]
     if valid:
         df = pd.DataFrame(valid).set_index("tk")
@@ -237,7 +297,8 @@ def analyze_frames(frames: dict[str, pd.DataFrame], metas: dict | None = None) -
 
 def run(daily=None) -> dict:
     global _LAST_RESULT
-    result = analyze_frames(_load(daily))
+    frames = _load(daily)
+    result = analyze_frames(frames, aum=_load_aum(list(universe())))
     rows = [r for r in result["rows"] if not r["missing"]]
     leaders = rows[:C.RADAR_TOP_N]
     improving = [r for r in rows if r["tier"] == "改善"][:6]
@@ -272,6 +333,21 @@ def _fmt(v, digits=1, sign=False):
     return f"{v:+.{digits}f}" if sign else f"{v:.{digits}f}"
 
 
+def _fmt_amount(v, currency=False):
+    """用中文数量级压缩 AUM/成交量，保留完整值在 title 中。"""
+    if v is None:
+        return "—"
+    value = float(v)
+    prefix = "$" if currency else ""
+    if abs(value) >= 1e12:
+        return f"{prefix}{value / 1e12:.2f}万亿"
+    if abs(value) >= 1e8:
+        return f"{prefix}{value / 1e8:.1f}亿"
+    if abs(value) >= 1e4:
+        return f"{prefix}{value / 1e4:.1f}万"
+    return f"{prefix}{value:,.0f}"
+
+
 def tv_import_list(result: dict, limit: int = TV_LIST_LIMIT) -> tuple[str, list[dict]]:
     """生成 TradingView watchlist 导入串：按涨幅排名过滤三个有效层级。"""
     eligible = [r for r in result["rows"] if r.get("tier") in TV_LIST_TIERS]
@@ -304,8 +380,14 @@ def _row_html(r: dict, i: int) -> str:
         f'data-r5="{r.get("r5") if r.get("r5") is not None else -999}" '
         f'data-r21="{r.get("r21") if r.get("r21") is not None else -999}" '
         f'data-r63="{r.get("r63") if r.get("r63") is not None else -999}" '
+        f'data-aum="{r.get("aum") if r.get("aum") is not None else -1}" '
+        f'data-volume="{r.get("volume") if r.get("volume") is not None else -1}" '
         f'data-name="{H.escape(r["tk"], quote=True)}"'
     )
+    aum_title = (f' title="基金总资产 ${r["aum"]:,.0f}"'
+                 if r.get("aum") is not None else "")
+    volume_title = (f' title="最新日成交量 {r["volume"]:,.0f}"'
+                    if r.get("volume") is not None else "")
     return (
         f'<tr {attrs}><td>{rank}</td>'
         f'<td class="l"><button class="open" data-i="{i}" data-ticker="{H.escape(r["tk"])}">'
@@ -313,6 +395,8 @@ def _row_html(r: dict, i: int) -> str:
         f'<td class="l name">{H.escape(r["name"])}</td>'
         f'<td class="l"><span class="group">{H.escape(r["group"])}</span></td>'
         f'<td class="l"><span class="tier {cls}">{H.escape(r["tier"])}</span></td>'
+        f'<td{aum_title}>{_fmt_amount(r.get("aum"), currency=True)}</td>'
+        f'<td{volume_title}>{_fmt_amount(r.get("volume"))}</td>'
         f'<td><b>{score}</b></td><td>{_fmt(r.get("r5"), 1, True)}%</td>'
         f'<td>{_fmt(r.get("r21"), 1, True)}%</td><td>{_fmt(r.get("r63"), 1, True)}%</td>'
         f'<td>{_fmt(r.get("consistency"), 0)}%</td>'
@@ -365,7 +449,7 @@ border:1px solid var(--bd);border-radius:7px;background:var(--soft);color:var(--
 .filters{display:grid;grid-template-columns:minmax(180px,2fr) repeat(3,minmax(120px,1fr));gap:8px;margin:14px 0 8px}
 label{font-size:11px;color:var(--mut)}input,select{display:block;width:100%;margin-top:3px;padding:8px 9px;border:1px solid var(--bd);
 border-radius:7px;background:var(--sf);color:var(--ink);font:inherit}.count{margin:5px 0;color:var(--ink2)}
-.wrap{overflow:auto;border:1px solid var(--bd);border-radius:9px;background:var(--sf)}table{border-collapse:collapse;width:100%;min-width:920px;
+.wrap{overflow:auto;border:1px solid var(--bd);border-radius:9px;background:var(--sf)}table{border-collapse:collapse;width:100%;min-width:1080px;
 font-size:12px;font-variant-numeric:tabular-nums}th,td{border-bottom:1px solid var(--bd);padding:6px 7px;text-align:right;white-space:nowrap}
 th{position:sticky;top:0;background:var(--soft);z-index:1;color:var(--ink2)}th.l,td.l{text-align:left}tbody tr:hover{background:#0ca30c0c}
 .open{border:0;background:none;color:var(--ink);font:inherit;font-weight:800;padding:3px 6px;margin:-3px -6px;cursor:pointer;text-decoration:underline;
@@ -391,6 +475,7 @@ const count=document.getElementById('count'), empty=document.getElementById('emp
 const esc=s=>String(s??'—').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pct=(v,d=1)=>v==null?'—':`${v>=0?'+':''}${Number(v).toFixed(d)}%`;
 const num=(v,d=1)=>v==null?'—':Number(v).toFixed(d);
+const amount=(v,currency=false)=>{if(v==null)return '—';const n=Number(v),p=currency?'$':'';if(Math.abs(n)>=1e12)return `${p}${(n/1e12).toFixed(2)}万亿`;if(Math.abs(n)>=1e8)return `${p}${(n/1e8).toFixed(1)}亿`;if(Math.abs(n)>=1e4)return `${p}${(n/1e4).toFixed(1)}万`;return `${p}${n.toLocaleString('zh-CN',{maximumFractionDigits:0})}`};
 function apply(){
   const needle=q.value.trim().toLowerCase();
   let shown=all.filter(tr=>(!needle||tr.dataset.search.includes(needle))&&(!group.value||tr.dataset.group===group.value)&&(!tier.value||tr.dataset.tier===tier.value));
@@ -404,7 +489,7 @@ function metric(label,value){return `<div class="metric"><small>${label}</small>
 function openETF(i,updateHash=true){
   const r=DATA[i], status=r.missing?'数据缺失':`${r.tier} · 总榜第 ${r.rank}`;
   box.innerHTML=`<div class="detail-head"><div><h2>${esc(r.tk)} · ${esc(r.name)}</h2><div class="sub">${esc(r.group)} · ${esc(status)} · 数据日 ${esc(r.date)}</div></div><button class="close" aria-label="关闭">×</button></div>
-  <div class="metrics">${metric('涨幅评分',num(r.score))}${metric('5日涨幅',pct(r.r5))}${metric('21日涨幅',pct(r.r21))}${metric('63日涨幅',pct(r.r63))}</div>
+  <div class="metrics">${metric('基金规模 AUM',amount(r.aum,true))}${metric('最新成交量',amount(r.volume))}${metric('21日均量',amount(r.avg_volume21))}${metric('量比（对21日）',r.volume_ratio==null?'—':`${num(r.volume_ratio,2)}×`)}${metric('涨幅评分',num(r.score))}${metric('5日涨幅',pct(r.r5))}${metric('21日涨幅',pct(r.r21))}${metric('63日涨幅',pct(r.r63))}</div>
   <section><b>为什么排在这里</b>${esc(r.why)}</section>
   <section><b>相对 SPY</b>5 / 21 / 63 日：${pct(r.rs5)} / ${pct(r.rs21)} / ${pct(r.rs63)} · 象限 ${esc(r.quad)}</section>
   <section><b>趋势与位置</b>${esc(r.trend)} · ${esc(r.position)} · 21日上涨天数 ${pct(r.consistency,0)} · ADR20 ${pct(r.adr20)} · 距20日枢轴 ${pct(r.ext20)}</section>
@@ -443,7 +528,7 @@ document.getElementById('copySymbols').addEventListener('click',e=>copyText(TVSY
         '<div class="logic"><div class="formula">涨幅评分 = 5日涨幅百分位×25% + 21日×40% + 63日×25% + 持续性×10%</div>'
         '<div class="logic-grid"><div><b>21日 40%</b>主趋势，权重最高</div><div><b>5日 25%</b>近期加速或转弱</div>'
         '<div><b>63日 25%</b>中期累计涨幅</div><div><b>持续性 10%</b>近21日上涨天数占比</div></div>'
-        f'<div class="note">主题只用于筛选，不参与评分。追高提示也不扣掉历史涨幅，只单独暴露风险。{H.escape(xbi_note)}</div>'
+        f'<div class="note">主题、基金规模（AUM）和成交量只用于筛选与判断流动性，不参与涨幅评分。成交量为最新已完结交易日。{H.escape(xbi_note)}</div>'
         f'<div class="tv-actions"><a class="primary" href="{TV_LIST_FILENAME}" download>下载 TV 导入 List（{len(tv_selected)}只）</a>'
         '<button id="copyTv" type="button">复制分组 TV List</button>'
         f'<a href="{TV_SYMBOLS_FILENAME}" download>下载 市场:TICKER</a><button id="copySymbols" type="button">复制 市场:TICKER</button></div>'
@@ -451,9 +536,10 @@ document.getElementById('copySymbols').addEventListener('click',e=>copyText(TVSY
         '<div class="filters"><label>搜索代码、名称或主题<input id="q" type="search" placeholder="例如 XBI、生物科技、能源"></label>'
         f'<label>主题<select id="group"><option value="">全部主题</option>{group_options}</select></label>'
         '<label>层级<select id="tier"><option value="">全部层级</option><option>领涨</option><option>强势</option><option>改善</option><option>观察</option><option>数据缺失</option></select></label>'
-        '<label>排序<select id="sort"><option value="score">涨幅评分</option><option value="r5">5日涨幅</option><option value="r21">21日涨幅</option><option value="r63">63日涨幅</option><option value="name">代码</option></select></label></div>'
+        '<label>排序<select id="sort"><option value="score">涨幅评分</option><option value="aum">基金规模 AUM</option><option value="volume">最新成交量</option><option value="r5">5日涨幅</option><option value="r21">21日涨幅</option><option value="r63">63日涨幅</option><option value="name">代码</option></select></label></div>'
         f'<div class="count" id="count">显示 {len(rows)} / {len(rows)} 只</div><div class="wrap"><table>'
         '<thead><tr><th>排名</th><th class="l">代码</th><th class="l">名称</th><th class="l">主题</th><th class="l">层级</th>'
+        '<th title="ETF 基金总资产，不是成分股总市值">规模(AUM)</th><th title="最新已完结交易日成交量">成交量</th>'
         '<th>评分</th><th>5日</th><th>21日</th><th>63日</th><th>上涨日</th><th class="l">趋势</th><th class="l">位置</th></tr></thead>'
         f'<tbody id="rows">{trs}</tbody></table><div class="empty" id="empty">没有符合当前筛选的 ETF</div></div>'
         '<dialog id="detail" aria-labelledby="detailTitle"><div class="detail" id="detailBox"></div></dialog>'
