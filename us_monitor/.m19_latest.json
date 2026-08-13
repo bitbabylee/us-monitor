@@ -15,7 +15,7 @@
    "signals": []
   },
   "cn_pullback": {
-   "generated": "2026-08-13 09:22 UTC",
+   "generated": "2026-08-13 09:27 UTC",
    "as_of": "2026-08-12",
    "market_gate": {
     "status": "green",
@@ -29,5 +29,5 @@
    "signals": []
   }
  },
- "updated": "2026-08-13 09:22 UTC"
+ "updated": "2026-08-13 09:27 UTC"
 }

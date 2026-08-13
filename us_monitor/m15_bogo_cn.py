@@ -10,6 +10,7 @@
 """
 import html as H
 import json
+import datetime as DT
 from pathlib import Path
 
 from . import m13_bogo as m13
@@ -116,6 +117,13 @@ def _engine_plans() -> dict:
         return {}
     out = {}
     for profile in payload.get("profiles", {}).values():
+        try:
+            generated = DT.datetime.strptime(profile["generated"], "%Y-%m-%d %H:%M UTC").replace(
+                tzinfo=DT.timezone.utc)
+            if DT.datetime.now(DT.timezone.utc) - generated > DT.timedelta(hours=36):
+                continue
+        except (KeyError, TypeError, ValueError):
+            continue
         for signal in profile.get("signals", []):
             ticker = str(signal.get("ticker", ""))
             out[ticker.split(".", 1)[0]] = signal
