@@ -153,11 +153,20 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
                if r["代码"] in imgs else "") + "</div>")
     src = d.get("source") or ""
     rpt = f"{src[:2]}-{src[2:4]}" if len(src) >= 4 and src[:4].isdigit() else ""
-    # 报告日 != 今天 → 上游当天没发源件(缺件日), 明示而不是让人误以为是当日数据
+    # 报告日 != 今天: 分两种情况 —— 该批次今天还没到跑批时间(正常, 不报警) vs 已过点仍无件(真缺件)
     import datetime as _dt
-    stale = bool(rpt) and src[:4] != _dt.date.today().strftime("%m%d")
-    warn = (f'<span style="color:#c0392b;font-weight:700">⚠ 上游今日未发件，以下为 {H.escape(rpt)} 批数据</span> · '
-            if stale else "")
+    _due = {"1050": (11, 20), "1520": (15, 55), "1600": (16, 40), "us": (6, 30)}
+    _now = _dt.datetime.now()
+    _h, _m = _due.get(key, (23, 59))
+    _passed = (_now.hour, _now.minute) >= (_h, _m)
+    _is_wd = _now.weekday() < 5
+    stale = bool(rpt) and src[:4] != _now.strftime("%m%d")
+    warn = ""
+    if stale and _passed and _is_wd:
+        warn = (f'<span style="color:#c0392b;font-weight:700">⚠ 今日源件未到，以下为 '
+                f'{H.escape(rpt)} 批数据</span> · ')
+    elif stale:
+        warn = f'<span style="color:#888">今日批次未到时间，以下为 {H.escape(rpt)} 批</span> · '
     return (f'<div class="sec"><h1>{H.escape(label)}</h1>'
             f'<div class="sub">' + warn
             + f'{H.escape((d.get("title") or "")[:70])} · 来源 '
