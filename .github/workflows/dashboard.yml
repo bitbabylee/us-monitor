@@ -51,7 +51,7 @@ jobs:
           # .alerts_state.json 管🔔去重、.cache_earnings.json 管财报缓存、
           # .capex_series.json 管季度时间序列、.tv_symbols.json 管交易所映射
           git add -f docs/ us_monitor/.alerts_state.json us_monitor/.cache_earnings.json \
-                     us_monitor/.capex_series.json us_monitor/.tv_symbols.json us_monitor/.optflow_state.json us_monitor/.trend_state.json 2>/dev/null || true
+                     us_monitor/.capex_series.json us_monitor/.tv_symbols.json us_monitor/.optflow_state.json us_monitor/.trend_state.json us_monitor/.panic_state.json 2>/dev/null || true
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "看板更新 $(TZ=America/New_York date +'%F %H:%M ET')"
             git push

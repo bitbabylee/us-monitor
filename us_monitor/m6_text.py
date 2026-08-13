@@ -28,7 +28,8 @@ from . import earnings
 from .data import fetch_daily, fetch_intraday, col, NY
 from . import (m1_macro, m2_sectors, m3_themes, m4_watchlist, m5_intraday,
                m7_gao, m8_alerts, m9_premarket, m10_camslim, m12_capex, m13_bogo,
-               m15_cn, m16_weekly, m17_optflow, m18_trend, m19_radar)
+               m15_cn, m16_weekly, m17_optflow, m18_trend, m19_radar,
+               m20_panic)
 from .run_all import compute_crosscheck, cross_check
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "dashboard"
@@ -73,7 +74,7 @@ def _ss(sig):
 
 def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
             keep, drop, bogo, cal, pre_df, cn=None, wkly=None, opt=None,
-            trd=None, rad=None) -> str:
+            trd=None, rad=None, pnc=None) -> str:
     from . import tv
     tv.warm(C.all_daily_tickers())
     S = tv.symbol
@@ -138,6 +139,9 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
         for d, v in sorted(by7.items()):
             L.append(f"  {d:%m-%d} 周{wk7[d.weekday()]}  "
                      + " ".join(f"{S(x)}{vfy(x)}" for x in v))
+    if pnc and pnc.get("active"):
+        L.append("【恐慌买入计划】🔔进行中(冷静时写死的规则)")
+        L += pnc["lines"]
     L.append(thin)
 
     # ═══ 第二层 证据区: 凭什么 ═══
@@ -359,12 +363,18 @@ def build(with_intraday=True) -> Path:
         except Exception as exc:
             rad = None
             print(f"【主题雷达】失败: {exc}")
+        print()
+        try:
+            pnc = m20_panic.run(daily, cam, gao, m1)
+        except Exception as exc:
+            pnc = None
+            print(f"【恐慌买入计划】失败: {exc}")
     full_text = buf.getvalue()
 
     keep, drop = compute_crosscheck(sec_df, theme_df, wl_df)
     cal = earnings.upcoming(C.WATCHLIST, days=14)
     digest = _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
-                     keep, drop, bogo, cal, pre_df, cn, wk, opt, trd, rad)
+                     keep, drop, bogo, cal, pre_df, cn, wk, opt, trd, rad, pnc)
 
     OUT_DIR.mkdir(exist_ok=True)
     date = col(daily, "Close", C.BENCHMARK).index[-1].strftime("%Y-%m-%d")
