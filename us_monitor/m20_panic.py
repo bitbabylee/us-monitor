@@ -79,7 +79,9 @@ def run(daily, cam, gao, m1) -> dict:
         for key, (name, ok, detail) in zip(("t1", "t2", "t3"), checks):
             mark = f"✅已触发{fired[key][5:]}" if fired.get(key) else ("🔔今日达标" if ok else "○待触发")
             lines.append(f"  {name} {mark} — {detail}")
-        lines.append(f"  纪律: 每档只动预留现金1/3 · 框架底无止损位 · 单档触发一次不重复")
+        lines.append("  买什么: 指数(QQQ/SPY)不是个股——指数不归零/不需基本面判断/"
+                     "不被单票爆雷打脸, \"机会几乎不会错\"只在指数上成立")
+        lines.append("  纪律: 每档只动预留现金1/3 · 框架底无止损位 · 单档触发一次不重复")
     else:
         lines.append(f"  未进入恐慌区(派发{dist:g} 回撤{dd:+.1f}%) · 门槛 "
                      f"派发≥{C.PANIC_DIST} 且 回撤≤-{C.PANIC_DD}%")
