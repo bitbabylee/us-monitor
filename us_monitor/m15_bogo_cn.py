@@ -15,6 +15,7 @@ from pathlib import Path
 from . import m13_bogo as m13
 
 STORE = Path(__file__).resolve().parent / ".bogo_cn_signals.json"
+ENGINE_STORE = Path(__file__).resolve().parent / ".m19_latest.json"
 BATCHES = [
     ("1050", "A股早盘 · 10:50批", "* ch 1050 bo sig.pdf"),
     ("1520", "A股午后 · 15:20批", "* ch 1520 bo sig.pdf"),
@@ -45,6 +46,7 @@ tr.hot td{background:#0ca30c14}
 .blk{margin:12px 0;background:var(--sf);border:1px solid var(--bd);border-radius:6px;padding:8px}
 .blk pre{margin:0 0 6px;white-space:pre-wrap;font-size:12px}
 .blk img{max-width:100%;border-radius:4px}
+.plan{display:block;margin-top:5px;padding:4px 6px;border-left:3px solid var(--ink2);color:var(--ink2)}
 a{color:inherit}
 """
 
@@ -106,6 +108,38 @@ def _tvurl(code):
         return code, None
 
 
+def _engine_plans() -> dict:
+    """只读取 m19 当日快照；执行计划不改变波哥信号判定。"""
+    try:
+        payload = json.loads(ENGINE_STORE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    out = {}
+    for profile in payload.get("profiles", {}).values():
+        for signal in profile.get("signals", []):
+            ticker = str(signal.get("ticker", ""))
+            out[ticker.split(".", 1)[0]] = signal
+    return out
+
+
+def _plan_line(code: str, plans: dict) -> str:
+    signal = plans.get(code)
+    if not signal:
+        return ""
+    plan = signal.get("plan")
+    setups = "+".join(signal.get("setup_names", [])) or "—"
+    triggers = "+".join(signal.get("triggers", [])) or "—"
+    if not plan:
+        return (f'\n<span class="plan"><b>三层执行计划</b>（不影响波哥信号）：'
+                f'{H.escape(setups)} → {H.escape(triggers)} · ADR评级拒，不出计划</span>')
+    return (f'\n<span class="plan"><b>三层执行计划</b>（不影响波哥信号）：'
+            f'{H.escape(setups)} → {H.escape(triggers)} · Entry {plan["entry_stop"]:.2f}'
+            f' / Limit {plan["entry_limit"]:.2f} / Stop {plan["stop"]:.2f}'
+            f' / 1R {plan["target_1R"]:.2f} / 2R {plan["target_2R"]:.2f}'
+            f' · Stop {plan["stop_pct"]:.2f}% / ADR {plan["adr20"]:.2f}%'
+            f' · {H.escape(plan["grade"])} · 仓位上限 {plan["position_pct"]:.1f}%</span>')
+
+
 def _section(key, label, d, img_prefix="bogo_cn/") -> str:
     if not d or not d.get("rows"):
         return (f'<div class="sec"><h1>{H.escape(label)}</h1>'
@@ -115,6 +149,7 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
     days3 = sorted({r["信号日"] for r in rows}, reverse=True)[:3]
     newest = days3[0] if days3 else ""
     detail_rows = rows   # 明细图=全清单(强+弱), 2026-08-11 用户要求
+    plans = _engine_plans()
     def _day(r):
         d0 = r["信号日"]
         if d0 == newest:
@@ -148,7 +183,7 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
             f'<div class="blk"><pre><b>{H.escape(s_)}</b> {H.escape(r["中文名"])} · '
             f'{H.escape(r["主题"])}\n信号日 {H.escape(r["信号日"])} · Fit {H.escape(r["Fit"])} · '
             f'胜率 {H.escape(r["胜率"])}% · CA {H.escape(r["CA%"])}% · Pnls {H.escape(r["Pnls%"])}% · '
-            f'当日 {H.escape(r["当日%"])}%{link}</pre>'
+            f'当日 {H.escape(r["当日%"])}%{link}{_plan_line(r["代码"], plans)}</pre>'
             + (f'<img loading="lazy" src="{img_prefix}{H.escape(imgs[r["代码"]])}">'
                if r["代码"] in imgs else "") + "</div>")
     src = d.get("source") or ""
