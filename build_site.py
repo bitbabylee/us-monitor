@@ -47,6 +47,16 @@ def main():
         shutil.copy(src_dir / "summary.html", DOCS / "summary.html")
     except Exception as exc:
         print(f"WARN: 波哥A股页 {exc}")
+    try:
+        from us_monitor import m19_radar
+        etf = m19_radar.build_page()
+        shutil.copy(etf, DOCS / "etf.html")
+        shutil.copy(etf.parent / m19_radar.TV_LIST_FILENAME,
+                    DOCS / m19_radar.TV_LIST_FILENAME)
+        shutil.copy(etf.parent / m19_radar.TV_SYMBOLS_FILENAME,
+                    DOCS / m19_radar.TV_SYMBOLS_FILENAME)
+    except Exception as exc:
+        print(f"WARN: ETF 涨幅页 {exc}")
     man = src_dir / "manual.html"
     if man.exists():
         shutil.copy(man, DOCS / "manual.html")
