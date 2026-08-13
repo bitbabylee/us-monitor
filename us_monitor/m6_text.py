@@ -17,6 +17,7 @@ import datetime as dt
 import html
 import io
 import shutil
+from zoneinfo import ZoneInfo
 import sys
 from pathlib import Path
 
@@ -84,7 +85,12 @@ def _digest(daily, m1, cam, gao, sec_df, theme_df, wl_df, intra_df,
     today_ny = dt.datetime.now(NY).date()
     vfy = lambda tk: "✓" if tk in C.EARNINGS_VERIFIED else "?"
 
-    L += [bar, f"  波哥信号 · 美股日报  {date} · 生成 {dt.datetime.now():%m-%d %H:%M}", bar]
+    # 时间戳双时区: 云端跑在 ET, 北京看会误读成"昨天晚上的旧数据"
+    now_ny = dt.datetime.now(NY)
+    now_cn = now_ny.astimezone(ZoneInfo("Asia/Shanghai"))
+    L += [bar,
+          f"  波哥信号 · 美股日报  数据截至 {date} 收盘(ET)",
+          f"  生成 {now_ny:%m-%d %H:%M} 纽约 = {now_cn:%m-%d %H:%M} 北京", bar]
 
     # ═══ 第一层 决策区: 今天做什么 ═══
     L += ["", "① 决 策 —— 今天做什么", bar]
