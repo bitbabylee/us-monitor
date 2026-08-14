@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-13 收盘(ET)
-  生成 08-14 03:51 纽约 = 08-14 15:51 新加坡
+  生成 08-14 04:42 纽约 = 08-14 16:42 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -31,8 +31,8 @@
   宏观 ✅ATR1476% ✗10Y4.64% ✅HYG/LQD0.7489 ✅USD/JPY159.33
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:HACK 网络安全  AMEX:CRAK 炼化下游  AMEX:IGV 软件
-  短线改善: AMEX:URA 铀核能  AMEX:PRNT 3D打印  AMEX:XME 金属矿业  AMEX:SLV 白银  AMEX:OIH 油服
+  涨幅优先: NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:HACK 网络安全  AMEX:CRAK 炼化下游  AMEX:IEO 油气上游
+  短线改善: AMEX:URA 铀核能  AMEX:XME 金属矿业  AMEX:SLV 白银  AMEX:DBC 大宗商品  AMEX:OIH 油服
 ------------------------------------------------
 【板块】
   强: AMEX:XLC+1.4%
@@ -62,7 +62,7 @@
             NASDAQ:PLTR🟡  NYSE:SNOW🟢  NASDAQ:SPCX🔴  AMEX:GDX🔴 
             NASDAQ:CORZ🔴  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴 
             NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AMAT-5.0% NASDAQ:SNDK+2.7% NASDAQ:NBIS+2.3%
+  盘前±2%: NASDAQ:AMAT-5.3% NASDAQ:SNDK+4.1% NASDAQ:NBIS+2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 65%
