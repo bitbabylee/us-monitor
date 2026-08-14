@@ -695,7 +695,11 @@ def build(with_intraday=True, daily=None, refresh_sec=None) -> Path:
     from .data import col
     import datetime as dt
     date = col(daily, "Close", C.BENCHMARK).index[-1].strftime("%Y-%m-%d")
-    stamp = dt.datetime.now().strftime("%H:%M:%S")
+    # 双时区: 云端跑在 ET, 新加坡看会把 ET 时间误读成"昨天下午的旧数据"
+    from zoneinfo import ZoneInfo as _Z
+    _ny = dt.datetime.now(_Z("America/New_York"))
+    _sg = _ny.astimezone(_Z("Asia/Singapore"))
+    stamp = f"{_ny:%m-%d %H:%M} 纽约 = {_sg:%m-%d %H:%M} 新加坡"
     meta_refresh = (f'<meta http-equiv="refresh" content="{refresh_sec}">'
                     if refresh_sec else "")
     # ── 摘要置顶, 其余全部折叠（?full=1 全展开, 截图用）──
@@ -715,7 +719,7 @@ def build(with_intraday=True, daily=None, refresh_sec=None) -> Path:
 document.querySelectorAll("details").forEach(d=>d.open=true);</script>''')
     page = (f'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'{meta_refresh}<title>波哥信号仪表盘 {date}</title><style>{CSS}</style>'
-            f'<h1>📡 波哥信号 · 美股监控仪表盘 <small>日线数据日 {date} · 本地生成 {stamp}'
+            f'<h1>📡 波哥信号 · 美股监控仪表盘 <small>日线数据日 {date}(ET收盘) · 生成 {stamp}'
             f' · 超额基准 {C.BENCHMARK} · '
             f'<a href="manual.html" style="color:var(--pos)">📖 使用手册（看不懂点这里）</a>'
             f'</small></h1>'
