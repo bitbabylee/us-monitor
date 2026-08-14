@@ -1,14 +1,14 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-08-13 21:51 UTC",
-   "as_of": "2026-08-13",
+   "generated": "2026-08-14 21:30 UTC",
+   "as_of": "2026-08-14",
    "market_gate": {
     "status": "green",
     "symbol": "^IXIC",
-    "date": "2026-08-13",
-    "ma10": 26371.75,
-    "ma20": 25788.08
+    "date": "2026-08-14",
+    "ma10": 26507.28,
+    "ma20": 25848.52
    },
    "universe_n": 44,
    "data_n": 44,
@@ -29,5 +29,5 @@
    "signals": []
   }
  },
- "updated": "2026-08-14 08:00 UTC"
+ "updated": "2026-08-14 21:30 UTC"
 }
