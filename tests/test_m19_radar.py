@@ -51,7 +51,9 @@ class EtfRadarTests(unittest.TestCase):
         self.assertEqual(by_ticker["XBI"]["aum"], 9_625_333_760)
         self.assertEqual(by_ticker["XBI"]["volume"], 1_000_000)
         self.assertEqual(by_ticker["XBI"]["avg_volume21"], 1_000_000)
+        self.assertGreater(by_ticker["XBI"]["avg_dollar_volume21"], 1_000_000)
         self.assertEqual(by_ticker["XBI"]["volume_ratio"], 1.0)
+        self.assertEqual(by_ticker["XBI"]["liquidity"], "通过")
 
     def test_persistent_gain_is_ranked_and_not_hidden_by_top_n(self):
         result = m19_radar.analyze_frames(
@@ -79,22 +81,45 @@ class EtfRadarTests(unittest.TestCase):
         self.assertIn("下载 TV 导入 List", page)
         self.assertIn("复制 市场:TICKER", page)
         self.assertIn("规模(AUM)", page)
-        self.assertIn("成交量", page)
+        self.assertIn("21日均成交额", page)
+        self.assertIn('id="liquidity"', page)
         self.assertIn('value="aum"', page)
-        self.assertIn('value="volume"', page)
+        self.assertIn('value="dollarVolume"', page)
         self.assertIn('data-aum="9625333760.0"', page)
         self.assertIn('data-volume="1000000.0"', page)
+        self.assertIn('data-dollar-volume="', page)
+        self.assertIn('data-liquidity="通过"', page)
 
     def test_tv_import_list_uses_allowed_tiers_and_rank_order(self):
-        result = m19_radar.analyze_frames(self.frames, self.metas)
+        aum = {tk: 1_000_000_000 for tk in self.metas}
+        result = m19_radar.analyze_frames(self.frames, self.metas, aum=aum)
         text, selected = m19_radar.tv_import_list(result, limit=3)
         self.assertLessEqual(len(selected), 3)
         self.assertTrue(all(r["tier"] in m19_radar.TV_LIST_TIERS for r in selected))
+        self.assertTrue(all(r["liquidity"] in m19_radar.TV_LIST_LIQUIDITY for r in selected))
         self.assertIn("###", text)
         self.assertEqual([r["rank"] for r in selected], sorted(r["rank"] for r in selected))
         symbols = m19_radar.tv_symbol_list(selected)
         self.assertNotIn("###", symbols)
         self.assertEqual(len(symbols.split(",")), len(selected))
+
+    def test_liquidity_gate_excludes_aum_below_300m(self):
+        status, reason = m19_radar.liquidity_status(299_999_999, 10_000_000)
+        self.assertEqual(status, "排除")
+        self.assertIn("$3亿", reason)
+        self.assertEqual(m19_radar.liquidity_status(300_000_000, 1_999_999)[0], "排除")
+        self.assertEqual(m19_radar.liquidity_status(300_000_000, 3_000_000)[0], "谨慎")
+        self.assertEqual(m19_radar.liquidity_status(300_000_000, 5_000_000)[0], "通过")
+        self.assertEqual(m19_radar.liquidity_status(None, 5_000_000)[0], "数据缺失")
+
+    def test_tv_list_backfills_past_excluded_etf(self):
+        rows = [
+            {"tk": "HERO", "tier": "领涨", "rank": 1, "liquidity": "排除"},
+            {"tk": "SPY", "tier": "领涨", "rank": 2, "liquidity": "通过"},
+            {"tk": "XBI", "tier": "强势", "rank": 3, "liquidity": "谨慎"},
+        ]
+        _, selected = m19_radar.tv_import_list({"rows": rows}, limit=2)
+        self.assertEqual([r["tk"] for r in selected], ["SPY", "XBI"])
 
     def test_aum_daily_cache_avoids_repeat_network_fetch(self):
         with TemporaryDirectory() as tmp:
