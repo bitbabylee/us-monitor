@@ -45,17 +45,13 @@ def parse(pdf: Path) -> dict:
         title = (page.extract_text() or "").split("\n")[0]
         words = page.extract_words()
 
-    # 行聚类: 按 top 间距切行(旧版 round(top/3) 分桶会把边界行劈两半丢行, 0810 ch1520 的 159363 教训)
-    clusters = []
-    for w in sorted(words, key=lambda w: w["top"]):
-        if clusters and abs(w["top"] - clusters[-1][0]) <= 2.5:
-            clusters[-1][1].append(w)
-        else:
-            clusters.append((w["top"], [w]))
+    lines = defaultdict(list)
+    for w in words:
+        lines[round(w["top"] / 3)].append(w)
 
     rows, tag = [], None
-    for _, ws in clusters:
-        line = sorted(ws, key=lambda w: w["x0"])
+    for k in sorted(lines):
+        line = sorted(lines[k], key=lambda w: w["x0"])
         first = line[0]["text"]
         if first in ("strong", "weak"):
             tag = first
@@ -74,9 +70,6 @@ def parse(pdf: Path) -> dict:
         cell["信号"] = tag
         rows.append(cell)
 
-    n_claim = re.search(r"全清单(\d+)只", title)
-    if n_claim and int(n_claim.group(1)) != len(rows):
-        print(f"WARN: {pdf.name} 解析{len(rows)}行 != 标题全清单{n_claim.group(1)}只(疑似丢行)", file=sys.stderr)
     m = re.search(r"US盘后\s*([\d-]+)", title)
     return {"title": title, "date": m.group(1) if m else None,
             "source": pdf.name, "rows": rows}
@@ -121,8 +114,10 @@ def load() -> dict:
             if d["rows"]:
                 try:
                     from .m6_dashboard import OUT_DIR
-                    # 2026-08-11 起全清单导图(强+弱,用户要求);同名png缓存,增量渲染
-                    want = {r["代码"] for r in d["rows"]}
+                    # 只导当日强信号的原图（全导 34 张 6MB, 且弱信号/旧日期用处不大）
+                    days3 = sorted({r["信号日"] for r in d["rows"]}, reverse=True)[:3]
+                    want = {r["代码"] for r in d["rows"]
+                            if r["信号"] == "strong" and r["信号日"] in days3}
                     d["images"] = export_pages(pdf, OUT_DIR / "bogo", only=want)
                 except Exception as exc:
                     print(f"WARN: 导出波哥单页图失败 {exc}", file=sys.stderr)
@@ -182,6 +177,15 @@ def run() -> dict:
 
 if __name__ == "__main__":
     run()
+
+
+def _stamp() -> str:
+    """页面生成时间: 纽约=新加坡双时区(裸 ET 时分会被误读成旧数据)"""
+    import datetime as _dt
+    from zoneinfo import ZoneInfo as _Z
+    ny = _dt.datetime.now(_Z("America/New_York"))
+    sg = ny.astimezone(_Z("Asia/Singapore"))
+    return f"{ny:%m-%d %H:%M}纽约={sg:%m-%d %H:%M}新加坡"
 
 
 def build_page() -> Path:
@@ -264,9 +268,8 @@ img{max-width:100%;border:1px solid var(--bd);border-radius:6px}
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>波哥七维信号</title><style>{css}</style>'
             f'<h1>波哥系统七维信号汇总</h1>'
-            f'<div class="sub"><a href="etf.html">ETF涨幅榜⭱</a> · '
-            f'<a href="summary.html">历史汇总⭱</a></div>'
             f'<div class="sub">{H.escape(d.get("title") or "")[:70]} · '
+            f'生成 {_stamp()} · '
             f'共 {len(rows)} 只（强 {sum(1 for r in rows if r["信号"]=="strong")}）· '
             f'下方明细图仅近3日强信号（{" / ".join(days3)}）</div>'
             f'<table><tr><th class="l">信号</th><th class="l">代码</th>'
