@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-13 收盘(ET)
-  生成 08-14 02:36 纽约 = 08-14 14:36 新加坡
+  生成 08-14 03:51 纽约 = 08-14 15:51 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -32,7 +32,7 @@
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:HACK 网络安全  AMEX:CRAK 炼化下游  AMEX:IGV 软件
-  短线改善: AMEX:IPO 新股  AMEX:VLUE 价值  AMEX:URA 铀核能  AMEX:XME 金属矿业  AMEX:SLV 白银
+  短线改善: AMEX:URA 铀核能  AMEX:PRNT 3D打印  AMEX:XME 金属矿业  AMEX:SLV 白银  AMEX:OIH 油服
 ------------------------------------------------
 【板块】
   强: AMEX:XLC+1.4%
@@ -68,11 +68,10 @@
   上升趋势占比 65%
   🟢合格·在买点区(6): NASDAQ:NBIS NYSE:GEV NASDAQ:CRWD NASDAQ:CIBR NYSE:SNOW AMEX:SPY
   🟢合格·追高区勿追(1): NYSE:NET
-  🔴淘汰(10): NASDAQ:MSFT NASDAQ:PLTR AMEX:GDX NASDAQ:IREN SSE:601138(富联) SZSE:002837(英维克) SZSE:300476(胜宏) NASDAQ:HOOD SSE:605589(圣泉) NASDAQ:HUT
+  🔴淘汰(11): NASDAQ:MSFT NASDAQ:PLTR AMEX:GDX NASDAQ:IREN SSE:601138(富联) SZSE:002837(英维克) SZSE:300476(胜宏) NASDAQ:HOOD SSE:605589(圣泉) SSE:603986(兆易) NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: SNDKC$958M MU≈$396M LLYC$257M QQQC$173M PLTRC$120M
-  T+1核对: BEC242.5(08-14)✗未增 BEC245(08-14)✗未增 BEP146(08-14)✗未增 BEP202.5(08-14)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
