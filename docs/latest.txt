@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-13 收盘(ET)
-  生成 08-13 17:12 纽约 = 08-14 05:12 北京
+  生成 08-13 20:20 纽约 = 08-14 08:20 北京
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -29,7 +29,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.3 高贝+0.3 低波-0.1 价值+0.6 → 价值轮动日
   派发 ▂▄▃▂▄▄▃▅▆▆▇▇▇▆▇▆▂▁▁▁▁▁▁▁▁ (0/吸4) → 仓位100%
   阶段P0 恐慌未释放 恐慌2/4 共识4/5 缺:近三日突破20日线伴随放
-  宏观 ✅ATR1476% ✗10Y4.64% ✅HYG/LQD0.7489 ✅USD/JPY159.47
+  宏观 ✅ATR1476% ✗10Y4.64% ✅HYG/LQD0.7489 ✅USD/JPY159.33
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:HACK 网络安全  AMEX:CRAK 炼化下游  AMEX:IEO 油气上游
@@ -62,16 +62,16 @@
             NASDAQ:PLTR🟡  NASDAQ:SPCX🔴  AMEX:GDX🔴  NASDAQ:CORZ🔴 
             NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴 
             NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AMAT-4.9%
+  盘前±2%: NASDAQ:AMAT-5.0% NASDAQ:SNDK+2.7% NASDAQ:NBIS+2.3%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 67% · 📣GDX S3⌒→S4↓ · CORZ S2↑→S1⌐ · RIOT S2↑→S1⌐
+  上升趋势占比 65% · 📣江波龙 S2↑→S1⌐
   🟢合格·在买点区(6): NASDAQ:NBIS NYSE:GEV NASDAQ:CRWD NASDAQ:CIBR NYSE:SNOW AMEX:SPY
   🟢合格·追高区勿追(1): NYSE:NET
-  🔴淘汰(14): NASDAQ:MSFT NASDAQ:PLTR AMEX:GDX NASDAQ:IREN SSE:601138(富联) SZSE:002837(英维克) SZSE:300476(胜宏) NASDAQ:HOOD SZSE:300308(旭创) SSE:688627(精智达) SZSE:301308(江波龙) SSE:605589(圣泉) SSE:603986(兆易) NASDAQ:HUT
+  🔴淘汰(12): NASDAQ:MSFT NASDAQ:PLTR AMEX:GDX NASDAQ:IREN SSE:601138(富联) SZSE:002837(英维克) SZSE:300476(胜宏) NASDAQ:HOOD SZSE:300308(旭创) SSE:605589(圣泉) SSE:603986(兆易) NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKC$970M(v/oi38.9) MU≈$395M(v/oi99.0) QQQC$380M(v/oi99.0) LLYC$255M(v/oi7.9) PLTRC$121M(v/oi7.6)
+  今日: SNDKC$970M(v/oi38.9) MU≈$395M(v/oi99.0) LLYC$255M(v/oi7.9) QQQC$175M(v/oi99.0) PLTRC$121M(v/oi7.6)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
