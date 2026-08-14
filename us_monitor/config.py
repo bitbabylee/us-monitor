@@ -336,6 +336,9 @@ ETF_SCORE_WEIGHTS = {5: 0.25, 21: 0.40, 63: 0.25, "consistency": 0.10}
 ETF_TIER_LEADER = 80       # 且 21/63日涨幅均为正
 ETF_TIER_STRONG = 65       # 且 21日涨幅为正
 ETF_CHASE_ADR_MULT = 1.5   # 突破20日枢轴超过 max(5%, 1.5×ADR20) 才标追高
+ETF_AUM_MIN_USD = 300_000_000          # AUM 低于 $3亿：不进交易短名单
+ETF_DOLLAR_VOLUME_MIN_USD = 2_000_000  # 21日均成交额低于 $200万：不进交易短名单
+ETF_DOLLAR_VOLUME_CAUTION_USD = 5_000_000  # $200万-$500万：限价/缩小仓位
 
 # 页面分组仅用于筛选与解释，不进入涨幅评分。
 RADAR_GROUPS = {

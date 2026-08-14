@@ -2,7 +2,7 @@
 
 ## Source of truth
 - Status: Active
-- Last refreshed: 2026-08-13
+- Last refreshed: 2026-08-14
 - Primary product surfaces: `docs/index.html`, `docs/bogo.html`, `docs/summary.html`, `docs/etf.html`
 - Evidence reviewed: `README.md`, `us_monitor/m15_bogo_cn.py`, `us_monitor/m19_radar.py`, generated `docs/bogo.html`, `SPEC_三层信号引擎_20260813.md`, production handoff and pit list.
 
@@ -12,9 +12,9 @@
 - Avoid: opaque scores, hype language, decorative dashboards, hidden rows, and color-only meaning.
 
 ## Product goals
-- Goals: make daily market evidence easy to scan; keep every configured ETF discoverable; explain why an ETF ranks high or low; connect ranking to a detail view without losing context.
+- Goals: make daily market evidence easy to scan; keep every configured ETF discoverable; explain why an ETF ranks high or low; separate price-strength ranking from tradability; connect ranking to a detail view without losing context.
 - Non-goals: automated trade execution, guaranteed-return language, or treating candlestick triggers as proven selection alpha.
-- Success signals: XBI and every other configured ETF are searchable; users can sort by raw return windows; clicking any ETF opens an explanatory detail view; data failures remain visible.
+- Success signals: XBI and every other configured ETF are searchable; users can sort by raw return windows, AUM, and 21-day average dollar volume; liquidity exclusions remain visible in the full table but never enter the TradingView Top-22 list; data failures remain visible.
 
 ## Personas and jobs
 - Primary personas: an active investor reviewing US-market signals after the close.
@@ -29,6 +29,7 @@
 ## Design principles
 - Returns first: ETF ranking is driven primarily by 5/21/63-day price appreciation, not company-quality narratives.
 - Complete before curated: the priority list is a view over the full universe, never a replacement for it.
+- Rank and gate separately: returns determine rank; AUM and average dollar volume determine whether a ranked ETF is tradable enough for the shortlist.
 - Explain every state: the detail view states both supporting evidence and the main reason not to chase.
 - Tradeoff: density is preferred over decorative space, while touch targets and mobile readability remain usable.
 
@@ -42,8 +43,8 @@
 
 ## Components
 - Existing components to reuse: sticky pill navigation, compact tables, status tags, light/dark CSS variables.
-- New/changed components: scoring explainer, filter bar, sortable complete-universe table, ETF detail dialog, missing-data row state, and downloadable/copyable TradingView Top-22 list.
-- Variants and states: leading/strong/improving/watch; extended/near-pivot/pullback; loading/empty/error.
+- New/changed components: scoring explainer, liquidity-gate explainer, filter bar, sortable complete-universe table, ETF detail dialog, missing-data row state, and downloadable/copyable TradingView Top-22 list.
+- Variants and states: leading/strong/improving/watch; liquidity pass/caution/excluded/data-missing; extended/near-pivot/pullback; loading/empty/error.
 - Token/component ownership: page-local CSS until a shared component system exists.
 
 ## Accessibility
@@ -68,7 +69,7 @@
 
 ## Content voice
 - Tone: concise Chinese research language, factual and non-promotional.
-- Terminology: “涨幅评分”, “持续性”, “趋势”, “追高提示”, “优先研究名单”.
+- Terminology: “涨幅评分”, “持续性”, “趋势”, “流动性准入”, “21日均成交额”, “追高提示”, “优先研究名单”.
 - Microcopy rules: distinguish “排名靠前” from “可以买”; always display the measurement window and data date.
 
 ## Implementation constraints
@@ -76,7 +77,7 @@
 - Design-token constraints: reuse existing Bogo page variables and dark-mode behavior.
 - Performance constraints: one self-contained page; no per-row network request; lazy external navigation only.
 - Compatibility constraints: GitHub Pages, current Python build pipeline, and macOS/CI execution.
-- Test/screenshot expectations: unit-test score calculations; build static page; verify XBI presence, configured-universe count, filters/dialog markup, and mobile/desktop render.
+- Test/screenshot expectations: unit-test score calculations and liquidity thresholds; build static page; verify XBI presence, configured-universe count, filters/dialog markup, Top-22 backfill, and mobile/desktop render.
 
 ## Open questions
 - [ ] Whether future “全部 ETF” should expand beyond the configured research universe to every US-listed ETF; owner: user; impact: data volume and page scope.
