@@ -12,11 +12,14 @@ import html as H
 import json
 import datetime as DT
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from . import m13_bogo as m13
 
 STORE = Path(__file__).resolve().parent / ".bogo_cn_signals.json"
 ENGINE_STORE = Path(__file__).resolve().parent / ".m19_latest.json"
+SG = ZoneInfo("Asia/Singapore")
+BATCH_DUE = {"1050": (11, 20), "1520": (15, 55), "1600": (16, 40), "us": (6, 30)}
 BATCHES = [
     ("1050", "A股早盘 · 10:50批", "* ch 1050 bo sig.pdf"),
     ("1520", "A股午后 · 15:20批", "* ch 1520 bo sig.pdf"),
@@ -130,6 +133,35 @@ def _engine_plans() -> dict:
     return out
 
 
+def _source_warning(key: str, src: str, now: DT.datetime | None = None) -> str:
+    """Return a freshness notice using the scheduler's Singapore calendar.
+
+    GitHub Actions runs in UTC, while deck filenames and launchd schedules use
+    Singapore dates. Comparing them without a timezone made a fresh Saturday US
+    deck (for Friday's NY session) look missing during the cloud build.
+    """
+    if not src[:4].isdigit():
+        return ""
+    now = now or DT.datetime.now(SG)
+    if now.tzinfo is None:
+        now = now.replace(tzinfo=SG)
+    else:
+        now = now.astimezone(SG)
+    if src[:4] == now.strftime("%m%d"):
+        return ""
+
+    run_days = {1, 2, 3, 4, 5} if key == "us" else {0, 1, 2, 3, 4}
+    if now.weekday() not in run_days:
+        return ""
+
+    rpt = f"{src[:2]}-{src[2:4]}"
+    due_h, due_m = BATCH_DUE.get(key, (23, 59))
+    if (now.hour, now.minute) >= (due_h, due_m):
+        return (f'<span style="color:#c0392b;font-weight:700">⚠ 今日源件未到，以下为 '
+                f'{H.escape(rpt)} 批数据</span> · ')
+    return f'<span style="color:#888">今日批次未到时间，以下为 {H.escape(rpt)} 批</span> · '
+
+
 def _plan_line(code: str, plans: dict) -> str:
     signal = plans.get(code)
     if not signal:
@@ -195,21 +227,7 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
             + (f'<img loading="lazy" src="{img_prefix}{H.escape(imgs[r["代码"]])}">'
                if r["代码"] in imgs else "") + "</div>")
     src = d.get("source") or ""
-    rpt = f"{src[:2]}-{src[2:4]}" if len(src) >= 4 and src[:4].isdigit() else ""
-    # 报告日 != 今天: 分两种情况 —— 该批次今天还没到跑批时间(正常, 不报警) vs 已过点仍无件(真缺件)
-    import datetime as _dt
-    _due = {"1050": (11, 20), "1520": (15, 55), "1600": (16, 40), "us": (6, 30)}
-    _now = _dt.datetime.now()
-    _h, _m = _due.get(key, (23, 59))
-    _passed = (_now.hour, _now.minute) >= (_h, _m)
-    _is_wd = _now.weekday() < 5
-    stale = bool(rpt) and src[:4] != _now.strftime("%m%d")
-    warn = ""
-    if stale and _passed and _is_wd:
-        warn = (f'<span style="color:#c0392b;font-weight:700">⚠ 今日源件未到，以下为 '
-                f'{H.escape(rpt)} 批数据</span> · ')
-    elif stale:
-        warn = f'<span style="color:#888">今日批次未到时间，以下为 {H.escape(rpt)} 批</span> · '
+    warn = _source_warning(key, src)
     return (f'<div class="sec"><h1>{H.escape(label)}</h1>'
             f'<div class="sub">' + warn
             + f'{H.escape((d.get("title") or "")[:70])} · 来源 '
