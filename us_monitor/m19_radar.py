@@ -18,6 +18,7 @@ import math
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import yfinance as yf
@@ -32,6 +33,7 @@ TV_LIST_TIERS = ("领涨", "强势", "改善")
 TV_LIST_LIQUIDITY = ("通过", "谨慎")
 TV_LIST_LIMIT = 22
 META_CACHE = Path(__file__).resolve().parent / ".etf_meta_cache.json"
+SG = ZoneInfo("Asia/Singapore")
 
 
 def universe() -> dict[str, dict[str, str]]:
@@ -471,6 +473,8 @@ def build_page(result: dict | None = None) -> Path:
     xbi_note = (f'XBI 当前第 {xbi["rank"]} 名、21日涨幅 {_fmt(xbi.get("r21"), 1, True)}%；'
                 f'无论是否进入领涨层，都保留在全表。' if xbi and not xbi["missing"]
                 else "XBI 已纳入完整宇宙；当前数据缺失时也不会被隐藏。")
+    generated_at = datetime.now(SG).strftime("%Y-%m-%d %H:%M SGT")
+    eligible_count = sum(r.get("liquidity") in TV_LIST_LIQUIDITY for r in rows)
 
     css = """
 :root{color-scheme:light dark;--ink:#111;--ink2:#555;--mut:#7b7b76;--bd:#8883;
@@ -521,7 +525,7 @@ const num=(v,d=1)=>v==null?'—':Number(v).toFixed(d);
 const amount=(v,currency=false)=>{if(v==null)return '—';const n=Number(v),p=currency?'$':'';if(Math.abs(n)>=1e12)return `${p}${(n/1e12).toFixed(2)}万亿`;if(Math.abs(n)>=1e8)return `${p}${(n/1e8).toFixed(1)}亿`;if(Math.abs(n)>=1e4)return `${p}${(n/1e4).toFixed(1)}万`;return `${p}${n.toLocaleString('zh-CN',{maximumFractionDigits:0})}`};
 function apply(){
   const needle=q.value.trim().toLowerCase();
-  let shown=all.filter(tr=>(!needle||tr.dataset.search.includes(needle))&&(!group.value||tr.dataset.group===group.value)&&(!tier.value||tr.dataset.tier===tier.value)&&(!liquidity.value||tr.dataset.liquidity===liquidity.value));
+  let shown=all.filter(tr=>(!needle||tr.dataset.search.includes(needle))&&(!group.value||tr.dataset.group===group.value)&&(!tier.value||tr.dataset.tier===tier.value)&&(!liquidity.value||(liquidity.value==='eligible'?['通过','谨慎'].includes(tr.dataset.liquidity):tr.dataset.liquidity===liquidity.value)));
   const key=sort.value;
   shown.sort((a,b)=>key==='name'?a.dataset.name.localeCompare(b.dataset.name):Number(b.dataset[key])-Number(a.dataset[key]));
   all.forEach(tr=>tr.remove()); shown.forEach(tr=>body.appendChild(tr));
@@ -564,15 +568,17 @@ document.getElementById('copySymbols').addEventListener('click',e=>copyText(TVSY
 
     page = (
         '<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+        '<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">'
+        '<meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">'
         f'<title>全量 ETF 涨幅榜</title><style>{css}</style>'
         '<div class="nav"><a href="bogo.html">波哥信号</a><a class="on" href="etf.html">ETF涨幅榜</a>'
         '<a href="summary.html">历史汇总</a></div>'
         '<h1>全量 ETF 涨幅榜</h1>'
-        f'<div class="sub">{result["total"]} 只配置 ETF · {result["valid"]} 只有效数据 · 数据日 {H.escape(result["date"])} · 点击代码查看详情</div>'
+        f'<div class="sub">{result["total"]} 只配置 ETF · {result["valid"]} 只有效数据 · 数据日 {H.escape(result["date"])} · 页面生成 {generated_at} · 点击代码查看详情</div>'
         '<div class="logic"><div class="formula">涨幅评分 = 5日涨幅百分位×25% + 21日×40% + 63日×25% + 持续性×10%</div>'
         '<div class="logic-grid"><div><b>21日 40%</b>主趋势，权重最高</div><div><b>5日 25%</b>近期加速或转弱</div>'
         '<div><b>63日 25%</b>中期累计涨幅</div><div><b>持续性 10%</b>近21日上涨天数占比</div></div>'
-        f'<div class="note">主题、基金规模（AUM）和成交额不参与涨幅评分。交易准入：AUM ≥ $3亿且21日均成交额 ≥ $200万；$200万-$500万标“谨慎”，低于门槛标“排除”。TV 前22会剔除不合格并按排名向后补位，完整表仍保留全部 ETF。{H.escape(xbi_note)}</div>'
+        f'<div class="note">主题、基金规模（AUM）和成交额不参与涨幅评分。交易准入：AUM ≥ $3亿且21日均成交额 ≥ $200万；$200万-$500万标“谨慎”，低于门槛标“排除”。页面默认只显示符合准入的 ETF；流动性切换到“全部状态”仍可查看完整 {result["total"]} 只。TV 前22会剔除不合格并按排名向后补位。{H.escape(xbi_note)}</div>'
         f'<div class="tv-actions"><a class="primary" href="{TV_LIST_FILENAME}" download>下载 TV 导入 List（{len(tv_selected)}只）</a>'
         '<button id="copyTv" type="button">复制分组 TV List</button>'
         f'<a href="{TV_SYMBOLS_FILENAME}" download>下载 市场:TICKER</a><button id="copySymbols" type="button">复制 市场:TICKER</button></div>'
@@ -580,9 +586,9 @@ document.getElementById('copySymbols').addEventListener('click',e=>copyText(TVSY
         '<div class="filters"><label>搜索代码、名称或主题<input id="q" type="search" placeholder="例如 XBI、生物科技、能源"></label>'
         f'<label>主题<select id="group"><option value="">全部主题</option>{group_options}</select></label>'
         '<label>层级<select id="tier"><option value="">全部层级</option><option>领涨</option><option>强势</option><option>改善</option><option>观察</option><option>数据缺失</option></select></label>'
-        '<label>流动性<select id="liquidity"><option value="">全部状态</option><option>通过</option><option>谨慎</option><option>排除</option><option>数据缺失</option></select></label>'
+        '<label>流动性<select id="liquidity"><option value="eligible" selected>符合准入（默认）</option><option value="">全部状态</option><option>通过</option><option>谨慎</option><option>排除</option><option>数据缺失</option></select></label>'
         '<label>排序<select id="sort"><option value="score">涨幅评分</option><option value="aum">基金规模 AUM</option><option value="dollarVolume">21日均成交额</option><option value="r5">5日涨幅</option><option value="r21">21日涨幅</option><option value="r63">63日涨幅</option><option value="name">代码</option></select></label></div>'
-        f'<div class="count" id="count">显示 {len(rows)} / {len(rows)} 只</div><div class="wrap"><table>'
+        f'<div class="count" id="count">显示 {eligible_count} / {len(rows)} 只</div><div class="wrap"><table>'
         '<thead><tr><th>排名</th><th class="l">代码</th><th class="l">名称</th><th class="l">主题</th><th class="l">层级</th>'
         '<th title="ETF 基金总资产，不是成分股总市值">规模(AUM)</th><th title="最近21个已完结交易日的平均成交额">21日均成交额</th><th class="l">流动性</th>'
         '<th>评分</th><th>5日</th><th>21日</th><th>63日</th><th>上涨日</th><th class="l">趋势</th><th class="l">位置</th></tr></thead>'
