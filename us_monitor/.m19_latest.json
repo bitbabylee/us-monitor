@@ -1,18 +1,58 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-08-14 21:30 UTC",
-   "as_of": "2026-08-14",
+   "generated": "2026-08-17 21:30 UTC",
+   "as_of": "2026-08-17",
    "market_gate": {
     "status": "green",
     "symbol": "^IXIC",
-    "date": "2026-08-14",
-    "ma10": 26507.28,
-    "ma20": 25848.52
+    "date": "2026-08-17",
+    "ma10": 26580.38,
+    "ma20": 25905.36
    },
    "universe_n": 44,
    "data_n": 44,
-   "signals": []
+   "signals": [
+    {
+     "signal_id": "swing_us:ARKG:2026-08-17:swing_us:ARKG:2026-08-12:ma_bull_align:GDR",
+     "profile": "swing_us",
+     "ticker": "ARKG",
+     "date": "2026-08-17",
+     "setup_id": "swing_us:ARKG:2026-08-12:ma_bull_align",
+     "setup_names": [
+      "ma_bull_align"
+     ],
+     "setup_date": "2026-08-12",
+     "setup_age_bars": 3,
+     "triggers": [
+      "GDR"
+     ],
+     "plan": null,
+     "risk_check": {
+      "entry_stop": 44.41,
+      "entry_limit": 44.63,
+      "stop": 42.87,
+      "risk": 1.54,
+      "stop_pct": 3.48,
+      "adr20": 3.45,
+      "stop_adr_ratio": 1.01,
+      "grade": "拒",
+      "target_1R": 45.95,
+      "target_2R": 47.5,
+      "position_pct": 14.38,
+      "action": "reject"
+     },
+     "market_gate": {
+      "status": "green",
+      "symbol": "^IXIC",
+      "date": "2026-08-17",
+      "ma10": 26580.38,
+      "ma20": 25905.36
+     },
+     "environment": "环境正常",
+     "outcomes": {}
+    }
+   ]
   },
   "cn_pullback": {
    "generated": "2026-08-17 08:00 UTC",
@@ -29,5 +69,5 @@
    "signals": []
   }
  },
- "updated": "2026-08-17 08:00 UTC"
+ "updated": "2026-08-17 21:30 UTC"
 }
