@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-17 收盘(ET)
-  生成 08-17 16:51 纽约 = 08-18 04:51 新加坡
+  生成 08-17 18:10 纽约 = 08-18 06:10 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -34,8 +34,8 @@
   宏观 ✅ATR1472% ✗10Y4.72% ✅HYG/LQD0.7532 ✅USD/JPY159.45
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:CRAK 炼化下游  NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:IEO 油气上游
-  短线改善: AMEX:SILJ 小白银矿  NASDAQ:HERO 游戏  AMEX:XHE 医疗设备  AMEX:IPO 新股  AMEX:XLK 科技板块 (Technology)
+  涨幅优先: AMEX:CRAK 炼化下游  NASDAQ:WCLD 云软件  NASDAQ:SKYY 云计算  AMEX:IEO 油气上游  NASDAQ:QTUM 量子计算
+  短线改善: AMEX:SILJ 小白银矿  NASDAQ:HERO 游戏  AMEX:LIT 锂电池  AMEX:XHE 医疗设备  AMEX:XLK 科技板块 (Technology)
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+2.6% · NASDAQ:SOXX+2.1% · AMEX:XLE+1.6%
@@ -64,10 +64,10 @@
             NASDAQ:AMD🔴  NASDAQ:RIOT🔥  NASDAQ:HUT🟢  NASDAQ:WULF🟢 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 67% · 📣GDX S4↓→S3⌒ · RIOT S1⌐→S2↑ · 江波龙 S2↑→S1⌐
-  🟢合格·在买点区(8): NASDAQ:NBIS NYSE:GEV NYSE:NET NASDAQ:CRWD NASDAQ:CIBR NYSE:SNOW AMEX:SPY NASDAQ:AMD
+  上升趋势占比 69% · 📣江波龙 S1⌐→S2↑
+  🟢合格·在买点区(9): NASDAQ:NBIS NYSE:GEV NYSE:NET NASDAQ:CRWD NASDAQ:CIBR NYSE:SNOW AMEX:SPY SZSE:300308(旭创) NASDAQ:AMD
   🟢合格·追高区勿追(1): NASDAQ:SNDK
-  🔴淘汰(13): NASDAQ:PLTR AMEX:GDX SSE:601138(富联) NASDAQ:MSFT SZSE:002837(英维克) SZSE:300476(胜宏) NASDAQ:INTC NASDAQ:HOOD NASDAQ:RIOT SSE:605589(圣泉) NYSE:BE SSE:603986(兆易) NASDAQ:HUT
+  🔴淘汰(14): NASDAQ:PLTR AMEX:GDX SSE:601138(富联) SZSE:300476(胜宏) SZSE:002837(英维克) NASDAQ:MSFT NASDAQ:INTC NASDAQ:HOOD NASDAQ:RIOT SSE:605589(圣泉) SZSE:301308(江波龙) SSE:603986(兆易) NYSE:BE NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: SNDKC$992M(v/oi40.3) QQQP$471M(v/oi99.0) MU≈$158M(v/oi99.0) SPCX≈$156M(v/oi89.7) NBIS≈$98M(v/oi25.4)
@@ -75,20 +75,20 @@
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】32只(强7)·⚠️旧快照
-  今日强信号: NASDAQ:AMD🔗 NYSE:HXL NYSE:BORR NYSE:GNK NYSE:DELL NYSE:BE🔗 NYSE:FRO
-  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:AMD NYSE:BE NASDAQ:AXTI NYSE:NEM NASDAQ:AAOI NASDAQ:SNDK NASDAQ:CORZ NASDAQ:MU
-  池外强信号(仅提示, 不入信号链): NYSE:HXL NYSE:BORR NYSE:GNK NYSE:DELL NYSE:FRO
+【波哥七维·外部体系】28只(强4)·⚠️旧快照
+  今日强信号: NASDAQ:AMD🔗 NYSE:HXL NYSE:BORR NYSE:GNK
+  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:AMD NYSE:CAT NASDAQ:AXTI NYSE:NEM NYSE:AEM NASDAQ:SNDK
+  池外强信号(仅提示, 不入信号链): NYSE:HXL NYSE:BORR NYSE:GNK
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【A股重演】反转/反弹五条件 (截至08-14·独立体系)
   判定: 中性观察  反转条件 2/5
-  ✗①龙头前高 距前高 胜宏-31% 生益-23% 富联-17%
-  ✅②量能结构 涨/跌量比 1.35x (10日)
-  ✗③扩散质量 龙头5日-1.5% vs 池中位+2.2% 补涨带队
+  ✗①龙头前高 距前高 胜宏-30% 生益-23% 富联-15%
+  ✅②量能结构 涨/跌量比 1.20x (10日)
+  ✗③扩散质量 龙头5日-0.2% vs 池中位+7.5% 补涨带队
   ✗④指数验证 上证3927 区间3946下方
   ✅⑤海外锚 TSM20日+7.1% SMH/QQQ↑20日均 (月营收人工)
-  四棒5日α(领/改/弱/落·↑↓=加速): PCB+4领↓ 光+15领↓ 液冷+8改↓ 存储+6改↓ 探测+8领↓
+  四棒5日α(领/改/弱/落·↑↓=加速): PCB+7领↓ 光+24领↑ 液冷+14改↓ 存储+12改↓ 探测+13领↓
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
   私募仓位: 83.7% (07-10⚠️38天前) 高位·加仓空间有限·近4年新高·百亿级87.4
