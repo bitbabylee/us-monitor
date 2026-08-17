@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-14 收盘(ET)
-  生成 08-17 04:07 纽约 = 08-17 16:07 新加坡
+  生成 08-17 04:47 纽约 = 08-17 16:47 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -26,13 +26,13 @@
   SPX 7786 (MA50+3.6%) · RSI 75⚠️偏热 · VIX 14.2
   风格: MTUM/MAGS 4.65 站上20日均 → 动量MTUM
   日性质(因子ETF超额·非纯因子): 动量+0.6 高贝+0.2 低波-0.0 价值+0.8 → 中性日
-  派发 ▄▄▃▅▆▆▅▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁ (0/吸5) → 仓位100%
+  派发 ▄▃▂▄▄▃▅▆▆▇▇▇▆▇▆▂▁▁▁▁▁▁▁▁▁ (0/吸5) → 仓位100%
   阶段P0 恐慌未释放 恐慌2/4 共识3/5 缺:ratio站上20日均值
   宏观 ✅ATR1472% ✗10Y4.70% ✅HYG/LQD0.7511 ✅USD/JPY159.43
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)
-  短线改善: AMEX:HACK 网络安全  AMEX:SLV 白银  AMEX:SPHB 高贝  NASDAQ:ESPO 电竞  AMEX:DBC 大宗商品
+  涨幅优先: NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:CRAK 炼化下游  AMEX:IHI 医疗器械  AMEX:IEO 油气上游
+  短线改善: AMEX:SLV 白银  AMEX:ARKG 基因组  AMEX:DBC 大宗商品  NASDAQ:ESPO 电竞  AMEX:XME 金属矿业
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+2.1% · AMEX:ITA+1.6% · AMEX:XLE+1.6%
@@ -57,7 +57,7 @@
             NASDAQ:QQQ🔴  NYSE:NET🔴  NYSE:ANET🔴  NASDAQ:HOOD🔴 
             NASDAQ:AMD🟢  NASDAQ:PLTR🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🟢 
             NASDAQ:RIOT🟡  NASDAQ:CIFR🔥  NASDAQ:HUT🟢  NASDAQ:WULF🟢 
-  盘前±2%: NASDAQ:SNDK+5.7% NASDAQ:AXTI+5.0% NYSE:BE+4.8% NASDAQ:IREN+3.4% NASDAQ:AAOI+3.3% NASDAQ:MU+3.0% NASDAQ:CIFR+2.7% NASDAQ:WULF+2.5% NASDAQ:LITE+2.5% NASDAQ:INTC+2.4% NASDAQ:CRDO+2.2% NASDAQ:HUT+2.1%
+  盘前±2%: NASDAQ:SNDK+5.7% NYSE:BE+5.2% NASDAQ:AXTI+4.6% NASDAQ:IREN+4.0% NASDAQ:MU+3.5% NASDAQ:AAOI+2.9% NASDAQ:CORZ+2.6% NASDAQ:APLD+2.6% NASDAQ:CIFR+2.5% NASDAQ:WULF+2.4% NASDAQ:INTC+2.4% NASDAQ:LITE+2.3% NASDAQ:HUT+2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 67%
@@ -66,8 +66,8 @@
   🔴淘汰(13): NASDAQ:MSFT NASDAQ:PLTR AMEX:GDX SSE:601138(富联) SZSE:300476(胜宏) SZSE:002837(英维克) NYSE:BE NASDAQ:INTC NASDAQ:HOOD SSE:605589(圣泉) SZSE:301308(江波龙) SSE:603986(兆易) NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: 无快照(盘前/量未达标)
-  (拉取失败 34 只: BE NBIS RKLB LITE)
+  今日: SNDKC$532M LLYC$114M NBISC$112M MUC$107M QQQ≈$71M
+  T+1核对: BEC232.5(08-21)✗未增 BEC252.5(08-21)✗未增 BEP187.5(08-21)✗未增 BEP192.5(08-21)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
