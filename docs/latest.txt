@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-14 收盘(ET)
-  生成 08-17 06:06 纽约 = 08-17 18:06 新加坡
+  生成 08-17 08:57 纽约 = 08-17 20:57 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -31,8 +31,8 @@
   宏观 ✅ATR1472% ✗10Y4.70% ✅HYG/LQD0.7511 ✅USD/JPY159.43
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:CRAK 炼化下游  AMEX:IHI 医疗器械  AMEX:IEO 油气上游
-  短线改善: AMEX:SLV 白银  AMEX:ARKG 基因组  NASDAQ:ESPO 电竞  AMEX:DBC 大宗商品  AMEX:ARKQ 自动驾驶科技
+  涨幅优先: NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  NASDAQ:HERO 游戏
+  短线改善: AMEX:XME 金属矿业  AMEX:SIL 白银矿  AMEX:IPO 新股  AMEX:SLV 白银  AMEX:SPHB 高贝
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+2.1% · AMEX:ITA+1.6% · AMEX:XLE+1.6%
@@ -57,7 +57,7 @@
             NASDAQ:QQQ🔴  NYSE:NET🔴  NYSE:ANET🔴  NASDAQ:HOOD🔴 
             NASDAQ:AMD🟢  NASDAQ:PLTR🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🟢 
             NASDAQ:RIOT🟡  NASDAQ:CIFR🔥  NASDAQ:HUT🟢  NASDAQ:WULF🟢 
-  盘前±2%: NASDAQ:SNDK+5.1% NYSE:BE+4.7% NASDAQ:AXTI+4.7% NASDAQ:MU+3.5% NASDAQ:IREN+3.4% NASDAQ:AAOI+2.5% NASDAQ:INTC+2.4% NASDAQ:HUT+2.2%
+  盘前±2%: NYSE:BE+4.1% NASDAQ:SNDK+3.3% NASDAQ:AXTI+3.1% NASDAQ:CRDO+2.8% NASDAQ:MU+2.6%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 67%
@@ -66,7 +66,7 @@
   🔴淘汰(13): NASDAQ:MSFT NASDAQ:PLTR AMEX:GDX SSE:601138(富联) SZSE:300476(胜宏) SZSE:002837(英维克) NYSE:BE NASDAQ:INTC NASDAQ:HOOD SSE:605589(圣泉) SZSE:301308(江波龙) SSE:603986(兆易) NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKC$532M LLYC$114M NBISC$112M MUC$107M QQQ≈$71M
+  今日: SNDKC$532M(v/oi3.7) LLYC$114M NBISC$112M(v/oi3.8) MUC$107M(v/oi6.2) QQQ≈$71M(v/oi13.5)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
