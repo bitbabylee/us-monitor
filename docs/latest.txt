@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-17 收盘(ET)
-  生成 08-17 18:10 纽约 = 08-18 06:10 新加坡
+  生成 08-17 20:59 纽约 = 08-18 08:59 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -31,11 +31,11 @@
   日性质(因子ETF超额·非纯因子): 动量+2.0 高贝+0.5 低波-0.2 价值+0.4 → 风偏进攻日
   派发 ▄▃▅▆▆▅▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▁ (0/吸5) → 仓位100%
   阶段P0 恐慌未释放 恐慌2/4 共识4/5 缺:近三日突破20日线伴随放
-  宏观 ✅ATR1472% ✗10Y4.72% ✅HYG/LQD0.7532 ✅USD/JPY159.45
+  宏观 ✅ATR1472% ✗10Y4.72% ✅HYG/LQD0.7532 ✅USD/JPY159.42
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:CRAK 炼化下游  NASDAQ:WCLD 云软件  NASDAQ:SKYY 云计算  AMEX:IEO 油气上游  NASDAQ:QTUM 量子计算
-  短线改善: AMEX:SILJ 小白银矿  NASDAQ:HERO 游戏  AMEX:LIT 锂电池  AMEX:XHE 医疗设备  AMEX:XLK 科技板块 (Technology)
+  涨幅优先: AMEX:CRAK 炼化下游  NASDAQ:WCLD 云软件  NASDAQ:SKYY 云计算  AMEX:GDX 黄金矿业 (Gold Miners)  NASDAQ:QTUM 量子计算
+  短线改善: NASDAQ:HERO 游戏  AMEX:XHE 医疗设备  AMEX:XLK 科技板块 (Technology)  AMEX:IPO 新股  AMEX:LIT 锂电池
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+2.6% · NASDAQ:SOXX+2.1% · AMEX:XLE+1.6%
@@ -64,13 +64,13 @@
             NASDAQ:AMD🔴  NASDAQ:RIOT🔥  NASDAQ:HUT🟢  NASDAQ:WULF🟢 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 69% · 📣江波龙 S1⌐→S2↑
+  上升趋势占比 69%
   🟢合格·在买点区(9): NASDAQ:NBIS NYSE:GEV NYSE:NET NASDAQ:CRWD NASDAQ:CIBR NYSE:SNOW AMEX:SPY SZSE:300308(旭创) NASDAQ:AMD
   🟢合格·追高区勿追(1): NASDAQ:SNDK
   🔴淘汰(14): NASDAQ:PLTR AMEX:GDX SSE:601138(富联) SZSE:300476(胜宏) SZSE:002837(英维克) NASDAQ:MSFT NASDAQ:INTC NASDAQ:HOOD NASDAQ:RIOT SSE:605589(圣泉) SZSE:301308(江波龙) SSE:603986(兆易) NYSE:BE NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKC$992M(v/oi40.3) QQQP$471M(v/oi99.0) MU≈$158M(v/oi99.0) SPCX≈$156M(v/oi89.7) NBIS≈$98M(v/oi25.4)
+  今日: SNDKC$992M(v/oi40.3) MU≈$338M(v/oi66.8) SPCX≈$156M(v/oi89.7) QQQP$103M(v/oi67.9) NBIS≈$98M(v/oi25.4)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
