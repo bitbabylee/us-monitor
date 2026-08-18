@@ -55,8 +55,8 @@
    ]
   },
   "cn_pullback": {
-   "generated": "2026-08-17 08:00 UTC",
-   "as_of": "2026-08-14",
+   "generated": "2026-08-18 08:00 UTC",
+   "as_of": "2026-08-17",
    "market_gate": {
     "status": "green",
     "symbol": "^IXIC",
@@ -64,10 +64,10 @@
     "ma10": 26507.28,
     "ma20": 25848.52
    },
-   "universe_n": 3,
-   "data_n": 3,
+   "universe_n": 7,
+   "data_n": 7,
    "signals": []
   }
  },
- "updated": "2026-08-17 21:30 UTC"
+ "updated": "2026-08-18 08:00 UTC"
 }
