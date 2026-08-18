@@ -80,6 +80,7 @@ class EtfRadarTests(unittest.TestCase):
         self.assertIn("主题不参与评分", page)
         self.assertIn("下载 TV 导入 List", page)
         self.assertIn("复制 市场:TICKER", page)
+        self.assertIn('<a href="prescreen.html">信号预筛</a>', page)
         self.assertIn("规模(AUM)", page)
         self.assertIn("21日均成交额", page)
         self.assertIn('id="liquidity"', page)
