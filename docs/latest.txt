@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-14 收盘(ET)
-  生成 08-18 06:06 纽约 = 08-18 18:06 新加坡
+  生成 08-18 09:22 纽约 = 08-18 21:22 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -55,7 +55,7 @@
             NASDAQ:SNDK🟢  NASDAQ:QQQ🔴  NYSE:CAT🟢  NASDAQ:CRDO🔴 
             NASDAQ:HOOD🟢  NASDAQ:AMD🔴  NASDAQ:AXTI🔴  NASDAQ:RIOT🔥 
             NASDAQ:HUT🟢  NASDAQ:WULF🟢  NASDAQ:APLD🟢 
-  盘前±2%: NASDAQ:AXTI+7.8% NASDAQ:NBIS-4.9% NASDAQ:AMD-4.7% NYSE:BE-4.5% NASDAQ:INTC-4.1% NASDAQ:CRDO+3.9% NYSE:NET-3.4% NASDAQ:CIBR-3.3% NASDAQ:RIOT+3.0% NASDAQ:APLD-3.0% NASDAQ:AAOI-2.8% NASDAQ:SNDK+2.6% NASDAQ:SPCX+2.5% NASDAQ:MSFT-2.4% NASDAQ:IREN-2.3% NASDAQ:CORZ-2.1% NASDAQ:SMH-2.1%
+  盘前±2%: NASDAQ:AXTI+8.0% NASDAQ:AMD-5.0% NASDAQ:NBIS-4.2% NASDAQ:APLD-3.6% NASDAQ:INTC-3.5% NYSE:NET-3.4% NASDAQ:CRDO+3.3% NYSE:BE-3.2% NASDAQ:CORZ-2.8% NASDAQ:SNDK+2.7% NASDAQ:MSFT-2.5% NASDAQ:RIOT+2.4% NASDAQ:AAOI-2.2% NASDAQ:SMH-2.2% NYSE:ANET-2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 65%
@@ -64,7 +64,7 @@
   🔴淘汰(13): NASDAQ:MSFT NASDAQ:PLTR AMEX:GDX SZSE:300476(胜宏) SSE:601138(富联) SZSE:002837(英维克) NYSE:BE NASDAQ:INTC SZSE:300499(高澜) NASDAQ:HOOD SSE:605589(圣泉) SSE:603986(兆易) NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKC$935M MU≈$337M SPCX≈$155M LLYC$106M QQQP$102M
+  今日: SNDKC$935M(v/oi6.9) MU≈$337M(v/oi11.6) SPCX≈$155M(v/oi9.3) LLYC$106M(v/oi2.1) QQQP$102M(v/oi15.9)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
