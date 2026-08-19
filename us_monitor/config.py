@@ -320,6 +320,7 @@ RADAR_ETFS = {
     "ARKX": "太空", "UFO": "卫星", "ESPO": "电竞", "HERO": "游戏",
     # 风格/宽基(参照系)
     "IWM": "小盘", "IPO": "新股", "MAGS": "七巨头", "SMH": "半导体",
+    "SOXL": "半导体每日3倍多",
     "MTUM": "动量", "SPHB": "高贝", "USMV": "低波", "VLUE": "价值",
     "TLT": "长债", "UUP": "美元", "MJ": "大麻",
 }
@@ -346,7 +347,7 @@ RADAR_GROUPS = {
                     "REMX", "LIT", "XME", "PICK", "SLX", "WOOD", "MOO", "DBA",
                     "GDXJ", "SLV", "GLD", "USO", "UNG", "DBC"],
     "科技/AI": ["QTUM", "IGV", "SKYY", "HACK", "BOTZ", "ROBO", "AIQ", "WCLD",
-                "ARKQ", "PRNT", "FINX"],
+                "ARKQ", "PRNT", "FINX", "SOXL"],
     "能源转型/电力": ["ICLN", "FAN", "NLR", "PBW", "TAN"],
     "工业/地产/出行": ["DRIV", "KARS", "PAVE", "ITB", "XHB", "JETS", "XRT"],
     "医疗/生物": ["XBI", "ARKG", "IHI", "XHE", "PPH"],
