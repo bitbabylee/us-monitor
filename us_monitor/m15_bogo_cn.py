@@ -270,7 +270,8 @@ if(location.hash)go(location.hash.slice(1));</script>"""
             f'<h1>波哥系统七维信号汇总</h1>'
             f'<div class="tabs">{"".join(btns)}'
             f'<a class="tab" href="etf.html" style="text-decoration:none">ETF涨幅榜⭱</a>'
-            f'<a class="tab" href="summary.html" style="text-decoration:none">汇总⭱</a></div>'
+            f'<a class="tab" href="summary.html" style="text-decoration:none">汇总⭱</a>'
+            f'<a class="tab" href="pt2-signals.html" style="text-decoration:none">PT2趋势⭱</a></div>'
             + "".join(panels) + js
             + '<div class="sub" style="margin-top:16px">CA/Pnls/胜率/Fit 为波哥系统自身'
               '回测口径 · 信息整理非投资建议</div>')

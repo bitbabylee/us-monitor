@@ -100,7 +100,8 @@ tr.style.display=(!q||tr.textContent.toLowerCase().includes(q))?'':'none';});};<
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>波哥信号总汇总</title><style>{CSS}{tabcss}</style>'
             f'<h1>波哥信号总汇总（0608 起全历史）</h1>'
-            f'<div class="sub"><a href="bogo.html">← 每日信号页</a> · 数据更新 {upd}'
+            f'<div class="sub"><a href="bogo.html">← 每日信号页</a> · '
+            f'<a href="pt2-signals.html">PivotTrend2 趋势追踪</a> · 数据更新 {upd}'
             f'{" · ⚠ 快照(本地xlsx不可达)" if d.get("_stale") else ""}</div>'
             f'<div class="tabs">{"".join(btns)}<input id="q" placeholder="筛选:代码/名称/主题/日期"></div>'
             + "".join(panels) + js
