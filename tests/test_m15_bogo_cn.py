@@ -1,7 +1,23 @@
 import unittest
 from datetime import datetime, timezone
 
-from us_monitor import m15_bogo_cn
+from us_monitor import m13_bogo, m15_bogo_cn
+
+
+class BogoPdfRowClusteringTests(unittest.TestCase):
+    def test_words_across_old_rounding_boundary_stay_in_same_row(self):
+        words = [
+            {"text": "weak", "top": 202.593420, "x0": 11.78},
+            {"text": "300308", "top": 202.245520, "x0": 78.28},
+            {"text": "next", "top": 212.100000, "x0": 11.78},
+        ]
+
+        lines = m13_bogo._cluster_words_by_top(words)
+
+        self.assertEqual(
+            [[word["text"] for word in line] for line in lines],
+            [["300308", "weak"], ["next"]],
+        )
 
 
 class BogoFreshnessTests(unittest.TestCase):

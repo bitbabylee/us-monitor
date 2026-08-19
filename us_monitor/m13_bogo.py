@@ -13,7 +13,6 @@
 import json
 import re
 import sys
-from collections import defaultdict
 from pathlib import Path
 
 from . import config as C
@@ -23,6 +22,17 @@ STORE = Path(__file__).resolve().parent / ".bogo_signals.json"
 COLS = [("代码", 78), ("中文名", 130), ("信号日", 219), ("主题", 282),
         ("CA%", 438), ("Pnls%", 497), ("胜率", 564), ("Fit", 623),
         ("价系统", 678), ("当日%", 753)]
+
+
+def _cluster_words_by_top(words, tolerance: float = 2.5):
+    """Group PDF words into visual rows without rounding-boundary loss."""
+    lines = []
+    for word in sorted(words, key=lambda w: (w["top"], w["x0"])):
+        if not lines or word["top"] - lines[-1][0]["top"] > tolerance:
+            lines.append([word])
+        else:
+            lines[-1].append(word)
+    return lines
 
 
 def find_pdf() -> Path | None:
@@ -45,13 +55,9 @@ def parse(pdf: Path) -> dict:
         title = (page.extract_text() or "").split("\n")[0]
         words = page.extract_words()
 
-    lines = defaultdict(list)
-    for w in words:
-        lines[round(w["top"] / 3)].append(w)
-
     rows, tag = [], None
-    for k in sorted(lines):
-        line = sorted(lines[k], key=lambda w: w["x0"])
+    for words_in_line in _cluster_words_by_top(words):
+        line = sorted(words_in_line, key=lambda w: w["x0"])
         first = line[0]["text"]
         if first in ("strong", "weak"):
             tag = first
