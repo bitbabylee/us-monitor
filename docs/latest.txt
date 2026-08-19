@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-19 收盘(ET)
-  生成 08-19 17:55 纽约 = 08-20 05:55 新加坡
+  生成 08-19 19:32 纽约 = 08-20 07:32 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -12,7 +12,7 @@
   NYSE:LLY      箱体突破      日内:⚪观望
   NASDAQ:HOOD   口袋支点      日内:⚪观望
   AMEX:GDX      口袋支点      日内:🟢强动能买点
-  NASDAQ:IREN   10EMA回调   日内:🔥强主升浪
+  NASDAQ:IREN   10EMA回调   日内:🟢突破买点
   NASDAQ:HUT    超跌反弹      日内:🟢突破买点
 【否决】
   NASDAQ:QQQ    板块背离
@@ -33,11 +33,11 @@
   日性质(因子ETF超额·非纯因子): 动量-2.1 高贝+1.2 低波+0.6 价值+0.0 → 中性日
   派发 ▄▄▃▅▆▆▇▇▇▆▇▆▂▁▁▁▁▁▁▁▁▁▂▃▃ (2/吸5) → 仓位80%
   阶段P0 恐慌未释放 恐慌1/4 共识1/5 缺:SMH站上20日线
-  宏观 ✅ATR1452% ✗10Y4.65% ✗HYG/LQD0.7480 ✅USD/JPY158.10
+  宏观 ✅ATR1452% ✗10Y4.65% ✗HYG/LQD0.7480 ✅USD/JPY158.22
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:ARKG 基因组  AMEX:GDXJ 小金矿  NASDAQ:WCLD 云软件  AMEX:IEO 油气上游
-  短线改善: AMEX:OIH 油服  AMEX:USMV 低波  AMEX:MJ 大麻  AMEX:VLUE 价值  AMEX:DBC 大宗商品
+  短线改善: AMEX:DBC 大宗商品  AMEX:OIH 油服  AMEX:USMV 低波  AMEX:MJ 大麻  AMEX:VLUE 价值
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+9.2% · AMEX:XLV+3.3% · AMEX:XLY+1.7% · AMEX:XLB+1.2%
@@ -54,7 +54,7 @@
    NASDAQ:MSFT   🟢10EMA回调   🟢突破买点
    NASDAQ:MU     🟢10EMA回调   🟢稳健买点
    AMEX:GDX      💡口袋支点      🟢强动能买点
-   NASDAQ:IREN   🟢10EMA回调   🔥强主升浪
+   NASDAQ:IREN   🟢10EMA回调   🟢突破买点
    NASDAQ:HUT    🚀超跌反弹      🟢突破买点
  ▶ 等时机（日内未给买点）
    NYSE:LLY      📦箱体突破      ⚪观望
@@ -67,10 +67,10 @@
   日内异动: NASDAQ:NBIS🟡  NASDAQ:LITE🔴  NASDAQ:AAOI🔴  NASDAQ:AMAT🟢 
             NYSE:GEV🟢  NASDAQ:SNDK🔴  NYSE:CAT🟢  NYSE:NET🟢 
             NASDAQ:CRWD🟢  NYSE:ANET🔴  NASDAQ:AXTI🔴  NASDAQ:RIOT🟢 
-  盘前±2%: NASDAQ:HOOD+3.0% NASDAQ:AAOI+2.3%
+  盘前±2%: NASDAQ:AAOI+2.8% NASDAQ:HOOD+2.8%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 61% · 📣圣泉 S2↑→S1⌐
+  上升趋势占比 61%
   🟢合格·在买点区(9): NYSE:LLY NASDAQ:SNDK NYSE:NET NASDAQ:CIBR NYSE:SNOW AMEX:SPY NASDAQ:NBIS NYSE:GEV NASDAQ:CRWD
   🟢合格·追高区勿追(0): 无
   🔴淘汰(16): NASDAQ:PLTR AMEX:GDX NASDAQ:IREN NASDAQ:MSFT SZSE:300476(胜宏) SSE:601138(富联) SZSE:002837(英维克) NYSE:CAT NASDAQ:HOOD SSE:600183(生益) SZSE:300499(高澜) SZSE:300308(旭创) NASDAQ:INTC SSE:603986(兆易) NASDAQ:AMD NASDAQ:HUT
