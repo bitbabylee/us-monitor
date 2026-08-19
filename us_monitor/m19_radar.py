@@ -16,7 +16,7 @@ import html as H
 import json
 import math
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime
+from datetime import datetime, time
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -24,7 +24,7 @@ import pandas as pd
 import yfinance as yf
 
 from . import config as C
-from .data import NY, col
+from .data import NY, col, fetch_extended
 
 _LAST_RESULT: dict | None = None
 TV_LIST_FILENAME = "etf_top22_tv.txt"
@@ -333,10 +333,103 @@ def analyze_frames(frames: dict[str, pd.DataFrame], metas: dict | None = None,
     }
 
 
+def _as_ny(series: pd.Series) -> pd.Series:
+    """统一延长时段行情为纽约时区，避免 CI 与本地时区不同导致错分时段。"""
+    out = series.copy()
+    idx = pd.DatetimeIndex(out.index)
+    out.index = idx.tz_localize(NY) if idx.tz is None else idx.tz_convert(NY)
+    return out.sort_index()
+
+
+def _daily_close_before(frame: pd.DataFrame | None, session_day, inclusive: bool) -> float | None:
+    if frame is None or "Close" not in frame:
+        return None
+    closes = frame["Close"].dropna()
+    candidates = []
+    for stamp, value in closes.items():
+        day = pd.Timestamp(stamp).date()
+        if day < session_day or (inclusive and day == session_day):
+            candidates.append(value)
+    return _finite(candidates[-1]) if candidates else None
+
+
+def add_extended_quotes(result: dict, frames: dict[str, pd.DataFrame],
+                        extended: pd.DataFrame | None) -> dict:
+    """把最新盘前或盘后成交附到行数据；只展示，不参与涨幅评分。"""
+    empty = {
+        "ext_session": None, "ext_price": None, "ext_change": None,
+        "ext_time": None, "ext_base": None, "ext_volume": None,
+    }
+    for row in result["rows"]:
+        row.update(empty)
+        if extended is None or getattr(extended, "empty", True):
+            continue
+        try:
+            close = _as_ny(col(extended, "Close", row["tk"]))
+        except (KeyError, TypeError, ValueError):
+            continue
+        if close.empty:
+            continue
+
+        pre = close[(close.index.time >= time(4, 0)) & (close.index.time < time(9, 30))]
+        post = close[(close.index.time >= time(16, 0)) & (close.index.time < time(20, 0))]
+        candidates = []
+        if not pre.empty:
+            candidates.append((pre.index[-1], "盘前", pre.iloc[-1]))
+        if not post.empty:
+            candidates.append((post.index[-1], "盘后", post.iloc[-1]))
+        if not candidates:
+            continue
+        stamp, session, price = max(candidates, key=lambda item: item[0])
+        session_day = stamp.date()
+
+        base = None
+        if session == "盘后":
+            regular = close[
+                (close.index.date == session_day)
+                & (close.index.time >= time(9, 30))
+                & (close.index.time < time(16, 0))
+            ]
+            if not regular.empty:
+                base = _finite(regular.iloc[-1])
+        if base is None:
+            base = _daily_close_before(
+                frames.get(row["tk"]), session_day, inclusive=session == "盘后"
+            )
+        price = _finite(price)
+        change = _finite((price / base - 1) * 100) if price is not None and base else None
+
+        volume = None
+        try:
+            vol = _as_ny(col(extended, "Volume", row["tk"]))
+            session_mask = (
+                (vol.index.date == session_day)
+                & ((vol.index.time >= time(4, 0)) & (vol.index.time < time(9, 30))
+                   if session == "盘前"
+                   else (vol.index.time >= time(16, 0)) & (vol.index.time < time(20, 0)))
+            )
+            volume = _finite(vol[session_mask].sum())
+        except (KeyError, TypeError, ValueError):
+            pass
+
+        row.update({
+            "ext_session": session, "ext_price": price, "ext_change": change,
+            "ext_time": stamp.strftime("%Y-%m-%d %H:%M ET"),
+            "ext_base": base, "ext_volume": volume,
+        })
+    return result
+
+
 def run(daily=None) -> dict:
     global _LAST_RESULT
     frames = _load(daily)
     result = analyze_frames(frames, aum=_load_aum(list(universe())))
+    try:
+        extended = fetch_extended(list(universe()))
+    except Exception as exc:
+        print(f"WARN: ETF 盘前/盘后行情下载失败: {exc}")
+        extended = None
+    add_extended_quotes(result, frames, extended)
     rows = [r for r in result["rows"] if not r["missing"]]
     leaders = rows[:C.RADAR_TOP_N]
     improving = [r for r in rows if r["tier"] == "改善"][:6]
@@ -402,9 +495,9 @@ def tv_import_list(result: dict, limit: int = TV_LIST_LIMIT) -> tuple[str, list[
 
 
 def tv_symbol_list(selected: list[dict]) -> str:
-    """无分组的纯 `市场:TICKER` 逗号串，便于复制到其他扫描器。"""
+    """无分组的纯 `市场:TICKER` 列表，每个代码独占一行。"""
     from . import tv
-    return ",".join(tv.symbol(r["tk"]) for r in selected)
+    return "\n".join(tv.symbol(r["tk"]) for r in selected)
 
 
 def _row_html(r: dict, i: int) -> str:
@@ -432,6 +525,19 @@ def _row_html(r: dict, i: int) -> str:
                  if r.get("aum") is not None else "")
     dollar_volume_title = (f' title="21日平均成交额 ${r["avg_dollar_volume21"]:,.0f}"'
                            if r.get("avg_dollar_volume21") is not None else "")
+    ext_label = "—"
+    ext_title = "当前未取得盘前/盘后成交"
+    if r.get("ext_session") and r.get("ext_price") is not None:
+        ext_change = (f'{_fmt(r.get("ext_change"), 1, True)}%'
+                      if r.get("ext_change") is not None else "—")
+        ext_label = (
+            f'{H.escape(r["ext_session"])} ${_fmt(r.get("ext_price"), 2)} '
+            f'{ext_change}'
+        )
+        ext_title = (
+            f'{r.get("ext_time", "")} · 相对常规收盘 '
+            f'${_fmt(r.get("ext_base"), 2)}'
+        )
     return (
         f'<tr {attrs}><td>{rank}</td>'
         f'<td class="l"><button class="open" data-i="{i}" data-ticker="{H.escape(r["tk"])}">'
@@ -442,6 +548,7 @@ def _row_html(r: dict, i: int) -> str:
         f'<td{aum_title}>{_fmt_amount(r.get("aum"), currency=True)}</td>'
         f'<td{dollar_volume_title}>{_fmt_amount(r.get("avg_dollar_volume21"), currency=True)}</td>'
         f'<td class="l"><span class="tier {liquidity_cls}" title="{H.escape(r.get("liquidity_reason", ""), quote=True)}">{H.escape(r.get("liquidity", "数据缺失"))}</span></td>'
+        f'<td title="{H.escape(ext_title, quote=True)}">{ext_label}</td>'
         f'<td><b>{score}</b></td><td>{_fmt(r.get("r5"), 1, True)}%</td>'
         f'<td>{_fmt(r.get("r21"), 1, True)}%</td><td>{_fmt(r.get("r63"), 1, True)}%</td>'
         f'<td>{_fmt(r.get("consistency"), 0)}%</td>'
@@ -536,7 +643,8 @@ function metric(label,value){return `<div class="metric"><small>${label}</small>
 function openETF(i,updateHash=true){
   const r=DATA[i], status=r.missing?'数据缺失':`${r.tier} · 总榜第 ${r.rank}`;
   box.innerHTML=`<div class="detail-head"><div><h2>${esc(r.tk)} · ${esc(r.name)}</h2><div class="sub">${esc(r.group)} · ${esc(status)} · 数据日 ${esc(r.date)}</div></div><button class="close" aria-label="关闭">×</button></div>
-  <div class="metrics">${metric('基金规模 AUM',amount(r.aum,true))}${metric('21日均成交额',amount(r.avg_dollar_volume21,true))}${metric('流动性准入',esc(r.liquidity))}${metric('最新成交量',amount(r.volume))}${metric('涨幅评分',num(r.score))}${metric('5日涨幅',pct(r.r5))}${metric('21日涨幅',pct(r.r21))}${metric('63日涨幅',pct(r.r63))}</div>
+  <div class="metrics">${metric('基金规模 AUM',amount(r.aum,true))}${metric('21日均成交额',amount(r.avg_dollar_volume21,true))}${metric('流动性准入',esc(r.liquidity))}${metric('最新成交量',amount(r.volume))}${metric('延长时段',esc(r.ext_session))}${metric('盘前/盘后价',r.ext_price==null?'—':`$${num(r.ext_price,2)}`)}${metric('延长涨跌',pct(r.ext_change))}${metric('最后成交',esc(r.ext_time))}${metric('涨幅评分',num(r.score))}${metric('5日涨幅',pct(r.r5))}${metric('21日涨幅',pct(r.r21))}${metric('63日涨幅',pct(r.r63))}</div>
+  <section><b>盘前/盘后口径</b>${r.ext_session?`${esc(r.ext_session)}成交相对对应的最近常规收盘 $${num(r.ext_base,2)}；延长时段累计量 ${amount(r.ext_volume)}。该数据只展示，不参与评分。`:'当前未取得盘前/盘后成交。'}</section>
   <section><b>流动性判断</b>${esc(r.liquidity_reason)}</section>
   <section><b>为什么排在这里</b>${esc(r.why)}</section>
   <section><b>相对 SPY</b>5 / 21 / 63 日：${pct(r.rs5)} / ${pct(r.rs21)} / ${pct(r.rs63)} · 象限 ${esc(r.quad)}</section>
@@ -578,10 +686,10 @@ document.getElementById('copySymbols').addEventListener('click',e=>copyText(TVSY
         '<div class="logic"><div class="formula">涨幅评分 = 5日涨幅百分位×25% + 21日×40% + 63日×25% + 持续性×10%</div>'
         '<div class="logic-grid"><div><b>21日 40%</b>主趋势，权重最高</div><div><b>5日 25%</b>近期加速或转弱</div>'
         '<div><b>63日 25%</b>中期累计涨幅</div><div><b>持续性 10%</b>近21日上涨天数占比</div></div>'
-        f'<div class="note">主题、基金规模（AUM）和成交额不参与涨幅评分。交易准入：AUM ≥ $3亿且21日均成交额 ≥ $200万；$200万-$500万标“谨慎”，低于门槛标“排除”。页面默认只显示符合准入的 ETF；流动性切换到“全部状态”仍可查看完整 {result["total"]} 只。TV 前22会剔除不合格并按排名向后补位。{H.escape(xbi_note)}</div>'
+        f'<div class="note">主题、基金规模（AUM）、成交额和盘前/盘后数据均不参与涨幅评分。交易准入：AUM ≥ $3亿且21日均成交额 ≥ $200万；$200万-$500万标“谨慎”，低于门槛标“排除”。页面默认只显示符合准入的 ETF；流动性切换到“全部状态”仍可查看完整 {result["total"]} 只。盘前/盘后栏显示最新延长时段价格及相对对应常规收盘的涨跌，鼠标悬停可看时间。TV 前22会剔除不合格并按排名向后补位。{H.escape(xbi_note)}</div>'
         f'<div class="tv-actions"><a class="primary" href="{TV_LIST_FILENAME}" download>下载 TV 导入 List（{len(tv_selected)}只）</a>'
         '<button id="copyTv" type="button">复制分组 TV List</button>'
-        f'<a href="{TV_SYMBOLS_FILENAME}" download>下载 市场:TICKER</a><button id="copySymbols" type="button">复制 市场:TICKER</button></div>'
+        f'<a href="{TV_SYMBOLS_FILENAME}" download>下载 市场:TICKER（一行一个）</a><button id="copySymbols" type="button">复制 市场:TICKER（一行一个）</button></div>'
         f'<details class="symbols"><summary>查看纯 市场:TICKER 列表</summary><textarea readonly aria-label="市场:TICKER列表">{H.escape(tv_symbols)}</textarea></details></div>'
         '<div class="filters"><label>搜索代码、名称或主题<input id="q" type="search" placeholder="例如 XBI、生物科技、能源"></label>'
         f'<label>主题<select id="group"><option value="">全部主题</option>{group_options}</select></label>'
@@ -590,11 +698,11 @@ document.getElementById('copySymbols').addEventListener('click',e=>copyText(TVSY
         '<label>排序<select id="sort"><option value="score">涨幅评分</option><option value="aum">基金规模 AUM</option><option value="dollarVolume">21日均成交额</option><option value="r5">5日涨幅</option><option value="r21">21日涨幅</option><option value="r63">63日涨幅</option><option value="name">代码</option></select></label></div>'
         f'<div class="count" id="count">显示 {eligible_count} / {len(rows)} 只</div><div class="wrap"><table>'
         '<thead><tr><th>排名</th><th class="l">代码</th><th class="l">名称</th><th class="l">主题</th><th class="l">层级</th>'
-        '<th title="ETF 基金总资产，不是成分股总市值">规模(AUM)</th><th title="最近21个已完结交易日的平均成交额">21日均成交额</th><th class="l">流动性</th>'
+        '<th title="ETF 基金总资产，不是成分股总市值">规模(AUM)</th><th title="最近21个已完结交易日的平均成交额">21日均成交额</th><th class="l">流动性</th><th title="最新盘前或盘后价格、相对对应常规收盘的涨跌；不参与评分">盘前/盘后</th>'
         '<th>评分</th><th>5日</th><th>21日</th><th>63日</th><th>上涨日</th><th class="l">趋势</th><th class="l">位置</th></tr></thead>'
         f'<tbody id="rows">{trs}</tbody></table><div class="empty" id="empty">没有符合当前筛选的 ETF</div></div>'
         '<dialog id="detail" aria-labelledby="detailTitle"><div class="detail" id="detailBox"></div></dialog>'
-        '<div class="disclaimer">仅供研究与学习，不构成投资建议。全部指标只使用已完结日线。</div>' + js
+        '<div class="disclaimer">仅供研究与学习，不构成投资建议。涨幅评分只使用已完结日线；盘前/盘后行情单独展示，不参与评分。</div>' + js
     )
     out = OUT_DIR / "etf.html"
     out.write_text(page, encoding="utf-8")

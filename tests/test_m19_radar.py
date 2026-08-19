@@ -73,6 +73,7 @@ class EtfRadarTests(unittest.TestCase):
         with TemporaryDirectory() as tmp, patch("us_monitor.m6_dashboard.OUT_DIR", Path(tmp)):
             out = m19_radar.build_page(result)
             page = Path(out).read_text(encoding="utf-8")
+            symbols = (Path(tmp) / m19_radar.TV_SYMBOLS_FILENAME).read_text(encoding="utf-8")
         self.assertIn("全量 ETF 涨幅榜", page)
         self.assertIn('id="q"', page)
         self.assertIn('data-ticker="XBI"', page)
@@ -94,6 +95,10 @@ class EtfRadarTests(unittest.TestCase):
         self.assertIn('data-volume="1000000.0"', page)
         self.assertIn('data-dollar-volume="', page)
         self.assertIn('data-liquidity="通过"', page)
+        self.assertIn("盘前/盘后", page)
+        self.assertIn("一行一个", page)
+        self.assertNotIn(",", symbols.strip())
+        self.assertGreaterEqual(len(symbols.strip().splitlines()), 1)
 
     def test_tv_import_list_uses_allowed_tiers_and_rank_order(self):
         aum = {tk: 1_000_000_000 for tk in self.metas}
@@ -106,7 +111,43 @@ class EtfRadarTests(unittest.TestCase):
         self.assertEqual([r["rank"] for r in selected], sorted(r["rank"] for r in selected))
         symbols = m19_radar.tv_symbol_list(selected)
         self.assertNotIn("###", symbols)
-        self.assertEqual(len(symbols.split(",")), len(selected))
+        self.assertNotIn(",", symbols)
+        self.assertEqual(len(symbols.splitlines()), len(selected))
+
+    def test_extended_quote_uses_previous_close_for_premarket(self):
+        result = {"rows": [{"tk": "XBI"}]}
+        idx = pd.DatetimeIndex(["2026-08-19 04:00", "2026-08-19 08:25"], tz=m19_radar.NY)
+        extended = pd.DataFrame({"Close": [101.0, 102.0], "Volume": [100, 200]}, index=idx)
+        daily = pd.DataFrame(
+            {"Close": [99.0, 100.0]},
+            index=pd.to_datetime(["2026-08-17", "2026-08-18"]),
+        )
+        m19_radar.add_extended_quotes(result, {"XBI": daily}, extended)
+        row = result["rows"][0]
+        self.assertEqual(row["ext_session"], "盘前")
+        self.assertEqual(row["ext_price"], 102.0)
+        self.assertAlmostEqual(row["ext_change"], 2.0)
+        self.assertEqual(row["ext_volume"], 300.0)
+        self.assertEqual(row["ext_time"], "2026-08-19 08:25 ET")
+
+    def test_extended_quote_uses_same_day_regular_close_for_postmarket(self):
+        result = {"rows": [{"tk": "XBI"}]}
+        idx = pd.DatetimeIndex(
+            ["2026-08-19 15:55", "2026-08-19 16:05", "2026-08-19 18:00"],
+            tz=m19_radar.NY,
+        )
+        extended = pd.DataFrame(
+            {"Close": [110.0, 111.0, 112.0], "Volume": [500, 100, 200]}, index=idx
+        )
+        daily = pd.DataFrame(
+            {"Close": [100.0]}, index=pd.to_datetime(["2026-08-18"])
+        )
+        m19_radar.add_extended_quotes(result, {"XBI": daily}, extended)
+        row = result["rows"][0]
+        self.assertEqual(row["ext_session"], "盘后")
+        self.assertEqual(row["ext_base"], 110.0)
+        self.assertAlmostEqual(row["ext_change"], (112 / 110 - 1) * 100)
+        self.assertEqual(row["ext_volume"], 300.0)
 
     def test_liquidity_gate_excludes_aum_below_300m(self):
         status, reason = m19_radar.liquidity_status(299_999_999, 10_000_000)
