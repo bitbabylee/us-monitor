@@ -1,22 +1,25 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-08-18 收盘(ET)
-  生成 08-19 10:02 纽约 = 08-19 22:02 新加坡
+  波哥信号 · 美股日报  数据截至 2026-08-19 收盘(ET)
+  生成 08-19 16:32 纽约 = 08-20 04:32 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 80% · 阶段P0 · 宏观3/4 · 动量MTUM
+【结论】仓位上限 80% · 阶段P0 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
-【候选】3 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:RKLB   10EMA回调   日内:⚪观望
-  NYSE:LLY      10EMA回调   日内:⚪观望
-  NASDAQ:IREN   10EMA回调   日内:🔴规避/止损
+【候选】6 只（形态+板块确认+无财报风险·未回测）
+  NASDAQ:MSFT   10EMA回调   日内:🟢突破买点
+  NYSE:LLY      箱体突破      日内:⚪观望
+  NASDAQ:HOOD   口袋支点      日内:⚪观望
+  AMEX:GDX      口袋支点      日内:🟢强动能买点
+  NASDAQ:IREN   10EMA回调   日内:🟢突破买点
+  NASDAQ:HUT    超跌反弹      日内:🟢突破买点
 【否决】
-  NASDAQ:MSFT   板块背离
-  NASDAQ:CRWD   财报窗口?
+  NASDAQ:QQQ    板块背离
   NASDAQ:MU     板块背离
-  NASDAQ:CIBR   板块背离
+  NASDAQ:PLTR   板块背离
   NYSE:SNOW     财报窗口?
+  NASDAQ:SPCX   板块背离
 【风险】无近端风险事件
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   08-26 周三  NASDAQ:CRWD? NYSE:SNOW?
@@ -25,56 +28,55 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7692 (MA50+2.3%) · RSI 77⚠️偏热 · VIX 15.8
-  风格: MTUM/MAGS 4.67 站上20日均 → 动量MTUM
-  日性质(因子ETF超额·非纯因子): 动量-2.5 高贝-2.7 低波+0.8 价值-1.0 → 去杠杆/轮动日
-  派发 ▃▅▆▆▅▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃ (2/吸4) → 仓位80%
-  阶段P0 恐慌未释放 恐慌1/4 共识2/5 缺:双指数五日收益率均为正
-  宏观 ✅ATR1467% ✗10Y4.71% ✅HYG/LQD0.7514 ✅USD/JPY159.34
+  SPX 7708 (MA50+2.4%) · RSI 77⚠️偏热 · VIX 14.9
+  风格: MTUM/MAGS 4.52 跌破20日均 → 抱团MAGS
+  日性质(因子ETF超额·非纯因子): 动量-2.1 高贝+1.2 低波+0.6 价值+0.0 → 中性日
+  派发 ▄▄▃▅▆▆▇▇▇▆▇▆▂▁▁▁▁▁▁▁▁▁▂▃▃ (2/吸5) → 仓位80%
+  阶段P0 恐慌未释放 恐慌1/4 共识1/5 缺:SMH站上20日线
+  宏观 ✅ATR1452% ✗10Y4.65% ✗HYG/LQD0.7480 ✅USD/JPY158.21
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:GDXJ 小金矿  AMEX:ARKG 基因组  NASDAQ:WCLD 云软件  AMEX:SIL 白银矿  AMEX:XBI 生物科技
-  短线改善: AMEX:OIH 油服  AMEX:XHB 地产链  AMEX:XLF 金融板块 (Financials)  AMEX:DBC 大宗商品  AMEX:MTUM 动量
+  涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:ARKG 基因组  NASDAQ:WCLD 云软件  AMEX:IEO 油气上游
+  短线改善: AMEX:DBC 大宗商品  AMEX:OIH 油服  AMEX:MJ 大麻  AMEX:USMV 低波  AMEX:VLUE 价值
 ------------------------------------------------
 【板块】
-  强: AMEX:XLE+2.4% · AMEX:XLV+2.3% · AMEX:XLP+1.7% · AMEX:XLF+1.1% · AMEX:ITA+1.1%
-  主题🔥 💊 减肥药  +2.2%  龙头 NYSE:LLY
-  主题🧊 🏦 降息受益 -2.4%
-  主题🧊 传统工业重机 -2.7%
-  主题🧊 🪙 黄金   -2.9%
-  主题🧊 ☁️ 云计算 -3.2%
-  主题🧊 🔥 AI算力 -3.9%
-  主题🧊 ⚡ AI电网 -5.5%
-  主题🧊 矿转AIDC -7.8%
+  强: AMEX:GDX+9.2% · AMEX:XLV+3.3% · AMEX:XLY+1.7% · AMEX:XLB+1.2%
+  主题🔥 🪙 黄金   +9.3%  龙头 NYSE:AEM
+  主题🔥 🏦 降息受益 +4.9%  龙头 NASDAQ:COIN
+  主题🔥 💊 减肥药  +4.4%  龙头 NASDAQ:VKTX
+  主题🧊 🚀 军工   -2.1%
+  主题🧊 ️ 网络安全 -2.2%
+  主题🧊 🔥 AI算力 -2.6%
+  主题🧊 ☁️ 云计算 -2.9%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:MSFT   🟢10EMA回调   🟢黄金买点
+   NASDAQ:MSFT   🟢10EMA回调   🟢突破买点
+   NASDAQ:MU     🟢10EMA回调   🟢稳健买点
+   AMEX:GDX      💡口袋支点      🟢强动能买点
+   NASDAQ:IREN   🟢10EMA回调   🟢突破买点
+   NASDAQ:HUT    🚀超跌反弹      🟢突破买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:RKLB   🟢10EMA回调   ⚪观望
-   NYSE:LLY      🟢10EMA回调   ⚪观望
- ▶ 冲突（日线买点/日内破位）
-   NASDAQ:MU     🟢10EMA回调   🔴规避/止损
-   NASDAQ:CIBR   🟢10EMA回调   🔴规避/止损
-   NASDAQ:IREN   🟢10EMA回调   🔴规避/止损
+   NYSE:LLY      📦箱体突破      ⚪观望
+   NASDAQ:QQQ    🟢10EMA回调   ⚪观望
+   NASDAQ:HOOD   💡口袋支点      ⚪观望
+   NASDAQ:PLTR   🟢10EMA回调   ⚪观望
+   NASDAQ:SPCX   🟢10EMA回调   ⚪观望
  ▶ 财报窗口（信号作废）
-   NASDAQ:CRWD   🟢10EMA回调   ⚠️ 7日后(08-26)财?
    NYSE:SNOW     🟢10EMA回调   ⚠️ 7日后(08-26)财?
-  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:LITE🔴  NASDAQ:AAOI🔴 
-            NASDAQ:INTC🔴  NASDAQ:AMAT🔴  NASDAQ:SNDK🔴  NASDAQ:CRDO🔴 
-            NASDAQ:AMD🔴  NASDAQ:AXTI🔴  NASDAQ:PLTR🔴  NASDAQ:SPCX🔴 
-            AMEX:GDX🟢  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴 
-            NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:NBIS-12.8% NASDAQ:AXTI-9.9% AMEX:GDX+7.5% NASDAQ:CIFR-6.4% NASDAQ:APLD-5.8% NASDAQ:RKLB-5.7% NASDAQ:CRWD-5.6% NASDAQ:IREN-5.3% NYSE:LLY+5.1% NASDAQ:CRDO-4.9% NASDAQ:INTC-4.8% NASDAQ:LITE-4.7% NASDAQ:HUT-4.4% NASDAQ:WULF-4.4% NASDAQ:RIOT-4.0% NYSE:NET-3.9% NASDAQ:SPCX-3.8% NASDAQ:AMAT-3.7% NYSE:BE-3.6% NASDAQ:AMD-3.5% NASDAQ:AAOI-3.2% NASDAQ:CORZ-3.1% NYSE:CAT-3.0% NASDAQ:SNDK-2.8% NYSE:GEV-2.7% NASDAQ:CIBR-2.5% NYSE:ANET-2.3%
+  日内异动: NASDAQ:NBIS🟡  NASDAQ:RKLB🟡  NASDAQ:LITE🔴  NASDAQ:AAOI🔴 
+            NASDAQ:AMAT🟢  NYSE:GEV🟢  NASDAQ:SNDK🔴  NYSE:CAT🟢 
+            NYSE:NET🟢  NASDAQ:CRWD🟢  NYSE:ANET🔴  NASDAQ:AXTI🔴 
+            NASDAQ:RIOT🟢 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 60%
-  🟢合格·在买点区(9): NASDAQ:NBIS NASDAQ:SNDK NYSE:NET NASDAQ:CRWD NASDAQ:CIBR NYSE:SNOW AMEX:SPY NYSE:LLY NYSE:GEV
+  上升趋势占比 63% · 📣GDX S4↓→S3⌒ · HUT S1⌐→S2↑ · 圣泉 S1⌐→S2↑
+  🟢合格·在买点区(10): NYSE:LLY NASDAQ:SNDK NYSE:NET NASDAQ:CIBR NYSE:SNOW AMEX:SPY NASDAQ:NBIS SZSE:300308(旭创) NYSE:GEV NASDAQ:CRWD
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(14): NASDAQ:PLTR AMEX:GDX NASDAQ:IREN NASDAQ:MSFT SZSE:300476(胜宏) SSE:601138(富联) SZSE:002837(英维克) NASDAQ:AMD SSE:600183(生益) NASDAQ:INTC SZSE:300499(高澜) SZSE:300308(旭创) NASDAQ:HOOD SSE:603986(兆易)
+  🔴淘汰(15): NASDAQ:PLTR AMEX:GDX NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:MSFT SSE:601138(富联) SZSE:002837(英维克) NYSE:CAT SZSE:300499(高澜) NASDAQ:HOOD SSE:605589(圣泉) SSE:603986(兆易) NASDAQ:INTC NASDAQ:AMD NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKC$284M(v/oi2.0) MUP$167M(v/oi2.1) LLYC$146M PLTRC$71M QQQ≈$44M(v/oi16.7)
+  今日: MSFTC$1740M(v/oi57.0) SNDK≈$408M(v/oi23.5) MU≈$260M(v/oi64.2) QQQP$243M(v/oi99.0) LLYC$159M(v/oi6.6)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -84,24 +86,6 @@
   🔗两套方法共同覆盖(独立得出, 非互证): NYSE:LLY NASDAQ:AMD NYSE:CAT NASDAQ:AXTI NYSE:NEM NASDAQ:AAOI NYSE:AEM
   池外强信号(仅提示, 不入信号链): NYSE:IBM NYSE:BORR
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
-------------------------------------------------
-【A股重演】反转/反弹五条件 (截至08-19·独立体系)
-  判定: 反弹定性  反转条件 1/5
-  ✗①龙头前高 距前高 胜宏-38% 生益-33% 富联-23%
-  ✅②量能结构 涨/跌量比 1.21x (10日)
-  ✗③扩散质量 龙头5日-10.1% vs 池中位-5.4% 补涨带队
-  ✗④指数验证 上证3894 区间3946下方
-  ✗⑤海外锚 TSM20日-2.5% SMH/QQQ↓20日均 (月营收人工)
-  四棒5日α(领/改/弱/落·↑↓=加速): PCB-7落↓ 光+6领↓ 液冷-4落↓ 存储-3落↓ 探测+0改↓
-  资金面周频(环境非信号):
-  指增超额: 未更新(26H1收窄,500/1000弱)
-  私募仓位: 83.7% (07-10⚠️40天前) 高位·加仓空间有限·近4年新高·百亿级87.4
-  风格温度: 中证1000-沪深300 5日-0.7% 缩圈防守(自动)
-  复评节点(到期强制重估):
-  08-26 T-7 高老师·方向确认窗(±4天, 前两窗8/5情绪8/12资金已验中)
-  09-05 T-17 高老师·趋势确认窗(9/1-9/9, 与苹果复评重叠)
-  09-09 T-21 苹果发布会·iPhone18逻辑验真(果链腿去留)
-  10-30 T-72 Q3财报兑现+中期选举前·跟随整体降仓评估
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
   个股=日线×日内同源串联; 波哥独立成页与本报无交互
