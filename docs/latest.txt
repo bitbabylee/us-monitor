@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-18 收盘(ET)
-  生成 08-19 04:58 纽约 = 08-19 16:58 新加坡
+  生成 08-19 05:01 纽约 = 08-19 17:01 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -64,7 +64,7 @@
             NASDAQ:CRDO🔴  NASDAQ:HOOD🔴  NASDAQ:AMD🟡  NASDAQ:AXTI🔴 
             NASDAQ:SPCX🟡  AMEX:GDX🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AXTI+2.7% NASDAQ:AAOI+2.7% NASDAQ:SNDK+2.4% NASDAQ:CRDO+2.2%
+  盘前±2%: NASDAQ:AXTI+2.7% NASDAQ:AAOI+2.6% NASDAQ:SNDK+2.2% NASDAQ:LITE+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 60%
