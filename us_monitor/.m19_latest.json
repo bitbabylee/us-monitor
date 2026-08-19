@@ -1,66 +1,67 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-08-18 21:30 UTC",
-   "as_of": "2026-08-18",
+   "generated": "2026-08-19 21:30 UTC",
+   "as_of": "2026-08-19",
    "market_gate": {
     "status": "red",
     "symbol": "^IXIC",
-    "date": "2026-08-18",
-    "ma10": 26550.85,
-    "ma20": 25927.99
+    "date": "2026-08-19",
+    "ma10": 26547.62,
+    "ma20": 25960.0
    },
    "universe_n": 44,
    "data_n": 44,
    "signals": [
     {
-     "signal_id": "swing_us:WCLD:2026-08-18:swing_us:WCLD:2026-08-12:ma_bull_align:NR7",
+     "signal_id": "swing_us:WCLD:2026-08-19:swing_us:WCLD:2026-08-12:ma_bull_align:GDR+NR7",
      "profile": "swing_us",
      "ticker": "WCLD",
-     "date": "2026-08-18",
+     "date": "2026-08-19",
      "setup_id": "swing_us:WCLD:2026-08-12:ma_bull_align",
      "setup_names": [
       "ma_bull_align"
      ],
      "setup_date": "2026-08-12",
-     "setup_age_bars": 4,
+     "setup_age_bars": 5,
      "triggers": [
+      "GDR",
       "NR7"
      ],
      "plan": {
-      "entry_stop": 40.88,
-      "entry_limit": 41.09,
-      "stop": 39.83,
-      "risk": 1.05,
-      "stop_pct": 2.58,
-      "adr20": 3.4,
-      "stop_adr_ratio": 0.76,
+      "entry_stop": 41.01,
+      "entry_limit": 41.22,
+      "stop": 40.01,
+      "risk": 1.0,
+      "stop_pct": 2.45,
+      "adr20": 3.35,
+      "stop_adr_ratio": 0.73,
       "grade": "warn",
-      "target_1R": 41.94,
-      "target_2R": 42.99,
-      "position_pct": 9.7,
+      "target_1R": 42.02,
+      "target_2R": 43.02,
+      "position_pct": 10.21,
       "action": "half_size"
      },
      "risk_check": {
-      "entry_stop": 40.88,
-      "entry_limit": 41.09,
-      "stop": 39.83,
-      "risk": 1.05,
-      "stop_pct": 2.58,
-      "adr20": 3.4,
-      "stop_adr_ratio": 0.76,
+      "entry_stop": 41.01,
+      "entry_limit": 41.22,
+      "stop": 40.01,
+      "risk": 1.0,
+      "stop_pct": 2.45,
+      "adr20": 3.35,
+      "stop_adr_ratio": 0.73,
       "grade": "warn",
-      "target_1R": 41.94,
-      "target_2R": 42.99,
-      "position_pct": 9.7,
+      "target_1R": 42.02,
+      "target_2R": 43.02,
+      "position_pct": 10.21,
       "action": "half_size"
      },
      "market_gate": {
       "status": "red",
       "symbol": "^IXIC",
-      "date": "2026-08-18",
-      "ma10": 26550.85,
-      "ma20": 25927.99
+      "date": "2026-08-19",
+      "ma10": 26547.62,
+      "ma20": 25960.0
      },
      "environment": "环境逆风",
      "outcomes": {}
@@ -82,5 +83,5 @@
    "signals": []
   }
  },
- "updated": "2026-08-19 08:00 UTC"
+ "updated": "2026-08-19 21:30 UTC"
 }
