@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-18 收盘(ET)
-  生成 08-19 09:19 纽约 = 08-19 21:19 新加坡
+  生成 08-19 09:25 纽约 = 08-19 21:25 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -15,7 +15,6 @@
   NASDAQ:MSFT   板块背离
   NASDAQ:CRWD   财报窗口?
   NASDAQ:MU     板块背离
-  NASDAQ:CIBR   板块背离
   NYSE:SNOW     财报窗口?
 【风险】无近端风险事件
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
@@ -25,16 +24,16 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7692 (MA50+2.3%) · RSI 77⚠️偏热 · VIX 15.8
+  SPX 7692 (MA50+2.3%) · RSI 66⚠️偏热 · VIX 15.8
   风格: MTUM/MAGS 4.67 站上20日均 → 动量MTUM
   日性质(因子ETF超额·非纯因子): 动量-2.5 高贝-2.7 低波+0.8 价值-1.0 → 去杠杆/轮动日
-  派发 ▃▅▆▆▅▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃ (2/吸4) → 仓位80%
+  派发 ▂▄▄▃▅▆▆▇▇▇▆▇▆▂▁▁▁▁▁▁▁▁▁▂▃ (2/吸5) → 仓位80%
   阶段P0 恐慌未释放 恐慌1/4 共识2/5 缺:双指数五日收益率均为正
   宏观 ✅ATR1467% ✗10Y4.71% ✅HYG/LQD0.7514 ✅USD/JPY159.34
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:ITA 国防军工 (Defense)
-  短线改善: AMEX:XLF 金融板块 (Financials)  AMEX:DBC 大宗商品  AMEX:MJ 大麻  AMEX:MTUM 动量  AMEX:KBE 银行
+  涨幅优先: AMEX:IEO 油气上游  AMEX:CRAK 炼化下游  NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:ITA 国防军工 (Defense)
+  短线改善: AMEX:XLF 金融板块 (Financials)  AMEX:DBC 大宗商品  AMEX:MJ 大麻  AMEX:KBE 银行  AMEX:KRE 区域银行
 ------------------------------------------------
 【板块】
   强: AMEX:XLE+2.4% · AMEX:XLV+2.3% · AMEX:XLP+1.7% · AMEX:XLF+1.1% · AMEX:ITA+1.1%
@@ -53,7 +52,6 @@
  ▶ 等时机（日内未给买点）
    NASDAQ:RKLB   🟢10EMA回调   🟡跳空低开,买点降级
    NYSE:LLY      🟢10EMA回调   🟡警告:临近前高
-   NASDAQ:CIBR   🟢10EMA回调   ⚪观望
  ▶ 冲突（日线买点/日内破位）
    NASDAQ:MU     🟢10EMA回调   🔴规避/止损
    NASDAQ:IREN   🟢10EMA回调   🔴规避/止损
@@ -66,7 +64,7 @@
             NASDAQ:CRDO🔴  NASDAQ:HOOD🔴  NASDAQ:AMD🟡  NASDAQ:AXTI🔴 
             NASDAQ:SPCX🟡  AMEX:GDX🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AAOI+6.1% NASDAQ:AXTI+5.9% AMEX:GDX+5.8% NASDAQ:NBIS-5.0% NASDAQ:SNDK+3.9% NASDAQ:LITE+3.5% NYSE:BE+2.7% NASDAQ:WULF+2.5% NASDAQ:CRDO+2.4% NASDAQ:MU+2.1%
+  盘前±2%: NASDAQ:AXTI+6.2% NASDAQ:AAOI+6.2% AMEX:GDX+5.7% NASDAQ:NBIS-5.0% NASDAQ:SNDK+4.4% NASDAQ:LITE+3.7% NASDAQ:CRDO+3.3% NASDAQ:WULF+3.0% NASDAQ:MU+2.4% NYSE:BE+2.3% NASDAQ:HOOD+2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 60%
@@ -75,7 +73,7 @@
   🔴淘汰(14): NASDAQ:PLTR AMEX:GDX NASDAQ:IREN NASDAQ:MSFT SZSE:300476(胜宏) SSE:601138(富联) SZSE:002837(英维克) NASDAQ:AMD SSE:600183(生益) NASDAQ:INTC SZSE:300499(高澜) SZSE:300308(旭创) NASDAQ:HOOD SSE:603986(兆易)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDK≈$568M(v/oi7.0) MU≈$433M(v/oi14.2) QQQ≈$123M(v/oi12.2) LLYC$116M(v/oi2.0) PLTRC$93M(v/oi4.4)
+  今日: SNDK≈$568M(v/oi7.0) MU≈$433M(v/oi14.2) QQQ≈$123M(v/oi12.2) LLYC$116M(v/oi2.0) PLTRC$94M(v/oi4.4)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
