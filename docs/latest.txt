@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-18 收盘(ET)
-  生成 08-19 09:25 纽约 = 08-19 21:25 新加坡
+  生成 08-19 09:55 纽约 = 08-19 21:55 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,13 +8,14 @@
 【结论】仓位上限 80% · 阶段P0 · 宏观3/4 · 动量MTUM
 ------------------------------------------------
 【候选】3 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:RKLB   10EMA回调   日内:🟡跳空低开,买点降级
-  NYSE:LLY      10EMA回调   日内:🟡警告:临近前高
-  NASDAQ:IREN   10EMA回调   日内:🔴规避/止损
+  NASDAQ:RKLB   10EMA回调   日内:⏳开盘25分钟
+  NYSE:LLY      10EMA回调   日内:⏳开盘25分钟
+  NASDAQ:IREN   10EMA回调   日内:⏳开盘25分钟
 【否决】
   NASDAQ:MSFT   板块背离
   NASDAQ:CRWD   财报窗口?
   NASDAQ:MU     板块背离
+  NASDAQ:CIBR   板块背离
   NYSE:SNOW     财报窗口?
 【风险】无近端风险事件
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
@@ -24,16 +25,16 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7692 (MA50+2.3%) · RSI 66⚠️偏热 · VIX 15.8
+  SPX 7692 (MA50+2.3%) · RSI 77⚠️偏热 · VIX 15.8
   风格: MTUM/MAGS 4.67 站上20日均 → 动量MTUM
   日性质(因子ETF超额·非纯因子): 动量-2.5 高贝-2.7 低波+0.8 价值-1.0 → 去杠杆/轮动日
-  派发 ▂▄▄▃▅▆▆▇▇▇▆▇▆▂▁▁▁▁▁▁▁▁▁▂▃ (2/吸5) → 仓位80%
+  派发 ▃▅▆▆▅▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃ (2/吸4) → 仓位80%
   阶段P0 恐慌未释放 恐慌1/4 共识2/5 缺:双指数五日收益率均为正
   宏观 ✅ATR1467% ✗10Y4.71% ✅HYG/LQD0.7514 ✅USD/JPY159.34
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:IEO 油气上游  AMEX:CRAK 炼化下游  NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:ITA 国防军工 (Defense)
-  短线改善: AMEX:XLF 金融板块 (Financials)  AMEX:DBC 大宗商品  AMEX:MJ 大麻  AMEX:KBE 银行  AMEX:KRE 区域银行
+  涨幅优先: AMEX:ARKG 基因组  AMEX:GDXJ 小金矿  NASDAQ:WCLD 云软件  AMEX:XBI 生物科技  AMEX:IHI 医疗器械
+  短线改善: AMEX:XHB 地产链  AMEX:XLF 金融板块 (Financials)  AMEX:DBC 大宗商品  AMEX:MTUM 动量  NASDAQ:FINX 金融科技
 ------------------------------------------------
 【板块】
   强: AMEX:XLE+2.4% · AMEX:XLV+2.3% · AMEX:XLP+1.7% · AMEX:XLF+1.1% · AMEX:ITA+1.1%
@@ -47,24 +48,17 @@
   主题🧊 矿转AIDC -7.8%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
- ▶ 日线+日内同向
-   NASDAQ:MSFT   🟢10EMA回调   🟢稳健买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:RKLB   🟢10EMA回调   🟡跳空低开,买点降级
-   NYSE:LLY      🟢10EMA回调   🟡警告:临近前高
- ▶ 冲突（日线买点/日内破位）
-   NASDAQ:MU     🟢10EMA回调   🔴规避/止损
-   NASDAQ:IREN   🟢10EMA回调   🔴规避/止损
+   NASDAQ:RKLB   🟢10EMA回调   ⏳开盘25分钟
+   NASDAQ:MSFT   🟢10EMA回调   ⏳开盘25分钟
+   NYSE:LLY      🟢10EMA回调   ⏳开盘25分钟
+   NASDAQ:MU     🟢10EMA回调   ⏳开盘25分钟
+   NASDAQ:CIBR   🟢10EMA回调   ⏳开盘25分钟
+   NASDAQ:IREN   🟢10EMA回调   ⏳开盘25分钟
  ▶ 财报窗口（信号作废）
    NASDAQ:CRWD   🟢10EMA回调   ⚠️ 7日后(08-26)财?
    NYSE:SNOW     🟢10EMA回调   ⚠️ 7日后(08-26)财?
-  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:LITE🔴  NASDAQ:AAOI🔴 
-            NASDAQ:INTC🟡  NASDAQ:SMH🟡  NYSE:GEV🔴  NASDAQ:SNDK🔴 
-            NASDAQ:QQQ🔴  NYSE:CAT🔴  NYSE:NET🔴  NYSE:ANET🔴 
-            NASDAQ:CRDO🔴  NASDAQ:HOOD🔴  NASDAQ:AMD🟡  NASDAQ:AXTI🔴 
-            NASDAQ:SPCX🟡  AMEX:GDX🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
-            NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AXTI+6.2% NASDAQ:AAOI+6.2% AMEX:GDX+5.7% NASDAQ:NBIS-5.0% NASDAQ:SNDK+4.4% NASDAQ:LITE+3.7% NASDAQ:CRDO+3.3% NASDAQ:WULF+3.0% NASDAQ:MU+2.4% NYSE:BE+2.3% NASDAQ:HOOD+2.2%
+  盘前±2%: NASDAQ:NBIS-12.1% NASDAQ:AXTI-7.6% AMEX:GDX+6.9% NASDAQ:RKLB-5.9% NASDAQ:APLD-5.5% NASDAQ:CRDO-5.5% NASDAQ:CIFR-5.3% NYSE:LLY+5.3% NASDAQ:IREN-4.9% NASDAQ:CRWD-4.7% NASDAQ:LITE-4.3% NASDAQ:WULF-4.1% NASDAQ:RIOT-4.1% NASDAQ:HUT-3.8% NASDAQ:INTC-3.7% NASDAQ:AMD-3.6% NYSE:NET-3.3% NASDAQ:AMAT-3.3% NASDAQ:SPCX-3.2% NYSE:CAT-3.2% NASDAQ:CORZ-3.0% NYSE:ANET-2.8% NYSE:BE-2.8% NYSE:GEV-2.7% NASDAQ:AAOI-2.2% NASDAQ:MU-2.1% NASDAQ:SNDK-2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 60%
@@ -73,7 +67,7 @@
   🔴淘汰(14): NASDAQ:PLTR AMEX:GDX NASDAQ:IREN NASDAQ:MSFT SZSE:300476(胜宏) SSE:601138(富联) SZSE:002837(英维克) NASDAQ:AMD SSE:600183(生益) NASDAQ:INTC SZSE:300499(高澜) SZSE:300308(旭创) NASDAQ:HOOD SSE:603986(兆易)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDK≈$568M(v/oi7.0) MU≈$433M(v/oi14.2) QQQ≈$123M(v/oi12.2) LLYC$116M(v/oi2.0) PLTRC$94M(v/oi4.4)
+  今日: SNDKC$274M(v/oi2.0) MUP$166M(v/oi1.7) LLYC$134M PLTRC$72M MSFTC$45M(v/oi7.4)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -90,7 +84,7 @@
   ✅②量能结构 涨/跌量比 1.21x (10日)
   ✗③扩散质量 龙头5日-10.1% vs 池中位-5.4% 补涨带队
   ✗④指数验证 上证3894 区间3946下方
-  ✗⑤海外锚 TSM20日-2.6% SMH/QQQ↓20日均 (月营收人工)
+  ✗⑤海外锚 TSM20日-2.7% SMH/QQQ↓20日均 (月营收人工)
   四棒5日α(领/改/弱/落·↑↓=加速): PCB-7落↓ 光+6领↓ 液冷-4落↓ 存储-3落↓ 探测+0改↓
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
