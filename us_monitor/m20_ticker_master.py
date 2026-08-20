@@ -65,16 +65,30 @@ def parse_markdown(text: str, updated: str | None = None) -> dict:
 
 def load_catalog() -> dict:
     """本机优先读主表并刷新快照；GitHub Actions 使用仓库内快照。"""
+    snapshot = None
+    if SNAPSHOT.exists():
+        try:
+            candidate = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
+            if candidate.get("categories") and candidate.get("all_tickers"):
+                snapshot = candidate
+        except (json.JSONDecodeError, OSError):
+            snapshot = None
+
     if LOCAL_MASTER.exists():
         modified = datetime.fromtimestamp(LOCAL_MASTER.stat().st_mtime, SG).strftime("%Y-%m-%d %H:%M SGT")
         catalog = parse_markdown(LOCAL_MASTER.read_text(encoding="utf-8"), updated=modified)
-        serialized = json.dumps(catalog, ensure_ascii=False, indent=2) + "\n"
-        if not SNAPSHOT.exists() or SNAPSHOT.read_text(encoding="utf-8") != serialized:
-            SNAPSHOT.write_text(serialized, encoding="utf-8")
-        return catalog
-    if SNAPSHOT.exists():
-        return json.loads(SNAPSHOT.read_text(encoding="utf-8"))
-    return {"updated": "—", "source": LOCAL_MASTER.name, "categories": [], "all_tickers": []}
+        if catalog["categories"] and catalog["all_tickers"]:
+            serialized = json.dumps(catalog, ensure_ascii=False, indent=2) + "\n"
+            if not SNAPSHOT.exists() or SNAPSHOT.read_text(encoding="utf-8") != serialized:
+                SNAPSHOT.write_text(serialized, encoding="utf-8")
+            return catalog
+        if snapshot:
+            print(f"警告：{LOCAL_MASTER} 为空或无法解析，保留上次有效 Ticker 快照。")
+            return snapshot
+        raise ValueError(f"Ticker 主表为空或无法解析：{LOCAL_MASTER}")
+    if snapshot:
+        return snapshot
+    raise FileNotFoundError("Ticker 主表与有效快照均不存在，已停止生成以避免发布空页面。")
 
 
 CSS = """
