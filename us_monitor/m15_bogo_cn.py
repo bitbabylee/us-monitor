@@ -15,6 +15,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from . import m13_bogo as m13
+from . import m20_ticker_master as ticker_master
 
 STORE = Path(__file__).resolve().parent / ".bogo_cn_signals.json"
 ENGINE_STORE = Path(__file__).resolve().parent / ".m19_latest.json"
@@ -255,6 +256,9 @@ def build_page() -> Path:
         btns.append(f'<button class="tab{on}" data-t="{k}">{H.escape(short)}</button>')
         label = {"us": "美股盘后 · 16:30批(NY)"}.get(k) or dict((b[0], b[1]) for b in BATCHES)[k]
         panels.append(f'<div class="panel{on}" id="p-{k}">{_section(k, label, d, pref)}</div>')
+    ticker_catalog = ticker_master.load_catalog()
+    btns.append('<button class="tab" data-t="tickers">全部 Ticker</button>')
+    panels.append(ticker_master.render_panel(ticker_catalog))
     tabcss = """.tabs{position:sticky;top:0;background:var(--bg);padding:8px 0;display:flex;gap:6px;flex-wrap:wrap}
 .tab{font:inherit;padding:5px 12px;border:1px solid var(--bd);border-radius:15px;background:var(--sf);color:var(--ink);cursor:pointer}
 .tab.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
@@ -263,10 +267,11 @@ def build_page() -> Path:
 function go(t){bs.forEach(b=>b.classList.toggle('on',b.dataset.t===t));
 ps.forEach(p=>p.classList.toggle('on',p.id==='p-'+t));}
 bs.forEach(b=>b.onclick=()=>{go(b.dataset.t);history.replaceState(null,'','#'+b.dataset.t)});
-if(location.hash)go(location.hash.slice(1));</script>"""
+if(location.hash)go(location.hash.slice(1));
+""" + ticker_master.JS + "</script>"
     page = (f'<meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>波哥七维信号</title><style>{CSS}{tabcss}</style>'
+            f'<title>波哥七维信号</title><style>{CSS}{tabcss}{ticker_master.CSS}</style>'
             f'<h1>波哥系统七维信号汇总</h1>'
             f'<div class="tabs">{"".join(btns)}'
             f'<a class="tab" href="etf.html" style="text-decoration:none">ETF涨幅榜⭱</a>'
@@ -282,7 +287,8 @@ if(location.hash)go(location.hash.slice(1));</script>"""
         encoding="utf-8")
     n_us = len(d_us.get("rows", []))
     n_cn = sum(len((d_cn.get(k) or {}).get("rows", [])) for k, _, _ in BATCHES)
-    print(f"✅ 波哥主页(tabs): 美股 {n_us} 行 + A股三批 {n_cn} 行")
+    print(f"✅ 波哥主页(tabs): 美股 {n_us} 行 + A股三批 {n_cn} 行 + "
+          f"Ticker {len(ticker_catalog.get('all_tickers', []))} 只")
     return out
 
 
