@@ -1,67 +1,183 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-08-19 21:30 UTC",
-   "as_of": "2026-08-19",
+   "generated": "2026-08-20 21:30 UTC",
+   "as_of": "2026-08-20",
    "market_gate": {
     "status": "red",
     "symbol": "^IXIC",
-    "date": "2026-08-19",
-    "ma10": 26547.62,
-    "ma20": 25960.0
+    "date": "2026-08-20",
+    "ma10": 26519.5,
+    "ma20": 26006.47
    },
    "universe_n": 44,
    "data_n": 44,
    "signals": [
     {
-     "signal_id": "swing_us:WCLD:2026-08-19:swing_us:WCLD:2026-08-12:ma_bull_align:GDR+NR7",
+     "signal_id": "swing_us:SILJ:2026-08-20:swing_us:SILJ:2026-08-18:ma_bull_align:GDR",
+     "profile": "swing_us",
+     "ticker": "SILJ",
+     "date": "2026-08-20",
+     "setup_id": "swing_us:SILJ:2026-08-18:ma_bull_align",
+     "setup_names": [
+      "ma_bull_align"
+     ],
+     "setup_date": "2026-08-18",
+     "setup_age_bars": 2,
+     "triggers": [
+      "GDR"
+     ],
+     "plan": null,
+     "risk_check": {
+      "entry_stop": 32.33,
+      "entry_limit": 32.49,
+      "stop": 30.81,
+      "risk": 1.52,
+      "stop_pct": 4.69,
+      "adr20": 3.52,
+      "stop_adr_ratio": 1.33,
+      "grade": "拒",
+      "target_1R": 33.84,
+      "target_2R": 35.36,
+      "position_pct": 10.66,
+      "action": "reject"
+     },
+     "market_gate": {
+      "status": "red",
+      "symbol": "^IXIC",
+      "date": "2026-08-20",
+      "ma10": 26519.5,
+      "ma20": 26006.47
+     },
+     "environment": "环境逆风",
+     "outcomes": {}
+    },
+    {
+     "signal_id": "swing_us:WCLD:2026-08-20:swing_us:WCLD:2026-08-12:ma_bull_align:NR7",
      "profile": "swing_us",
      "ticker": "WCLD",
-     "date": "2026-08-19",
+     "date": "2026-08-20",
      "setup_id": "swing_us:WCLD:2026-08-12:ma_bull_align",
      "setup_names": [
       "ma_bull_align"
      ],
      "setup_date": "2026-08-12",
-     "setup_age_bars": 5,
+     "setup_age_bars": 6,
      "triggers": [
-      "GDR",
       "NR7"
      ],
      "plan": {
-      "entry_stop": 41.01,
-      "entry_limit": 41.22,
-      "stop": 40.01,
+      "entry_stop": 40.81,
+      "entry_limit": 41.02,
+      "stop": 39.81,
       "risk": 1.0,
-      "stop_pct": 2.45,
-      "adr20": 3.35,
-      "stop_adr_ratio": 0.73,
+      "stop_pct": 2.46,
+      "adr20": 3.13,
+      "stop_adr_ratio": 0.79,
       "grade": "warn",
-      "target_1R": 42.02,
-      "target_2R": 43.02,
-      "position_pct": 10.21,
+      "target_1R": 41.82,
+      "target_2R": 42.82,
+      "position_pct": 10.17,
       "action": "half_size"
      },
      "risk_check": {
-      "entry_stop": 41.01,
-      "entry_limit": 41.22,
-      "stop": 40.01,
+      "entry_stop": 40.81,
+      "entry_limit": 41.02,
+      "stop": 39.81,
       "risk": 1.0,
-      "stop_pct": 2.45,
-      "adr20": 3.35,
-      "stop_adr_ratio": 0.73,
+      "stop_pct": 2.46,
+      "adr20": 3.13,
+      "stop_adr_ratio": 0.79,
       "grade": "warn",
-      "target_1R": 42.02,
-      "target_2R": 43.02,
-      "position_pct": 10.21,
+      "target_1R": 41.82,
+      "target_2R": 42.82,
+      "position_pct": 10.17,
       "action": "half_size"
      },
      "market_gate": {
       "status": "red",
       "symbol": "^IXIC",
-      "date": "2026-08-19",
-      "ma10": 26547.62,
-      "ma20": 25960.0
+      "date": "2026-08-20",
+      "ma10": 26519.5,
+      "ma20": 26006.47
+     },
+     "environment": "环境逆风",
+     "outcomes": {}
+    },
+    {
+     "signal_id": "swing_us:GDXJ:2026-08-20:swing_us:GDXJ:2026-08-12:ma_bull_align:GDR",
+     "profile": "swing_us",
+     "ticker": "GDXJ",
+     "date": "2026-08-20",
+     "setup_id": "swing_us:GDXJ:2026-08-12:ma_bull_align",
+     "setup_names": [
+      "ma_bull_align"
+     ],
+     "setup_date": "2026-08-12",
+     "setup_age_bars": 6,
+     "triggers": [
+      "GDR"
+     ],
+     "plan": null,
+     "risk_check": {
+      "entry_stop": 130.88,
+      "entry_limit": 131.53,
+      "stop": 125.3,
+      "risk": 5.58,
+      "stop_pct": 4.26,
+      "adr20": 3.17,
+      "stop_adr_ratio": 1.34,
+      "grade": "拒",
+      "target_1R": 136.46,
+      "target_2R": 142.03,
+      "position_pct": 11.73,
+      "action": "reject"
+     },
+     "market_gate": {
+      "status": "red",
+      "symbol": "^IXIC",
+      "date": "2026-08-20",
+      "ma10": 26519.5,
+      "ma20": 26006.47
+     },
+     "environment": "环境逆风",
+     "outcomes": {}
+    },
+    {
+     "signal_id": "swing_us:SIL:2026-08-20:swing_us:SIL:2026-08-18:ma_bull_align:GDR",
+     "profile": "swing_us",
+     "ticker": "SIL",
+     "date": "2026-08-20",
+     "setup_id": "swing_us:SIL:2026-08-18:ma_bull_align",
+     "setup_names": [
+      "ma_bull_align"
+     ],
+     "setup_date": "2026-08-18",
+     "setup_age_bars": 2,
+     "triggers": [
+      "GDR"
+     ],
+     "plan": null,
+     "risk_check": {
+      "entry_stop": 99.45,
+      "entry_limit": 99.95,
+      "stop": 94.78,
+      "risk": 4.68,
+      "stop_pct": 4.71,
+      "adr20": 3.3,
+      "stop_adr_ratio": 1.43,
+      "grade": "拒",
+      "target_1R": 104.13,
+      "target_2R": 108.81,
+      "position_pct": 10.63,
+      "action": "reject"
+     },
+     "market_gate": {
+      "status": "red",
+      "symbol": "^IXIC",
+      "date": "2026-08-20",
+      "ma10": 26519.5,
+      "ma20": 26006.47
      },
      "environment": "环境逆风",
      "outcomes": {}
@@ -83,5 +199,5 @@
    "signals": []
   }
  },
- "updated": "2026-08-20 08:00 UTC"
+ "updated": "2026-08-20 21:30 UTC"
 }
