@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-20 收盘(ET)
-  生成 08-21 06:06 纽约 = 08-21 18:06 新加坡
+  生成 08-21 09:08 纽约 = 08-21 21:08 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -61,7 +61,7 @@
             NYSE:NET🔴  NASDAQ:CRWD🔴  NYSE:ANET🔴  NASDAQ:CRDO🟢 
             NASDAQ:HOOD🔴  NASDAQ:CIBR🔴  NASDAQ:SPCX🟢  NASDAQ:CORZ🔴 
             NASDAQ:RIOT🔥  NASDAQ:WULF🔥 
-  盘前±2%: NASDAQ:HOOD+5.4% NASDAQ:RIOT+3.9% NASDAQ:NBIS+3.8% NASDAQ:AXTI+3.3% NASDAQ:HUT+3.2% NASDAQ:IREN+3.0% NASDAQ:AAOI+2.8% NASDAQ:WULF+2.7% AMEX:GDX+2.6% NASDAQ:RKLB+2.5% NASDAQ:CIFR+2.3% NASDAQ:CRDO+2.3% NASDAQ:CORZ+2.1%
+  盘前±2%: NASDAQ:HOOD+5.0% NASDAQ:AXTI+4.2% NASDAQ:RIOT+3.4% NASDAQ:HUT+3.3% AMEX:GDX+2.7% NASDAQ:NBIS+2.4% NASDAQ:CORZ+2.4% NASDAQ:APLD+2.3% NYSE:BE+2.2% NASDAQ:IREN+2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 61%
@@ -70,7 +70,7 @@
   🔴淘汰(15): AMEX:GDX NASDAQ:IREN NASDAQ:PLTR NASDAQ:MSFT SZSE:300476(胜宏) NASDAQ:HOOD SSE:601138(富联) SZSE:002837(英维克) SSE:600183(生益) SZSE:300499(高澜) NYSE:NET NASDAQ:CRWD SSE:603986(兆易) NASDAQ:HUT NASDAQ:AMD
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MU≈$954M SNDK≈$429M QQQP$342M AMDP$258M SPCXP$244M
+  今日: MU≈$954M(v/oi68.0) SNDK≈$429M(v/oi8.3) QQQP$342M(v/oi17.6) AMDP$258M(v/oi17.1) SPCXP$244M(v/oi7.6)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
