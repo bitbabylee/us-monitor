@@ -29,6 +29,7 @@ from .data import NY, col, fetch_extended
 _LAST_RESULT: dict | None = None
 TV_LIST_FILENAME = "etf_top22_tv.txt"
 TV_SYMBOLS_FILENAME = "etf_top22_symbols.txt"
+ETF_TRENDS_FILENAME = "etf_trends.json"
 TV_LIST_TIERS = ("领涨", "强势", "改善")
 TV_LIST_LIQUIDITY = ("通过", "谨慎")
 TV_LIST_LIMIT = 22
@@ -500,6 +501,22 @@ def tv_symbol_list(selected: list[dict]) -> str:
     return "\n".join(tv.symbol(r["tk"]) for r in selected)
 
 
+def snapshot_payload(result: dict, generated_at: str | None = None) -> dict:
+    """稳定的 ETF 趋势快照，供预筛构建期消费，避免抓取页面 DOM。"""
+    keys = (
+        "tk", "name", "group", "date", "rank", "score", "tier", "trend",
+        "position", "liquidity", "r5", "r21", "r63", "rs5", "rs21",
+        "rs63", "consistency", "adr20", "ext20", "risk",
+    )
+    rows = [{key: row.get(key) for key in keys} for row in result.get("rows", [])]
+    return {
+        "schemaVersion": 1,
+        "dataDate": result.get("date"),
+        "generatedAt": generated_at or datetime.now(SG).isoformat(timespec="seconds"),
+        "rows": rows,
+    }
+
+
 def _row_html(r: dict, i: int) -> str:
     score = _fmt(r.get("score"), 1)
     rank = r.get("rank") or "—"
@@ -569,6 +586,11 @@ def build_page(result: dict | None = None) -> Path:
     tv_list_path.write_text(tv_list + "\n", encoding="utf-8")
     tv_symbols_path = OUT_DIR / TV_SYMBOLS_FILENAME
     tv_symbols_path.write_text(tv_symbols + "\n", encoding="utf-8")
+    snapshot_path = OUT_DIR / ETF_TRENDS_FILENAME
+    snapshot_path.write_text(
+        json.dumps(snapshot_payload(result), ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8",
+    )
     groups = sorted({r["group"] for r in rows})
     group_options = "".join(f'<option>{H.escape(g)}</option>' for g in groups)
     trs = "".join(_row_html(r, i) for i, r in enumerate(rows))

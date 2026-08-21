@@ -74,6 +74,7 @@ class EtfRadarTests(unittest.TestCase):
             out = m19_radar.build_page(result)
             page = Path(out).read_text(encoding="utf-8")
             symbols = (Path(tmp) / m19_radar.TV_SYMBOLS_FILENAME).read_text(encoding="utf-8")
+            snapshot = json.loads((Path(tmp) / m19_radar.ETF_TRENDS_FILENAME).read_text(encoding="utf-8"))
         self.assertIn("全量 ETF 涨幅榜", page)
         self.assertIn('id="q"', page)
         self.assertIn('data-ticker="XBI"', page)
@@ -99,6 +100,10 @@ class EtfRadarTests(unittest.TestCase):
         self.assertIn("一行一个", page)
         self.assertNotIn(",", symbols.strip())
         self.assertGreaterEqual(len(symbols.strip().splitlines()), 1)
+        self.assertEqual(1, snapshot["schemaVersion"])
+        self.assertEqual(result["date"], snapshot["dataDate"])
+        self.assertEqual(result["total"], len(snapshot["rows"]))
+        self.assertIn("position", snapshot["rows"][0])
 
     def test_tv_import_list_uses_allowed_tiers_and_rank_order(self):
         aum = {tk: 1_000_000_000 for tk in self.metas}

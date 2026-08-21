@@ -55,6 +55,8 @@ def main():
                     DOCS / m19_radar.TV_LIST_FILENAME)
         shutil.copy(etf.parent / m19_radar.TV_SYMBOLS_FILENAME,
                     DOCS / m19_radar.TV_SYMBOLS_FILENAME)
+        shutil.copy(etf.parent / m19_radar.ETF_TRENDS_FILENAME,
+                    DOCS / m19_radar.ETF_TRENDS_FILENAME)
     except Exception as exc:
         print(f"WARN: ETF 涨幅页 {exc}")
     man = src_dir / "manual.html"
