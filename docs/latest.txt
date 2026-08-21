@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-21 收盘(ET)
-  生成 08-21 16:47 纽约 = 08-22 04:47 新加坡
+  生成 08-21 17:39 纽约 = 08-22 05:39 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -17,7 +17,6 @@
   NASDAQ:LITE   板块背离
   NYSE:SNOW     财报窗口?
   NASDAQ:SPCX   板块背离
-  NASDAQ:IREN   财报窗口?
 【风险】无近端风险事件
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   08-26 周三  NASDAQ:CRWD? NYSE:SNOW?
@@ -32,7 +31,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.4 高贝+1.0 低波+0.1 价值+0.0 → 中性日
   派发 ▆▅▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃ (2/吸4) → 仓位80%
   阶段P0 恐慌未释放 恐慌1/4 共识1/5 缺:SMH站上20日线
-  宏观 ✅ATR1422% ✗10Y4.74% ✅HYG/LQD0.7516 ✅USD/JPY158.88
+  宏观 ✅ATR1422% ✗10Y4.74% ✅HYG/LQD0.7516 ✅USD/JPY158.86
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:SILJ 小白银矿
@@ -58,20 +57,19 @@
    NASDAQ:LITE   🟢10EMA回调   🔴规避/止损
  ▶ 财报窗口（信号作废）
    NYSE:SNOW     🟢10EMA回调   ⚠️ 5日后(08-26)财?
-   NASDAQ:IREN   🟢10EMA回调   ⚠️ 6日后(08-27)财?
   日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:AAOI🔴 
             NASDAQ:INTC🔴  NASDAQ:AMAT🟢  NASDAQ:SMH🔴  NYSE:GEV🔴 
             NASDAQ:QQQ🟢  NYSE:CAT🟢  NYSE:NET🟢  NASDAQ:CRWD🔴 
             NYSE:ANET🟢  NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:CIBR🟢 
-            NASDAQ:CORZ🔴  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴 
-            NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AAOI-4.3%
+            NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴 
+            NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:AAOI-9.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 61%
   🟢合格·在买点区(5): NYSE:LLY NASDAQ:SNDK NYSE:SNOW AMEX:SPY NASDAQ:QQQ
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(18): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX NASDAQ:IREN NASDAQ:MSFT SZSE:300476(胜宏) NASDAQ:RKLB SSE:601138(富联) SZSE:002837(英维克) NASDAQ:NBIS NASDAQ:INTC SSE:600183(生益) NASDAQ:RIOT NASDAQ:CRWD SZSE:300308(旭创) SZSE:300499(高澜) SSE:603986(兆易) NASDAQ:AMD
+  🔴淘汰(17): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX NASDAQ:IREN NASDAQ:MSFT SZSE:300476(胜宏) SSE:601138(富联) NASDAQ:RKLB SZSE:002837(英维克) SSE:600183(生益) NASDAQ:NBIS NASDAQ:INTC NASDAQ:RIOT NASDAQ:CRWD SZSE:300499(高澜) SSE:603986(兆易) NASDAQ:AMD
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: MUP$865M(v/oi45.6) PLTRC$406M(v/oi32.4) SNDKC$288M(v/oi13.7) QQQ≈$224M(v/oi99.0) HOODC$123M(v/oi63.7)
@@ -79,10 +77,10 @@
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】27只(强8)·⚠️旧快照
-  今日强信号: NASDAQ:LITE🔗 NYSE:SCCO AMEX:UUUU NYSE:PAAS NASDAQ:TSLA🔗 NYSE:CCJ NYSE:IBM NYSE:LLY🔗
-  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:LITE NASDAQ:TSLA NYSE:LLY NASDAQ:AAOI
-  池外强信号(仅提示, 不入信号链): NYSE:SCCO AMEX:UUUU NYSE:PAAS NASDAQ:TSLA NYSE:CCJ NYSE:IBM
+【波哥七维·外部体系】42只(强11)·⚠️旧快照
+  今日强信号: NASDAQ:RGTI AMEX:URA NASDAQ:LITE🔗 NASDAQ:UK100 NASDAQ:HTI1! NASDAQ:YM1! NYSE:SCCO AMEX:UUUU
+  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:LITE NASDAQ:TSLA NYSE:CAT NASDAQ:HOOD NASDAQ:AVGO NASDAQ:CIBR NYSE:TSM NASDAQ:AAOI
+  池外强信号(仅提示, 不入信号链): NASDAQ:RGTI AMEX:URA NASDAQ:UK100 NASDAQ:HTI1! NASDAQ:YM1! NYSE:SCCO
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
