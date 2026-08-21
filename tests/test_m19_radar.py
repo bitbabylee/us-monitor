@@ -54,6 +54,8 @@ class EtfRadarTests(unittest.TestCase):
         self.assertGreater(by_ticker["XBI"]["avg_dollar_volume21"], 1_000_000)
         self.assertEqual(by_ticker["XBI"]["volume_ratio"], 1.0)
         self.assertEqual(by_ticker["XBI"]["liquidity"], "通过")
+        self.assertEqual(by_ticker["XBI"]["ma_phase"], "多头扩张")
+        self.assertGreater(by_ticker["XBI"]["ma_spread_pct"], 0)
 
     def test_persistent_gain_is_ranked_and_not_hidden_by_top_n(self):
         result = m19_radar.analyze_frames(
@@ -100,10 +102,11 @@ class EtfRadarTests(unittest.TestCase):
         self.assertIn("一行一个", page)
         self.assertNotIn(",", symbols.strip())
         self.assertGreaterEqual(len(symbols.strip().splitlines()), 1)
-        self.assertEqual(1, snapshot["schemaVersion"])
+        self.assertEqual(2, snapshot["schemaVersion"])
         self.assertEqual(result["date"], snapshot["dataDate"])
         self.assertEqual(result["total"], len(snapshot["rows"]))
         self.assertIn("position", snapshot["rows"][0])
+        self.assertIn("ma_phase", snapshot["rows"][0])
 
     def test_tv_import_list_uses_allowed_tiers_and_rank_order(self):
         aum = {tk: 1_000_000_000 for tk in self.metas}

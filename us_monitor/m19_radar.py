@@ -192,6 +192,8 @@ def _raw_row(tk: str, meta: dict, frame: pd.DataFrame | None,
         "volume": None, "avg_volume21": None, "avg_dollar_volume21": None,
         "volume_ratio": None, "liquidity": "数据缺失",
         "liquidity_reason": "缺少有效行情，暂不进入交易短名单", "missing": True,
+        "ema10": None, "ema21": None, "ma_spread_pct": None,
+        "ma_spread_delta5": None, "ma_cross_age": None, "ma_phase": "数据缺失",
     }
     if frame is None or len(frame.get("Close", [])) < max(C.ETF_RETURN_WINDOWS) + 2:
         return base
@@ -206,6 +208,27 @@ def _raw_row(tk: str, meta: dict, frame: pd.DataFrame | None,
     ma50 = s.tail(50).mean()
     ma200 = s.tail(200).mean() if len(s) >= 200 else None
     px = s.iloc[-1]
+    ema10_series = s.ewm(span=10, adjust=False).mean()
+    ema21_series = s.ewm(span=21, adjust=False).mean()
+    spread_series = (ema10_series / ema21_series - 1) * 100
+    spread_now = float(spread_series.iloc[-1])
+    spread_delta5 = float(spread_now - spread_series.iloc[-6]) if len(spread_series) >= 6 else None
+    cross_age = None
+    if spread_now > 0:
+        crosses = (spread_series > 0) & (spread_series.shift(1) <= 0)
+        positions = [i for i, crossed in enumerate(crosses.fillna(False)) if crossed]
+        if len(positions):
+            cross_age = int(len(spread_series) - 1 - positions[-1])
+    if cross_age is not None and cross_age <= 5:
+        ma_phase = "金叉启动"
+    elif spread_now > 0 and spread_delta5 is not None and spread_delta5 > 0:
+        ma_phase = "多头扩张"
+    elif spread_now > 0:
+        ma_phase = "多头收敛"
+    elif spread_delta5 is not None and spread_delta5 > 0:
+        ma_phase = "空头收敛"
+    else:
+        ma_phase = "空头扩张"
 
     if px > ma20 > ma50 and (ma200 is None or ma50 > ma200):
         trend = "多头"
@@ -266,6 +289,9 @@ def _raw_row(tk: str, meta: dict, frame: pd.DataFrame | None,
         "rs5": _finite(rs[5]), "rs21": _finite(rs[21]), "rs63": _finite(rs[63]),
         "consistency": _finite(consistency), "ma20": _finite(ma20),
         "ma50": _finite(ma50), "ma200": _finite(ma200), "adr20": _finite(adr20),
+        "ema10": _finite(ema10_series.iloc[-1]), "ema21": _finite(ema21_series.iloc[-1]),
+        "ma_spread_pct": _finite(spread_now), "ma_spread_delta5": _finite(spread_delta5),
+        "ma_cross_age": cross_age, "ma_phase": ma_phase,
         "ext20": _finite(ext20), "chg": _finite(chg), "z": _finite(z),
         "aum": _finite(aum), "volume": volume, "avg_volume21": avg_volume21,
         "avg_dollar_volume21": avg_dollar_volume21, "volume_ratio": volume_ratio,
@@ -506,11 +532,12 @@ def snapshot_payload(result: dict, generated_at: str | None = None) -> dict:
     keys = (
         "tk", "name", "group", "date", "rank", "score", "tier", "trend",
         "position", "liquidity", "r5", "r21", "r63", "rs5", "rs21",
-        "rs63", "consistency", "adr20", "ext20", "risk",
+        "rs63", "consistency", "adr20", "ext20", "risk", "ema10", "ema21",
+        "ma_spread_pct", "ma_spread_delta5", "ma_cross_age", "ma_phase",
     )
     rows = [{key: row.get(key) for key in keys} for row in result.get("rows", [])]
     return {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "dataDate": result.get("date"),
         "generatedAt": generated_at or datetime.now(SG).isoformat(timespec="seconds"),
         "rows": rows,
