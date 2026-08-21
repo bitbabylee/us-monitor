@@ -1,0 +1,13 @@
+# 波哥待机清单 2026-08-22
+# 仅包含通过优势预筛的 ETF + 个股；不是入场指令。
+# 大盘门: 开启
+AMEX:SILJ
+AMEX:XBI
+AMEX:IEO
+AMEX:IHI
+AMEX:XME
+AMEX:XLE
+AMEX:XLB
+AMEX:LIT
+AMEX:USMV
+AMEX:NLR

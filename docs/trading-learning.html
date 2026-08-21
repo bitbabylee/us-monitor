@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>零基础优势品种筛选手册</title>
+  <style>
+    :root{--ink:#17211d;--mut:#68716c;--bg:#f6f7f4;--sf:#fff;--bd:#d7dcd7;--green:#087a55;--blue:#2563a8;--amber:#9a6200;--red:#b42318}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+    main{width:min(1120px,100%);margin:auto;padding:10px 16px 56px}.nav{position:sticky;top:0;z-index:5;display:flex;gap:7px;flex-wrap:wrap;padding:9px 0;background:var(--bg)}
+    .nav a{padding:5px 11px;border:1px solid var(--bd);border-radius:999px;color:inherit;text-decoration:none;background:var(--sf)}.nav a.on{background:var(--ink);color:var(--bg)}
+    h1{font-size:30px;line-height:1.2;margin:22px 0 8px}h2{font-size:21px;margin:0 0 12px}h3{font-size:16px;margin:0 0 6px}p{margin:8px 0}.meta,small{color:var(--mut);font-size:12px}
+    .hero,.card{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:18px;margin:14px 0}.hero{border-top:4px solid var(--green)}.hero strong{color:var(--green)}
+    .rule{font-size:21px;line-height:1.5;margin:16px 0;padding:14px;border-left:5px solid var(--green);background:#087a550b}.warning{border-left:4px solid var(--amber);padding:10px 12px;background:#9a62000c}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.five{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.step{border:1px solid var(--bd);border-radius:10px;padding:12px}.step b{display:block;color:var(--green);font-size:17px}.step small{display:block;margin-top:5px}
+    .daily{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.daily article{border-top:3px solid var(--blue);background:#edf0ec;border-radius:9px;padding:12px}.daily time{font-weight:750;color:var(--blue)}
+    table{width:100%;border-collapse:collapse}th,td{border-bottom:1px solid var(--bd);padding:9px;text-align:left;vertical-align:top}th{font-size:12px;color:var(--mut);background:#edf0ec}.table-wrap{overflow-x:auto;border:1px solid var(--bd);border-radius:10px}code{background:#edf0ec;border-radius:5px;padding:2px 5px}
+    .yes{color:var(--green);font-weight:700}.no{color:var(--red);font-weight:700}.tag{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:1px 7px;font-size:12px;white-space:nowrap}.tag.green{color:var(--green)}.tag.amber{color:var(--amber)}.tag.blue{color:var(--blue)}
+    .checklist{list-style:none;padding:0;margin:0}.checklist li{padding:8px 0;border-bottom:1px solid var(--bd)}.checklist li:before{content:"☐";font-size:19px;margin-right:8px;color:var(--green)}
+    .curriculum{counter-reset:week}.curriculum article{position:relative;border-left:4px solid var(--bd);padding:0 0 18px 18px}.curriculum article:before{counter-increment:week;content:"第" counter(week) "周";display:inline-block;background:var(--ink);color:var(--bg);border-radius:999px;padding:2px 9px;font-size:12px;margin-bottom:6px}
+    .flow{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:13px 0}.flow span{border:1px solid var(--bd);background:var(--sf);border-radius:8px;padding:7px 10px}.flow i{font-style:normal;color:var(--mut)}
+    .footer{color:var(--mut);font-size:12px;border-top:1px solid var(--bd);padding-top:14px;margin-top:18px}
+    @media(max-width:820px){.five{grid-template-columns:1fr 1fr}.daily,.grid{grid-template-columns:1fr}h1{font-size:26px}}
+    @media(max-width:430px){main{padding:8px 10px 36px}.five{grid-template-columns:1fr}.hero,.card{padding:14px}}
+    @media print{.nav{display:none}body{background:#fff}.card,.hero{break-inside:avoid}}
+  </style>
+</head>
+<body><main>
+  <nav class="nav"><a href="bogo.html">波哥信号</a><a href="etf.html">ETF涨幅榜</a><a href="prescreen.html">优势预筛</a><a class="on" href="trading-learning.html">零基础学习</a><a href="summary.html">历史汇总</a></nav>
+
+  <section class="hero">
+    <div class="meta">根据 Livermore、Darvas、O'Neil、Minervini、Qullamaggie、Zanger、Kell 等公开视频字幕整理</div>
+    <h1>零基础优势品种筛选手册</h1>
+    <p>你的任务不是预测所有股票，也不是看到信号就下单。你的任务只有两个：<strong>先缩小到值得长期监控的品种，再让波哥系统等待真正的新触发。</strong></p>
+    <div class="rule">强市场里的强赛道，选择流动性好的强品种；等它在高位收缩、缩量并靠近枢轴时，才送入信号系统待机。</div>
+    <p class="warning"><b>最重要的边界：</b>预筛回答“监控什么”，波哥信号回答“何时出现行为变化”。两者同时成立也只是研究候选；若价格已延伸、止损太宽或是重复信号，仍然跳过。</p>
+  </section>
+
+  <section class="card" id="workflow">
+    <h2>一、你真正要执行的五层漏斗</h2>
+    <div class="five">
+      <div class="step"><b>1 · 大盘</b>SPY、QQQ 是否处于多头或转强，21日收益是否为正。<small>大盘门关闭：不增加新的个股待机。</small></div>
+      <div class="step"><b>2 · 赛道</b>行业 ETF 是否领涨、强势或改善，且 RS21 跑赢 SPY。<small>ETF 用于寻找方向，不等于可以买。</small></div>
+      <div class="step"><b>3 · 品种</b>流动性、波动性、52周位置与相对强度是否合格。<small>优先领导股，避开冷门、难退出的票。</small></div>
+      <div class="step"><b>4 · 结构</b>先有上涨，再有波动收缩、缩量、低点抬高。<small>VCP、旗形、杯柄和箱体只是不同外观。</small></div>
+      <div class="step"><b>5 · 距离</b>离枢轴、10日线与结构止损是否足够近。<small>好股票不等于好位置；太远就等下一基座。</small></div>
+    </div>
+    <div class="flow"><span>Universe</span><i>→</i><span>大盘门</span><i>→</i><span>强赛道 ETF</span><i>→</i><span>优势个股</span><i>→</i><span>波哥待机</span><i>→</i><span>人工风险复核</span></div>
+  </section>
+
+  <section class="card" id="routine">
+    <h2>二、不盯盘的日常流程</h2>
+    <div class="daily">
+      <article><time>美东 10:00</time><h3>开盘后 30 分钟</h3><p>读取第一次自动预筛。只看大盘门、统一 ticker 和“新进入/退出待机池”的变化，不看每一根分时 K 线。</p></article>
+      <article><time>美东 16:30</time><h3>收盘后 30 分钟</h3><p>以完成的日 K 为准更新。复制“统一输入”交给波哥系统；没有通过品种时，接受空列表。</p></article>
+      <article><time>周末 20–30 分钟</time><h3>复盘与学习</h3><p>只复核候选图、交易日志和阈值表现。不要在周末临时扩大 universe，也不要因为错过而追价。</p></article>
+    </div>
+    <ul class="checklist" style="margin-top:12px">
+      <li>打开“优势预筛”，先看大盘门。</li>
+      <li>若大盘门开启，复制“统一输入”；若关闭，只学习，不新增待机。</li>
+      <li>把 ticker 喂给波哥系统，等待新的多周期触发。</li>
+      <li>触发后再查：是否重复、是否延伸、止损是否超过 8%、是否临近财报。</li>
+      <li>任一答案不理想，就不行动；空仓也是一种持仓。</li>
+    </ul>
+  </section>
+
+  <section class="card" id="thresholds">
+    <h2>三、系统采用的第一版硬门槛</h2>
+    <p>这些值是把视频里的定性经验翻译成可计算条件，便于初学者减少主观判断；它们不是永恒真理，后续必须用自己的历史数据回测。</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>维度</th><th>第一版门槛</th><th>通俗解释</th><th>不通过时</th></tr></thead>
+      <tbody>
+        <tr><td>大盘</td><td>SPY/QQQ 多头或转强，21日收益&gt;0</td><td>先有顺风，再找个股。</td><td class="no">不新增个股待机</td></tr>
+        <tr><td>赛道相对强度</td><td><code>sector_rs21 &gt; 0</code></td><td>行业 ETF 过去21日跑赢 SPY。</td><td>等赛道确认</td></tr>
+        <tr><td>龙头相对强度</td><td><code>leader_rs21 ≥ 0</code></td><td>同赛道标杆没有明显落后大盘。</td><td>等龙头确认</td></tr>
+        <tr><td>活跃度</td><td><code>ADR20 ≥ 2%</code></td><td>平均日内波幅要足以形成趋势机会。</td><td>低波观察</td></tr>
+        <tr><td>流动性</td><td>50日日均成交额 ≥ 2000万美元</td><td>降低滑点与无法按计划退出的风险。</td><td class="no">风险排除</td></tr>
+        <tr><td>强势位置</td><td>距52周高点不超过25%</td><td>大赢家通常在高位附近，而不是长期深跌。</td><td class="no">风险排除</td></tr>
+        <tr><td>波动收缩</td><td>5日 ATR / 20日 ATR ≤ 0.8</td><td>近期波动显著小于前期，供应压力在减弱。</td><td>继续收紧</td></tr>
+        <tr><td>成交量收缩</td><td>5日均量 / 50日均量 ≤ 0.8</td><td>调整时卖盘逐渐干涸。</td><td>继续观察</td></tr>
+        <tr><td>新鲜度</td><td>多头排列 ≤ 5 个交易日</td><td>避免把运行很久的旧趋势当作新入口。</td><td>等待回踩/新基座</td></tr>
+        <tr><td>价格延伸</td><td>距 EMA10 ≤ 1.5 ATR</td><td>不在短期过热位置追价。</td><td>等待回踩</td></tr>
+        <tr><td>枢轴距离</td><td>高于枢轴不超过2%</td><td>离结构确认点太远，盈亏比会恶化。</td><td>等待新结构</td></tr>
+        <tr><td>结构止损</td><td>计划止损 ≤ 8%</td><td>先知道哪里证明判断错，再决定是否值得监控。</td><td class="no">风险排除</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="card" id="signals">
+    <h2>四、看到波哥信号以后怎么判断</h2>
+    <div class="grid">
+      <div><h3 class="yes">可以继续研究</h3><ul><li>信号发生在新收缩结构或新枢轴附近。</li><li>日线、较高周期和赛道方向大体一致。</li><li>价格未明显远离 EMA10，结构止损仍在 8% 内。</li><li>不是同一上涨段里重复出现的第 N 个信号。</li><li>有清晰的“错在哪里”而不是只想着目标价。</li></ul></div>
+      <div><h3 class="no">直接跳过</h3><ul><li>已经连续拉升，看到信号时才想追。</li><li>信号很多，但都发生在同一无序震荡区间。</li><li>大盘门关闭、赛道走弱或龙头相对强度为负。</li><li>财报前持有大仓位，却没有事先接受跳空风险。</li><li>因为之前错过，所以降低标准补票。</li></ul></div>
+    </div>
+    <p class="warning">同一个趋势里反复出现的信号，通常只是“趋势仍在”的证据，不自动提供新的低风险入口。系统因此同时检查排列天数、延伸 ATR、枢轴距离和结构止损。</p>
+  </section>
+
+  <section class="card" id="glossary">
+    <h2>五、零基础术语表</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>词</th><th>你只需要先这样理解</th></tr></thead>
+      <tbody>
+        <tr><td>K线</td><td>一个时间周期里的开、高、低、收。日 K 就是一天。</td></tr>
+        <tr><td>均线 MA/EMA</td><td>过去一段时间价格的平均值。短均线在长均线上方且都向上，表示趋势更有秩序。</td></tr>
+        <tr><td>RS</td><td>相对强度，不是 RSI。这里表示某品种在相同时间内比 SPY 多涨或少跌多少。</td></tr>
+        <tr><td>ATR</td><td>真实波动幅度，用于衡量“现在离正常波动有多远”。</td></tr>
+        <tr><td>ADR</td><td>平均日内波幅百分比，用于判断品种是否有足够活跃度。</td></tr>
+        <tr><td>枢轴 Pivot</td><td>供给明显减少后，价格需要穿过的关键阻力位。</td></tr>
+        <tr><td>VCP/收缩</td><td>回调一波比一波浅，成交量逐步减少；核心是卖盘越来越少，不是画得像某个字母。</td></tr>
+        <tr><td>Stage 2</td><td>价格位于主要长期均线上方，长期均线向上，属于主要上升阶段。</td></tr>
+        <tr><td>止损</td><td>事先定义“什么价格说明这笔判断失效”。它决定仓位，不是事后情绪决定。</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="card" id="schools">
+    <h2>六、这些交易者其实在讲同一件事</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>体系</th><th>最值得保留的部分</th><th>系统里的对应字段</th></tr></thead>
+      <tbody>
+        <tr><td>Livermore</td><td>先看市场、行业、姐妹股，再看个股的最小阻力线。</td><td>大盘门、赛道 ETF、benchmark_ticker</td></tr>
+        <tr><td>Darvas</td><td>强势股在箱体内消化供给，突破箱顶才确认。</td><td>枢轴距离、52周位置、等待突破</td></tr>
+        <tr><td>O'Neil / CAN SLIM</td><td>盈利、销售、领导地位、机构需求与市场方向共同决定候选质量。</td><td>当前主要落在领导地位和市场方向；财务质量需另做基本面层</td></tr>
+        <tr><td>Minervini</td><td>Stage 2、趋势模板、VCP、相对强度与低风险枢轴。</td><td>均线结构、RS63、收缩比、量比、止损%</td></tr>
+        <tr><td>Qullamaggie</td><td>先有大涨，再横向收紧；只在关键位触发，迅速控制错误。</td><td>ADR20、排列新鲜度、延伸ATR、距枢轴</td></tr>
+        <tr><td>Zanger / Kell</td><td>集中研究最强的图形和行业领导者，突破后需要跟随行为。</td><td>赛道去重、质量排序、波哥后续触发</td></tr>
+        <tr><td>Crabel / Harris</td><td>窄幅与回撤结构可以提供更清晰的风险位置。</td><td>收缩、结构低点、止损效率</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="card" id="fundamentals">
+    <h2>七、走势筛选和基本面筛选不要混成一个按钮</h2>
+    <div class="grid">
+      <div><span class="tag blue">走势层</span><h3>解决“什么时候值得监控”</h3><p>市场、赛道、相对强度、波动收缩、成交量和风险距离。它擅长发现行为变化，但不能证明公司值多少钱。</p></div>
+      <div><span class="tag green">质量层</span><h3>解决“什么值得长期跟踪”</h3><p>收入与利润增长、利润率、资产负债表、竞争优势、管理层与估值。用 Buffett 的语言说：先限制在能力圈和好生意里，再让价格行为决定观察时机。</p></div>
+    </div>
+    <p>当前页面首先是一套<strong>走势预筛</strong>。若要再提高个股质量，可在进入波哥系统前增加财报增长、现金流、负债和财报日期检查，但不要让“好公司”成为追高或放宽止损的理由。</p>
+  </section>
+
+  <section class="card" id="curriculum">
+    <h2>八、四周学习计划</h2>
+    <div class="curriculum">
+      <article><h3>只学读图与术语</h3><p>认识 K 线、EMA10/21、SMA50/150/200、成交量、RS、ATR、ADR。每天从预筛页随机找 3 张图，只描述事实，不预测涨跌。</p></article>
+      <article><h3>只学五层漏斗</h3><p>每天记录：大盘门、最强 3 个 ETF、统一输入、被排除的原因。重点学会说“不”。</p></article>
+      <article><h3>只学结构与风险</h3><p>给每个候选标枢轴、结构低点、止损百分比与延伸 ATR。若止损超过8%，不研究仓位，只等新结构。</p></article>
+      <article><h3>纸上运行完整流程</h3><p>不动真钱。记录至少20个候选从预筛、触发到失效/延续的全过程，统计平均收益、平均亏损、胜率、最大连续亏损和错过原因。</p></article>
+    </div>
+  </section>
+
+  <section class="card" id="onepage">
+    <h2>九、一页式决策卡</h2>
+    <ul class="checklist">
+      <li>大盘门是否开启？</li><li>赛道 ETF 是否跑赢 SPY？</li><li>个股是否是赛道领导者，RS63 非负？</li>
+      <li>ADR20 是否 ≥2%，日均成交额是否 ≥2000万美元？</li><li>是否处于52周高点下方25%以内？</li>
+      <li>是否先涨后收缩，且缩量、低点抬高？</li><li>是否属于新的排列/新基座，而不是旧趋势重复信号？</li>
+      <li>离 EMA10 是否 ≤1.5ATR，离枢轴是否 ≤2%？</li><li>结构止损是否 ≤8%，财报跳空风险是否已知？</li>
+      <li>所有条件满足后，是否仍愿意接受这笔交易可能立即失败？</li>
+    </ul>
+    <p><b>结论：</b>前九项有一项说不清，就继续观察。第十项不能接受，就不做。</p>
+  </section>
+
+  <div class="footer">本手册把公开视频中的共同方法压缩成可执行研究流程，没有复刻任何单一交易者的完整体系。所有阈值是第一版工程化假设，需结合历史回测与个人风险承受能力调整。仅供学习研究，不构成投资建议。</div>
+</main></body></html>
