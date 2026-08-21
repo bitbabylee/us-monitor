@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-20 收盘(ET)
-  生成 08-21 10:02 纽约 = 08-21 22:02 新加坡
+  生成 08-21 10:06 纽约 = 08-21 22:06 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,10 +8,10 @@
 【结论】仓位上限 80% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
 【候选】6 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:LITE   10EMA回调   日内:⚪观望
-  NASDAQ:MSFT   10EMA回调   日内:⚪观望
+  NASDAQ:LITE   10EMA回调   日内:🔴规避/止损
+  NASDAQ:MSFT   10EMA回调   日内:🟢稳健买点
   NASDAQ:MU     10EMA回调   日内:⚪观望
-  AMEX:GDX      箱体突破      日内:⚪观望
+  AMEX:GDX      箱体突破      日内:🟢黄金买点
   NASDAQ:CIFR   超跌反弹      日内:🔴规避/止损
   NASDAQ:HUT    超跌反弹      日内:🔴规避/止损
 【否决】
@@ -35,7 +35,7 @@
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:GDXJ 小金矿  AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:SILJ 小白银矿
-  短线改善: AMEX:URA 铀核能  AMEX:REMX 稀土  AMEX:BITQ 加密公司  AMEX:LIT 锂电池  AMEX:DBC 大宗商品
+  短线改善: AMEX:URA 铀核能  AMEX:REMX 稀土  AMEX:LIT 锂电池  AMEX:BITQ 加密公司  AMEX:BLOK 区块链
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+3.4% · NASDAQ:SOXX+1.4% · AMEX:XLE+1.1% · AMEX:XLRE+1.0%
@@ -45,20 +45,22 @@
   主题🧊 🚀 军工   -3.9%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
+ ▶ 日线+日内同向
+   NASDAQ:MSFT   🟢10EMA回调   🟢稳健买点
+   AMEX:GDX      📦箱体突破      🟢黄金买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:LITE   🟢10EMA回调   ⚪观望
-   NASDAQ:MSFT   🟢10EMA回调   ⚪观望
    NASDAQ:MU     🟢10EMA回调   ⚪观望
-   AMEX:GDX      📦箱体突破      ⚪观望
  ▶ 冲突（日线买点/日内破位）
+   NASDAQ:LITE   🟢10EMA回调   🔴规避/止损
    NASDAQ:CIFR   🚀超跌反弹      🔴规避/止损
    NASDAQ:HUT    🚀超跌反弹      🔴规避/止损
  ▶ 财报窗口（信号作废）
    NYSE:SNOW     🟢10EMA回调   ⚠️ 5日后(08-26)财?
    NASDAQ:IREN   🟢10EMA回调   ⚠️ 6日后(08-27)财?
   日内异动: NYSE:LLY🟢  NASDAQ:SNDK🟢  NYSE:CAT🔴  NYSE:NET🟢 
-            NYSE:ANET🟢  NASDAQ:HOOD🔥  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:HOOD+14.4% NASDAQ:RIOT+3.1% NASDAQ:IREN+3.0% NASDAQ:HUT-2.8% NASDAQ:CIFR-2.7% NASDAQ:WULF+2.5% NYSE:ANET+2.5% NASDAQ:NBIS+2.5% AMEX:GDX+2.4% NASDAQ:LITE+2.3% NASDAQ:CORZ+2.1%
+            NYSE:ANET🟢  NASDAQ:HOOD🔥  NASDAQ:PLTR🟢  NASDAQ:CIBR🟢 
+            NASDAQ:CORZ🔴  NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:HOOD+13.9% NASDAQ:HUT-3.3% NASDAQ:CIFR-3.2% NASDAQ:WULF+3.0% AMEX:GDX+2.8% NASDAQ:RIOT+2.8% NASDAQ:NBIS+2.3% NASDAQ:IREN+2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 61%
@@ -67,7 +69,7 @@
   🔴淘汰(15): AMEX:GDX NASDAQ:IREN NASDAQ:PLTR NASDAQ:MSFT SZSE:300476(胜宏) NASDAQ:HOOD SSE:601138(富联) SZSE:002837(英维克) SSE:600183(生益) SZSE:300499(高澜) NYSE:NET NASDAQ:CRWD SSE:603986(兆易) NASDAQ:HUT NASDAQ:AMD
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUP$837M(v/oi68.0) SNDKC$224M(v/oi8.3) AMDP$127M(v/oi17.1) SPCXP$99M(v/oi6.0) MSFTC$90M(v/oi2.3)
+  今日: MUP$835M(v/oi68.0) SNDKC$226M(v/oi8.3) AMDP$127M(v/oi17.1) SPCXP$100M(v/oi6.0) MSFTC$90M(v/oi2.4)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
