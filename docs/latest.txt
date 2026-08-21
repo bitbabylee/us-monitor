@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-20 收盘(ET)
-  生成 08-21 09:27 纽约 = 08-21 21:27 新加坡
+  生成 08-21 09:55 纽约 = 08-21 21:55 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,12 +8,12 @@
 【结论】仓位上限 80% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
 【候选】6 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:LITE   10EMA回调   日内:🟢突破买点
+  NASDAQ:LITE   10EMA回调   日内:⚪观望
   NASDAQ:MSFT   10EMA回调   日内:⚪观望
-  NASDAQ:MU     10EMA回调   日内:🟢突破买点
-  AMEX:GDX      箱体突破      日内:🟢强动能买点
-  NASDAQ:CIFR   超跌反弹      日内:🔥强主升浪
-  NASDAQ:HUT    超跌反弹      日内:🔥强主升浪
+  NASDAQ:MU     10EMA回调   日内:⚪观望
+  AMEX:GDX      箱体突破      日内:⚪观望
+  NASDAQ:CIFR   超跌反弹      日内:🔴规避/止损
+  NASDAQ:HUT    超跌反弹      日内:🔴规避/止损
 【否决】
   NYSE:SNOW     财报窗口?
   NASDAQ:IREN   财报窗口?
@@ -34,8 +34,8 @@
   宏观 ✅ATR1438% ✗10Y4.70% ✅HYG/LQD0.7501 ✅USD/JPY158.28
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:SILJ 小白银矿
-  短线改善: AMEX:DBC 大宗商品  AMEX:XLB 基础材料 (Materials)  AMEX:OIH 油服  AMEX:USO 原油  AMEX:MOO 农业
+  涨幅优先: AMEX:GDXJ 小金矿  AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:SILJ 小白银矿
+  短线改善: AMEX:URA 铀核能  AMEX:REMX 稀土  AMEX:LIT 锂电池  AMEX:BITQ 加密公司  AMEX:DBC 大宗商品
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+3.4% · NASDAQ:SOXX+1.4% · AMEX:XLE+1.1% · AMEX:XLRE+1.0%
@@ -45,23 +45,21 @@
   主题🧊 🚀 军工   -3.9%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
- ▶ 日线+日内同向
-   NASDAQ:LITE   🟢10EMA回调   🟢突破买点
-   NASDAQ:MU     🟢10EMA回调   🟢突破买点
-   AMEX:GDX      📦箱体突破      🟢强动能买点
-   NASDAQ:CIFR   🚀超跌反弹      🔥强主升浪
-   NASDAQ:HUT    🚀超跌反弹      🔥强主升浪
  ▶ 等时机（日内未给买点）
+   NASDAQ:LITE   🟢10EMA回调   ⚪观望
    NASDAQ:MSFT   🟢10EMA回调   ⚪观望
+   NASDAQ:MU     🟢10EMA回调   ⚪观望
+   AMEX:GDX      📦箱体突破      ⚪观望
+ ▶ 冲突（日线买点/日内破位）
+   NASDAQ:CIFR   🚀超跌反弹      🔴规避/止损
+   NASDAQ:HUT    🚀超跌反弹      🔴规避/止损
  ▶ 财报窗口（信号作废）
    NYSE:SNOW     🟢10EMA回调   ⚠️ 5日后(08-26)财?
    NASDAQ:IREN   🟢10EMA回调   ⚠️ 6日后(08-27)财?
-  日内异动: NASDAQ:RKLB🔴  NASDAQ:AAOI🔥  NYSE:LLY🔴  NASDAQ:SMH🟢 
-            NYSE:GEV🔴  NASDAQ:SNDK🟢  NASDAQ:QQQ🔴  NYSE:CAT🟢 
-            NYSE:NET🔴  NASDAQ:CRWD🔴  NYSE:ANET🔴  NASDAQ:CRDO🟢 
-            NASDAQ:HOOD🔴  NASDAQ:CIBR🔴  NASDAQ:SPCX🟢  NASDAQ:CORZ🔴 
-            NASDAQ:RIOT🔥  NASDAQ:WULF🔥 
-  盘前±2%: NASDAQ:HOOD+5.3% NASDAQ:HUT+3.5% NASDAQ:AXTI+3.0% AMEX:GDX+2.9% NASDAQ:RIOT+2.3% NASDAQ:IREN+2.1%
+  日内异动: NYSE:BE🟢  NASDAQ:NBIS🟢  NASDAQ:SNDK🟢  NYSE:NET🟢 
+            NASDAQ:CRWD🟢  NASDAQ:HOOD🔥  NASDAQ:CIBR🟢  NASDAQ:WULF🔴 
+            NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:HOOD+13.0% NASDAQ:IREN+3.6% NASDAQ:RIOT+3.6% NASDAQ:NBIS+3.4% NYSE:ANET+2.7% NASDAQ:CORZ+2.5% AMEX:GDX+2.5% NASDAQ:WULF+2.5% NASDAQ:LITE+2.4%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 61%
@@ -70,7 +68,7 @@
   🔴淘汰(15): AMEX:GDX NASDAQ:IREN NASDAQ:PLTR NASDAQ:MSFT SZSE:300476(胜宏) NASDAQ:HOOD SSE:601138(富联) SZSE:002837(英维克) SSE:600183(生益) SZSE:300499(高澜) NYSE:NET NASDAQ:CRWD SSE:603986(兆易) NASDAQ:HUT NASDAQ:AMD
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MU≈$954M(v/oi68.0) SNDK≈$429M(v/oi8.3) QQQP$342M(v/oi17.6) AMDP$258M(v/oi17.1) SPCXP$244M(v/oi7.6)
+  今日: MUP$871M(v/oi68.0) SNDK≈$204M(v/oi8.3) AMDP$186M(v/oi17.1) SPCXP$98M(v/oi6.0) MSFTC$93M(v/oi16.4)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
