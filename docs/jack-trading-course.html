@@ -1,0 +1,2178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jack 交易体系教学手册</title>
+<style>
+:root{--ink:#17211d;--mut:#68716c;--bg:#f6f7f4;--sf:#fff;--sf2:#fbfcfa;--bd:#d7dcd7;--bd2:#e7eae6;--green:#087a55;--blue:#2563a8;--amber:#9a6200;--red:#b42318;--violet:#6d4fc2;--grid:#e7eae6;--hl:#087a550f}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e6ebe8;--mut:#98a29c;--bg:#111614;--sf:#191f1c;--sf2:#1d2421;--bd:#2e3934;--bd2:#262f2b;--green:#3fbf92;--blue:#6ea8e8;--amber:#dfa63f;--red:#e8776b;--violet:#a68ae8;--grid:#232b27;--hl:#3fbf9214}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.78 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB",sans-serif;-webkit-text-size-adjust:100%}
+main{width:min(1080px,100%);margin:auto;padding:8px 18px 80px}
+.nav{position:sticky;top:0;z-index:20;display:flex;gap:6px;flex-wrap:wrap;padding:9px 0;background:color-mix(in srgb,var(--bg) 93%,transparent);backdrop-filter:blur(8px)}
+.nav a{padding:5px 11px;border:1px solid var(--bd);border-radius:999px;color:inherit;text-decoration:none;background:var(--sf);font-size:13px}
+.nav a.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+h1{font-size:34px;line-height:1.2;margin:22px 0 10px;letter-spacing:-.5px}
+h2{font-size:24px;margin:0 0 6px;letter-spacing:-.3px}
+h3{font-size:17.5px;margin:22px 0 6px}
+h4{font-size:15px;margin:16px 0 4px;color:var(--green)}
+p{margin:10px 0}
+.meta,small{color:var(--mut);font-size:12.5px}
+.hero,.card{background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:22px;margin:16px 0}
+.hero{border-top:5px solid var(--green)}
+@media(max-width:600px){.hero,.card{padding:15px;border-radius:13px}h1{font-size:26px}h2{font-size:20px}main{padding:6px 11px 50px}}
+.sec-no{display:inline-block;font:700 12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--mut);border:1px solid var(--bd);border-radius:5px;padding:1px 7px;margin-bottom:8px}
+.rule{font-size:19px;line-height:1.62;margin:18px 0;padding:15px 17px;border-left:5px solid var(--green);background:var(--hl);border-radius:0 9px 9px 0;font-weight:600}
+.warn{border-left:4px solid var(--amber);padding:11px 14px;background:#9a62000e;border-radius:0 8px 8px 0;margin:14px 0}
+.danger{border-left:4px solid var(--red);padding:11px 14px;background:#b423180d;border-radius:0 8px 8px 0;margin:14px 0}
+.note{border-left:4px solid var(--blue);padding:11px 14px;background:#2563a80d;border-radius:0 8px 8px 0;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{border-bottom:1px solid var(--bd2);padding:9px 10px;text-align:left;vertical-align:top}
+th{font-size:12px;color:var(--mut);background:var(--sf2);font-weight:600;white-space:nowrap}
+td.num,th.num{text-align:right;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+.tw{overflow-x:auto;border:1px solid var(--bd);border-radius:11px;margin:14px 0;-webkit-overflow-scrolling:touch}
+code{background:var(--sf2);border:1px solid var(--bd2);border-radius:5px;padding:1px 5px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.jump{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0 4px}
+.jump a{padding:5px 11px;border:1px solid var(--bd);border-radius:999px;color:inherit;text-decoration:none;background:var(--sf2);font-size:13px}
+.jump a:hover{border-color:var(--green);color:var(--green)}
+figure{margin:20px 0 4px}
+figcaption{color:var(--mut);font-size:13px;margin-top:9px;line-height:1.65;padding-left:12px;border-left:2px solid var(--bd)}
+.figwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--sf2);border:1px solid var(--bd2);border-radius:11px;padding:12px 10px}
+.figwrap svg{display:block;width:100%;min-width:660px;height:auto}
+.s-lab{font:600 12.5px -apple-system,"PingFang SC",sans-serif}
+.s-lab2{font:700 13.5px -apple-system,"PingFang SC",sans-serif}
+.s-num{font:700 12px ui-monospace,SFMono-Regular,Menlo,monospace}
+.s-note{font:11.5px -apple-system,"PingFang SC",sans-serif}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:14px 0}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0}
+@media(max-width:820px){.grid3,.grid4{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid2,.grid3,.grid4{grid-template-columns:1fr}}
+.box{border:1px solid var(--bd);border-radius:11px;padding:13px 14px;background:var(--sf2)}
+.box>b:first-child{display:block;margin-bottom:4px}
+.box.g{border-top:3px solid var(--green)}.box.b{border-top:3px solid var(--blue)}
+.box.a{border-top:3px solid var(--amber)}.box.r{border-top:3px solid var(--red)}
+.box.v{border-top:3px solid var(--violet)}
+.stat{border:1px solid var(--bd);border-radius:11px;padding:13px;background:var(--sf2);text-align:center}
+.stat b{display:block;color:var(--green);font:700 26px/1.1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:-1px}
+.stat small{display:block;margin-top:5px;line-height:1.45}
+ul,ol{margin:10px 0;padding-left:22px}li{margin:5px 0}
+ul.chk{list-style:none;padding:0}
+ul.chk li{padding:8px 0 8px 26px;border-bottom:1px solid var(--bd2);position:relative}
+ul.chk li:before{content:"✓";position:absolute;left:2px;color:var(--green);font-weight:800}
+ul.no li:before{content:"✕";color:var(--red)}
+ul.chk li:last-child{border-bottom:0}
+.tag{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:1px 9px;font-size:11.5px;white-space:nowrap;font-weight:600}
+.g{color:var(--green)}.b{color:var(--blue)}.a{color:var(--amber)}.r{color:var(--red)}.v{color:var(--violet)}.m{color:var(--mut)}
+.src{font-size:12px;color:var(--mut);margin-top:10px;font-style:normal}
+.src:before{content:"来源 · "}
+.foot{color:var(--mut);font-size:12.5px;border-top:1px solid var(--bd);padding-top:16px;margin-top:26px;line-height:1.7}
+.kbd{display:inline-block;border:1px solid var(--bd);border-bottom-width:2px;border-radius:5px;padding:0 6px;font:600 12px ui-monospace,monospace;background:var(--sf2)}
+@media print{.nav,.jump{display:none}body{background:#fff}.card,.hero,figure{break-inside:avoid}}
+</style>
+</head>
+<body><main>
+<nav class="nav"><a href="bogo.html">波哥信号</a><a href="etf.html">ETF涨幅榜</a><a href="prescreen.html">优势预筛</a><a href="trading-learning.html">零基础流程</a><a class="on" href="jack-trading-course.html">交易教学手册</a><a href="jack-trading-library.html">字幕库索引</a></nav>
+
+<section class="hero">
+  <div class="meta">基于 20 个 Jack Corsellis 视频的完整字幕整理 · 参数级重构 · 不看视频也能学</div>
+  <h1>Jack 交易体系教学手册</h1>
+  <p>这份文档和旁边那份「字幕库索引」不同。索引告诉你<strong>每个视频讲什么</strong>;这份告诉你<strong>每一步具体怎么做</strong> —— 线画在哪个价位、量要小到什么程度、止损离买点几个百分点、仓位怎么算、什么时候必须走。</p>
+  <div class="rule">这 20 个视频里的十几位交易者,用的是同一套底层逻辑:先在强市场里找会跑的强势股,等它<b>波动收缩到供给枯竭</b>,在那个点用极小的风险进场,几天内把风险清零,然后骑着均线等一个大赢家。</div>
+  <p>他们的分歧只在细节:枢轴画在哪、止损放多紧、用哪条均线跟踪。这份文档把<strong>共识</strong>写成主线,把<strong>分歧</strong>标出来让你选。</p>
+  <div class="grid4">
+    <div class="stat"><b>20</b><small>个视频<br>全部逐份精读</small></div>
+    <div class="stat"><b>91%</b><small>的突破发生在<br>纳指月线 10EMA 上方</small></div>
+    <div class="stat"><b>≈5%</b><small>平均初始止损<br>(500 笔实测)</small></div>
+    <div class="stat"><b>20-25%</b><small>Qullamaggie 的胜率<br>年化仍 268%</small></div>
+  </div>
+  <div class="warn"><b>关于数字的说明:</b>文档里所有具体数值都标了出处。凡是讲者本人的研究、或某位交易者的原始规则,都写明了是谁的。凡是我为了讲清楚而补的推导,会写「推导」二字。<b>没有任何一个数字是我编的。</b></div>
+  <div class="danger"><b>这不是投资建议。</b>所有策略都需要你自己按 setup 类型独立回测交易成本、滑点、胜率、平均盈亏和最大回撤。视频里的收益案例是幸存者样本,不代表你的结果。</div>
+</section>
+
+<div class="jump" aria-label="章节导航">
+  <a href="#s0">怎么用</a><a href="#s1">① 市场环境</a><a href="#s2">② 选股</a><a href="#s3">③ 读图</a><a href="#s4">④ 入场</a><a href="#s5">⑤ 风险</a><a href="#s6">⑥ 缓释</a><a href="#s7">⑦ 出场</a><a href="#s8">⑧ 统计与心态</a><a href="#s9">附:其他流派</a><a href="#s10">来源对照</a>
+</div>
+
+<section class="card" id="s0">
+  <span class="sec-no">00</span>
+  <h2>这份文档怎么用</h2>
+  <p>不要从头读到尾然后去下单。这套东西是一条<strong>漏斗</strong>,每一层都有权否决下一层。任何一层不过关,后面全部作废。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="五层漏斗:市场环境、选股、读图、入场、风险与出场">
+    <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,1 L8,4.5 L0,8 Z" fill="var(--mut)"/></marker></defs>
+    <!-- layer boxes -->
+    <g>
+      <rect x="30" y="40" width="820" height="42" rx="8" fill="var(--green)" opacity="0.1"/>
+      <rect x="30" y="40" width="820" height="42" rx="8" fill="none" stroke="var(--green)" stroke-width="1.6"/>
+      <text class="s-lab2" x="48" y="60" fill="var(--green)">① 市场环境</text>
+      <text class="s-lab" x="180" y="60" fill="var(--ink)">纳指月线在 10 EMA 上方吗?10日线在 20日线上方吗?</text>
+      <text class="s-note" x="180" y="76" fill="var(--mut)">否 → 今天不开新仓。这一层否决掉的日子占全年约一半,这是正常的。</text>
+      <rect x="700" y="48" width="132" height="26" rx="6" fill="var(--green)"/>
+      <text class="s-num" x="766" y="65.5" fill="#fff" text-anchor="middle">91% vs 9%</text>
+    </g>
+    <path d="M440,84 L440,98" stroke="var(--mut)" stroke-width="1.6" marker-end="url(#ar)"/>
+    <g>
+      <rect x="70" y="102" width="740" height="42" rx="8" fill="var(--blue)" opacity="0.09"/>
+      <rect x="70" y="102" width="740" height="42" rx="8" fill="none" stroke="var(--blue)" stroke-width="1.6"/>
+      <text class="s-lab2" x="88" y="122" fill="var(--blue)">② 选什么股</text>
+      <text class="s-lab" x="220" y="122" fill="var(--ink)">ADR ≥ 3%?RS 排名前 10%?近 1–3 个月涨过 30–100%?</text>
+      <text class="s-note" x="220" y="138" fill="var(--mut)">形态再完美,ADR 低的股票也只会涨 13%。这一层决定你的收益上限。</text>
+      <rect x="666" y="110" width="128" height="26" rx="6" fill="var(--blue)"/>
+      <text class="s-num" x="730" y="127.5" fill="#fff" text-anchor="middle">ADR = 上限</text>
+    </g>
+    <path d="M440,146 L440,160" stroke="var(--mut)" stroke-width="1.6" marker-end="url(#ar)"/>
+    <g>
+      <rect x="110" y="164" width="660" height="42" rx="8" fill="var(--violet)" opacity="0.09"/>
+      <rect x="110" y="164" width="660" height="42" rx="8" fill="none" stroke="var(--violet)" stroke-width="1.6"/>
+      <text class="s-lab2" x="128" y="184" fill="var(--violet)">③ 形态到位了吗</text>
+      <text class="s-lab" x="278" y="184" fill="var(--ink)">收缩逐次减半?最后一段是个位数%?量枯竭了?</text>
+      <text class="s-note" x="278" y="200" fill="var(--mut)">窄幅 + 低量 = 供给枯竭。这是唯一要等的东西。</text>
+    </g>
+    <path d="M440,208 L440,222" stroke="var(--mut)" stroke-width="1.6" marker-end="url(#ar)"/>
+    <g>
+      <rect x="150" y="226" width="580" height="42" rx="8" fill="var(--amber)" opacity="0.1"/>
+      <rect x="150" y="226" width="580" height="42" rx="8" fill="none" stroke="var(--amber)" stroke-width="1.6"/>
+      <text class="s-lab2" x="168" y="246" fill="var(--amber)">④ 风险算得过来吗</text>
+      <text class="s-lab" x="330" y="246" fill="var(--ink)">止损 &lt; ADR 的 2/3?账户风险 ≤ 0.5–1%?</text>
+      <text class="s-note" x="330" y="262" fill="var(--mut)">算不过来就跳过。「好股票」不等于「好位置」。</text>
+    </g>
+    <path d="M440,270 L440,284" stroke="var(--mut)" stroke-width="1.6" marker-end="url(#ar)"/>
+    <g>
+      <rect x="190" y="288" width="500" height="38" rx="8" fill="var(--red)" opacity="0.09"/>
+      <rect x="190" y="288" width="500" height="38" rx="8" fill="none" stroke="var(--red)" stroke-width="1.6"/>
+      <text class="s-lab2" x="208" y="306" fill="var(--red)">⑤ 下单</text>
+      <text class="s-lab" x="290" y="306" fill="var(--ink)">买 → 3–5 天内清零风险 → 骑均线 → 危险信号出现就走</text>
+      <text class="s-note" x="290" y="320" fill="var(--mut)">进场只是开始,后面三步决定你赚多少。</text>
+    </g>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>为什么大多数人学了形态还是亏钱 —— 他们只学了第③层。前两层决定你有没有资格出手、能赚多少;后两层决定你能不能留住。第③层最好学,也最不值钱。</figcaption>
+  </figure>
+
+  <h3>建议的阅读顺序</h3>
+  <div class="grid3">
+    <div class="box g"><b>第一遍(1 小时)</b>只读 <a href="#s1">①市场环境</a>、<a href="#s5">⑤风险</a>、<a href="#s6">⑥缓释</a>。这三章是「不亏大钱」的部分,单独就有用,不需要你会看图。</div>
+    <div class="box b"><b>第二遍(2 小时)</b>读 <a href="#s2">②选股</a>、<a href="#s3">③读图</a>、<a href="#s4">④入场</a>。配图都在这三章,读的时候把 TradingView 打开对着画。</div>
+    <div class="box v"><b>之后</b><a href="#s7">⑦出场</a>和 <a href="#s8">⑧统计</a>在你有了前 5 笔实盘之后再读,那时才看得懂。<a href="#s9">附录</a>是你现在<b>不该做</b>的三个流派。</div>
+  </div>
+
+  <div class="note"><b>一句话主线:</b>如果你只做一件事 —— 在纳指月线站上 10 EMA 的月份里,从 3 个月涨幅榜前 7% 里挑 ADR ≥3% 的票,等它横盘收紧到最后一段回调只有个位数百分比、成交量掉到 30 日均量以下,在那根最窄 K 线的高点上方买入,止损放它低点下方,3–5 天后卖掉三分之一把风险清零,剩下的骑 10 日或 21 日均线直到收盘跌破。<b>这就是整套体系。</b>剩下的都是这句话的注解。</div>
+</section>
+
+<section class="card" id="s1">
+  <span class="sec-no">01</span>
+  <h2>第一层 · 市场环境:什么时候可以出手</h2>
+  <p>这是整套体系里<strong>最便宜也最被忽略的一层</strong>。它不需要你会看形态、不需要你懂基本面,只需要看一眼指数,却能过滤掉大部分注定失败的交易。</p>
+
+  <h3>讲者自己做的 3000 次突破研究</h3>
+  <p>他从自己的形态数据库里取了 <b>3000 次突破</b>(1986–2022),样本来自 Minervini、O'Neil、Stan Weinstein、Darvas 的书,加上他自己收集的案例。判定条件只有一个:<b>纳斯达克综合指数(IXIC)当月收盘在月线 10 EMA 之上还是之下</b>。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="市场环境门:纳指月线 10EMA 上方与下方的突破分布">
+    <g stroke="var(--grid)" stroke-width="1">
+      <line x1="60" y1="60" x2="860" y2="60"/><line x1="60" y1="110" x2="860" y2="110"/>
+      <line x1="60" y1="160" x2="860" y2="160"/><line x1="60" y1="210" x2="860" y2="210"/>
+    </g>
+    <line x1="60" y1="40" x2="60" y2="250" stroke="var(--bd)" stroke-width="1.5"/>
+    <line x1="60" y1="250" x2="860" y2="250" stroke="var(--bd)" stroke-width="1.5"/>
+    <text class="s-note" x="54" y="46" fill="var(--mut)" text-anchor="end">纳指月线</text>
+
+    <!-- green zones -->
+    <rect x="70" y="40" width="150" height="210" fill="var(--green)" opacity="0.08"/>
+    <rect x="300" y="40" width="180" height="210" fill="var(--green)" opacity="0.08"/>
+    <rect x="580" y="40" width="140" height="210" fill="var(--green)" opacity="0.08"/>
+    <rect x="790" y="40" width="65" height="210" fill="var(--green)" opacity="0.08"/>
+    <!-- red zones -->
+    <rect x="220" y="40" width="80" height="210" fill="var(--red)" opacity="0.09"/>
+    <rect x="480" y="40" width="100" height="210" fill="var(--red)" opacity="0.09"/>
+    <rect x="720" y="40" width="70" height="210" fill="var(--red)" opacity="0.09"/>
+
+    <!-- 10 EMA -->
+    <path d="M70,200 L110,186 L150,170 L190,158 L220,156 L250,166 L280,180 L300,182 L340,166 L380,146 L420,126 L460,112 L480,110 L510,122 L550,142 L580,146 L620,128 L660,110 L700,98 L720,96 L750,112 L790,122 L820,110 L855,96"
+          fill="none" stroke="var(--red)" stroke-width="2.2" stroke-dasharray="8 5" opacity="0.9"/>
+    <!-- price -->
+    <path d="M70,214 L92,198 L112,206 L134,178 L156,164 L178,150 L200,142 L222,152 L244,178 L266,192 L288,196 L306,180 L328,158 L350,150 L372,132 L394,120 L416,112 L438,98 L460,92 L482,104 L504,128 L526,150 L548,156 L572,148 L594,130 L616,116 L638,102 L660,92 L682,80 L704,72 L726,86 L748,104 L770,118 L792,110 L814,92 L836,76 L856,64"
+          fill="none" stroke="var(--ink)" stroke-width="2.6" stroke-linejoin="round"/>
+
+    <text class="s-lab2" x="145" y="270" fill="var(--green)" text-anchor="middle">绿区</text>
+    <text class="s-lab2" x="260" y="270" fill="var(--red)" text-anchor="middle">红区</text>
+    <text class="s-note" x="145" y="286" fill="var(--mut)" text-anchor="middle">价格在 10 EMA 上方</text>
+    <text class="s-note" x="260" y="286" fill="var(--mut)" text-anchor="middle">在下方</text>
+    <text class="s-lab" x="620" y="270" fill="var(--ink)">红色虚线 = 月线 10 EMA(不是日线,是<tspan font-weight="800">月线</tspan>)</text>
+
+    <!-- result bars -->
+    <line x1="60" y1="376" x2="860" y2="376" stroke="var(--bd)" stroke-width="1.5"/>
+    <rect x="120" y="310" width="330" height="60" rx="7" fill="var(--green)"/>
+    <text class="s-num" x="285" y="336" fill="#fff" text-anchor="middle" font-size="19">90.77%</text>
+    <text class="s-note" x="285" y="356" fill="#fff" text-anchor="middle" opacity="0.92">3000 次突破发生在绿区月份</text>
+    <rect x="470" y="310" width="72" height="60" rx="7" fill="var(--red)"/>
+    <text class="s-num" x="506" y="336" fill="#fff" text-anchor="middle" font-size="15">9.2%</text>
+    <text class="s-note" x="506" y="356" fill="#fff" text-anchor="middle" opacity="0.92">红区</text>
+    <text class="s-lab2" x="570" y="334" fill="var(--ink)">你在 91% 的环境里,</text>
+    <text class="s-lab2" x="570" y="354" fill="var(--ink)">还是 9% 的环境里?</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>为什么「同样的形态,有时候做什么都对,有时候做什么都错」。不是你的形态识别退步了,是环境变了。这一层是免费的 —— 打开纳指月线图,加一条 10 EMA,一秒钟就能判断。</figcaption>
+  </figure>
+
+  <div class="rule">在红区里,你不是技术变差了,你是在跟 91% 的概率对着干。</div>
+
+  <h3>三道环境门(按时间粒度从粗到细)</h3>
+  <div class="tw"><table>
+    <thead><tr><th>门</th><th>怎么看</th><th>过不了的时候</th><th>出处</th></tr></thead>
+    <tbody>
+      <tr><td><b>月线门</b><br><span class="m">长期</span></td><td>纳指(IXIC)月收盘 <b>&gt; 月线 10 EMA</b></td><td>不开新的突破仓。全年约有 3–6 个月是这种状态。</td><td>讲者 3000 笔研究</td></tr>
+      <tr><td><b>日线门</b><br><span class="m">中期</span></td><td>纳指 <b>10 日线上行、20 日线上行、且 10 日线 &gt; 20 日线</b>。短暂跌破一点没关系。</td><td>「如果 10 日和 20 日都在下行且 10 日在 20 日下方,突破失败率很高,你大概不该做多波段。」</td><td>Qullamaggie</td></tr>
+      <tr><td><b>21 EMA 门</b><br><span class="m">快速判断</span></td><td>指数在 21 EMA 上方还是下方</td><td>「市场在 21 EMA 下方时从来做不了什么好事。」</td><td>Mike Webster(O'Neil 公司前基金经理)</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Follow-through day:熊市结束的确认信号</h3>
+  <p>O'Neil 的方法,用来判断一轮下跌之后什么时候可以重新开火。这是<strong>唯一一个能让你在底部区域重新出手的规则</strong>,其余时候都应该等。</p>
+  <ol>
+    <li>大盘下跌/调整之后,某天出现<b>反弹尝试</b> —— 这天算 <span class="kbd">Day 1</span></li>
+    <li><b>从第 4 天开始</b>数,寻找主要指数之一出现强劲上涨</li>
+    <li>那天的<b>成交量必须高于前一日</b>,而且大多数情况下要高于日均量</li>
+    <li>指数最好<b>收涨 2% 以上</b>(O'Neil 原规则是 1%,后来提到约 2%;至少 1.5%)</li>
+    <li><b>最强的跟进通常出现在第 4 到第 7 天</b></li>
+  </ol>
+  <p>讲者补充的两条:跟进日最好能<b>收复 21 EMA</b>;同时应该能看到<b>大量领导股在这前后从基座里突破</b>。</p>
+  <div class="tw"><table>
+    <thead><tr><th>历史实例</th><th class="num">第几天跟进</th></tr></thead>
+    <tbody>
+      <tr><td>1982 年大牛市起点</td><td class="num">第 7 天</td></tr>
+      <tr><td>1998 年</td><td class="num">第 6 天</td></tr>
+      <tr><td>2003 年</td><td class="num">第 4 天</td></tr>
+      <tr><td>2020 年 2 月</td><td class="num">第 10 天</td></tr>
+      <tr><td>2022 年熊市底</td><td class="num">第 7 天</td></tr>
+    </tbody>
+  </table></div>
+  <div class="warn"><b>O'Neil 的原话大意:</b>跟进信号不是让你冲出去疯狂买入。它只是给你<b>绿灯</b>,可以开始买那些销售和盈利强劲、正从稳健基座中突破的高质量股票。但反过来 ——「<b>没有任何牛市是在没有强劲的价格和成交量跟进的情况下开始的</b>」。</div>
+
+  <h3>市场广度:一个容易漏掉的检查</h3>
+  <p>Qullamaggie 的做法:跑完扫描后看一眼<b>命中的股票分布在几个板块</b>。</p>
+  <div class="grid2">
+    <div class="box g"><b>健康</b>很多不同板块、不同行业都在形成旗形、杯柄、VCP、箱体 → 市场广度好,可以正常做。</div>
+    <div class="box r"><b>警告</b>只有一两个板块看起来好 → 市场内部可能已经虚弱,尤其是在已经涨了很久之后。</div>
+  </div>
+  <p class="src">V4 Qullamaggie 总览 · V6 O'Neil CANSLIM · V12 Livermore · V19 完美突破 · V20 Minervini 扫描篇</p>
+
+  <div class="note"><b>Livermore 的版本(自上而下四步):</b>① 市场的最小阻力线是向上、向下还是横向? ② 哪些板块/行业组最强? ③ 姐妹股比较 —— 看 NVDA 就同时看 AMD,哪个更强? ④ 才轮到个股。<br>他的原话大意:跟随组内最强的股票,不要找便宜货,不要找弱的姐妹股。<b>大多数人的顺序是反过来的 —— 先看上一只股票,再倒推理由。</b></div>
+
+  <h3>接受空仓</h3>
+  <p>Qullamaggie 的原话大意:每年通常有 3–6 个月是难做的时期,你赚不到什么钱,<b>这是正常的</b>;但也会有 3–6 个月的窗口能让账户翻倍甚至三倍,你要等的就是那段。</p>
+  <p>Livermore 说得更狠:「<b>总想在场内的欲望是投机者管理资金的最大敌人之一。</b>它最终会带来灾难 —— 在我早期生涯中让我破产过几次。」以及那句被引用了一百年的:「<b>在股市里,时间不是金钱。时间是时间,金钱是金钱。</b>」</p>
+</section>
+
+<section class="card" id="s2">
+  <span class="sec-no">02</span>
+  <h2>第二层 · 选股:ADR 决定你的收益上限</h2>
+  <p>这一章解决一个很多人练了几年图形都没意识到的问题:<strong>形态完美但股票太慢,你的努力会被浪费掉。</strong></p>
+
+  <h3>ADR% 是什么</h3>
+  <p><code>ADR%</code> = Average Daily Range,这只股票过去 <b>20 天的日均波动百分比</b>(不含跳空)。TradingView 上有现成指标,搜 ADR% 就能找到。</p>
+  <p>它的兄弟指标 ATR 给的是绝对金额。讲者本人用百分比,Qullamaggie 用 ATR,两者可以互换 —— 挑你脑子转得顺的那个。</p>
+
+  <div class="rule">指数的 ADR 大约 1%。你的股票 ADR 是指数的几倍,决定了它能跑多快。</div>
+
+  <div class="grid3">
+    <div class="box"><b>SPY</b><span class="s-num">≈ 0.93%</span></div>
+    <div class="box"><b>QQQ / 纳指100</b><span class="s-num">≈ 1.19%</span></div>
+    <div class="box g"><b>记住这个基准</b>SPY 和 QQQ 平均 <b>1% 到 1.25%</b></div>
+  </div>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="同样的形态在不同 ADR 股票上的结果对比">
+    <!-- left: low ADR -->
+    <text class="s-lab2" x="60" y="30" fill="var(--mut)">低 ADR:形态一样完美,结果毫无意义</text>
+    <g stroke="var(--grid)" stroke-width="1"><line x1="60" y1="60" x2="410" y2="60"/><line x1="60" y1="105" x2="410" y2="105"/><line x1="60" y1="150" x2="410" y2="150"/></g>
+    <line x1="60" y1="45" x2="60" y2="185" stroke="var(--bd)" stroke-width="1.4"/>
+    <line x1="60" y1="185" x2="410" y2="185" stroke="var(--bd)" stroke-width="1.4"/>
+    <path d="M68,168 L98,150 L124,158 L150,132 L176,120 L196,110 L214,118 L234,124 L252,120 L268,114 L282,116 L296,112
+             L312,104 L336,100 L360,96 L386,92 L406,88" fill="none" stroke="var(--mut)" stroke-width="2.4" stroke-linejoin="round"/>
+    <line x1="196" y1="110" x2="410" y2="110" stroke="var(--green)" stroke-width="1.8" stroke-dasharray="6 4" opacity="0.75"/>
+    <circle cx="312" cy="104" r="5" fill="var(--mut)"/>
+    <rect x="214" y="126" width="82" height="18" rx="4" fill="none" stroke="var(--violet)" stroke-width="1.4" stroke-dasharray="3 3"/>
+    <text class="s-note" x="255" y="158" fill="var(--violet)" text-anchor="middle">基座、收缩、量缩,全都对</text>
+    <text class="s-num" x="76" y="80" fill="var(--mut)">ADR ≈ 1%</text>
+    <rect x="316" y="66" width="90" height="24" rx="5" fill="var(--red)" opacity="0.85"/>
+    <text class="s-num" x="361" y="82.5" fill="#fff" text-anchor="middle">+13%</text>
+    <text class="s-note" x="60" y="204" fill="var(--mut)">Foot Locker,1980 年代 · 同期标普 +7.5% —— 你多赚了 5 个点,承担了全部风险</text>
+
+    <!-- divider -->
+    <line x1="450" y1="20" x2="450" y2="400" stroke="var(--bd)" stroke-width="1" stroke-dasharray="4 5"/>
+
+    <!-- right: high ADR -->
+    <text class="s-lab2" x="490" y="30" fill="var(--green)">高 ADR:同样的形态,同样的力气</text>
+    <g stroke="var(--grid)" stroke-width="1"><line x1="490" y1="60" x2="860" y2="60"/><line x1="490" y1="105" x2="860" y2="105"/><line x1="490" y1="150" x2="860" y2="150"/></g>
+    <line x1="490" y1="45" x2="490" y2="185" stroke="var(--bd)" stroke-width="1.4"/>
+    <line x1="490" y1="185" x2="860" y2="185" stroke="var(--bd)" stroke-width="1.4"/>
+    <path d="M498,170 L524,152 L548,160 L572,134 L596,120 L618,112 L636,120 L654,126 L672,122 L688,116 L702,118 L716,113
+             L730,96 L748,74 L770,58 L796,48 L824,36 L856,26" fill="none" stroke="var(--ink)" stroke-width="2.6" stroke-linejoin="round"/>
+    <line x1="618" y1="112" x2="860" y2="112" stroke="var(--green)" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <circle cx="730" cy="96" r="5.5" fill="var(--green)"/>
+    <rect x="636" y="128" width="80" height="18" rx="4" fill="none" stroke="var(--violet)" stroke-width="1.4" stroke-dasharray="3 3"/>
+    <text class="s-note" x="676" y="160" fill="var(--violet)" text-anchor="middle">一模一样的基座</text>
+    <text class="s-num" x="506" y="80" fill="var(--green)">ADR ≈ 7.4%</text>
+    <rect x="756" y="60" width="98" height="24" rx="5" fill="var(--green)"/>
+    <text class="s-num" x="805" y="76.5" fill="#fff" text-anchor="middle">+76%</text>
+    <text class="s-note" x="490" y="204" fill="var(--mut)">AFRM · 同期 SPY +32% —— ADR 是 SPY 的约 8 倍</text>
+
+    <!-- table of examples -->
+    <line x1="60" y1="228" x2="860" y2="228" stroke="var(--bd)" stroke-width="1.2"/>
+    <text class="s-lab2" x="60" y="250" fill="var(--ink)">ADR 越高,同样一个突破能给你的东西越多(实测样本)</text>
+    <g class="s-num" fill="var(--mut)" font-size="11.5">
+      <text x="60" y="274">股票</text><text x="200" y="274">20日 ADR%</text><text x="330" y="274">同期指数</text><text x="450" y="274">倍数</text><text x="530" y="274">突破后结果</text>
+    </g>
+    <line x1="60" y1="280" x2="860" y2="280" stroke="var(--bd2)" stroke-width="1"/>
+    <g class="s-num" font-size="12">
+      <text x="60" y="300" fill="var(--mut)">Foot Locker</text><text x="200" y="300" fill="var(--mut)">低</text><text x="330" y="300" fill="var(--mut)">—</text><text x="450" y="300" fill="var(--mut)">≈1×</text><text x="530" y="300" fill="var(--red)">+13%</text>
+      <text x="60" y="320" fill="var(--ink)">TSLA</text><text x="200" y="320" fill="var(--ink)">2.25%</text><text x="330" y="320" fill="var(--mut)">0.55%</text><text x="450" y="320" fill="var(--blue)">4–5×</text><text x="530" y="320" fill="var(--green)">+136%</text>
+      <text x="60" y="340" fill="var(--ink)">AMD 2018</text><text x="200" y="340" fill="var(--ink)">4.77%</text><text x="330" y="340" fill="var(--mut)">0.68%</text><text x="450" y="340" fill="var(--blue)">7×</text><text x="530" y="340" fill="var(--mut)">—</text>
+      <text x="60" y="360" fill="var(--ink)">GME 2021-01</text><text x="200" y="360" fill="var(--ink)">9.48%</text><text x="330" y="360" fill="var(--mut)">≈1%</text><text x="450" y="360" fill="var(--violet)">9×</text><text x="530" y="360" fill="var(--green)">+1600%</text>
+      <text x="60" y="380" fill="var(--ink)">CODX 2020</text><text x="200" y="380" fill="var(--ink)">22.9%</text><text x="330" y="380" fill="var(--mut)">—</text><text x="450" y="380" fill="var(--violet)">—</text><text x="530" y="380" fill="var(--green)">5 天 +500%+</text>
+      <text x="60" y="400" fill="var(--ink)">LEDS 2021-05</text><text x="200" y="400" fill="var(--ink)">31%</text><text x="330" y="400" fill="var(--mut)">&lt;1%</text><text x="450" y="400" fill="var(--violet)">—</text><text x="530" y="400" fill="var(--green)">9 天 +281%</text>
+    </g>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>为什么你练了两年形态还是赚不到钱。Foot Locker 那个案例是全套教材里最重要的反面教材 —— 形态完美、有相对强度、有成交量配合,但因为 ADR 太低,突破后只涨了 13%,同期标普涨了 7.5%。<b>你承担了全部的风险,换来 5 个点的超额。</b></figcaption>
+  </figure>
+
+  <h3>ADR 的门槛</h3>
+  <div class="grid3">
+    <div class="box r"><b>&lt; 2%</b>不要做。「低 ADR 的股票不该交易。」ADR 2% 的股票不可能 5 天涨 500% —— Apple、Amazon、Microsoft 没有机会。</div>
+    <div class="box b"><b>3–4%</b>最低要求。目标是<b>至少达到 QQQ 的 1.5–2 倍</b>。</div>
+    <div class="box g"><b>5 / 6 / 8 / 10%+</b>「真正多汁的」区间。越高越稀有。「高 ADR 的股票是黄金。」</div>
+  </div>
+
+  <div class="warn"><b>一个容易上当的陷阱:基座越长,ADR 读数越低。</b>整理期本身就是波动率收缩,会把 20 日 ADR 压下来,显得这只股票比它本性慢。Tesla 和 CGC 都出现过这种情况。<b>解决办法:回看这只股票之前几次突破跑成什么样,用历史行为判断它真正的速度,不要只看当下读数。</b></div>
+
+  <h3>相对强度:市场自己投的票</h3>
+  <p>讲者反复强调一句话:相对强度不是我的意见,也不是你的意见,<b>是市场的意见</b>。</p>
+  <p>注意:<b>RS line ≠ RSI</b>,两回事。RS line 是这只股票相对基准指数(通常 S&amp;P 500)的比值曲线。讲者在 TradingView 上有一个免费指标,搜他的名字能找到。</p>
+
+  <h4>操作定义:什么叫「有相对强度」</h4>
+  <p>指数在创<b>更低低点、更低高点</b>的同时,这只股票在上升趋势中、在所有关键均线上方、并且创 52 周新高。</p>
+  <div class="tw"><table>
+    <thead><tr><th>信号强度</th><th>具体表现</th><th>含义</th></tr></thead>
+    <tbody>
+      <tr><td><span class="tag g">最强</span></td><td><b>股票还在基座里,RS 线就创了 52 周新高</b></td><td>「水下的篮球」—— 股票想涨,是市场的重量在压着它。压力一解除就会弹出来。</td></tr>
+      <tr><td><span class="tag b">很强</span></td><td>突破当天 RS 线创 52 周新高</td><td>市场确认它是领导股</td></tr>
+      <tr><td><span class="tag a">合格</span></td><td>RS 线整体上行</td><td>至少没在跑输</td></tr>
+      <tr><td><span class="tag r">出局</span></td><td>RS 线创 52 周<b>新低</b></td><td>无论形态多好都跳过(讲者用这个筛掉整个板块 ETF)</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><b>历史数据:</b>O'Neil 的研究发现,从 1950 年代初到 2008 年,<b>表现最好的股票在大涨之前的平均 RS 评级是 87</b>。也就是说,它们在开始最爆炸性的上涨时,已经比近十分之九的其他股票表现更好。这就是为什么 Minervini 的趋势模板要求 RS &gt; 70、最好 90+。</div>
+
+  <h3>Minervini 趋势模板(8 条,可直接写成筛选器)</h3>
+  <div class="tw"><table>
+    <thead><tr><th class="num">#</th><th>条件</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td>股价 &gt; 150 日均线(=30 周)且 &gt; 200 日均线(=40 周)</td></tr>
+      <tr><td class="num">2</td><td>150 日 &gt; 200 日</td></tr>
+      <tr><td class="num">3</td><td>200 日均线上行至少 1 个月,<b>最好已上行 4–5 个月</b></td></tr>
+      <tr><td class="num">4</td><td>50 日 &gt; 150 日,且 50 日 &gt; 200 日</td></tr>
+      <tr><td class="num">5</td><td>股价 <b>≥ 52 周低点 + 25%</b></td></tr>
+      <tr><td class="num">6</td><td>股价在 <b>52 周高点的 25% 以内</b></td></tr>
+      <tr><td class="num">7</td><td>IBD 相对强度 <b>&gt; 70,最好 90+</b></td></tr>
+      <tr><td class="num">8</td><td>股价 &gt; 50 日均线(例外:low cheat 形态可以在 50 日下方,但不超过 <b>8%</b>)</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>讲者实际在用的筛选器(比模板简单得多)</h3>
+  <p>他在视频里现场演示的版本,一共六个条件,5500 只股票筛到 374 只:</p>
+  <ul class="chk">
+    <li>国家 = 美国</li>
+    <li>价格 &gt; 50 日均线</li>
+    <li>价格 &gt; 200 日均线</li>
+    <li>价格在 52 周高点 <b>25% 以内</b></li>
+    <li>50 日均量 &gt; 50k(可以提到 100k / 200k 来过滤流动性)</li>
+    <li><b>3 个月相对强度排名 &gt; 70</b> —— 他明确说 3 个月比 12 个月更适合找这类形态</li>
+  </ul>
+  <p>然后<b>按 3 个月 RS 降序排列,先看 RS 99 的那批</b>。方法论他说得很直白:用趋势模板撒一张相对宽的网,再用相对强度排名过滤结果。</p>
+
+  <h3>Qullamaggie 的版本:只用三个扫描</h3>
+  <div class="grid3">
+    <div class="box g"><b>1 个月涨幅榜</b></div>
+    <div class="box g"><b>3 个月涨幅榜</b></div>
+    <div class="box g"><b>6 个月涨幅榜</b></div>
+  </div>
+  <p>筛选条件只有三个:<b>成交额</b>(dollar volume)、<b>ADR%</b>、<b>期间涨幅</b>。涨幅要落在<b>前 7% 或更高</b>(结果太多就收紧)。</p>
+  <p class="rule" style="font-size:16px">收盘后跑扫描 → 好的形态放进观察列表 → 之后只看这个列表。不需要任何日内扫描。</p>
+
+  <h3>基本面:三要素 + 一个</h3>
+  <p>Minervini 把前三个叫「Code 33」,讲者补了第四个:</p>
+  <div class="grid4">
+    <div class="box g"><b>盈利</b>EPS 加速</div>
+    <div class="box g"><b>销售</b>营收加速</div>
+    <div class="box g"><b>税后净利率</b>margin 加速</div>
+    <div class="box b"><b>预估值</b>EPS estimates 进入历史新高区域 + guidance 上调</div>
+  </div>
+
+  <h4>为什么利润率是最重要的那一个(讲者的算例)</h4>
+  <div class="tw"><table>
+    <thead><tr><th>情景</th><th class="num">营收</th><th class="num">利润率</th><th class="num">股本</th><th class="num">EPS</th><th class="num">EPS 变化</th></tr></thead>
+    <tbody>
+      <tr><td>基准</td><td class="num">1000 万</td><td class="num">15%</td><td class="num">100 万股</td><td class="num">$1.50</td><td class="num">—</td></tr>
+      <tr><td>只增营收</td><td class="num">1500 万</td><td class="num">15%</td><td class="num">100 万股</td><td class="num">$2.25</td><td class="num b"><b>+50%</b></td></tr>
+      <tr><td>营收 + 利润率</td><td class="num">1500 万</td><td class="num g"><b>30%</b></td><td class="num">100 万股</td><td class="num">$4.50</td><td class="num g"><b>+200%</b></td></tr>
+    </tbody>
+  </table></div>
+  <p>营收增 50% 只让 EPS 增 50%;<b>营收增 50% 同时利润率从 15% 提到 30%,EPS 增 200%</b>。这就是为什么要盯着利润率。</p>
+
+  <h4>Monster Beverage:三者同时加速长什么样</h4>
+  <div class="tw"><table>
+    <thead><tr><th class="num">年份</th><th class="num">EPS 增长</th><th class="num">销售增长</th><th class="num">净利率</th></tr></thead>
+    <tbody>
+      <tr><td class="num">2003</td><td class="num">+75%</td><td class="num">+20%</td><td class="num">3.3% → 5.4%</td></tr>
+      <tr><td class="num">2004</td><td class="num">+214%</td><td class="num">+63%</td><td class="num">5.4% → 11.3%</td></tr>
+      <tr><td class="num">2005</td><td class="num">+195%</td><td class="num">+93%</td><td class="num">11.3% → 18%</td></tr>
+    </tbody>
+  </table></div>
+  <p>技术面配合的结果:月线 VCP 突破后 <b>35 个月约 +9000%</b>。</p>
+
+  <div class="danger"><b>反直觉但极重要:股票常在盈利最好的时候见顶。</b><br>Zoom 见顶时 EPS 同比 +999%,之后 713 → 560 → 48 → 12 → 6 → −22 → −23。Peloton 见顶时 EPS 259/211/190,之后无盈利可言。<br><b>市场看的是「在变好还是在变坏」,不是绝对水平。</b>所以最重要的不是你怎么读财报,而是<b>市场对财报的反应</b> —— 财报当天和之后几天的价格与成交量。</div>
+
+  <h3>CANSLIM 的量化门槛(O'Neil 原始标准)</h3>
+  <div class="tw"><table>
+    <thead><tr><th>字母</th><th>含义</th><th>硬指标</th></tr></thead>
+    <tbody>
+      <tr><td><b>C</b></td><td>当季盈利与销售</td><td>季度 EPS 至少 <b>+18~20%</b>,最好 <b>+40% 到 100%、200%+</b>;盈利在最近几季<b>加速</b>;季度销售加速或 <b>+25%+</b></td></tr>
+      <tr><td><b>A</b></td><td>年度盈利增长</td><td>过去<b>三年每年</b>递增;年增长率 <b>25–50%+</b>;<b>ROE ≥ 17%</b>,卓越者 25–50%。五年中可接受一个下降年,只要之后重回新高</td></tr>
+      <tr><td><b>N</b></td><td>新产品/新管理/新高</td><td>新产品、新服务、新管理层,或行业条件的重大变化。<b>研究显示超过 95% 的成功股票至少属于其中一类</b></td></tr>
+      <tr><td><b>S</b></td><td>供给与需求</td><td>流通盘小的更容易推动;<b>95% 的最大赢家流通盘 &lt; 3000 万股</b>;突破时要看到大成交量</td></tr>
+      <tr><td><b>L</b></td><td>领导股</td><td>RS 评级 <b>80–90+</b>;牛市中 composite rating 90+;买该领域第一名</td></tr>
+      <tr><td><b>I</b></td><td>机构支持</td><td>至少 1–2 家近期业绩优秀的基金持有,且持股在<b>增加</b></td></tr>
+      <tr><td><b>M</b></td><td>市场方向</td><td>见第一章。「识别市场见顶或见底往往是整个投资游戏的 50%」</td></tr>
+    </tbody>
+  </table></div>
+
+  <h4>95% Club:最大赢家股的共同特征(反向工程用)</h4>
+  <div class="grid4">
+    <div class="stat"><b>99%</b><small>在 200 日均线之上</small></div>
+    <div class="stat"><b>96%</b><small>在 50 日均线之上</small></div>
+    <div class="stat"><b>95%</b><small>流通盘 &lt; 3000 万股</small></div>
+    <div class="stat"><b>95%</b><small>盈利在加速</small></div>
+    <div class="stat"><b>96%</b><small>大涨启动于大盘调整之后</small></div>
+    <div class="stat"><b>95%</b><small>有增长催化剂</small></div>
+    <div class="stat"><b>80%</b><small>在过去 10 年内 IPO</small></div>
+    <div class="stat"><b>98%</b><small>涨幅发生在 Stage 2</small></div>
+  </div>
+  <p class="src">V4/V5/V7 Qullamaggie · V6 O'Neil · V11/V20 Minervini · V12 Livermore</p>
+
+  <h3>选股的两个加分项</h3>
+  <div class="grid2">
+    <div class="box v"><b>高空头占比</b>高 ADR + 强 RS + 好形态 + 空头占比 &gt;30%(讲者认为 &gt;30% 算非常高)= GME 那种。空头挤压是额外的燃料,不是买入理由,是放大器。</div>
+    <div class="box v"><b>内部人集中买入</b>CEO、CFO、总裁、多位董事在同一时期买入。讲者举的 Kappa 案例:内部人集中买入之后,该股跌破 21 EMA 前涨了 427%,同期 SPY 涨 3%。</div>
+  </div>
+
+  <h3>Darvas 的选股哲学(最简单的一条)</h3>
+  <div class="rule">买入一只股票唯一有效的理由是它的价格在上涨。价格在涨,不需要别的理由;价格不涨,别的理由都不值得考虑。</div>
+  <p>他补的两句同样有用:「<b>买贵的,卖更贵</b>」—— 找接近 52 周高点的,不是 52 周低点的。以及:「<b>没有一家前途光明的公司会在市场上无人注意</b> —— 有太多消息灵通、目光如炬的专业人士。」</p>
+  <p>他只买<b>新兴和发展中行业</b>的公司,绝不买成熟行业、超大市值、或已经大到不太可能再大幅成长的公司。他要找的是「未来的 IBM」,目标是能翻两三四倍的,不是挣扎着涨 10 个点的。</p>
+</section>
+
+<section class="card" id="s3">
+  <span class="sec-no">03</span>
+  <h2>第三层 · 读图:只有一个公式</h2>
+  <p>这一章看起来最复杂,其实只有一个东西要学。所有形态 —— VCP、杯柄、旗形、箱体、楔形 —— 都是同一件事的不同长相。</p>
+
+  <div class="rule">把成交量当作「重量」。每一根 K 线都是一个天平:一边是供给,一边是需求。你要做的只是读出天平往哪边倾斜。</div>
+
+  <h3>核心解读公式(整套体系的中枢)</h3>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="三种价量组合的含义:窄幅低量、窄幅高量、宽幅波动">
+    <!-- panel 1 -->
+    <rect x="30" y="20" width="266" height="240" rx="11" fill="var(--green)" opacity="0.06"/>
+    <rect x="30" y="20" width="266" height="240" rx="11" fill="none" stroke="var(--green)" stroke-width="1.7"/>
+    <text class="s-lab2" x="163" y="46" fill="var(--green)" text-anchor="middle">窄幅 + 低量</text>
+    <g stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round">
+      <line x1="80" y1="96" x2="80" y2="120"/><line x1="106" y1="92" x2="106" y2="116"/>
+      <line x1="132" y1="98" x2="132" y2="118"/><line x1="158" y1="94" x2="158" y2="114"/>
+      <line x1="184" y1="97" x2="184" y2="117"/><line x1="210" y1="95" x2="210" y2="113"/>
+      <line x1="236" y1="98" x2="236" y2="116"/>
+    </g>
+    <g stroke="var(--ink)" stroke-width="2.2">
+      <line x1="74" y1="104" x2="80" y2="104"/><line x1="80" y1="112" x2="86" y2="112"/>
+      <line x1="100" y1="100" x2="106" y2="100"/><line x1="106" y1="108" x2="112" y2="108"/>
+      <line x1="126" y1="106" x2="132" y2="106"/><line x1="132" y1="112" x2="138" y2="112"/>
+      <line x1="152" y1="100" x2="158" y2="100"/><line x1="158" y1="108" x2="164" y2="108"/>
+      <line x1="178" y1="104" x2="184" y2="104"/><line x1="184" y1="111" x2="190" y2="111"/>
+      <line x1="204" y1="101" x2="210" y2="101"/><line x1="210" y1="108" x2="216" y2="108"/>
+      <line x1="230" y1="104" x2="236" y2="104"/><line x1="236" y1="111" x2="242" y2="111"/>
+    </g>
+    <line x1="60" y1="190" x2="270" y2="190" stroke="var(--bd)" stroke-width="1.3"/>
+    <line x1="60" y1="168" x2="270" y2="168" stroke="var(--red)" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <text class="s-note" x="274" y="166" fill="var(--red)" text-anchor="end" opacity="0.8">30 日均量</text>
+    <g fill="var(--mut)" opacity="0.6">
+      <rect x="75" y="180" width="10" height="10"/><rect x="101" y="182" width="10" height="8"/>
+      <rect x="127" y="181" width="10" height="9"/><rect x="153" y="183" width="10" height="7"/>
+      <rect x="179" y="182" width="10" height="8"/><rect x="205" y="184" width="10" height="6"/>
+      <rect x="231" y="183" width="10" height="7"/>
+    </g>
+    <text class="s-lab" x="163" y="216" fill="var(--green)" text-anchor="middle">供给枯竭</text>
+    <text class="s-note" x="163" y="234" fill="var(--mut)" text-anchor="middle">没人在卖 —— 这是买点</text>
+    <text class="s-note" x="163" y="250" fill="var(--mut)" text-anchor="middle">「毛巾已经拧干了」</text>
+
+    <!-- panel 2 -->
+    <rect x="316" y="20" width="266" height="240" rx="11" fill="var(--blue)" opacity="0.06"/>
+    <rect x="316" y="20" width="266" height="240" rx="11" fill="none" stroke="var(--blue)" stroke-width="1.7"/>
+    <text class="s-lab2" x="449" y="46" fill="var(--blue)" text-anchor="middle">窄幅 + 高量</text>
+    <g stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round">
+      <line x1="366" y1="96" x2="366" y2="120"/><line x1="392" y1="92" x2="392" y2="116"/>
+      <line x1="418" y1="98" x2="418" y2="118"/><line x1="444" y1="94" x2="444" y2="114"/>
+      <line x1="470" y1="97" x2="470" y2="117"/><line x1="496" y1="95" x2="496" y2="113"/>
+      <line x1="522" y1="98" x2="522" y2="116"/>
+    </g>
+    <g stroke="var(--ink)" stroke-width="2.2">
+      <line x1="360" y1="104" x2="366" y2="104"/><line x1="366" y1="112" x2="372" y2="112"/>
+      <line x1="386" y1="100" x2="392" y2="100"/><line x1="392" y1="108" x2="398" y2="108"/>
+      <line x1="412" y1="106" x2="418" y2="106"/><line x1="418" y1="112" x2="424" y2="112"/>
+      <line x1="438" y1="100" x2="444" y2="100"/><line x1="444" y1="108" x2="450" y2="108"/>
+      <line x1="464" y1="104" x2="470" y2="104"/><line x1="470" y1="111" x2="476" y2="111"/>
+      <line x1="490" y1="101" x2="496" y2="101"/><line x1="496" y1="108" x2="502" y2="108"/>
+      <line x1="516" y1="104" x2="522" y2="104"/><line x1="522" y1="111" x2="528" y2="111"/>
+    </g>
+    <line x1="346" y1="190" x2="556" y2="190" stroke="var(--bd)" stroke-width="1.3"/>
+    <line x1="346" y1="168" x2="556" y2="168" stroke="var(--red)" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <g fill="var(--blue)" opacity="0.75">
+      <rect x="361" y="150" width="10" height="40"/><rect x="387" y="146" width="10" height="44"/>
+      <rect x="413" y="154" width="10" height="36"/><rect x="439" y="144" width="10" height="46"/>
+      <rect x="465" y="152" width="10" height="38"/><rect x="491" y="148" width="10" height="42"/>
+      <rect x="517" y="151" width="10" height="39"/>
+    </g>
+    <text class="s-lab" x="449" y="216" fill="var(--blue)" text-anchor="middle">供给正在被吸收</text>
+    <text class="s-note" x="449" y="234" fill="var(--mut)" text-anchor="middle">有人在卖,但有人全接了</text>
+    <text class="s-note" x="449" y="250" fill="var(--mut)" text-anchor="middle">还在筑底 —— 大资金在吃货,再等</text>
+
+    <!-- panel 3 -->
+    <rect x="602" y="20" width="266" height="240" rx="11" fill="var(--red)" opacity="0.06"/>
+    <rect x="602" y="20" width="266" height="240" rx="11" fill="none" stroke="var(--red)" stroke-width="1.7"/>
+    <text class="s-lab2" x="735" y="46" fill="var(--red)" text-anchor="middle">宽幅 + 剧烈波动</text>
+    <g stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round">
+      <line x1="652" y1="76" x2="652" y2="132"/><line x1="678" y1="86" x2="678" y2="128"/>
+      <line x1="704" y1="70" x2="704" y2="140"/><line x1="730" y1="82" x2="730" y2="134"/>
+      <line x1="756" y1="74" x2="756" y2="144"/><line x1="782" y1="88" x2="782" y2="136"/>
+      <line x1="808" y1="72" x2="808" y2="146"/>
+    </g>
+    <g stroke="var(--ink)" stroke-width="2.2">
+      <line x1="646" y1="80" x2="652" y2="80"/><line x1="652" y1="128" x2="658" y2="128"/>
+      <line x1="672" y1="122" x2="678" y2="122"/><line x1="678" y1="90" x2="684" y2="90"/>
+      <line x1="698" y1="74" x2="704" y2="74"/><line x1="704" y1="136" x2="710" y2="136"/>
+      <line x1="724" y1="128" x2="730" y2="128"/><line x1="730" y1="86" x2="736" y2="86"/>
+      <line x1="750" y1="78" x2="756" y2="78"/><line x1="756" y1="140" x2="762" y2="140"/>
+      <line x1="776" y1="132" x2="782" y2="132"/><line x1="782" y1="92" x2="788" y2="92"/>
+      <line x1="802" y1="76" x2="808" y2="76"/><line x1="808" y1="142" x2="814" y2="142"/>
+    </g>
+    <line x1="632" y1="190" x2="842" y2="190" stroke="var(--bd)" stroke-width="1.3"/>
+    <line x1="632" y1="168" x2="842" y2="168" stroke="var(--red)" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <g fill="var(--red)" opacity="0.7">
+      <rect x="647" y="146" width="10" height="44"/><rect x="673" y="156" width="10" height="34"/>
+      <rect x="699" y="140" width="10" height="50"/><rect x="725" y="152" width="10" height="38"/>
+      <rect x="751" y="138" width="10" height="52"/><rect x="777" y="150" width="10" height="40"/>
+      <rect x="803" y="142" width="10" height="48"/>
+    </g>
+    <text class="s-lab" x="735" y="216" fill="var(--red)" text-anchor="middle">派发</text>
+    <text class="s-note" x="735" y="234" fill="var(--mut)" text-anchor="middle">有序变成混乱 = 大资金在出货</text>
+    <text class="s-note" x="735" y="250" fill="var(--mut)" text-anchor="middle">如果你在场内 —— 该走了</text>
+
+    <text class="s-lab2" x="450" y="296" fill="var(--ink)" text-anchor="middle">这三格就是整套体系。剩下的所有「形态」都只是这三种状态的排列组合。</text>
+    <text class="s-note" x="450" y="316" fill="var(--mut)" text-anchor="middle">「一切都是相对的:拿这只股票和它自己比,不要和 Google、Amazon 比。」</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>怎么在不认识任何形态名字的情况下判断一只股票在积累还是在派发。讲者举过一个最能说明问题的例子(AT&amp;T):突破前的最后 4 根 K 线和更早的 4 根<b>长得一模一样</b>,唯一区别是成交量 —— 早的那 4 根量在 30 日均量之上(吸筹,还没准备好),晚的那 4 根量掉下去了(供给枯竭,可以买)。</figcaption>
+  </figure>
+
+  <div class="note"><b>关于「突破必须放大量」这个流行说法 ——</b> 讲者认为它是错的。真正要的是<b>价格尽可能往上走</b>。如果一根 K 线从 $95 涨到 $100 只用了半个均量,那叫 <b>bullish ease of movement</b>,是极强的信号:几乎没有供给需要吃掉。反过来,要放两倍量才涨同样幅度,说明上方压着一堆卖单。</div>
+
+  <h3>VCP:波动收缩形态</h3>
+  <p>Minervini 的核心形态。它不是一个「图案」,而是<b>供给逐次减少的可视化</b>。讲者的比喻:把湿毛巾拧一次,水哗哗流;再拧一次,水少了;第三次几乎拧不出来。<b>每一次收缩就是拧一次毛巾。</b></p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VCP 波动收缩形态解剖">
+    <g stroke="var(--grid)" stroke-width="1">
+      <line x1="60" y1="80" x2="860" y2="80"/><line x1="60" y1="140" x2="860" y2="140"/>
+      <line x1="60" y1="200" x2="860" y2="200"/><line x1="60" y1="260" x2="860" y2="260"/>
+      <line x1="60" y1="320" x2="860" y2="320"/>
+    </g>
+    <line x1="60" y1="40" x2="60" y2="320" stroke="var(--bd)" stroke-width="1.5"/>
+    <line x1="60" y1="320" x2="860" y2="320" stroke="var(--bd)" stroke-width="1.5"/>
+    <rect x="70" y="40" width="180" height="280" fill="var(--green)" opacity="0.055"/>
+    <rect x="250" y="90" width="420" height="130" fill="var(--blue)" opacity="0.06"/>
+    <path d="M70,320 L110,300 L145,268 L175,285 L205,200 L232,158 L250,116
+             L268,150 L290,181 L308,205 L330,178 L358,140 L390,114
+             L406,138 L424,158 L442,166 L466,140 L492,111
+             L508,124 L524,133 L540,138 L562,126 L586,111
+             L602,117 L618,122 L634,120 L652,115 L668,113
+             L690,109 L706,88 L730,74 L760,80 L800,58 L840,44"
+          fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <line x1="250" y1="109" x2="860" y2="109" stroke="var(--green)" stroke-width="2" stroke-dasharray="7 5"/>
+    <rect x="686" y="93" width="88" height="19" rx="4" fill="var(--green)"/>
+    <text class="s-num" x="730" y="106.5" fill="#fff" text-anchor="middle">枢轴 = 买点</text>
+    <line x1="500" y1="128" x2="860" y2="128" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="4 4"/>
+    <rect x="780" y="131" width="78" height="18" rx="4" fill="var(--red)"/>
+    <text class="s-num" x="819" y="144" fill="#fff" text-anchor="middle">止损位</text>
+    <g stroke="var(--red)" stroke-width="1.5" fill="none">
+      <path d="M681,109 L671,109 M681,128 L671,128 M676,109 L676,128"/>
+    </g>
+    <path d="M676,128 L676,246 L702,246" stroke="var(--red)" stroke-width="1.2" fill="none" stroke-dasharray="3 3" opacity="0.75"/>
+    <text class="s-num" x="708" y="243" fill="var(--red)">枢轴 → 止损 = 4.3%</text>
+    <text class="s-note" x="708" y="259" fill="var(--mut)">基座越紧,仓位可以越大</text>
+    <g stroke="var(--amber)" stroke-width="1.5" fill="none" stroke-dasharray="3 3">
+      <line x1="250" y1="116" x2="250" y2="205"/><line x1="308" y1="116" x2="308" y2="205"/>
+    </g>
+    <line x1="250" y1="212" x2="308" y2="212" stroke="var(--amber)" stroke-width="1.6"/>
+    <text class="s-num" x="279" y="228" fill="var(--amber)" text-anchor="middle">C1  −20%</text>
+    <text class="s-note" x="279" y="243" fill="var(--mut)" text-anchor="middle">约 4 周</text>
+    <g stroke="var(--amber)" stroke-width="1.5" fill="none" stroke-dasharray="3 3">
+      <line x1="390" y1="114" x2="390" y2="176"/><line x1="442" y1="166" x2="442" y2="176"/>
+    </g>
+    <line x1="390" y1="183" x2="442" y2="183" stroke="var(--amber)" stroke-width="1.6"/>
+    <text class="s-num" x="416" y="199" fill="var(--amber)" text-anchor="middle">C2  −12%</text>
+    <text class="s-note" x="416" y="214" fill="var(--mut)" text-anchor="middle">约 2 周</text>
+    <g stroke="var(--amber)" stroke-width="1.5" fill="none" stroke-dasharray="3 3">
+      <line x1="492" y1="111" x2="492" y2="150"/><line x1="540" y1="138" x2="540" y2="150"/>
+    </g>
+    <line x1="492" y1="157" x2="540" y2="157" stroke="var(--amber)" stroke-width="1.6"/>
+    <text class="s-num" x="516" y="173" fill="var(--amber)" text-anchor="middle">C3  −6%</text>
+    <text class="s-note" x="516" y="188" fill="var(--mut)" text-anchor="middle">约 6 天</text>
+    <g stroke="var(--violet)" stroke-width="1.5" fill="none" stroke-dasharray="3 3">
+      <line x1="586" y1="111" x2="586" y2="140"/><line x1="668" y1="113" x2="668" y2="140"/>
+    </g>
+    <line x1="586" y1="147" x2="668" y2="147" stroke="var(--violet)" stroke-width="1.6"/>
+    <text class="s-num" x="627" y="163" fill="var(--violet)" text-anchor="middle">C4  −2.5%</text>
+    <text class="s-note" x="627" y="178" fill="var(--mut)" text-anchor="middle">3–5 天 · 最紧</text>
+    <path d="M308,205 L442,166 L540,138 L668,113" fill="none" stroke="var(--blue)" stroke-width="1.6" stroke-dasharray="6 4" opacity="0.85"/>
+    <circle cx="308" cy="205" r="3.4" fill="var(--blue)"/><circle cx="442" cy="166" r="3.4" fill="var(--blue)"/>
+    <circle cx="540" cy="138" r="3.4" fill="var(--blue)"/><circle cx="668" cy="113" r="3.4" fill="var(--blue)"/>
+    <text class="s-lab" x="352" y="258" fill="var(--blue)">低点依次抬高 ← 供给在减少</text>
+    <text class="s-lab" x="150" y="60" fill="var(--green)" text-anchor="middle">① 前期驱动段</text>
+    <text class="s-note" x="150" y="76" fill="var(--mut)" text-anchor="middle">先有大涨,不然没有「收缩」可言</text>
+    <text class="s-lab" x="460" y="62" fill="var(--blue)" text-anchor="middle">② 基座:每段收缩 ≈ 上一段的一半</text>
+    <text class="s-lab" x="790" y="36" fill="var(--green)" text-anchor="middle">③ 突破</text>
+    <path d="M690,109 L706,88" stroke="var(--green)" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M702,84 L712,84 L708,96 Z" fill="var(--green)"/>
+    <line x1="60" y1="470" x2="860" y2="470" stroke="var(--bd)" stroke-width="1.5"/>
+    <text class="s-note" x="56" y="474" fill="var(--mut)" text-anchor="end">量</text>
+    <g fill="var(--mut)" opacity="0.5">
+      <rect x="70" y="440" width="9" height="30"/><rect x="88" y="430" width="9" height="40"/>
+      <rect x="106" y="418" width="9" height="52"/><rect x="124" y="436" width="9" height="34"/>
+      <rect x="142" y="410" width="9" height="60"/><rect x="160" y="422" width="9" height="48"/>
+      <rect x="178" y="404" width="9" height="66"/><rect x="196" y="414" width="9" height="56"/>
+      <rect x="214" y="400" width="9" height="70"/><rect x="232" y="408" width="9" height="62"/>
+    </g>
+    <g fill="var(--amber)" opacity="0.6">
+      <rect x="256" y="424" width="9" height="46"/><rect x="274" y="432" width="9" height="38"/>
+      <rect x="292" y="438" width="9" height="32"/><rect x="310" y="442" width="9" height="28"/>
+      <rect x="332" y="436" width="9" height="34"/><rect x="360" y="440" width="9" height="30"/>
+    </g>
+    <g fill="var(--amber)" opacity="0.5">
+      <rect x="392" y="444" width="9" height="26"/><rect x="410" y="448" width="9" height="22"/>
+      <rect x="428" y="450" width="9" height="20"/><rect x="446" y="452" width="9" height="18"/>
+      <rect x="468" y="449" width="9" height="21"/>
+    </g>
+    <g fill="var(--violet)" opacity="0.6">
+      <rect x="494" y="454" width="9" height="16"/><rect x="512" y="456" width="9" height="14"/>
+      <rect x="530" y="458" width="9" height="12"/><rect x="552" y="457" width="9" height="13"/>
+      <rect x="588" y="460" width="9" height="10"/><rect x="606" y="461" width="9" height="9"/>
+      <rect x="624" y="462" width="9" height="8"/><rect x="642" y="462" width="9" height="8"/>
+      <rect x="660" y="461" width="9" height="9"/>
+    </g>
+    <g fill="var(--green)">
+      <rect x="690" y="398" width="9" height="72"/><rect x="708" y="392" width="9" height="78"/>
+      <rect x="730" y="406" width="9" height="64"/><rect x="760" y="418" width="9" height="52"/>
+      <rect x="800" y="402" width="9" height="68"/><rect x="840" y="410" width="9" height="60"/>
+    </g>
+    <path d="M256,414 L668,452" fill="none" stroke="var(--red)" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <text class="s-lab" x="440" y="408" fill="var(--red)">量能逐级枯竭:C4 那几天常低于 30 日均量</text>
+    <text class="s-lab" x="700" y="384" fill="var(--green)">突破日量能恢复</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>收缩要减到什么程度算合格、枢轴线画在哪根 K 的哪个价位、止损放哪、这样做出来的风险是几个点、量能该长什么样。图中数字是 Minervini 的示范值(20 → 12 → 6 → 2.5,大致每段砍半);讲者在另一个视频里用的是 16 → 8 → 4,道指 1904 年的历史案例是 8 → 5 → 1.5,1926 年是 12 → 5 → 2.5。<b>不必精确减半,但「一段比一段浅」是硬要求。</b></figcaption>
+  </figure>
+
+  <h3>VCP 的八条判定标准</h3>
+  <div class="tw"><table>
+    <thead><tr><th class="num">#</th><th>标准</th><th>为什么</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td>价格处于强上升趋势(满足趋势模板)</td><td>没有前期上涨,就没有可收缩的东西</td></tr>
+      <tr><td class="num">2</td><td>基座内<b>低点依次抬高</b></td><td>每次回调都有人更早接手 = 供给在减少</td></tr>
+      <tr><td class="num">3</td><td>收缩深度<b>逐次减小</b>,通常 <b>2–5 次</b>(极少超过 5 次)</td><td>拧毛巾。理想大致每次减半</td></tr>
+      <tr><td class="num">4</td><td>回调时的成交量 &lt; 反弹时的成交量</td><td>卖压在退场,买盘在进场</td></tr>
+      <tr><td class="num">5</td><td><b>最后一次收缩必须是个位数百分比</b></td><td>这是<b>控制风险</b>的硬条件,不是审美偏好</td></tr>
+      <tr><td class="num">6</td><td>突破前 K 线极窄(Minervini 叫 one-two punch,讲者叫 <b>trigger bar</b>)</td><td>供给彻底停止进场的那一刻</td></tr>
+      <tr><td class="num">7</td><td>突破时量能恢复</td><td>需求确认</td></tr>
+      <tr><td class="num">8</td><td>突破后 <b>tennis ball action</b> —— 高点低点双抬高</td><td>正常行为。不是这样就是异常</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>枢轴不在基座最高点 —— 这是最多人搞错的一条</h3>
+  <p>Minervini 的原话大意:枢轴买点<b>不是基座的最高点</b>,而是<b>供给停止进入市场的位置</b>。这就是 Livermore 说的「最小阻力线」。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="枢轴的三个可能位置:低作弊、作弊、把手">
+    <g stroke="var(--grid)" stroke-width="1">
+      <line x1="70" y1="70" x2="860" y2="70"/><line x1="70" y1="130" x2="860" y2="130"/><line x1="70" y1="190" x2="860" y2="190"/>
+    </g>
+    <line x1="70" y1="45" x2="70" y2="250" stroke="var(--bd)" stroke-width="1.5"/>
+    <line x1="70" y1="250" x2="860" y2="250" stroke="var(--bd)" stroke-width="1.5"/>
+    <!-- thirds shading -->
+    <rect x="200" y="60" width="500" height="43" fill="var(--green)" opacity="0.07"/>
+    <rect x="200" y="103" width="500" height="43" fill="var(--amber)" opacity="0.07"/>
+    <rect x="200" y="146" width="500" height="43" fill="var(--violet)" opacity="0.07"/>
+    <text class="s-num" x="712" y="86" fill="var(--green)">上 1/3</text>
+    <text class="s-num" x="712" y="129" fill="var(--amber)">中 1/3</text>
+    <text class="s-num" x="712" y="172" fill="var(--violet)">下 1/3</text>
+    <!-- cup shape -->
+    <path d="M80,190 L120,150 L160,105 L200,66
+             L230,86 L256,124 L280,158 L306,178 L336,186 L368,182 L396,168 L424,142 L452,112 L478,84 L500,68
+             L520,86 L540,96 L560,92 L580,88 L600,84 L620,82
+             L648,60 L690,44 L740,50 L800,30 L856,20"
+          fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- base high -->
+    <line x1="200" y1="66" x2="860" y2="66" stroke="var(--mut)" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.7"/>
+    <text class="s-note" x="864" y="63" fill="var(--mut)" text-anchor="end">基座高点 ← 大多数人以为的买点</text>
+    <!-- entries -->
+    <circle cx="336" cy="186" r="6" fill="var(--violet)"/>
+    <text class="s-lab" x="336" y="212" fill="var(--violet)" text-anchor="middle">Low cheat</text>
+    <text class="s-note" x="336" y="228" fill="var(--mut)" text-anchor="middle">杯底 · 下 1/3</text>
+    <circle cx="452" cy="112" r="6" fill="var(--amber)"/>
+    <text class="s-lab" x="452" y="212" fill="var(--amber)" text-anchor="middle">Cheat</text>
+    <text class="s-note" x="452" y="228" fill="var(--mut)" text-anchor="middle">中 1/3</text>
+    <circle cx="620" cy="82" r="6.5" fill="var(--green)"/>
+    <text class="s-lab" x="620" y="212" fill="var(--green)" text-anchor="middle">Handle(把手)</text>
+    <text class="s-note" x="620" y="228" fill="var(--mut)" text-anchor="middle">上 1/3 · 传统 O'Neil 买点</text>
+    <path d="M336,192 L336,204" stroke="var(--violet)" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <path d="M452,118 L452,204" stroke="var(--amber)" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <path d="M620,89 L620,204" stroke="var(--green)" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <!-- handle tightness zoom -->
+    <rect x="514" y="76" width="112" height="26" rx="4" fill="none" stroke="var(--green)" stroke-width="1.4" stroke-dasharray="3 3"/>
+    <text class="s-note" x="570" y="72" fill="var(--green)" text-anchor="middle">handle 里的紧凑区</text>
+    <!-- key text -->
+    <line x1="70" y1="272" x2="860" y2="272" stroke="var(--bd)" stroke-width="1"/>
+    <text class="s-lab2" x="70" y="296" fill="var(--ink)">为什么不在基座高点买:</text>
+    <text class="s-lab" x="70" y="318" fill="var(--mut)">① 那里放不下一个够紧的止损 —— 报酬风险比立刻失衡</text>
+    <text class="s-lab" x="70" y="338" fill="var(--mut)">② 那里正好是上方套牢盘回本解套的位置 —— 供给会涌出来</text>
+    <text class="s-lab" x="490" y="318" fill="var(--green)">紧凑区才是供给枯竭处 ——</text>
+    <text class="s-lab" x="490" y="338" fill="var(--green)">价格应该「快速穿过」这个位置</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>同一个形态为什么有三个不同的买点,以及为什么讲者说「这一点很多人要很久才能接受」。Minervini 的规则:low cheat 可以买在 50 日均线<b>下方</b>,只要距离不超过 <b>8%</b>。O'Neil 的说法是:handle 区域的价格高点决定大多数买点,而这<b>几乎总是略低于基座的实际高点</b>。</figcaption>
+  </figure>
+
+  <h3>Trigger bar:最后一块拼图</h3>
+  <p>讲者自己的术语(Minervini 叫 one-two punch)。这是他整个入场系统的锚点。</p>
+  <div class="grid3">
+    <div class="box g"><b>极窄幅</b>常常就是 inside bar(整根落在前一根的区间内)</div>
+    <div class="box g"><b>低相对量</b>低于 <b>30 根均量</b>,有时只有均量的 1/4</div>
+    <div class="box g"><b>坐在关键均线上</b>10 EMA 和/或 21 EMA;大基座时可以是 50 SMA</div>
+  </div>
+  <div class="warn"><b>重要提醒:trigger bar 是常见的,不是稀有的。</b>讲者的原话大意:你会到处看到 trigger bar,前一根、后一根往往也是。<b>筛选标准是「它是否在 10 EMA / 21 EMA 附近找到了支撑」</b>。看到 trigger bar 不代表股票一定会涨。</div>
+
+  <h3>多时间框架共振:日线紧,小时线也要紧</h3>
+  <p>这是讲者最实操的一层,大多数教材不讲。日线上看到 trigger bar 之后,<b>下钻到 1 小时图</b>再看一遍。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="日线 trigger bar 下钻到 1 小时图的共振">
+    <text class="s-lab2" x="60" y="28" fill="var(--ink)">日线:一根极窄的 trigger bar</text>
+    <g stroke="var(--grid)" stroke-width="1"><line x1="60" y1="60" x2="390" y2="60"/><line x1="60" y1="110" x2="390" y2="110"/><line x1="60" y1="160" x2="390" y2="160"/></g>
+    <line x1="60" y1="45" x2="60" y2="200" stroke="var(--bd)" stroke-width="1.4"/>
+    <line x1="60" y1="200" x2="390" y2="200" stroke="var(--bd)" stroke-width="1.4"/>
+    <path d="M70,176 L98,150 L126,120 L152,138 L178,116 L204,128 L230,118 L256,124 L282,120 L306,118 L330,116"
+          fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/>
+    <line x1="70" y1="132" x2="390" y2="132" stroke="var(--ink)" stroke-width="1.4" opacity="0.35"/>
+    <text class="s-note" x="386" y="129" fill="var(--mut)" text-anchor="end">10 EMA</text>
+    <rect x="318" y="108" width="26" height="18" rx="3" fill="var(--green)" opacity="0.22"/>
+    <rect x="318" y="108" width="26" height="18" rx="3" fill="none" stroke="var(--green)" stroke-width="2"/>
+    <text class="s-num" x="331" y="100" fill="var(--green)" text-anchor="middle">这一根</text>
+    <path d="M344,117 L410,117" stroke="var(--green)" stroke-width="2" stroke-dasharray="5 4"/>
+    <path d="M404,112 L416,117 L404,122 Z" fill="var(--green)"/>
+    <text class="s-note" x="60" y="222" fill="var(--mut)">量低于 30 日均量,坐在 10 EMA 上</text>
+
+    <text class="s-lab2" x="440" y="28" fill="var(--green)">1 小时图:同一天,7 根 K 线</text>
+    <g stroke="var(--grid)" stroke-width="1"><line x1="440" y1="60" x2="860" y2="60"/><line x1="440" y1="110" x2="860" y2="110"/><line x1="440" y1="160" x2="860" y2="160"/></g>
+    <line x1="440" y1="45" x2="440" y2="200" stroke="var(--bd)" stroke-width="1.4"/>
+    <line x1="440" y1="200" x2="860" y2="200" stroke="var(--bd)" stroke-width="1.4"/>
+    <!-- rectangle -->
+    <rect x="470" y="98" width="330" height="30" fill="var(--green)" opacity="0.1"/>
+    <rect x="470" y="98" width="330" height="30" fill="none" stroke="var(--green)" stroke-width="1.8" stroke-dasharray="4 3"/>
+    <!-- 3 MAs squeezed -->
+    <line x1="450" y1="112" x2="855" y2="111" stroke="var(--ink)" stroke-width="1.5" opacity="0.8"/>
+    <line x1="450" y1="115" x2="855" y2="114" stroke="var(--blue)" stroke-width="1.5" opacity="0.8"/>
+    <line x1="450" y1="118" x2="855" y2="117" stroke="var(--violet)" stroke-width="1.5" opacity="0.8"/>
+    <g stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round">
+      <line x1="494" y1="102" x2="494" y2="122"/><line x1="538" y1="104" x2="538" y2="120"/>
+      <line x1="582" y1="103" x2="582" y2="121"/><line x1="626" y1="105" x2="626" y2="119"/>
+      <line x1="670" y1="104" x2="670" y2="120"/><line x1="714" y1="106" x2="714" y2="118"/>
+      <line x1="758" y1="105" x2="758" y2="119"/>
+    </g>
+    <g stroke="var(--ink)" stroke-width="2.4">
+      <line x1="488" y1="108" x2="494" y2="108"/><line x1="494" y1="116" x2="500" y2="116"/>
+      <line x1="532" y1="110" x2="538" y2="110"/><line x1="538" y1="115" x2="544" y2="115"/>
+      <line x1="576" y1="109" x2="582" y2="109"/><line x1="582" y1="116" x2="588" y2="116"/>
+      <line x1="620" y1="110" x2="626" y2="110"/><line x1="626" y1="115" x2="632" y2="115"/>
+      <line x1="664" y1="109" x2="670" y2="109"/><line x1="670" y1="116" x2="676" y2="116"/>
+      <line x1="708" y1="111" x2="714" y2="111"/><line x1="714" y1="115" x2="720" y2="115"/>
+      <line x1="752" y1="110" x2="758" y2="110"/><line x1="758" y1="116" x2="764" y2="116"/>
+    </g>
+    <text class="s-note" x="864" y="108" fill="var(--ink)" text-anchor="end">10</text>
+    <text class="s-note" x="864" y="120" fill="var(--blue)" text-anchor="end">21</text>
+    <text class="s-note" x="864" y="132" fill="var(--violet)" text-anchor="end">50</text>
+    <text class="s-lab" x="635" y="88" fill="var(--green)" text-anchor="middle">价格走在一个矩形里(小 Darvas box)</text>
+    <text class="s-lab" x="635" y="150" fill="var(--violet)" text-anchor="middle">10 / 21 / 50 挤在一起,几乎塞不进一个回形针</text>
+    <!-- hourly volume -->
+    <line x1="440" y1="200" x2="860" y2="200" stroke="var(--bd)" stroke-width="1.4"/>
+    <line x1="440" y1="178" x2="860" y2="178" stroke="var(--red)" stroke-width="1.3" stroke-dasharray="4 3" opacity="0.8"/>
+    <text class="s-note" x="864" y="176" fill="var(--red)" text-anchor="end" opacity="0.8">30 根均量</text>
+    <g fill="var(--mut)" opacity="0.6">
+      <rect x="488" y="184" width="12" height="16"/><rect x="532" y="188" width="12" height="12"/>
+      <rect x="576" y="190" width="12" height="10"/><rect x="620" y="192" width="12" height="8"/>
+      <rect x="664" y="191" width="12" height="9"/><rect x="708" y="193" width="12" height="7"/>
+      <rect x="752" y="186" width="12" height="14"/>
+    </g>
+    <text class="s-note" x="440" y="222" fill="var(--mut)">全天 7 根都在均量之下 = 供给在小时级别也是枯的</text>
+
+    <line x1="60" y1="248" x2="860" y2="248" stroke="var(--bd)" stroke-width="1"/>
+    <text class="s-lab2" x="60" y="272" fill="var(--ink)">为什么要下钻</text>
+    <text class="s-lab" x="60" y="294" fill="var(--mut)">日线上的一根窄 K 有两种可能:① 真的没人交易 ② 盘中打得很凶,只是收盘回到原点</text>
+    <text class="s-lab" x="60" y="316" fill="var(--mut)">1 小时图能分辨这两者。<tspan fill="var(--green)" font-weight="700">7 根都窄、量都低 = 第一种,可以买。</tspan></text>
+    <text class="s-lab" x="60" y="338" fill="var(--amber)">额外线索:大资金最活跃在开盘第一小时和收盘最后一小时 —— 这两根的量最有信息量。</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>怎么确认日线上那根窄 K 是真的「没人在卖」,而不是盘中激烈拉锯的假象。一个交易日在 1 小时图上是 7 根 K 线(6.5 小时,TradingView 的算法;TC2000 的第一根是半小时)。</figcaption>
+  </figure>
+
+  <h3>基座里的两种常客:震仓 K 线</h3>
+  <p>这两根 K 线在所有教材里都被提到,但很少有人讲清楚<b>怎么用成交量判断它是好是坏</b>。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="震仓需求尾与低开反转 K 线的解剖">
+    <!-- left -->
+    <rect x="30" y="18" width="410" height="250" rx="11" fill="var(--sf)" opacity="0"/>
+    <text class="s-lab2" x="50" y="38" fill="var(--green)">① Shakeout demand tail(震仓需求尾)</text>
+    <g stroke="var(--grid)" stroke-width="1"><line x1="60" y1="70" x2="410" y2="70"/><line x1="60" y1="120" x2="410" y2="120"/><line x1="60" y1="170" x2="410" y2="170"/></g>
+    <line x1="60" y1="55" x2="60" y2="200" stroke="var(--bd)" stroke-width="1.4"/>
+    <line x1="60" y1="200" x2="410" y2="200" stroke="var(--bd)" stroke-width="1.4"/>
+    <!-- prior base lows line -->
+    <line x1="70" y1="152" x2="410" y2="152" stroke="var(--blue)" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text class="s-note" x="406" y="148" fill="var(--blue)" text-anchor="end">基座前低 / 21 EMA</text>
+    <g stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round">
+      <line x1="100" y1="104" x2="100" y2="132"/><line x1="140" y1="112" x2="140" y2="140"/>
+      <line x1="180" y1="118" x2="180" y2="146"/>
+      <line x1="230" y1="120" x2="230" y2="178"/>
+      <line x1="280" y1="110" x2="280" y2="138"/><line x1="320" y1="106" x2="320" y2="130"/>
+    </g>
+    <g stroke="var(--ink)" stroke-width="2.4">
+      <line x1="94" y1="126" x2="100" y2="126"/><line x1="100" y1="110" x2="106" y2="110"/>
+      <line x1="134" y1="134" x2="140" y2="134"/><line x1="140" y1="118" x2="146" y2="118"/>
+      <line x1="174" y1="140" x2="180" y2="140"/><line x1="180" y1="124" x2="186" y2="124"/>
+      <line x1="224" y1="140" x2="230" y2="140"/><line x1="230" y1="126" x2="236" y2="126"/>
+      <line x1="274" y1="134" x2="280" y2="134"/><line x1="280" y1="115" x2="286" y2="115"/>
+      <line x1="314" y1="126" x2="320" y2="126"/><line x1="320" y1="110" x2="326" y2="110"/>
+    </g>
+    <!-- highlight the tail -->
+    <rect x="220" y="150" width="20" height="30" rx="3" fill="var(--green)" opacity="0.2"/>
+    <path d="M240,168 L286,168" stroke="var(--green)" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text class="s-note" x="290" y="165" fill="var(--green)">跌破前低,收盘拉回</text>
+    <!-- volume -->
+    <line x1="60" y1="252" x2="410" y2="252" stroke="var(--bd)" stroke-width="1.3"/>
+    <line x1="60" y1="228" x2="410" y2="228" stroke="var(--red)" stroke-width="1.3" stroke-dasharray="4 3" opacity="0.8"/>
+    <text class="s-note" x="406" y="226" fill="var(--red)" text-anchor="end" opacity="0.8">30 日均量</text>
+    <g fill="var(--mut)" opacity="0.55">
+      <rect x="95" y="238" width="10" height="14"/><rect x="135" y="240" width="10" height="12"/>
+      <rect x="175" y="242" width="10" height="10"/>
+      <rect x="275" y="238" width="10" height="14"/><rect x="315" y="236" width="10" height="16"/>
+    </g>
+    <rect x="225" y="240" width="10" height="12" fill="var(--green)"/>
+    <text class="s-lab" x="235" y="278" fill="var(--green)" text-anchor="middle">关键:这一天的量只有均量的一半</text>
+    <text class="s-note" x="235" y="296" fill="var(--mut)" text-anchor="middle">→ 跌破前低却没人真的在卖 → 那里根本没多少弱手</text>
+
+    <line x1="450" y1="18" x2="450" y2="300" stroke="var(--bd)" stroke-width="1" stroke-dasharray="4 5"/>
+
+    <!-- right -->
+    <text class="s-lab2" x="474" y="38" fill="var(--blue)">② Gap down reversal bar(低开反转)</text>
+    <g stroke="var(--grid)" stroke-width="1"><line x1="490" y1="70" x2="860" y2="70"/><line x1="490" y1="120" x2="860" y2="120"/><line x1="490" y1="170" x2="860" y2="170"/></g>
+    <line x1="490" y1="55" x2="490" y2="200" stroke="var(--bd)" stroke-width="1.4"/>
+    <line x1="490" y1="200" x2="860" y2="200" stroke="var(--bd)" stroke-width="1.4"/>
+    <line x1="500" y1="118" x2="860" y2="118" stroke="var(--blue)" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text class="s-note" x="856" y="114" fill="var(--blue)" text-anchor="end">21 EMA</text>
+    <g stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round">
+      <line x1="530" y1="94" x2="530" y2="116"/><line x1="570" y1="98" x2="570" y2="120"/>
+    </g>
+    <g stroke="var(--ink)" stroke-width="2.4">
+      <line x1="524" y1="112" x2="530" y2="112"/><line x1="530" y1="98" x2="536" y2="98"/>
+      <line x1="564" y1="102" x2="570" y2="102"/><line x1="570" y1="116" x2="576" y2="116"/>
+    </g>
+    <!-- gap -->
+    <path d="M578,116 L616,116" stroke="var(--amber)" stroke-width="1.4" stroke-dasharray="3 3"/>
+    <path d="M578,138 L616,138" stroke="var(--amber)" stroke-width="1.4" stroke-dasharray="3 3"/>
+    <path d="M597,118 L597,136 M592,124 L597,117 L602,124 M592,130 L597,137 L602,130" stroke="var(--amber)" stroke-width="1.4" fill="none"/>
+    <text class="s-num" x="597" y="156" fill="var(--amber)" text-anchor="middle">缺口</text>
+    <!-- the bar -->
+    <line x1="640" y1="100" x2="640" y2="140" stroke="var(--blue)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="632" y1="138" x2="640" y2="138" stroke="var(--blue)" stroke-width="3"/>
+    <line x1="640" y1="102" x2="648" y2="102" stroke="var(--blue)" stroke-width="3"/>
+    <text class="s-note" x="668" y="140" fill="var(--red)">开盘 = 全天最低</text>
+    <text class="s-note" x="668" y="104" fill="var(--green)">收盘 = 全天最高</text>
+    <g stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round">
+      <line x1="700" y1="94" x2="700" y2="116"/><line x1="740" y1="90" x2="740" y2="112"/><line x1="780" y1="86" x2="780" y2="106"/>
+    </g>
+    <g stroke="var(--ink)" stroke-width="2.4">
+      <line x1="694" y1="110" x2="700" y2="110"/><line x1="700" y1="98" x2="706" y2="98"/>
+      <line x1="734" y1="106" x2="740" y2="106"/><line x1="740" y1="94" x2="746" y2="94"/>
+      <line x1="774" y1="100" x2="780" y2="100"/><line x1="780" y1="90" x2="786" y2="90"/>
+    </g>
+    <line x1="490" y1="252" x2="860" y2="252" stroke="var(--bd)" stroke-width="1.3"/>
+    <line x1="490" y1="228" x2="860" y2="228" stroke="var(--red)" stroke-width="1.3" stroke-dasharray="4 3" opacity="0.8"/>
+    <g fill="var(--mut)" opacity="0.55">
+      <rect x="525" y="238" width="10" height="14"/><rect x="565" y="240" width="10" height="12"/>
+      <rect x="695" y="236" width="10" height="16"/><rect x="735" y="234" width="10" height="18"/><rect x="775" y="232" width="10" height="20"/>
+    </g>
+    <rect x="635" y="238" width="10" height="14" fill="var(--blue)"/>
+    <text class="s-lab" x="672" y="278" fill="var(--blue)" text-anchor="middle">量甚至没超过均量 → 没有真实卖压</text>
+    <text class="s-note" x="672" y="296" fill="var(--mut)" text-anchor="middle">= 日本烛形的 belt hold,反转评级很高</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>为什么「跌破基座低点」有时是灾难、有时是最好的买点前兆 —— <b>区别全在成交量</b>。<br><b>低开反转 K 线还有一层心理学:</b>这根 K 在开盘那一刻看起来糟透了,盘前一片绿,弱手恐慌抛售;但到收盘完全变了样。讲者管这叫「贝叶斯心态」—— 随新信息更新判断,不要在开盘 5 分钟就下结论。</figcaption>
+  </figure>
+
+  <div class="rule">领导股试图在尽可能少的人上车的情况下往上走。这两根 K 线就是它的手段。</div>
+</section>
+
+<section class="card">
+  <span class="sec-no">03b</span>
+  <h2>形态词典:五个形态的量化定义</h2>
+  <p>不要背名字。这五个形态的<b>底层现象是同一个</b> —— 先涨、再收缩、供给枯竭、突破。区别只在于:收缩多深、持续多久、枢轴画在哪。讲者的原话大意:不要纠结这是杯柄还是旗形还是楔形还是箱体,重要的是供需在发生什么,以及这是不是一个报酬风险有利的交易。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>形态</th><th>前期涨幅</th><th>基座时长</th><th>允许回调</th><th>买点</th><th>出处</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>VCP</b><br><span class="m">波动收缩</span></td>
+        <td>需有明显上涨</td><td>2–5 次收缩</td>
+        <td>逐次减半,<b>最后一次必须个位数%</b></td>
+        <td>最后一次收缩的上沿 / trigger bar 高点</td><td>Minervini</td>
+      </tr>
+      <tr>
+        <td><b>Cup with Handle</b><br><span class="m">杯柄</span></td>
+        <td><b>+30%</b></td><td><b>7–65 周</b><br>多数 3–6 个月</td>
+        <td>峰谷 <b>12%–33%</b>;杯底要 <b>U 形不要 V 形</b></td>
+        <td><b>handle 的高点</b>,几乎总是略低于基座实际高点</td><td>O'Neil</td>
+      </tr>
+      <tr>
+        <td><b>Flat Base</b><br><span class="m">= Darvas box</span></td>
+        <td>已从前一个基座涨 <b>20%+</b></td><td><b>至少 5–6 周</b></td>
+        <td><b>不超过 10–15%</b></td>
+        <td>箱顶突破</td><td>O'Neil / Darvas</td>
+      </tr>
+      <tr>
+        <td><b>High Tight Flag</b><br><span class="m">= Power Play</span></td>
+        <td><b>4–8 周内涨 100–120%</b></td><td><b>3–5 周</b></td>
+        <td><b>只允许 10–25%</b></td>
+        <td>紧凑区上沿,常在 <b>10 / 21 EMA</b> 附近</td><td>O'Neil / Minervini</td>
+      </tr>
+      <tr>
+        <td><b>Qullamaggie 延续突破</b></td>
+        <td><b>过去 1–3 个月涨 30–100%+</b></td><td><b>2 周–2 个月</b><br>(有时 8–10 周)</td>
+        <td>低点抬高,区间从左到右收窄</td>
+        <td>整理区高点 / 开盘区间高点</td><td>Qullamaggie</td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <div class="note"><b>Flag 和 Pennant 的区别(很多人搞混):</b><br><b>Flag(旗形)</b>= 一系列<b>更低高点 + 更低低点</b>,两条趋势线平行向下<br><b>Pennant(三角旗)</b>= 一系列<b>更低高点 + 更高低点</b>,收敛成三角<br>Pennant 像对称三角形,但持续时间更短。<span class="m">出处:Zanger 八形态</span></div>
+
+  <h3>Darvas 箱体:规则最简单的一个</h3>
+  <p>值得单独讲,因为它的规则可以完全机械化 —— 你不需要任何主观判断就能画出来。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Darvas 箱体的画法与第二次突破规则">
+    <g stroke="var(--grid)" stroke-width="1">
+      <line x1="60" y1="70" x2="860" y2="70"/><line x1="60" y1="130" x2="860" y2="130"/>
+      <line x1="60" y1="190" x2="860" y2="190"/><line x1="60" y1="250" x2="860" y2="250"/>
+    </g>
+    <line x1="60" y1="45" x2="60" y2="300" stroke="var(--bd)" stroke-width="1.5"/>
+    <line x1="60" y1="300" x2="860" y2="300" stroke="var(--bd)" stroke-width="1.5"/>
+    <!-- box -->
+    <rect x="200" y="110" width="340" height="76" fill="var(--blue)" opacity="0.08"/>
+    <line x1="200" y1="110" x2="700" y2="110" stroke="var(--blue)" stroke-width="2.2"/>
+    <line x1="200" y1="186" x2="700" y2="186" stroke="var(--blue)" stroke-width="2.2"/>
+    <text class="s-num" x="704" y="107" fill="var(--blue)">箱顶</text>
+    <text class="s-num" x="704" y="190" fill="var(--blue)">箱底</text>
+    <!-- danger zone -->
+    <rect x="200" y="186" width="500" height="20" fill="var(--red)" opacity="0.14"/>
+    <line x1="200" y1="206" x2="700" y2="206" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="5 4"/>
+    <text class="s-num" x="704" y="203" fill="var(--red)">危险区 = 箱底 −5%</text>
+    <!-- price -->
+    <path d="M70,280 L100,258 L130,232 L158,206 L182,166 L200,112
+             L222,142 L244,168 L262,182 L284,158 L306,126 L326,116 L348,146 L370,178 L392,182 L414,150 L436,122 L458,114
+             L478,140 L500,166 L520,178 L540,152 L562,124 L580,112
+             L600,104 L616,124 L634,150 L652,138 L668,120 L684,110
+             L700,96 L724,72 L752,80 L784,54 L820,38 L856,28"
+          fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- first penetration -->
+    <circle cx="600" cy="104" r="6" fill="var(--amber)"/>
+    <text class="s-lab" x="600" y="84" fill="var(--amber)" text-anchor="middle">第一次突破</text>
+    <text class="s-note" x="600" y="68" fill="var(--red)" text-anchor="middle">Darvas 后期:不买</text>
+    <path d="M600,110 L600,126" stroke="var(--amber)" stroke-width="1.2" stroke-dasharray="2 2"/>
+    <line x1="600" y1="104" x2="700" y2="104" stroke="var(--amber)" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <!-- second penetration -->
+    <circle cx="706" cy="92" r="7" fill="var(--green)"/>
+    <text class="s-lab2" x="740" y="62" fill="var(--green)">第二次突破 = 买点</text>
+    <text class="s-note" x="740" y="78" fill="var(--mut)">涨过第一次突破的高点</text>
+    <path d="M706,86 L730,66" stroke="var(--green)" stroke-width="1.5"/>
+    <!-- 3-day marks -->
+    <path d="M200,116 L200,100 M226,116 L226,100 M252,116 L252,100" stroke="var(--violet)" stroke-width="1.6"/>
+    <text class="s-num" x="226" y="94" fill="var(--violet)" text-anchor="middle">连续 3 天没突破 → 箱顶成立</text>
+    <path d="M348,180 L348,196 M374,180 L374,196 M400,180 L400,196" stroke="var(--violet)" stroke-width="1.6"/>
+    <text class="s-num" x="374" y="226" fill="var(--violet)" text-anchor="middle">连续 3 天没跌破 → 箱底成立</text>
+
+    <line x1="60" y1="326" x2="860" y2="326" stroke="var(--bd)" stroke-width="1"/>
+    <text class="s-lab2" x="60" y="350" fill="var(--ink)">Darvas 为什么改成等第二次突破(第二本书里才写的)</text>
+    <text class="s-lab" x="60" y="372" fill="var(--mut)">他的原话大意:市场变了。第一次突破常常立刻遭遇大量抛压,把股价打回箱内。</text>
+    <text class="s-lab" x="60" y="392" fill="var(--mut)">「专业交易员和场内交易员现在知道突破是给图表派的入场信号,他们借机出货赚一两点。」</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>箱顶箱底具体怎么画(不是凭感觉画,是数天数)、止损放哪、以及为什么 Darvas 后来放弃了第一次突破。<b>还有一条硬规则:如果第一次突破后价格不回落、继续涨 —— 放弃这只股票。「我从不追涨。」</b></figcaption>
+  </figure>
+
+  <div class="grid2">
+    <div class="box b"><b>箱体的画法</b>快速上涨的领导股到达一个阻力点,连续 <b>3 天或更多</b>未能超越 → 箱顶。从上沿回落后到达一个支撑点,连续 <b>3 天或更多</b>未被跌破 → 箱底。</div>
+    <div class="box r"><b>止损与卖出</b>危险区 = 箱底下方 <b>5%</b>。第一次突破时设 <b>10% 止损</b>。形成新的更高箱后,跌入该箱的危险区就卖出。<b>绝不让股票从绝对高点回撤超过 20%。</b></div>
+    <div class="box g"><b>持有规则</b>股票在它最高的那个箱子里时,箱内波动<b>全部忽略</b>。「没有理由持有或买入一只不在它最高箱子里的股票。」</div>
+    <div class="box v"><b>金字塔加仓</b>后续新箱形成时加仓,每次把止损提到新箱底下方的危险区。<b>这就是 Darvas 如何做到只持有约 4 只股票而不是 20 只。</b></div>
+  </div>
+
+  <div class="warn"><b>讲者给箱体加的一条补充(很实用):</b>看突破位<b>下方</b>的价格行为。如果价格在突破位正下方紧凑整理且量缩 → 好的突破。如果价格是从箱底一路冲到箱顶就突破 → 会撞上套牢盘和上方供给 → 差。<b>这等于把 VCP / trigger bar 的逻辑嫁接到箱体上。</b></div>
+
+  <h3>High Tight Flag:最强也最危险的形态</h3>
+  <p>O'Neil 的原话大意:这是最强的形态,但也<b>非常危险且难以正确解读</b>,牛市中只出现在极少数股票上。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="高位紧旗形的量化定义">
+    <g stroke="var(--grid)" stroke-width="1">
+      <line x1="70" y1="60" x2="860" y2="60"/><line x1="70" y1="120" x2="860" y2="120"/>
+      <line x1="70" y1="180" x2="860" y2="180"/><line x1="70" y1="240" x2="860" y2="240"/>
+    </g>
+    <line x1="70" y1="40" x2="70" y2="280" stroke="var(--bd)" stroke-width="1.5"/>
+    <line x1="70" y1="280" x2="860" y2="280" stroke="var(--bd)" stroke-width="1.5"/>
+    <!-- the run -->
+    <path d="M80,268 L110,254 L140,236 L168,242 L196,208 L222,180 L248,186 L274,146 L300,118 L326,124 L352,92 L378,70 L400,58"
+          fill="none" stroke="var(--ink)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- flag -->
+    <rect x="400" y="58" width="230" height="52" fill="var(--violet)" opacity="0.08"/>
+    <path d="M400,58 L418,84 L436,96 L456,80 L474,98 L492,88 L512,102 L532,90 L552,100 L572,92 L592,98 L612,90 L630,94"
+          fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/>
+    <line x1="400" y1="58" x2="640" y2="58" stroke="var(--green)" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="400" y1="110" x2="640" y2="110" stroke="var(--red)" stroke-width="1.6" stroke-dasharray="4 4"/>
+    <!-- 10 EMA -->
+    <path d="M400,74 L440,88 L480,94 L520,96 L560,97 L600,96 L640,94" fill="none" stroke="var(--ink)" stroke-width="1.5" opacity="0.4"/>
+    <text class="s-note" x="646" y="92" fill="var(--mut)">10 / 21 EMA</text>
+    <!-- breakout -->
+    <path d="M630,94 L652,56 L680,40 L714,48 L750,26 L790,34 L830,16 L856,10"
+          fill="none" stroke="var(--green)" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- annotations -->
+    <g stroke="var(--green)" stroke-width="1.5" fill="none">
+      <path d="M88,268 L78,268 M88,58 L78,58 M83,268 L83,58"/>
+    </g>
+    <text class="s-num" x="96" y="182" fill="var(--green)">+100~120%</text>
+    <text class="s-note" x="96" y="198" fill="var(--mut)">在 4–8 周内</text>
+    <g stroke="var(--red)" stroke-width="1.5" fill="none">
+      <path d="M400,58 L390,58 M400,110 L390,110 M395,58 L395,110"/>
+    </g>
+    <text class="s-num" x="386" y="80" fill="var(--red)" text-anchor="end">回调只允许</text>
+    <text class="s-num" x="386" y="96" fill="var(--red)" text-anchor="end">10–25%</text>
+    <line x1="400" y1="124" x2="630" y2="124" stroke="var(--violet)" stroke-width="1.6"/>
+    <text class="s-num" x="515" y="142" fill="var(--violet)" text-anchor="middle">3–5 周</text>
+    <text class="s-note" x="515" y="158" fill="var(--mut)" text-anchor="middle">整个横盘期紧贴 10 EMA / 21 EMA</text>
+    <text class="s-lab" x="240" y="42" fill="var(--green)" text-anchor="middle">① 短时间内翻倍</text>
+    <text class="s-lab" x="515" y="46" fill="var(--violet)" text-anchor="middle">② 几乎不回调的横盘</text>
+    <text class="s-lab" x="770" y="66" fill="var(--green)" text-anchor="middle">③ 再次启动</text>
+
+    <line x1="70" y1="300" x2="860" y2="300" stroke="var(--bd)" stroke-width="1"/>
+    <text class="s-lab" x="70" y="322" fill="var(--mut)">实例:PRTS 涨 392% 后只回调 26%;另一只涨 130% 后只回调 13%。讲者提醒 —— 用常识,不要死守 20–25% 这个数字。</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>怎么区分「高位紧旗形」和「一只已经涨疯了该跑的股票」。判别式很简单:<b>涨得越多、回调越浅,越强</b>。涨 392% 只回调 26%,说明拿着的人一股都不肯卖。Minervini 的补充:High Tight Flag 要看 <b>21 EMA</b>,不要看 50 日线(太滞后);最终的紧凑收缩常在 21 EMA 附近形成。</figcaption>
+  </figure>
+
+  <h3>形态质量分级:Qullamaggie 自己怎么打分</h3>
+  <p>他用五星制,但对最好的会打到六星、七星。讲者把他公开点评过的案例整理如下:</p>
+  <div class="tw"><table>
+    <thead><tr><th>评级</th><th>案例</th><th>为什么</th></tr></thead>
+    <tbody>
+      <tr><td><span class="tag g">七星</span></td><td>PRTS</td><td>大涨全程<b>一次都没收盘跌破 10 EMA</b>,然后横盘收得极紧</td></tr>
+      <tr><td><span class="tag g">六星</span></td><td>AMD、Kodak、NVAX</td><td>完美弹在 20 日线上,基座里出现低开反转 K,然后收到极紧</td></tr>
+      <tr><td><span class="tag b">五星半</span></td><td>APPS</td><td>大涨 → 沿 20 日线横盘 → 低点抬高 → 窄区间 → 放量突破</td></tr>
+      <tr><td><span class="tag b">五星</span></td><td>Celsius、Etsy、Fiverr</td><td>标准的高位紧旗形</td></tr>
+      <tr><td><span class="tag a">降级</span></td><td>—</td><td><b>突破前一根 K「松散」</b>就要降级。Qullamaggie 明确点评过:「这是个很好的 setup,但不是五星,因为前一天的 K 线有点松。」</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><b>形态质量的价值有多大?</b>讲者做过两个研究。样本包含「好/很好/完美」三档质量的 500 笔,平均涨到跌破 21 EMA 是 <b>42%</b>;而只取「完美五星」的 60 笔,同一规则下平均涨幅是 <b>148%</b>。<b>从「好」提升到「完美」,结果差了一个数量级。</b>详细数据见 <a href="#s7">第七章</a>。</div>
+
+  <h3>基座之前的走势:被严重低估的一个筛选条件</h3>
+  <p>讲者在四个不同视频里都强调了同一件事,而且他说这是他自己的经验、不在任何书里:</p>
+  <div class="rule">看基座之前的那段上涨。如果它平滑、一直待在关键均线上方,就可以做。如果它在均线上下乱窜,跳过。</div>
+  <p>理由很实际:<b>你要用均线做移动止损</b>。一只从来不尊重 10 EMA 的股票,你用 10 EMA 跟踪它会被反复扫出去,交易管理会是噩梦。</p>
+  <p>他和 Livermore 都用了同一个说法:<b>股票像人一样有性格</b>。Livermore 的原话大意是:每只股票都有独特的个性 —— 激进、内敛、亢奋、神经质、易变、无聊、可预测、不可预测;他常常像研究人一样研究股票,过一段时间它们对特定情况的反应就变得更可预测。</p>
+  <div class="warn"><b>V 形警告:</b>如果一只股票从底部急速 V 形拉回,说明它<b>没有经过正常的筑底过程</b>。上方的套牢盘一回本就会抛售 —— 供给还在那里,只是还没出来。要等它真正走完收缩过程。</div>
+</section>
+
+<section class="card" id="s4">
+  <span class="sec-no">04</span>
+  <h2>第四层 · 入场:三种下单方式,选一种</h2>
+  <p>形态对了之后,你还有一个选择要做:<b>怎么进场</b>。这三种方式对盯盘强度的要求差别巨大,而对你的止损宽度影响也巨大。</p>
+
+  <div class="grid3">
+    <div class="box g"><b>A · Buy stop limit(挂单)</b>前一晚挂好,不需要盯盘。讲者本人用这个。</div>
+    <div class="box b"><b>B · 开盘区间高点(ORH)</b>需要盯开盘,反应要快。Qullamaggie 用这个。</div>
+    <div class="box a"><b>C · 收盘确认</b>等日线收盘确认突破,次日进。最慢也最保守,滑点最大。</div>
+  </div>
+
+  <h3>A · Buy stop limit:讲者本人的做法</h3>
+  <p>逻辑很简单:<b>提前定义你愿意付的最高价</b>,这样在下单那一刻你的最大风险就是确定的。</p>
+  <div class="tw"><table>
+    <thead><tr><th>参数</th><th>怎么定</th></tr></thead>
+    <tbody>
+      <tr><td><b>Buy stop(触发价)</b></td><td>trigger bar 的<b>高点</b></td></tr>
+      <tr><td><b>Limit(限价)</b></td><td>trigger bar 高点上方 <b>0.5% 到 1%</b>。「我尽量在高点的 0.5% 以内成交。」</td></tr>
+      <tr><td><b>初始止损</b></td><td>trigger bar 低点下方 <b>1 美分</b>。可以再往下挪几美分躲开整数关口(如放 31.97 而不是 32.00)</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid2">
+    <div class="box g"><b>好处</b>前一晚就能规划好,不用盯屏幕。券商不会以高于 limit 的价格成交,最大风险确定。</div>
+    <div class="box a"><b>坏处</b>可能跳空越过 limit 完全不成交,或快速穿越只成交部分。<b>「这就是交易,它不完美。永远会有下一班车。」</b></div>
+  </div>
+
+  <h3>B · 开盘区间高点(ORH):时间框架的取舍</h3>
+  <p>Qullamaggie 的方法:等第一根 <b>1 / 5 / 60 分钟</b> K 线走完,在它的高点上方买入,<b>止损放当日最低点</b>。</p>
+  <p>但这里有个数学上的陷阱:<b>时间框架越长,你的入场价越高,而止损位置不变</b> —— 所以止损百分比越来越宽。你是在为「确认」付溢价。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="1分钟、5分钟、60分钟开盘区间入场的风险对比">
+    <g stroke="var(--grid)" stroke-width="1">
+      <line x1="70" y1="60" x2="620" y2="60"/><line x1="70" y1="110" x2="620" y2="110"/>
+      <line x1="70" y1="160" x2="620" y2="160"/><line x1="70" y1="210" x2="620" y2="210"/>
+    </g>
+    <line x1="70" y1="45" x2="70" y2="250" stroke="var(--bd)" stroke-width="1.5"/>
+    <line x1="70" y1="250" x2="620" y2="250" stroke="var(--bd)" stroke-width="1.5"/>
+    <!-- pivot line -->
+    <line x1="80" y1="196" x2="620" y2="196" stroke="var(--violet)" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <text class="s-num" x="624" y="193" fill="var(--violet)">pivot(前一日 trigger bar 高点)</text>
+    <!-- stop line -->
+    <line x1="110" y1="222" x2="620" y2="222" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="4 4"/>
+    <text class="s-num" x="624" y="219" fill="var(--red)">止损 = 当日最低点(三种方式都一样)</text>
+    <!-- price path -->
+    <path d="M84,232 L100,214 L118,206 L134,186 L152,178 L170,164 L190,152 L212,142 L236,128 L262,116 L292,104 L326,92 L364,80 L410,70 L470,58 L540,48 L612,38"
+          fill="none" stroke="var(--ink)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- entries -->
+    <circle cx="134" cy="186" r="6" fill="var(--green)"/>
+    <text class="s-num" x="134" y="176" fill="var(--green)" text-anchor="middle">1 分钟</text>
+    <circle cx="190" cy="152" r="6" fill="var(--blue)"/>
+    <text class="s-num" x="190" y="142" fill="var(--blue)" text-anchor="middle">5 分钟</text>
+    <circle cx="292" cy="104" r="6.5" fill="var(--red)"/>
+    <text class="s-num" x="292" y="94" fill="var(--red)" text-anchor="middle">60 分钟</text>
+    <!-- risk brackets -->
+    <g stroke="var(--green)" stroke-width="1.5" fill="none"><path d="M146,186 L156,186 M146,222 L156,222 M151,186 L151,222"/></g>
+    <g stroke="var(--blue)" stroke-width="1.5" fill="none"><path d="M202,152 L212,152 M202,222 L212,222 M207,152 L207,222"/></g>
+    <g stroke="var(--red)" stroke-width="1.5" fill="none"><path d="M304,104 L314,104 M304,222 L314,222 M309,104 L309,222"/></g>
+
+    <!-- table -->
+    <line x1="660" y1="40" x2="660" y2="360" stroke="var(--bd)" stroke-width="1" stroke-dasharray="4 5"/>
+    <text class="s-lab2" x="678" y="60" fill="var(--ink)">实例:ONON</text>
+    <text class="s-note" x="678" y="78" fill="var(--mut)">ADR = 4.75%</text>
+    <g class="s-num" font-size="12">
+      <text x="678" y="108" fill="var(--green)">1 分钟</text>
+      <text x="678" y="126" fill="var(--ink)">入 30.56 / 止 29.98</text>
+      <text x="678" y="144" fill="var(--green)">风险 1.89% ≈ ADR 40% ✓</text>
+      <text x="678" y="180" fill="var(--blue)">5 分钟</text>
+      <text x="678" y="198" fill="var(--ink)">入 30.87 / 止 29.98</text>
+      <text x="678" y="216" fill="var(--blue)">风险 2.88% ≈ ADR 60% ✓</text>
+      <text x="678" y="252" fill="var(--red)">60 分钟</text>
+      <text x="678" y="270" fill="var(--ink)">入 32.18 / 止 29.98</text>
+      <text x="678" y="288" fill="var(--red)">风险 6.86% &gt; ADR ✗</text>
+    </g>
+    <line x1="670" y1="308" x2="880" y2="308" stroke="var(--bd)" stroke-width="1"/>
+    <text class="s-note" x="678" y="328" fill="var(--mut)">同一个形态、同一个止损位,</text>
+    <text class="s-note" x="678" y="344" fill="var(--ink)">只因为你多等了 59 分钟,</text>
+    <text class="s-note" x="678" y="360" fill="var(--red)">风险从 1.9% 变成 6.9%。</text>
+
+    <text class="s-lab2" x="345" y="290" fill="var(--ink)" text-anchor="middle">越晚进场 = 越高的价格 = 越宽的止损</text>
+    <text class="s-lab" x="345" y="312" fill="var(--mut)" text-anchor="middle">最强的突破会直接冲出去,所以 1 分钟和 5 分钟更有效;</text>
+    <text class="s-lab" x="345" y="332" fill="var(--mut)" text-anchor="middle">15 分钟和 1 小时对爆发式突破来说,风险常常已经不合理。</text>
+    <text class="s-note" x="345" y="358" fill="var(--mut)" text-anchor="middle">注:TradingView 的 1 小时首根是完整 1 小时;TC2000 的第一根是半小时(交易时段 6.5 小时)。</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>为什么「等确认」这个听起来很稳健的做法,在数学上可能让一笔交易不值得做。同样的规律在多个案例上重复:Oracle(ADR 1.33%)1 分钟风险 0.52% ✓、5 分钟 0.94% ✓、60 分钟 1.87% ✗;Shopify(ADR 4.29%)1 分钟 3.68% ✓、5 分钟 3.79% ✓、60 分钟 9.16% ✗;SMCI(ADR 5.77%)1 分钟 3.3% ✓、5 分钟 3.74% ✓、60 分钟 11.31% ✗。<b>60 分钟那一档几乎总是约 2 倍 ADR,出框。</b></figcaption>
+  </figure>
+
+  <div class="rule">如果股票当天已经涨得超过它的 ATR,通常就不要买了。最好在它只涨了 1/3、1/2 或 2/3 个 ATR 的时候进场。接近完整 ATR 的时候,你总是在追高。</div>
+
+  <h3>入场晚了多少算太晚</h3>
+  <div class="tw"><table>
+    <thead><tr><th>规则</th><th>说的人</th></tr></thead>
+    <tbody>
+      <tr><td>「如果你在<b>初始 pivotal point 上方 5% 或 10% 以上</b>买入,你可能已经晚了,可能已经失去优势,因为行情已经走了很远。」</td><td>Livermore</td></tr>
+      <tr><td>「如果你在<b>精确买点上方超过 5% 到 10%</b> 买入,你就买晚了,很可能被下一次价格调整套住。你的自动 8% 止损规则会强迫你卖出,因为股票已经延伸,<b>你没有足够空间承受一次完全正常的、剧烈但轻微的调整</b>。」</td><td>O'Neil</td></tr>
+      <tr><td>价格远离 10 EMA(「对 10 日线有空气」)→ 不买</td><td>讲者 / Oliver Kell</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>三个不同流派对「买点在哪」的答案</h3>
+  <div class="grid3">
+    <div class="box g"><b>Livermore</b>均衡区(供给枯竭处)。<b>不一定是基座高点</b> —— 他举的例子里基座高点 $100,但 pivot 在 $90–92。「价格应该快速穿过这个位置。」</div>
+    <div class="box b"><b>O'Neil / Minervini</b>handle 或 cheat 的高点,<b>几乎总是略低于基座实际高点</b>。可以从形态绝对高点画一条下降趋势线取得先发优势(至少 3 个触点)。</div>
+    <div class="box v"><b>Qullamaggie</b>整理区高点,或开盘区间高点。他不分批建仓 —— <b>一次买完</b>,但必须分批卖出。</div>
+  </div>
+
+  <div class="note"><b>三个人其实说的是同一件事:</b>买在供给最少的地方,不是买在最显眼的地方。Charles Harris 说得最直白:「<b>每个人都把提醒设在图表上几乎相同的位置。对我来说这是显而易见的买入位置,而显而易见的东西在市场上往往不太管用。</b>过去五六年我看到越来越多的突破失败、震仓和假突破。」</div>
+
+  <h3>Livermore 关于「等」的两句话</h3>
+  <div class="rule">预判市场是赌博。有耐心、只在市场给出信号时才反应,才是投机。</div>
+  <p>以及那句最容易被误读的:「我说重要的是<b>坐着</b>而不是等待时,我指的不是买入之后,而是<b>买入之前</b>。」</p>
+</section>
+
+<section class="card" id="s5">
+  <span class="sec-no">05</span>
+  <h2>第五层 · 风险:这一章比前四章加起来重要</h2>
+  <p>如果你只从这份文档里学一件事,学这一章。前面四章决定你能不能赚钱,这一章决定你<b>还在不在场上</b>。</p>
+
+  <div class="rule">不亏大钱是赢大钱最重要的单一因素。不是识别完美的 VCP,不是找到最强的股票 —— 是不亏大钱。<span class="m" style="font-weight:400;font-size:13px">—— Minervini</span></div>
+
+  <h3>止损放哪里:一个大多数人从没想过的问题</h3>
+  <p>Minervini 在视频里出了两道题,答案会颠覆很多人的直觉。前提相同:枢轴 = $100,基座里有三个收缩低点,分别在 90(−10%)、95(−5%)、97(−3%)。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="止损位置由你实际达成的平均盈利决定">
+    <g stroke="var(--grid)" stroke-width="1">
+      <line x1="70" y1="70" x2="430" y2="70"/><line x1="70" y1="120" x2="430" y2="120"/><line x1="70" y1="170" x2="430" y2="170"/><line x1="70" y1="220" x2="430" y2="220"/>
+    </g>
+    <line x1="70" y1="50" x2="70" y2="260" stroke="var(--bd)" stroke-width="1.5"/>
+    <line x1="70" y1="260" x2="430" y2="260" stroke="var(--bd)" stroke-width="1.5"/>
+    <path d="M80,250 L104,224 L126,192 L146,164 L166,138 L186,70
+             L206,110 L226,170 L242,200 L262,150 L282,88 L296,72
+             L312,104 L328,138 L344,132 L360,104 L374,80
+             L388,90 L400,96 L412,88 L424,74"
+          fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <line x1="186" y1="70" x2="470" y2="70" stroke="var(--green)" stroke-width="2" stroke-dasharray="7 5"/>
+    <text class="s-num" x="474" y="67" fill="var(--green)">枢轴 $100</text>
+    <line x1="200" y1="200" x2="470" y2="200" stroke="var(--red)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.85"/>
+    <text class="s-num" x="474" y="197" fill="var(--red)">$90 = −10%</text>
+    <line x1="290" y1="138" x2="470" y2="138" stroke="var(--amber)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.9"/>
+    <text class="s-num" x="474" y="135" fill="var(--amber)">$95 = −5%</text>
+    <line x1="360" y1="104" x2="470" y2="104" stroke="var(--violet)" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text class="s-num" x="474" y="101" fill="var(--violet)">$97 = −3%</text>
+    <circle cx="242" cy="200" r="4.5" fill="var(--red)"/><circle cx="328" cy="138" r="4.5" fill="var(--amber)"/><circle cx="400" cy="104" r="4.5" fill="var(--violet)"/>
+    <text class="s-note" x="242" y="222" fill="var(--mut)" text-anchor="middle">C1</text>
+    <text class="s-note" x="328" y="160" fill="var(--mut)" text-anchor="middle">C2</text>
+    <text class="s-note" x="404" y="124" fill="var(--mut)" text-anchor="middle">C3</text>
+    <text class="s-lab2" x="70" y="290" fill="var(--ink)">三个候选止损位。选哪个?</text>
+    <text class="s-lab" x="70" y="312" fill="var(--mut)">大多数人凭「感觉」选,或者选最宽的那个「给股票空间」。</text>
+
+    <!-- right: two exercises -->
+    <line x1="600" y1="40" x2="600" y2="390" stroke="var(--bd)" stroke-width="1" stroke-dasharray="4 5"/>
+    <text class="s-lab2" x="620" y="62" fill="var(--ink)">练习一</text>
+    <text class="s-note" x="620" y="82" fill="var(--mut)">你近 10 笔:平均盈利 10%,胜率 50%</text>
+    <rect x="620" y="94" width="80" height="24" rx="5" fill="var(--red)" opacity="0.2"/>
+    <text class="s-num" x="660" y="110" fill="var(--red)" text-anchor="middle">−10% ✗</text>
+    <rect x="708" y="94" width="76" height="24" rx="5" fill="var(--green)" opacity="0.25"/>
+    <text class="s-num" x="746" y="110" fill="var(--green)" text-anchor="middle">−5% ✓</text>
+    <rect x="792" y="94" width="76" height="24" rx="5" fill="var(--green)" opacity="0.25"/>
+    <text class="s-num" x="830" y="110" fill="var(--green)" text-anchor="middle">−3% ✓</text>
+    <text class="s-note" x="620" y="138" fill="var(--mut)">止损 10% 而平均只赚 10% → 1:1,毫无优势</text>
+
+    <text class="s-lab2" x="620" y="180" fill="var(--ink)">练习二</text>
+    <text class="s-note" x="620" y="200" fill="var(--mut)">你近 10 笔:平均盈利<tspan fill="var(--red)" font-weight="700">降到 6%</tspan>,胜率<tspan fill="var(--red)" font-weight="700">降到 40%</tspan></text>
+    <rect x="620" y="212" width="80" height="24" rx="5" fill="var(--red)" opacity="0.2"/>
+    <text class="s-num" x="660" y="228" fill="var(--red)" text-anchor="middle">−10% ✗</text>
+    <rect x="708" y="212" width="76" height="24" rx="5" fill="var(--red)" opacity="0.2"/>
+    <text class="s-num" x="746" y="228" fill="var(--red)" text-anchor="middle">−5% ✗</text>
+    <rect x="792" y="212" width="76" height="24" rx="5" fill="var(--green)" opacity="0.3"/>
+    <text class="s-num" x="830" y="228" fill="var(--green)" text-anchor="middle">−3% ✓</text>
+    <text class="s-note" x="620" y="256" fill="var(--mut)">环境变差 → 只剩最紧的那个还能用</text>
+
+    <rect x="612" y="284" width="270" height="94" rx="9" fill="var(--amber)" opacity="0.1"/>
+    <rect x="612" y="284" width="270" height="94" rx="9" fill="none" stroke="var(--amber)" stroke-width="1.6"/>
+    <text class="s-lab2" x="628" y="308" fill="var(--amber)">交易环境变差的时候,</text>
+    <text class="s-lab2" x="628" y="330" fill="var(--amber)">大多数人会「放宽」止损。</text>
+    <text class="s-lab2" x="628" y="356" fill="var(--red)">要反过来 —— 收得更紧。</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>止损到底该放多宽。答案不是「看图形」,而是 —— <b>止损宽度是你实际达成的平均盈利的函数</b>。你最近 10 笔平均只赚 6%,那么放一个 10% 的止损在数学上就是自杀,不管图形多漂亮。这条规则的另一面同样反直觉:亏钱的时候本能是「给股票更多空间」,而正确做法是把止损收得更紧、或者干脆不做。</figcaption>
+  </figure>
+
+  <h3>止损宽度的第二个约束:ADR</h3>
+  <p>Qullamaggie 体系里的版本。它和上面那条不冲突,是<b>两个都要满足</b>。</p>
+  <div class="tw"><table>
+    <thead><tr><th>约束</th><th>数值</th><th>说的人</th></tr></thead>
+    <tbody>
+      <tr><td>初始止损<b>必须小于</b> ADR%(或 ATR)</td><td>硬性下限</td><td>Qullamaggie</td></tr>
+      <tr><td>理想是 ADR% 的 <b>1/3 到 1/2</b></td><td>Qullamaggie 的目标</td><td>Qullamaggie</td></tr>
+      <tr><td>可接受到 ADR% 的 <b>2/3</b>,越接近 1/2 越好</td><td>讲者的实操标准</td><td>讲者</td></tr>
+      <tr><td>止损绝对值:<b>低个位数,平均 2–4%,理想 2–3%</b></td><td>讲者的实测区间</td><td>讲者</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note"><b>为什么是「ADR 的一半」?这个数字不是拍脑袋来的。</b><br>
+  假设 ADR = 3%,你的初始止损 = 1.5%(半个 ADR)。按体系规则,你要在 <b>2 倍止损处</b>(即 +3%)卖掉三分之一来清零风险。<br>
+  而 +3% <b>正好等于这只股票过去 20 天的日均波动幅度</b>。<br>
+  <b>换句话说:「突破当天就完成风险清零」是一个现实、合理的预期,不是奢望。</b>这条规则把止损宽度和第六章的 free roll 严丝合缝地扣在了一起。</div>
+
+  <h3>仓位怎么算</h3>
+  <p>公式只有一个,但两个流派的参数差别很大:</p>
+  <div class="rule" style="font-size:17px">账户风险 % = 仓位占账户比例 × 止损百分比</div>
+
+  <div class="tw"><table>
+    <thead><tr><th>参数</th><th>Minervini</th><th>Qullamaggie</th><th>讲者本人</th></tr></thead>
+    <tbody>
+      <tr><td><b>每笔账户风险</b></td><td>1.25% – 2%</td><td><b>0.3% – 0.5%</b><br><span class="m">小账户时期 1–2%</span></td><td>「很少超过 1%」</td></tr>
+      <tr><td><b>单笔最大止损</b></td><td>8% – 10%</td><td>&lt; ADR%</td><td>2% – 4%</td></tr>
+      <tr><td><b>平均亏损</b></td><td>每笔不超过 5–6%</td><td>—</td><td>实测 4.95%</td></tr>
+      <tr><td><b>单个仓位上限</b></td><td>账户的 50%</td><td><b>账户的 25%</b></td><td>—</td></tr>
+      <tr><td><b>典型仓位规模</b></td><td>20–25%<br>4–5 个大仓位<br>最多 6–18 只</td><td>—</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+  <p>Qullamaggie 的原话大意值得单独拎出来:「<b>1% 的账户权益风险已经是很大的风险。</b>」他明确说自己现在每笔只冒 0.3–0.5%。</p>
+
+  <h4>算例:同样的仓位,不同的止损</h4>
+  <div class="tw"><table>
+    <thead><tr><th>情景</th><th class="num">账户</th><th class="num">仓位</th><th class="num">止损</th><th class="num">实际风险</th><th class="num">占账户</th></tr></thead>
+    <tbody>
+      <tr><td>宽止损</td><td class="num">10 万</td><td class="num">1 万(10%)</td><td class="num">10%</td><td class="num">$1,000</td><td class="num r"><b>1.0%</b></td></tr>
+      <tr><td>紧止损</td><td class="num">10 万</td><td class="num">1 万(10%)</td><td class="num">5%</td><td class="num">$500</td><td class="num g"><b>0.5%</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="rule" style="font-size:16px">同样的仓位规模,更紧的入场 = 一半的账户风险。这就是为什么整套体系拼命找那根最窄的 K 线。</p>
+
+  <h3>盈亏平衡胜率:为什么胜率 25% 也能赚钱</h3>
+  <div class="tw"><table>
+    <thead><tr><th class="num">风险 : 报酬</th><th class="num">打平需要的胜率</th><th>含义</th></tr></thead>
+    <tbody>
+      <tr><td class="num">3 : 1</td><td class="num r"><b>75%</b></td><td>你必须四次对三次 —— 几乎不可能</td></tr>
+      <tr><td class="num">2 : 1</td><td class="num r"><b>67%</b></td><td>很难</td></tr>
+      <tr><td class="num">1 : 1</td><td class="num a"><b>50%</b></td><td>抛硬币,扣掉成本还是亏</td></tr>
+      <tr><td class="num">1 : 2</td><td class="num b"><b>33%</b></td><td>可行</td></tr>
+      <tr><td class="num">1 : 3</td><td class="num g"><b>25%</b></td><td>Qullamaggie 的实际胜率就在这一档</td></tr>
+      <tr><td class="num">1 : 4</td><td class="num g"><b>20%</b></td><td>目标</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><b>这解释了 Qullamaggie 那句听起来很狂的话:</b>「我 2019 年的胜率是 22–25%,但那年我赚了 100% 以上。2020 年是我最好的一年,胜率仍然远低于 35%。<b>如果你需要 70%、80%、90% 的胜率才能赚钱,那说明你的 setup 很糟、方法很糟,几乎没有优势。</b>」</div>
+
+  <h3>Minervini 的 Holy Grail 公式</h3>
+  <div class="rule" style="font-size:17px">(平均盈利 × 胜率) ÷ (平均亏损 × 败率) ≥ 2 : 1</div>
+  <div class="tw"><table>
+    <thead><tr><th>交易者</th><th class="num">平均盈利</th><th class="num">胜率</th><th class="num">平均亏损</th><th class="num">败率</th><th class="num">比值</th></tr></thead>
+    <tbody>
+      <tr><td>A</td><td class="num">10%</td><td class="num">50%</td><td class="num">5%</td><td class="num">50%</td><td class="num g"><b>2:1 ✓</b></td></tr>
+      <tr><td>B</td><td class="num">15%</td><td class="num">40%</td><td class="num">5%</td><td class="num">60%</td><td class="num g"><b>2:1 ✓</b></td></tr>
+    </tbody>
+  </table></div>
+  <p>两个人交易风格完全不同,结果一样健康。<b>胜率本身不说明任何问题</b> —— 它只有和平均盈亏一起看才有意义。</p>
+
+  <h3>最优下注比例:一道纯数学题</h3>
+  <p>这段在两个不同视频里都出现过,是整份材料里最容易被跳过、但最值钱的部分之一。</p>
+  <p><b>题目:</b>你有 10 笔交易,胜率 40%,你的盈利固定是亏损的 2 倍。你可以自选具体百分比。选什么最优?</p>
+  <div class="tw"><table>
+    <thead><tr><th>你的选择</th><th class="num">赢的时候</th><th class="num">输的时候</th><th class="num">10 笔复合回报</th></tr></thead>
+    <tbody>
+      <tr><td>「我要赚大的」</td><td class="num">+100%</td><td class="num">−50%</td><td class="num r"><b>−75%</b></td></tr>
+      <tr><td>「我很保守」</td><td class="num">+4%</td><td class="num">−2%</td><td class="num">+3.63%</td></tr>
+      <tr><td class="g"><b>最优解</b></td><td class="num g"><b>+20%</b></td><td class="num g"><b>−10%</b></td><td class="num g"><b>+10.2%</b></td></tr>
+    </tbody>
+  </table></div>
+  <p>同一道题换成胜率 30%、盈利是亏损的 3 倍:最优解是<b>赢 21% / 亏 7%</b>(不是赢 33% / 亏 11%,那样只有 +4.06%)。</p>
+  <div class="rule">亏损对你是几何级数地起作用。超过某个点之后,再大的盈利也救不回来 —— 这就是为什么赚最多钱的交易者绝大多数是波段交易者:波段在「控制风险」和「复利效率」之间是最优的。</div>
+
+  <h4>亏损的几何效应</h4>
+  <div class="tw"><table>
+    <thead><tr><th class="num">你亏了</th><th class="num">要涨多少才回本</th></tr></thead>
+    <tbody>
+      <tr><td class="num">10%</td><td class="num">11%</td></tr>
+      <tr><td class="num">20%</td><td class="num">25%</td></tr>
+      <tr><td class="num">25%</td><td class="num">33%</td></tr>
+      <tr><td class="num">50%</td><td class="num r"><b>100%</b></td></tr>
+      <tr><td class="num">90%</td><td class="num r"><b>900%</b></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>两个反面教材</h3>
+  <div class="grid2">
+    <div class="box r"><b>「我胜率 50%,我是好交易者」</b>赢 3% / 6% / 9% / 12% / 15%,亏 10% / 15% / 20% / 25% / 30%。<br><b>10 笔之后:亏掉一半资本。</b></div>
+    <div class="box r"><b>「我平均赚 25%!」</b>胜率 50%,平均赚 25%,但平均也亏 25%。<br><b>10 笔之后:亏掉近三分之一。</b></div>
+  </div>
+
+  <h3>用分布思考,不要用单笔思考</h3>
+  <p>讲者建议把自己的交易画成分布图(贝尔曲线),这能立刻看出问题在哪:</p>
+  <div class="grid2">
+    <div class="box r"><b>交易者 Bill</b>亏损分布从 1% 一路拖到 <b>50%</b>。盈利也有,但那条长尾会吃掉一切。<br><b>永远赚不到钱。</b></div>
+    <div class="box g"><b>交易者 Bob</b>绝大多数亏损集中在 <b>1–7%</b>,偶尔一笔 15%(财报跳空,这是现实)。盈利密集在 <b>7.5–30%</b>。<br><b>健康。</b></div>
+  </div>
+  <p class="m" style="font-size:13.5px">「用分布/贝尔曲线思考,能减轻你对单笔交易的近视和压力。」</p>
+
+  <h3>Livermore 的 10% 规则</h3>
+  <div class="rule">如果我在一笔交易上亏超过 10%,我立刻卖出。我从不问原因。它下跌了,这本身就是足够的理由。</div>
+  <p>他还有一个词专门形容不用止损的人:<b>involuntary investor(非自愿投资者)</b> —— 你买的时候想做一笔 20% 的投机,它跌了你不认,一年后它跌了 90%,你还拿着,现在你成了「长期投资者」。</p>
+  <div class="danger"><b>绝不摊平。</b>Livermore:「如果第一笔交易显示亏损,再做第二笔是愚蠢的。让这个念头刻在你脑子里。」Minervini 把「给亏损头寸加仓」列为交易者爆仓的<b>头号原因</b>。O'Neil:「加仓只在股票从你的买价<b>上涨</b>之后,绝不在下跌之后。」</div>
+
+  <h3>Progressive exposure:什么时候该加大,什么时候该缩小</h3>
+  <p>Minervini 的规则:<b>表现最好时交易最大,表现最差时交易最小。</b>怎么知道?看你最近 10 笔的滚动记录。</p>
+  <div class="tw"><table>
+    <thead><tr><th>你最近 10 笔</th><th>解读</th><th>该怎么做</th></tr></thead>
+    <tbody>
+      <tr><td class="num">−7 −7 −6 −4 −3 → +10 +20 +20 +25</td><td>你和市场同步了,市场在奖励你的策略</td><td class="g"><b>可以加码</b></td></tr>
+      <tr><td class="num">+15 +10 +7 +6 −8 −4 −5 −6 −7 −5</td><td>基本打平,策略和当前环境不匹配</td><td class="r"><b>不该加码</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="rule" style="font-size:16px">如果你在 50% 仓位的时候都没赚钱,加到 100% 有什么意义?</p>
+</section>
+
+<section class="card" id="s6">
+  <span class="sec-no">06</span>
+  <h2>第六层 · 风险清零(Free Roll):买入后 3–5 天做的事</h2>
+  <p>这一步在大多数教材里根本不存在,但它是整套体系里<b>最能改变结果的一个动作</b>,而且是纯机械的 —— 没有任何判断成分。</p>
+
+  <div class="rule">缓释风险的目的不是最大化上行,而是最小化下行。</div>
+
+  <p>讲者把这个概念表达得最清楚的一句话是一道选择题:<br><b>你更愿意用整个仓位冒 5%、7%、10% 的风险去追求翻倍,还是用三分之二的仓位、零风险去追求翻倍?</b></p>
+
+  <h3>它是怎么运作的</h3>
+  <p>原理是小学算术:<b>卖掉一部分锁定的利润,正好等于剩余仓位还背着的风险</b> —— 两者相抵,这笔交易变成免费的。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Free roll 的完整算术">
+    <g stroke="var(--grid)" stroke-width="1">
+      <line x1="70" y1="70" x2="480" y2="70"/><line x1="70" y1="120" x2="480" y2="120"/><line x1="70" y1="170" x2="480" y2="170"/>
+    </g>
+    <line x1="70" y1="50" x2="70" y2="220" stroke="var(--bd)" stroke-width="1.5"/>
+    <line x1="70" y1="220" x2="480" y2="220" stroke="var(--bd)" stroke-width="1.5"/>
+    <!-- entry / stop / target lines -->
+    <line x1="80" y1="160" x2="360" y2="160" stroke="var(--ink)" stroke-width="1.8"/>
+    <text class="s-num" x="476" y="157" fill="var(--ink)" text-anchor="end">入场 28.84</text>
+    <line x1="80" y1="196" x2="360" y2="196" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="4 4"/>
+    <text class="s-num" x="476" y="193" fill="var(--red)" text-anchor="end">止损 28.06</text>
+    <line x1="80" y1="88" x2="360" y2="88" stroke="var(--green)" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <text class="s-num" x="476" y="85" fill="var(--green)" text-anchor="end">30.40 = 2× 风险</text>
+    <!-- risk unit brackets -->
+    <g stroke="var(--red)" stroke-width="1.5" fill="none"><path d="M100,160 L92,160 M100,196 L92,196 M96,160 L96,196"/></g>
+    <text class="s-num" x="106" y="182" fill="var(--red)">1R</text>
+    <g stroke="var(--green)" stroke-width="1.5" fill="none"><path d="M100,88 L92,88 M100,160 L92,160 M96,88 L96,160"/></g>
+    <text class="s-num" x="106" y="120" fill="var(--green)">2R</text>
+    <!-- price -->
+    <path d="M126,206 L150,180 L172,162 L192,150 L214,158 L238,136 L262,118 L288,104 L316,90 L344,78 L372,84 L404,68 L440,58 L474,50"
+          fill="none" stroke="var(--ink)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="172" cy="162" r="6" fill="var(--ink)"/>
+    <text class="s-note" x="172" y="240" fill="var(--mut)" text-anchor="middle">买入</text>
+    <circle cx="316" cy="90" r="6.5" fill="var(--green)"/>
+    <text class="s-note" x="316" y="240" fill="var(--green)" text-anchor="middle">卖掉 1/3</text>
+    <text class="s-note" x="316" y="256" fill="var(--mut)" text-anchor="middle">3–5 天内</text>
+    <path d="M172,168 L172,232" stroke="var(--mut)" stroke-width="1" stroke-dasharray="2 2"/>
+    <path d="M316,97 L316,232" stroke="var(--green)" stroke-width="1" stroke-dasharray="2 2"/>
+
+    <!-- arithmetic panel -->
+    <rect x="530" y="46" width="350" height="200" rx="11" fill="var(--sf2)" stroke="var(--bd)" stroke-width="1.4"/>
+    <text class="s-lab2" x="550" y="72" fill="var(--ink)">算术(Skyworks 实例)</text>
+    <g class="s-num" font-size="12.5">
+      <text x="550" y="98" fill="var(--mut)">买入</text><text x="672" y="98" fill="var(--ink)">3,000 股 @ 28.84</text><text x="866" y="98" fill="var(--mut)" text-anchor="end">投入 $86,520</text>
+      <text x="550" y="122" fill="var(--mut)">每股风险</text><text x="672" y="122" fill="var(--ink)">28.84 − 28.06 = $0.78</text>
+      <text x="550" y="146" fill="var(--mut)">总风险</text><text x="672" y="146" fill="var(--red)">0.78 × 3,000 = $2,340</text>
+    </g>
+    <line x1="546" y1="160" x2="866" y2="160" stroke="var(--bd)" stroke-width="1"/>
+    <g class="s-num" font-size="12.5">
+      <text x="550" y="182" fill="var(--green)">卖 1,000 股 @ 30.40</text><text x="866" y="182" fill="var(--green)" text-anchor="end">锁定 +$1,560</text>
+      <text x="550" y="206" fill="var(--red)">剩 2,000 股 × $0.78</text><text x="866" y="206" fill="var(--red)" text-anchor="end">剩余风险 −$1,560</text>
+    </g>
+    <line x1="546" y1="218" x2="866" y2="218" stroke="var(--ink)" stroke-width="1.4"/>
+    <text class="s-num" x="550" y="238" fill="var(--ink)" font-size="13">净风险</text>
+    <text class="s-num" x="866" y="238" fill="var(--green)" text-anchor="end" font-size="15">$0 ← 免费的</text>
+
+    <!-- after -->
+    <rect x="70" y="286" width="810" height="118" rx="11" fill="var(--green)" opacity="0.06"/>
+    <rect x="70" y="286" width="810" height="118" rx="11" fill="none" stroke="var(--green)" stroke-width="1.5"/>
+    <text class="s-lab2" x="92" y="312" fill="var(--green)">完成之后你的处境</text>
+    <text class="s-lab" x="92" y="338" fill="var(--ink)">· 手上还有 <tspan font-weight="800">2/3 的仓位</tspan>,理论上零风险(除跳空和滑点)</text>
+    <text class="s-lab" x="92" y="360" fill="var(--ink)">· 最坏结果是被扫回保本,而不是亏一笔</text>
+    <text class="s-lab" x="92" y="382" fill="var(--ink)">· 你现在<tspan fill="var(--green)" font-weight="800">冒的是利润的险,不是本金的险</tspan> —— Livermore 和 Soros 说的是同一件事</text>
+    <text class="s-note" x="560" y="338" fill="var(--mut)">孙子:「善战者,先为不可胜,以待敌之可胜。」</text>
+    <text class="s-note" x="560" y="358" fill="var(--mut)">先让自己不可能被打败,再等趋势展开。</text>
+    <text class="s-note" x="560" y="382" fill="var(--mut)">Minervini 把这叫「改善你的最坏情况」。</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>「3–5 天后卖掉三分之一」这个动作到底在干什么、卖在什么价位、卖多少。<b>关键在于卖出价不是随便定的</b> —— 它必须是「2 倍初始风险」那个点,因为只有在那里,锁定的利润才正好等于剩余仓位的风险。</figcaption>
+  </figure>
+
+  <h3>三种 free roll 配方(都对,选一个)</h3>
+  <div class="tw"><table>
+    <thead><tr><th>版本</th><th>在哪卖</th><th>卖多少</th><th>特点</th></tr></thead>
+    <tbody>
+      <tr><td><b>Minervini</b></td><td><b>2× 初始风险</b></td><td>卖<b>一半</b>,余仓止损推<b>保本</b></td><td>等更大的移动再动手。例:入 100 止 95(−5%),涨到 110(+10%)卖一半,止损移到 100</td></tr>
+      <tr><td><b>Qullamaggie</b></td><td><b>入场后 3–5 天</b>(按时间,不按价格)</td><td>卖 <b>1/3 或 1/2</b>,止损推保本</td><td>时间驱动。剩余用 10 日均线跟踪</td></tr>
+      <tr><td><b>讲者本人</b></td><td>2× 初始风险 <b>或</b> 2× 新止损</td><td>健康市场卖 <b>1/3</b>;震荡市场卖 <b>一半</b></td><td>保持较宽的止损,但接受较小的移动。可以把止损从 trigger bar 低点上移到<b>突破日低点</b>,free roll 目标随之下移</td></tr>
+    </tbody>
+  </table></div>
+
+  <h4>为什么更紧的止损能让你更早解脱(Livermore 版算例)</h4>
+  <p>同一个形态,枢轴 $100,三个收缩低点 90 / 95 / 97。买 3 股,投入 $300。</p>
+  <div class="tw"><table>
+    <thead><tr><th>止损选择</th><th class="num">每股风险</th><th class="num">总风险</th><th class="num">2× 目标</th><th class="num">卖 1 股锁定</th><th class="num">剩余风险</th><th>结果</th></tr></thead>
+    <tbody>
+      <tr><td>放 $95(−5%)</td><td class="num">$5</td><td class="num">$15</td><td class="num">$110</td><td class="num">$10</td><td class="num">$10</td><td class="g">抵消 ✓</td></tr>
+      <tr><td class="g"><b>放 $97(−3%)</b></td><td class="num">$3</td><td class="num">$9</td><td class="num g"><b>$106</b></td><td class="num">$6</td><td class="num">$6</td><td class="g"><b>抵消 ✓,而且早 4 块钱</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="rule" style="font-size:16px">止损越紧,你需要的上涨幅度越小,风险清零得越早。这就是为什么整套体系拼命找那根最窄的 K 线。</p>
+
+  <h3>还有一个理由:心理学</h3>
+  <p>讲者给的理由不是数学,而是行为上的:<b>突破之后经常会回踩枢轴</b>。</p>
+  <div class="grid2">
+    <div class="box r"><b>没做 free roll</b>你看着 +10% 的浮盈一路缩水,最后在 −3% 被扫出去。这种「从赢家变输家」的体验会让你下次不敢拿住。</div>
+    <div class="box g"><b>做了 free roll</b>你已经落袋一部分,剩下的最坏是保本。你能<b>心平气和地坐过那次回踩</b> —— 而回踩之后往往才是真正的行情。</div>
+  </div>
+  <p class="m" style="font-size:13.5px">讲者用 Netflix 举过这个例子:突破后冲高 10–12%,然后 U 型掉头。做了 free roll 的人被扫回保本;没做的人从 +10% 变成 −3~4% 出局,心理伤害大得多。</p>
+
+  <h3>Tesla 实盘:一笔完整的 free roll(2024-10-24)</h3>
+  <p>这是讲者公开的经纪商记录,是全部材料里唯一一笔有精确到秒的成交记录的交易。</p>
+  <div class="tw"><table>
+    <thead><tr><th>时间</th><th>动作</th><th class="num">价格</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>盘前</td><td>扫描发现 TSLA 财报后跳空 +14%</td><td class="num">—</td><td>计划做 5 分钟 ORB</td></tr>
+      <tr><td><b>09:35:17</b></td><td>买入</td><td class="num">$247.51</td><td>第一根 5 分钟 K 的高点</td></tr>
+      <tr><td>同时</td><td>设止损</td><td class="num">$242.64</td><td>当日低点下方 1 美分 → 风险 <b>1.97%</b>(每股 $4.87)</td></tr>
+      <tr><td>—</td><td>风险检查</td><td class="num">ADR 3.45%</td><td>1.97 ÷ 3.45 ≈ <b>2/3</b> ✓ 合格</td></tr>
+      <tr><td><b>11:18:50</b></td><td>卖出一半</td><td class="num">$252.38</td><td>恰好 = <b>1× 初始风险</b>(每股 +$4.87)→ free roll 完成</td></tr>
+    </tbody>
+  </table></div>
+  <p class="rule" style="font-size:16px">从买入到风险清零,总共不到两个小时。</p>
+
+  <div class="note"><b>三个数字的一致性值得注意:</b>止损 1.97% ≈ ADR 的 2/3;卖出点 = 1× 风险;整个过程在同一个交易日内完成。这正好印证了第五章那条推导 —— <b>当止损是 ADR 的一半到三分之二时,当天完成 free roll 是合理预期。</b></div>
+</section>
+
+<section class="card" id="s7">
+  <span class="sec-no">07</span>
+  <h2>第七层 · 出场:决定你赚多少的那一步</h2>
+  <p>入场决定你会不会亏,出场决定你会赚多少。而这两件事的<b>难度完全不成比例</b> —— Qullamaggie 的原话大意是:如果一只股票会涨 300%,你在 +20%(等于 10 倍初始风险)卖掉还自我感觉良好,你完全错过了重点。</p>
+
+  <div class="rule">让我赚大钱的从来不是我的思考,永远是我的坐着。<span class="m" style="font-weight:400;font-size:13px">—— Livermore</span></div>
+
+  <h3>讲者自己做的两个数据研究</h3>
+  <p>这是全部材料里最有决策价值的两张表。他把同一批突破用不同的移动止损规则跑了一遍。</p>
+
+  <h4>研究一:500 笔突破(质量分「好 / 很好 / 完美」三档)</h4>
+  <div class="tw"><table>
+    <thead><tr><th>出场规则</th><th class="num">平均涨幅</th><th class="num">报酬风险比</th></tr></thead>
+    <tbody>
+      <tr><td>平均初始止损</td><td class="num">4.95%</td><td class="num">—</td></tr>
+      <tr><td>收盘跌破 <b>10 EMA</b></td><td class="num">28.82%</td><td class="num">5.71 倍</td></tr>
+      <tr><td>收盘跌破 <b>21 EMA</b></td><td class="num b"><b>42%</b></td><td class="num b"><b>7.82 倍</b></td></tr>
+    </tbody>
+  </table></div>
+
+  <h4>研究二:只取「完美五星突破」的 60 笔(1976–2023)</h4>
+  <div class="tw"><table>
+    <thead><tr><th>出场规则</th><th class="num">平均涨幅</th><th class="num">平均持有天数</th><th class="num">报酬风险比</th><th class="num">时间价值</th></tr></thead>
+    <tbody>
+      <tr><td>平均初始止损</td><td class="num">3.5%</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td>收盘跌破 <b>10 EMA</b></td><td class="num">98%</td><td class="num">26 天</td><td class="num">35</td><td class="num g"><b>4.00</b></td></tr>
+      <tr><td>收盘跌破 <b>21 EMA</b></td><td class="num">148%</td><td class="num">45 天</td><td class="num">48</td><td class="num">3.50</td></tr>
+      <tr><td>收盘跌破 <b>50 SMA</b></td><td class="num g"><b>194%</b></td><td class="num">72 天</td><td class="num g"><b>56</b></td><td class="num">2.37</td></tr>
+    </tbody>
+  </table></div>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="10 EMA、21 EMA、50 SMA 三种移动止损的结果对比">
+    <text class="s-lab2" x="60" y="28" fill="var(--ink)">同一批「完美五星突破」,三种出场规则的结果</text>
+    <!-- axis -->
+    <line x1="150" y1="52" x2="150" y2="230" stroke="var(--bd)" stroke-width="1.5"/>
+    <line x1="150" y1="230" x2="780" y2="230" stroke="var(--bd)" stroke-width="1.5"/>
+    <!-- bars: avg gain -->
+    <rect x="190" y="140" width="76" height="90" rx="4" fill="var(--green)"/>
+    <text class="s-num" x="228" y="132" fill="var(--green)" text-anchor="middle" font-size="15">98%</text>
+    <text class="s-lab" x="228" y="250" fill="var(--ink)" text-anchor="middle">10 EMA</text>
+    <text class="s-note" x="228" y="268" fill="var(--mut)" text-anchor="middle">持有 26 天</text>
+    <rect x="330" y="98" width="76" height="132" rx="4" fill="var(--blue)"/>
+    <text class="s-num" x="368" y="90" fill="var(--blue)" text-anchor="middle" font-size="15">148%</text>
+    <text class="s-lab" x="368" y="250" fill="var(--ink)" text-anchor="middle">21 EMA</text>
+    <text class="s-note" x="368" y="268" fill="var(--mut)" text-anchor="middle">持有 45 天</text>
+    <rect x="470" y="64" width="76" height="166" rx="4" fill="var(--violet)"/>
+    <text class="s-num" x="508" y="56" fill="var(--violet)" text-anchor="middle" font-size="15">194%</text>
+    <text class="s-lab" x="508" y="250" fill="var(--ink)" text-anchor="middle">50 SMA</text>
+    <text class="s-note" x="508" y="268" fill="var(--mut)" text-anchor="middle">持有 72 天</text>
+    <text class="s-note" x="144" y="140" fill="var(--mut)" text-anchor="end">平均涨幅</text>
+
+    <!-- time value line -->
+    <text class="s-lab" x="600" y="76" fill="var(--amber)">时间价值(单位时间的效率)</text>
+    <path d="M610,96 L640,96 L640,110 L610,110 Z" fill="var(--green)"/>
+    <text class="s-num" x="650" y="108" fill="var(--ink)">10 EMA · 4.00 ← 最高</text>
+    <path d="M610,126 L636,126 L636,140 L610,140 Z" fill="var(--blue)"/>
+    <text class="s-num" x="650" y="138" fill="var(--ink)">21 EMA · 3.50</text>
+    <path d="M610,156 L628,156 L628,170 L610,170 Z" fill="var(--violet)"/>
+    <text class="s-num" x="650" y="168" fill="var(--ink)">50 SMA · 2.37</text>
+    <rect x="600" y="188" width="280" height="52" rx="8" fill="var(--amber)" opacity="0.12"/>
+    <rect x="600" y="188" width="280" height="52" rx="8" fill="none" stroke="var(--amber)" stroke-width="1.4"/>
+    <text class="s-note" x="616" y="210" fill="var(--ink)">50 日的总收益最高,</text>
+    <text class="s-note" x="616" y="230" fill="var(--ink)">但 10 日的「每天赚多少」最高。</text>
+
+    <line x1="60" y1="292" x2="860" y2="292" stroke="var(--bd)" stroke-width="1"/>
+    <text class="s-lab2" x="60" y="316" fill="var(--red)">没有一条均线适合所有股票。</text>
+    <text class="s-lab" x="290" y="316" fill="var(--mut)">选哪条,取决于这只股票<tspan font-weight="700" fill="var(--ink)">过去尊重哪一条</tspan> —— 回看它之前的突破。</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>该用 10 日、21 日还是 50 日跟踪。答案不是「哪条最好」,而是<b>你要什么</b> —— 50 日给你最大的总收益但要拿 72 天;10 日给你最高的资金效率但只能吃到一半。讲者自己的做法是<b>混用</b>:一部分仓位用 10 EMA,一部分用 21 EMA;大基座时留一部分给 50 SMA。</figcaption>
+  </figure>
+
+  <div class="danger"><b>把两个研究放在一起看,有一个结论比均线选择重要得多:</b><br>「好/很好/完美」混合样本用 21 EMA 出场,平均 <b>42%</b>。<br>只取「完美」样本用同样规则,平均 <b>148%</b>。<br><b>形态质量从「好」提到「完美」,结果差了一个数量级 —— 这比你选哪条均线的影响大得多。</b>与其纠结出场规则,不如提高入场标准。</div>
+
+  <h3>三种出场方式</h3>
+  <div class="grid3">
+    <div class="box g"><b>① 收盘跌破 10 EMA</b>最快。<b>必须等收盘</b> —— 盘中假跌破极常见(shakeout demand tail)。Qullamaggie 说新手就用这个。</div>
+    <div class="box b"><b>② 收盘跌破 21 EMA</b>给股票更多空间。讲者本人的主力规则。</div>
+    <div class="box a"><b>③ Lower the bar</b>逐日把止损上移到<b>前一根 K 线的低点下方</b>。用在股票急速拉升、远离 10 EMA、行为变得 climactic 的时候。</div>
+  </div>
+
+  <div class="warn"><b>为什么「等收盘」这条规则值这么多钱:</b>Bitcoin 那个案例里,盘中有过三次明显跌破 10 日线然后收回。如果按盘中执行,你会在 +100% 的位置被扫出去;按收盘规则,你留在了 <b>+1600%</b> 的行情里。ETH 从 $40–48 涨到 $310–320 才首次收盘跌破 21 EMA。</div>
+
+  <h3>Lower the bar:什么时候用</h3>
+  <p>这是讲者自己的方法,他明确说不是 Minervini 的规则。用在你觉得股票「已经延伸了」的时候。</p>
+  <div class="note"><p style="margin-top:0"><b>他为什么不直接卖:</b>「我最大的错误是过早卖出赢家。」举例:Qualcomm 从基座突破后 3 周涨了约 97%,如果在 +70% 的位置觉得「太延伸了」就卖掉,你会错过后面到 100+ 的那一段。用 lower the bar,市场会自己把你送出去,而且送在更高的位置。</p>
+  <p>ACB 案例:$66 涨到 $140 只用了约 8 根 K 线 —— 这种时候用 lower the bar 逐日抬止损,比等收盘跌破 10 日线有效得多。</p></div>
+
+  <div class="danger"><b>但 Tesla 那笔实盘给了一个反例:</b>讲者复盘时说,那只股票用 <b>50 日均线</b>效果很好,而 <b>21 EMA 和 10 EMA 都不好</b>,实际最优的是 lower the daily low。<br><b>结论:出场规则必须按股票性格选,不能一刀切。</b>方法:回看这只股票之前几次突破,哪条均线它真正在尊重。</div>
+
+  <h3>危险信号:什么时候必须走</h3>
+  <p>Livermore 有一个精确定义,他叫 <b>one-day reversal</b>,讲者扩展成 <b>change of character bar</b>。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="危险信号:one-day reversal 与 change of character">
+    <g stroke="var(--grid)" stroke-width="1">
+      <line x1="70" y1="60" x2="860" y2="60"/><line x1="70" y1="110" x2="860" y2="110"/><line x1="70" y1="160" x2="860" y2="160"/>
+    </g>
+    <line x1="70" y1="42" x2="70" y2="210" stroke="var(--bd)" stroke-width="1.5"/>
+    <line x1="70" y1="210" x2="860" y2="210" stroke="var(--bd)" stroke-width="1.5"/>
+    <!-- MAs -->
+    <path d="M80,178 L160,150 L240,122 L320,98 L400,78 L480,62 L540,56 L600,58 L660,68 L720,84 L790,102 L856,118"
+          fill="none" stroke="var(--ink)" stroke-width="1.5" opacity="0.35"/>
+    <text class="s-note" x="180" y="146" fill="var(--mut)">10 EMA</text>
+    <path d="M80,190 L160,166 L240,140 L320,116 L400,96 L480,80 L560,70 L640,70 L720,80 L790,94 L856,108"
+          fill="none" stroke="var(--blue)" stroke-width="1.5" opacity="0.5"/>
+    <text class="s-note" x="180" y="176" fill="var(--blue)">21 EMA</text>
+    <!-- orderly uptrend -->
+    <g stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round">
+      <line x1="110" y1="164" x2="110" y2="188"/><line x1="150" y1="148" x2="150" y2="172"/>
+      <line x1="190" y1="140" x2="190" y2="162"/><line x1="230" y1="124" x2="230" y2="148"/>
+      <line x1="270" y1="112" x2="270" y2="136"/><line x1="310" y1="96" x2="310" y2="120"/>
+      <line x1="350" y1="88" x2="350" y2="110"/><line x1="390" y1="74" x2="390" y2="98"/>
+      <line x1="430" y1="66" x2="430" y2="88"/><line x1="470" y1="54" x2="470" y2="78"/>
+      <line x1="510" y1="46" x2="510" y2="70"/>
+    </g>
+    <rect x="90" y="220" width="440" height="22" rx="5" fill="var(--green)" opacity="0.14"/>
+    <text class="s-lab" x="310" y="236" fill="var(--green)" text-anchor="middle">有序 · 平滑 · 守住均线 = 积累</text>
+    <!-- the reversal bar -->
+    <line x1="556" y1="40" x2="556" y2="112" stroke="var(--red)" stroke-width="5" stroke-linecap="round"/>
+    <line x1="547" y1="46" x2="556" y2="46" stroke="var(--red)" stroke-width="3.4"/>
+    <line x1="556" y1="108" x2="565" y2="108" stroke="var(--red)" stroke-width="3.4"/>
+    <text class="s-note" x="576" y="46" fill="var(--red)">高点比前一日高</text>
+    <text class="s-note" x="576" y="112" fill="var(--red)">但收盘比前一日低</text>
+    <!-- after: volatile -->
+    <g stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round">
+      <line x1="606" y1="52" x2="606" y2="118"/><line x1="650" y1="62" x2="650" y2="132"/>
+      <line x1="694" y1="56" x2="694" y2="140"/><line x1="738" y1="72" x2="738" y2="148"/>
+      <line x1="782" y1="66" x2="782" y2="158"/><line x1="826" y1="80" x2="826" y2="168"/>
+    </g>
+    <g stroke="var(--ink)" stroke-width="2.4">
+      <line x1="598" y1="58" x2="606" y2="58"/><line x1="606" y1="112" x2="614" y2="112"/>
+      <line x1="642" y1="126" x2="650" y2="126"/><line x1="650" y1="68" x2="658" y2="68"/>
+      <line x1="686" y1="60" x2="694" y2="60"/><line x1="694" y1="134" x2="702" y2="134"/>
+      <line x1="730" y1="140" x2="738" y2="140"/><line x1="738" y1="78" x2="746" y2="78"/>
+      <line x1="774" y1="70" x2="782" y2="70"/><line x1="782" y1="152" x2="790" y2="152"/>
+      <line x1="818" y1="162" x2="826" y2="162"/><line x1="826" y1="86" x2="834" y2="86"/>
+    </g>
+    <rect x="590" y="220" width="260" height="22" rx="5" fill="var(--red)" opacity="0.14"/>
+    <text class="s-lab" x="720" y="236" fill="var(--red)" text-anchor="middle">突然变得剧烈波动 = 派发</text>
+    <!-- volume spike -->
+    <path d="M556,118 L556,204" stroke="var(--red)" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <text class="s-num" x="556" y="200" fill="var(--red)" text-anchor="middle">+ 放量</text>
+
+    <line x1="70" y1="262" x2="860" y2="262" stroke="var(--bd)" stroke-width="1"/>
+    <text class="s-lab2" x="70" y="286" fill="var(--ink)">Livermore 的 one-day reversal 定义(三个条件同时满足)</text>
+    <text class="s-lab" x="70" y="308" fill="var(--mut)">① 当日高点 &gt; 前一日高点 &nbsp;&nbsp; ② 当日收盘 &lt; 前一日收盘 &nbsp;&nbsp; ③ 当日成交量 &gt; 前一日 &nbsp;&nbsp;<tspan fill="var(--ink)">= 看跌吞没 + 放量</tspan></text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>「涨了这么多,该不该走」这个问题不需要你猜 —— 市场会给出一个具体的、可验证的信号。讲者扩展的版本更实用:<b>宽实体阴线 + 放量 + 切穿一条或多条关键均线</b>,他称为「bearish synchronicity」(多个看跌信号同步出现)。<b>放量切穿 21 EMA = 中期趋势改变。</b></figcaption>
+  </figure>
+
+  <h3>Minervini 的卖出警报清单</h3>
+  <p>他把卖出分成两类:<b>卖在强势</b>(主动)和<b>卖在弱势</b>(被动)。</p>
+
+  <div class="grid2">
+    <div class="box g"><b>卖在强势(主动获利)</b>
+      <ul style="margin:8px 0 0;padding-left:18px;font-size:14px">
+        <li>达到风险的倍数 → 卖一半 + 推保本</li>
+        <li>利润 &gt; 你的平均盈利,且是风险的 2–3 倍 → 移动止损或卖一半</li>
+        <li>延伸后跳空高开 → 至少卖一半,或用很紧的移动止损</li>
+      </ul>
+    </div>
+    <div class="box r"><b>卖在弱势(止损)</b>
+      <ul style="margin:8px 0 0;padding-left:18px;font-size:14px">
+        <li>触及预设止损 → <b>无条件出,不问原因</b></li>
+        <li>突破后很快收在 <b>20 日均线下方</b>且低于买价 → 减仓</li>
+        <li>3–4 天连续更低低点且无支撑性表现 → 失败概率上升</li>
+        <li>低量突破后放量全数回吞 → 卖</li>
+        <li>关键反转 + 巨量 + 已延伸 → 至少卖一半</li>
+      </ul>
+    </div>
+  </div>
+
+  <h4>17 条卖出警报(见到就要提高警惕)</h4>
+  <div class="tw"><table>
+    <thead><tr><th>类别</th><th>信号</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="4"><b>速度异常</b></td><td>上涨速率加速 / 抛物线 / blow-off climactic top</td></tr>
+      <tr><td>延伸后 <b>1–3 周涨 20–50%</b></td></tr>
+      <tr><td><b>3 周内有 12–15 天上涨</b></td></tr>
+      <tr><td><b>6–10 天加速上涨,其中只有 2–3 天是下跌的</b></td></tr>
+      <tr><td rowspan="4"><b>K 线异常</b></td><td>自涨势启动以来<b>最大的单日涨幅</b> → 找反转</td></tr>
+      <tr><td>自涨势启动以来<b>最大的单日 / 单周振幅</b></td></tr>
+      <tr><td>延伸后的 <b>exhaustion gap</b>(通常是第二或第三个缺口)</td></tr>
+      <tr><td><b>churning</b> —— 量放大但价格不动,持续 1–4 天</td></tr>
+      <tr><td rowspan="3"><b>量价背离</b></td><td><b>低量创新高</b></td></tr>
+      <tr><td>巨量但价格几乎没有进展(stalling)</td></tr>
+      <tr><td><b>以涨势启动以来最大的日成交量跌破 50 日均线</b> = 大资金派发</td></tr>
+      <tr><td rowspan="2"><b>结构异常</b></td><td>从<b>第 4、5、6 个后期基座</b>创新高</td></tr>
+      <tr><td>价格不再守住 20 日或 50 日均线</td></tr>
+      <tr><td rowspan="2"><b>下跌确认</b></td><td>自涨势启动以来<b>最大单日跌幅</b></td></tr>
+      <tr><td><b>最大单周跌幅 + 巨量</b></td></tr>
+      <tr><td><b>外部</b></td><td>板块 / 同组兄弟股集体破位;财报反应转负;主流媒体开始极度看好</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="warn"><b>后期基座(late stage base)是最容易被忽略的一条。</b>Minervini 用西南航空(LUV)周线举例:base 1 → base 5,股价从约 14–15 涨到约 45。<b>基座不会永远持续下去</b> —— 大资金在低位基座积累,在高位基座派发。他的原话大意是:数一数这是第几个基座,如果是第四第五个,你得开始怀疑了 —— 而且这时候主流媒体常常在发极度看好的报道。</div>
+
+  <h3>时间也是一个出场维度</h3>
+  <p>Livermore 的规则,很少有人提:「后来我决定<b>不再持有没有按我预期方向移动的股票</b>。如果它在几天内、或者我认为合理的时间(<b>比如一两周</b>)内没有按应有的方式移动,我就卖掉。」</p>
+  <p>讲者的补充版本更宽容一点:如果它<b>仍然表现 OK</b> —— 继续窄幅整理、量缩、横盘或微涨、守住关键均线 —— 他会给股票机会,至少一两周。因为有时候是<b>市场在压着它</b>(水下的篮球),市场压力一释放它就走了。他把突破后不动的那段叫 <b>boredom area(无聊区)</b>。</p>
+
+  <h3>入场后的正常与异常行为</h3>
+  <div class="grid2">
+    <div class="box g"><b>正常(该拿住)</b>
+      <ul class="chk" style="margin-top:6px">
+        <li>立刻显示盈利</li>
+        <li>有跟进买盘</li>
+        <li>宽实体阳线 + 放量</li>
+        <li>RS 线创 52 周新高</li>
+        <li>上涨日多于下跌日,收盘强劲</li>
+        <li><b>tennis ball action</b> —— 高点低点双抬高</li>
+        <li>上涨放量、回调缩量</li>
+        <li>守在 20 日、50 日均线上方</li>
+      </ul>
+    </div>
+    <div class="box r"><b>异常(该减仓或走)</b>
+      <ul class="chk no" style="margin-top:6px">
+        <li>突破时缩量,随后放量回落(假突破)</li>
+        <li>连续 3–4 个更低低点且高相对量</li>
+        <li>下跌 K 多于上涨 K,收盘疲弱</li>
+        <li><b>突破后很快收在 20 日下方 = 很坏</b></li>
+        <li><b>收在 50 日下方 = 更坏</b></li>
+        <li>向下的剧烈波动</li>
+        <li>突破后 squat(当天回落且不反转收高)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="s8">
+  <span class="sec-no">08</span>
+  <h2>统计与心态:为什么大赢家决定一切</h2>
+  <p>这一章回答一个问题:如果胜率只有 25–40%,钱到底从哪里来?</p>
+
+  <h3>讲者的 250 笔模拟</h3>
+  <p>起始 10 万,250 笔交易,每笔仓位 = 账户的 12%,胜率固定 40%(150 笔亏、100 笔赢)。他每次<b>只改一个变量</b>,看结果怎么变。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>情景</th><th class="num">平均亏损</th><th>赢家结构</th><th class="num">250 笔后</th></tr></thead>
+    <tbody>
+      <tr><td>Sitting 1</td><td class="num r">10%</td><td>80 笔 +5%,10 笔 +50%,10 笔 +100%</td><td class="num">+47%</td></tr>
+      <tr><td>Sitting 2</td><td class="num g"><b>5%</b></td><td>同上(<b>只改了亏损</b>)</td><td class="num g"><b>+264%</b></td></tr>
+      <tr><td>Sitting 3</td><td class="num">5%</td><td>80 笔从 +5% 提到 <b>+8%</b></td><td class="num g"><b>+384%</b></td></tr>
+      <tr><td>Sitting 4</td><td class="num">5%</td><td>再加<b>一笔 +500% 和一笔 +700%</b></td><td class="num g"><b>+1037%</b></td></tr>
+      <tr><td class="m">对照:不坐</td><td class="num">5%</td><td class="m">100 笔赢家全是 +10%(2:1)</td><td class="num r"><b>+34%</b></td></tr>
+      <tr><td class="m">对照:不坐</td><td class="num">5%</td><td class="m">100 笔赢家全是 +15%(3:1)</td><td class="num">+141%</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="grid2">
+    <div class="box g"><b>第一个发现:把平均亏损从 10% 降到 5%</b>什么都没改,回报从 <b>+47% 变成 +264%</b>。这是这套体系里性价比最高的一个动作 —— 而且它完全在你控制之内。</div>
+    <div class="box v"><b>第二个发现:两笔巨大赢家</b>250 笔里加进一笔 +500% 和一笔 +700%,回报从 <b>+384% 跳到 +1037%</b>。<b>这就是 Qullamaggie 年化 268% 的来源</b> —— 不是靠提高胜率。</div>
+  </div>
+
+  <div class="danger"><b>把两个对照组放在一起看:</b>如果你的 100 笔赢家全部规规矩矩地赚 10%(报酬风险比 2:1,听起来很专业),250 笔之后你只有 <b>+34%</b>。<br><b>「稳健地小赚」在数学上等于什么都没做。</b></div>
+
+  <h3>10 笔交易的版本(更容易验证)</h3>
+  <div class="tw"><table>
+    <thead><tr><th>情景</th><th class="num">胜率</th><th>盈亏结构</th><th class="num">10 笔复合</th></tr></thead>
+    <tbody>
+      <tr><td>健康</td><td class="num">50%</td><td>+14% / −7%</td><td class="num">+33.95%</td></tr>
+      <tr><td>环境变差但守住比例</td><td class="num">40%</td><td>+14% / −7%</td><td class="num">+9.27%</td></tr>
+      <tr><td>低胜率但高赔率</td><td class="num">30%</td><td>+9% / −3%</td><td class="num">+4.64%</td></tr>
+      <tr><td class="g"><b>含一个大赢家</b></td><td class="num">40%</td><td><b>+150%</b> / +15 / +10 / +5,亏 −3 / −5</td><td class="num g"><b>+55.90%</b></td></tr>
+      <tr><td class="r">反面</td><td class="num">50%</td><td>赢 3/6/7%,亏 10/15/20/25/30%</td><td class="num r"><b>−50%</b></td></tr>
+      <tr><td class="r">反面</td><td class="num">50%</td><td>赢 25%,亏 25%</td><td class="num r"><b>−27%</b></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Livermore 那句被引用最多的话,其实说反了两次</h3>
+  <div class="rule">投机者必须反转他所谓的自然冲动:不该希望时要恐惧,不该恐惧时要希望。<br>他必须<b>恐惧</b>亏损会变成更大的亏损,并<b>希望</b>利润会变成大利润。</div>
+  <p>大多数人的本能正好相反:亏了就「希望」它回来,赚了就「恐惧」它跌回去。这两个本能各自都会杀死你的账户,合在一起就是那张 <b>−50%</b> 的表。</p>
+
+  <h3>回撤是常态,不是失败</h3>
+  <div class="grid3">
+    <div class="stat"><b>70-75%</b><small>标普 500 处在回撤中的时间占比</small></div>
+    <div class="stat"><b>50%</b><small>Qullamaggie 2020 年(+500%)处在回撤中的时间</small></div>
+    <div class="stat"><b>15/23</b><small>Amazon 上市 23 年里,有约 15 年处在回撤中</small></div>
+  </div>
+  <p>Qullamaggie 那年有<b>两次 30% 的回撤</b>,他把目标控制在 10–15%。他的原话大意:想要大回报就必须承受回撤;<b>没有回撤说明你没冒风险,没冒风险就没有回报</b>。</p>
+  <p>Amazon 是最好的例子:它上市至今涨了约 20 万倍,但其中有<b>连续 10 年</b>处在回撤状态。</p>
+
+  <h3>知识 ≠ 技能</h3>
+  <p>这是 Qullamaggie 那期视频里最刺人的一段,讲者用了一个类比:</p>
+  <div class="rule">如果你只看 YouTube、只读书、只做正向可视化,你的高尔夫差点会进步吗?</div>
+  <p>「你没法靠读书学会游泳。」看视频、读书、上课<b>只增加知识</b>,不增加技能。而交易是一项技能。</p>
+
+  <h4>提升技能的具体方法</h4>
+  <div class="grid2">
+    <div class="box g"><b>建 model book</b>Minervini 的版本:三个月内收集 <b>1000 个完美 VCP</b> 并做标注 —— 每天 11 个。<br>Qullamaggie 的版本:「如果不花 500–1000 小时研究这一个 setup……」</div>
+    <div class="box b"><b>Bar-by-bar 复盘</b>把图表遮住,一根一根往前推,看不到下一根 K。实时判断:入场在哪?止损在哪?怎么缓释?怎么优化?<br><b>一小时能做约 50 笔</b> —— 真实交易要多久才能积累 50 笔?</div>
+    <div class="box a"><b>真金白银交易</b>bar-by-bar 练不了情绪。必须有钱在里面,你才会知道自己是不是真的能砍仓。</div>
+    <div class="box v"><b>把自己的交易打印出来标注</b>用第三人称看自己:我是不是买晚了?我是不是没控制风险?我是不是老在 +10% 就跑?<br>看见了才能定规则。</div>
+  </div>
+  <p class="rule" style="font-size:16px">不是纪律问题,是信心问题 —— 你没投入足够努力来建立信心。</p>
+  <p class="m" style="font-size:13.5px">Minervini 的版本:「练习不会造就完美,只会造就习惯。要<b>完美的练习</b>才造就完美。」</p>
+
+  <h3>Minervini 的 14 条交易规则</h3>
+  <div class="tw"><table>
+    <thead><tr><th class="num">#</th><th>规则</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td>永远带止损交易 —— <b>进场前就知道亏损离场点</b></td></tr>
+      <tr><td class="num">2</td><td>计划你的交易</td></tr>
+      <tr><td class="num">3</td><td><b>绝不加仓亏损头寸</b>(摊平)</td></tr>
+      <tr><td class="num">4</td><td>交易顺利时加码,不顺时减码</td></tr>
+      <tr><td class="num">5</td><td>只在顺势方向超配</td></tr>
+      <tr><td class="num">6</td><td>超配部分一旦逆向,尽快砍掉</td></tr>
+      <tr><td class="num">7</td><td>股票没有按预期走,考虑削减仓位</td></tr>
+      <tr><td class="num">8</td><td><b>绝不带大仓位过重大财报</b></td></tr>
+      <tr><td class="num">9</td><td>绝不让可观的盈利变成亏损</td></tr>
+      <tr><td class="num">10</td><td>尽快把止损移到保本(「让自己处于不可能被击败的位置」)</td></tr>
+      <tr><td class="num">11</td><td><b>行为出现实质性改变时立刻卖出</b></td></tr>
+      <tr><td class="num">12</td><td>突破后要看跟进买盘</td></tr>
+      <tr><td class="num">13</td><td>不要有偏爱的股票,按突破顺序买入 ——「<b>不要和股票结婚,只是约会</b>」</td></tr>
+      <tr><td class="num">14</td><td>每天评估持仓;永远以风险对报酬来思考</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>交易者失败的主要原因</h3>
+  <div class="grid2">
+    <div class="box r"><b>致命的三个</b>
+      <ol style="margin:6px 0 0;padding-left:20px;font-size:14px">
+        <li><b>不止损</b> —— 头号错误</li>
+        <li><b>给亏损头寸加仓</b> —— 爆仓头号原因</li>
+        <li>表现差 / 市场不利时不减仓</li>
+      </ol>
+    </div>
+    <div class="box a"><b>慢性的几个</b>
+      <ul style="margin:6px 0 0;padding-left:20px;font-size:14px">
+        <li>顺风时不敢加码</li>
+        <li>有利润不落袋,让可观盈利变亏损</li>
+        <li>不了解自己真实的交易统计</li>
+        <li>风格漂移(shiny object syndrome)</li>
+        <li>想太快赚太多,学习曲线预期不现实</li>
+        <li>交易规模过大 / 过度分散 / 过度集中</li>
+        <li>只关注回报不关注风险</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Livermore 的日常(一百年前就在做的事)</h3>
+  <p>这段很少被引用,但和现代运动员的备赛流程惊人地一致:早睡;吃喝清淡;运动;<b>在行情机前站着</b>;打电话时也站着;要求办公室安静;上班路上不和任何人说话;对自己的操作保持沉默。</p>
+  <p>他需要<b>独处和安静的时间</b>来思考和制定计划。讲者的评论:站立办公桌今天才流行,「久坐是新的吸烟」—— Livermore 一百年前就知道了。</p>
+  <p class="rule" style="font-size:16px">如果我的交易要犯错,我希望那是我自己的错。</p>
+
+  <h3>盘后 / 盘前 / 盘中的完整流程</h3>
+  <div class="grid3">
+    <div class="box b"><b>盘后(主要工作在这里)</b>
+      <ul style="margin:6px 0 0;padding-left:18px;font-size:13.5px">
+        <li>分析指数、板块、行业的方向与相对强度</li>
+        <li>跑扫描</li>
+        <li>建高质量观察列表</li>
+        <li><b>规划明日交易的具体价位和警报</b></li>
+        <li>查重大催化剂日期(FOMC、CPI)</li>
+        <li>注意关键财报</li>
+        <li>复核现有持仓与止损</li>
+        <li><b>检查自己的状态(心理、身体)</b></li>
+      </ul>
+    </div>
+    <div class="box g"><b>盘前</b>
+      <ul style="margin:6px 0 0;padding-left:18px;font-size:13.5px">
+        <li>非交易的例行程序:运动 / 散步 / 冥想 / 可视化 / 冷水浴</li>
+        <li>检查指数和关键市场股(TSLA、NVDA)</li>
+        <li>确认重大新闻催化剂</li>
+        <li>监控观察列表</li>
+      </ul>
+    </div>
+    <div class="box a"><b>盘中</b>
+      <ul style="margin:6px 0 0;padding-left:18px;font-size:13.5px">
+        <li><b>只执行计划</b></li>
+        <li>不看社交媒体</li>
+      </ul>
+      <p style="margin-top:10px;font-size:13.5px">「把自己当成顶级运动员来对待。」</p>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="s9">
+  <span class="sec-no">09</span>
+  <h2>附录 · 另外三个流派:你现在不该做,但要知道它们存在</h2>
+  <p>这 20 个视频里还有三套完整的方法,它们和主线<b>不能混用</b>。放在这里是为了让你认出它们,而不是让你现在去做。</p>
+  <div class="danger"><b>最容易犯的错:</b>把这三套的入场信号和主线混在同一个「买点」里。它们的触发条件、失效位置、持有周期、盯盘要求全都不同,统计也必须分开记。</div>
+
+  <h3>A · Episodic Pivot(EP):财报跳空</h3>
+  <p><span class="tag r">需要盯开盘</span> <span class="tag a">不适合低盯盘</span></p>
+  <p>Qullamaggie 三大 setup 之一。它<b>不是「带缺口的 VCP」</b> —— 买点、止损、时间框架全部不同。</p>
+
+  <figure>
+  <div class="figwrap">
+  <svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EP 事件枢轴的开盘执行">
+    <g stroke="var(--grid)" stroke-width="1">
+      <line x1="60" y1="70" x2="860" y2="70"/><line x1="60" y1="130" x2="860" y2="130"/>
+      <line x1="60" y1="190" x2="860" y2="190"/><line x1="60" y1="250" x2="860" y2="250"/>
+    </g>
+    <line x1="60" y1="40" x2="60" y2="300" stroke="var(--bd)" stroke-width="1.5"/>
+    <line x1="60" y1="300" x2="860" y2="300" stroke="var(--bd)" stroke-width="1.5"/>
+    <rect x="70" y="212" width="330" height="60" fill="var(--mut)" opacity="0.09"/>
+    <path d="M74,252 L100,244 L126,258 L152,240 L178,262 L204,246 L230,256 L256,238 L282,252 L308,244 L334,256 L360,242 L386,250 L400,246"
+          fill="none" stroke="var(--mut)" stroke-width="2.2" stroke-linejoin="round"/>
+    <text class="s-lab" x="235" y="204" fill="var(--mut)" text-anchor="middle">事件前:数月甚至数年的横盘基座</text>
+    <text class="s-note" x="235" y="288" fill="var(--mut)" text-anchor="middle">「大基座里有更多时间完成积累」</text>
+    <rect x="400" y="96" width="55" height="150" fill="var(--amber)" opacity="0.14"/>
+    <path d="M427,104 L427,238 M422,110 L427,100 L432,110 M422,232 L427,242 L432,232" stroke="var(--amber)" stroke-width="1.5" fill="none"/>
+    <text class="s-num" x="427" y="264" fill="var(--amber)" text-anchor="middle">缺口 &gt;10%</text>
+    <line x1="400" y1="246" x2="455" y2="246" stroke="var(--amber)" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <text class="s-note" x="396" y="243" fill="var(--mut)" text-anchor="end">昨收</text>
+    <!-- base high line -->
+    <line x1="80" y1="212" x2="400" y2="212" stroke="var(--blue)" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <path d="M400,212 L455,212" stroke="var(--blue)" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.4"/>
+    <text class="s-note" x="76" y="209" fill="var(--blue)" text-anchor="end">基座高点</text>
+    <rect x="455" y="96" width="70" height="60" fill="none" stroke="var(--blue)" stroke-width="2"/>
+    <path d="M459,150 L469,120 L479,140 L489,106 L499,132 L509,112 L519,100"
+          fill="none" stroke="var(--ink)" stroke-width="2" stroke-linejoin="round"/>
+    <text class="s-lab" x="490" y="88" fill="var(--blue)" text-anchor="middle">开盘前 5 分钟</text>
+    <line x1="455" y1="96" x2="860" y2="96" stroke="var(--green)" stroke-width="2" stroke-dasharray="7 5"/>
+    <rect x="646" y="76" width="126" height="19" rx="4" fill="var(--green)"/>
+    <text class="s-num" x="709" y="89.5" fill="#fff" text-anchor="middle">ORH = 触发买点</text>
+    <line x1="455" y1="156" x2="860" y2="156" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="4 4"/>
+    <rect x="778" y="159" width="80" height="18" rx="4" fill="var(--red)"/>
+    <text class="s-num" x="818" y="172" fill="#fff" text-anchor="middle">ORL = 止损</text>
+    <path d="M525,100 L543,84 L565,92 L593,70 L623,78 L659,58 L703,66 L753,46 L803,54 L848,38"
+          fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="532" cy="96" r="5.5" fill="var(--green)"/>
+    <path d="M532,103 L532,182" stroke="var(--green)" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.8"/>
+    <text class="s-lab" x="537" y="192" fill="var(--green)">① 等 5 分钟 K 收完,越过 ORH 才买</text>
+    <text class="s-note" x="537" y="208" fill="var(--mut)">前 5 分钟是用来量风险的,不是用来下单的</text>
+    <g stroke="var(--red)" stroke-width="1.5" fill="none"><path d="M700,96 L690,96 M700,156 L690,156 M695,96 L695,156"/></g>
+    <text class="s-num" x="708" y="122" fill="var(--red)">风险 = 开盘区间高度</text>
+    <text class="s-note" x="708" y="138" fill="var(--mut)">这段太宽就直接不做</text>
+    <line x1="60" y1="370" x2="860" y2="370" stroke="var(--bd)" stroke-width="1.5"/>
+    <text class="s-note" x="56" y="374" fill="var(--mut)" text-anchor="end">量</text>
+    <g fill="var(--mut)" opacity="0.5">
+      <rect x="74" y="356" width="9" height="14"/><rect x="100" y="352" width="9" height="18"/>
+      <rect x="126" y="358" width="9" height="12"/><rect x="152" y="354" width="9" height="16"/>
+      <rect x="178" y="360" width="9" height="10"/><rect x="204" y="356" width="9" height="14"/>
+      <rect x="230" y="358" width="9" height="12"/><rect x="256" y="352" width="9" height="18"/>
+      <rect x="282" y="359" width="9" height="11"/><rect x="308" y="356" width="9" height="14"/>
+      <rect x="334" y="358" width="9" height="12"/><rect x="360" y="354" width="9" height="16"/>
+      <rect x="386" y="357" width="9" height="13"/>
+    </g>
+    <g fill="var(--green)">
+      <rect x="459" y="312" width="12" height="58"/><rect x="483" y="318" width="12" height="52"/>
+      <rect x="513" y="326" width="12" height="44"/><rect x="549" y="334" width="12" height="36"/>
+      <rect x="593" y="340" width="12" height="30"/><rect x="653" y="344" width="12" height="26"/>
+      <rect x="723" y="348" width="12" height="22"/><rect x="803" y="346" width="12" height="24"/>
+    </g>
+    <text class="s-lab" x="470" y="302" fill="var(--green)">最好的 EP 在头 15–30 分钟就打出整天的平均成交量</text>
+  </svg>
+  </div>
+  <figcaption><b>这张图回答:</b>为什么 EP 不能当成日线策略做。它的买点是<b>开盘前 5 分钟 K 线的最高价</b>(不是日线枢轴),止损是<b>开盘区间低点</b>(不是结构低点),而且必须在开盘那几分钟坐在屏幕前。</figcaption>
+  </figure>
+
+  <div class="grid2">
+    <div class="box g"><b>EP 的硬条件</b>
+      <ul class="chk" style="margin-top:6px">
+        <li>跳空 <b>&gt; 10%</b></li>
+        <li>开盘附近大量;最好头 15–30 分钟打出日均量</li>
+        <li>财报要有<b>高双位数或三位数</b>的盈利/营收增长 + <b>显著超预期</b></li>
+        <li>股票正从基座出来,<b>没有过度延伸</b></li>
+        <li>跳空到<b>所有关键日线均线上方</b></li>
+        <li>最好<b>跳空越过基座高点</b></li>
+      </ul>
+    </div>
+    <div class="box r"><b>硬性排除</b>
+      <ul class="chk no" style="margin-top:6px">
+        <li>跳空进入<b>下行的 200 SMA / 50 SMA</b></li>
+        <li>跳空进入<b>大量套牢盘</b>(只跳到基座中部)</li>
+        <li>股票已经涨了 2–4 个月在顶部</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note"><b>为什么必须越过基座高点 —— 一个漂亮的心理学解释:</b><br>
+  如果 EP 只跳到基座中部,上方套牢的人从 −20/−25% 一下回到保本 → <b>立刻卖出解除痛苦</b> → 供给涌出,股价反复回填。<br>
+  如果 EP 跳空<b>越过</b>基座高点,那些人从亏损直接变成 +5/+10% → <b>从恐惧转为贪婪</b> → 继续持有 → 供给稀少,股价能走。</div>
+
+  <h3>B · Charles Harris 回撤策略</h3>
+  <p><span class="tag a">需要盯盘</span> <span class="tag b">和突破是反向操作</span></p>
+  <p>Harris 是 O'Neil 亲自教出来的,曾是 O'Neil 公司的基金经理。他<b>1999 年全年 +1031%</b>,但前三个月是 −8%。</p>
+  <div class="tw"><table>
+    <thead><tr><th>1999 年统计</th><th class="num">数值</th></tr></thead>
+    <tbody>
+      <tr><td>胜率</td><td class="num">约 60%</td></tr>
+      <tr><td>平均持有期</td><td class="num">7 天</td></tr>
+      <tr><td>平均盈利</td><td class="num">16%</td></tr>
+      <tr><td>平均亏损</td><td class="num">6%</td></tr>
+      <tr><td>全年往返交易</td><td class="num">约 700 笔</td></tr>
+      <tr><td>12 个月中上涨的月份</td><td class="num">10 个(8 个两位数,其中 5 个 +39% 以上)</td></tr>
+    </tbody>
+  </table></div>
+  <div class="rule" style="font-size:17px">在牛市里,买入已确立上升趋势中股票的回撤,是最有利可图、风险最低的策略;但在熊市里,这是个糟糕的策略。</div>
+  <p><b>核心信号叫 upside reversal(上行反转)</b> —— 价格盘中下跌但收盘强劲。三种长相:① 有下影线的锤子(= shakeout demand tail) ② 低开后收强(= gap down reversal bar) ③ 两者兼有。</p>
+  <div class="grid2">
+    <div class="box b"><b>四个前提(缺一不可)</b>
+      <ol style="margin:6px 0 0;padding-left:20px;font-size:14px">
+        <li>大盘在明确上升趋势中</li>
+        <li>个股在上升趋势中:高点低点双抬高 + <b>上行的 50 日均线</b></li>
+        <li>你对这只股票有<b>信念</b>(基本面强、故事有说服力)——「<b>光看图表永远不足以给我信念。我绝不会仅凭图表买股票</b>」</li>
+        <li>流动性相对你的账户规模要好</li>
+      </ol>
+    </div>
+    <div class="box g"><b>回撤深度的甜蜜点</b>「我买回撤时找的是比 10% 更实质一点的东西,可能在 <b>12% 到 20%</b> 区间。<b>我做过一个研究,平均回撤约 16% 到 18%</b> —— 如果我能在那个区间买到,我觉得做得不错。」</div>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>均线</th><th>Harris 怎么用</th></tr></thead>
+    <tbody>
+      <tr><td><b>10 EMA</b></td><td>通常离价格太近,除非是极强的股票。这里的 upside reversal <b>只做小额金字塔加仓</b>,更多是用来<b>让你留在股票里</b>,不是积累筹码的位置</td></tr>
+      <tr><td><b>21 EMA</b></td><td><b>主力积累位</b>。到 21 EMA 的回撤很多是从高点回落 10–15%,足以比在 10 日线更激进地加仓</td></tr>
+      <tr><td><b>50 SMA</b></td><td>经典支撑区,大多数领导股在大涨过程中会多次回访。「往往容纳了一些最大的模型股领导者的整个上涨过程」</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>风险定义:</b>upside reversal 之后的预期是股票继续上涨。<b>如果那根 K 的低点被跌破,就是错了</b> —— 等同于跌破 pivot。他的原话大意:我总是在有机会<b>定义我的亏损</b>时才利用弱势。</p>
+  <p class="m" style="font-size:13.5px">补充:Harris 2020 年约 +1400%,其中<b>约 80% 的收益来自 Tesla 这一只股票</b>。</p>
+
+  <h3>C · Toby Crabel 短周期收缩 → 扩张</h3>
+  <p><span class="tag r">日内</span> <span class="tag r">最不适合低盯盘</span></p>
+  <p>Crabel 主要是商品交易者,但他的收缩-扩张原理是整套体系的数学基础,而且 Qullamaggie 明显读过他的书。</p>
+  <div class="rule">市场不断从运动期变为静止期,再回到运动期。这两个阶段互为因果。</div>
+
+  <h4>NR 形态的精确定义(可以直接写成扫描条件)</h4>
+  <div class="tw"><table>
+    <thead><tr><th>形态</th><th>定义</th></tr></thead>
+    <tbody>
+      <tr><td><b>NR4</b></td><td>当日区间是相对<b>前 3 天</b>各自区间中最窄的</td></tr>
+      <tr><td><b>NR7</b></td><td>当日区间小于<b>前 6 天</b>(即 7 天里最窄)</td></tr>
+      <tr><td><b>Inside day(ID)</b></td><td>整个区间落在<b>前一日区间内</b></td></tr>
+      <tr><td><b>2 bar NR</b></td><td>相对<b>前 20 个交易日</b>内任意两日区间,最窄的两日区间</td></tr>
+      <tr><td><b>3 bar NR</b></td><td>相对<b>前 28 天</b>内任意三日区间,最窄的三日区间</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><b>Crabel 的实测结论:</b><b>16 次测试里有 15 次</b>,ID + NR4 组合的开盘区间突破成功概率高于任意日子的同类突破。他的结论是:<b>「拥挤区定义得越清晰,次日出现趋势活动的机会就越大。」</b>而且组合(ID + NR4)统计上优于单独的 inside day 或单独的 NR4。</div>
+
+  <h4>Stretch 的计算(ORB 的入场距离)</h4>
+  <ol>
+    <li>看<b>前 10 天</b></li>
+    <li>每天计算:开盘价到当日最接近开盘价的极值(高点或低点)的差值 —— <b>取较小的那个</b></li>
+    <li>把 10 天的这些值加总,<b>除以 10</b></li>
+  </ol>
+  <p>然后在开盘区间高点<b>上方</b> stretch 处挂买入止损单,在低点<b>下方</b> stretch 处挂卖出止损单。<b>先被触发的成为持仓,另一个成为保护性止损。</b></p>
+
+  <h4>Crabel 的入场时机规则(和主线的 free roll 是同一个思想)</h4>
+  <ul class="chk">
+    <li><b>越早入场成功率越高;理想是开盘头 10 分钟内</b></li>
+    <li>开盘到入场之间过去的时间越长,成功概率越低 → <b>随着交易日推进要调小仓位</b></li>
+    <li>最差的入场是临近收盘</li>
+    <li><b>一般应在入场后 1 小时内把止损移到保本</b>(趋势倾向强的市场给不到 1 小时;标普通常 5–10 分钟就明朗)</li>
+    <li><b>理想交易几乎立刻显示利润</b>;偏离理想的行为都可疑</li>
+  </ul>
+
+  <div class="warn"><b>Crabel 关于 3 bar NR 的一段话,值得所有做突破的人读:</b><br>
+  他的原话大意是:当这个形态在形成时,<b>投机者是缺席的</b> —— 他们倾向于忽略一个收缩到这种程度的市场。<b>而这正是市场最准备好移动、最可能呈现爆炸性机会的时点。</b>讽刺的是,对走出这个形态的移动给予的最初关注如此之少。<b>是训练有素的交易者认出这些机会,并提供了把市场带入趋势的力量。</b></div>
+
+  <p><b>一条压倒性的元规则:</b>「应用 2 bar NR 或任何市场概念时,<b>必须考虑市场的完整背景</b> —— 趋势 + 价格行为 + 形态 + 支撑阻力。而<b>主要趋势凌驾于所有其他细节之上</b>。」</p>
+  <p class="m" style="font-size:13.5px">注:2 bar NR 的思想来源是 Wyckoff 的 <b>last point of supply / last point of support</b> —— 异常窄幅、低成交量的价格行为时期,出现在积累或派发之后、拉升或打压阶段之前。这正是主线里 trigger bar 的祖先。</p>
+</section>
+
+<section class="card" id="s10">
+  <span class="sec-no">10</span>
+  <h2>来源对照表</h2>
+  <p>20 个视频,以及它们在这份文档里对应的章节。原始字幕存在你本地的 <code>jack-transcripts-original.md</code>,不在本站发布。</p>
+  <div class="tw"><table>
+    <thead><tr><th class="num">#</th><th>视频</th><th>核心贡献</th><th>本文对应</th></tr></thead>
+    <tbody>
+      <tr><td class="num">11</td><td><b>MARK MINERVINI — VCP</b></td><td>价格周期四阶段、VCP 八要素、趋势模板、止损位置逻辑、Holy Grail、14 条规则</td><td>③ ⑤ ⑦ ⑧</td></tr>
+      <tr><td class="num">20</td><td>Minervini VCP 扫描篇</td><td>收缩 2–5 次、基座 3–12 周、cheat/low cheat、实际筛选器设置</td><td>② ③ ④</td></tr>
+      <tr><td class="num">4</td><td><b>QULLAMAGGIE 总览($5k→$100m)</b></td><td>延续突破六条标准、ADR 与止损、free roll、250 笔模拟、三个扫描</td><td>① ② ④ ⑤ ⑥ ⑧</td></tr>
+      <tr><td class="num">5</td><td>Qullamaggie 五星形态</td><td>buy stop limit 下单法、free roll 三种算法、60 笔完美突破数据、交易计划</td><td>④ ⑥ ⑦ ⑧</td></tr>
+      <tr><td class="num">7</td><td>Qullamaggie 高 ADR</td><td>ADR 杠杆概念、13 个实证案例、空头挤压与内部人买入加成</td><td>②</td></tr>
+      <tr><td class="num">9</td><td>Qullamaggie EP 十四分钟</td><td>Tesla 实盘全记录(精确到秒)</td><td>⑥ 附录A</td></tr>
+      <tr><td class="num">16</td><td>Qullamaggie 旗形与 EP</td><td>延续突破与 EP 的对照</td><td>附录A</td></tr>
+      <tr><td class="num">18</td><td>Qullamaggie 组件化使用</td><td>只借用体系中的部分组件</td><td>00</td></tr>
+      <tr><td class="num">12</td><td><b>JESSE LIVERMORE 突破法</b></td><td>自上而下四步、牛顿模型、烛形+量的解读、10% 规则、最优下注、坐得住</td><td>① ③ ⑤ ⑥ ⑦ ⑧</td></tr>
+      <tr><td class="num">14</td><td>Livermore 如何进突破</td><td>pivotal point 的入场细节与试仓</td><td>④</td></tr>
+      <tr><td class="num">19</td><td><b>在所有时间框架上重复的完美突破</b></td><td>供需三格公式、多时间框架共振、四个完整下单模板、危险信号</td><td>③ ④ ⑤ ⑥ ⑦</td></tr>
+      <tr><td class="num">6</td><td><b>WILLIAM O'NEIL — CANSLIM</b></td><td>CANSLIM 量化门槛、95% Club、四个形态的精确定义、follow-through day</td><td>① ② ③</td></tr>
+      <tr><td class="num">2</td><td><b>NICOLAS DARVAS 箱体</b></td><td>箱体画法、第二次突破规则、极度集中、buy stop limit</td><td>② ③ ④</td></tr>
+      <tr><td class="num">8</td><td>CHARLES HARRIS 回撤</td><td>upside reversal、回撤深度甜蜜点、三条均线的不同用法</td><td>附录B</td></tr>
+      <tr><td class="num">15</td><td>TOBY CRABEL 秘密策略</td><td>NR4/NR7/ID/2barNR/3barNR 定义、stretch 计算、入场时机数据</td><td>附录C</td></tr>
+      <tr><td class="num">13</td><td>OLIVER KELL 941%</td><td>价格行为周期六阶段、bull flag vs pennant、「对 10 日线有空气」</td><td>③ ④</td></tr>
+      <tr><td class="num">1</td><td>DAN ZANGER $10k→$42m</td><td>强市场 + 领导股 + 集中突破</td><td>① ②</td></tr>
+      <tr><td class="num">10</td><td>Dan Zanger 八种突破形态</td><td>形态词典:旗形/三角旗/杯柄/平台/上升三角/对称三角/楔形/倒头肩</td><td>③b</td></tr>
+      <tr><td class="num">3</td><td>JESSE STINE Superstocks</td><td>超级股八条:长基座、巨量、45 度攻击角、股价 &lt;$15、年化 PE &lt;10、低流通盘、内部人买入、超级主题</td><td>②</td></tr>
+      <tr><td class="num">17</td><td>机构如何积累、派发、震出你</td><td>四阶段价格周期、bullish/bearish synchronicity、有序 vs 波动</td><td>③ ⑦</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Jesse Stine 的超级股清单(本文没有单独展开,放在这里备查)</h3>
+  <p>他的方法和主线不同 —— 他找的是<b>一年只有 8 到 10 个</b>的极端机会,从 15,000 只美股里挑 1–2 只。八条技术+基本面条件:</p>
+  <ul class="chk">
+    <li>数月到数年的<b>长基座</b>突破(基座越大,后面的趋势越大 —— 因果律)</li>
+    <li>突破时<b>巨量扩张</b>(他的案例里有周成交量扩张 600% 的)</li>
+    <li>突破到 <b>30 周均线</b>上方</li>
+    <li><b>高攻击角度,理想约 45 度</b></li>
+    <li>股价 <b>&lt; $15</b></li>
+    <li><b>年化市盈率 10 或以下</b></li>
+    <li><b>低流通盘</b>(他举的例子是 500 万股)+ 保守的管理层</li>
+    <li>加分项:<b>内部人买入</b> + <b>super theme</b>(超级主题)</li>
+  </ul>
+  <p class="rule" style="font-size:16px">低风险的机会窗口出现在所有人都放弃的时候,不是所有人都热情的时候。</p>
+</section>
+
+<div class="foot">
+  <p><b>关于这份文档。</b>它是对你本地那 20 份 Jack Corsellis 视频字幕的结构化教学重构,不是逐字转录,也不代表 Jack Corsellis 或文中任何一位交易者的官方规则文本。所有引述都做了转述并标注了出处。原始字幕含机器翻译和识别错误,本文已按英文语义和上下文交叉校正;若某处数字与你回看视频不符,以视频为准。</p>
+  <p><b>关于风险。</b>文中所有收益案例都是幸存者样本 —— 你看到的是 Bitcoin +1600%、GME +1600%、Monster +9000%,看不到的是同样形态下被止损出局的绝大多数交易。Qullamaggie 的胜率是 20–25%,意味着<b>四笔里有三笔是亏的</b>。这不构成投资建议;实际使用前应按 setup family 独立回测交易成本、滑点、胜率、平均盈亏与最大回撤。</p>
+  <p><b>配图说明。</b>本页所有图表均为按文中参数手绘的示意图,用于说明测量方法与位置关系,不是真实行情截图,不应按图上的绝对价位理解。</p>
+</div>
+
+</main></body></html>

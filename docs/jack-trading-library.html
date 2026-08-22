@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jack Corsellis 交易视频字幕资料库</title>
+  <style>
+    :root{--ink:#17211d;--mut:#68716c;--bg:#f6f7f4;--sf:#fff;--bd:#d7dcd7;--green:#087a55;--blue:#2563a8;--amber:#9a6200;--red:#b42318;--violet:#6d4fc2}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.72 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+    main{width:min(1180px,100%);margin:auto;padding:10px 16px 64px}.nav{position:sticky;top:0;z-index:8;display:flex;gap:7px;flex-wrap:wrap;padding:9px 0;background:color-mix(in srgb,var(--bg) 94%,transparent)}
+    .nav a,.jump a{padding:5px 11px;border:1px solid var(--bd);border-radius:999px;color:inherit;text-decoration:none;background:var(--sf)}.nav a.on{background:var(--ink);color:var(--bg)}
+    h1{font-size:32px;line-height:1.22;margin:20px 0 8px}h2{font-size:22px;margin:0 0 12px}h3{font-size:17px;margin:0 0 7px}h4{font-size:15px;margin:0 0 5px}p{margin:8px 0}.meta,small{color:var(--mut);font-size:12px}
+    .hero,.card{background:var(--sf);border:1px solid var(--bd);border-radius:15px;padding:19px;margin:14px 0}.hero{border-top:5px solid var(--green)}
+    .rule{font-size:20px;line-height:1.5;margin:16px 0;padding:14px;border-left:5px solid var(--green);background:#087a550b}.warning{border-left:4px solid var(--amber);padding:10px 12px;background:#9a62000c}.danger{border-left:4px solid var(--red);padding:10px 12px;background:#b423180b}
+    .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:14px}.stat{border:1px solid var(--bd);border-radius:10px;padding:11px}.stat b{display:block;color:var(--green);font-size:22px}.stat small{display:block}
+    .jump{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.jump a:hover{border-color:var(--green);color:var(--green)}
+    .flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.flow article{border:1px solid var(--bd);border-top:4px solid var(--blue);border-radius:11px;padding:12px}.flow b{display:block;color:var(--blue);font-size:17px}
+    .split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.module{border:1px solid var(--bd);border-radius:11px;padding:13px;background:#fbfcfa}.module strong{color:var(--green)}
+    table{width:100%;border-collapse:collapse}th,td{border-bottom:1px solid var(--bd);padding:9px;text-align:left;vertical-align:top}th{font-size:12px;color:var(--mut);background:#edf0ec}.table-wrap{overflow-x:auto;border:1px solid var(--bd);border-radius:10px}code{background:#edf0ec;border-radius:5px;padding:2px 5px}
+    .family{scroll-margin-top:66px}.family-head{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:10px}.family-head h2{margin:0}.tag{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:1px 8px;font-size:12px;white-space:nowrap}.green{color:var(--green)}.blue{color:var(--blue)}.amber{color:var(--amber)}.red{color:var(--red)}.violet{color:var(--violet)}
+    details.video{border:1px solid var(--bd);border-radius:12px;background:var(--sf);margin:9px 0;overflow:hidden}details.video[open]{border-color:#a9c8bc;box-shadow:0 4px 18px #17211d0a}summary{cursor:pointer;padding:13px 15px;font-weight:760;list-style:none;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}summary::-webkit-details-marker{display:none}summary:after{content:"展开";font-size:12px;color:var(--mut);font-weight:500;white-space:nowrap}details[open] summary:after{content:"收起"}summary small{display:block;font-weight:500;margin-top:2px}.video-body{border-top:1px solid var(--bd);padding:14px 15px}.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.fact{border:1px solid #e5e8e4;border-radius:8px;padding:9px 10px}.fact b{display:block;font-size:12px;color:var(--mut);margin-bottom:2px}.fit{margin-top:10px;padding:9px 11px;border-radius:8px;background:#edf0ec}.fit.good{border-left:4px solid var(--green)}.fit.mid{border-left:4px solid var(--amber)}.fit.low{border-left:4px solid var(--red)}
+    .check{list-style:none;padding:0;margin:0}.check li{padding:7px 0;border-bottom:1px solid var(--bd)}.check li:before{content:"✓";color:var(--green);font-weight:800;margin-right:8px}.no li:before{content:"×";color:var(--red)}
+    .footer{color:var(--mut);font-size:12px;border-top:1px solid var(--bd);padding-top:14px;margin-top:18px}
+    @media(max-width:850px){.stats,.flow{grid-template-columns:1fr 1fr}.split,.facts{grid-template-columns:1fr}h1{font-size:27px}}
+    @media(max-width:470px){main{padding:8px 10px 40px}.hero,.card{padding:14px}.stats,.flow{grid-template-columns:1fr}summary{padding:12px}.video-body{padding:12px}}
+    @media print{.nav,.jump{display:none}body{background:#fff}.card,.hero,details.video{break-inside:avoid}details.video .video-body{display:block}}
+  </style>
+</head>
+<body><main>
+  <nav class="nav"><a href="bogo.html">波哥信号</a><a href="etf.html">ETF涨幅榜</a><a href="prescreen.html">优势预筛</a><a href="trading-learning.html">零基础流程</a><a href="jack-trading-course.html">交易教学手册</a><a class="on" href="jack-trading-library.html">Jack字幕库</a><a href="summary.html">历史汇总</a></nav>
+
+  <section class="hero">
+    <div class="meta">Jack Corsellis 公开视频字幕整理 · 22 份文件去重为 20 个视频 · 按视频与策略边界归档</div>
+    <h1>Jack 交易视频字幕资料库</h1>
+    <p>这不是把 20 个视频揉成一套“万能策略”。它先保存每个视频自己的上下文、触发与风险规则，再单独提取可共用的<strong>预筛条件</strong>。你可以从这里学习，也可以知道哪些字段适合交给“优势预筛”，哪些判断必须留给波哥系统或人工复核。</p>
+    <div class="rule">共同语言不等于相同策略：强势、相对强度、收缩和风险控制可以共用；突破、回撤、事件缺口、开盘区间和箱体的入场规则不能互换。</div>
+    <div class="stats">
+      <div class="stat"><b>22</b><small>收到的字幕文件</small></div>
+      <div class="stat"><b>20</b><small>去重后的独立视频</small></div>
+      <div class="stat"><b>6</b><small>独立策略/研究家族</small></div>
+      <div class="stat"><b>1</b><small>建议初学主线：日线基座突破</small></div>
+    </div>
+    <p class="warning"><b>字幕质量说明：</b>原材料包含机器翻译和识别错误。本页以英文字幕语义、图中文字和上下文交叉校正后做结构化转述；不逐字复制整份字幕。</p>
+  </section>
+
+  <div class="jump" aria-label="章节导航"><a href="#boundary">边界</a><a href="#workflow">共同框架</a><a href="#topdown">自上而下</a><a href="#base">基座突破</a><a href="#qullamaggie">Qullamaggie突破</a><a href="#ep">事件枢轴</a><a href="#pullback">回撤</a><a href="#shortterm">短周期</a><a href="#matrix">比较表</a><a href="#beginner">你的流程</a><a href="#sources">来源清单</a></div>
+
+  <section class="card" id="boundary">
+    <h2>一、先把三层内容分开</h2>
+    <div class="split">
+      <div class="module"><span class="tag green">可以共用</span><h3>候选品种预筛</h3><p>市场环境、赛道/行业强度、个股相对强度、流动性、波动性、是否靠近高位、是否先涨后整理。这些用于回答“值得不值得继续看”。</p></div>
+      <div class="module"><span class="tag blue">按策略独立</span><h3>入场触发</h3><p>突破枢轴、突破箱顶、回撤反转、财报缺口后的 ORH、窄幅日后的开盘突破，是不同策略。预筛不能把它们合并成一个买点。</p></div>
+      <div class="module"><span class="tag amber">按交易独立</span><h3>风险与退出</h3><p>止损应落在该策略的失效点：结构低点、箱底、开盘区间低点或均线失守。不能只套固定百分比，也不能事后移动得更宽。</p></div>
+      <div class="module"><span class="tag violet">外部质量层</span><h3>基本面与 Buffett 过滤</h3><p>生意质量、资产负债表、估值与管理层可用于限制研究范围，但不是 Jack 技术策略的入场条件，也不能替代止损。</p></div>
+    </div>
+    <p class="danger"><b>最容易混错的地方：</b>VCP、旗形、杯柄、箱体可能共享“供给减少、价格收紧”的底层现象，但形态定义、基座长度、枢轴位置和失败判定仍然不同；EP 与普通突破更不能混为一谈。</p>
+  </section>
+
+  <section class="card" id="workflow">
+    <h2>二、Jack 视频反复使用的共同框架</h2>
+    <div class="flow">
+      <article><b>Identify · 识别</b>市场、赛道、领导股、结构和催化剂。先决定看什么，不急着交易。</article>
+      <article><b>Control · 控制</b>入场前定义失效位置、风险金额和仓位。错误时让损失很小。</article>
+      <article><b>Mitigate · 缓释</b>价格按预期运行后，减仓、推止损或让部分仓位“免费持有”。</article>
+      <article><b>Optimize · 优化</b>记录胜率、平均盈亏与行情反馈；表现差时降低暴露，表现好时渐进增加。</article>
+    </div>
+    <p>这个四步框架可以共用；但每个视频在 “Identify” 和 “Control” 里用的具体条件不同，下面逐一保留。</p>
+  </section>
+
+  <section class="card family" id="topdown">
+    <div class="family-head"><h2>三、家族 A：自上而下与成长股候选池</h2><span class="tag green">先选环境和品种</span></div>
+    <p>这组材料主要决定 universe 和研究优先级，不直接生成统一买点。</p>
+
+    <details class="video" open><summary><span>Jesse Livermore Breakout Method Explained<small>市场 → 行业组 → 姐妹股 → 个股的最小阻力线</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>建立自上而下的观察顺序，避免脱离市场和行业只看单只股票。</div><div class="fact"><b>环境/形态</b>总体市场、行业组与同组领导股方向一致；寻找关键价格线附近的蓄势。</div>
+      <div class="fact"><b>触发</b>价格越过 pivotal point，并出现预期中的跟随行为，而不是仅因“便宜”买入。</div><div class="fact"><b>风险/退出</b>关键位失守即证明判断可能错误；先用小仓测试，正确后才考虑增加。</div>
+      <div class="fact"><b>可自动化</b>大盘门、行业 ETF、同组 RS、关键高点和突破后的跟随。</div><div class="fact"><b>必须人工</b>行业叙事、姐妹股是否真正同步、关键位是否有历史意义。</div>
+    </div><div class="fit good"><b>低盯盘适配：高。</b>适合作为所有日线策略的前置环境过滤，但不是单独的完整入场系统。</div></div></details>
+
+    <details class="video"><summary><span>Jesse Livermore — How I Enter Breakouts<small>更聚焦具体 pivotal point、试仓与加仓逻辑</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>把 Livermore 的大框架缩到“怎样在关键点试错”。</div><div class="fact"><b>环境/形态</b>长期趋势有利，价格经过整理后接近关键阻力；不是在区间中部随意买。</div>
+      <div class="fact"><b>触发</b>关键价位被突破且价格表现正常；可用小仓确认市场是否同意。</div><div class="fact"><b>风险/退出</b>突破失败或回到关键位下方时迅速退出；只向盈利、被市场证明正确的方向加仓。</div>
+      <div class="fact"><b>可自动化</b>枢轴、距离、突破与失败、分批仓位上限。</div><div class="fact"><b>必须人工</b>判断 pivotal point 是否来自真正的供需转变，而非普通局部高点。</div>
+    </div><div class="fit good"><b>低盯盘适配：高。</b>用收盘价确认可降低盯盘要求；盘中追突破则不适合你的节奏。</div></div></details>
+
+    <details class="video"><summary><span>William O'Neil — CAN SLIM Strategy Explained, Part 1<small>成长、领导地位、机构需求与市场方向</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>建立成长股基本面与市场环境的候选池，而非单看 K 线。</div><div class="fact"><b>环境/形态</b>盈利与销售增长、创新/催化剂、行业领导、机构关注，加上有利市场方向。</div>
+      <div class="fact"><b>触发</b>从合格基座突破；基本面优秀本身不是入场。</div><div class="fact"><b>风险/退出</b>突破失败时控制亏损；基本面转差、市场环境恶化或技术结构破坏时重新评估。</div>
+      <div class="fact"><b>可自动化</b>EPS/营收增长、RS、52周位置、机构持仓、市场门。</div><div class="fact"><b>必须人工</b>“新产品/新服务”质量、会计含义、增长可持续性。</div>
+    </div><div class="fit good"><b>低盯盘适配：高。</b>最适合做每周候选池质量层；不要拿它替代价格触发。</div></div></details>
+
+    <details class="video"><summary><span>Jesse Stine Insider Buy Superstocks<small>超强催化、基本面拐点、成交量与长期基座</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>寻找可能由小市值、业绩拐点、公司事件或内部人行为推动的“superstock”。</div><div class="fact"><b>环境/形态</b>长时间被忽视后出现新催化，价格/成交量和基本面同时改变。</div>
+      <div class="fact"><b>触发</b>长期基座被巨大成交量突破，市场开始重新定价。</div><div class="fact"><b>风险/退出</b>高波动、小市值和流动性风险更高；催化失效或突破失败必须迅速退出。</div>
+      <div class="fact"><b>可自动化</b>成交量倍数、业绩修正、内部人买入、浮动股本、长期高点。</div><div class="fact"><b>必须人工</b>事件真实性、公告细节、稀释/融资风险和流动性。</div>
+    </div><div class="fit mid"><b>低盯盘适配：中。</b>可做周度研究池，但不建议零基础阶段直接交易小盘事件股。</div></div></details>
+
+    <details class="video"><summary><span>How Institutional Investors Accumulate, Distribute & Shake You Out<small>把价格、成交量和相对强度放进机构行为周期</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>理解积累、上涨、派发、下跌四阶段，减少把每次震荡都解释成买点。</div><div class="fact"><b>环境/形态</b>积累时价格韧性增强、量价结构改善；派发时高量却进展有限，随后结构转弱。</div>
+      <div class="fact"><b>触发</b>本视频提供上下文，不提供单一买入触发；应与某个独立策略结合。</div><div class="fact"><b>风险/退出</b>高量滞涨、关键支撑失守、相对强度走弱是风险线索。</div>
+      <div class="fact"><b>可自动化</b>量价背离、RS 新高、关键均线、放量却无进展。</div><div class="fact"><b>必须人工</b>区分正常换手、洗盘与真正派发，避免用单根 K 线下结论。</div>
+    </div><div class="fit good"><b>低盯盘适配：高。</b>适合作为预筛的状态标签，不应直接产生买卖信号。</div></div></details>
+  </section>
+
+  <section class="card family" id="base">
+    <div class="family-head"><h2>四、家族 B：日线/周线基座突破</h2><span class="tag blue">适合你的主学习线</span></div>
+    <p>共同点是“先有强势，再整理并接近关键位”；差别在形态定义和触发规则。</p>
+
+    <details class="video" open><summary><span>Mark Minervini Trading Strategy Explained — VCP<small>趋势模板、波动收缩、枢轴、风险与退出的完整总览</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>建立 Stage 2 趋势、VCP、基本面、卖出与风险管理的系统框架。</div><div class="fact"><b>环境/形态</b>价格位于主要均线上方；多次回调深度递减、低点抬高、调整量能减弱，最终收得很紧。</div>
+      <div class="fact"><b>触发</b>突破枢轴/趋势线，理想时伴随成交量扩张和后续“网球弹跳”式强势。</div><div class="fact"><b>风险/退出</b>止损置于结构失效点；盈利达到风险倍数可减仓并抬高止损；出现加速、滞涨或关键均线失守时退出。</div>
+      <div class="fact"><b>可自动化</b>趋势模板、收缩次数与深度、量缩、枢轴距离、风险百分比、RS。</div><div class="fact"><b>必须人工</b>基座质量、V 形修复是否过急、最终收缩是否真正干净。</div>
+    </div><div class="fit good"><b>低盯盘适配：高。</b>这是最适合你先学习并与收盘后预筛结合的一条主线。</div></div></details>
+
+    <details class="video"><summary><span>How to Trade & Scan for Minervini VCP Setups<small>把 VCP 总览翻成扫描与候选检查流程</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>解决“如何先筛出可能的 VCP，再人工确认”。</div><div class="fact"><b>环境/形态</b>强趋势、靠近高位、均线排列良好；波动和成交量逐级收缩。</div>
+      <div class="fact"><b>触发</b>靠近低风险枢轴时进入待机，真正突破后才交易；扫描命中不等于买入。</div><div class="fact"><b>风险/退出</b>用最终收缩低点或合理结构位定义风险，过宽则跳过。</div>
+      <div class="fact"><b>可自动化</b>趋势模板、ATR 收缩、量比、距高点/枢轴、RS 排名。</div><div class="fact"><b>必须人工</b>收缩是否有秩序、形态是否过度松散、是否刚经历 V 形反弹。</div>
+    </div><div class="fit good"><b>低盯盘适配：高。</b>直接对应“优势预筛 → 波哥待机”的工作流。</div></div></details>
+
+    <details class="video"><summary><span>Nicolas Darvas Box Trading Strategy<small>强势股、箱体上沿确认与箱底风险</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>用清晰箱体限定价格接受区间与风险边界。</div><div class="fact"><b>环境/形态</b>股票已有强势，随后在相对明确的上沿和下沿之间整理。</div>
+      <div class="fact"><b>触发</b>突破箱顶并显示需求；不是在箱体中间猜方向。</div><div class="fact"><b>风险/退出</b>跌回箱体或触及预定结构止损时退出；新箱体形成后可抬高保护位。</div>
+      <div class="fact"><b>可自动化</b>区间上/下沿、突破、回落失败、成交量与新高。</div><div class="fact"><b>必须人工</b>箱体边界是否足够清楚，是否存在假突破和流动性问题。</div>
+    </div><div class="fit good"><b>低盯盘适配：高。</b>规则简单，适合用日线收盘确认；但箱体不等于 VCP。</div></div></details>
+
+    <details class="video"><summary><span>Dan Zanger — $10,000 to $42,000,000<small>高强度牛市中的集中突破交易与快速风险控制</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>理解巨大收益来自强市场、领导股、集中仓位与极强执行，而非单个“神奇图形”。</div><div class="fact"><b>环境/形态</b>强劲牛市、热门行业和高度活跃的领导股；图形需要紧凑并有明显突破位。</div>
+      <div class="fact"><b>触发</b>放量突破关键形态，且随后继续强势；失败时不等待“回来”。</div><div class="fact"><b>风险/退出</b>快速止损、主动减仓；高度集中和杠杆使回撤风险远高于普通流程。</div>
+      <div class="fact"><b>可自动化</b>市场强度、行业动量、成交量突破、价格新高。</div><div class="fact"><b>必须人工</b>行情是否足以支持集中进攻、盘中行为和仓位承受力。</div>
+    </div><div class="fit low"><b>低盯盘适配：低。</b>可学习选股与突破质量，不复制其仓位、杠杆和盯盘强度。</div></div></details>
+
+    <details class="video"><summary><span>Dan Zanger — 8 Breakout Chart Patterns<small>八类图形的识别词典，不是八个可互换的买点</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>建立杯柄、旗形、楔形、通道等图形词汇，训练识别不同基座。</div><div class="fact"><b>环境/形态</b>每种图形有自己的边界和成熟条件；共同偏好强股、强行业和缩量整理。</div>
+      <div class="fact"><b>触发</b>突破各自的阻力/趋势线并有成交量支持。</div><div class="fact"><b>风险/退出</b>回到突破位下方、形态失效或缺乏跟随时退出。</div>
+      <div class="fact"><b>可自动化</b>候选高点、趋势线、量能和波动收缩；图形分类可做辅助标签。</div><div class="fact"><b>必须人工</b>确认图形是否完整，而不是算法勉强拟合。</div>
+    </div><div class="fit mid"><b>低盯盘适配：中。</b>适合周末学习图形，不建议初学同时交易八种模式。</div></div></details>
+
+    <details class="video"><summary><span>Oliver Kell 941% Breakout Strategy<small>领导股、旗形/楔形/通道与动态仓位管理</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>展示多种突破结构、行情反馈和进攻/防守切换。</div><div class="fact"><b>环境/形态</b>先找领导股与强趋势，再等待旗形、楔形、通道或盈利旗等结构。</div>
+      <div class="fact"><b>触发</b>越过结构线并获得跟随；可能结合早期试仓与确认后的增加。</div><div class="fact"><b>风险/退出</b>市场反馈差时缩小仓位；失去短期均线、结构失败或异常行为时减少/退出。</div>
+      <div class="fact"><b>可自动化</b>领导股排名、均线、结构线、成交量、近期交易反馈。</div><div class="fact"><b>必须人工</b>选择当前最适配的模式，并判断市场是否允许积极暴露。</div>
+    </div><div class="fit mid"><b>低盯盘适配：中。</b>保留日线领导股与风险管理部分；复杂盘中管理暂不采用。</div></div></details>
+
+    <details class="video"><summary><span>The Perfect Breakout Setup that Repeats on All Timeframes<small>跨形态提炼供需、收紧与突破后的共同解剖</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>解释为什么旗形、楔形、杯柄、VCP、Darvas box 会出现相似的收紧与突破行为。</div><div class="fact"><b>环境/形态</b>先有趋势推进，之后价格和成交量收缩，供应减少，关键位逐渐清晰。</div>
+      <div class="fact"><b>触发</b>突破对应形态自己的阻力线，并出现成交量/价格跟随。</div><div class="fact"><b>风险/退出</b>结构低点或突破失败定义风险；不同时间框架不能混用同一止损。</div>
+      <div class="fact"><b>可自动化</b>先涨后缩、量缩、低点抬高、枢轴距离、跟随。</div><div class="fact"><b>必须人工</b>选择它到底属于哪一种结构，再使用该结构的规则。</div>
+    </div><div class="fit good"><b>低盯盘适配：高。</b>适合作为读图原理课；核心提醒是“相似不等于相同”。</div></div></details>
+  </section>
+
+  <section class="card family" id="qullamaggie">
+    <div class="family-head"><h2>五、家族 C：Qullamaggie 延续突破</h2><span class="tag violet">先大涨，再高位收紧</span></div>
+    <p>这一组只讨论 continuation breakout。EP 被放在下一组，因为它依赖事件缺口和开盘区间。</p>
+
+    <details class="video" open><summary><span>Qullamaggie Stock Trading Strategy Explained — $5k to $100m<small>延续突破、EP、风险控制与持仓优化的总览课</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>完整介绍三类核心 setup 中的延续突破与 EP，并展示大量前后案例。</div><div class="fact"><b>环境/形态</b>延续突破：过去数周/月已有显著上涨，之后 2 周至 2 月横向整理，低点抬高、区间收紧并贴近 10/20 日线。</div>
+      <div class="fact"><b>触发</b>突破整理区高点；理想前一日/触发 K 很紧、量能干涸，突破时量能恢复。</div><div class="fact"><b>风险/退出</b>结构/触发位下方止损；3–5 日后可减 1/3–1/2、推保本，余仓用 10 日线跟踪。</div>
+      <div class="fact"><b>可自动化</b>前期涨幅、基座长度、ATR/量缩、低点抬高、均线贴合、突破与延伸。</div><div class="fact"><b>必须人工</b>区分干净基座与 choppy stock；EP 需另走事件模块。</div>
+    </div><div class="fit good"><b>低盯盘适配：高（只采用日线延续突破）。</b>总览中的 EP/盘中 ORH 不应混入同一入口。</div></div></details>
+
+    <details class="video"><summary><span>How to Trade & Scan for Qullamaggie 5 Star Breakout Setups<small>把“五星形态”拆成可复核的图表条件</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>训练识别大涨后紧凑横盘、关键均线支撑、量缩与 RS 的高质量延续形态。</div><div class="fact"><b>环境/形态</b>前期强势、盈利反应积极、在 10/20/50 日线附近形成越来越紧的范围。</div>
+      <div class="fact"><b>触发</b>窄幅/inside bar 后突破基座高点，成交量最好扩张。</div><div class="fact"><b>风险/退出</b>触发 K/结构低点下方；若止损位置太远，形态再漂亮也跳过。</div>
+      <div class="fact"><b>可自动化</b>基座紧度、inside bar、量缩、RS 52周高、均线支撑和突破量。</div><div class="fact"><b>必须人工</b>五星是综合质量判断，不宜只用单一分数伪装精确。</div>
+    </div><div class="fit good"><b>低盯盘适配：高。</b>适合做预筛评分和日线待机，但只在新结构附近观察。</div></div></details>
+
+    <details class="video"><summary><span>How to Quickly Scan & Trade Qullamaggie Perfect High ADR% Setups<small>高 ADR 活跃度、强 RS 与紧凑旗形</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>先从大 universe 中找“有足够速度”的股票，再检查结构。</div><div class="fact"><b>环境/形态</b>高 ADR、强相对强度、已有快速上涨，随后在高位形成旗形/箱体式收紧。</div>
+      <div class="fact"><b>触发</b>突破紧凑范围；高 ADR 只是机会特征，不是买点。</div><div class="fact"><b>风险/退出</b>高 ADR 也放大滑点和跳空风险，仓位必须随止损距离缩小。</div>
+      <div class="fact"><b>可自动化</b>ADR20、RS、成交额、前期涨幅、量缩、区间宽度、延伸 ATR。</div><div class="fact"><b>必须人工</b>流动性、新闻风险和结构是否足够紧，避免把“波动大”误当“优势大”。</div>
+    </div><div class="fit good"><b>低盯盘适配：高（用于选股）。</b>交易仍应等待日线结构，不能因 ADR 高而追涨。</div></div></details>
+
+    <details class="video"><summary><span>Qullamaggie Stock Breakout Strategy — How I Use Parts in My Trading<small>讲者如何只采用体系中的部分组件</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>示范“可以借用组件，但必须明确自己没有复制整套原体系”。</div><div class="fact"><b>环境/形态</b>保留强趋势、紧凑基座、RS、量缩和明确枢轴。</div>
+      <div class="fact"><b>触发</b>结合讲者自己的风险和时间框架使用突破，不机械照搬全部规则。</div><div class="fact"><b>风险/退出</b>先定义结构失效，再决定是否采用分批止盈或均线跟踪。</div>
+      <div class="fact"><b>可自动化</b>把使用的组件明确成字段并记录版本。</div><div class="fact"><b>必须人工</b>确认没有把不同来源的规则拼成逻辑冲突的混合策略。</div>
+    </div><div class="fit good"><b>低盯盘适配：高。</b>与你的目标最接近：预筛只借用候选条件，入场仍交给波哥系统。</div></div></details>
+  </section>
+
+  <section class="card family" id="ep">
+    <div class="family-head"><h2>六、家族 D：Qullamaggie Episodic Pivot（EP）</h2><span class="tag red">事件驱动 · 单独模块</span></div>
+    <p class="warning">EP 不是“普通 VCP 加一个缺口”。它要求事件/信息冲击、异常成交量和开盘后的价格接受；通常需要盘中执行。</p>
+
+    <details class="video" open><summary><span>Learn to Trade Qullamaggie Episodic Pivots in 14 Minutes<small>财报缺口、5分钟开盘区间高点与低点止损</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>专门讲 EP 的最小可执行流程。</div><div class="fact"><b>环境/形态</b>盈利/销售或重大催化带来向上缺口，成交量显著高于常态，价格越过基座和关键均线。</div>
+      <div class="fact"><b>触发</b>常用首个 5 分钟 K 的高点（ORH）作为触发；等待开盘区间完成，而不是开盘直接追。</div><div class="fact"><b>风险/退出</b>首根 K/当日低点或结构位下方；止损过宽则不做。盈利后可减仓、推保本并跟踪余仓。</div>
+      <div class="fact"><b>可自动化</b>缺口%、相对成交量、催化日、ORH/ORL、止损%、是否越过关键均线。</div><div class="fact"><b>必须人工</b>新闻质量、缺口是否已过度、盘前流动性与开盘成交。</div>
+    </div><div class="fit low"><b>低盯盘适配：低。</b>需要开盘后观察和下单，不应作为你的第一阶段主策略。</div></div></details>
+
+    <details class="video"><summary><span>Qullamaggie Breakout Setups — Flags & Episodic Pivots<small>把延续旗形与 EP 放在同一视频比较，但仍是两个 setup</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>比较正常延续突破和事件驱动 EP，并展示财报与非财报催化。</div><div class="fact"><b>环境/形态</b>旗形来自已有趋势后的收紧；EP 来自新信息冲击后价格/成交量的状态跃迁。</div>
+      <div class="fact"><b>触发</b>旗形用日线枢轴；EP 常用 ORH。两者不能因为都“突破”就共用同一触发。</div><div class="fact"><b>风险/退出</b>旗形看结构低点；EP 看开盘区间/当日低点，并评估跳空与滑点。</div>
+      <div class="fact"><b>可自动化</b>分别建立 <code>continuation</code> 与 <code>episodic_pivot</code> 标签和字段。</div><div class="fact"><b>必须人工</b>催化是否足够改变预期，以及非财报事件是否可靠。</div>
+    </div><div class="fit mid"><b>低盯盘适配：中。</b>只采用旗形部分较适合；EP 留作高级、盘中模块。</div></div></details>
+  </section>
+
+  <section class="card family" id="pullback">
+    <div class="family-head"><h2>七、家族 E：Charles Harris 强势股回撤</h2><span class="tag amber">不是突破策略</span></div>
+    <details class="video" open><summary><span>Charles Harris Swing Trading Pullback Strategy<small>牛市领导股回撤到关键支撑后的反转</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>在已经成立的强趋势中，等待正常回撤后寻找低风险重新参与点。</div><div class="fact"><b>环境/形态</b>偏好牛市与领导股；价格回到 10/20/50 日线、前突破位或明确支撑，而非接下跌刀。</div>
+      <div class="fact"><b>触发</b>出现 upside reversal、支撑确认或重新站回短期线；它是回撤反转，不是突破箱顶。</div><div class="fact"><b>风险/退出</b>回撤低点/支撑下方；若价格继续形成更低低点，交易假设失效。</div>
+      <div class="fact"><b>可自动化</b>领导股、距关键均线、回撤幅度、反转 K、量能和市场门。</div><div class="fact"><b>必须人工</b>区分正常回撤、趋势破坏和“看起来便宜”的弱股。</div>
+    </div><div class="fit mid"><b>低盯盘适配：中。</b>可做日线收盘策略，但它需要一套独立于突破的触发和统计记录。</div></div></details>
+  </section>
+
+  <section class="card family" id="shortterm">
+    <div class="family-head"><h2>八、家族 F：Toby Crabel 短周期收缩 → 扩张</h2><span class="tag red">短线/开盘区间</span></div>
+    <details class="video" open><summary><span>Toby Crabel Secret Trading Strategies<small>窄幅日、inside day、开盘区间突破与短期波动扩张</small></span></summary><div class="video-body"><div class="facts">
+      <div class="fact"><b>用途</b>研究短期波动从压缩转向扩张的统计机会。</div><div class="fact"><b>环境/形态</b>NR4/NR7、inside day 等窄幅条件，随后观察次日开盘区间。</div>
+      <div class="fact"><b>触发</b>突破开盘区间高/低点；可双向，和长期多头基座突破不是同一系统。</div><div class="fact"><b>风险/退出</b>开盘区间另一侧、时间止损或当日规则；持有期通常更短。</div>
+      <div class="fact"><b>可自动化</b>NR4/NR7、inside day、开盘区间、当日波动和时段。</div><div class="fact"><b>必须人工</b>交易成本、滑点、新闻日和开盘流动性；必须单独回测。</div>
+    </div><div class="fit low"><b>低盯盘适配：低。</b>不建议并入你的日线预筛主流程；否则会制造大量你无法执行的盘中信号。</div></div></details>
+  </section>
+
+  <section class="card" id="matrix">
+    <h2>九、策略比较：哪些能放在一起，哪些不能</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>模块</th><th>持有/观察节奏</th><th>核心触发</th><th>失效位置</th><th>可共用预筛</th><th>能否并入你的主线</th></tr></thead>
+      <tbody>
+        <tr><td>Minervini VCP</td><td>日线/周线</td><td>枢轴突破</td><td>最终收缩/结构低点</td><td>趋势、RS、收缩、量缩</td><td class="green"><b>是，主线</b></td></tr>
+        <tr><td>Darvas Box</td><td>日线/周线</td><td>箱顶突破</td><td>箱内/箱底规则</td><td>强势、流动性、箱体紧度</td><td class="green"><b>是，独立标签</b></td></tr>
+        <tr><td>Qullamaggie continuation</td><td>日线</td><td>高位基座突破</td><td>触发/结构低点</td><td>ADR、RS、前期涨幅、收缩</td><td class="green"><b>是，主线</b></td></tr>
+        <tr><td>Livermore pivotal point</td><td>日线/周线</td><td>关键点突破与跟随</td><td>关键点失守</td><td>市场、行业、姐妹股、关键高点</td><td class="green"><b>是，环境框架</b></td></tr>
+        <tr><td>O'Neil / Stine</td><td>周度研究 + 日线</td><td>催化后的基座突破</td><td>突破失败/基本面变坏</td><td>增长、催化、RS、成交量</td><td class="blue"><b>作为质量层</b></td></tr>
+        <tr><td>Charles Harris pullback</td><td>日线</td><td>支撑处反转</td><td>回撤低点失守</td><td>强市场、领导股、关键均线</td><td class="amber"><b>以后单独建立</b></td></tr>
+        <tr><td>Qullamaggie EP</td><td>盘前 + 开盘</td><td>事件缺口后的 ORH</td><td>ORL/当日低点</td><td>催化、gap、RVOL、基座</td><td class="red"><b>暂不并入</b></td></tr>
+        <tr><td>Toby Crabel ORB</td><td>盘中</td><td>开盘区间突破</td><td>区间另一侧/时间</td><td>NR/inside day</td><td class="red"><b>不并入</b></td></tr>
+      </tbody>
+    </table></div>
+    <div class="split" style="margin-top:12px">
+      <div><h3 class="green">可以进入同一个候选池</h3><ul class="check"><li>强市场与强行业</li><li>流动性、ADR、52周位置</li><li>RS、均线趋势、先涨后整理</li><li>ATR/成交量收缩</li><li>距离枢轴与结构止损</li></ul></div>
+      <div><h3 class="red">不能合成一个“买入信号”</h3><ul class="check no"><li>VCP 枢轴 = EP 开盘区间高点</li><li>箱顶突破 = 回撤反转</li><li>NR7/ORB = 日线趋势突破</li><li>高 ADR = 买点</li><li>好基本面 = 可以忽略价格风险</li></ul></div>
+    </div>
+  </section>
+
+  <section class="card" id="beginner">
+    <h2>十、给你的零基础、低盯盘版本</h2>
+    <p>先只运行一条主线：<strong>日线/周线强趋势里的高位基座收缩突破</strong>。它能吸收 Livermore、Minervini、Darvas 与 Qullamaggie continuation 的候选条件，但每个候选仍保留明确的 <code>setup_type</code>，绝不把触发混掉。</p>
+    <div class="flow">
+      <article><b>周末</b>更新市场门、赛道 ETF、成长/流动性 universe，筛出强势候选。</article>
+      <article><b>每天收盘后</b>计算趋势、RS、ADR、收缩、量缩、枢轴距离与结构风险。</article>
+      <article><b>送入波哥系统</b>只送 <code>setup_type</code> 明确且仍在低风险待机区的 ticker。</article>
+      <article><b>触发后复核</b>新鲜度、延伸、财报、止损宽度；不满足就不行动。</article>
+    </div>
+    <div class="table-wrap" style="margin-top:12px"><table>
+      <thead><tr><th>阶段</th><th>先采用</th><th>暂时不采用</th></tr></thead>
+      <tbody>
+        <tr><td>第 1 阶段</td><td>Minervini VCP、Darvas box、Qullamaggie continuation、Livermore top-down</td><td>EP、ORB、盘中追突破、复杂加仓</td></tr>
+        <tr><td>第 2 阶段</td><td>O'Neil/Stine 基本面质量层、institutional 状态标签</td><td>把基本面直接变成买点</td></tr>
+        <tr><td>第 3 阶段</td><td>若有独立回测，再增加 Charles Harris pullback</td><td>与突破策略共用同一个入场统计</td></tr>
+        <tr><td>高级阶段</td><td>只有愿意看开盘和接受跳空时再研究 EP/Crabel</td><td>自动收到信号却没有执行能力</td></tr>
+      </tbody>
+    </table></div>
+    <p class="warning"><b>系统字段建议：</b><code>setup_family</code>（base_breakout / pullback / episodic_pivot / opening_range）、<code>setup_type</code>（vcp / darvas / continuation 等）、<code>trigger_level</code>、<code>invalidation_level</code>、<code>market_gate</code>、<code>sector_rs21</code>、<code>leader_rs21</code>、<code>freshness</code>。候选可以共用排名，但触发与统计必须按 family 分开。</p>
+  </section>
+
+  <section class="card" id="sources">
+    <h2>十一、20 个独立视频来源清单</h2>
+    <p>以下均来自你贴入本任务的 Jack Corsellis 视频字幕。标题按字幕首行保留，长标题略去平台装饰词。</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>#</th><th>视频</th><th>归档家族</th><th>处理状态</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>QULLAMAGGIE Stock Trading Strategy EXPLAINED | $5k to $100m!</td><td>延续突破 / EP 总览</td><td>2 份版本，合并去重</td></tr>
+        <tr><td>2</td><td>MARK MINERVINI Trading Strategy EXPLAINED | Volatility Contraction Patterns</td><td>VCP / 风险管理</td><td>独立整理</td></tr>
+        <tr><td>3</td><td>JESSE LIVERMORE Breakout Method EXPLAINED</td><td>自上而下 / pivotal point</td><td>独立整理</td></tr>
+        <tr><td>4</td><td>DAN ZANGER turned $10,000 into $42,000,000 in 23 MONTHS!</td><td>领导股突破 / 集中风险</td><td>独立整理</td></tr>
+        <tr><td>5</td><td>OLIVER KELL 941% Breakout Strategy FULL TUTORIAL</td><td>多形态突破 / 暴露管理</td><td>独立整理</td></tr>
+        <tr><td>6</td><td>CHARLES HARRIS Swing Trading Pullback Strategy EXPLAINED</td><td>回撤反转</td><td>2 份完全重复，保留 1 份</td></tr>
+        <tr><td>7</td><td>WILLIAM O'NEIL How to Make Money in Stocks | CANSLIM | Part 1</td><td>成长质量 / 市场</td><td>独立整理</td></tr>
+        <tr><td>8</td><td>QULLAMAGGIE Breakout Setups | Flags & Episodic Pivots</td><td>延续旗形 / EP 对照</td><td>独立整理</td></tr>
+        <tr><td>9</td><td>NICOLAS DARVAS made MILLIONS from BOX TRADING Strategy</td><td>箱体突破</td><td>独立整理</td></tr>
+        <tr><td>10</td><td>The PERFECT Breakout Setup that REPEATS on All Timeframes</td><td>突破共同解剖</td><td>独立整理</td></tr>
+        <tr><td>11</td><td>DAN ZANGER — 8 Breakout Chart Patterns</td><td>多形态词典</td><td>独立整理</td></tr>
+        <tr><td>12</td><td>TOBY CRABEL — SECRET Trading Strategies</td><td>NR / ORB</td><td>独立整理</td></tr>
+        <tr><td>13</td><td>JESSE STINE Insider Buy SUPERSTOCKS</td><td>催化 / 基本面拐点</td><td>独立整理</td></tr>
+        <tr><td>14</td><td>How to QUICKLY Scan & Trade QULLAMAGGIE PERFECT High ADR% Setups</td><td>高 ADR 延续突破</td><td>独立整理</td></tr>
+        <tr><td>15</td><td>How INSTITUTIONAL INVESTORS Accumulate, Distribute & SHAKE YOU OUT</td><td>机构行为周期</td><td>独立整理</td></tr>
+        <tr><td>16</td><td>QULLAMAGGIE Stock Breakout Strategy (How I use Parts in My Trading)</td><td>组件化使用</td><td>独立整理</td></tr>
+        <tr><td>17</td><td>Learn to Trade Qullamaggie Episodic Pivots in 14 Minutes</td><td>EP / 5分钟 ORH</td><td>独立整理</td></tr>
+        <tr><td>18</td><td>JESSE LIVERMORE — How I Enter BREAKOUTS | Detailed Tutorial</td><td>pivotal point 入场</td><td>独立整理</td></tr>
+        <tr><td>19</td><td>How to Trade & Scan for MINERVINI VCP Setups</td><td>VCP 扫描</td><td>独立整理</td></tr>
+        <tr><td>20</td><td>How to Trade & Scan for QULLAMAGGIE 5 Star Breakout Setups</td><td>五星延续突破</td><td>独立整理</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <div class="footer">本页是对用户提供字幕的结构化学习整理，不代表 Jack Corsellis 或各交易者的官方规则文本。它保留策略边界并避免整段复制受版权保护的字幕。所有策略示例仅供研究，不构成投资建议；实际使用前应按 setup family 独立回测交易成本、滑点、胜率、平均盈亏与最大回撤。</div>
+</main></body></html>
