@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-21 收盘(ET)
-  生成 08-21 22:05 纽约 = 08-22 10:05 新加坡
+  生成 08-22 03:15 纽约 = 08-22 15:15 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -31,7 +31,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.4 高贝+1.0 低波+0.1 价值+0.0 → 中性日
   派发 ▆▅▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃ (2/吸4) → 仓位80%
   阶段P0 恐慌未释放 恐慌1/4 共识1/5 缺:SMH站上20日线
-  宏观 ✅ATR1422% ✗10Y4.74% ✅HYG/LQD0.7516 ✅USD/JPY158.94
+  宏观 ✅ATR1421% ✗10Y4.74% ✅HYG/LQD0.7516 ✅USD/JPY158.94
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:SILJ 小白银矿
@@ -56,13 +56,13 @@
  ▶ 冲突（日线买点/日内破位）
    NASDAQ:LITE   🟢10EMA回调   🔴规避/止损
  ▶ 财报窗口（信号作废）
-   NYSE:SNOW     🟢10EMA回调   ⚠️ 5日后(08-26)财?
+   NYSE:SNOW     🟢10EMA回调   ⚠️ 4日后(08-26)财?
   日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:AAOI🔴 
             NASDAQ:INTC🔴  NASDAQ:AMAT🟢  NASDAQ:SMH🔴  NYSE:GEV🔴 
-            NASDAQ:QQQ🟢  NYSE:CAT🟢  NYSE:NET🟢  NASDAQ:CRWD🔴 
-            NYSE:ANET🟢  NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:CIBR🟢 
-            NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴 
-            NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
+            NASDAQ:SNDK🟢  NASDAQ:QQQ🟢  NYSE:CAT🟢  NYSE:NET🟢 
+            NASDAQ:CRWD🔴  NYSE:ANET🟢  NASDAQ:MU🔴  NASDAQ:AXTI🔴 
+            NASDAQ:CIBR🟢  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
+            NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
   盘前±2%: NASDAQ:AAOI-10.0% NASDAQ:WULF+2.9%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
@@ -73,6 +73,7 @@
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: SNDKC$248M(v/oi8.9) QQQ≈$72M(v/oi53.8) PLTRC$71M(v/oi11.6) HOODC$63M(v/oi63.7) MU≈$62M(v/oi25.3)
+  T+1核对: BEC210(08-28)✗未增 BEC215(08-28)✗未增 BEC225(08-28)✗未增 BEC405(08-28)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
