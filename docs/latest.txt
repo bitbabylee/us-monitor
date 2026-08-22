@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-21 收盘(ET)
-  生成 08-21 19:26 纽约 = 08-22 07:26 新加坡
+  生成 08-21 21:50 纽约 = 08-22 09:50 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,7 +8,7 @@
 【结论】仓位上限 80% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
 【候选】5 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:MSFT   10EMA回调   日内:⚪观望
+  NASDAQ:MSFT   10EMA回调   日内:🟢稳健买点
   NYSE:LLY      10EMA回调   日内:⚪观望
   NASDAQ:HOOD   口袋支点      日内:🟢强动能买点
   NASDAQ:PLTR   口袋支点      日内:🟡警告:临近前高
@@ -46,11 +46,11 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
+   NASDAQ:MSFT   🟢10EMA回调   🟢稳健买点
    NASDAQ:HOOD   💡口袋支点      🟢强动能买点
    NASDAQ:SPCX   🟢10EMA回调   🟢突破买点
    AMEX:GDX      📦箱体突破      🟢稳健买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:MSFT   🟢10EMA回调   ⚪观望
    NYSE:LLY      🟢10EMA回调   ⚪观望
    NASDAQ:PLTR   💡口袋支点      🟡警告:临近前高
  ▶ 冲突（日线买点/日内破位）
@@ -59,11 +59,11 @@
    NYSE:SNOW     🟢10EMA回调   ⚠️ 5日后(08-26)财?
   日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:AAOI🔴 
             NASDAQ:INTC🔴  NASDAQ:AMAT🟢  NASDAQ:SMH🔴  NYSE:GEV🔴 
-            NASDAQ:QQQ🟢  NYSE:CAT🟢  NYSE:NET🟢  NASDAQ:CRWD🔴 
-            NYSE:ANET🟢  NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:CIBR🟢 
-            NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴 
-            NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AAOI-10.6% NASDAQ:WULF+3.0%
+            NASDAQ:SNDK🟢  NASDAQ:QQQ🟢  NYSE:CAT🟢  NYSE:NET🟢 
+            NASDAQ:CRWD🔴  NYSE:ANET🟢  NASDAQ:MU🔴  NASDAQ:AXTI🔴 
+            NASDAQ:CIBR🟢  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
+            NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:AAOI-10.0% NASDAQ:WULF+2.9%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 61%
@@ -72,7 +72,7 @@
   🔴淘汰(17): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX NASDAQ:IREN NASDAQ:MSFT SZSE:300476(胜宏) SSE:601138(富联) NASDAQ:RKLB SZSE:002837(英维克) SSE:600183(生益) NASDAQ:NBIS NASDAQ:INTC NASDAQ:RIOT NASDAQ:CRWD SZSE:300499(高澜) SSE:603986(兆易) NASDAQ:AMD
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUP$865M(v/oi45.6) PLTRC$406M(v/oi32.4) SNDKC$288M(v/oi13.7) QQQ≈$224M(v/oi99.0) HOODC$123M(v/oi63.7)
+  今日: SNDKC$248M(v/oi8.9) QQQ≈$72M(v/oi53.8) PLTRC$70M(v/oi11.6) HOODC$63M(v/oi63.7) MU≈$62M(v/oi25.3)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -82,6 +82,24 @@
   🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:LITE NASDAQ:TSLA NYSE:CAT NASDAQ:HOOD NASDAQ:AVGO NASDAQ:CIBR NYSE:TSM NASDAQ:AAOI
   池外强信号(仅提示, 不入信号链): NASDAQ:RGTI AMEX:URA NASDAQ:UK100 NASDAQ:HTI1! NASDAQ:YM1! NYSE:SCCO
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
+------------------------------------------------
+【A股重演】反转/反弹五条件 (截至08-21·独立体系)
+  判定: 反弹定性  反转条件 0/5
+  ✗①龙头前高 距前高 胜宏-35% 生益-29% 富联-22%
+  ✗②量能结构 涨/跌量比 0.91x (10日)
+  ✗③扩散质量 龙头5日-6.0% vs 池中位-2.5% 补涨带队
+  ✗④指数验证 上证3905 区间3946下方
+  ✗⑤海外锚 TSM20日+3.9% SMH/QQQ↓20日均 (月营收人工)
+  四棒5日α(领/改/弱/落·↑↓=加速): PCB+0领↓ 光+7领↓ 液冷+1改↓ 存储+3改↑ 探测+1领↓
+  资金面周频(环境非信号):
+  指增超额: 未更新(26H1收窄,500/1000弱)
+  私募仓位: 83.7% (07-10⚠️42天前) 高位·加仓空间有限·近4年新高·百亿级87.4
+  风格温度: 中证1000-沪深300 5日-0.1% 均衡(自动)
+  复评节点(到期强制重估):
+  08-26 T-5 高老师·方向确认窗(±4天, 前两窗8/5情绪8/12资金已验中)
+  09-05 T-15 高老师·趋势确认窗(9/1-9/9, 与苹果复评重叠)
+  09-09 T-19 苹果发布会·iPhone18逻辑验真(果链腿去留)
+  10-30 T-70 Q3财报兑现+中期选举前·跟随整体降仓评估
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
   个股=日线×日内同源串联; 波哥独立成页与本报无交互
