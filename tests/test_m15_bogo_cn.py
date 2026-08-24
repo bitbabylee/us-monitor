@@ -20,6 +20,20 @@ class BogoPdfRowClusteringTests(unittest.TestCase):
         )
 
 
+class BogoImageSelectionTests(unittest.TestCase):
+    def test_us_detail_images_include_strong_and_weak_signals(self):
+        rows = [
+            {"代码": "STRONG", "信号": "strong", "信号日": "08-24"},
+            {"代码": "WEAK", "信号": "weak", "信号日": "08-24"},
+            {"代码": "OLDER", "信号": "weak", "信号日": "08-20"},
+        ]
+
+        self.assertEqual(
+            {"STRONG", "WEAK", "OLDER"},
+            m13_bogo._image_codes(rows),
+        )
+
+
 class BogoFreshnessTests(unittest.TestCase):
     def test_us_batch_compares_source_to_singapore_date(self):
         ci_utc = datetime(2026, 8, 14, 21, 55, tzinfo=timezone.utc)

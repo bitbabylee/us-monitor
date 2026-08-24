@@ -5,7 +5,7 @@
 复用 m13_bogo 的 parse/export_pages（deck 第一页版式与 us 完全一致）。
 数据源: 归档目录里的 `MMDD ch 1050|ch 1520|ai 1600 bo sig.pdf`。
 解析结果落 .bogo_cn_signals.json（云端无 PDF 时回退显示上次快照）。
-输出: OUT_DIR/bogo_cn.html + OUT_DIR/bogo_cn/{1050,1520,1600}/<代码>.png（仅近3日强信号原图）。
+输出: OUT_DIR/bogo_cn.html + OUT_DIR/bogo_cn/{1050,1520,1600}/<代码>.png（强弱全清单原图）。
 与 bogo.html(美股页) 同风格，页顶互跳链接。无任何私人引用。
 """
 import html as H
@@ -73,7 +73,7 @@ def _find_pdf(pattern):
 
 
 def load() -> dict:
-    """逐批: 最新PDF → parse → 近3日强信号导原图。无PDF(云端)回退快照。"""
+    """逐批: 最新PDF → parse → 强弱全清单导原图。无PDF(云端)回退快照。"""
     from .m6_dashboard import OUT_DIR
     out = {}
     fresh = False

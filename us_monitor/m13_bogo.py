@@ -111,6 +111,11 @@ def _num(s, default=None):
         return default
 
 
+def _image_codes(rows) -> set[str]:
+    """Return every signal code so strong and weak rows keep their detail image."""
+    return {r["代码"] for r in rows if r.get("代码")}
+
+
 def load() -> dict:
     """优先解析本地最新 PDF; 没有(如云端)则读上次落盘的快照"""
     pdf = find_pdf()
@@ -120,10 +125,8 @@ def load() -> dict:
             if d["rows"]:
                 try:
                     from .m6_dashboard import OUT_DIR
-                    # 只导当日强信号的原图（全导 34 张 6MB, 且弱信号/旧日期用处不大）
-                    days3 = sorted({r["信号日"] for r in d["rows"]}, reverse=True)[:3]
-                    want = {r["代码"] for r in d["rows"]
-                            if r["信号"] == "strong" and r["信号日"] in days3}
+                    # 公开页展示强弱全清单；同名 PNG 会复用，不重复渲染。
+                    want = _image_codes(d["rows"])
                     d["images"] = export_pages(pdf, OUT_DIR / "bogo", only=want)
                 except Exception as exc:
                     print(f"WARN: 导出波哥单页图失败 {exc}", file=sys.stderr)
