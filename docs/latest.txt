@@ -1,20 +1,19 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-08-21 收盘(ET)
-  生成 08-24 10:55 纽约 = 08-24 22:55 新加坡
+  波哥信号 · 美股日报  数据截至 2026-08-24 收盘(ET)
+  生成 08-24 16:33 纽约 = 08-25 04:33 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 80% · 阶段P0 · 宏观3/4 · 抱团MAGS
+【结论】仓位上限 80% · 阶段P0 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
-【候选】5 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:MSFT   10EMA回调   日内:🟢强动能买点
-  NYSE:LLY      10EMA回调   日内:⚪观望
-  NASDAQ:HOOD   口袋支点      日内:⚪观望
-  NASDAQ:PLTR   口袋支点      日内:⚪观望
-  AMEX:GDX      箱体突破      日内:⚪观望
+【候选】4 只（形态+板块确认+无财报风险·未回测）
+  NASDAQ:MSFT   10EMA回调   日内:⚪观望
+  NYSE:LLY      10EMA回调   日内:🟢稳健买点
+  NASDAQ:HUT    超跌反弹      日内:🟢稳健买点
+  NASDAQ:APLD   超跌反弹      日内:🟡跳空低开,买点降级
 【否决】
-  NASDAQ:LITE   板块背离
+  NASDAQ:PLTR   板块背离
   NYSE:SNOW     财报窗口?
   NASDAQ:SPCX   板块背离
 【风险】无近端风险事件
@@ -26,50 +25,50 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7674 (MA50+1.8%) · RSI 57 · VIX 15.1
-  风格: MTUM/MAGS 4.54 跌破20日均 → 抱团MAGS
-  日性质(因子ETF超额·非纯因子): 动量-0.4 高贝+1.0 低波+0.1 价值+0.0 → 中性日
-  派发 ▆▅▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃ (2/吸4) → 仓位80%
-  阶段P0 恐慌未释放 恐慌1/4 共识1/5 缺:SMH站上20日线
-  宏观 ✅ATR1421% ✗10Y4.74% ✅HYG/LQD0.7516 ✅USD/JPY158.88
+  SPX 7653 (MA50+1.4%) · RSI 40 · VIX 15.9
+  风格: MTUM/MAGS 4.47 跌破20日均 → 抱团MAGS
+  日性质(因子ETF超额·非纯因子): 动量-1.2 高贝-1.6 低波+0.6 价值-0.9 → 去杠杆/轮动日
+  派发 ▅▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃ (2/吸4) → 仓位80%
+  阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
+  宏观 ✅ATR1414% ✗10Y4.70% ✗HYG/LQD0.7506 ✅USD/JPY159.15
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:COPX 铜矿
-  短线改善: AMEX:URA 铀核能  NASDAQ:WOOD 木材  AMEX:XLB 基础材料 (Materials)  NASDAQ:PPH 制药  AMEX:LIT 锂电池
+  涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:SILJ 小白银矿
+  短线改善: AMEX:XLB 基础材料 (Materials)  AMEX:URA 铀核能  AMEX:USMV 低波  NASDAQ:WOOD 木材  AMEX:XLY 可选消费 (Discretionary)
 ------------------------------------------------
 【板块】
-  强: AMEX:GDX+2.6% · AMEX:XLB+1.7%
-  主题🔥 🏦 降息受益 +7.1%  龙头 NASDAQ:HOOD
-  主题🔥 🛡 网络安全 +2.6%  龙头 NYSE:NET
-  主题🔥 🪙 黄金   +2.5%  龙头 NYSE:WPM
-  主题🧊 矿转AIDC -5.8%
+  强: AMEX:XLP+2.0% · AMEX:XLF+1.6% · AMEX:XLU+1.3% · AMEX:XLC+1.1%
+  主题🧊 ️ 网络安全 -2.2%
+  主题🧊 🏦 降息受益 -2.8%
+  主题🧊 🚀 军工   -3.0%
+  主题🧊 🔥 AI算力 -3.1%
+  主题🧊 ☁️ 云计算 -3.6%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:MSFT   🟢10EMA回调   🟢强动能买点
-   NASDAQ:SPCX   🟢10EMA回调   🟢稳健买点
+   NYSE:LLY      🟢10EMA回调   🟢稳健买点
+   NASDAQ:HUT    🚀超跌反弹      🟢稳健买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:LITE   🟢10EMA回调   ⚪观望
-   NYSE:LLY      🟢10EMA回调   ⚪观望
-   NASDAQ:HOOD   💡口袋支点      ⚪观望
-   NASDAQ:PLTR   💡口袋支点      ⚪观望
-   AMEX:GDX      📦箱体突破      ⚪观望
+   NASDAQ:MSFT   🟢10EMA回调   ⚪观望
+   NASDAQ:PLTR   🟢10EMA回调   ⚪观望
+   NASDAQ:SPCX   🟢10EMA回调   ⚪观望
+   NASDAQ:APLD   🚀超跌反弹      🟡跳空低开,买点降级
  ▶ 财报窗口（信号作废）
    NYSE:SNOW     🟢10EMA回调   ⚠️ 2日后(08-26)财?
-  日内异动: NYSE:BE🟡  NASDAQ:NBIS🟡  NASDAQ:AAOI🟡  NASDAQ:INTC🟢 
-            NASDAQ:QQQ🟢  NYSE:CAT🟢  NYSE:NET🟢  NASDAQ:CRWD🟢 
-            NYSE:ANET🟢  NASDAQ:CRDO🟡  NASDAQ:AMD🟢  NASDAQ:MU🟡 
-            NASDAQ:CIBR🟢  NASDAQ:CORZ🟢  NASDAQ:RIOT🟢  NASDAQ:HUT🟢 
-  盘前±2%: NASDAQ:AAOI-11.5% NASDAQ:AXTI-8.2% NASDAQ:SNDK-8.1% NASDAQ:MU-6.6% NASDAQ:CRDO-6.5% NASDAQ:NBIS-6.2% NASDAQ:LITE-5.4% NASDAQ:RKLB-4.3% NASDAQ:INTC-4.1% NASDAQ:CIFR-3.5% NASDAQ:AMD-3.3% NASDAQ:IREN-3.1% NASDAQ:SMH-2.9% NASDAQ:AMAT-2.8% NYSE:NET-2.5% NASDAQ:RIOT+2.2% NASDAQ:HUT-2.1% NASDAQ:PLTR-2.1%
+  日内异动: NYSE:BE🔴  NASDAQ:RKLB🔴  NASDAQ:LITE🔴  NASDAQ:AAOI🟡 
+            NASDAQ:INTC🟢  NASDAQ:AMAT🟡  NASDAQ:SMH🟢  NYSE:GEV🟢 
+            NYSE:CAT🟢  NYSE:NET🔴  NYSE:ANET🟢  NASDAQ:CRDO🟡 
+            NASDAQ:HOOD🔴  NASDAQ:MU🟡  NASDAQ:AXTI🔴  AMEX:GDX🟢 
+            NASDAQ:IREN🔴  NASDAQ:WULF🔴 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 60%
-  🟢合格·在买点区(7): NYSE:LLY NASDAQ:SNDK NYSE:SNOW AMEX:SPY NASDAQ:QQQ SZSE:301018(申菱) SSE:601208(东材)
+  上升趋势占比 56% · 📣AAOI S2↑→S1⌐ · GEV S2↑→S1⌐ · CAT S2↑→S1⌐
+  🟢合格·在买点区(6): NYSE:LLY NYSE:SNOW AMEX:SPY NASDAQ:QQQ NASDAQ:MU NASDAQ:LITE
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(16): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX NASDAQ:IREN NASDAQ:MSFT SZSE:300499(高澜) SZSE:002837(英维克) SZSE:300476(胜宏) NASDAQ:RKLB NASDAQ:NBIS NASDAQ:INTC SSE:688627(精智达) NASDAQ:RIOT NASDAQ:CRWD NASDAQ:AMD SZSE:300308(旭创)
+  🔴淘汰(18): NASDAQ:HOOD AMEX:GDX NASDAQ:PLTR SZSE:300476(胜宏) NASDAQ:IREN SSE:601138(富联) SZSE:002837(英维克) NASDAQ:RKLB SSE:600183(生益) NASDAQ:RIOT NASDAQ:MSFT NASDAQ:NBIS SZSE:300499(高澜) NYSE:NET NASDAQ:CRWD NASDAQ:INTC SSE:603986(兆易) NASDAQ:AMD
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDK≈$221M(v/oi11.0) QQQ≈$133M(v/oi99.0) MU≈$62M(v/oi99.0) SPCX≈$31M(v/oi11.5) PLTRC$20M(v/oi2.0)
+  今日: SNDKC$477M(v/oi24.9) QQQ≈$269M(v/oi99.0) MU≈$128M(v/oi99.0) SPCX≈$59M(v/oi11.5) NBISC$44M(v/oi20.6)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -79,6 +78,24 @@
   🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:LITE NASDAQ:TSLA NYSE:CAT NASDAQ:HOOD NASDAQ:AVGO NASDAQ:CIBR NYSE:TSM NASDAQ:AAOI
   池外强信号(仅提示, 不入信号链): NASDAQ:RGTI AMEX:URA NASDAQ:UK100 NASDAQ:HTI1! NASDAQ:YM1! NYSE:SCCO
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
+------------------------------------------------
+【A股重演】反转/反弹五条件 (截至08-21·独立体系)
+  判定: 反弹定性  反转条件 0/5
+  ✗①龙头前高 距前高 胜宏-35% 生益-29% 富联-22%
+  ✗②量能结构 涨/跌量比 0.91x (10日)
+  ✗③扩散质量 龙头5日-6.0% vs 池中位-2.5% 补涨带队
+  ✗④指数验证 上证3905 区间3946下方
+  ✗⑤海外锚 TSM20日+2.8% SMH/QQQ↓20日均 (月营收人工)
+  四棒5日α(领/改/弱/落·↑↓=加速): PCB+0领↓ 光+7领↓ 液冷+1改↓ 存储+3改↑ 探测+1领↓
+  资金面周频(环境非信号):
+  指增超额: 未更新(26H1收窄,500/1000弱)
+  私募仓位: 83.7% (07-10⚠️45天前) 高位·加仓空间有限·近4年新高·百亿级87.4
+  风格温度: 中证1000-沪深300 5日-1.1% 缩圈防守(自动)
+  复评节点(到期强制重估):
+  08-26 🔔到期 高老师·方向确认窗(±4天, 前两窗8/5情绪8/12资金已验中)
+  09-05 T-12 高老师·趋势确认窗(9/1-9/9, 与苹果复评重叠)
+  09-09 T-16 苹果发布会·iPhone18逻辑验真(果链腿去留)
+  10-30 T-67 Q3财报兑现+中期选举前·跟随整体降仓评估
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
   个股=日线×日内同源串联; 波哥独立成页与本报无交互
