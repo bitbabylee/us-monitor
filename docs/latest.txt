@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-21 收盘(ET)
-  生成 08-24 07:38 纽约 = 08-24 19:38 新加坡
+  生成 08-24 09:31 纽约 = 08-24 21:31 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,11 +8,11 @@
 【结论】仓位上限 80% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
 【候选】5 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:MSFT   10EMA回调   日内:🟢稳健买点
-  NYSE:LLY      10EMA回调   日内:⚪观望
-  NASDAQ:HOOD   口袋支点      日内:🟢强动能买点
-  NASDAQ:PLTR   口袋支点      日内:🟡警告:临近前高
-  AMEX:GDX      箱体突破      日内:🟢稳健买点
+  NASDAQ:MSFT   10EMA回调   日内:⏳开盘5分钟
+  NYSE:LLY      10EMA回调   日内:⏳开盘5分钟
+  NASDAQ:HOOD   口袋支点      日内:⏳开盘5分钟
+  NASDAQ:PLTR   口袋支点      日内:⏳开盘5分钟
+  AMEX:GDX      箱体突破      日内:⏳开盘5分钟
 【否决】
   NASDAQ:LITE   板块背离
   NYSE:SNOW     财报窗口?
@@ -34,8 +34,8 @@
   宏观 ✅ATR1421% ✗10Y4.74% ✅HYG/LQD0.7516 ✅USD/JPY158.88
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:SILJ 小白银矿
-  短线改善: AMEX:URA 铀核能  AMEX:XLB 基础材料 (Materials)  AMEX:REMX 稀土  AMEX:LIT 锂电池  AMEX:USMV 低波
+  涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:SIL 白银矿  AMEX:SILJ 小白银矿  AMEX:ARKG 基因组
+  短线改善: NASDAQ:PPH 制药  AMEX:XLB 基础材料 (Materials)  AMEX:URA 铀核能  AMEX:REMX 稀土  AMEX:LIT 锂电池
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+2.6% · AMEX:XLB+1.7%
@@ -45,25 +45,17 @@
   主题🧊 矿转AIDC -5.8%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
- ▶ 日线+日内同向
-   NASDAQ:MSFT   🟢10EMA回调   🟢稳健买点
-   NASDAQ:HOOD   💡口袋支点      🟢强动能买点
-   NASDAQ:SPCX   🟢10EMA回调   🟢突破买点
-   AMEX:GDX      📦箱体突破      🟢稳健买点
  ▶ 等时机（日内未给买点）
-   NYSE:LLY      🟢10EMA回调   ⚪观望
-   NASDAQ:PLTR   💡口袋支点      🟡警告:临近前高
- ▶ 冲突（日线买点/日内破位）
-   NASDAQ:LITE   🟢10EMA回调   🔴规避/止损
+   NASDAQ:LITE   🟢10EMA回调   ⏳开盘5分钟
+   NASDAQ:MSFT   🟢10EMA回调   ⏳开盘5分钟
+   NYSE:LLY      🟢10EMA回调   ⏳开盘5分钟
+   NASDAQ:HOOD   💡口袋支点      ⏳开盘5分钟
+   NASDAQ:PLTR   💡口袋支点      ⏳开盘5分钟
+   NASDAQ:SPCX   🟢10EMA回调   ⏳开盘5分钟
+   AMEX:GDX      📦箱体突破      ⏳开盘5分钟
  ▶ 财报窗口（信号作废）
    NYSE:SNOW     🟢10EMA回调   ⚠️ 2日后(08-26)财?
-  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:AAOI🔴 
-            NASDAQ:INTC🔴  NASDAQ:AMAT🟢  NASDAQ:SMH🔴  NYSE:GEV🔴 
-            NASDAQ:SNDK🟢  NASDAQ:QQQ🟢  NYSE:CAT🟢  NYSE:NET🟢 
-            NASDAQ:CRWD🔴  NYSE:ANET🟢  NASDAQ:MU🔴  NASDAQ:AXTI🔴 
-            NASDAQ:CIBR🟢  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
-            NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AAOI-11.5% NASDAQ:AXTI-5.3% NASDAQ:LITE-4.7% NASDAQ:SNDK-4.5% NYSE:BE-3.1% NASDAQ:NBIS-3.0% NASDAQ:MU-2.7% NASDAQ:CRDO-2.4% NASDAQ:APLD-2.2% NASDAQ:SPCX-2.0%
+  盘前±2%: NASDAQ:AAOI-15.9% NASDAQ:AXTI-8.7% NASDAQ:SNDK-8.2% NYSE:BE-7.3% NASDAQ:CRDO-6.3% NASDAQ:LITE-6.2% NASDAQ:NBIS-5.3% NASDAQ:MU-4.6% NASDAQ:RKLB-3.6% NASDAQ:INTC-3.3% NASDAQ:PLTR-2.7% NASDAQ:CIFR-2.6% NASDAQ:IREN-2.3% NYSE:NET-2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 60%
