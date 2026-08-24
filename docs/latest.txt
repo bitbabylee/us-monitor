@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-21 收盘(ET)
-  生成 08-24 01:09 纽约 = 08-24 13:09 新加坡
+  生成 08-24 04:05 纽约 = 08-24 16:05 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -63,11 +63,11 @@
             NASDAQ:CRWD🔴  NYSE:ANET🟢  NASDAQ:MU🔴  NASDAQ:AXTI🔴 
             NASDAQ:CIBR🟢  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AAOI-10.0% NASDAQ:WULF+2.9%
+  盘前±2%: NASDAQ:AAOI-13.4% NASDAQ:AXTI-6.7% NASDAQ:SNDK-4.9% NASDAQ:LITE-4.4% NYSE:BE-4.1% NASDAQ:NBIS-3.9% NASDAQ:MU-3.8% NASDAQ:CRDO-3.5% NASDAQ:IREN-2.9% NASDAQ:AMAT-2.8% NASDAQ:AMD-2.5% NASDAQ:SPCX-2.3% NASDAQ:APLD-2.3% NASDAQ:INTC-2.3%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 60%
-  🟢合格·在买点区(7): NYSE:LLY NASDAQ:SNDK NYSE:SNOW AMEX:SPY NASDAQ:QQQ SSE:601208(东材) SZSE:301018(申菱)
+  🟢合格·在买点区(7): NYSE:LLY NASDAQ:SNDK NYSE:SNOW AMEX:SPY NASDAQ:QQQ SZSE:301018(申菱) SSE:601208(东材)
   🟢合格·追高区勿追(0): 无
   🔴淘汰(16): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX NASDAQ:IREN NASDAQ:MSFT SZSE:300499(高澜) SZSE:002837(英维克) SZSE:300476(胜宏) NASDAQ:RKLB NASDAQ:NBIS NASDAQ:INTC SSE:688627(精智达) NASDAQ:RIOT NASDAQ:CRWD NASDAQ:AMD SZSE:300308(旭创)
 ------------------------------------------------
