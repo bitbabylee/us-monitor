@@ -15,6 +15,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from . import m13_bogo as m13
+from . import m21_bogo_etf as bogo_etf
 from . import m20_ticker_master as ticker_master
 
 STORE = Path(__file__).resolve().parent / ".bogo_cn_signals.json"
@@ -38,6 +39,7 @@ h1{font-size:16px;margin:6px 0 2px}
 .sec{margin-top:26px;border-top:3px solid var(--bd);padding-top:10px}
 .sub{color:var(--ink2);font-size:12px;margin:2px 0 8px}
 table{border-collapse:collapse;width:100%;background:var(--sf);font-size:12px}
+.table-wrap{overflow-x:auto}
 th,td{border:1px solid var(--bd);padding:3px 6px;text-align:right;white-space:nowrap}
 th.l,td.l{text-align:left}
 tr.s td{font-weight:600}
@@ -52,6 +54,8 @@ tr.hot td{background:#0ca30c14}
 .blk pre{margin:0 0 6px;white-space:pre-wrap;font-size:12px}
 .blk img{max-width:100%;border-radius:4px}
 .plan{display:block;margin-top:5px;padding:4px 6px;border-left:3px solid var(--ink2);color:var(--ink2)}
+.etf-cell{min-width:190px;white-space:normal!important}.etf-cell small{display:block;color:var(--ink2)}
+.etf-miss{color:var(--mut)}
 a{color:inherit}
 """
 
@@ -181,7 +185,33 @@ def _plan_line(code: str, plans: dict) -> str:
             f' · {H.escape(plan["grade"])} · 仓位上限 {plan["position_pct"]:.1f}%</span>')
 
 
-def _section(key, label, d, img_prefix="bogo_cn/") -> str:
+def _etf_html(items: list[dict], detail: bool = False) -> str:
+    if not items:
+        return '<span class="etf-miss">未映射</span>'
+    rendered = []
+    for item in items:
+        ticker = H.escape(item["tk"])
+        metrics = (
+            f'5日 {bogo_etf.pct(item.get("r5"))} · 21日 {bogo_etf.pct(item.get("r21"))} · '
+            f'63日 {bogo_etf.pct(item.get("r63"))}'
+        )
+        state = " / ".join(x for x in (item.get("trend"), item.get("position")) if x)
+        link = f'<a href="etf.html#{ticker}"><b>{ticker}</b></a>'
+        relation = H.escape(item.get("relation") or "主题代理")
+        if detail:
+            rendered.append(
+                f'{link}（{relation}） {H.escape(metrics)}'
+                + (f' · {H.escape(state)}' if state else "")
+            )
+        else:
+            rendered.append(
+                f'{link}<small>{H.escape(metrics)} · {relation}'
+                + (f' · {H.escape(state)}' if state else "") + '</small>'
+            )
+    return ("；" if detail else "<br>").join(rendered)
+
+
+def _section(key, label, d, img_prefix="bogo_cn/", etf_snapshot=None) -> str:
     if not d or not d.get("rows"):
         return (f'<div class="sec"><h1>{H.escape(label)}</h1>'
                 f'<div class="sub">暂无数据</div></div>')
@@ -191,6 +221,8 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
     newest = days3[0] if days3 else ""
     detail_rows = rows   # 明细图=全清单(强+弱), 2026-08-11 用户要求
     plans = _engine_plans()
+    etf_snapshot = etf_snapshot or {"dataDate": None, "rows": []}
+    etf_context = {r["代码"]: bogo_etf.contexts(r, etf_snapshot) for r in rows}
     def _day(r):
         d0 = r["信号日"]
         if d0 == newest:
@@ -214,6 +246,7 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
         f'<td>{H.escape(r["当日%"])}</td>{_fit(r)}'
         f'<td>{H.escape(r["胜率"])}</td><td>{H.escape(r["CA%"])}</td>'
         f'<td>{H.escape(r["Pnls%"])}</td>'
+        f'<td class="l etf-cell">{_etf_html(etf_context[r["代码"]])}</td>'
         f'<td class="l" style="white-space:normal">{H.escape(r["主题"])}</td></tr>'
         for r in rows)
     blocks = []
@@ -224,7 +257,8 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
             f'<div class="blk"><pre><b>{H.escape(s_)}</b> {H.escape(r["中文名"])} · '
             f'{H.escape(r["主题"])}\n信号日 {H.escape(r["信号日"])} · Fit {H.escape(r["Fit"])} · '
             f'胜率 {H.escape(r["胜率"])}% · CA {H.escape(r["CA%"])}% · Pnls {H.escape(r["Pnls%"])}% · '
-            f'当日 {H.escape(r["当日%"])}%{link}{_plan_line(r["代码"], plans)}</pre>'
+            f'当日 {H.escape(r["当日%"])}%{link}\n主题ETF：{_etf_html(etf_context[r["代码"]], detail=True)}'
+            f'{_plan_line(r["代码"], plans)}</pre>'
             + (f'<img loading="lazy" src="{img_prefix}{H.escape(imgs[r["代码"]])}">'
                if r["代码"] in imgs else "") + "</div>")
     src = d.get("source") or ""
@@ -233,10 +267,14 @@ def _section(key, label, d, img_prefix="bogo_cn/") -> str:
             f'<div class="sub">' + warn
             + f'{H.escape((d.get("title") or "")[:70])} · 来源 '
             f'{H.escape(src)} · 共 {len(rows)} 只'
-            f'（强 {sum(1 for r in rows if r["信号"]=="strong")}）</div>'
-            f'<table><tr><th class="l">信号</th><th class="l">代码</th>'
+            f'（强 {sum(1 for r in rows if r["信号"]=="strong")}）'
+            + (f' · 主题ETF数据 {H.escape(str(etf_snapshot.get("dataDate")))}'
+               if etf_snapshot.get("dataDate") else '')
+            + '</div>'
+            f'<div class="table-wrap"><table><tr><th class="l">信号</th><th class="l">代码</th>'
             f'<th class="l">名称</th><th class="l">信号日</th><th>当日%</th><th>Fit</th>'
-            f'<th>胜率</th><th>CA%</th><th>Pnls%</th><th class="l">主题</th></tr>{tr}</table>'
+            f'<th>胜率</th><th>CA%</th><th>Pnls%</th><th class="l">主题ETF表现</th>'
+            f'<th class="l">主题</th></tr>{tr}</table></div>'
             + (f'<h1 style="margin-top:14px;font-size:14px">全清单 · 明细图 强+弱（{len(blocks)}）</h1>'
                + "".join(blocks) if blocks else "")
             + "</div>")
@@ -247,6 +285,7 @@ def build_page() -> Path:
     from .m6_dashboard import OUT_DIR
     d_us = m13.load()
     d_cn = load()
+    etf_snapshot = bogo_etf.load_snapshot()
     tabs_def = [("us", "美股 16:30", d_us, "")] + [
         (k, lb.split(" · ")[0] + " " + lb.split(" · ")[1].split("批")[0], d_cn.get(k), "bogo_cn/")
         for k, lb, _ in BATCHES]
@@ -255,7 +294,10 @@ def build_page() -> Path:
         on = " on" if i == 0 else ""
         btns.append(f'<button class="tab{on}" data-t="{k}">{H.escape(short)}</button>')
         label = {"us": "美股盘后 · 16:30批(NY)"}.get(k) or dict((b[0], b[1]) for b in BATCHES)[k]
-        panels.append(f'<div class="panel{on}" id="p-{k}">{_section(k, label, d, pref)}</div>')
+        panels.append(
+            f'<div class="panel{on}" id="p-{k}">'
+            f'{_section(k, label, d, pref, etf_snapshot)}</div>'
+        )
     ticker_catalog = ticker_master.load_catalog()
     btns.append('<button class="tab" data-t="tickers">全部 Ticker</button>')
     panels.append(ticker_master.render_panel(ticker_catalog))
