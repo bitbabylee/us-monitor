@@ -1,4 +1,4 @@
-# 波哥待机清单 2026-08-24
+# 波哥待机清单 2026-08-25
 # 仅包含通过优势预筛的 ETF + 个股；不是入场指令。
 # 大盘门: 开启
 AMEX:GDXJ
@@ -9,5 +9,5 @@ AMEX:IEO
 AMEX:PICK
 AMEX:XLV
 AMEX:XLE
-AMEX:XLB
 AMEX:URA
+AMEX:XLB
