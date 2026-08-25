@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-24 收盘(ET)
-  生成 08-25 01:53 纽约 = 08-25 13:53 新加坡
+  生成 08-25 01:55 纽约 = 08-25 13:55 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -65,10 +65,10 @@
   盘前±2%: NYSE:BE+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 54%
-  🟢合格·在买点区(9): NYSE:LLY SZSE:301018(申菱) NYSE:SNOW SZSE:300394(天孚) SSE:601208(东材) AMEX:SPY NASDAQ:QQQ NASDAQ:MU NASDAQ:LITE
+  上升趋势占比 52% · 📣新易盛 S2↑→S1⌐
+  🟢合格·在买点区(9): NYSE:LLY SZSE:301018(申菱) NYSE:SNOW SZSE:300394(天孚) AMEX:SPY SSE:601208(东材) NASDAQ:QQQ NASDAQ:MU NASDAQ:LITE
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(16): NASDAQ:HOOD AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) NASDAQ:PLTR NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:RKLB SZSE:300502(新易盛) NASDAQ:RIOT NASDAQ:MSFT NASDAQ:NBIS NYSE:NET NASDAQ:CRWD NASDAQ:INTC NASDAQ:AMD
+  🔴淘汰(15): NASDAQ:HOOD AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) NASDAQ:PLTR NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:RKLB NASDAQ:RIOT NASDAQ:MSFT NASDAQ:NBIS NYSE:NET NASDAQ:CRWD NASDAQ:INTC NASDAQ:AMD
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: SNDKC$502M MU≈$167M QQQ≈$103M SPCX≈$59M NBISC$49M
