@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-25 收盘(ET)
-  生成 08-25 16:33 纽约 = 08-26 04:33 新加坡
+  生成 08-25 16:54 纽约 = 08-26 04:54 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -76,7 +76,7 @@
             NASDAQ:WULF🟢 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 58% · 📣BE S1⌐→S2↑ · HUT S1⌐→S2↑ · APLD S1⌐→S4↓
+  上升趋势占比 58%
   🟢合格·在买点区(9): NYSE:LLY NASDAQ:LITE AMEX:SPY NYSE:SNOW NASDAQ:MU NASDAQ:QQQ SZSE:301018(申菱) SSE:601208(东材) NYSE:ANET
   🟢合格·追高区勿追(0): 无
   🔴淘汰(19): NASDAQ:HOOD AMEX:GDX NASDAQ:PLTR NASDAQ:IREN SZSE:300499(高澜) NASDAQ:APLD SZSE:002837(英维克) SZSE:300476(胜宏) NASDAQ:MSFT NASDAQ:RKLB SSE:688627(精智达) NASDAQ:CIBR NYSE:BE NASDAQ:INTC NYSE:NET NASDAQ:AMD NASDAQ:CRWD SZSE:300308(旭创) NASDAQ:HUT
