@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-24 收盘(ET)
-  生成 08-25 01:55 纽约 = 08-25 13:55 新加坡
+  生成 08-25 04:02 纽约 = 08-25 16:02 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -62,10 +62,10 @@
             NYSE:CAT🟢  NYSE:NET🔴  NYSE:ANET🟢  NASDAQ:CRDO🟡 
             NASDAQ:HOOD🔴  NASDAQ:MU🟡  NASDAQ:AXTI🔴  AMEX:GDX🟢 
             NASDAQ:IREN🔴  NASDAQ:WULF🔴 
-  盘前±2%: NYSE:BE+2.1%
+  盘前±2%: NYSE:BE+5.8% NASDAQ:AAOI+4.1% NASDAQ:AXTI+3.7% NASDAQ:NBIS+3.1% NASDAQ:LITE+2.3% NASDAQ:INTC+2.2% NASDAQ:CIFR+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 52% · 📣新易盛 S2↑→S1⌐
+  上升趋势占比 52%
   🟢合格·在买点区(9): NYSE:LLY SZSE:301018(申菱) NYSE:SNOW SZSE:300394(天孚) AMEX:SPY SSE:601208(东材) NASDAQ:QQQ NASDAQ:MU NASDAQ:LITE
   🟢合格·追高区勿追(0): 无
   🔴淘汰(15): NASDAQ:HOOD AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) NASDAQ:PLTR NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:RKLB NASDAQ:RIOT NASDAQ:MSFT NASDAQ:NBIS NYSE:NET NASDAQ:CRWD NASDAQ:INTC NASDAQ:AMD
