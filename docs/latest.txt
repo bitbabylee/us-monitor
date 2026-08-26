@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-25 收盘(ET)
-  生成 08-26 04:47 纽约 = 08-26 16:47 新加坡
+  生成 08-26 09:35 纽约 = 08-26 21:35 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,18 +8,18 @@
 【结论】仓位上限 80% · 阶段P0 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
 【候选】12 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:LITE   10EMA回调   日内:🔥强主升浪
-  NASDAQ:MSFT   10EMA回调   日内:🟡警告:临近前高
-  NYSE:LLY      10EMA回调   日内:🔴规避/止损
-  NYSE:ANET     10EMA回调   日内:🟢稳健买点
-  NASDAQ:HOOD   箱体突破      日内:🟢突破买点
-  NASDAQ:MU     10EMA回调   日内:🟢稳健买点
-  NASDAQ:PLTR   10EMA回调   日内:🔴规避/止损
-  NASDAQ:SPCX   10EMA回调   日内:🟢稳健买点
-  NASDAQ:CORZ   超跌反弹      日内:🟢稳健买点
-  NASDAQ:CIFR   超跌反弹      日内:🟢突破买点
-  NASDAQ:HUT    超跌反弹      日内:🟢强动能买点
-  NASDAQ:APLD   超跌反弹      日内:🟢突破买点
+  NASDAQ:LITE   10EMA回调   日内:⏳开盘10分钟
+  NASDAQ:MSFT   10EMA回调   日内:⏳开盘10分钟
+  NYSE:LLY      10EMA回调   日内:⏳开盘10分钟
+  NYSE:ANET     10EMA回调   日内:⏳开盘10分钟
+  NASDAQ:HOOD   箱体突破      日内:⏳开盘10分钟
+  NASDAQ:MU     10EMA回调   日内:⏳开盘10分钟
+  NASDAQ:PLTR   10EMA回调   日内:⏳开盘10分钟
+  NASDAQ:SPCX   10EMA回调   日内:⏳开盘10分钟
+  NASDAQ:CORZ   超跌反弹      日内:⏳开盘10分钟
+  NASDAQ:CIFR   超跌反弹      日内:⏳开盘10分钟
+  NASDAQ:HUT    超跌反弹      日内:⏳开盘10分钟
+  NASDAQ:APLD   超跌反弹      日内:⏳开盘10分钟
 【否决】
   NASDAQ:IREN   财报窗口?
 【风险】财报 今日NASDAQ:CRWD?待出·回避 · 今日NYSE:SNOW?待出·回避 · 明日 NASDAQ:IREN?
@@ -41,8 +41,8 @@
   宏观 ✅ATR1412% ✗10Y4.64% ✗HYG/LQD0.7479 ✅USD/JPY159.14
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:ARKG 基因组  AMEX:SIL 白银矿  AMEX:SILJ 小白银矿
-  短线改善: AMEX:LIT 锂电池  AMEX:NLR 核能  AMEX:REMX 稀土  AMEX:XLB 基础材料 (Materials)  AMEX:USMV 低波
+  涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:COPX 铜矿
+  短线改善: AMEX:BITQ 加密公司  AMEX:BLOK 区块链  AMEX:LIT 锂电池  AMEX:REMX 稀土  AMEX:XLB 基础材料 (Materials)
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+1.6% · NASDAQ:SOXX+1.2%
@@ -52,29 +52,22 @@
   主题🧊 ️ 网络安全 -2.7%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
- ▶ 日线+日内同向
-   NASDAQ:LITE   🟢10EMA回调   🔥强主升浪
-   NYSE:ANET     🟢10EMA回调   🟢稳健买点
-   NASDAQ:HOOD   📦箱体突破      🟢突破买点
-   NASDAQ:MU     🟢10EMA回调   🟢稳健买点
-   NASDAQ:SPCX   🟢10EMA回调   🟢稳健买点
-   NASDAQ:CORZ   🚀超跌反弹      🟢稳健买点
-   NASDAQ:CIFR   🚀超跌反弹      🟢突破买点
-   NASDAQ:HUT    🚀超跌反弹      🟢强动能买点
-   NASDAQ:APLD   🚀超跌反弹      🟢突破买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:MSFT   🟢10EMA回调   🟡警告:临近前高
- ▶ 冲突（日线买点/日内破位）
-   NYSE:LLY      🟢10EMA回调   🔴规避/止损
-   NASDAQ:PLTR   🟢10EMA回调   🔴规避/止损
+   NASDAQ:LITE   🟢10EMA回调   ⏳开盘10分钟
+   NASDAQ:MSFT   🟢10EMA回调   ⏳开盘10分钟
+   NYSE:LLY      🟢10EMA回调   ⏳开盘10分钟
+   NYSE:ANET     🟢10EMA回调   ⏳开盘10分钟
+   NASDAQ:HOOD   📦箱体突破      ⏳开盘10分钟
+   NASDAQ:MU     🟢10EMA回调   ⏳开盘10分钟
+   NASDAQ:PLTR   🟢10EMA回调   ⏳开盘10分钟
+   NASDAQ:SPCX   🟢10EMA回调   ⏳开盘10分钟
+   NASDAQ:CORZ   🚀超跌反弹      ⏳开盘10分钟
+   NASDAQ:CIFR   🚀超跌反弹      ⏳开盘10分钟
+   NASDAQ:HUT    🚀超跌反弹      ⏳开盘10分钟
+   NASDAQ:APLD   🚀超跌反弹      ⏳开盘10分钟
  ▶ 财报窗口（信号作废）
    NASDAQ:IREN   🟢10EMA回调   ⚠️ 1日后(08-27)财?
-  日内异动: NYSE:BE🟢  NASDAQ:NBIS🟢  NASDAQ:RKLB🔴  NASDAQ:AAOI🟢 
-            NASDAQ:INTC🔴  NASDAQ:AMAT🔴  NASDAQ:SMH🟢  NYSE:GEV🔴 
-            NASDAQ:SNDK🔴  NASDAQ:QQQ🔴  NYSE:CAT🔴  NYSE:NET🔴 
-            NASDAQ:CRWD🔴  NASDAQ:CRDO🟢  NASDAQ:AMD🟢  NASDAQ:AXTI🔴 
-            NASDAQ:CIBR🔴  NYSE:SNOW🟢  AMEX:GDX🟢  NASDAQ:RIOT🟢 
-            NASDAQ:WULF🟢 
+  盘前±2%: NASDAQ:IREN-3.4% NASDAQ:AXTI-3.4% NYSE:BE+2.9% NASDAQ:HUT-2.9% NASDAQ:RIOT-2.5% NASDAQ:APLD-2.2% NASDAQ:CIFR-2.1% NASDAQ:SPCX-2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 54%
@@ -83,7 +76,7 @@
   🔴淘汰(18): NASDAQ:HOOD AMEX:GDX SZSE:002837(英维克) NASDAQ:PLTR NASDAQ:IREN SZSE:300499(高澜) NASDAQ:APLD SZSE:300476(胜宏) NASDAQ:MSFT NASDAQ:RKLB NASDAQ:CIBR NYSE:BE NASDAQ:INTC SSE:600183(生益) NYSE:NET NASDAQ:AMD NASDAQ:CRWD NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUC$209M SNDK≈$196M QQQ≈$90M AMDC$79M SPCX≈$58M
+  今日: MUC$209M(v/oi12.3) SNDK≈$196M(v/oi6.9) QQQ≈$90M(v/oi14.4) AMDC$79M(v/oi14.3) SPCX≈$58M(v/oi4.0)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
