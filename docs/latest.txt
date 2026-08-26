@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-25 收盘(ET)
-  生成 08-25 22:56 纽约 = 08-26 10:56 新加坡
+  生成 08-25 23:20 纽约 = 08-26 11:20 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -37,7 +37,7 @@
   日性质(因子ETF超额·非纯因子): 动量+0.3 高贝+1.3 低波-0.4 价值+0.2 → 风偏进攻日
   派发 ▅▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃ (2/吸4) → 仓位80%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1413% ✗10Y4.64% ✗HYG/LQD0.7479 ✅USD/JPY159.04
+  宏观 ✅ATR1413% ✗10Y4.64% ✗HYG/LQD0.7479 ✅USD/JPY159.01
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:ARKG 基因组  AMEX:SIL 白银矿  AMEX:SILJ 小白银矿
@@ -76,10 +76,10 @@
             NASDAQ:WULF🟢 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 58% · 📣旭创 S2↑→S1⌐ · 兆易 S1⌐→S2↑
-  🟢合格·在买点区(11): NYSE:LLY SZSE:301018(申菱) NASDAQ:LITE AMEX:SPY NYSE:SNOW SZSE:300394(天孚) NASDAQ:MU SSE:601208(东材) NASDAQ:QQQ NYSE:ANET SZSE:002463(沪电)
+  上升趋势占比 54% · 📣新易盛 S2↑→S1⌐ · 兆易 S2↑→S1⌐
+  🟢合格·在买点区(10): NYSE:LLY SZSE:301018(申菱) NASDAQ:LITE AMEX:SPY NYSE:SNOW NASDAQ:MU SZSE:300394(天孚) NASDAQ:QQQ SSE:601208(东材) NYSE:ANET
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(19): NASDAQ:HOOD AMEX:GDX SZSE:002837(英维克) NASDAQ:PLTR SZSE:300499(高澜) NASDAQ:IREN NASDAQ:APLD SZSE:300476(胜宏) NASDAQ:MSFT SZSE:300502(新易盛) NASDAQ:RKLB NASDAQ:CIBR NYSE:BE NASDAQ:INTC NYSE:NET NASDAQ:AMD SSE:600183(生益) NASDAQ:CRWD NASDAQ:HUT
+  🔴淘汰(18): NASDAQ:HOOD AMEX:GDX SZSE:002837(英维克) NASDAQ:PLTR SZSE:300499(高澜) NASDAQ:IREN NASDAQ:APLD SZSE:300476(胜宏) NASDAQ:MSFT NASDAQ:RKLB NASDAQ:CIBR NYSE:BE NASDAQ:INTC NYSE:NET NASDAQ:AMD SSE:600183(生益) NASDAQ:CRWD NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: MUC$210M(v/oi40.4) SNDK≈$197M(v/oi14.0) QQQ≈$90M(v/oi74.8) AMDC$80M(v/oi53.6) SPCX≈$58M(v/oi6.3)
