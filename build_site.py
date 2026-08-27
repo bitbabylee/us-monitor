@@ -59,6 +59,11 @@ def main():
                     DOCS / m19_radar.ETF_TRENDS_FILENAME)
     except Exception as exc:
         print(f"WARN: ETF 涨幅页 {exc}")
+    try:
+        from us_monitor import m22_jack_screen
+        m22_jack_screen.build_page()
+    except Exception as exc:
+        print(f"WARN: Jack 逐股趋势图 {exc}")
     man = src_dir / "manual.html"
     if man.exists():
         shutil.copy(man, DOCS / "manual.html")

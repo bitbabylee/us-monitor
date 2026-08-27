@@ -2,8 +2,8 @@
 
 ## Source of truth
 - Status: Active
-- Last refreshed: 2026-08-21
-- Primary product surfaces: `docs/index.html`, `docs/bogo.html`, `docs/summary.html`, `docs/etf.html`, `docs/prescreen.html`
+- Last refreshed: 2026-08-27
+- Primary product surfaces: `docs/index.html`, `docs/bogo.html`, `docs/summary.html`, `docs/etf.html`, `docs/prescreen.html`, `docs/pt2-signals.html`, `docs/jack-screen.html`
 - Evidence reviewed: `README.md`, `us_monitor/m15_bogo_cn.py`, `us_monitor/m19_radar.py`, generated `docs/bogo.html`, generated `docs/etf.html`, generated `docs/prescreen.html`, `pt2_prescreen.py`, `publish_prescreen.sh`, `SPEC_三层信号引擎_20260813.md`, production handoff and pit list.
 
 ## Brand
@@ -23,7 +23,7 @@
 
 ## Information architecture
 - Primary navigation: Bogo signals, ETF return ranking, aggregate history.
-- Core routes/screens: `bogo.html` for source signals; `etf.html` for complete ETF discovery; `prescreen.html` for ETF-theme-to-stock monitoring; `summary.html` for historical aggregation.
+- Core routes/screens: `bogo.html` for source signals; `etf.html` for complete ETF discovery; `prescreen.html` for ETF-theme-to-stock monitoring; `pt2-signals.html` for PT2 score/state monitoring; `jack-screen.html` for per-symbol price-regime evidence; `summary.html` for historical aggregation.
 - Content hierarchy: transparent ETF scoring -> leading themes -> matched stock monitoring states -> complete P1–P5 evidence table -> signal execution layer.
 
 ## Design principles

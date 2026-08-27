@@ -39,6 +39,7 @@
 | m11 | 筛选器（RVOL / Compression / Gappers） |
 | m12 | AI 资本周期看门狗（capexcycle.com 季度数据） |
 | m19 | 全量 ETF 涨幅榜（5/21/63日涨幅 + 持续性；AUM≥$3亿与21日均成交额作交易准入，完整列表仍保留并可筛选） |
+| m22 | Jack 趋势候选逐股可视化（日 K、EMA10/EMA21/SMA50、状态切换与事件检验；支持股票与主题 ETF） |
 
 阈值集中在 `us_monitor/config.py`。
 
