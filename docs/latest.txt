@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-26 收盘(ET)
-  生成 08-26 19:52 纽约 = 08-27 07:52 新加坡
+  生成 08-26 20:23 纽约 = 08-27 08:23 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -33,7 +33,7 @@
   日性质(因子ETF超额·非纯因子): 动量+0.5 高贝+0.5 低波+0.0 价值+0.3 → 风偏进攻日
   派发 ▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃▃ (2/吸4) → 仓位80%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1410% ✗10Y4.66% ✅HYG/LQD0.7483 ✅USD/JPY159.27
+  宏观 ✅ATR1410% ✗10Y4.66% ✅HYG/LQD0.7483 ✅USD/JPY159.15
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:COPX 铜矿
@@ -63,16 +63,16 @@
             NASDAQ:CRDO🟢  NASDAQ:HOOD🔴  NASDAQ:AXTI🟡  NASDAQ:CIBR🟢 
             AMEX:GDX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
             NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:CRWD+10.1% NASDAQ:AXTI+7.7% NASDAQ:NBIS+6.3% NASDAQ:AAOI+4.2% NYSE:BE+4.0% NASDAQ:CIBR+4.0% NASDAQ:MU+3.7% NASDAQ:SNDK+3.6% NASDAQ:CRDO+3.4% NASDAQ:IREN+3.3% NASDAQ:APLD+3.3% NASDAQ:CORZ+3.2% NASDAQ:HUT+3.1% NASDAQ:WULF+2.9% NASDAQ:CIFR+2.9% NASDAQ:LITE+2.8% NYSE:NET+2.5% NASDAQ:SMH+2.4% NYSE:GEV+2.3% NYSE:SNOW+2.3%
+  盘前±2%: NASDAQ:CRWD+10.5% NASDAQ:AXTI+7.7% NASDAQ:NBIS+6.3% NASDAQ:AAOI+4.5% NYSE:BE+4.0% NASDAQ:CIBR+3.8% NASDAQ:MU+3.8% NASDAQ:CRDO+3.8% NASDAQ:SNDK+3.7% NASDAQ:IREN+3.5% NASDAQ:APLD+3.3% NASDAQ:CORZ+3.2% NASDAQ:CIFR+3.0% NASDAQ:LITE+3.0% NASDAQ:WULF+2.9% NASDAQ:SMH+2.6% NYSE:SNOW+2.4% NYSE:NET+2.4% NASDAQ:AMAT+2.3% NYSE:GEV+2.3% NASDAQ:HUT+2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 56% · 📣MSFT S3⌒→S2↑ · CAT S1⌐→S2↑ · AXTI S2↑→S1⌐
+  上升趋势占比 56%
   🟢合格·在买点区(10): SZSE:301018(申菱) NYSE:ANET NASDAQ:LITE AMEX:SPY NASDAQ:MU SZSE:300394(天孚) SSE:601208(东材) NASDAQ:QQQ NYSE:SNOW NASDAQ:MSFT
   🟢合格·追高区勿追(0): 无
   🔴淘汰(19): NASDAQ:HOOD AMEX:GDX SZSE:002837(英维克) NASDAQ:PLTR SZSE:300499(高澜) NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:APLD NASDAQ:RIOT NYSE:NET NASDAQ:RKLB NASDAQ:NBIS NYSE:BE NASDAQ:INTC NASDAQ:AMD SSE:600183(生益) NASDAQ:CRWD NYSE:LLY NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQC$409M(v/oi99.0) SNDK≈$198M(v/oi12.1) MU≈$182M(v/oi59.6) SPCXC$64M(v/oi4.5) LITEC$60M(v/oi18.2)
+  今日: SNDK≈$198M(v/oi12.1) QQQ≈$148M(v/oi44.4) MU≈$126M(v/oi7.8) SPCXC$64M(v/oi4.5) LITEC$60M(v/oi18.2)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
