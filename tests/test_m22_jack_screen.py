@@ -5,7 +5,16 @@ from tempfile import TemporaryDirectory
 import numpy as np
 import pandas as pd
 
-from us_monitor.m22_jack_screen import CANDIDATES, Candidate, candidate_payload, enrich_frame, render_page, state_events
+from us_monitor.m22_jack_screen import (
+    A_SHARE_BENCHMARK,
+    A_SHARE_BENCHMARK_SYMBOL,
+    CANDIDATES,
+    Candidate,
+    candidate_payload,
+    enrich_frame,
+    render_page,
+    state_events,
+)
 
 
 def rising_frame(periods=340):
@@ -32,6 +41,19 @@ class JackScreenStateTests(unittest.TestCase):
         }
         self.assertTrue(requested.issubset(symbols))
         self.assertEqual(len(symbols), len(CANDIDATES))
+
+    def test_requested_a_share_universe_uses_china_market_benchmark(self):
+        requested = {
+            "SZSE:000973", "SZSE:002812", "SZSE:300568", "SZSE:300214",
+            "SSE:688353", "SZSE:301292", "SSE:600110", "SSE:688388",
+            "SSE:603876", "SSE:603906", "SZSE:002709",
+        }
+        candidates = {candidate.symbol: candidate for candidate in CANDIDATES}
+        self.assertTrue(requested.issubset(candidates))
+        for symbol in requested:
+            self.assertEqual(A_SHARE_BENCHMARK, candidates[symbol].benchmark)
+            self.assertEqual(A_SHARE_BENCHMARK_SYMBOL, candidates[symbol].benchmark_symbol)
+            self.assertEqual("¥", candidates[symbol].currency_symbol)
 
     def test_rising_series_reaches_mature_trend_without_lookahead(self):
         frame = rising_frame()
@@ -69,10 +91,13 @@ class JackScreenStateTests(unittest.TestCase):
             render_page([payload], output)
             page = output.read_text(encoding="utf-8")
         self.assertIn("NASDAQ:TEST", page)
+        self.assertNotIn('"ticker":"TEST"', page)
         self.assertIn("EMA10", page)
         self.assertIn("蓝色 T 是本页可复算的趋势状态切换", page)
         self.assertIn('id="eventRows"', page)
         self.assertIn("TradingView", page)
+        self.assertIn('"benchmark_symbol":"AMEX:SPY"', page)
+        self.assertIn("相对基准", page)
 
 
 if __name__ == "__main__":

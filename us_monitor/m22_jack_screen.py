@@ -22,6 +22,9 @@ import yfinance as yf
 
 DEFAULT_OUTPUT = Path(__file__).resolve().parents[1] / "docs" / "jack-screen.html"
 BENCHMARK = "SPY"
+BENCHMARK_SYMBOL = "AMEX:SPY"
+A_SHARE_BENCHMARK = "510300.SS"
+A_SHARE_BENCHMARK_SYMBOL = "SSE:510300"
 DISPLAY_BARS = 260
 FORWARD_WINDOWS = (5, 10, 20, 40, 63)
 
@@ -32,6 +35,9 @@ class Candidate:
     symbol: str
     name: str
     group: str
+    benchmark: str = BENCHMARK
+    benchmark_symbol: str = BENCHMARK_SYMBOL
+    currency_symbol: str = "$"
 
 
 CANDIDATES = (
@@ -62,6 +68,17 @@ CANDIDATES = (
     Candidate("CORT", "NASDAQ:CORT", "Corcept Therapeutics", "早期观察"),
     Candidate("APPN", "NASDAQ:APPN", "Appian Corporation", "早期观察"),
     Candidate("ATRC", "NASDAQ:ATRC", "AtriCure, Inc.", "早期观察"),
+    Candidate("000973.SZ", "SZSE:000973", "佛塑科技", "A股电池材料观察", A_SHARE_BENCHMARK, A_SHARE_BENCHMARK_SYMBOL, "¥"),
+    Candidate("002812.SZ", "SZSE:002812", "恩捷股份", "A股电池材料观察", A_SHARE_BENCHMARK, A_SHARE_BENCHMARK_SYMBOL, "¥"),
+    Candidate("300568.SZ", "SZSE:300568", "星源材质", "A股电池材料观察", A_SHARE_BENCHMARK, A_SHARE_BENCHMARK_SYMBOL, "¥"),
+    Candidate("300214.SZ", "SZSE:300214", "日科化学", "A股电池材料观察", A_SHARE_BENCHMARK, A_SHARE_BENCHMARK_SYMBOL, "¥"),
+    Candidate("688353.SS", "SSE:688353", "华盛锂电", "A股电池材料观察", A_SHARE_BENCHMARK, A_SHARE_BENCHMARK_SYMBOL, "¥"),
+    Candidate("301292.SZ", "SZSE:301292", "海科新源", "A股电池材料观察", A_SHARE_BENCHMARK, A_SHARE_BENCHMARK_SYMBOL, "¥"),
+    Candidate("600110.SS", "SSE:600110", "诺德股份", "A股电池材料观察", A_SHARE_BENCHMARK, A_SHARE_BENCHMARK_SYMBOL, "¥"),
+    Candidate("688388.SS", "SSE:688388", "嘉元科技", "A股电池材料观察", A_SHARE_BENCHMARK, A_SHARE_BENCHMARK_SYMBOL, "¥"),
+    Candidate("603876.SS", "SSE:603876", "鼎胜新材", "A股电池材料观察", A_SHARE_BENCHMARK, A_SHARE_BENCHMARK_SYMBOL, "¥"),
+    Candidate("603906.SS", "SSE:603906", "龙蟠科技", "A股电池材料观察", A_SHARE_BENCHMARK, A_SHARE_BENCHMARK_SYMBOL, "¥"),
+    Candidate("002709.SZ", "SZSE:002709", "天赐材料", "A股电池材料观察", A_SHARE_BENCHMARK, A_SHARE_BENCHMARK_SYMBOL, "¥"),
 )
 
 
@@ -207,10 +224,12 @@ def candidate_payload(candidate: Candidate, frame: pd.DataFrame, benchmark_close
 
     state = str(latest["State"])
     return {
-        "ticker": candidate.ticker,
+        "ticker": candidate.symbol,
         "symbol": candidate.symbol,
         "name": candidate.name,
         "group": candidate.group,
+        "benchmark_symbol": candidate.benchmark_symbol,
+        "currency_symbol": candidate.currency_symbol,
         "date": enriched.index[-1].strftime("%Y-%m-%d"),
         "state": state,
         "state_label": STATE_LABELS[state],
@@ -243,7 +262,10 @@ def _extract_frame(download: pd.DataFrame, ticker: str) -> pd.DataFrame | None:
 
 
 def download_payload(candidates: tuple[Candidate, ...] = CANDIDATES) -> list[dict]:
-    tickers = [candidate.ticker for candidate in candidates] + [BENCHMARK]
+    tickers = list(dict.fromkeys(
+        [candidate.ticker for candidate in candidates]
+        + [candidate.benchmark for candidate in candidates]
+    ))
     raw = yf.download(
         tickers,
         period="2y",
@@ -253,9 +275,17 @@ def download_payload(candidates: tuple[Candidate, ...] = CANDIDATES) -> list[dic
         group_by="column",
         threads=True,
     )
-    benchmark = _extract_frame(raw, BENCHMARK)
-    if benchmark is None:
-        raise RuntimeError("未取得 AMEX:SPY 基准行情")
+    benchmarks = {
+        ticker: _extract_frame(raw, ticker)
+        for ticker in dict.fromkeys(candidate.benchmark for candidate in candidates)
+    }
+    missing_benchmarks = [
+        candidate.benchmark_symbol
+        for candidate in candidates
+        if benchmarks.get(candidate.benchmark) is None
+    ]
+    if missing_benchmarks:
+        raise RuntimeError("未取得基准行情: " + ", ".join(dict.fromkeys(missing_benchmarks)))
     rows = []
     missing = []
     for candidate in candidates:
@@ -263,7 +293,7 @@ def download_payload(candidates: tuple[Candidate, ...] = CANDIDATES) -> list[dic
         if frame is None:
             missing.append(candidate.symbol)
             continue
-        rows.append(candidate_payload(candidate, frame, benchmark["Close"]))
+        rows.append(candidate_payload(candidate, frame, benchmarks[candidate.benchmark]["Close"]))
     if not rows:
         raise RuntimeError("未取得任何候选股票行情")
     if missing:
@@ -298,7 +328,7 @@ h1{{font-size:26px;margin:8px 0 2px}}.meta,.sub,.empty{{font-size:12px;color:var
 </style></head><body><main>
 <nav class="nav" aria-label="页面导航"><a href="bogo.html">波哥信号</a><a href="etf.html">ETF涨幅榜</a><a href="prescreen.html">走势预筛</a><a href="pt2-signals.html">PT2趋势追踪</a><a class="on" href="jack-screen.html">逐股趋势图</a></nav>
 <header><h1>Jack 趋势候选逐股图</h1><div class="meta">数据至 {data_date} · {html.escape(generated_at.strftime('%Y-%m-%d %H:%M %Z'))} 生成 · {group_summary}</div><div class="sub">先判断“震荡 → 扩张 → 趋势”，趋势成立后才接信号监控。蓝色 T 是本页可复算的趋势状态切换，不是 PivotTrend2 TriggerDay。</div></header>
-<div class="summary"><span class="chip">状态分：均线顺序 65%</span><span class="chip">SMA200 斜率 10%</span><span class="chip">相对 AMEX:SPY 强度 10%</span><span class="chip">价格位置 15%</span><span class="chip">研究用途，非买点</span></div>
+<div class="summary"><span class="chip">状态分：均线顺序 65%</span><span class="chip">SMA200 斜率 10%</span><span class="chip">相对同市场基准强度 10%</span><span class="chip">价格位置 15%</span><span class="chip">研究用途，非买点</span></div>
 <div class="workbench"><aside class="rail" id="rail" aria-label="候选标的"></aside><section class="content">
 <div class="head"><div><h2 id="title"></h2><div class="meta" id="subtitle"></div></div><div><span class="badge" id="stateBadge"></span> <a class="tv" id="tvLink" target="_blank" rel="noopener">TradingView ↗</a></div></div>
 <div class="chart-card"><div class="legend"><span><i class="dot" style="background:var(--e10)"></i>EMA10</span><span><i class="dot" style="background:var(--e21)"></i>EMA21</span><span><i class="dot" style="background:var(--s50)"></i>SMA50</span><span>蓝色 T：趋势状态切换，点击查看</span></div><svg id="chart" viewBox="0 0 1180 430" role="img" aria-labelledby="chartTitle"><title id="chartTitle">标的趋势图</title></svg></div>
@@ -315,9 +345,9 @@ let lastMonth='';bars.forEach((b,i)=>{{const month=b.d.slice(0,7);if(month!==las
 [['e10','var(--e10)'],['e21','var(--e21)'],['s50','var(--s50)']].forEach(([key,color])=>el.appendChild(svg('path',{{d:linePath(bars,key,x,y),fill:'none',stroke:color,'stroke-width':'1.4'}})));
 const indexByDate=Object.fromEntries(bars.map((b,i)=>[b.d,i]));r.events.forEach((e,i)=>{{const idx=indexByDate[e.date];if(idx==null)return;const yy=Math.max(p.t+12,y(bars[idx].h)-14),g=svg('g',{{tabindex:'0',role:'button','aria-label':`${{e.date}} ${{e.label}}`}}),mark=svg('rect',{{x:x(idx)-5,y:yy-9,width:10,height:10,rx:1,class:'event-mark'}}),txt=svg('text',{{x:x(idx),y:yy-12,'text-anchor':'middle',class:'event-text'}});txt.textContent='T';g.append(mark,txt);g.onclick=()=>selectEvent(i);g.onkeydown=ev=>{{if(ev.key==='Enter'||ev.key===' ')selectEvent(i);}};el.appendChild(g);}});}}
 function metric(label,value,klass=''){{return `<div class="metric"><span>${{label}}</span><b class="${{klass}}">${{value}}</b></div>`;}}
-function showDetails(r,e=null){{document.getElementById('detailTitle').textContent=e?`${{e.date}} · ${{e.label}}`:'当前结构';const m=e?[metric('前一状态',e.previous),metric('状态评分',`${{e.score}} / 100`),metric('状态持续',`${{e.duration}} 个交易日`),...['5','10','20','40','63'].map(n=>metric(`T+${{n}}`,fmt(e.forward[n],'%'),cls(e.forward[n])))] : [metric('状态评分',`${{r.score}} / 100`),metric('Stage 2 年龄',r.stage2_age?`${{r.stage2_age}} 日`:'未成立'),metric('21日相对强度',fmt(r.rs21,'%'),cls(r.rs21)),metric('63日相对强度',fmt(r.rs63,'%'),cls(r.rs63)),metric('距52周高点',fmt(r.gap52,'%'),cls(r.gap52)),metric('距 EMA10',fmt(r.ema10_extension,'%'),cls(r.ema10_extension)),metric('EMA10 ATR延伸',fmt(r.atr_extension,' ATR'),cls(-r.atr_extension)),metric('21日均成交额',r.avg_dollar_volume21==null?'—':`$${{(r.avg_dollar_volume21/1e6).toFixed(1)}}M`)];document.getElementById('metrics').innerHTML=m.join('');document.getElementById('detailNote').textContent=e?'历史前瞻收益只是检验状态可延续性，不代表相同状态未来必然复制。':r.state==='mature'?'趋势仍在，但已不是新鲜启动；等待回踩、收缩或新基座。':r.state==='trend'?'趋势已确认，下一层才是信号监控与风险回报检查。':r.state==='expansion'?'结构正在扩张，继续观察能否形成 Stage 2 与相对强度确认。':'尚未达到趋势确认，不因单次信号升级。';}}
+function showDetails(r,e=null){{document.getElementById('detailTitle').textContent=e?`${{e.date}} · ${{e.label}}`:'当前结构';const m=e?[metric('前一状态',e.previous),metric('状态评分',`${{e.score}} / 100`),metric('状态持续',`${{e.duration}} 个交易日`),...['5','10','20','40','63'].map(n=>metric(`T+${{n}}`,fmt(e.forward[n],'%'),cls(e.forward[n])))] : [metric('状态评分',`${{r.score}} / 100`),metric('Stage 2 年龄',r.stage2_age?`${{r.stage2_age}} 日`:'未成立'),metric('21日相对强度',fmt(r.rs21,'%'),cls(r.rs21)),metric('63日相对强度',fmt(r.rs63,'%'),cls(r.rs63)),metric('距52周高点',fmt(r.gap52,'%'),cls(r.gap52)),metric('距 EMA10',fmt(r.ema10_extension,'%'),cls(r.ema10_extension)),metric('EMA10 ATR延伸',fmt(r.atr_extension,' ATR'),cls(-r.atr_extension)),metric('21日均成交额',r.avg_dollar_volume21==null?'—':`${{r.currency_symbol}}${{(r.avg_dollar_volume21/1e6).toFixed(1)}}M`)];document.getElementById('metrics').innerHTML=m.join('');document.getElementById('detailNote').textContent=e?'历史前瞻收益只是检验状态可延续性，不代表相同状态未来必然复制。':r.state==='mature'?'趋势仍在，但已不是新鲜启动；等待回踩、收缩或新基座。':r.state==='trend'?'趋势已确认，下一层才是信号监控与风险回报检查。':r.state==='expansion'?'结构正在扩张，继续观察能否形成 Stage 2 与相对强度确认。':'尚未达到趋势确认，不因单次信号升级。';}}
 function selectEvent(i){{selectedEvent=i;const r=DATA[current];document.querySelectorAll('#eventRows tr').forEach((tr,j)=>tr.classList.toggle('on',j===i));showDetails(r,r.events[i]);}}
-function show(i){{current=i;selectedEvent=null;const r=DATA[i];document.querySelectorAll('.ticker').forEach((b,j)=>b.classList.toggle('on',j===i));document.getElementById('title').textContent=`${{r.symbol}} · ${{r.name}}`;document.getElementById('subtitle').textContent=`${{r.group}} · 数据至 ${{r.date}} · 图表最近 ${{r.bars.length}} 个交易日`;const badge=document.getElementById('stateBadge');badge.textContent=`${{r.state_label}} · ${{r.score}}`;badge.className=`badge state-${{r.state}}`;document.getElementById('tvLink').href=`https://www.tradingview.com/chart/?symbol=${{encodeURIComponent(r.symbol)}}`;draw(r);document.getElementById('eventRows').innerHTML=r.events.map((e,j)=>`<tr data-index="${{j}}"><td>${{e.date}}</td><td>${{e.previous}} → <b>${{e.label}}</b></td><td>${{e.score}}</td><td>${{e.duration}}</td>${{['5','10','20','40','63'].map(n=>`<td class="${{cls(e.forward[n])}}">${{fmt(e.forward[n],'%')}}</td>`).join('')}}</tr>`).join('')||'<tr><td colspan="9" class="empty">最近没有状态切换</td></tr>';document.querySelectorAll('#eventRows tr[data-index]').forEach(tr=>tr.onclick=()=>selectEvent(Number(tr.dataset.index)));showDetails(r);}}
+function show(i){{current=i;selectedEvent=null;const r=DATA[i];document.querySelectorAll('.ticker').forEach((b,j)=>b.classList.toggle('on',j===i));document.getElementById('title').textContent=`${{r.symbol}} · ${{r.name}}`;document.getElementById('subtitle').textContent=`${{r.group}} · 相对基准 ${{r.benchmark_symbol}} · 数据至 ${{r.date}} · 图表最近 ${{r.bars.length}} 个交易日`;const badge=document.getElementById('stateBadge');badge.textContent=`${{r.state_label}} · ${{r.score}}`;badge.className=`badge state-${{r.state}}`;document.getElementById('tvLink').href=`https://www.tradingview.com/chart/?symbol=${{encodeURIComponent(r.symbol)}}`;draw(r);document.getElementById('eventRows').innerHTML=r.events.map((e,j)=>`<tr data-index="${{j}}"><td>${{e.date}}</td><td>${{e.previous}} → <b>${{e.label}}</b></td><td>${{e.score}}</td><td>${{e.duration}}</td>${{['5','10','20','40','63'].map(n=>`<td class="${{cls(e.forward[n])}}">${{fmt(e.forward[n],'%')}}</td>`).join('')}}</tr>`).join('')||'<tr><td colspan="9" class="empty">最近没有状态切换</td></tr>';document.querySelectorAll('#eventRows tr[data-index]').forEach(tr=>tr.onclick=()=>selectEvent(Number(tr.dataset.index)));showDetails(r);}}
 buildRail();show(0);</script></main></body></html>'''
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(page, encoding="utf-8")
