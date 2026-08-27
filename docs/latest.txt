@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-26 收盘(ET)
-  生成 08-27 06:07 纽约 = 08-27 18:07 新加坡
+  生成 08-27 09:59 纽约 = 08-27 21:59 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,14 +8,14 @@
 【结论】仓位上限 80% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
 【候选】9 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:LITE   10EMA回调   日内:🔴锁定利润
-  NASDAQ:MSFT   10EMA回调   日内:🟢稳健买点
-  NASDAQ:INTC   超跌反弹      日内:🟢突破买点
-  NYSE:CAT      超跌反弹      日内:🟢稳健买点
-  NYSE:ANET     10EMA回调   日内:🟢强动能买点
-  NASDAQ:MU     10EMA回调   日内:⚪观望
-  NASDAQ:PLTR   10EMA回调   日内:🔴锁定利润
-  NASDAQ:SPCX   10EMA回调   日内:🟢强动能买点
+  NASDAQ:LITE   10EMA回调   日内:🔴规避/止损
+  NASDAQ:MSFT   10EMA回调   日内:⚪观望
+  NASDAQ:INTC   超跌反弹      日内:🔴规避/止损
+  NYSE:CAT      超跌反弹      日内:⚪观望
+  NYSE:ANET     10EMA回调   日内:⚪观望
+  NASDAQ:MU     10EMA回调   日内:🔴规避/止损
+  NASDAQ:PLTR   10EMA回调   日内:⚪观望
+  NASDAQ:SPCX   10EMA回调   日内:⚪观望
   NASDAQ:HUT    超跌反弹      日内:⚪观望
 【风险】财报 今日NASDAQ:IREN?待出·回避
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
@@ -35,8 +35,8 @@
   宏观 ✅ATR149% ✗10Y4.66% ✅HYG/LQD0.7483 ✅USD/JPY159.22
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:COPX 铜矿
-  短线改善: AMEX:BLOK 区块链  AMEX:SPHB 高贝  AMEX:LIT 锂电池  AMEX:BITQ 加密公司  AMEX:REMX 稀土
+  涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:ARKG 基因组  AMEX:SIL 白银矿  AMEX:GDXJ 小金矿  NASDAQ:WCLD 云软件
+  短线改善: NASDAQ:AIQ AI主题  AMEX:REMX 稀土  AMEX:LIT 锂电池  AMEX:IPO 新股  NASDAQ:QTUM 量子计算
 ------------------------------------------------
 【板块】
   强: AMEX:XLI+1.1%
@@ -45,24 +45,22 @@
   主题🧊 🪙 黄金   -3.6%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
- ▶ 日线+日内同向
-   NASDAQ:MSFT   🟢10EMA回调   🟢稳健买点
-   NASDAQ:INTC   🚀超跌反弹      🟢突破买点
-   NYSE:CAT      🚀超跌反弹      🟢稳健买点
-   NYSE:ANET     🟢10EMA回调   🟢强动能买点
-   NASDAQ:SPCX   🟢10EMA回调   🟢强动能买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:MU     🟢10EMA回调   ⚪观望
+   NASDAQ:MSFT   🟢10EMA回调   ⚪观望
+   NYSE:CAT      🚀超跌反弹      ⚪观望
+   NYSE:ANET     🟢10EMA回调   ⚪观望
+   NASDAQ:PLTR   🟢10EMA回调   ⚪观望
+   NASDAQ:SPCX   🟢10EMA回调   ⚪观望
    NASDAQ:HUT    🚀超跌反弹      ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NASDAQ:LITE   🟢10EMA回调   🔴锁定利润
-   NASDAQ:PLTR   🟢10EMA回调   🔴锁定利润
-  日内异动: NYSE:BE🟡  NASDAQ:NBIS🔴  NASDAQ:AMAT🟢  NASDAQ:SMH🟢 
-            NYSE:GEV🔴  NASDAQ:SNDK🟢  NASDAQ:QQQ🟢  NASDAQ:CRWD🟢 
-            NASDAQ:CRDO🟢  NASDAQ:HOOD🔴  NASDAQ:AXTI🟡  NASDAQ:CIBR🟢 
-            NYSE:SNOW🟡  AMEX:GDX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
-            NASDAQ:RIOT🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AXTI+9.5% NASDAQ:CRWD+8.9% NASDAQ:NBIS+7.0% NYSE:BE+6.5% NASDAQ:CRDO+5.8% NASDAQ:AAOI+5.6% NASDAQ:SNDK+4.7% NASDAQ:MU+4.2% NASDAQ:IREN+4.0% NASDAQ:INTC+3.7% NASDAQ:APLD+3.6% NASDAQ:HUT+3.6% NASDAQ:LITE+3.3% NASDAQ:SMH+3.2% NASDAQ:CIBR+3.2% NASDAQ:WULF+3.1% NASDAQ:CIFR+3.1% NYSE:GEV+2.8% NASDAQ:HOOD+2.6% NASDAQ:RIOT+2.5% NASDAQ:RKLB+2.4% NYSE:SNOW+2.3% NYSE:NET+2.2% NASDAQ:AMAT+2.2% NASDAQ:CORZ+2.0%
+   NASDAQ:LITE   🟢10EMA回调   🔴规避/止损
+   NASDAQ:INTC   🚀超跌反弹      🔴规避/止损
+   NASDAQ:MU     🟢10EMA回调   🔴规避/止损
+  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:AAOI🔴  NASDAQ:AMAT🔴 
+            NYSE:GEV🔴  NASDAQ:SNDK🔴  NASDAQ:CRDO🔴  NASDAQ:HOOD🟡 
+            NASDAQ:AXTI🔴  NASDAQ:CIBR🟢  NYSE:SNOW🟢  AMEX:GDX🟢 
+            NASDAQ:IREN🟢  NASDAQ:RIOT🟢  NASDAQ:CIFR🟢  NASDAQ:WULF🟢 
+  盘前±2%: NASDAQ:CRWD+16.1% NYSE:NET+6.6% NASDAQ:CIFR+6.3% NASDAQ:CIBR+6.0% NASDAQ:WULF+4.5% NYSE:SNOW+4.5% NASDAQ:CRDO+4.2% NASDAQ:AXTI+4.1% NASDAQ:PLTR+3.9% NASDAQ:HUT+3.8% NASDAQ:IREN+3.4% NASDAQ:CORZ+3.3% NASDAQ:APLD+3.0% NASDAQ:HOOD+2.9% NASDAQ:RIOT+2.6% NASDAQ:SNDK-2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 61%
@@ -71,7 +69,7 @@
   🔴淘汰(19): NASDAQ:HOOD AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:PLTR SZSE:300476(胜宏) NASDAQ:IREN NASDAQ:APLD NASDAQ:RIOT NYSE:NET NASDAQ:RKLB NASDAQ:NBIS NYSE:BE NASDAQ:INTC NASDAQ:AMD NASDAQ:CRWD NYSE:LLY NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDK≈$200M QQQ≈$148M MU≈$126M SPCXC$64M LITEC$59M
+  今日: QQQC$65M(v/oi38.8) SNDK≈$52M(v/oi4.5) MU≈$48M(v/oi2.4) CRWDC$42M(v/oi1.7) PLTRC$28M(v/oi1.9)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
