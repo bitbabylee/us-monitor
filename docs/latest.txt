@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-26 收盘(ET)
-  生成 08-26 23:41 纽约 = 08-27 11:41 新加坡
+  生成 08-27 04:14 纽约 = 08-27 16:14 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -17,9 +17,8 @@
   NASDAQ:PLTR   10EMA回调   日内:🔴锁定利润
   NASDAQ:SPCX   10EMA回调   日内:🟢强动能买点
   NASDAQ:HUT    超跌反弹      日内:⚪观望
-【风险】财报 今日NASDAQ:CRWD?已出·观察期 · 今日NYSE:SNOW?已出·观察期 · 明日 NASDAQ:IREN?
+【风险】财报 今日NASDAQ:IREN?待出·回避
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
-  08-26 周三  NASDAQ:CRWD? NYSE:SNOW?
   08-27 周四  NASDAQ:IREN?
   09-01 周二  NASDAQ:CRDO✓
   09-02 周三  NYSE:SNOW?
@@ -33,7 +32,7 @@
   日性质(因子ETF超额·非纯因子): 动量+0.5 高贝+0.5 低波+0.0 价值+0.3 → 风偏进攻日
   派发 ▇▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃▃ (2/吸4) → 仓位80%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1410% ✗10Y4.66% ✅HYG/LQD0.7483 ✅USD/JPY159.36
+  宏观 ✅ATR149% ✗10Y4.66% ✅HYG/LQD0.7483 ✅USD/JPY159.22
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:GDXJ 小金矿  AMEX:SIL 白银矿  AMEX:ARKG 基因组  AMEX:COPX 铜矿
@@ -63,16 +62,17 @@
             NASDAQ:CRDO🟢  NASDAQ:HOOD🔴  NASDAQ:AXTI🟡  NASDAQ:CIBR🟢 
             NYSE:SNOW🟡  AMEX:GDX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
             NASDAQ:RIOT🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:CRWD+10.5% NASDAQ:AXTI+7.7% NASDAQ:NBIS+6.3% NASDAQ:AAOI+4.5% NYSE:BE+4.0% NASDAQ:CIBR+3.8% NASDAQ:MU+3.8% NASDAQ:CRDO+3.8% NASDAQ:SNDK+3.7% NASDAQ:IREN+3.5% NASDAQ:APLD+3.3% NASDAQ:CORZ+3.2% NASDAQ:CIFR+3.0% NASDAQ:LITE+3.0% NASDAQ:WULF+2.9% NASDAQ:SMH+2.6% NYSE:SNOW+2.4% NYSE:NET+2.4% NASDAQ:AMAT+2.3% NYSE:GEV+2.3% NASDAQ:HUT+2.2%
+  盘前±2%: NASDAQ:AXTI+10.1% NASDAQ:CRWD+8.6% NASDAQ:NBIS+7.0% NASDAQ:AAOI+6.5% NYSE:BE+6.0% NASDAQ:CRDO+5.3% NASDAQ:SNDK+4.6% NASDAQ:MU+4.3% NASDAQ:IREN+4.1% NASDAQ:APLD+3.9% NASDAQ:LITE+3.8% NASDAQ:CIFR+3.5% NASDAQ:CORZ+3.3% NASDAQ:HUT+3.3% NASDAQ:CIBR+3.2% NASDAQ:SMH+3.1% NASDAQ:WULF+3.1% NASDAQ:AMAT+2.6% NASDAQ:RIOT+2.6% NASDAQ:INTC+2.5% NASDAQ:RKLB+2.3% NYSE:GEV+2.3% NYSE:NET+2.1% NASDAQ:HOOD+2.1% NYSE:SNOW+2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 63% · 📣旭创 S1⌐→S2↑ · 新易盛 S1⌐→S2↑ · 同飞 S1⌐→S3⌒
-  🟢合格·在买点区(13): SZSE:301018(申菱) SSE:601208(东材) SZSE:002463(沪电) SSE:600183(生益) SZSE:300394(天孚) NYSE:ANET NASDAQ:LITE AMEX:SPY NASDAQ:MU NASDAQ:QQQ SSE:601138(富联) NYSE:SNOW NASDAQ:MSFT
+  上升趋势占比 61% · 📣旭创 S2↑→S1⌐
+  🟢合格·在买点区(13): SZSE:301018(申菱) SSE:601208(东材) NYSE:ANET SZSE:300394(天孚) SSE:600183(生益) NASDAQ:LITE AMEX:SPY SZSE:002463(沪电) NASDAQ:MU NASDAQ:QQQ NYSE:SNOW SSE:601138(富联) NASDAQ:MSFT
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(20): NASDAQ:HOOD AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:PLTR SZSE:300476(胜宏) NASDAQ:IREN NASDAQ:APLD NASDAQ:RIOT NYSE:NET NASDAQ:RKLB NASDAQ:NBIS NYSE:BE NASDAQ:INTC NASDAQ:AMD NASDAQ:CRWD NYSE:LLY SZSE:300308(旭创) NASDAQ:HUT
+  🔴淘汰(19): NASDAQ:HOOD AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:PLTR SZSE:300476(胜宏) NASDAQ:IREN NASDAQ:APLD NASDAQ:RIOT NYSE:NET NASDAQ:RKLB NASDAQ:NBIS NYSE:BE NASDAQ:INTC NASDAQ:AMD NASDAQ:CRWD NYSE:LLY NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDK≈$198M(v/oi12.1) QQQ≈$147M(v/oi44.4) MU≈$126M(v/oi7.8) SPCXC$64M(v/oi4.5) LITEC$60M(v/oi18.2)
+  今日: SNDK≈$200M QQQ≈$148M MU≈$126M SPCXC$64M LITEC$59M
+  T+1核对: BEC227.5(08-28)✗未增 BEC230(08-28)✗未增 BEC235(08-28)✗未增 BEC247.5(08-28)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
