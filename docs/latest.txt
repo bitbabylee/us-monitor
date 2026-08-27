@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-27 收盘(ET)
-  生成 08-27 16:33 纽约 = 08-28 04:33 新加坡
+  生成 08-27 17:43 纽约 = 08-28 05:43 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -34,7 +34,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.6 高贝-0.2 低波-0.2 价值-0.9 → 中性日
   派发 ▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃▃▃ (2/吸4) → 仓位80%
   阶段P0 恐慌未释放 恐慌2/4 共识4/5 缺:近三日突破20日线伴随放
-  宏观 ✅ATR1410% ✗10Y4.67% ✗HYG/LQD0.7483 ✅USD/JPY159.39
+  宏观 ✅ATR1410% ✗10Y4.67% ✗HYG/LQD0.7483 ✅USD/JPY159.37
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:SIL 白银矿  AMEX:GDXJ 小金矿  AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:ARKG 基因组  AMEX:SILJ 小白银矿
@@ -65,23 +65,24 @@
   日内异动: NYSE:LLY🔴  NASDAQ:SMH🟢  NYSE:GEV🟢  NASDAQ:CRDO🟢 
             NASDAQ:AMD🟢  NASDAQ:AXTI🔴  NASDAQ:CIBR🟢  AMEX:GDX🟢 
             NASDAQ:CORZ🔴 
+  盘前±2%: NASDAQ:IREN-6.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 54% · 📣CAT S2↑→S1⌐ · AXTI S1⌐→S3⌒ · 新易盛 S2↑→S1⌐
-  🟢合格·在买点区(12): NASDAQ:CRWD SZSE:301018(申菱) NASDAQ:MSFT NASDAQ:LITE NASDAQ:CIBR NYSE:SNOW NASDAQ:QQQ NASDAQ:MU SZSE:300394(天孚) SSE:601208(东材) NYSE:NET NYSE:ANET
+  上升趋势占比 60% · 📣新易盛 S1⌐→S2↑ · 同飞 S1⌐→S3⌒ · 富联 S1⌐→S2↑
+  🟢合格·在买点区(15): NASDAQ:CRWD SZSE:301018(申菱) NASDAQ:MSFT SSE:601208(东材) NASDAQ:LITE NASDAQ:CIBR NYSE:SNOW NASDAQ:QQQ SZSE:300394(天孚) SSE:600183(生益) SZSE:002463(沪电) NASDAQ:MU NYSE:NET SSE:601138(富联) NYSE:ANET
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(16): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:APLD NASDAQ:AXTI NASDAQ:RKLB NASDAQ:NBIS NYSE:BE SSE:600183(生益) NASDAQ:AMD NYSE:LLY NASDAQ:HUT
+  🔴淘汰(16): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) SZSE:300476(胜宏) NASDAQ:IREN NASDAQ:APLD NASDAQ:AXTI NASDAQ:RKLB NASDAQ:NBIS NYSE:BE NASDAQ:AMD NYSE:LLY NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQC$397M(v/oi99.0) MUC$345M(v/oi39.7) SNDK≈$320M(v/oi22.4) CRWDC$138M(v/oi36.5) PLTRC$116M(v/oi71.8)
+  今日: QQQC$391M(v/oi99.0) MUC$345M(v/oi39.7) SNDK≈$320M(v/oi22.4) CRWDC$138M(v/oi36.5) PLTRC$116M(v/oi71.8)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】50只(强8)·⚠️旧快照
-  今日强信号: NYSE:DELL NYSE:TRGP NASDAQ:AMD🔗 NASDAQ:ES1! NASDAQ:FESB1! NASDAQ:ROST NYSE:GNK NASDAQ:YM1!
-  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:AMD NYSE:CAT NASDAQ:AXTI NASDAQ:MU NASDAQ:CRDO NYSE:TSM NYSE:LLY NASDAQ:LITE
-  池外强信号(仅提示, 不入信号链): NYSE:DELL NYSE:TRGP NASDAQ:ES1! NASDAQ:FESB1! NASDAQ:ROST NYSE:GNK
+【波哥七维·外部体系】50只(强12)·⚠️旧快照
+  今日强信号: NASDAQ:CRDO🔗 NYSE:FRO NASDAQ:CENX NASDAQ:AVGO🔗 AMEX:PXJ NYSE:DHT NYSE:DELL NYSE:TRGP
+  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:CRDO NASDAQ:AVGO NASDAQ:AMD NASDAQ:SMH NASDAQ:NVDA NYSE:CAT NASDAQ:AXTI NASDAQ:MU
+  池外强信号(仅提示, 不入信号链): NYSE:FRO NASDAQ:CENX NASDAQ:AVGO AMEX:PXJ NYSE:DHT NYSE:DELL
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
