@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-27 收盘(ET)
-  生成 08-27 22:12 纽约 = 08-28 10:12 新加坡
+  生成 08-27 23:34 纽约 = 08-28 11:34 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -34,7 +34,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.6 高贝-0.2 低波-0.2 价值-0.9 → 中性日
   派发 ▆▆▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃▃▃ (2/吸4) → 仓位80%
   阶段P0 恐慌未释放 恐慌2/4 共识4/5 缺:近三日突破20日线伴随放
-  宏观 ✅ATR1410% ✗10Y4.67% ✗HYG/LQD0.7483 ✅USD/JPY159.26
+  宏观 ✅ATR1410% ✗10Y4.67% ✗HYG/LQD0.7483 ✅USD/JPY159.44
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:SIL 白银矿  AMEX:GDXJ 小金矿  AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:ARKG 基因组  AMEX:SILJ 小白银矿
@@ -69,10 +69,10 @@
   盘前±2%: NASDAQ:IREN-8.4% NASDAQ:CIFR-2.2% NASDAQ:LITE-2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 63% · 📣旭创 S1⌐→S2↑ · 圣泉 S1⌐→S2↑
-  🟢合格·在买点区(15): NASDAQ:CRWD SZSE:002463(沪电) SZSE:301018(申菱) SSE:600183(生益) SSE:601208(东材) NASDAQ:MSFT NASDAQ:LITE NASDAQ:CIBR NYSE:SNOW SZSE:300394(天孚) NASDAQ:QQQ SSE:601138(富联) NASDAQ:MU NYSE:NET NYSE:ANET
+  上升趋势占比 61% · 📣圣泉 S2↑→S1⌐
+  🟢合格·在买点区(15): NASDAQ:CRWD SZSE:301018(申菱) SSE:600183(生益) SSE:601208(东材) NASDAQ:MSFT NASDAQ:LITE NASDAQ:CIBR NYSE:SNOW SZSE:002463(沪电) NASDAQ:QQQ SZSE:300394(天孚) SSE:601138(富联) NASDAQ:MU NYSE:NET NYSE:ANET
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(17): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:APLD NASDAQ:AXTI NASDAQ:RKLB NASDAQ:NBIS SZSE:300308(旭创) NYSE:BE NASDAQ:AMD NYSE:LLY NASDAQ:HUT
+  🔴淘汰(17): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:APLD NASDAQ:AXTI NASDAQ:RKLB NASDAQ:NBIS NYSE:BE NASDAQ:AMD SZSE:300308(旭创) NYSE:LLY NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: MUC$345M(v/oi39.7) SNDK≈$320M(v/oi22.4) QQQC$169M(v/oi74.5) CRWDC$138M(v/oi36.5) PLTRC$115M(v/oi71.8)
@@ -97,7 +97,7 @@
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
   私募仓位: 83.7% (07-10⚠️48天前) 高位·加仓空间有限·近4年新高·百亿级87.4
-  风格温度: 中证1000-沪深300 5日+1.7% 扩散友好(自动)
+  风格温度: 中证1000-沪深300 5日+1.3% 扩散友好(自动)
   复评节点(到期强制重估):
   08-26 🔔到期 高老师·方向确认窗(±4天, 前两窗8/5情绪8/12资金已验中)
   09-05 T-9 高老师·趋势确认窗(9/1-9/9, 与苹果复评重叠)
