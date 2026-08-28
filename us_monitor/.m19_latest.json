@@ -251,19 +251,59 @@
    ]
   },
   "cn_pullback": {
-   "generated": "2026-08-27 08:00 UTC",
-   "as_of": "2026-08-26",
+   "generated": "2026-08-28 08:00 UTC",
+   "as_of": "2026-08-27",
    "market_gate": {
     "status": "red",
     "symbol": "^IXIC",
-    "date": "2026-08-26",
-    "ma10": 26330.72,
-    "ma20": 26267.19
+    "date": "2026-08-27",
+    "ma10": 26304.55,
+    "ma20": 26338.15
    },
-   "universe_n": 8,
-   "data_n": 8,
-   "signals": []
+   "universe_n": 10,
+   "data_n": 10,
+   "signals": [
+    {
+     "signal_id": "cn_pullback:605117.SS:2026-08-27:cn_pullback:605117.SS:2026-08-21:base_lift:UR",
+     "profile": "cn_pullback",
+     "ticker": "605117.SS",
+     "date": "2026-08-27",
+     "setup_id": "cn_pullback:605117.SS:2026-08-21:base_lift",
+     "setup_names": [
+      "base_lift"
+     ],
+     "setup_date": "2026-08-21",
+     "setup_age_bars": 4,
+     "triggers": [
+      "UR"
+     ],
+     "plan": null,
+     "risk_check": {
+      "entry_stop": 98.22,
+      "entry_limit": 98.71,
+      "stop": 91.1,
+      "risk": 7.12,
+      "stop_pct": 7.25,
+      "adr20": 4.69,
+      "stop_adr_ratio": 1.55,
+      "grade": "拒",
+      "target_1R": 105.34,
+      "target_2R": 112.46,
+      "position_pct": 6.9,
+      "action": "reject"
+     },
+     "market_gate": {
+      "status": "red",
+      "symbol": "^IXIC",
+      "date": "2026-08-27",
+      "ma10": 26304.55,
+      "ma20": 26338.15
+     },
+     "environment": "环境逆风",
+     "outcomes": {}
+    }
+   ]
   }
  },
- "updated": "2026-08-27 21:30 UTC"
+ "updated": "2026-08-28 08:00 UTC"
 }
