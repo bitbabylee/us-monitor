@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-27 收盘(ET)
-  生成 08-28 06:06 纽约 = 08-28 18:06 新加坡
+  生成 08-28 10:03 纽约 = 08-28 22:03 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,12 +8,12 @@
 【结论】仓位上限 80% · 阶段P0 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
 【候选】6 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:MSFT   10EMA回调   日内:🟢强动能买点
+  NASDAQ:MSFT   10EMA回调   日内:🟢黄金买点
   NASDAQ:INTC   超跌反弹      日内:🟡警告:临近前高
-  NASDAQ:QQQ    10EMA回调   日内:🟢强动能买点
-  NYSE:NET      口袋支点      日内:🟢强动能买点
-  NASDAQ:MU     10EMA回调   日内:🟢黄金买点
-  NASDAQ:PLTR   口袋支点      日内:🔴锁定利润
+  NASDAQ:QQQ    10EMA回调   日内:🟢稳健买点
+  NYSE:NET      口袋支点      日内:⚪观望
+  NASDAQ:MU     10EMA回调   日内:⚪观望
+  NASDAQ:PLTR   口袋支点      日内:⚪观望
 【否决】
   NASDAQ:RKLB   板块背离
   NASDAQ:CRWD   财报窗口?
@@ -36,8 +36,8 @@
   宏观 ✅ATR149% ✗10Y4.67% ✗HYG/LQD0.7483 ✅USD/JPY159.26
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:SIL 白银矿  AMEX:GDXJ 小金矿  AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:ARKG 基因组  AMEX:SILJ 小白银矿
-  短线改善: AMEX:SPHB 高贝  NASDAQ:AIQ AI主题  AMEX:REMX 稀土  NASDAQ:FINX 金融科技  AMEX:SLV 白银
+  涨幅优先: AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:SIL 白银矿  NASDAQ:WCLD 云软件  AMEX:SILJ 小白银矿  NASDAQ:SKYY 云计算
+  短线改善: NASDAQ:AIQ AI主题  AMEX:MAGS 七巨头  AMEX:LIT 锂电池  AMEX:USMV 低波  AMEX:XLF 金融板块 (Financials)
 ------------------------------------------------
 【板块】
   强: AMEX:XLK+2.5% · NASDAQ:SOXX+1.3%
@@ -49,23 +49,22 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:RKLB   🚀超跌反弹      🟢突破买点
-   NASDAQ:MSFT   🟢10EMA回调   🟢强动能买点
-   NASDAQ:QQQ    🟢10EMA回调   🟢强动能买点
-   NYSE:NET      💡口袋支点      🟢强动能买点
-   NASDAQ:MU     🟢10EMA回调   🟢黄金买点
+   NASDAQ:MSFT   🟢10EMA回调   🟢黄金买点
+   NASDAQ:QQQ    🟢10EMA回调   🟢稳健买点
+   NASDAQ:SPCX   🟢10EMA回调   🟢稳健买点
  ▶ 等时机（日内未给买点）
    NASDAQ:INTC   🚀超跌反弹      🟡警告:临近前高
-   NASDAQ:SPCX   🟢10EMA回调   🟡警告:临近前高
+   NYSE:NET      💡口袋支点      ⚪观望
+   NASDAQ:MU     🟢10EMA回调   ⚪观望
+   NASDAQ:PLTR   💡口袋支点      ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NASDAQ:PLTR   💡口袋支点      🔴锁定利润
+   NASDAQ:RKLB   🚀超跌反弹      🔴规避/止损
  ▶ 财报窗口（信号作废）
    NASDAQ:CRWD   💡口袋支点      📊 财报后第2日(08-26?
    NYSE:SNOW     🟢10EMA回调   📊 财报后第2日(08-26?
-  日内异动: NYSE:LLY🔴  NASDAQ:SMH🟢  NYSE:GEV🟢  NASDAQ:CRDO🟢 
-            NASDAQ:AMD🟢  NASDAQ:AXTI🔴  NASDAQ:CIBR🟢  AMEX:GDX🟢 
-            NASDAQ:CORZ🔴 
-  盘前±2%: NASDAQ:IREN-6.9% NASDAQ:AXTI-2.9% NASDAQ:AAOI-2.8% NASDAQ:SNDK-2.5% NASDAQ:LITE-2.5% NASDAQ:NBIS-2.4% NASDAQ:MU-2.3% NASDAQ:CIFR-2.3% NASDAQ:INTC-2.1%
+  日内异动: NYSE:LLY🟢  NYSE:CAT🔴  NASDAQ:CRDO🟢  NASDAQ:CIBR🔴 
+            AMEX:GDX🔴  NASDAQ:WULF🔴 
+  盘前±2%: NASDAQ:IREN-8.1% NASDAQ:CRWD-6.9% NASDAQ:RIOT-5.1% NASDAQ:AXTI-4.6% NASDAQ:CIFR-4.1% NASDAQ:NBIS-4.0% NASDAQ:CORZ-3.4% NASDAQ:RKLB-3.2% NASDAQ:AAOI-3.2% NASDAQ:WULF-3.2% NASDAQ:APLD-3.1% NASDAQ:LITE-3.0% NASDAQ:HUT-2.7% NYSE:NET-2.6% NASDAQ:CIBR-2.3%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 56%
@@ -74,7 +73,7 @@
   🔴淘汰(16): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:APLD NASDAQ:AXTI NASDAQ:RKLB NASDAQ:NBIS NYSE:BE NASDAQ:AMD NYSE:LLY NASDAQ:HUT
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUC$351M SNDK≈$322M QQQC$170M CRWDC$136M PLTRC$115M
+  今日: SNDKP$223M(v/oi3.1) MU≈$69M(v/oi2.4) QQQ≈$58M(v/oi5.7) MSFTC$25M(v/oi5.4) AMD≈$19M(v/oi2.0)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -86,12 +85,12 @@
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【A股重演】反转/反弹五条件 (截至08-28·独立体系)
-  判定: 中性观察  反转条件 2/5
+  判定: 反弹定性  反转条件 1/5
   ✗①龙头前高 距前高 胜宏-35% 生益-22% 富联-20%
   ✗②量能结构 涨/跌量比 1.01x (10日)
   ✅③扩散质量 龙头5日+2.3% vs 池中位+0.9% 龙头带队
   ✗④指数验证 上证3952 滞涨区3946-3980内
-  ✅⑤海外锚 TSM20日+5.9% SMH/QQQ↑20日均 (月营收人工)
+  ✗⑤海外锚 TSM20日+5.9% SMH/QQQ↓20日均 (月营收人工)
   四棒5日α(领/改/弱/落·↑↓=加速): PCB+3改↑ 光-4落↓ 液冷+18改↑ 存储+1改↓ 探测+6领↑
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
