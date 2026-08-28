@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-27 收盘(ET)
-  生成 08-28 04:20 纽约 = 08-28 16:20 新加坡
+  生成 08-28 04:50 纽约 = 08-28 16:50 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -65,10 +65,10 @@
   日内异动: NYSE:LLY🔴  NASDAQ:SMH🟢  NYSE:GEV🟢  NASDAQ:CRDO🟢 
             NASDAQ:AMD🟢  NASDAQ:AXTI🔴  NASDAQ:CIBR🟢  AMEX:GDX🟢 
             NASDAQ:CORZ🔴 
-  盘前±2%: NASDAQ:IREN-7.4% NASDAQ:AXTI-3.5% NASDAQ:AAOI-3.1% NASDAQ:SNDK-2.9% NASDAQ:LITE-2.7% NASDAQ:INTC-2.7% NASDAQ:MU-2.5% NASDAQ:NBIS-2.4% NASDAQ:CIFR-2.2% NYSE:BE-2.1%
+  盘前±2%: NASDAQ:IREN-7.3% NASDAQ:AXTI-2.9% NASDAQ:AAOI-2.8% NASDAQ:LITE-2.6% NASDAQ:SNDK-2.4% NASDAQ:INTC-2.4% NASDAQ:MU-2.2% NASDAQ:NBIS-2.0% NASDAQ:CIFR-2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 56% · 📣旭创 S2↑→S1⌐ · 新易盛 S2↑→S1⌐ · 兆易 S2↑→S1⌐
+  上升趋势占比 56%
   🟢合格·在买点区(15): NASDAQ:CRWD SZSE:301018(申菱) SSE:600183(生益) SSE:601208(东材) NASDAQ:MSFT NASDAQ:LITE NASDAQ:CIBR NYSE:SNOW NASDAQ:QQQ SZSE:300394(天孚) NASDAQ:MU SZSE:002463(沪电) SSE:601138(富联) NYSE:NET NYSE:ANET
   🟢合格·追高区勿追(0): 无
   🔴淘汰(16): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:APLD NASDAQ:AXTI NASDAQ:RKLB NASDAQ:NBIS NYSE:BE NASDAQ:AMD NYSE:LLY NASDAQ:HUT
