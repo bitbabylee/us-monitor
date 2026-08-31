@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-28 收盘(ET)
-  生成 08-31 04:47 纽约 = 08-31 16:47 新加坡
+  生成 08-31 06:07 纽约 = 08-31 18:07 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -64,17 +64,15 @@
             NYSE:NET🔴  NASDAQ:AMD🔴  NASDAQ:AXTI🔴  NASDAQ:CIBR🔴 
             AMEX:GDX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:CORZ+2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 52% · 📣兆易 S1⌐→S2↑
+  上升趋势占比 52%
   🟢合格·在买点区(11): NASDAQ:MSFT SZSE:301018(申菱) SSE:601208(东材) SSE:688519(南亚) SZSE:002463(沪电) NYSE:SNOW NASDAQ:CRWD NASDAQ:QQQ NASDAQ:CIBR SSE:601138(富联) NASDAQ:MU
   🟢合格·追高区勿追(1): SSE:600183(生益)
   🔴淘汰(16): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) SZSE:300476(胜宏) NASDAQ:IREN NASDAQ:INTC SZSE:300394(天孚) NASDAQ:NBIS NASDAQ:APLD NASDAQ:RKLB NASDAQ:AMAT NYSE:LLY NASDAQ:AMD
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: QQQP$145M SNDK≈$96M MUC$73M SPCXC$40M PLTRC$33M
-  T+1核对: BEC180(09-04)✗未增 BEC215(09-04)✗未增 BEC217.5(09-04)✗未增 BEP85(09-04)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
