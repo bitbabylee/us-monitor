@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-08-31 收盘(ET)
-  生成 09-01 06:06 纽约 = 09-01 18:06 新加坡
+  生成 09-01 10:03 纽约 = 09-01 22:03 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,14 +8,14 @@
 【结论】仓位上限 60% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
 【候选】8 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:LITE   10EMA回调   日内:🟢突破买点
-  NASDAQ:SNDK   口袋支点      日内:🔥强主升浪
-  NASDAQ:QQQ    10EMA回调   日内:🟢黄金买点
-  NYSE:NET      口袋支点      日内:🟢突破买点
-  NASDAQ:CRWD   口袋支点      日内:⚪观望
-  NYSE:ANET     10EMA回调   日内:🟢稳健买点
-  NASDAQ:HOOD   10EMA回调   日内:🟢强动能买点
-  NASDAQ:MU     10EMA回调   日内:🟢强动能买点
+  NASDAQ:LITE   10EMA回调   日内:🔴规避/止损
+  NASDAQ:SNDK   口袋支点      日内:🟡跳空低开,买点降级
+  NASDAQ:QQQ    10EMA回调   日内:⚪观望
+  NYSE:NET      口袋支点      日内:⚪观望
+  NASDAQ:CRWD   口袋支点      日内:🔴规避/止损
+  NYSE:ANET     10EMA回调   日内:⚪观望
+  NASDAQ:HOOD   10EMA回调   日内:⚪观望
+  NASDAQ:MU     10EMA回调   日内:⚪观望
 【否决】
   NASDAQ:RKLB   板块背离
   NYSE:GEV      板块背离
@@ -38,8 +38,8 @@
   宏观 ✅ATR1410% ✗10Y4.76% ✅HYG/LQD0.7514 ✅USD/JPY160.12
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: NASDAQ:WCLD 云软件  AMEX:CRAK 炼化下游  NASDAQ:SKYY 云计算  AMEX:IEO 油气上游  AMEX:HACK 网络安全
-  短线改善: AMEX:VLUE 价值  AMEX:XLK 科技板块 (Technology)  AMEX:PRNT 3D打印  AMEX:BITQ 加密公司  AMEX:ARKQ 自动驾驶科技
+  涨幅优先: AMEX:CRAK 炼化下游  NASDAQ:WCLD 云软件  AMEX:IEO 油气上游  AMEX:DBC 大宗商品  AMEX:USO 原油
+  短线改善: AMEX:MAGS 七巨头  NASDAQ:SMH 半导体  NASDAQ:SOXX 半导体主题 (Semis)  AMEX:UUP 美元  AMEX:UNG 天然气
 ------------------------------------------------
 【板块】
   强: AMEX:XLE+2.3%
@@ -47,24 +47,22 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:RKLB   🚀超跌反弹      🟢突破买点
-   NASDAQ:LITE   🟢10EMA回调   🟢突破买点
-   NASDAQ:SNDK   💡口袋支点      🔥强主升浪
-   NASDAQ:QQQ    🟢10EMA回调   🟢黄金买点
-   NYSE:NET      💡口袋支点      🟢突破买点
-   NYSE:ANET     🟢10EMA回调   🟢稳健买点
-   NASDAQ:HOOD   🟢10EMA回调   🟢强动能买点
-   NASDAQ:MU     🟢10EMA回调   🟢强动能买点
+   NASDAQ:SPCX   🟢10EMA回调   🟢稳健买点
  ▶ 等时机（日内未给买点）
-   NYSE:GEV      🚀超跌反弹      🟡跳空低开,买点降级
-   NASDAQ:CRWD   💡口袋支点      ⚪观望
-   NASDAQ:SPCX   🟢10EMA回调   🟡警告:临近前高
-   AMEX:GDX      🟢10EMA回调   ⚪观望
-  日内异动: NYSE:LLY🟢  NASDAQ:INTC🔴  NASDAQ:AMAT🟢  NASDAQ:SMH🟢 
-            NYSE:CAT🟢  NASDAQ:CRDO🔴  NASDAQ:AMD🟢  NASDAQ:PLTR🟢 
-            NYSE:SNOW🟡  NASDAQ:IREN🟢  NASDAQ:CORZ🟢  NASDAQ:RIOT🟢 
-            NASDAQ:CIFR🟢  NASDAQ:WULF🟢  NASDAQ:APLD🟢 
-  盘前±2%: AMEX:GDX-3.2% NASDAQ:AAOI-3.0% NASDAQ:SNDK-3.0% NASDAQ:AXTI-2.7% NASDAQ:HOOD+2.6% NASDAQ:HUT+2.3% NASDAQ:IREN-2.2% NASDAQ:RIOT-2.1% NYSE:BE-2.1%
+   NASDAQ:RKLB   🚀超跌反弹      ⚪观望
+   NYSE:GEV      🚀超跌反弹      ⚪观望
+   NASDAQ:SNDK   💡口袋支点      🟡跳空低开,买点降级
+   NASDAQ:QQQ    🟢10EMA回调   ⚪观望
+   NYSE:NET      💡口袋支点      ⚪观望
+   NYSE:ANET     🟢10EMA回调   ⚪观望
+   NASDAQ:HOOD   🟢10EMA回调   ⚪观望
+   NASDAQ:MU     🟢10EMA回调   ⚪观望
+   AMEX:GDX      🟢10EMA回调   🟡跳空低开,买点降级
+ ▶ 冲突（日线买点/日内破位）
+   NASDAQ:LITE   🟢10EMA回调   🔴规避/止损
+   NASDAQ:CRWD   💡口袋支点      🔴规避/止损
+  日内异动: NASDAQ:AAOI🔴  NASDAQ:AXTI🔴  NASDAQ:HUT🔴 
+  盘前±2%: NASDAQ:AXTI-9.5% NASDAQ:RIOT-6.2% NASDAQ:LITE-6.1% NASDAQ:AAOI-5.9% NASDAQ:CIFR-5.5% NASDAQ:WULF-5.5% NASDAQ:CRDO-5.1% NASDAQ:NBIS-5.0% NASDAQ:CRWD-4.9% NASDAQ:IREN-4.8% NASDAQ:APLD-4.4% NASDAQ:HUT-4.1% NASDAQ:CORZ-3.7% NASDAQ:AMAT-3.5% NASDAQ:INTC-3.5% NYSE:ANET-3.0% NASDAQ:AMD-2.9% NASDAQ:CIBR-2.8% NYSE:BE-2.8% NYSE:NET-2.6% NASDAQ:RKLB-2.5% NASDAQ:SMH-2.5% NYSE:SNOW-2.4% AMEX:GDX-2.2% NYSE:CAT-2.1% NASDAQ:MU-2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 50%
@@ -73,7 +71,7 @@
   🔴淘汰(23): NASDAQ:HOOD NASDAQ:PLTR AMEX:GDX SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:IREN SZSE:300476(胜宏) SSE:688072(拓荆) SSE:688519(南亚) SSE:601138(富联) AMEX:SPY NASDAQ:APLD NASDAQ:AMD NASDAQ:NBIS NASDAQ:RKLB SSE:688627(精智达) NASDAQ:SMH NASDAQ:AMAT NASDAQ:INTC NASDAQ:CRDO SZSE:300394(天孚) NYSE:LLY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKC$390M MUC$202M QQQ≈$88M SPCXC$73M PLTR≈$29M
+  今日: SNDKC$80M(v/oi14.5) QQQ≈$42M(v/oi69.4) MU≈$28M(v/oi4.4) MSFTC$25M(v/oi7.4) AMD≈$13M(v/oi8.9)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -90,7 +88,7 @@
   ✗②量能结构 涨/跌量比 1.03x (10日)
   ✅③扩散质量 龙头5日+3.9% vs 池中位+1.6% 龙头带队
   ✗④指数验证 上证3980 滞涨区3946-3980内
-  ✗⑤海外锚 TSM20日+2.3% SMH/QQQ↓20日均 (月营收人工)
+  ✗⑤海外锚 TSM20日-0.6% SMH/QQQ↓20日均 (月营收人工)
   四棒5日α(领/改/弱/落·↑↓=加速): PCB+5改↑ 光+1改↑ 液冷+11领↑ 存储+3改↑ 探测+6领↑
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
