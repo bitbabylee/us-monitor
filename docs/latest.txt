@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-02 收盘(ET)
-  生成 09-02 16:33 纽约 = 09-03 04:33 新加坡
+  生成 09-02 18:44 纽约 = 09-03 06:44 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -37,15 +37,15 @@
   日性质(因子ETF超额·非纯因子): 动量-0.3 高贝+0.3 低波-0.6 价值+0.7 → 价值轮动日
   派发 ▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄ (3/吸4) → 仓位60%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR147% ✗10Y4.80% ✅HYG/LQD0.7509 ✅USD/JPY158.71
+  宏观 ✅ATR147% ✗10Y4.80% ✅HYG/LQD0.7509 ✅USD/JPY160.20
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  AMEX:USO 原油  AMEX:DBC 大宗商品
-  短线改善: AMEX:IGV 软件  AMEX:MAGS 七巨头  AMEX:XLK 科技板块 (Technology)  AMEX:UUP 美元  NASDAQ:AIQ AI主题
+  涨幅优先: AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  AMEX:DBC 大宗商品  AMEX:USO 原油
+  短线改善: AMEX:SLX 钢铁  AMEX:IGV 软件  AMEX:MAGS 七巨头  AMEX:UUP 美元  NASDAQ:AIQ AI主题
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+2.7% · AMEX:XLB+1.2%
-  🚨砸盘: AMEX:XLRE-1.1%(量1.4x)
+  🚨砸盘: AMEX:XLRE-1.1%(量1.5x)
   主题🔥 矿转AIDC +3.6%  龙头 NASDAQ:IREN
   主题🔥 🏦 降息受益 +2.8%  龙头 NYSE:XYZ
   主题🔥 🪙 黄金   +2.2%  龙头 NYSE:WPM
@@ -75,16 +75,16 @@
             NYSE:NET🔴  NASDAQ:CRWD🔴  NYSE:ANET🟢  NASDAQ:CRDO🔴 
             NASDAQ:PLTR🔴  NASDAQ:CIBR🔴  NYSE:SNOW🔴  NASDAQ:IREN🟡 
             NASDAQ:RIOT🔴  NASDAQ:CIFR🟡  NASDAQ:HUT🟢  NASDAQ:WULF🔴 
-  盘前±2%: NYSE:SNOW+20.6%
+  盘前±2%: NYSE:SNOW+22.5% NASDAQ:HOOD+2.6%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 49% · 📣BE S1⌐→S2↑ · CRDO S2↑→S1⌐
-  🟢合格·在买点区(5): SZSE:301018(申菱) SSE:600183(生益) SSE:601208(东材) NASDAQ:MSFT SZSE:002463(沪电)
+  上升趋势占比 49%
+  🟢合格·在买点区(4): SZSE:301018(申菱) SSE:600183(生益) SSE:601208(东材) NASDAQ:MSFT
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(26): SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:PLTR AMEX:GDX NASDAQ:HOOD NASDAQ:IREN SZSE:300476(胜宏) SSE:688072(拓荆) SSE:688519(南亚) SSE:601138(富联) NASDAQ:LITE NASDAQ:APLD NASDAQ:SNDK SSE:688627(精智达) NASDAQ:NBIS NASDAQ:RKLB AMEX:SPY NASDAQ:INTC NASDAQ:QQQ NASDAQ:CIBR NYSE:ANET SZSE:300394(天孚) NASDAQ:AMD NYSE:NET NYSE:LLY
+  🔴淘汰(26): SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:PLTR AMEX:GDX NASDAQ:HOOD NASDAQ:IREN SZSE:300476(胜宏) SSE:688519(南亚) SSE:688072(拓荆) NASDAQ:LITE NASDAQ:APLD SSE:688627(精智达) NASDAQ:SNDK NASDAQ:NBIS NASDAQ:RKLB SSE:601138(富联) AMEX:SPY NASDAQ:INTC NYSE:NET NYSE:ANET NASDAQ:QQQ NASDAQ:CIBR NASDAQ:AMD SZSE:300394(天孚) NYSE:LLY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUC$361M(v/oi31.8) QQQC$302M(v/oi99.0) SNDKC$216M(v/oi13.2) SNOWC$70M(v/oi94.7) PLTR≈$54M(v/oi44.8)
+  今日: MUC$361M(v/oi31.8) QQQC$327M(v/oi99.0) SNDKC$216M(v/oi13.2) SNOWC$70M(v/oi94.7) PLTR≈$54M(v/oi44.8)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -96,13 +96,13 @@
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【A股重演】反转/反弹五条件 (截至09-01·独立体系)
-  判定: 反弹定性  反转条件 1/5
-  ✗①龙头前高 距前高 胜宏-37% 生益-23% 富联-21%
-  ✗②量能结构 涨/跌量比 1.03x (10日)
-  ✅③扩散质量 龙头5日+3.9% vs 池中位+1.6% 龙头带队
+  判定: 反弹定性  反转条件 0/5
+  ✗①龙头前高 距前高 胜宏-39% 生益-23% 富联-23%
+  ✗②量能结构 涨/跌量比 1.15x (10日)
+  ✗③扩散质量 龙头5日+1.3% vs 池中位+2.7% 补涨带队
   ✗④指数验证 上证3980 滞涨区3946-3980内
   ✗⑤海外锚 TSM20日+0.4% SMH/QQQ↓20日均 (月营收人工)
-  四棒5日α(领/改/弱/落·↑↓=加速): PCB+9领↑ 光+4改↑ 液冷+15领↑ 存储+6改↑ 探测+10领↑
+  四棒5日α(领/改/弱/落·↑↓=加速): PCB+6改↑ 光+2改↑ 液冷+15领↓ 存储+6改↑ 探测+8改↑
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
   私募仓位: 83.7% (07-10⚠️54天前) 高位·加仓空间有限·近4年新高·百亿级87.4
