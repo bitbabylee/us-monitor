@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-01 收盘(ET)
-  生成 09-02 10:04 纽约 = 09-02 22:04 新加坡
+  生成 09-02 12:48 纽约 = 09-03 00:48 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,7 +8,7 @@
 【结论】仓位上限 60% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
 【候选】2 只（形态+板块确认+无财报风险·未回测）
-  NYSE:GEV      超跌反弹      日内:⚪观望
+  NYSE:GEV      超跌反弹      日内:🟢突破买点
   NASDAQ:CORZ   超跌反弹      日内:⚪观望
 【否决】
   NASDAQ:RKLB   板块背离
@@ -35,8 +35,8 @@
   宏观 ✅ATR1411% ✗10Y4.80% ✅HYG/LQD0.7518 ✅USD/JPY159.75
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  AMEX:DBC 大宗商品  NASDAQ:WCLD 云软件
-  短线改善: AMEX:IGV 软件  AMEX:SLX 钢铁  AMEX:XLK 科技板块 (Technology)  AMEX:UUP 美元  AMEX:MAGS 七巨头
+  涨幅优先: AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  AMEX:DBC 大宗商品  AMEX:USO 原油
+  短线改善: AMEX:XLK 科技板块 (Technology)  AMEX:IGV 软件  AMEX:SLX 钢铁  AMEX:UUP 美元  AMEX:MAGS 七巨头
 ------------------------------------------------
 【板块】
   强: AMEX:XLE+2.0% · AMEX:XLU+1.5% · AMEX:XLV+1.3% · AMEX:XLP+1.0%
@@ -47,30 +47,33 @@
   主题🧊 ️ 网络安全 -4.7%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
+ ▶ 日线+日内同向
+   NASDAQ:INTC   🚀超跌反弹      🟢突破买点
+   NYSE:GEV      🚀超跌反弹      🟢突破买点
+   NASDAQ:SNDK   🟢10EMA回调   🟢稳健买点
+   NASDAQ:MU     🟢10EMA回调   🟢稳健买点
+   NASDAQ:SPCX   🟢10EMA回调   🟢稳健买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:MSFT   🟢10EMA回调   ⚪观望
-   NASDAQ:INTC   🚀超跌反弹      ⚪观望
-   NYSE:GEV      🚀超跌反弹      ⚪观望
-   NASDAQ:MU     🟢10EMA回调   ⚪观望
-   NASDAQ:PLTR   🟢10EMA回调   ⚪观望
-   NASDAQ:SPCX   🟢10EMA回调   ⚪观望
+   NASDAQ:RKLB   🚀超跌反弹      ⚪观望
    NASDAQ:CORZ   🚀超跌反弹      ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NASDAQ:RKLB   🚀超跌反弹      🔴锁定利润
-   NASDAQ:SNDK   🟢10EMA回调   🔴规避/止损
-  日内异动: NYSE:CAT🟢  NASDAQ:CRWD🔴  NYSE:ANET🔴  NASDAQ:CRDO🔴 
-            NASDAQ:HOOD🟢  NASDAQ:CIBR🔴  NYSE:SNOW🟡  AMEX:GDX🟢 
-            NASDAQ:IREN🔴  NASDAQ:RIOT🟢  NASDAQ:CIFR🟡  NASDAQ:WULF🟢 
-  盘前±2%: NASDAQ:CRDO-18.1% NASDAQ:CRWD-4.9% AMEX:GDX+3.7% NYSE:NET-3.0% NASDAQ:PLTR-3.0% NASDAQ:CIBR-2.8% NYSE:SNOW-2.6% NYSE:BE-2.4% NYSE:LLY+2.2% NASDAQ:SPCX-2.2% NYSE:ANET-2.1%
+   NASDAQ:MSFT   🟢10EMA回调   🔴规避/止损
+   NASDAQ:PLTR   🟢10EMA回调   🔴规避/止损
+  日内异动: NYSE:BE🟢  NASDAQ:NBIS🟡  NASDAQ:AAOI🔴  NYSE:LLY🔴 
+            NASDAQ:SMH🟢  NASDAQ:QQQ🟢  NYSE:CAT🟢  NYSE:NET🔴 
+            NASDAQ:CRWD🔴  NYSE:ANET🔴  NASDAQ:CRDO🔴  NASDAQ:HOOD🟢 
+            NASDAQ:AXTI🔴  NASDAQ:CIBR🔴  NYSE:SNOW🔴  AMEX:GDX🔴 
+            NASDAQ:IREN🟡  NASDAQ:RIOT🟢  NASDAQ:HUT🟢 
+  盘前±2%: NASDAQ:CRDO-19.5% NASDAQ:PLTR-6.7% NASDAQ:CRWD-5.5% NYSE:NET-5.2% NYSE:SNOW-4.3% NASDAQ:CIBR-3.5% NASDAQ:IREN+2.7% NYSE:ANET-2.4% NASDAQ:AAOI-2.1% AMEX:GDX+2.0% NASDAQ:HOOD+2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 49%
-  🟢合格·在买点区(6): SZSE:301018(申菱) SSE:600183(生益) NASDAQ:MSFT NYSE:SNOW NASDAQ:CRWD SSE:601208(东材)
+  🟢合格·在买点区(7): SZSE:301018(申菱) SSE:600183(生益) NASDAQ:MSFT NYSE:SNOW SSE:601208(东材) NASDAQ:CRWD SZSE:002463(沪电)
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(28): NASDAQ:PLTR SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) AMEX:GDX NASDAQ:HOOD NASDAQ:IREN SZSE:300476(胜宏) SSE:688519(南亚) SSE:688072(拓荆) SSE:688627(精智达) NASDAQ:LITE NASDAQ:MU NYSE:ANET NASDAQ:APLD NASDAQ:SNDK SSE:601138(富联) NASDAQ:RKLB NASDAQ:NBIS NYSE:NET NASDAQ:INTC NASDAQ:QQQ NASDAQ:AMD SZSE:300394(天孚) NASDAQ:SMH AMEX:SPY NYSE:LLY NASDAQ:CRDO
+  🔴淘汰(28): NASDAQ:PLTR SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) AMEX:GDX NASDAQ:HOOD SZSE:300476(胜宏) NASDAQ:IREN SSE:688072(拓荆) SSE:688519(南亚) SSE:601138(富联) NASDAQ:LITE NASDAQ:MU SSE:688627(精智达) NYSE:ANET NASDAQ:APLD NASDAQ:SNDK NASDAQ:RKLB NASDAQ:NBIS NYSE:NET NASDAQ:INTC SZSE:300394(天孚) NASDAQ:QQQ NASDAQ:AMD NASDAQ:SMH AMEX:SPY NYSE:LLY NASDAQ:CRDO
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKC$89M(v/oi3.6) MUC$63M(v/oi3.3) QQQ≈$32M(v/oi17.3) MSFTC$12M(v/oi19.8) PLTR≈$11M(v/oi8.6)
+  今日: QQQ≈$210M(v/oi99.0) MUC$159M(v/oi17.8) SNDK≈$125M(v/oi8.0) PLTRP$54M(v/oi25.9) SNOWC$38M(v/oi93.0)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -81,18 +84,18 @@
   池外强信号(仅提示, 不入信号链): NYSE:TRGP NYSE:CSTM NYSE:VG AMEX:XLE NYSE:OXY NYSE:GNK
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
-【A股重演】反转/反弹五条件 (截至09-02·独立体系)
-  判定: 反弹定性  反转条件 0/5
-  ✗①龙头前高 距前高 胜宏-39% 生益-23% 富联-23%
-  ✗②量能结构 涨/跌量比 1.15x (10日)
-  ✗③扩散质量 龙头5日+1.3% vs 池中位+2.7% 补涨带队
-  ✗④指数验证 上证3941 区间3946下方
+【A股重演】反转/反弹五条件 (截至09-01·独立体系)
+  判定: 反弹定性  反转条件 1/5
+  ✗①龙头前高 距前高 胜宏-37% 生益-23% 富联-21%
+  ✗②量能结构 涨/跌量比 1.03x (10日)
+  ✅③扩散质量 龙头5日+3.9% vs 池中位+1.6% 龙头带队
+  ✗④指数验证 上证3980 滞涨区3946-3980内
   ✗⑤海外锚 TSM20日-0.3% SMH/QQQ↓20日均 (月营收人工)
-  四棒5日α(领/改/弱/落·↑↓=加速): PCB+4改↓ 光+0改↑ 液冷+13领↓ 存储+4改↑ 探测+6改↑
+  四棒5日α(领/改/弱/落·↑↓=加速): PCB+9领↑ 光+4改↑ 液冷+15领↑ 存储+6改↑ 探测+10领↑
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
   私募仓位: 83.7% (07-10⚠️54天前) 高位·加仓空间有限·近4年新高·百亿级87.4
-  风格温度: 中证1000-沪深300 5日+0.9% 扩散友好(自动)
+  风格温度: 中证1000-沪深300 5日+2.3% 扩散友好(自动)
   复评节点(到期强制重估):
   09-05 🔔到期 高老师·趋势确认窗(9/1-9/9, 与苹果复评重叠)
   09-09 T-7 苹果发布会·iPhone18逻辑验真(果链腿去留)
