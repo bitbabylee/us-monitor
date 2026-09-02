@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-01 收盘(ET)
-  生成 09-02 06:07 纽约 = 09-02 18:07 新加坡
+  生成 09-02 10:04 纽约 = 09-02 22:04 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,8 +8,8 @@
 【结论】仓位上限 60% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
 【候选】2 只（形态+板块确认+无财报风险·未回测）
-  NYSE:GEV      超跌反弹      日内:🟢突破买点
-  NASDAQ:CORZ   超跌反弹      日内:🟡跳空低开,买点降级
+  NYSE:GEV      超跌反弹      日内:⚪观望
+  NASDAQ:CORZ   超跌反弹      日内:⚪观望
 【否决】
   NASDAQ:RKLB   板块背离
   NASDAQ:MSFT   板块背离
@@ -27,16 +27,16 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7631 (MA50+0.9%) · RSI 40 · VIX 16.3
+  SPX 7631 (MA50+0.8%) · RSI 38 · VIX 16.3
   风格: MTUM/MAGS 4.35 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量-0.6 高贝-1.4 低波+0.3 价值-0.2 → 去杠杆/轮动日
-  派发 ▆▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃▃▃▄▄ (3/吸5) → 仓位60%
+  派发 ▇▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃▃▃▃▄▄ (3/吸4) → 仓位60%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
   宏观 ✅ATR1411% ✗10Y4.80% ✅HYG/LQD0.7518 ✅USD/JPY159.75
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:CRAK 炼化下游  NASDAQ:WCLD 云软件  AMEX:IEO 油气上游  AMEX:USO 原油  AMEX:XLE 能源板块 (Energy)
-  短线改善: NASDAQ:AIQ AI主题  AMEX:PRNT 3D打印  AMEX:SLX 钢铁  AMEX:UNG 天然气  AMEX:MAGS 七巨头
+  涨幅优先: AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  AMEX:DBC 大宗商品  NASDAQ:WCLD 云软件
+  短线改善: AMEX:IGV 软件  AMEX:SLX 钢铁  AMEX:XLK 科技板块 (Technology)  AMEX:UUP 美元  AMEX:MAGS 七巨头
 ------------------------------------------------
 【板块】
   强: AMEX:XLE+2.0% · AMEX:XLU+1.5% · AMEX:XLV+1.3% · AMEX:XLP+1.0%
@@ -47,32 +47,30 @@
   主题🧊 ️ 网络安全 -4.7%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
- ▶ 日线+日内同向
-   NASDAQ:MSFT   🟢10EMA回调   🟢稳健买点
-   NYSE:GEV      🚀超跌反弹      🟢突破买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:RKLB   🚀超跌反弹      🟡跳空低开,买点降级
-   NASDAQ:INTC   🚀超跌反弹      🟡跳空低开,买点降级
-   NASDAQ:SNDK   🟢10EMA回调   ⚪观望
+   NASDAQ:MSFT   🟢10EMA回调   ⚪观望
+   NASDAQ:INTC   🚀超跌反弹      ⚪观望
+   NYSE:GEV      🚀超跌反弹      ⚪观望
    NASDAQ:MU     🟢10EMA回调   ⚪观望
+   NASDAQ:PLTR   🟢10EMA回调   ⚪观望
    NASDAQ:SPCX   🟢10EMA回调   ⚪观望
-   NASDAQ:CORZ   🚀超跌反弹      🟡跳空低开,买点降级
+   NASDAQ:CORZ   🚀超跌反弹      ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NASDAQ:PLTR   🟢10EMA回调   🔴规避/止损
-  日内异动: NYSE:BE🔥  NASDAQ:NBIS🟡  NASDAQ:AAOI🟡  NYSE:LLY🔴 
-            NASDAQ:SMH🟢  NYSE:NET🔴  NASDAQ:CRWD🔴  NYSE:ANET🔴 
-            NASDAQ:CRDO🔴  NASDAQ:CIBR🔴  NYSE:SNOW🔴  NASDAQ:IREN🔴 
-  盘前±2%: NASDAQ:CRDO-9.2% NYSE:SNOW-2.9% NASDAQ:HUT-2.8% NASDAQ:IREN-2.8% NASDAQ:RKLB-2.8% NASDAQ:NBIS-2.6% NYSE:BE-2.5% NASDAQ:CIFR-2.2% NASDAQ:AXTI-2.2% NASDAQ:AAOI-2.0% NASDAQ:APLD-2.0%
+   NASDAQ:RKLB   🚀超跌反弹      🔴锁定利润
+   NASDAQ:SNDK   🟢10EMA回调   🔴规避/止损
+  日内异动: NYSE:CAT🟢  NASDAQ:CRWD🔴  NYSE:ANET🔴  NASDAQ:CRDO🔴 
+            NASDAQ:HOOD🟢  NASDAQ:CIBR🔴  NYSE:SNOW🟡  AMEX:GDX🟢 
+            NASDAQ:IREN🔴  NASDAQ:RIOT🟢  NASDAQ:CIFR🟡  NASDAQ:WULF🟢 
+  盘前±2%: NASDAQ:CRDO-18.1% NASDAQ:CRWD-4.9% AMEX:GDX+3.7% NYSE:NET-3.0% NASDAQ:PLTR-3.0% NASDAQ:CIBR-2.8% NYSE:SNOW-2.6% NYSE:BE-2.4% NYSE:LLY+2.2% NASDAQ:SPCX-2.2% NYSE:ANET-2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 49%
   🟢合格·在买点区(6): SZSE:301018(申菱) SSE:600183(生益) NASDAQ:MSFT NYSE:SNOW NASDAQ:CRWD SSE:601208(东材)
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(27): NASDAQ:PLTR SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) AMEX:GDX NASDAQ:HOOD NASDAQ:IREN SZSE:300476(胜宏) SSE:688519(南亚) NYSE:NET SSE:688072(拓荆) SSE:688627(精智达) NASDAQ:LITE NASDAQ:CRDO NASDAQ:MU NYSE:ANET NASDAQ:APLD NASDAQ:SNDK SSE:601138(富联) NASDAQ:RKLB NASDAQ:NBIS NASDAQ:INTC NASDAQ:QQQ NASDAQ:AMD SZSE:300394(天孚) AMEX:SPY NYSE:LLY
+  🔴淘汰(28): NASDAQ:PLTR SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) AMEX:GDX NASDAQ:HOOD NASDAQ:IREN SZSE:300476(胜宏) SSE:688519(南亚) SSE:688072(拓荆) SSE:688627(精智达) NASDAQ:LITE NASDAQ:MU NYSE:ANET NASDAQ:APLD NASDAQ:SNDK SSE:601138(富联) NASDAQ:RKLB NASDAQ:NBIS NYSE:NET NASDAQ:INTC NASDAQ:QQQ NASDAQ:AMD SZSE:300394(天孚) NASDAQ:SMH AMEX:SPY NYSE:LLY NASDAQ:CRDO
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDK≈$284M MU≈$260M QQQ≈$128M SPCX≈$40M AMD≈$36M
-  T+1核对: BEC202.5(09-04)✗未增 BEC207.5(09-04)✗未增 BEC210(09-04)✗未增 BEC212.5(09-04)✗未增
+  今日: SNDKC$89M(v/oi3.6) MUC$63M(v/oi3.3) QQQ≈$32M(v/oi17.3) MSFTC$12M(v/oi19.8) PLTR≈$11M(v/oi8.6)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -89,7 +87,7 @@
   ✗②量能结构 涨/跌量比 1.15x (10日)
   ✗③扩散质量 龙头5日+1.3% vs 池中位+2.7% 补涨带队
   ✗④指数验证 上证3941 区间3946下方
-  ✗⑤海外锚 TSM20日-0.8% SMH/QQQ↓20日均 (月营收人工)
+  ✗⑤海外锚 TSM20日-0.3% SMH/QQQ↓20日均 (月营收人工)
   四棒5日α(领/改/弱/落·↑↓=加速): PCB+4改↓ 光+0改↑ 液冷+13领↓ 存储+4改↑ 探测+6改↑
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
