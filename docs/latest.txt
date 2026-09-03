@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-03 收盘(ET)
-  生成 09-03 16:33 纽约 = 09-04 04:33 新加坡
+  生成 09-03 17:42 纽约 = 09-04 05:42 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -40,7 +40,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.2 高贝+0.3 低波-0.2 价值-0.2 → 中性日
   派发 ▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄ (3/吸4) → 仓位60%
   阶段P0 恐慌未释放 恐慌2/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1411% ✗10Y4.76% ✅HYG/LQD0.7508 ✗USD/JPY155.76
+  宏观 ✅ATR1411% ✗10Y4.76% ✅HYG/LQD0.7508 ✗USD/JPY155.84
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:USO 原油  AMEX:XLE 能源板块 (Energy)  AMEX:MOO 农业
@@ -81,7 +81,7 @@
             NASDAQ:CIFR🔥  NASDAQ:HUT🔴  NASDAQ:WULF🔥 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 50% · 📣RIOT S1⌐→S2↑ · HUT S1⌐→S2↑ · 天孚 S2↑→S3⌒
+  上升趋势占比 50%
   🟢合格·在买点区(8): NASDAQ:MSFT SZSE:301018(申菱) NASDAQ:RIOT SSE:600183(生益) SSE:688498(源杰) NASDAQ:QQQ NASDAQ:CRWD AMEX:SPY
   🟢合格·追高区勿追(1): NYSE:SNOW
   🔴淘汰(25): NASDAQ:HOOD NASDAQ:PLTR SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) AMEX:GDX NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:APLD NASDAQ:CIBR SSE:601138(富联) NASDAQ:NBIS SSE:688627(精智达) SZSE:002463(沪电) NASDAQ:INTC NASDAQ:SNDK NYSE:NET NASDAQ:RKLB NASDAQ:SMH NASDAQ:LITE SSE:688519(南亚) SZSE:300394(天孚) NASDAQ:AMD NASDAQ:HUT NYSE:LLY
@@ -92,10 +92,10 @@
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】40只(强17)·⚠️旧快照
-  今日强信号: NYSE:ALB NASDAQ:SSRM NASDAQ:FESB1! NYSE:FRO NYSE:PAAS NASDAQ:HSI1! NASDAQ:HHI1! NASDAQ:NVDA🔗
-  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:NVDA NASDAQ:IREN NASDAQ:SNDK NYSE:NEM NYSE:CAT NYSE:GEV
-  池外强信号(仅提示, 不入信号链): NYSE:ALB NASDAQ:SSRM NASDAQ:FESB1! NYSE:FRO NYSE:PAAS NASDAQ:HSI1!
+【波哥七维·外部体系】50只(强18)·⚠️旧快照
+  今日强信号: NASDAQ:SSRM NASDAQ:FESB1! NASDAQ:ROST NASDAQ:NBIS🔗 NASDAQ:GOOG NASDAQ:HSI1! NASDAQ:HHI1! NYSE:NEM🔗
+  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:NBIS NYSE:NEM NASDAQ:NVDA NYSE:CAT AMEX:GDX NYSE:AEM NYSE:GEV
+  池外强信号(仅提示, 不入信号链): NASDAQ:SSRM NASDAQ:FESB1! NASDAQ:ROST NASDAQ:GOOG NASDAQ:HSI1! NASDAQ:HHI1!
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【A股重演】反转/反弹五条件 (截至09-02·独立体系)
