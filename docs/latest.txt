@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-03 收盘(ET)
-  生成 09-04 10:42 纽约 = 09-04 22:42 新加坡
+  生成 09-04 10:51 纽约 = 09-04 22:51 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -12,13 +12,13 @@
   NASDAQ:NBIS   超跌反弹      日内:⚪观望
   NASDAQ:MSFT   10EMA回调   日内:🔴规避/止损
   NYSE:GEV      超跌反弹      日内:⚪观望
-  NASDAQ:QQQ    10EMA回调   日内:⚪观望
+  NASDAQ:QQQ    10EMA回调   日内:🔴规避/止损
   NYSE:NET      超跌反弹      日内:🟡弱突破预警
   NYSE:ANET     10EMA回调   日内:⚪观望
-  NASDAQ:HOOD   口袋支点      日内:⚪观望
-  NASDAQ:SPCX   口袋支点      日内:🟢稳健买点
-  NASDAQ:CORZ   超跌反弹      日内:🟢稳健买点
-  NASDAQ:APLD   超跌反弹      日内:⚪观望
+  NASDAQ:HOOD   口袋支点      日内:🟡跳空低开,买点降级
+  NASDAQ:SPCX   口袋支点      日内:⚪观望
+  NASDAQ:CORZ   超跌反弹      日内:⚪观望
+  NASDAQ:APLD   超跌反弹      日内:🟢黄金买点
 【否决】
   NASDAQ:INTC   板块背离
   NASDAQ:AMAT   板块背离
@@ -44,7 +44,7 @@
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:USO 原油  AMEX:SIL 白银矿  AMEX:XLE 能源板块 (Energy)
-  短线改善: AMEX:URA 铀核能  AMEX:SLX 钢铁  AMEX:XLF 金融板块 (Financials)  AMEX:MAGS 七巨头  AMEX:XLC 通讯服务 (Communication)
+  短线改善: AMEX:SLX 钢铁  AMEX:XLF 金融板块 (Financials)  AMEX:MAGS 七巨头  AMEX:NLR 核能  AMEX:XLC 通讯服务 (Communication)
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+2.9%
@@ -56,28 +56,29 @@
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
    NYSE:BE       💡口袋支点      🟢稳健买点
-   NASDAQ:INTC   🚀超跌反弹      🟢突破买点
-   NASDAQ:AMAT   🚀超跌反弹      🟢稳健买点
+   NASDAQ:INTC   🚀超跌反弹      🟢黄金买点
    NASDAQ:SNDK   🟢10EMA回调   🟢强动能买点
    NYSE:CAT      🚀超跌反弹      🟢稳健买点
    NASDAQ:AMD    🚀超跌反弹      🟢稳健买点
-   NASDAQ:MU     🟢10EMA回调   🟢强动能买点
+   NASDAQ:MU     🟢10EMA回调   🟢黄金买点
    NASDAQ:AXTI   🚀超跌反弹      🔥强主升浪
-   NASDAQ:SPCX   💡口袋支点      🟢稳健买点
-   NASDAQ:CORZ   🚀超跌反弹      🟢稳健买点
+   NASDAQ:APLD   🚀超跌反弹      🟢黄金买点
  ▶ 等时机（日内未给买点）
    NASDAQ:NBIS   🚀超跌反弹      ⚪观望
+   NASDAQ:AMAT   🚀超跌反弹      ⚪观望
    NYSE:GEV      🚀超跌反弹      ⚪观望
-   NASDAQ:QQQ    🟢10EMA回调   ⚪观望
    NYSE:NET      🚀超跌反弹      🟡弱突破预警
    NYSE:ANET     🟢10EMA回调   ⚪观望
-   NASDAQ:HOOD   💡口袋支点      ⚪观望
-   NASDAQ:APLD   🚀超跌反弹      ⚪观望
+   NASDAQ:HOOD   💡口袋支点      🟡跳空低开,买点降级
+   NASDAQ:SPCX   💡口袋支点      ⚪观望
+   NASDAQ:CORZ   🚀超跌反弹      ⚪观望
  ▶ 冲突（日线买点/日内破位）
    NASDAQ:MSFT   🟢10EMA回调   🔴规避/止损
-  日内异动: NASDAQ:LITE🟢  NASDAQ:SMH🟢  NASDAQ:PLTR🔴  NYSE:SNOW🟢 
-            AMEX:GDX🟡  NASDAQ:IREN🟢  NASDAQ:CIFR🟢  NASDAQ:HUT🟡 
-  盘前±2%: NASDAQ:AXTI+8.4% NASDAQ:SNDK+8.2% NASDAQ:AAOI+4.7% NASDAQ:MU+4.6% NASDAQ:AMAT+4.4% NASDAQ:CRDO+4.0% NASDAQ:IREN+3.7% NASDAQ:INTC+3.7% NYSE:BE+3.4% NASDAQ:PLTR-3.2% NASDAQ:AMD+2.9% NASDAQ:NBIS+2.6% NASDAQ:CIFR+2.6% NASDAQ:SMH+2.5% NASDAQ:LITE+2.3% AMEX:GDX-2.3% NASDAQ:HUT+2.2% NYSE:CAT+2.1%
+   NASDAQ:QQQ    🟢10EMA回调   🔴规避/止损
+  日内异动: NASDAQ:CRWD🟢  NASDAQ:CRDO🟢  NASDAQ:PLTR🔴  NASDAQ:CIBR🟢 
+            NYSE:SNOW🟢  AMEX:GDX🟡  NASDAQ:IREN🟢  NASDAQ:HUT🟡 
+            NASDAQ:WULF🟢 
+  盘前±2%: NASDAQ:AXTI+8.5% NASDAQ:SNDK+7.4% NASDAQ:AAOI+4.3% NASDAQ:AMAT+4.1% NASDAQ:MU+3.9% NASDAQ:PLTR-3.6% NASDAQ:IREN+3.2% NYSE:BE+3.2% NASDAQ:INTC+3.2% NASDAQ:CRDO+2.9% NASDAQ:AMD+2.7% NASDAQ:SMH+2.3% NASDAQ:HOOD-2.3% AMEX:GDX-2.1% NYSE:CAT+2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 50%
@@ -86,7 +87,7 @@
   🔴淘汰(25): NASDAQ:HOOD NASDAQ:PLTR SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) AMEX:GDX NASDAQ:IREN NASDAQ:APLD SZSE:300476(胜宏) NASDAQ:CIBR SSE:688072(拓荆) NASDAQ:NBIS NASDAQ:INTC NASDAQ:SNDK NYSE:NET NASDAQ:RKLB NASDAQ:SMH NASDAQ:LITE SZSE:300394(天孚) NASDAQ:AMD SSE:688627(精智达) SZSE:002463(沪电) NASDAQ:HUT NYSE:LLY SSE:688519(南亚)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKC$290M(v/oi14.5) MUC$266M(v/oi96.6) QQQ≈$120M(v/oi50.6) AMDC$31M(v/oi15.1) SPCXC$28M(v/oi3.3)
+  今日: SNDKC$371M(v/oi16.6) MUC$304M(v/oi99.0) QQQ≈$135M(v/oi53.4) AMDC$35M(v/oi15.3) SPCXC$32M(v/oi3.6)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -103,7 +104,7 @@
   ✅②量能结构 涨/跌量比 1.29x (10日)
   ✅③扩散质量 龙头5日-5.1% vs 池中位-6.3% 龙头带队
   ✗④指数验证 上证3930 区间3946下方
-  ✗⑤海外锚 TSM20日+1.6% SMH/QQQ↓20日均 (月营收人工)
+  ✗⑤海外锚 TSM20日+1.5% SMH/QQQ↓20日均 (月营收人工)
   四棒5日α(领/改/弱/落·↑↓=加速): PCB-5落↓ 光-2落↑ 液冷+6领↓ 存储-5落↓ 探测-6落↓
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
