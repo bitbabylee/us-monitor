@@ -1,0 +1,194 @@
+{
+ "day": "2026-09-04",
+ "picks": [
+  {
+   "market": "US",
+   "b": "MRNA",
+   "nm": "Moderna,",
+   "dir": -1,
+   "px": 144.0,
+   "chg1": -4.52,
+   "score": 3.9,
+   "book": "0903 US QQQ 1116 nyt",
+   "page": 17
+  },
+  {
+   "market": "US",
+   "b": "SIVE",
+   "nm": "Sivers Semicon",
+   "dir": 1,
+   "px": 27.54,
+   "chg1": 8.17,
+   "score": 3.9,
+   "book": "0903 US 1630 nyt",
+   "page": 71
+  },
+  {
+   "market": "US",
+   "b": "DAR",
+   "nm": "Darling Ingred",
+   "dir": -1,
+   "px": 64.94,
+   "chg1": -3.96,
+   "score": 3.9,
+   "book": "0903 US QQQ 1116 nyt",
+   "page": 16
+  },
+  {
+   "market": "HK",
+   "b": "000660",
+   "nm": "SK海力士",
+   "dir": 1,
+   "px": 1647000.0,
+   "chg1": 3.2,
+   "score": 3.9,
+   "book": "0904 亚太 1625",
+   "page": 36
+  },
+  {
+   "market": "MACRO",
+   "b": "NK2251!",
+   "nm": "日经225期货（Nikkei",
+   "dir": 1,
+   "px": 65020.94,
+   "chg1": 1.26,
+   "score": 3.9,
+   "book": "0904 Macro 2022 bjt",
+   "page": 38
+  },
+  {
+   "market": "MACRO",
+   "b": "XAGUSD",
+   "nm": "白银现货/Silver Sp",
+   "dir": 1,
+   "px": 66.55,
+   "chg1": -1.7,
+   "score": 3.9,
+   "book": "0904 Macro 2022 bjt",
+   "page": 39
+  },
+  {
+   "market": "CN",
+   "b": "HSIDI",
+   "nm": "HANG SENG INDE",
+   "dir": 1,
+   "px": 25650.87,
+   "chg1": 1.74,
+   "score": 3.6,
+   "book": "0904 A Share 1730",
+   "page": 20
+  },
+  {
+   "market": "CN",
+   "b": "000636",
+   "nm": "风华高科",
+   "dir": -1,
+   "px": 48.46,
+   "chg1": -4.27,
+   "score": 3.4,
+   "book": "0904 A Share 1320",
+   "page": 22
+  }
+ ],
+ "n_cand": 230,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0827 NY 收盘_QQQ",
+   "stem": "0827 US 1700 nyt",
+   "stamp": "2026-08-28 05:24",
+   "market": "US",
+   "n": 78
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0902 NY 盘前1955_宏观",
+   "stem": "0903 Macro 2018 bjt",
+   "stamp": "2026-09-03 20:18",
+   "market": "MACRO",
+   "n": 51
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0902 NY 盘中2310_宏观",
+   "stem": "0903 Macro 2337 bjt",
+   "stamp": "2026-09-03 23:37",
+   "market": "MACRO",
+   "n": 53
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0903 NY 盘中2316_美股",
+   "stem": "0903 US QQQ 1116 nyt",
+   "stamp": "2026-09-04 00:14",
+   "market": "US",
+   "n": 101
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0903 NY 盘中2317_美股",
+   "stem": "0903 US AXTI 1117 nyt",
+   "stamp": "2026-09-04 00:35",
+   "market": "US",
+   "n": 52
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0903 NY 盘中2318_美股",
+   "stem": "0903 US UUUU 1118 nyt",
+   "stamp": "2026-09-04 00:53",
+   "market": "US",
+   "n": 33
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0903 NY 盘中2320_美股ETF",
+   "stem": "0903 US ETF 0145 bjt",
+   "stamp": "2026-09-04 01:45",
+   "market": "US",
+   "n": 75
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0903 NY 收盘0430_美股",
+   "stem": "0903 US 1630 nyt",
+   "stamp": "2026-09-04 06:39",
+   "market": "US",
+   "n": 173
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0903 NY 收盘0500_美股ETF",
+   "stem": "0903 US ETF 0719 bjt",
+   "stamp": "2026-09-04 07:19",
+   "market": "US",
+   "n": 73
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0903 NY 收盘0755_宏观",
+   "stem": "0903 Macro 0822 bjt",
+   "stamp": "2026-09-04 08:22",
+   "market": "MACRO",
+   "n": 52
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0904 中午1320_A股",
+   "stem": "0904 A Share 1320",
+   "stamp": "2026-09-04 13:53",
+   "market": "CN",
+   "n": 99
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0904 收盘1625_亚太",
+   "stem": "0904 亚太 1625",
+   "stamp": "2026-09-04 16:51",
+   "market": "HK",
+   "n": 67
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0904 盘后1730_A股",
+   "stem": "0904 A Share 1730",
+   "stamp": "2026-09-04 18:09",
+   "market": "CN",
+   "n": 104
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0903 NY 盘前1955_宏观",
+   "stem": "0904 Macro 2022 bjt",
+   "stamp": "2026-09-04 20:22",
+   "market": "MACRO",
+   "n": 54
+  }
+ ]
+}
