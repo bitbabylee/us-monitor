@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-04 收盘(ET)
-  生成 09-04 16:33 纽约 = 09-05 04:33 新加坡
+  生成 09-04 18:01 纽约 = 09-05 06:01 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -13,7 +13,7 @@
   NASDAQ:LITE   10EMA回调   日内:🟢突破买点
   NASDAQ:AAOI   超跌反弹      日内:🟢强动能买点
   NASDAQ:MSFT   10EMA回调   日内:🔴规避/止损
-  NASDAQ:INTC   超跌反弹      日内:🟢强动能买点
+  NASDAQ:INTC   口袋支点      日内:🟢强动能买点
   NASDAQ:AMAT   超跌反弹      日内:🟢稳健买点
   NASDAQ:SNDK   口袋支点      日内:🔥强主升浪
   NYSE:CAT      超跌反弹      日内:🟢稳健买点
@@ -42,7 +42,7 @@
   日性质(因子ETF超额·非纯因子): 动量+2.2 高贝+1.8 低波-0.6 价值+1.2 → 风偏进攻日
   派发 ▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄ (3/吸4) → 仓位60%
   阶段C1 资金共识 恐慌3/4 共识5/5
-  宏观 ✅ATR1410% ✗10Y4.78% ✅HYG/LQD0.7505 ✗USD/JPY156.25
+  宏观 ✅ATR1410% ✗10Y4.78% ✅HYG/LQD0.7505 ✗USD/JPY156.22
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:USO 原油  AMEX:BITQ 加密公司  AMEX:DBC 大宗商品
@@ -61,7 +61,7 @@
    NASDAQ:NBIS   🚀超跌反弹      🔥强主升浪
    NASDAQ:LITE   🟢10EMA回调   🟢突破买点
    NASDAQ:AAOI   🚀超跌反弹      🟢强动能买点
-   NASDAQ:INTC   🚀超跌反弹      🟢强动能买点
+   NASDAQ:INTC   💡口袋支点      🟢强动能买点
    NASDAQ:AMAT   🚀超跌反弹      🟢稳健买点
    NASDAQ:SNDK   💡口袋支点      🔥强主升浪
    NYSE:CAT      🚀超跌反弹      🟢稳健买点
@@ -83,23 +83,24 @@
   日内异动: NASDAQ:RKLB🟢  NYSE:LLY🟢  NASDAQ:SMH🟢  NYSE:GEV🔴 
             NASDAQ:QQQ🟢  NYSE:NET🔴  NASDAQ:PLTR🔴  NYSE:SNOW🔴 
             NASDAQ:RIOT🟢  NASDAQ:CIFR🟢  NASDAQ:HUT🔥  NASDAQ:WULF🟢 
+  盘前±2%: NYSE:BE+6.3% NASDAQ:AXTI+2.6%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 54% · 📣AMAT S1⌐→S2↑ · PLTR S3⌒→S2↑
+  上升趋势占比 54%
   🟢合格·在买点区(11): NASDAQ:MU NYSE:SNOW NASDAQ:RIOT SZSE:301018(申菱) NASDAQ:PLTR NASDAQ:QQQ NASDAQ:SNDK NASDAQ:SMH SSE:688498(源杰) NASDAQ:CRWD SSE:600183(生益)
   🟢合格·追高区勿追(0): 无
   🔴淘汰(18): NASDAQ:HOOD SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:IREN AMEX:GDX NASDAQ:APLD SZSE:300476(胜宏) SSE:688072(拓荆) NASDAQ:CIBR NASDAQ:RKLB NASDAQ:AMAT NYSE:NET SZSE:300394(天孚) SSE:688627(精智达) SZSE:002463(沪电) SSE:688519(南亚) NYSE:LLY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKC$973M(v/oi50.0) MUC$959M(v/oi99.0) QQQ≈$196M(v/oi99.0) AMDC$148M(v/oi42.9) BEC$119M(v/oi30.3)
+  今日: SNDKC$973M(v/oi50.0) MUC$959M(v/oi99.0) QQQ≈$203M(v/oi99.0) AMDC$148M(v/oi42.9) BEC$119M(v/oi30.3)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】50只(强18)·⚠️旧快照
-  今日强信号: NASDAQ:SSRM NASDAQ:FESB1! NASDAQ:ROST NASDAQ:NBIS🔗 NASDAQ:GOOG NASDAQ:HSI1! NASDAQ:HHI1! NYSE:NEM🔗
-  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:NBIS NYSE:NEM NASDAQ:NVDA NYSE:CAT AMEX:GDX NYSE:AEM NYSE:GEV
-  池外强信号(仅提示, 不入信号链): NASDAQ:SSRM NASDAQ:FESB1! NASDAQ:ROST NASDAQ:GOOG NASDAQ:HSI1! NASDAQ:HHI1!
+【波哥七维·外部体系】50只(强26)·⚠️旧快照
+  今日强信号: NASDAQ:TSEM NASDAQ:TER NYSE:AEM🔗 NASDAQ:FORM NASDAQ:NVTS NASDAQ:AEHR NYSE:KEYS NYSE:ATI
+  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:AEM NASDAQ:NBIS NYSE:NEM NASDAQ:NVDA NASDAQ:CRDO NYSE:CAT NASDAQ:AMD NYSE:TSM
+  池外强信号(仅提示, 不入信号链): NASDAQ:TSEM NASDAQ:TER NYSE:AEM NASDAQ:FORM NASDAQ:NVTS NASDAQ:AEHR
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【A股重演】反转/反弹五条件 (截至09-03·独立体系)
