@@ -90,15 +90,8 @@
    "page": 22
   }
  ],
- "n_cand": 231,
+ "n_cand": 210,
  "books": [
-  {
-   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0827 NY 收盘_QQQ",
-   "stem": "0827 US 1700 nyt",
-   "stamp": "2026-08-28 05:24",
-   "market": "US",
-   "n": 78
-  },
   {
    "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0902 NY 盘中2310_宏观",
    "stem": "0903 Macro 2337 bjt",
