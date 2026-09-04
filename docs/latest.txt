@@ -1,11 +1,11 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-02 收盘(ET)
-  生成 09-03 23:41 纽约 = 09-04 11:41 新加坡
+  生成 09-04 04:16 纽约 = 09-04 16:16 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 60% · 阶段P0 · 宏观2/4 · 抱团MAGS
+【结论】仓位上限 60% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
 【候选】9 只（形态+板块确认+无财报风险·未回测）
   NASDAQ:MSFT   10EMA回调   日内:⚪观望
@@ -23,7 +23,7 @@
   NASDAQ:SNDK   板块背离
   NASDAQ:QQQ    板块背离
   NASDAQ:SPCX   板块背离
-【风险】日元⚠️156.3
+【风险】无近端风险事件
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   09-09 周三  NASDAQ:CRDO✓
 ------------------------------------------------
@@ -31,12 +31,12 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7748 (MA50+2.2%) · RSI 46 · VIX 14.3
+  SPX 7667 (MA50+1.2%) · RSI 36 · VIX 15.2
   风格: MTUM/MAGS 4.32 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量-0.3 高贝+0.3 低波-0.6 价值+0.7 → 价值轮动日
-  派发 ▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄ (3/吸4) → 仓位60%
+  派发 ▆▅▂▁▁▁▁▁▁▁▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄ (3/吸4) → 仓位60%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR147% ✗10Y4.76% ✅HYG/LQD0.7509 ✗USD/JPY156.28
+  宏观 ✅ATR146% ✗10Y4.80% ✅HYG/LQD0.7509 ✅USD/JPY158.92
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  AMEX:DBC 大宗商品  AMEX:USO 原油
@@ -46,7 +46,7 @@
   强: AMEX:GDX+2.7% · AMEX:XLB+1.2%
   主题🔥 矿转AIDC +3.6%  龙头 NASDAQ:IREN
   主题🔥 🏦 降息受益 +2.8%  龙头 NYSE:XYZ
-  主题🔥 🪙 黄金   +2.2%  龙头 NYSE:WPM
+  主题🔥 🪙 黄金   +2.4%  龙头 NYSE:WPM
   主题🔥 ⚡ AI电网 +2.2%  龙头 NYSE:VST
   主题🧊 ☁️ 云计算 -4.8%
   主题🧊 ️ 网络安全 -5.1%
@@ -73,16 +73,17 @@
             NASDAQ:CRDO🔴  NASDAQ:AMD🔴  NASDAQ:AXTI🟡  NASDAQ:PLTR🟢 
             NASDAQ:CIBR🟢  NYSE:SNOW🔴  NASDAQ:IREN🟡  NASDAQ:RIOT🔥 
             NASDAQ:CIFR🔥  NASDAQ:HUT🔴  NASDAQ:WULF🔥 
-  盘前±2%: NYSE:SNOW+16.2% NASDAQ:HOOD+15.9% NASDAQ:CIFR+14.0% NASDAQ:RIOT+12.6% NASDAQ:WULF+9.2% NASDAQ:HUT+8.6% NYSE:BE+8.4% NASDAQ:PLTR+7.7% NASDAQ:SPCX+6.7% NASDAQ:CORZ+6.5% NASDAQ:CRWD+5.4% NASDAQ:IREN+4.4% NYSE:NET+4.2% NASDAQ:APLD+4.1% AMEX:GDX+4.0% NYSE:ANET+2.7% NASDAQ:NBIS+2.7% NASDAQ:LITE-2.7% NASDAQ:AAOI-2.6% NASDAQ:MSFT+2.6% NYSE:GEV+2.2%
+  盘前±2%: NYSE:SNOW+16.8% NASDAQ:HOOD+15.1% NASDAQ:CIFR+14.3% NASDAQ:RIOT+12.2% NYSE:BE+10.8% NASDAQ:WULF+9.4% NASDAQ:HUT+9.0% NASDAQ:SPCX+7.4% NASDAQ:PLTR+7.2% NASDAQ:CORZ+7.1% NASDAQ:IREN+5.7% NASDAQ:CRWD+5.2% NASDAQ:APLD+5.0% NYSE:NET+4.9% NASDAQ:NBIS+4.8% AMEX:GDX+4.2% NASDAQ:INTC+3.7% NYSE:ANET+3.6% NASDAQ:RKLB+3.2% NYSE:GEV+3.1% NASDAQ:AXTI+2.5% NASDAQ:SNDK+2.4% NASDAQ:MSFT+2.3% NASDAQ:MU+2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 47% · 📣RIOT S2↑→S1⌐ · HUT S2↑→S1⌐
-  🟢合格·在买点区(4): SZSE:301018(申菱) SSE:600183(生益) SSE:688498(源杰) NASDAQ:MSFT
+  上升趋势占比 47%
+  🟢合格·在买点区(4): SZSE:301018(申菱) SSE:688498(源杰) NASDAQ:MSFT SSE:600183(生益)
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(27): SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:PLTR AMEX:GDX NASDAQ:HOOD NASDAQ:IREN SZSE:300476(胜宏) SSE:601138(富联) NASDAQ:LITE NASDAQ:APLD NASDAQ:SNDK NASDAQ:NBIS NASDAQ:RKLB AMEX:SPY NASDAQ:INTC NYSE:ANET NASDAQ:QQQ NASDAQ:CIBR SZSE:300394(天孚) NASDAQ:SMH NASDAQ:AMD SSE:688627(精智达) SZSE:002463(沪电) NYSE:NET SSE:688519(南亚) NYSE:LLY
+  🔴淘汰(27): SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:PLTR AMEX:GDX NASDAQ:HOOD NASDAQ:IREN SZSE:300476(胜宏) NASDAQ:LITE NASDAQ:APLD SSE:688072(拓荆) NASDAQ:SNDK NASDAQ:NBIS NASDAQ:RKLB AMEX:SPY NASDAQ:INTC NYSE:ANET NASDAQ:QQQ NASDAQ:CIBR NASDAQ:SMH NASDAQ:AMD SZSE:300394(天孚) SSE:688627(精智达) NYSE:NET SZSE:002463(沪电) NYSE:LLY SSE:688519(南亚)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUC$463M(v/oi25.1) SNDKC$267M(v/oi19.3) QQQ≈$173M(v/oi99.0) SPCXC$151M(v/oi99.0) HOODC$116M(v/oi99.0)
+  今日: MUC$420M SNDKC$260M QQQ≈$173M SPCXC$152M HOODC$139M
+  T+1核对: BEC240(09-04)✗未增 BEC242.5(09-04)✗未增 BEC255(09-04)✗未增 BEC260(09-04)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
