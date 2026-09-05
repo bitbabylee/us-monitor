@@ -1,11 +1,16 @@
-<b>24 小时精选</b> 09-05 08:26 · 15 册 · 候选 253 只
-美股 <code>SIVE</code> 多 ★ · Sivers Semic
-美股 <code>FUTU</code> 多 ★ · Futu Holding
-亚太 <code>000660</code> 多 ★ · SK海力士
-美股 <code>000660</code> 多 ★ · SK海力士
-宏观 <code>NK2251!</code> 多 ★ · 日经225期货（Nikk
-宏观 <code>XAGUSD</code> 多 ★ · 白银现货/Silver 
-A 股 <code>HSIDI</code> 多 ★ · HANG SENG IN
-A 股 <code>000636</code> 空 · 风华高科
-宏观：09-04 周五 08:30 非农就业 8月；09-07 周一 休市 劳工节，美股休市
+<b>24 小时精选</b> 09-05 10:14 · 13 册 · 候选 215 只
+美股 <code>WDAY</code> 空 · Workday,
+美股 <code>AEHR</code> 多 · Aehr测试系统
+美股 <code>TTMI</code> 多 · TTM科技
+A 股 <code>300475</code> 空 · 香农芯创
+A 股 <code>600183</code> 空 · 生益科技
+美股 <code>SIMO</code> 多 · 慧荣科技
+美股 <code>VSH</code> 多 · Vishay Inter
+A 股 <code>512690</code> 多 · 酒ETF鹏华
+宏观 <code>IF1!</code> 空 · 沪深300股指期货
+宏观 <code>IC1!</code> 空 · 中证500股指期货（中国
+亚太 <code>1548</code> 空 · 金斯瑞生物科技
+亚太 <code>1888</code> 空 · 建滔积层板
+板块共振：美股半导体/AI芯片多 8 只；美股软件/安全空 3 只；美股加密算力多 5 只
+宏观：09-07 周一 休市 劳工节，美股休市
 https://bitbabylee.github.io/us-monitor/daily/

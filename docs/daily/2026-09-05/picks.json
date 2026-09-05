@@ -68,17 +68,6 @@
    "page": 8
   },
   {
-   "market": "US",
-   "b": "VSH",
-   "nm": "Vishay Interte",
-   "dir": 1,
-   "px": 31.8,
-   "chg1": 4.43,
-   "score": 3.3,
-   "book": "0904 US 1630 nyt",
-   "page": 13
-  },
-  {
    "market": "CN",
    "b": "512690",
    "nm": "酒ETF鹏华",
@@ -88,6 +77,17 @@
    "score": 3.3,
    "book": "0904 A Share 1730",
    "page": 4
+  },
+  {
+   "market": "US",
+   "b": "VSH",
+   "nm": "Vishay Interte",
+   "dir": 1,
+   "px": 31.8,
+   "chg1": 4.43,
+   "score": 3.3,
+   "book": "0904 US 1630 nyt",
+   "page": 13
   },
   {
    "market": "MACRO",
@@ -134,15 +134,8 @@
    "page": 23
   }
  ],
- "n_cand": 215,
+ "n_cand": 214,
  "books": [
-  {
-   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0903 NY 收盘0755_宏观",
-   "stem": "0903 Macro 0822 bjt",
-   "stamp": "2026-09-04 08:22",
-   "market": "MACRO",
-   "n": 52
-  },
   {
    "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0904 中午1320_A股",
    "stem": "0904 A Share 1320",
