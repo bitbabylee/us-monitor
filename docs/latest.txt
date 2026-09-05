@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-04 收盘(ET)
-  生成 09-04 22:16 纽约 = 09-05 10:16 新加坡
+  生成 09-04 23:53 纽约 = 09-05 11:53 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -86,7 +86,7 @@
   盘前±2%: NYSE:BE+5.2% NASDAQ:AXTI+2.4%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 54% · 📣AMAT S1⌐→S2↑ · PLTR S3⌒→S2↑
+  上升趋势占比 54%
   🟢合格·在买点区(11): NASDAQ:MU NYSE:SNOW NASDAQ:RIOT SZSE:301018(申菱) NASDAQ:PLTR NASDAQ:QQQ NASDAQ:SNDK NASDAQ:SMH SSE:688498(源杰) NASDAQ:CRWD SSE:600183(生益)
   🟢合格·追高区勿追(0): 无
   🔴淘汰(18): NASDAQ:HOOD SZSE:002837(英维克) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:IREN AMEX:GDX NASDAQ:APLD SZSE:300476(胜宏) SSE:688072(拓荆) NASDAQ:CIBR NASDAQ:RKLB NASDAQ:AMAT NYSE:NET SZSE:300394(天孚) SSE:688627(精智达) SZSE:002463(沪电) SSE:688519(南亚) NYSE:LLY
