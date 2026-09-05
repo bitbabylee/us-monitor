@@ -1,16 +1,38 @@
-<b>24 小时精选</b> 09-05 10:14 · 13 册 · 候选 215 只
-美股 <code>WDAY</code> 空 · Workday,
-美股 <code>AEHR</code> 多 · Aehr测试系统
-美股 <code>TTMI</code> 多 · TTM科技
-A 股 <code>300475</code> 空 · 香农芯创
-A 股 <code>600183</code> 空 · 生益科技
-美股 <code>SIMO</code> 多 · 慧荣科技
-美股 <code>VSH</code> 多 · Vishay Inter
-A 股 <code>512690</code> 多 · 酒ETF鹏华
-宏观 <code>IF1!</code> 空 · 沪深300股指期货
-宏观 <code>IC1!</code> 空 · 中证500股指期货（中国
-亚太 <code>1548</code> 空 · 金斯瑞生物科技
-亚太 <code>1888</code> 空 · 建滔积层板
+<b>24 小时精选</b> 09-05 11:52 · 12 册 · 候选 214 只
+今天 12 只：12 只 3D 和 1D 在最新一根 K 线上同时给信号（全部）。其中 5 只是跑输大盘之后才翻多。
+
+<b>【美股】</b>
+<code>WDAY</code> 空 Workday,
+　<i>3D+1D 同时翻空 · 跑赢大盘 14% · RSI 56</i>
+<code>AEHR</code> 多 Aehr测试系统
+　<i>3D+1D 同时翻多 · 跑输大盘 14% · RSI 46</i>
+<code>TTMI</code> 多 TTM科技
+　<i>3D+1D 同时翻多 · 跑输大盘 8% · RSI 50</i>
+<code>SIMO</code> 多 慧荣科技
+　<i>3D+1D 同时翻多 · 跑输大盘 5% · RSI 51</i>
+<code>VSH</code> 多 Vishay Int
+　<i>3D+1D 同时翻多 · 跑输大盘 4% · RSI 45</i>
+
+<b>【A 股】</b>
+<code>300475</code> 空 香农芯创
+　<i>3D+1D 同时翻空 · 跑赢大盘 7% · RSI 48</i>
+<code>600183</code> 空 生益科技
+　<i>3D+1D 同时翻空 · 跑赢大盘 7% · RSI 50</i>
+<code>512690</code> 多 酒ETF鹏华
+　<i>3D+1D 同时翻多 · 跑输大盘 4% · RSI 46</i>
+
+<b>【亚太】</b>
+<code>1548</code> 空 金斯瑞生物科技
+　<i>3D+1D 同时翻空 · 跑赢大盘 59% · RSI 57</i>
+<code>1888</code> 空 建滔积层板
+　<i>3D+1D 同时翻空 · 跑赢大盘 26% · RSI 53</i>
+
+<b>【宏观】</b>
+<code>IF1!</code> 空 沪深300股指期货
+　<i>3D+1D 同时翻空 · 与大盘同步 · RSI 32</i>
+<code>IC1!</code> 空 中证500股指期货（
+　<i>3D+1D 同时翻空</i>
+
 板块共振：美股半导体/AI芯片多 8 只；美股软件/安全空 3 只；美股加密算力多 5 只
 宏观：09-07 周一 休市 劳工节，美股休市
 https://bitbabylee.github.io/us-monitor/daily/
