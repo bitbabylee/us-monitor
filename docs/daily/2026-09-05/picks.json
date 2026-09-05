@@ -31,19 +31,19 @@
    "px": 1647000.0,
    "chg1": 3.2,
    "score": 3.9,
-   "book": "0904 亚太 1625",
-   "page": 36
+   "book": "0904 US 1630 nyt",
+   "page": 96
   },
   {
    "market": "US",
-   "b": "000660",
-   "nm": "SK海力士",
-   "dir": 1,
-   "px": 1647000.0,
-   "chg1": 3.2,
+   "b": "JNJ",
+   "nm": "Johnson & John",
+   "dir": -1,
+   "px": 275.23,
+   "chg1": -1.15,
    "score": 3.9,
    "book": "0904 US 1630 nyt",
-   "page": 96
+   "page": 52
   },
   {
    "market": "MACRO",
@@ -55,6 +55,17 @@
    "score": 3.9,
    "book": "0904 Macro 2022 bjt",
    "page": 38
+  },
+  {
+   "market": "CN",
+   "b": "300853",
+   "nm": "申昊科技",
+   "dir": -1,
+   "px": 27.93,
+   "chg1": -2.0,
+   "score": 3.9,
+   "book": "0904 亚太 1625",
+   "page": 13
   },
   {
    "market": "MACRO",
@@ -77,20 +88,9 @@
    "score": 3.6,
    "book": "0904 A Share 1730",
    "page": 20
-  },
-  {
-   "market": "CN",
-   "b": "000636",
-   "nm": "风华高科",
-   "dir": -1,
-   "px": 48.46,
-   "chg1": -4.27,
-   "score": 3.4,
-   "book": "0904 A Share 1320",
-   "page": 22
   }
  ],
- "n_cand": 253,
+ "n_cand": 233,
  "books": [
   {
    "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0903 NY 收盘0430_美股",
