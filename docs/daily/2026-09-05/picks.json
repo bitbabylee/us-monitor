@@ -61,11 +61,11 @@
    "b": "XAGUSD",
    "nm": "白银现货/Silver Sp",
    "dir": 1,
-   "px": 66.77,
-   "chg1": -1.39,
+   "px": 66.82,
+   "chg1": -1.31,
    "score": 3.9,
-   "book": "0904 Macro 2331 bjt",
-   "page": 40
+   "book": "0904 Macro 0818 bjt",
+   "page": 44
   },
   {
    "market": "CN",
@@ -189,6 +189,13 @@
    "stamp": "2026-09-05 06:30",
    "market": "US",
    "n": 103
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0904 NY 收盘0755_宏观",
+   "stem": "0904 Macro 0818 bjt",
+   "stamp": "2026-09-05 08:18",
+   "market": "MACRO",
+   "n": 54
   }
  ]
 }
