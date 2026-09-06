@@ -1,0 +1,147 @@
+{
+ "day": "2026-09-06",
+ "picks": [
+  {
+   "market": "MACRO",
+   "b": "IF1!",
+   "nm": "沪深300股指期货",
+   "dir": -1,
+   "px": 4548.05,
+   "chg1": -0.1,
+   "score": 3.3,
+   "book": "0904 Macro 0818 bjt",
+   "page": 40
+  },
+  {
+   "market": "MACRO",
+   "b": "IC1!",
+   "nm": "中证500股指期货（中国金融",
+   "dir": -1,
+   "px": 7652.69,
+   "chg1": -1.32,
+   "score": 3.3,
+   "book": "0904 Macro 0818 bjt",
+   "page": 39
+  },
+  {
+   "market": "MACRO",
+   "b": "IM1!",
+   "nm": "中证1000指数期货（中国金",
+   "dir": -1,
+   "px": 7508.09,
+   "chg1": -1.21,
+   "score": 3.3,
+   "book": "0904 Macro 0818 bjt",
+   "page": 41
+  },
+  {
+   "market": "MACRO",
+   "b": "SOXS",
+   "nm": "Direxion Daily",
+   "dir": -1,
+   "px": 46.34,
+   "chg1": -10.19,
+   "score": 3.0,
+   "book": "0904 Macro 0818 bjt",
+   "page": 43
+  },
+  {
+   "market": "MACRO",
+   "b": "K2I1!",
+   "nm": "韩国KOSPI200指数期货",
+   "dir": 1,
+   "px": 6687.21,
+   "chg1": 1.64,
+   "score": 3.0,
+   "book": "0904 Macro 0818 bjt",
+   "page": 7
+  },
+  {
+   "market": "MACRO",
+   "b": "SMH",
+   "nm": "半导体ETF(VanEck)",
+   "dir": 1,
+   "px": 567.01,
+   "chg1": 2.61,
+   "score": 3.0,
+   "book": "0904 Macro 0818 bjt",
+   "page": 8
+  },
+  {
+   "market": "MACRO",
+   "b": "BTCUSDT",
+   "nm": "Bitcoin USD",
+   "dir": 1,
+   "px": 79698.83,
+   "chg1": -1.66,
+   "score": 3.3,
+   "book": "0904 Macro 0818 bjt",
+   "page": 53
+  },
+  {
+   "market": "MACRO",
+   "b": "NIFTY1!",
+   "nm": "印度Nifty50指数期货",
+   "dir": -1,
+   "px": 23897.7,
+   "chg1": 0.1,
+   "score": 3.3,
+   "book": "0904 Macro 0818 bjt",
+   "page": 42
+  },
+  {
+   "market": "MACRO",
+   "b": "HHI1!",
+   "nm": "恒生中国企业指数期货",
+   "dir": 1,
+   "px": 8555.03,
+   "chg1": 2.02,
+   "score": 3.3,
+   "book": "0904 Macro 0818 bjt",
+   "page": 5
+  },
+  {
+   "market": "MACRO",
+   "b": "HSI1!",
+   "nm": "恒生指数期货",
+   "dir": 1,
+   "px": 25650.87,
+   "chg1": 1.74,
+   "score": 3.3,
+   "book": "0904 Macro 0818 bjt",
+   "page": 6
+  },
+  {
+   "market": "MACRO",
+   "b": "XAUUSD",
+   "nm": "黄金现货",
+   "dir": 1,
+   "px": 4476.6,
+   "chg1": -1.39,
+   "score": 2.3,
+   "book": "0904 Macro 0818 bjt",
+   "page": 45
+  },
+  {
+   "market": "MACRO",
+   "b": "XAGUSD",
+   "nm": "白银现货/Silver Sp",
+   "dir": 1,
+   "px": 66.75,
+   "chg1": -1.41,
+   "score": 2.3,
+   "book": "0904 Macro 0818 bjt",
+   "page": 44
+  }
+ ],
+ "n_cand": 23,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0904 NY 收盘0755_宏观",
+   "stem": "0904 Macro 0818 bjt",
+   "stamp": "2026-09-05 08:18",
+   "market": "MACRO",
+   "n": 54
+  }
+ ]
+}
