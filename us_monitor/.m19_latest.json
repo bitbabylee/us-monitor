@@ -1,7 +1,7 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-09-04 21:30 UTC",
+   "generated": "2026-09-07 21:30 UTC",
    "as_of": "2026-09-04",
    "market_gate": {
     "status": "red",
@@ -172,8 +172,8 @@
    ]
   },
   "cn_pullback": {
-   "generated": "2026-09-07 08:00 UTC",
-   "as_of": "2026-09-04",
+   "generated": "2026-09-08 08:00 UTC",
+   "as_of": "2026-09-07",
    "market_gate": {
     "status": "red",
     "symbol": "^IXIC",
@@ -181,10 +181,10 @@
     "ma10": 26298.5,
     "ma20": 26383.49
    },
-   "universe_n": 3,
-   "data_n": 3,
+   "universe_n": 7,
+   "data_n": 7,
    "signals": []
   }
  },
- "updated": "2026-09-07 08:00 UTC"
+ "updated": "2026-09-08 08:00 UTC"
 }
