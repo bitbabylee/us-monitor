@@ -1,0 +1,175 @@
+{
+ "day": "2026-09-08",
+ "picks": [
+  {
+   "market": "MACRO",
+   "b": "BTCUSDT",
+   "nm": "Bitcoin USD",
+   "dir": -1,
+   "px": 79031.55,
+   "chg1": -1.4,
+   "score": 3.3,
+   "book": "0907 Macro 2351 bjt",
+   "page": 53
+  },
+  {
+   "market": "MACRO",
+   "b": "HHI1!",
+   "nm": "恒生中国企业指数期货",
+   "dir": -1,
+   "px": 8429.73,
+   "chg1": -1.46,
+   "score": 3.3,
+   "book": "0907 Macro 2351 bjt",
+   "page": 34
+  },
+  {
+   "market": "MACRO",
+   "b": "XAUUSD",
+   "nm": "黄金现货",
+   "dir": -1,
+   "px": 4464.4,
+   "chg1": -0.27,
+   "score": 3.3,
+   "book": "0907 Macro 2351 bjt",
+   "page": 36
+  },
+  {
+   "market": "MACRO",
+   "b": "ZB1!",
+   "nm": "U.S. Treasury ",
+   "dir": -1,
+   "px": 108.59,
+   "chg1": -0.09,
+   "score": 3.3,
+   "book": "0907 Macro 2351 bjt",
+   "page": 38
+  },
+  {
+   "market": "MACRO",
+   "b": "YM1!",
+   "nm": "道指期货(E-mini)",
+   "dir": -1,
+   "px": 53134.0,
+   "chg1": -0.57,
+   "score": 3.3,
+   "book": "0907 Macro 2351 bjt",
+   "page": 37
+  },
+  {
+   "market": "MACRO",
+   "b": "IM1!",
+   "nm": "中证1000指数期货（中国金",
+   "dir": 1,
+   "px": 7639.36,
+   "chg1": 1.75,
+   "score": 3.3,
+   "book": "0907 Macro 2351 bjt",
+   "page": 5
+  },
+  {
+   "market": "HK",
+   "b": "6134",
+   "nm": "富士机械",
+   "dir": 1,
+   "px": 7191.0,
+   "chg1": 4.43,
+   "score": 3.0,
+   "book": "0907 亚太 1625",
+   "page": 18
+  },
+  {
+   "market": "HK",
+   "b": "1898",
+   "nm": "中煤能源",
+   "dir": -1,
+   "px": 11.05,
+   "chg1": -2.21,
+   "score": 3.0,
+   "book": "0907 亚太 1625",
+   "page": 33
+  },
+  {
+   "market": "HK",
+   "b": "3436",
+   "nm": "SUMCO",
+   "dir": 1,
+   "px": 3315.0,
+   "chg1": 2.66,
+   "score": 3.0,
+   "book": "0907 亚太 1625",
+   "page": 15
+  },
+  {
+   "market": "CN",
+   "b": "HSIDI",
+   "nm": "HANG SENG INDE",
+   "dir": -1,
+   "px": 25413.12,
+   "chg1": -0.93,
+   "score": 3.3,
+   "book": "0907 A Share 1730",
+   "page": 11
+  },
+  {
+   "market": "CN",
+   "b": "300572",
+   "nm": "安车检测",
+   "dir": -1,
+   "px": 23.73,
+   "chg1": 0.04,
+   "score": 2.3,
+   "book": "0907 亚太 1625",
+   "page": 26
+  },
+  {
+   "market": "CN",
+   "b": "512800",
+   "nm": "银行ETF华宝",
+   "dir": -1,
+   "px": 0.83,
+   "chg1": -1.53,
+   "score": 2.0,
+   "book": "0907 A Share 1730",
+   "page": 22
+  }
+ ],
+ "n_cand": 92,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0907 中午1320_A股",
+   "stem": "0907 A Share 1320",
+   "stamp": "2026-09-07 13:55",
+   "market": "CN",
+   "n": 104
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0907 收盘1625_亚太",
+   "stem": "0907 亚太 1625",
+   "stamp": "2026-09-07 16:50",
+   "market": "HK",
+   "n": 80
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0907 盘后1730_A股",
+   "stem": "0907 A Share 1730",
+   "stamp": "2026-09-07 18:07",
+   "market": "CN",
+   "n": 105
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0906 NY 盘前1955_宏观",
+   "stem": "0907 Macro 2053 bjt",
+   "stamp": "2026-09-07 20:53",
+   "market": "MACRO",
+   "n": 54
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0906 NY 盘中2310_宏观",
+   "stem": "0907 Macro 2351 bjt",
+   "stamp": "2026-09-07 23:51",
+   "market": "MACRO",
+   "n": 54
+  }
+ ]
+}
