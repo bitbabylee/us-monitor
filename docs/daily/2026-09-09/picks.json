@@ -3,33 +3,11 @@
  "picks": [
   {
    "market": "US",
-   "b": "TSEM",
-   "nm": "高塔半导体/Tower",
-   "dir": 1,
-   "px": 224.54,
-   "chg1": 0.99,
-   "score": 3.3,
-   "book": "0907 US 1630 nyt",
-   "page": 11
-  },
-  {
-   "market": "US",
-   "b": "VSH",
-   "nm": "Vishay Interte",
-   "dir": 1,
-   "px": 31.9,
-   "chg1": 0.33,
-   "score": 3.3,
-   "book": "0907 US 1630 nyt",
-   "page": 13
-  },
-  {
-   "market": "US",
    "b": "CORZ",
    "nm": "Core Scientifi",
    "dir": 1,
    "px": 18.73,
-   "chg1": 4.7,
+   "chg1": 5.22,
    "score": 3.3,
    "book": "0908 US 1630 nyt",
    "page": 5
@@ -47,17 +25,6 @@
   },
   {
    "market": "US",
-   "b": "TGT",
-   "nm": "Target",
-   "dir": 1,
-   "px": 161.78,
-   "chg1": -1.61,
-   "score": 3.3,
-   "book": "0907 US 1630 nyt",
-   "page": 10
-  },
-  {
-   "market": "US",
    "b": "SIVE",
    "nm": "Sivers Semicon",
    "dir": 1,
@@ -66,6 +33,17 @@
    "score": 3.0,
    "book": "0908 US 1630 nyt",
    "page": 8
+  },
+  {
+   "market": "US",
+   "b": "NOW",
+   "nm": "ServiceNow,",
+   "dir": -1,
+   "px": 134.21,
+   "chg1": -4.98,
+   "score": 3.0,
+   "book": "0908 US 1630 nyt",
+   "page": 86
   },
   {
    "market": "HK",
@@ -77,6 +55,28 @@
    "score": 3.0,
    "book": "0908 亚太 1625",
    "page": 25
+  },
+  {
+   "market": "US",
+   "b": "ARKQ",
+   "nm": "ARK Autonomous",
+   "dir": 1,
+   "px": 124.05,
+   "chg1": 2.72,
+   "score": 3.0,
+   "book": "0908 US ETF 0828 bjt",
+   "page": 4
+  },
+  {
+   "market": "US",
+   "b": "U",
+   "nm": "Unity Software",
+   "dir": 1,
+   "px": 42.75,
+   "chg1": 2.79,
+   "score": 3.0,
+   "book": "0908 US 1630 nyt",
+   "page": 10
   },
   {
    "market": "HK",
@@ -134,15 +134,8 @@
    "page": 17
   }
  ],
- "n_cand": 164,
+ "n_cand": 168,
  "books": [
-  {
-   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0907 NY 收盘0430_美股",
-   "stem": "0907 US 1630 nyt",
-   "stamp": "2026-09-08 06:36",
-   "market": "US",
-   "n": 198
-  },
   {
    "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0907 NY 收盘0755_宏观",
    "stem": "0908 Macro 1919 bjt",
@@ -191,6 +184,13 @@
    "stamp": "2026-09-09 07:45",
    "market": "US",
    "n": 198
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0908 NY 收盘0500_美股ETF",
+   "stem": "0908 US ETF 0828 bjt",
+   "stamp": "2026-09-09 08:28",
+   "market": "US",
+   "n": 103
   }
  ]
 }

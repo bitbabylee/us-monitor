@@ -1,0 +1,32 @@
+<b>24 小时精选</b> 09-09 08:30 · 8 册 · 候选 164 只
+今天 12 只：翻多 8 只、翻空 4 只。全部是 3D 和 1D 在最新一根 K 线上同时给信号。
+
+<b>【美股】</b>
+<i>3D+1D 同时翻多</i>
+　<code>TSEM</code> 高塔半导体/Tower（半导体/AI芯片 板块 14 只同动）
+　<code>VSH</code> Vishay Inter
+　<code>CORZ</code> Core Scienti（加密算力 板块 6 只同动）
+　<code>TGT</code> Target
+　<code>SIVE</code> Sivers Semic
+
+<b>【A 股】</b>
+<i>3D+1D 同时翻多</i>
+　<code>512170</code> 医疗ETF华宝
+　<code>002821</code> 凯莱英
+<i>3D+1D 同时翻空</i>
+　<code>000973</code> 佛塑科技
+
+<b>【亚太】</b>
+<i>3D+1D 同时翻空</i>
+　<code>100</code> MINIMAX-W
+<i>3D+1D 同时翻多</i>
+　<code>3330</code> 灵宝黄金
+
+<b>【宏观】</b>
+<i>3D+1D 同时翻空</i>
+　<code>CN1!</code> 富时中国A50指数期货
+　<code>HYPEUSDT.P</code> 
+
+板块共振：美股软件/安全空 4 只；美股半导体/AI芯片多 14 只；美股加密算力多 6 只
+宏观：09-11 周五 08:30 CPI 8月
+https://bitbabylee.github.io/us-monitor/daily/
