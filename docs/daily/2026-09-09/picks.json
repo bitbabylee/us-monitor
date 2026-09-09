@@ -102,17 +102,6 @@
   },
   {
    "market": "MACRO",
-   "b": "CN1!",
-   "nm": "富时中国A50指数期货",
-   "dir": -1,
-   "px": 4558.74,
-   "chg1": -0.36,
-   "score": 3.0,
-   "book": "0908 Macro 2343 bjt",
-   "page": 30
-  },
-  {
-   "market": "MACRO",
    "b": "HYPEUSDT.P",
    "nm": "",
    "dir": -1,
@@ -132,9 +121,20 @@
    "score": 3.3,
    "book": "0908 A Share 1730",
    "page": 17
+  },
+  {
+   "market": "MACRO",
+   "b": "FESX1!",
+   "nm": "欧洲斯托克50指数期货（EU",
+   "dir": -1,
+   "px": 6413.17,
+   "chg1": 0.22,
+   "score": 3.3,
+   "book": "0908 Macro 0854 bjt",
+   "page": 24
   }
  ],
- "n_cand": 168,
+ "n_cand": 171,
  "books": [
   {
    "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0907 NY 收盘0755_宏观",
@@ -191,6 +191,13 @@
    "stamp": "2026-09-09 08:28",
    "market": "US",
    "n": 103
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0908 NY 收盘0755_宏观",
+   "stem": "0908 Macro 0854 bjt",
+   "stamp": "2026-09-09 08:54",
+   "market": "MACRO",
+   "n": 54
   }
  ]
 }
