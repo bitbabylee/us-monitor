@@ -1,0 +1,196 @@
+{
+ "day": "2026-09-09",
+ "picks": [
+  {
+   "market": "US",
+   "b": "TSEM",
+   "nm": "高塔半导体/Tower",
+   "dir": 1,
+   "px": 224.54,
+   "chg1": 0.99,
+   "score": 3.3,
+   "book": "0907 US 1630 nyt",
+   "page": 11
+  },
+  {
+   "market": "US",
+   "b": "VSH",
+   "nm": "Vishay Interte",
+   "dir": 1,
+   "px": 31.9,
+   "chg1": 0.33,
+   "score": 3.3,
+   "book": "0907 US 1630 nyt",
+   "page": 13
+  },
+  {
+   "market": "US",
+   "b": "CORZ",
+   "nm": "Core Scientifi",
+   "dir": 1,
+   "px": 18.73,
+   "chg1": 4.7,
+   "score": 3.3,
+   "book": "0908 US 1630 nyt",
+   "page": 5
+  },
+  {
+   "market": "CN",
+   "b": "512170",
+   "nm": "医疗ETF华宝",
+   "dir": 1,
+   "px": 0.34,
+   "chg1": 1.19,
+   "score": 3.3,
+   "book": "0908 A Share 1730",
+   "page": 4
+  },
+  {
+   "market": "US",
+   "b": "TGT",
+   "nm": "Target",
+   "dir": 1,
+   "px": 161.78,
+   "chg1": -1.61,
+   "score": 3.3,
+   "book": "0907 US 1630 nyt",
+   "page": 10
+  },
+  {
+   "market": "US",
+   "b": "SIVE",
+   "nm": "Sivers Semicon",
+   "dir": 1,
+   "px": 30.24,
+   "chg1": 6.03,
+   "score": 3.0,
+   "book": "0908 US 1630 nyt",
+   "page": 8
+  },
+  {
+   "market": "HK",
+   "b": "100",
+   "nm": "MINIMAX-W",
+   "dir": -1,
+   "px": 331.2,
+   "chg1": -5.59,
+   "score": 3.0,
+   "book": "0908 亚太 1625",
+   "page": 25
+  },
+  {
+   "market": "HK",
+   "b": "3330",
+   "nm": "灵宝黄金",
+   "dir": 1,
+   "px": 23.6,
+   "chg1": 2.61,
+   "score": 3.0,
+   "book": "0908 亚太 1625",
+   "page": 14
+  },
+  {
+   "market": "CN",
+   "b": "002821",
+   "nm": "凯莱英",
+   "dir": 1,
+   "px": 174.31,
+   "chg1": 4.63,
+   "score": 3.0,
+   "book": "0908 A Share 1730",
+   "page": 3
+  },
+  {
+   "market": "MACRO",
+   "b": "CN1!",
+   "nm": "富时中国A50指数期货",
+   "dir": -1,
+   "px": 4558.74,
+   "chg1": -0.36,
+   "score": 3.0,
+   "book": "0908 Macro 2343 bjt",
+   "page": 30
+  },
+  {
+   "market": "MACRO",
+   "b": "HYPEUSDT.P",
+   "nm": "",
+   "dir": -1,
+   "px": 83.662,
+   "chg1": -3.5,
+   "score": 3.0,
+   "book": "0908 Macro 2242 bjt",
+   "page": 56
+  },
+  {
+   "market": "CN",
+   "b": "000973",
+   "nm": "佛塑科技",
+   "dir": -1,
+   "px": 12.13,
+   "chg1": -2.1,
+   "score": 3.3,
+   "book": "0908 A Share 1730",
+   "page": 17
+  }
+ ],
+ "n_cand": 164,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0907 NY 收盘0430_美股",
+   "stem": "0907 US 1630 nyt",
+   "stamp": "2026-09-08 06:36",
+   "market": "US",
+   "n": 198
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0907 NY 收盘0755_宏观",
+   "stem": "0908 Macro 1919 bjt",
+   "stamp": "2026-09-08 19:19",
+   "market": "MACRO",
+   "n": 54
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0908 中午1320_A股",
+   "stem": "0908 A Share 1320",
+   "stamp": "2026-09-08 20:11",
+   "market": "CN",
+   "n": 105
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0908 收盘1625_亚太",
+   "stem": "0908 亚太 1625",
+   "stamp": "2026-09-08 20:52",
+   "market": "HK",
+   "n": 80
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0908 盘后1730_A股",
+   "stem": "0908 A Share 1730",
+   "stamp": "2026-09-08 21:48",
+   "market": "CN",
+   "n": 105
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0907 NY 盘前1955_宏观",
+   "stem": "0908 Macro 2242 bjt",
+   "stamp": "2026-09-08 22:42",
+   "market": "MACRO",
+   "n": 54
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0907 NY 盘中2310_宏观",
+   "stem": "0908 Macro 2343 bjt",
+   "stamp": "2026-09-08 23:43",
+   "market": "MACRO",
+   "n": 54
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0908 NY 收盘0430_美股",
+   "stem": "0908 US 1630 nyt",
+   "stamp": "2026-09-09 07:45",
+   "market": "US",
+   "n": 198
+  }
+ ]
+}
