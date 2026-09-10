@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-09 收盘(ET)
-  生成 09-10 06:06 纽约 = 09-10 18:06 新加坡
+  生成 09-10 10:03 纽约 = 09-10 22:03 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,16 +8,16 @@
 【结论】仓位上限 40% · 阶段P1 · 宏观1/4 · 抱团MAGS
 ------------------------------------------------
 【候选】10 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:LITE   口袋支点      日内:🔴规避/止损
-  NASDAQ:INTC   口袋支点      日内:🟡警告:临近前高
-  NASDAQ:AMAT   超跌反弹      日内:🟢稳健买点
-  NASDAQ:QQQ    10EMA回调   日内:⚪观望
-  NYSE:NET      口袋支点      日内:🔴锁定利润
-  NYSE:ANET     10EMA回调   日内:🔴规避/止损
-  NASDAQ:AMD    口袋支点      日内:🟢稳健买点
-  NASDAQ:AXTI   口袋支点      日内:🔴规避/止损
+  NASDAQ:LITE   口袋支点      日内:⚪观望
+  NASDAQ:INTC   口袋支点      日内:⚪观望
+  NASDAQ:AMAT   超跌反弹      日内:⚪观望
+  NASDAQ:QQQ    10EMA回调   日内:🟢稳健买点
+  NYSE:NET      口袋支点      日内:🟢黄金买点
+  NYSE:ANET     10EMA回调   日内:⚪观望
+  NASDAQ:AMD    口袋支点      日内:⚪观望
+  NASDAQ:AXTI   口袋支点      日内:🟡跳空低开,买点降级
   NYSE:SNOW     10EMA回调   日内:⚪观望
-  AMEX:GDX      10EMA回调   日内:🔴规避/止损
+  AMEX:GDX      10EMA回调   日内:⚪观望
 【否决】
   NASDAQ:CRDO   财报窗口✓
   NASDAQ:HUT    板块背离
@@ -35,8 +35,8 @@
   宏观 ✅ATR142% ✗10Y4.84% ✗HYG/LQD0.7500 ✗USD/JPY153.48
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:CRAK 炼化下游  AMEX:USO 原油  AMEX:SIL 白银矿  AMEX:GDXJ 小金矿  AMEX:GDX 黄金矿业 (Gold Miners)
-  短线改善: NASDAQ:SMH 半导体  NASDAQ:AIQ AI主题  AMEX:GLD 黄金  NASDAQ:SOXX 半导体主题 (Semis)  AMEX:MAGS 七巨头
+  涨幅优先: AMEX:CRAK 炼化下游  AMEX:USO 原油  AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:IEO 油气上游  AMEX:DBC 大宗商品
+  短线改善: AMEX:XLU 公用事业/AI电网 (Utilities)  AMEX:HACK 网络安全  AMEX:FAN 风电  NASDAQ:ICLN 清洁能源  AMEX:ARKQ 自动驾驶科技
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+1.5% · AMEX:XLE+1.3% · NASDAQ:SOXX+1.1%
@@ -48,27 +48,24 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:AMAT   🚀超跌反弹      🟢稳健买点
-   NASDAQ:AMD    💡口袋支点      🟢稳健买点
+   NASDAQ:QQQ    🟢10EMA回调   🟢稳健买点
+   NYSE:NET      💡口袋支点      🟢黄金买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:INTC   💡口袋支点      🟡警告:临近前高
-   NASDAQ:QQQ    🟢10EMA回调   ⚪观望
+   NASDAQ:LITE   💡口袋支点      ⚪观望
+   NASDAQ:INTC   💡口袋支点      ⚪观望
+   NASDAQ:AMAT   🚀超跌反弹      ⚪观望
+   NYSE:ANET     🟢10EMA回调   ⚪观望
+   NASDAQ:AMD    💡口袋支点      ⚪观望
+   NASDAQ:AXTI   💡口袋支点      🟡跳空低开,买点降级
    NYSE:SNOW     🟢10EMA回调   ⚪观望
- ▶ 冲突（日线买点/日内破位）
-   NASDAQ:LITE   💡口袋支点      🔴规避/止损
-   NYSE:NET      💡口袋支点      🔴锁定利润
-   NYSE:ANET     🟢10EMA回调   🔴规避/止损
-   NASDAQ:AXTI   💡口袋支点      🔴规避/止损
-   AMEX:GDX      🟢10EMA回调   🔴规避/止损
-   NASDAQ:HUT    🌊EMA金叉     🔴规避/止损
+   AMEX:GDX      🟢10EMA回调   ⚪观望
+   NASDAQ:HUT    🌊EMA金叉     ⚪观望
  ▶ 财报窗口（信号作废）
    NASDAQ:CRDO   🚀超跌反弹      📊 财报后第1日(09-09✓
-  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:AAOI🔴 
-            NYSE:LLY🔴  NASDAQ:SMH🟢  NYSE:GEV🔴  NASDAQ:CRWD🔴 
-            NASDAQ:HOOD🔴  NASDAQ:MU🟢  NASDAQ:SPCX🔴  NASDAQ:IREN🔴 
-            NASDAQ:CORZ🔴  NASDAQ:RIOT🟢  NASDAQ:CIFR🔴  NASDAQ:WULF🔴 
-            NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:NBIS-2.3% NASDAQ:AXTI-2.3% NASDAQ:CIFR-2.1%
+  日内异动: NASDAQ:RKLB🔴  NASDAQ:MSFT🟢  NASDAQ:SMH🟡  NASDAQ:SNDK🟡 
+            NASDAQ:HOOD🟡  NASDAQ:MU🟡  NASDAQ:CIBR🟢  NASDAQ:SPCX🟡 
+            NASDAQ:IREN🟡  NASDAQ:CORZ🟡  NASDAQ:WULF🟡 
+  盘前±2%: NASDAQ:CIFR-7.9% NASDAQ:HUT-6.2% NASDAQ:INTC-5.4% NASDAQ:SPCX+4.4% NASDAQ:RIOT-4.2% NASDAQ:NBIS-4.1% NASDAQ:SNDK-3.5% NASDAQ:MU-3.5% NASDAQ:WULF-3.4% NASDAQ:CRDO-3.3% NASDAQ:CORZ-3.3% NASDAQ:AXTI-3.1% NASDAQ:AMAT-3.0% NASDAQ:APLD-2.7% NASDAQ:SMH-2.6% NASDAQ:AMD-2.4% NASDAQ:IREN-2.4% NYSE:SNOW+2.4% AMEX:GDX-2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 56%
@@ -77,7 +74,7 @@
   🔴淘汰(17): NASDAQ:HOOD NASDAQ:IREN SZSE:300499(高澜) NASDAQ:APLD SZSE:300476(胜宏) SZSE:300990(同飞) SZSE:002837(英维克) SZSE:300394(天孚) AMEX:GDX NASDAQ:MSFT NASDAQ:AXTI NASDAQ:AMAT SSE:688627(精智达) NASDAQ:CIBR AMEX:SPY NASDAQ:RKLB NYSE:LLY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKC$487M MUC$210M QQQ≈$144M AMDC$103M SPCX≈$78M
+  今日: SNDK≈$113M(v/oi4.8) QQQ≈$69M(v/oi99.0) MU≈$47M(v/oi13.7) AMATP$37M(v/oi12.2) SPCX≈$34M(v/oi1.5)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -89,12 +86,12 @@
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【A股重演】反转/反弹五条件 (截至09-10·独立体系)
-  判定: 中性观察  反转条件 2/5
+  判定: 反弹定性  反转条件 1/5
   ✗①龙头前高 距前高 胜宏-38% 生益-21% 富联-18%
   ✅②量能结构 涨/跌量比 1.32x (10日)
   ✗③扩散质量 龙头5日+2.4% vs 池中位+3.2% 补涨带队
   ✗④指数验证 上证3934 区间3946下方
-  ✅⑤海外锚 TSM20日+3.2% SMH/QQQ↑20日均 (月营收人工)
+  ✗⑤海外锚 TSM20日-0.9% SMH/QQQ↑20日均 (月营收人工)
   四棒5日α(领/改/弱/落·↑↓=加速): PCB+9改↑ 光+13改↑ 液冷-5落↓ 存储+3改↑ 探测+3改↑
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
