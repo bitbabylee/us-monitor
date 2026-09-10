@@ -24,17 +24,6 @@
    "page": 19
   },
   {
-   "market": "CN",
-   "b": "CN1!",
-   "nm": "富时中国A50指数期货",
-   "dir": -1,
-   "px": 4552.21,
-   "chg1": -0.18,
-   "score": 3.3,
-   "book": "0909 A Share 1320",
-   "page": 16
-  },
-  {
    "market": "HK",
    "b": "5803",
    "nm": "藤仓",
@@ -80,25 +69,14 @@
   },
   {
    "market": "MACRO",
-   "b": "NQ1!",
-   "nm": "纳指100迷你期货/E-mi",
+   "b": "TOPIX1!",
+   "nm": "东证指数期货（TOPIX F",
    "dir": -1,
-   "px": 29432.25,
-   "chg1": -0.45,
-   "score": 3.3,
-   "book": "0909 Macro 2341 bjt",
-   "page": 22
-  },
-  {
-   "market": "US",
-   "b": "SIVE",
-   "nm": "Sivers Semicon",
-   "dir": 1,
-   "px": 30.24,
-   "chg1": 6.03,
+   "px": 64669.55,
+   "chg1": -0.73,
    "score": 3.0,
-   "book": "0908 US 1630 nyt",
-   "page": 8
+   "book": "0909 Macro 0837 bjt",
+   "page": 23
   },
   {
    "market": "HK",
@@ -123,40 +101,41 @@
    "page": 6
   },
   {
-   "market": "MACRO",
-   "b": "BTCUSDT",
-   "nm": "Bitcoin USD",
-   "dir": 1,
-   "px": 79389.76,
-   "chg1": 1.2,
+   "market": "US",
+   "b": "XMTR",
+   "nm": "Xometry,",
+   "dir": -1,
+   "px": 85.59,
+   "chg1": -7.42,
+   "score": 3.0,
+   "book": "0909 US 1630 nyt",
+   "page": 68
+  },
+  {
+   "market": "CN",
+   "b": "000636",
+   "nm": "风华高科",
+   "dir": -1,
+   "px": 49.7,
+   "chg1": -0.2,
    "score": 3.3,
-   "book": "0909 Macro 2016 bjt",
-   "page": 54
+   "book": "0909 A Share 1730",
+   "page": 15
+  },
+  {
+   "market": "MACRO",
+   "b": "FESX1!",
+   "nm": "欧洲斯托克50指数期货（EU",
+   "dir": -1,
+   "px": 6311.56,
+   "chg1": -1.51,
+   "score": 3.3,
+   "book": "0909 Macro 0837 bjt",
+   "page": 21
   }
  ],
- "n_cand": 207,
+ "n_cand": 144,
  "books": [
-  {
-   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0908 NY 收盘0430_美股",
-   "stem": "0908 US 1630 nyt",
-   "stamp": "2026-09-09 07:45",
-   "market": "US",
-   "n": 198
-  },
-  {
-   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0908 NY 收盘0500_美股ETF",
-   "stem": "0908 US All ETF 1700 nyt",
-   "stamp": "2026-09-09 08:28",
-   "market": "US",
-   "n": 103
-  },
-  {
-   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0908 NY 收盘0755_宏观",
-   "stem": "0908 Macro 0854 bjt",
-   "stamp": "2026-09-09 08:54",
-   "market": "MACRO",
-   "n": 54
-  },
   {
    "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0909 中午1320_A股",
    "stem": "0909 A Share 1320",
@@ -212,6 +191,13 @@
    "stamp": "2026-09-10 07:06",
    "market": "US",
    "n": 103
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0909 NY 收盘0755_宏观",
+   "stem": "0909 Macro 0837 bjt",
+   "stamp": "2026-09-10 08:37",
+   "market": "MACRO",
+   "n": 54
   }
  ]
 }

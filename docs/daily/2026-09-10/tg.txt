@@ -1,0 +1,33 @@
+<b>24 小时精选</b> 09-10 07:13 · 11 册 · 候选 207 只
+今天 12 只：翻多 8 只、翻空 4 只。全部是 3D 和 1D 在最新一根 K 线上同时给信号。
+
+<b>【美股】</b>
+<i>3D+1D 同时翻多</i>
+　<code>XOM</code> ExxonMobil H
+<i>3D+1D 同时翻空</i>
+　<code>TEM</code> Tempus AI,（软件/安全 板块 5 只同动）
+　<code>FANG</code> Diamondback 
+　<code>SIVE</code> Sivers Semic
+　<code>DDOG</code> Datadog,
+
+<b>【A 股】</b>
+<i>3D+1D 同时翻多</i>
+　<code>512400</code> 有色金属ETF南方
+<i>3D+1D 同时翻空</i>
+　<code>688766</code> 普冉股份
+　<code>CN1!</code> 富时中国A50指数期货
+
+<b>【亚太】</b>
+<i>3D+1D 同时翻多</i>
+　<code>5803</code> 藤仓
+　<code>005930</code> 三星电子
+
+<b>【宏观】</b>
+<i>3D+1D 同时翻空</i>
+　<code>NQ1!</code> 纳指100迷你期货/E-
+<i>3D+1D 同时翻多</i>
+　<code>BTCUSDT</code> Bitcoin USD
+
+板块共振：美股软件/安全空 5 只；美股半导体/AI芯片多 8 只；美股加密算力多 4 只
+宏观：09-11 周五 08:30 CPI 8月
+https://bitbabylee.github.io/us-monitor/daily/
