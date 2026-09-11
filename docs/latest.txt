@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-10 收盘(ET)
-  生成 09-11 06:07 纽约 = 09-11 18:07 新加坡
+  生成 09-11 10:03 纽约 = 09-11 22:03 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,10 +8,10 @@
 【结论】仓位上限 40% · 阶段P0 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
 【候选】5 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:RKLB   超跌反弹      日内:🔴规避/止损
-  NASDAQ:MSFT   10EMA回调   日内:🟢突破买点
+  NASDAQ:RKLB   超跌反弹      日内:⚪观望
+  NASDAQ:MSFT   10EMA回调   日内:🟢稳健买点
   NASDAQ:CRWD   10EMA回调   日内:⚪观望
-  NASDAQ:HOOD   10EMA回调   日内:⚪观望
+  NASDAQ:HOOD   10EMA回调   日内:🔥强主升浪
   NYSE:SNOW     10EMA回调   日内:⚪观望
 【否决】
   NASDAQ:NBIS   板块背离
@@ -32,8 +32,8 @@
   宏观 ✅ATR142% ✗10Y4.94% ✅HYG/LQD0.7534 ✗USD/JPY153.57
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:CRAK 炼化下游  AMEX:USO 原油  AMEX:DBC 大宗商品  AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)
-  短线改善: AMEX:URA 铀核能  AMEX:XLK 科技板块 (Technology)  AMEX:SPHB 高贝  AMEX:MTUM 动量  AMEX:NLR 核能
+  涨幅优先: AMEX:CRAK 炼化下游  AMEX:USO 原油  AMEX:IEO 油气上游  AMEX:DBC 大宗商品  AMEX:XLE 能源板块 (Energy)
+  短线改善: AMEX:XLK 科技板块 (Technology)  AMEX:SPHB 高贝  AMEX:MTUM 动量  AMEX:UUP 美元  NASDAQ:SMH 半导体
 ------------------------------------------------
 【板块】
   强: AMEX:XLC+1.2%
@@ -44,31 +44,30 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:MSFT   🟢10EMA回调   🟢突破买点
+   NASDAQ:MSFT   🟢10EMA回调   🟢稳健买点
+   NASDAQ:HOOD   🟢10EMA回调   🔥强主升浪
+   NASDAQ:RIOT   🟢10EMA回调   🟢突破买点
+   NASDAQ:HUT    🟢10EMA回调   🔥强主升浪
  ▶ 等时机（日内未给买点）
+   NASDAQ:NBIS   🟢10EMA回调   ⚪观望
+   NASDAQ:RKLB   🚀超跌反弹      ⚪观望
    NASDAQ:CRWD   🟢10EMA回调   ⚪观望
-   NASDAQ:HOOD   🟢10EMA回调   ⚪观望
+   NASDAQ:MU     🟢10EMA回调   ⚪观望
    NYSE:SNOW     🟢10EMA回调   ⚪观望
-   NASDAQ:RIOT   🟢10EMA回调   ⚪观望
-   NASDAQ:HUT    🟢10EMA回调   ⚪观望
- ▶ 冲突（日线买点/日内破位）
-   NASDAQ:NBIS   🟢10EMA回调   🔴规避/止损
-   NASDAQ:RKLB   🚀超跌反弹      🔴规避/止损
-   NASDAQ:MU     🟢10EMA回调   🔴规避/止损
-  日内异动: NYSE:BE🔴  NASDAQ:LITE🔴  NASDAQ:AAOI🔴  NYSE:GEV🔴 
-            NYSE:CAT🟢  NASDAQ:AMD🔴  NASDAQ:AXTI🔴  NASDAQ:IREN🔴 
-            NASDAQ:CIFR🟡  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NYSE:BE+3.3% NASDAQ:AXTI+2.9% NASDAQ:NBIS+2.7% NASDAQ:APLD+2.2%
+  日内异动: NASDAQ:LITE🔴  NASDAQ:AMAT🔴  NASDAQ:SMH🟢  NASDAQ:SNDK🔴 
+            NASDAQ:QQQ🟢  NYSE:CAT🟢  NYSE:ANET🟢  NASDAQ:CIBR🟢 
+            NASDAQ:SPCX🟢  NASDAQ:IREN🟢  NASDAQ:CORZ🟢  NASDAQ:WULF🟢 
+            NASDAQ:APLD🔴 
+  盘前±2%: NYSE:BE+7.0% NASDAQ:HUT+6.6% NYSE:ANET+5.0% NASDAQ:WULF+4.7% NASDAQ:CIFR+4.6% NASDAQ:CORZ+4.3% NASDAQ:INTC+4.2% NASDAQ:RIOT+4.0% NASDAQ:RKLB+3.7% NASDAQ:SNDK-3.5% NYSE:GEV+3.4% NASDAQ:AXTI+3.2% NASDAQ:APLD+3.1% NASDAQ:AAOI+3.0% NASDAQ:HOOD+2.6% NYSE:CAT+2.5% NASDAQ:AMD+2.4% AMEX:GDX+2.3%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 58% · 📣高澜 S3⌒→S1⌐ · 新易盛 S1⌐→S2↑ · 同飞 S3⌒→S1⌐
+  上升趋势占比 58%
   🟢合格·在买点区(9): SSE:688498(源杰) SSE:688519(南亚) NYSE:SNOW NASDAQ:LITE NASDAQ:INTC NASDAQ:SNDK SSE:600183(生益) NASDAQ:PLTR NASDAQ:MU
   🟢合格·追高区勿追(0): 无
   🔴淘汰(19): NASDAQ:HOOD NASDAQ:IREN SZSE:002837(英维克) NASDAQ:NBIS SZSE:301018(申菱) NASDAQ:APLD SZSE:300394(天孚) SSE:688072(拓荆) SSE:601208(东材) SZSE:300476(胜宏) NYSE:ANET NASDAQ:AMAT SSE:688627(精智达) AMEX:GDX NASDAQ:CIBR NASDAQ:QQQ NASDAQ:RKLB AMEX:SPY NYSE:LLY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SPCXP$663M SNDK≈$251M MU≈$198M QQQ≈$183M NBIS≈$41M
-  T+1核对: BEC262.5(09-11)✗未增 BEC265(09-11)✗未增 BEC277.5(09-11)✗未增 BEC280(09-11)✗未增
+  今日: SPCXP$367M(v/oi6.0) SNDK≈$115M(v/oi6.2) QQQ≈$59M(v/oi14.2) MUC$47M(v/oi4.0) AMATP$28M(v/oi4.7)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -85,7 +84,7 @@
   ✅②量能结构 涨/跌量比 1.32x (10日)
   ✅③扩散质量 龙头5日+4.3% vs 池中位+3.4% 龙头带队
   ✗④指数验证 上证3888 区间3946下方
-  ✗⑤海外锚 TSM20日-0.3% SMH/QQQ↑20日均 (月营收人工)
+  ✗⑤海外锚 TSM20日-0.1% SMH/QQQ↑20日均 (月营收人工)
   四棒5日α(领/改/弱/落·↑↓=加速): PCB+16改↑ 光+15改↑ 液冷-0落↓ 存储+4改↑ 探测+6改↑
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
