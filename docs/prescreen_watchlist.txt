@@ -1,8 +1,10 @@
-# 波哥待机清单 2026-09-11
+# 波哥待机清单 2026-09-12
 # 仅包含通过优势预筛的 ETF + 个股；不是入场指令。
 # 大盘门: 关闭
 AMEX:CRAK
 AMEX:IEO
+AMEX:DBC
 AMEX:DBA
 AMEX:MAGS
-AMEX:MOO
+AMEX:BLOK
+NASDAQ:AIQ
