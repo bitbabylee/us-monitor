@@ -1,0 +1,224 @@
+{
+ "day": "2026-09-15",
+ "picks": [
+  {
+   "market": "CN",
+   "b": "300757",
+   "nm": "罗博特科",
+   "dir": -1,
+   "px": 612.3,
+   "chg1": -2.7,
+   "score": 3.3,
+   "book": "0914 A Share 1730",
+   "page": 28
+  },
+  {
+   "market": "MACRO",
+   "b": "TWN1!",
+   "nm": "台湾指数期货(SGX)",
+   "dir": -1,
+   "px": 45862.52,
+   "chg1": -0.84,
+   "score": 3.3,
+   "book": "0914 Macro 2330 bjt",
+   "page": 21
+  },
+  {
+   "market": "MACRO",
+   "b": "BTCUSDT",
+   "nm": "Bitcoin USD",
+   "dir": 1,
+   "px": 78367.09,
+   "chg1": 2.04,
+   "score": 3.3,
+   "book": "0914 Macro 2330 bjt",
+   "page": 52
+  },
+  {
+   "market": "US",
+   "b": "EWY",
+   "nm": "韩国ETF",
+   "dir": -1,
+   "px": 176.22,
+   "chg1": -6.84,
+   "score": 3.3,
+   "book": "0914 US All ETF 1700 nyt",
+   "page": 39
+  },
+  {
+   "market": "US",
+   "b": "TSEM",
+   "nm": "高塔半导体/Tower",
+   "dir": -1,
+   "px": 191.12,
+   "chg1": -9.84,
+   "score": 3.3,
+   "book": "0914 US 1630 nyt",
+   "page": 71
+  },
+  {
+   "market": "US",
+   "b": "IRM",
+   "nm": "Iron Mountain ",
+   "dir": -1,
+   "px": 112.06,
+   "chg1": -1.41,
+   "score": 3.3,
+   "book": "0914 US 1630 nyt",
+   "page": 59
+  },
+  {
+   "market": "US",
+   "b": "ECG",
+   "nm": "Everus Constru",
+   "dir": -1,
+   "px": 111.24,
+   "chg1": -6.85,
+   "score": 3.3,
+   "book": "0914 US 1630 nyt",
+   "page": 56
+  },
+  {
+   "market": "US",
+   "b": "NVTS",
+   "nm": "纳微半导体（Navitas ",
+   "dir": -1,
+   "px": 10.89,
+   "chg1": -6.57,
+   "score": 3.3,
+   "book": "0914 US 1630 nyt",
+   "page": 66
+  },
+  {
+   "market": "HK",
+   "b": "005930",
+   "nm": "三星电子",
+   "dir": -1,
+   "px": 249000.0,
+   "chg1": -4.05,
+   "score": 3.0,
+   "book": "0914 US 1630 nyt",
+   "page": 77
+  },
+  {
+   "market": "HK",
+   "b": "285A",
+   "nm": "铠侠控股",
+   "dir": -1,
+   "px": 50590.0,
+   "chg1": -6.31,
+   "score": 3.0,
+   "book": "0914 US 1630 nyt",
+   "page": 78
+  },
+  {
+   "market": "CN",
+   "b": "300502",
+   "nm": "新易盛",
+   "dir": -1,
+   "px": 401.9,
+   "chg1": -4.99,
+   "score": 3.3,
+   "book": "0914 A Share 1730",
+   "page": 27
+  },
+  {
+   "market": "CN",
+   "b": "HSIDI",
+   "nm": "HANG SENG INDE",
+   "dir": 1,
+   "px": 24917.6,
+   "chg1": 0.45,
+   "score": 2.3,
+   "book": "0914 A Share 1730",
+   "page": 21
+  }
+ ],
+ "n_cand": 176,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0913 NY 收盘0755_宏观",
+   "stem": "0913 Macro 0811 bjt",
+   "stamp": "2026-09-14 08:11",
+   "market": "MACRO",
+   "n": 54
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0914 中午1320_A股",
+   "stem": "0914 A Share 1320",
+   "stamp": "2026-09-14 13:37",
+   "market": "CN",
+   "n": 107
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0914 收盘1625_亚太",
+   "stem": "0914 亚太 1625",
+   "stamp": "2026-09-14 16:36",
+   "market": "HK",
+   "n": 81
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0914 盘后1730_A股",
+   "stem": "0914 A Share 1730",
+   "stamp": "2026-09-14 17:45",
+   "market": "CN",
+   "n": 107
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0913 NY 盘前1955_宏观",
+   "stem": "0914 Macro 2009 bjt",
+   "stamp": "2026-09-14 20:09",
+   "market": "MACRO",
+   "n": 54
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0913 NY 盘中2310_宏观",
+   "stem": "0914 Macro 2330 bjt",
+   "stamp": "2026-09-14 23:30",
+   "market": "MACRO",
+   "n": 54
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0911 NY 盘中2316_美股",
+   "stem": "0914 US QQQ 1116 nyt",
+   "stamp": "2026-09-14 23:51",
+   "market": "US",
+   "n": 106
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0914 NY 盘中2317_美股",
+   "stem": "0914 US AXTI 1117 nyt",
+   "stamp": "2026-09-15 00:06",
+   "market": "US",
+   "n": 71
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0914 NY 盘中2318_美股",
+   "stem": "0914 US UUUU 1118 nyt",
+   "stamp": "2026-09-15 00:19",
+   "market": "US",
+   "n": 53
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0914 NY 盘中2320_美股ETF",
+   "stem": "0914 US All ETF 1120 nyt",
+   "stamp": "2026-09-15 00:48",
+   "market": "US",
+   "n": 104
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0914 NY 收盘0430_美股",
+   "stem": "0914 US 1630 nyt",
+   "stamp": "2026-09-15 05:18",
+   "market": "US",
+   "n": 221
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0914 NY 收盘0500_美股ETF",
+   "stem": "0914 US All ETF 1700 nyt",
+   "stamp": "2026-09-15 05:45",
+   "market": "US",
+   "n": 104
+  }
+ ]
+}
