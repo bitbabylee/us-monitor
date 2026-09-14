@@ -1,33 +1,86 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-09-10 21:30 UTC",
-   "as_of": "2026-09-10",
+   "generated": "2026-09-11 21:30 UTC",
+   "as_of": "2026-09-11",
    "market_gate": {
     "status": "red",
     "symbol": "^IXIC",
-    "date": "2026-09-10",
-    "ma10": 26347.98,
-    "ma20": 26339.35
+    "date": "2026-09-11",
+    "ma10": 26327.15,
+    "ma20": 26315.85
    },
    "universe_n": 44,
    "data_n": 44,
    "signals": []
   },
   "cn_pullback": {
-   "generated": "2026-09-11 08:00 UTC",
-   "as_of": "2026-09-10",
+   "generated": "2026-09-14 08:00 UTC",
+   "as_of": "2026-09-11",
    "market_gate": {
     "status": "red",
     "symbol": "^IXIC",
-    "date": "2026-09-10",
-    "ma10": 26347.98,
-    "ma20": 26339.35
+    "date": "2026-09-11",
+    "ma10": 26327.15,
+    "ma20": 26315.85
    },
-   "universe_n": 6,
-   "data_n": 6,
-   "signals": []
+   "universe_n": 5,
+   "data_n": 5,
+   "signals": [
+    {
+     "signal_id": "cn_pullback:300843.SZ:2026-09-11:cn_pullback:300843.SZ:2026-09-11:ma_squeeze:UR",
+     "profile": "cn_pullback",
+     "ticker": "300843.SZ",
+     "date": "2026-09-11",
+     "setup_id": "cn_pullback:300843.SZ:2026-09-11:ma_squeeze",
+     "setup_names": [
+      "ma_squeeze"
+     ],
+     "setup_date": "2026-09-11",
+     "setup_age_bars": 0,
+     "triggers": [
+      "UR"
+     ],
+     "plan": {
+      "entry_stop": 130.83,
+      "entry_limit": 131.48,
+      "stop": 122.16,
+      "risk": 8.67,
+      "stop_pct": 6.63,
+      "adr20": 7.69,
+      "stop_adr_ratio": 0.86,
+      "grade": "warn",
+      "target_1R": 139.5,
+      "target_2R": 148.18,
+      "position_pct": 3.77,
+      "action": "half_size"
+     },
+     "risk_check": {
+      "entry_stop": 130.83,
+      "entry_limit": 131.48,
+      "stop": 122.16,
+      "risk": 8.67,
+      "stop_pct": 6.63,
+      "adr20": 7.69,
+      "stop_adr_ratio": 0.86,
+      "grade": "warn",
+      "target_1R": 139.5,
+      "target_2R": 148.18,
+      "position_pct": 3.77,
+      "action": "half_size"
+     },
+     "market_gate": {
+      "status": "red",
+      "symbol": "^IXIC",
+      "date": "2026-09-11",
+      "ma10": 26327.15,
+      "ma20": 26315.85
+     },
+     "environment": "环境逆风",
+     "outcomes": {}
+    }
+   ]
   }
  },
- "updated": "2026-09-11 08:00 UTC"
+ "updated": "2026-09-14 08:00 UTC"
 }
