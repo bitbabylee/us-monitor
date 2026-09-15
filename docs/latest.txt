@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-14 收盘(ET)
-  生成 09-15 06:07 纽约 = 09-15 18:07 新加坡
+  生成 09-15 10:03 纽约 = 09-15 22:03 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,10 +8,10 @@
 【结论】仓位上限 20% · 阶段P0 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
 【候选】4 只（形态+板块确认+无财报风险·未回测）
-  NYSE:NET      口袋支点      日内:🔴锁定利润
-  NASDAQ:CRWD   口袋支点      日内:🔴锁定利润
-  NASDAQ:HOOD   10EMA回调   日内:⚪观望
-  NYSE:SNOW     10EMA回调   日内:🟢突破买点
+  NYSE:NET      口袋支点      日内:⚪观望
+  NASDAQ:CRWD   口袋支点      日内:🟢黄金买点
+  NASDAQ:HOOD   10EMA回调   日内:🟡跳空低开,买点降级
+  NYSE:SNOW     10EMA回调   日内:🔴规避/止损
 【否决】
   NYSE:BE       板块背离
   NASDAQ:RKLB   板块背离
@@ -35,8 +35,8 @@
   宏观 ✅ATR144% ✗10Y4.96% ✅HYG/LQD0.7529 ✗USD/JPY153.42
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:USO 原油  AMEX:CRAK 炼化下游  AMEX:DBC 大宗商品  AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)
-  短线改善: NASDAQ:WCLD 云软件  AMEX:UUP 美元  AMEX:HACK 网络安全  NASDAQ:SKYY 云计算
+  涨幅优先: AMEX:USO 原油  AMEX:DBC 大宗商品  AMEX:IEO 油气上游  AMEX:CRAK 炼化下游  AMEX:ARKG 基因组
+  短线改善: NASDAQ:HERO 游戏  NASDAQ:ESPO 电竞  NASDAQ:SKYY 云计算  AMEX:KBE 银行  AMEX:KRE 区域银行
 ------------------------------------------------
 【板块】
   强: AMEX:XLC+2.6% · AMEX:XLV+1.9% · AMEX:XLP+1.7%
@@ -50,25 +50,24 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NYSE:SNOW     🟢10EMA回调   🟢突破买点
+   NASDAQ:CRWD   💡口袋支点      🟢黄金买点
+   NASDAQ:SPCX   🟢10EMA回调   🟢黄金买点
  ▶ 等时机（日内未给买点）
-   NYSE:BE       💡口袋支点      🟡跳空低开,买点降级
-   NASDAQ:RKLB   🚀超跌反弹      ⚪观望
+   NYSE:BE       💡口袋支点      ⚪观望
    NASDAQ:AMAT   🚀超跌反弹      ⚪观望
-   NASDAQ:HOOD   🟢10EMA回调   ⚪观望
-   NASDAQ:AMD    💡口袋支点      🟡跳空低开,买点降级
-   NASDAQ:SPCX   🟢10EMA回调   ⚪观望
-   NASDAQ:IREN   🟢10EMA回调   ⚪观望
+   NYSE:NET      💡口袋支点      ⚪观望
+   NASDAQ:HOOD   🟢10EMA回调   🟡跳空低开,买点降级
+   NASDAQ:AMD    💡口袋支点      ⚪观望
+   NASDAQ:CIBR   💡口袋支点      ⚪观望
+   NASDAQ:RIOT   🟢10EMA回调   ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NYSE:NET      💡口袋支点      🔴锁定利润
-   NASDAQ:CRWD   💡口袋支点      🔴锁定利润
-   NASDAQ:CIBR   💡口袋支点      🔴锁定利润
-   NASDAQ:RIOT   🟢10EMA回调   🔴锁定利润
-  日内异动: NASDAQ:LITE🔴  NASDAQ:AAOI🔴  NASDAQ:MSFT🟢  NASDAQ:INTC🟡 
-            NYSE:GEV🔴  NASDAQ:SNDK🟡  NASDAQ:QQQ🟢  NASDAQ:MU🔴 
-            NASDAQ:AXTI🔴  NASDAQ:PLTR🔴  AMEX:GDX🟡  NASDAQ:CORZ🔴 
-            NASDAQ:CIFR🔴 
-  盘前±2%: NASDAQ:HOOD-2.3% NYSE:NET-2.0%
+   NASDAQ:RKLB   🚀超跌反弹      🔴规避/止损
+   NYSE:SNOW     🟢10EMA回调   🔴规避/止损
+   NASDAQ:IREN   🟢10EMA回调   🔴规避/止损
+  日内异动: NASDAQ:AAOI🟢  NASDAQ:INTC🟢  NASDAQ:SMH🟢  NYSE:GEV🟢 
+            NASDAQ:QQQ🟢  NASDAQ:CRDO🔴  NASDAQ:MU🟢  NASDAQ:PLTR🟢 
+            NASDAQ:CIFR🔴  NASDAQ:WULF🔴 
+  盘前±2%: NYSE:BE+4.1% NASDAQ:AMD+3.8% NASDAQ:RIOT-3.8% NASDAQ:HOOD-3.7% NYSE:SNOW-3.4% NYSE:ANET+3.4% NASDAQ:IREN-2.9% NASDAQ:AAOI+2.8% NASDAQ:AXTI+2.7% NASDAQ:CRDO+2.6% NASDAQ:WULF-2.5% NASDAQ:INTC+2.5% NASDAQ:HUT-2.2% NASDAQ:CIFR-2.1% NASDAQ:LITE+2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 52%
@@ -77,8 +76,7 @@
   🔴淘汰(18): SZSE:300499(高澜) NASDAQ:IREN SZSE:002837(英维克) NASDAQ:SNDK SZSE:300394(天孚) NASDAQ:NBIS SSE:688627(精智达) SZSE:300476(胜宏) NASDAQ:QQQ NASDAQ:MU NYSE:ANET NASDAQ:APLD NASDAQ:RKLB AMEX:GDX AMEX:SPY NASDAQ:LITE NASDAQ:SMH NYSE:LLY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MU≈$302M SNDK≈$246M QQQ≈$134M SPCXP$130M CRWDC$121M
-  T+1核对: BEC255(09-18)✗未增 BEC257.5(09-18)✗未增 BEC262.5(09-18)✗未增 BEC265(09-18)✗未增
+  今日: MUP$238M(v/oi5.4) SNDK≈$78M(v/oi2.4) SPCXP$76M(v/oi1.7) AMDC$41M(v/oi12.5) QQQ≈$36M(v/oi20.2)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
@@ -95,7 +93,7 @@
   ✅②量能结构 涨/跌量比 1.31x (10日)
   ✅③扩散质量 龙头5日-1.6% vs 池中位-1.7% 龙头带队
   ✗④指数验证 上证3864 区间3946下方
-  ✗⑤海外锚 TSM20日-2.0% SMH/QQQ↓20日均 (月营收人工)
+  ✗⑤海外锚 TSM20日-3.3% SMH/QQQ↓20日均 (月营收人工)
   四棒5日α(领/改/弱/落·↑↓=加速): PCB+11改↑ 光+2改↓ 液冷+4改↑ 存储-2落↓ 探测+6改↑
   资金面周频(环境非信号):
   指增超额: 未更新(26H1收窄,500/1000弱)
