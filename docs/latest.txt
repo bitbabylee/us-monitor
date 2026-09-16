@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-15 收盘(ET)
-  生成 09-16 06:06 纽约 = 09-16 18:06 新加坡
+  生成 09-16 10:03 纽约 = 09-16 22:03 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,12 +8,12 @@
 【结论】仓位上限 20% · 阶段P0 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
 【候选】6 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:MSFT   10EMA回调   日内:🔴规避/止损
-  NASDAQ:INTC   10EMA回调   日内:🔴规避/止损
-  NASDAQ:CRWD   口袋支点      日内:🟢强动能买点
-  NYSE:ANET     10EMA回调   日内:🟢稳健买点
-  NASDAQ:AMD    口袋支点      日内:⚪观望
-  NASDAQ:CIBR   箱体突破      日内:🟡警告:临近前高
+  NASDAQ:MSFT   10EMA回调   日内:⚪观望
+  NASDAQ:INTC   10EMA回调   日内:⚪观望
+  NASDAQ:CRWD   口袋支点      日内:🟡跳空低开,买点降级
+  NYSE:ANET     10EMA回调   日内:⚪观望
+  NASDAQ:AMD    口袋支点      日内:🟢稳健买点
+  NASDAQ:CIBR   箱体突破      日内:🟢稳健买点
 【风险】日元⚠️154.4
 ------------------------------------------------
 
@@ -28,8 +28,8 @@
   宏观 ✅ATR142% ✗10Y5.00% ✅HYG/LQD0.7516 ✗USD/JPY154.38
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:USO 原油  AMEX:IEO 油气上游  AMEX:DBC 大宗商品  AMEX:CRAK 炼化下游  AMEX:ARKG 基因组
-  短线改善: NASDAQ:HERO 游戏  NASDAQ:PPH 制药  NASDAQ:SKYY 云计算  NASDAQ:ESPO 电竞  AMEX:IHI 医疗器械
+  涨幅优先: AMEX:USO 原油  AMEX:ARKG 基因组  AMEX:DBC 大宗商品  AMEX:XLE 能源板块 (Energy)  AMEX:IEO 油气上游
+  短线改善: NASDAQ:ESPO 电竞  NASDAQ:PPH 制药  NASDAQ:HERO 游戏  AMEX:XHE 医疗设备  AMEX:KBE 银行
 ------------------------------------------------
 【板块】
   强: AMEX:XLE+2.6%
@@ -39,21 +39,17 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:CRWD   💡口袋支点      🟢强动能买点
-   NYSE:ANET     🟢10EMA回调   🟢稳健买点
+   NASDAQ:AMD    💡口袋支点      🟢稳健买点
+   NASDAQ:CIBR   📦箱体突破      🟢稳健买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:AMD    💡口袋支点      ⚪观望
-   NASDAQ:CIBR   📦箱体突破      🟡警告:临近前高
- ▶ 冲突（日线买点/日内破位）
-   NASDAQ:MSFT   🟢10EMA回调   🔴规避/止损
-   NASDAQ:INTC   🟢10EMA回调   🔴规避/止损
-  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:AAOI🔴  NYSE:LLY🔴 
-            NASDAQ:AMAT🔴  NASDAQ:SMH🔴  NYSE:GEV🟢  NASDAQ:SNDK🔴 
-            NASDAQ:QQQ🔴  NASDAQ:HOOD🟡  NASDAQ:MU🔴  NASDAQ:AXTI🔴 
-            NASDAQ:SPCX🔴  AMEX:GDX🟢  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
-            NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴 
-            NASDAQ:APLD🔴 
-  盘前±2%: NYSE:BE+2.9% NASDAQ:INTC+2.9% NASDAQ:CIBR-2.9% NASDAQ:LITE+2.5% NASDAQ:AXTI+2.3% NASDAQ:AAOI+2.2%
+   NASDAQ:MSFT   🟢10EMA回调   ⚪观望
+   NASDAQ:INTC   🟢10EMA回调   ⚪观望
+   NASDAQ:CRWD   💡口袋支点      🟡跳空低开,买点降级
+   NYSE:ANET     🟢10EMA回调   ⚪观望
+  日内异动: NASDAQ:LITE🟢  NYSE:LLY🟢  NASDAQ:SMH🟢  NYSE:GEV🟢 
+            NASDAQ:QQQ🟢  NYSE:NET🔴  NASDAQ:MU🟢  NYSE:SNOW🔴 
+            AMEX:GDX🔴  NASDAQ:CORZ🟢  NASDAQ:RIOT🟢  NASDAQ:CIFR🟢 
+  盘前±2%: NASDAQ:CIFR+11.3% NASDAQ:AXTI+7.1% NASDAQ:CRDO+6.3% NYSE:BE+5.5% NASDAQ:CORZ+5.0% NASDAQ:LITE+5.0% NASDAQ:SPCX+4.6% NASDAQ:INTC+4.4% NASDAQ:HUT+4.2% NASDAQ:APLD+3.6% NASDAQ:AMD+3.4% NASDAQ:WULF+3.2% NASDAQ:RIOT+2.8% NASDAQ:HOOD-2.8% NASDAQ:NBIS+2.8% NYSE:ANET+2.6% NYSE:SNOW+2.3% NASDAQ:AAOI+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 56%
@@ -62,7 +58,7 @@
   🔴淘汰(21): SZSE:300499(高澜) SZSE:300476(胜宏) SZSE:002837(英维克) SZSE:300990(同飞) NASDAQ:IREN SZSE:300394(天孚) SSE:601138(富联) NYSE:SNOW NASDAQ:HOOD NASDAQ:RKLB NASDAQ:NBIS NASDAQ:MU NASDAQ:SNDK NASDAQ:CIFR AMEX:GDX NASDAQ:LITE NASDAQ:SMH NASDAQ:APLD NASDAQ:QQQ AMEX:SPY NYSE:LLY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SPCXP$528M MU≈$376M SNDK≈$191M QQQ≈$118M PLTRC$104M
+  今日: SPCXP$279M(v/oi5.1) MUP$248M(v/oi3.7) SNDK≈$102M(v/oi4.7) PLTRC$68M AMDC$58M(v/oi8.9)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
