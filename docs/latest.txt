@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-15 收盘(ET)
-  生成 09-15 23:35 纽约 = 09-16 11:35 新加坡
+  生成 09-16 04:03 纽约 = 09-16 16:03 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -14,7 +14,7 @@
   NYSE:ANET     10EMA回调   日内:🟢稳健买点
   NASDAQ:AMD    口袋支点      日内:⚪观望
   NASDAQ:CIBR   箱体突破      日内:🟡警告:临近前高
-【风险】日元⚠️155.3
+【风险】日元⚠️154.4
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
@@ -23,9 +23,9 @@
   SPX 7586 (MA50-0.3%) · RSI 42 · VIX 17.2
   风格: MTUM/MAGS 4.30 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量+0.6 高贝-0.3 低波-0.2 价值+0.3 → 中性日
-  派发 ▁▁▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▆ (5/吸3) → 仓位20%
+  派发 ▁▁▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇ (6/吸3) → 仓位20%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR143% ✗10Y5.00% ✅HYG/LQD0.7516 ✗USD/JPY155.35
+  宏观 ✅ATR142% ✗10Y5.00% ✅HYG/LQD0.7516 ✗USD/JPY154.38
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:USO 原油  AMEX:IEO 油气上游  AMEX:DBC 大宗商品  AMEX:CRAK 炼化下游  AMEX:ARKG 基因组
@@ -53,15 +53,17 @@
             NASDAQ:SPCX🔴  AMEX:GDX🟢  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
             NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴 
             NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:INTC+5.8% NYSE:BE+3.6% NASDAQ:AXTI+3.1% NASDAQ:AAOI+2.9% NASDAQ:LITE+2.4% NASDAQ:NBIS+2.4% NASDAQ:APLD+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 56% · 📣旭创 S1⌐→S2↑ · 新易盛 S1⌐→S2↑ · 同飞 S1⌐→S3⌒
+  上升趋势占比 56%
   🟢合格·在买点区(8): NASDAQ:CRWD NASDAQ:CIBR SSE:600183(生益) SSE:601208(东材) SSE:688498(源杰) SSE:688519(南亚) NASDAQ:PLTR NYSE:BE
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(21): SZSE:300499(高澜) SZSE:300476(胜宏) SZSE:002837(英维克) SZSE:300394(天孚) NASDAQ:IREN SZSE:300990(同飞) SSE:601138(富联) NYSE:SNOW NASDAQ:HOOD NASDAQ:RKLB NASDAQ:NBIS NASDAQ:MU NASDAQ:SNDK NASDAQ:CIFR AMEX:GDX NASDAQ:LITE NASDAQ:SMH NASDAQ:APLD NASDAQ:QQQ AMEX:SPY NYSE:LLY
+  🔴淘汰(21): SZSE:300499(高澜) SZSE:300476(胜宏) SZSE:002837(英维克) SZSE:300990(同飞) NASDAQ:IREN SZSE:300394(天孚) SSE:601138(富联) NYSE:SNOW NASDAQ:HOOD NASDAQ:RKLB NASDAQ:NBIS NASDAQ:MU NASDAQ:SNDK NASDAQ:CIFR AMEX:GDX NASDAQ:LITE NASDAQ:SMH NASDAQ:APLD NASDAQ:QQQ AMEX:SPY NYSE:LLY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SPCXP$540M(v/oi11.1) MU≈$378M(v/oi35.5) SNDK≈$193M(v/oi9.2) QQQ≈$118M(v/oi52.2) PLTRC$105M(v/oi9.0)
+  今日: SPCXP$528M MU≈$376M SNDK≈$191M QQQ≈$118M PLTRC$104M
+  T+1核对: BEC265(09-18)✗未增 BEC267.5(09-18)✗未增 BEC272.5(09-18)✗未增 BEC292.5(09-18)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
