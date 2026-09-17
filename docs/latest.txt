@@ -1,17 +1,18 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-17 收盘(ET)
-  生成 09-17 16:34 纽约 = 09-18 04:34 新加坡
+  生成 09-17 17:39 纽约 = 09-18 05:39 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
 【结论】仓位上限 20% · 阶段P0 · 宏观1/4 · 抱团MAGS
 ------------------------------------------------
-【候选】13 只（形态+板块确认+无财报风险·未回测）
+【候选】14 只（形态+板块确认+无财报风险·未回测）
   NASDAQ:MSFT   10EMA回调   日内:🟢稳健买点
   NYSE:LLY      超跌反弹      日内:🟢稳健买点
   NASDAQ:INTC   口袋支点      日内:⚪观望
   NASDAQ:SNDK   10EMA回调   日内:🟢黄金买点
+  NASDAQ:QQQ    口袋支点      日内:🟡警告:临近前高
   NYSE:NET      10EMA回调   日内:🟡警告:临近前高
   NASDAQ:HOOD   10EMA回调   日内:⚪观望
   NASDAQ:AMD    口袋支点      日内:🟢强动能买点
@@ -21,7 +22,7 @@
   AMEX:GDX      10EMA回调   日内:🟢黄金买点
   NASDAQ:RIOT   口袋支点      日内:🟡警告:临近前高
   NASDAQ:APLD   口袋支点      日内:⚪观望
-【风险】日元⚠️156.0
+【风险】日元⚠️155.9
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
@@ -32,7 +33,7 @@
   日性质(因子ETF超额·非纯因子): 动量+1.0 高贝+1.2 低波-0.8 价值+0.7 → 风偏进攻日
   派发 ▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇ (6/吸3) → 仓位20%
   阶段P0 恐慌未释放 恐慌3/4 共识5/5
-  宏观 ✅ATR1413% ✗10Y4.95% ✗HYG/LQD0.7486 ✗USD/JPY155.96
+  宏观 ✅ATR1413% ✗10Y4.95% ✗HYG/LQD0.7486 ✗USD/JPY155.93
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ARKG 基因组  AMEX:CRAK 炼化下游  AMEX:MAGS 七巨头  AMEX:HACK 网络安全  AMEX:IGV 软件
@@ -56,32 +57,33 @@
    AMEX:GDX      🟢10EMA回调   🟢黄金买点
  ▶ 等时机（日内未给买点）
    NASDAQ:INTC   💡口袋支点      ⚪观望
+   NASDAQ:QQQ    💡口袋支点      🟡警告:临近前高
    NYSE:NET      🟢10EMA回调   🟡警告:临近前高
    NASDAQ:HOOD   🟢10EMA回调   ⚪观望
    NYSE:SNOW     🟢10EMA回调   🟡警告:临近前高
    NASDAQ:RIOT   💡口袋支点      🟡警告:临近前高
    NASDAQ:APLD   💡口袋支点      ⚪观望
   日内异动: NASDAQ:RKLB🔴  NASDAQ:LITE🔴  NASDAQ:AAOI🔴  NASDAQ:AMAT🔴 
-            NASDAQ:SMH🟢  NYSE:GEV🔴  NASDAQ:QQQ🟡  NYSE:CAT🔴 
-            NASDAQ:CRWD🟡  NYSE:ANET🟡  NASDAQ:CRDO🟢  NASDAQ:CIBR🟡 
-            NASDAQ:SPCX🟢  NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🟢 
+            NASDAQ:SMH🟢  NYSE:GEV🔴  NYSE:CAT🔴  NASDAQ:CRWD🟡 
+            NYSE:ANET🟡  NASDAQ:CRDO🟢  NASDAQ:CIBR🟡  NASDAQ:SPCX🟢 
+            NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🟢 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 54% · 📣CIFR S4↓→S1⌐ · 旭创 S2↑→S1⌐ · 富联 S2↑→S1⌐
+  上升趋势占比 54%
   🟢合格·在买点区(13): NYSE:BE NASDAQ:INTC NASDAQ:CRWD NASDAQ:AMD NASDAQ:CIBR SSE:601208(东材) SSE:688498(源杰) SSE:688519(南亚) NASDAQ:RIOT NYSE:ANET NASDAQ:QQQ SZSE:301018(申菱) NYSE:SNOW
   🟢合格·追高区勿追(0): 无
   🔴淘汰(13): NASDAQ:RKLB SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:IREN SZSE:300394(天孚) SZSE:002837(英维克) NASDAQ:APLD NASDAQ:LITE NASDAQ:HOOD SZSE:300476(胜宏) AMEX:GDX AMEX:SPY NYSE:LLY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SPCXP$1178M(v/oi12.8) MU≈$268M(v/oi22.8) SNDKC$264M(v/oi18.3) QQQ≈$263M(v/oi99.0) AMATP$231M(v/oi9.4)
+  今日: SPCXP$1178M(v/oi12.8) MU≈$294M(v/oi22.8) SNDKC$264M(v/oi18.3) QQQ≈$263M(v/oi99.0) AMATP$231M(v/oi9.4)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】41只(强15)·⚠️旧快照
-  今日强信号: NASDAQ:IM1! NYSE:COHR NASDAQ:INTC🔗 NASDAQ:FTAI NYSE:SOC NASDAQ:IC1! AMEX:XLE NYSE:SDRL
-  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:INTC NYSE:LLY NASDAQ:CRDO NYSE:BE NYSE:GEV NASDAQ:AMD NYSE:VRT
-  池外强信号(仅提示, 不入信号链): NASDAQ:IM1! NYSE:COHR NASDAQ:FTAI NYSE:SOC NASDAQ:IC1! AMEX:XLE
+【波哥七维·外部体系】50只(强42)·⚠️旧快照
+  今日强信号: NYSE:NEM🔗 NYSE:RDW NYSE:ASX NYSE:AU NASDAQ:COHU NYSE:AG NYSE:ERO NYSE:ALB
+  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:NEM AMEX:GDX NYSE:AEM NASDAQ:HOOD NASDAQ:NVDA NASDAQ:INTC NASDAQ:CRDO NYSE:CAT
+  池外强信号(仅提示, 不入信号链): NYSE:NEM NYSE:RDW NYSE:ASX NYSE:AU NASDAQ:COHU NYSE:AG
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
