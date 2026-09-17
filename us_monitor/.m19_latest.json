@@ -15,72 +15,19 @@
    "signals": []
   },
   "cn_pullback": {
-   "generated": "2026-09-16 08:00 UTC",
-   "as_of": "2026-09-15",
+   "generated": "2026-09-17 08:00 UTC",
+   "as_of": "2026-09-16",
    "market_gate": {
     "status": "red",
     "symbol": "^IXIC",
-    "date": "2026-09-15",
-    "ma10": 26266.61,
-    "ma20": 26255.55
+    "date": "2026-09-16",
+    "ma10": 26254.48,
+    "ma20": 26239.98
    },
-   "universe_n": 15,
-   "data_n": 15,
-   "signals": [
-    {
-     "signal_id": "cn_pullback:300620.SZ:2026-09-15:cn_pullback:300620.SZ:2026-08-27:base_lift:IDNR4",
-     "profile": "cn_pullback",
-     "ticker": "300620.SZ",
-     "date": "2026-09-15",
-     "setup_id": "cn_pullback:300620.SZ:2026-08-27:base_lift",
-     "setup_names": [
-      "base_lift"
-     ],
-     "setup_date": "2026-08-27",
-     "setup_age_bars": 13,
-     "triggers": [
-      "IDNR4"
-     ],
-     "plan": {
-      "entry_stop": 292.87,
-      "entry_limit": 294.32,
-      "stop": 280.32,
-      "risk": 12.55,
-      "stop_pct": 4.28,
-      "adr20": 6.83,
-      "stop_adr_ratio": 0.63,
-      "grade": "warn",
-      "target_1R": 305.41,
-      "target_2R": 317.96,
-      "position_pct": 5.84,
-      "action": "half_size"
-     },
-     "risk_check": {
-      "entry_stop": 292.87,
-      "entry_limit": 294.32,
-      "stop": 280.32,
-      "risk": 12.55,
-      "stop_pct": 4.28,
-      "adr20": 6.83,
-      "stop_adr_ratio": 0.63,
-      "grade": "warn",
-      "target_1R": 305.41,
-      "target_2R": 317.96,
-      "position_pct": 5.84,
-      "action": "half_size"
-     },
-     "market_gate": {
-      "status": "red",
-      "symbol": "^IXIC",
-      "date": "2026-09-15",
-      "ma10": 26266.61,
-      "ma20": 26255.55
-     },
-     "environment": "环境逆风",
-     "outcomes": {}
-    }
-   ]
+   "universe_n": 21,
+   "data_n": 21,
+   "signals": []
   }
  },
- "updated": "2026-09-16 21:30 UTC"
+ "updated": "2026-09-17 08:00 UTC"
 }
