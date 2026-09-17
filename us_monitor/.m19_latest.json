@@ -1,58 +1,18 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-09-15 21:30 UTC",
-   "as_of": "2026-09-15",
+   "generated": "2026-09-16 21:30 UTC",
+   "as_of": "2026-09-16",
    "market_gate": {
     "status": "red",
     "symbol": "^IXIC",
-    "date": "2026-09-15",
-    "ma10": 26266.61,
-    "ma20": 26255.55
+    "date": "2026-09-16",
+    "ma10": 26254.48,
+    "ma20": 26239.98
    },
    "universe_n": 44,
    "data_n": 44,
-   "signals": [
-    {
-     "signal_id": "swing_us:BUG:2026-09-15:swing_us:BUG:2026-09-14:ma_bull_align:GDR",
-     "profile": "swing_us",
-     "ticker": "BUG",
-     "date": "2026-09-15",
-     "setup_id": "swing_us:BUG:2026-09-14:ma_bull_align",
-     "setup_names": [
-      "ma_bull_align"
-     ],
-     "setup_date": "2026-09-14",
-     "setup_age_bars": 1,
-     "triggers": [
-      "GDR"
-     ],
-     "plan": null,
-     "risk_check": {
-      "entry_stop": 45.74,
-      "entry_limit": 45.97,
-      "stop": 43.75,
-      "risk": 2.0,
-      "stop_pct": 4.36,
-      "adr20": 3.53,
-      "stop_adr_ratio": 1.24,
-      "grade": "拒",
-      "target_1R": 47.74,
-      "target_2R": 49.74,
-      "position_pct": 11.46,
-      "action": "reject"
-     },
-     "market_gate": {
-      "status": "red",
-      "symbol": "^IXIC",
-      "date": "2026-09-15",
-      "ma10": 26266.61,
-      "ma20": 26255.55
-     },
-     "environment": "环境逆风",
-     "outcomes": {}
-    }
-   ]
+   "signals": []
   },
   "cn_pullback": {
    "generated": "2026-09-16 08:00 UTC",
@@ -122,5 +82,5 @@
    ]
   }
  },
- "updated": "2026-09-16 08:00 UTC"
+ "updated": "2026-09-16 21:30 UTC"
 }
