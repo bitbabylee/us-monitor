@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-16 收盘(ET)
-  生成 09-16 19:05 纽约 = 09-17 07:05 新加坡
+  生成 09-16 23:26 纽约 = 09-17 11:26 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -20,7 +20,7 @@
   NASDAQ:IREN   10EMA回调   日内:⚪观望
   NASDAQ:CIFR   口袋支点      日内:⚪观望
   NASDAQ:HUT    10EMA回调   日内:⚪观望
-【风险】日元⚠️156.2
+【风险】日元⚠️156.1
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
@@ -31,7 +31,7 @@
   日性质(因子ETF超额·非纯因子): 动量+0.5 高贝+0.6 低波-0.3 价值-0.9 → 风偏进攻日
   派发 ▁▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇▇ (6/吸3) → 仓位20%
   阶段P0 恐慌未释放 恐慌2/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1410% ✗10Y5.01% ✅HYG/LQD0.7508 ✗USD/JPY156.22
+  宏观 ✅ATR1410% ✗10Y5.01% ✅HYG/LQD0.7508 ✗USD/JPY156.12
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:USO 原油  AMEX:ARKG 基因组  AMEX:DBC 大宗商品  AMEX:CRAK 炼化下游  AMEX:IEO 油气上游
@@ -62,24 +62,24 @@
             NASDAQ:AMAT🔴  NASDAQ:SMH🔴  NASDAQ:QQQ🔴  NYSE:CAT🔴 
             NASDAQ:HOOD🔴  NASDAQ:AMD🔴  NASDAQ:SPCX🟢  AMEX:GDX🔴 
             NASDAQ:WULF🟢  NASDAQ:APLD🟢 
-  盘前±2%: NASDAQ:NBIS+6.5% NASDAQ:CRDO+2.2% NASDAQ:AXTI+2.2%
+  盘前±2%: NASDAQ:NBIS+6.9% NASDAQ:CRDO+3.0% NYSE:BE+3.0% NASDAQ:AXTI+3.0% NASDAQ:IREN+2.9% NASDAQ:CIFR+2.9% NASDAQ:AAOI+2.8% NASDAQ:APLD+2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 58%
-  🟢合格·在买点区(11): NASDAQ:CRWD SSE:600183(生益) SSE:601208(东材) SSE:688498(源杰) SSE:688519(南亚) NASDAQ:CIBR NYSE:BE NASDAQ:AMD NASDAQ:PLTR NASDAQ:INTC NYSE:ANET
+  上升趋势占比 56% · 📣富联 S2↑→S1⌐
+  🟢合格·在买点区(12): NASDAQ:CRWD SSE:601208(东材) SSE:688498(源杰) SSE:688519(南亚) NASDAQ:CIBR NYSE:BE NASDAQ:AMD NASDAQ:PLTR SSE:600183(生益) NASDAQ:INTC SZSE:301018(申菱) NYSE:ANET
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(20): SZSE:300499(高澜) SZSE:300476(胜宏) NASDAQ:IREN SZSE:002837(英维克) SZSE:300990(同飞) NASDAQ:CIFR SZSE:300394(天孚) NASDAQ:RKLB SSE:601138(富联) NASDAQ:MSFT NASDAQ:NBIS NASDAQ:SNDK NASDAQ:MU NASDAQ:HOOD NASDAQ:APLD NASDAQ:SMH AMEX:GDX NASDAQ:QQQ NYSE:LLY AMEX:SPY
+  🔴淘汰(19): SZSE:300499(高澜) SZSE:300394(天孚) NASDAQ:IREN SZSE:300990(同飞) SZSE:002837(英维克) NASDAQ:CIFR SZSE:300476(胜宏) NASDAQ:RKLB NASDAQ:MSFT NASDAQ:NBIS NASDAQ:SNDK NASDAQ:MU NASDAQ:HOOD NASDAQ:APLD NASDAQ:SMH AMEX:GDX NASDAQ:QQQ NYSE:LLY AMEX:SPY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQP$635M(v/oi99.0) MUP$346M(v/oi41.7) SNDK≈$199M(v/oi11.3) SPCX≈$140M(v/oi8.0) AMD≈$118M(v/oi99.0)
+  今日: QQQP$365M(v/oi99.0) MUP$326M(v/oi10.1) SNDK≈$199M(v/oi11.3) SPCX≈$140M(v/oi8.0) AMD≈$91M(v/oi30.4)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】42只(强14)·⚠️旧快照
-  今日强信号: AMEX:XLE NYSE:SDRL NYSE:SOC NYSE:GNK AMEX:PXJ NYSE:BORR AMEX:IGV NASDAQ:ROST
-  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:LLY NASDAQ:AMD NYSE:VRT NYSE:CAT NYSE:BE
-  池外强信号(仅提示, 不入信号链): AMEX:XLE NYSE:SDRL NYSE:SOC NYSE:GNK AMEX:PXJ NYSE:BORR
+【波哥七维·外部体系】41只(强15)·⚠️旧快照
+  今日强信号: NASDAQ:IM1! NYSE:COHR NASDAQ:INTC🔗 NASDAQ:FTAI NYSE:SOC NASDAQ:IC1! AMEX:XLE NYSE:SDRL
+  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:INTC NYSE:LLY NASDAQ:CRDO NYSE:BE NYSE:GEV NASDAQ:AMD NYSE:VRT
+  池外强信号(仅提示, 不入信号链): NASDAQ:IM1! NYSE:COHR NASDAQ:FTAI NYSE:SOC NASDAQ:IC1! AMEX:XLE
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
