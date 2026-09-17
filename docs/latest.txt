@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-16 收盘(ET)
-  生成 09-16 23:26 纽约 = 09-17 11:26 新加坡
+  生成 09-17 04:44 纽约 = 09-17 16:44 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -20,7 +20,7 @@
   NASDAQ:IREN   10EMA回调   日内:⚪观望
   NASDAQ:CIFR   口袋支点      日内:⚪观望
   NASDAQ:HUT    10EMA回调   日内:⚪观望
-【风险】日元⚠️156.1
+【风险】日元⚠️155.3
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
@@ -29,9 +29,9 @@
   SPX 7552 (MA50-0.8%) · RSI 40 · VIX 17.7
   风格: MTUM/MAGS 4.31 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量+0.5 高贝+0.6 低波-0.3 价值-0.9 → 风偏进攻日
-  派发 ▁▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇▇ (6/吸3) → 仓位20%
+  派发 ▁▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█ (7/吸3) → 仓位20%
   阶段P0 恐慌未释放 恐慌2/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1410% ✗10Y5.01% ✅HYG/LQD0.7508 ✗USD/JPY156.12
+  宏观 ✅ATR149% ✗10Y5.01% ✅HYG/LQD0.7508 ✗USD/JPY155.27
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:USO 原油  AMEX:ARKG 基因组  AMEX:DBC 大宗商品  AMEX:CRAK 炼化下游  AMEX:IEO 油气上游
@@ -62,16 +62,17 @@
             NASDAQ:AMAT🔴  NASDAQ:SMH🔴  NASDAQ:QQQ🔴  NYSE:CAT🔴 
             NASDAQ:HOOD🔴  NASDAQ:AMD🔴  NASDAQ:SPCX🟢  AMEX:GDX🔴 
             NASDAQ:WULF🟢  NASDAQ:APLD🟢 
-  盘前±2%: NASDAQ:NBIS+6.9% NASDAQ:CRDO+3.0% NYSE:BE+3.0% NASDAQ:AXTI+3.0% NASDAQ:IREN+2.9% NASDAQ:CIFR+2.9% NASDAQ:AAOI+2.8% NASDAQ:APLD+2.0%
+  盘前±2%: NASDAQ:NBIS+8.9% NASDAQ:IREN+5.1% NYSE:BE+4.6% NASDAQ:APLD+4.5% NASDAQ:AXTI+4.4% NASDAQ:CRDO+4.2% NASDAQ:CIFR+4.0% NASDAQ:HUT+3.9% NASDAQ:WULF+3.8% NASDAQ:RIOT+3.6% NASDAQ:AAOI+3.6% NASDAQ:CORZ+2.5% NASDAQ:HOOD+2.5% NYSE:GEV+2.3%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 56% · 📣富联 S2↑→S1⌐
-  🟢合格·在买点区(12): NASDAQ:CRWD SSE:601208(东材) SSE:688498(源杰) SSE:688519(南亚) NASDAQ:CIBR NYSE:BE NASDAQ:AMD NASDAQ:PLTR SSE:600183(生益) NASDAQ:INTC SZSE:301018(申菱) NYSE:ANET
+  上升趋势占比 54% · 📣旭创 S2↑→S1⌐
+  🟢合格·在买点区(11): NASDAQ:CRWD SSE:601208(东材) SSE:688498(源杰) SSE:688519(南亚) NASDAQ:CIBR NYSE:BE NASDAQ:AMD NASDAQ:PLTR NASDAQ:INTC NYSE:ANET SZSE:301018(申菱)
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(19): SZSE:300499(高澜) SZSE:300394(天孚) NASDAQ:IREN SZSE:300990(同飞) SZSE:002837(英维克) NASDAQ:CIFR SZSE:300476(胜宏) NASDAQ:RKLB NASDAQ:MSFT NASDAQ:NBIS NASDAQ:SNDK NASDAQ:MU NASDAQ:HOOD NASDAQ:APLD NASDAQ:SMH AMEX:GDX NASDAQ:QQQ NYSE:LLY AMEX:SPY
+  🔴淘汰(19): SZSE:300499(高澜) SZSE:300990(同飞) SZSE:300394(天孚) NASDAQ:IREN SZSE:002837(英维克) NASDAQ:CIFR NASDAQ:RKLB NASDAQ:MSFT SZSE:300476(胜宏) NASDAQ:NBIS NASDAQ:SNDK NASDAQ:MU NASDAQ:HOOD NASDAQ:APLD NASDAQ:SMH AMEX:GDX NASDAQ:QQQ NYSE:LLY AMEX:SPY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQP$365M(v/oi99.0) MUP$326M(v/oi10.1) SNDK≈$199M(v/oi11.3) SPCX≈$140M(v/oi8.0) AMD≈$91M(v/oi30.4)
+  今日: QQQP$368M MU≈$288M SNDK≈$199M SPCX≈$141M AMD≈$92M
+  T+1核对: BEC267.5(09-18)✗未增 BEC277.5(09-18)✗未增 BEC295(09-18)✗未增 BEC300(09-18)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
