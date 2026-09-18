@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-17 收盘(ET)
-  生成 09-17 18:58 纽约 = 09-18 06:58 新加坡
+  生成 09-17 23:32 纽约 = 09-18 11:32 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -22,7 +22,7 @@
   AMEX:GDX      10EMA回调   日内:🟢黄金买点
   NASDAQ:RIOT   口袋支点      日内:🟡警告:临近前高
   NASDAQ:APLD   口袋支点      日内:⚪观望
-【风险】日元⚠️156.0
+【风险】日元⚠️157.0
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
@@ -33,7 +33,7 @@
   日性质(因子ETF超额·非纯因子): 动量+1.0 高贝+1.2 低波-0.8 价值+0.7 → 风偏进攻日
   派发 ▁▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇ (6/吸3) → 仓位20%
   阶段P0 恐慌未释放 恐慌3/4 共识5/5
-  宏观 ✅ATR1413% ✗10Y4.95% ✗HYG/LQD0.7486 ✗USD/JPY155.95
+  宏观 ✅ATR1413% ✗10Y4.95% ✗HYG/LQD0.7486 ✗USD/JPY156.96
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ARKG 基因组  AMEX:CRAK 炼化下游  AMEX:MAGS 七巨头  AMEX:HACK 网络安全  AMEX:IGV 软件
@@ -67,15 +67,16 @@
             NASDAQ:SMH🟢  NYSE:GEV🔴  NYSE:CAT🔴  NASDAQ:CRWD🟡 
             NYSE:ANET🟡  NASDAQ:CRDO🟢  NASDAQ:CIBR🟡  NASDAQ:SPCX🟢 
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🟢 
+  盘前±2%: NASDAQ:CORZ+2.8%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 54%
-  🟢合格·在买点区(13): NYSE:BE NASDAQ:INTC NASDAQ:CRWD NASDAQ:AMD NASDAQ:CIBR SSE:601208(东材) SSE:688498(源杰) SSE:688519(南亚) NASDAQ:RIOT NYSE:ANET NASDAQ:QQQ SZSE:301018(申菱) NYSE:SNOW
+  上升趋势占比 58% · 📣旭创 S1⌐→S2↑ · 富联 S1⌐→S2↑
+  🟢合格·在买点区(14): NYSE:BE NASDAQ:INTC NASDAQ:CRWD NASDAQ:AMD NASDAQ:CIBR SSE:688498(源杰) SSE:688519(南亚) SSE:601208(东材) NASDAQ:RIOT NYSE:ANET NASDAQ:QQQ SZSE:002463(沪电) SZSE:300502(新易盛) NYSE:SNOW
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(13): NASDAQ:RKLB SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:IREN SZSE:300394(天孚) SZSE:002837(英维克) NASDAQ:APLD NASDAQ:LITE NASDAQ:HOOD SZSE:300476(胜宏) AMEX:GDX AMEX:SPY NYSE:LLY
+  🔴淘汰(13): NASDAQ:RKLB SZSE:300499(高澜) SZSE:300394(天孚) SZSE:300990(同飞) NASDAQ:IREN SZSE:002837(英维克) SZSE:300476(胜宏) NASDAQ:APLD NASDAQ:LITE NASDAQ:HOOD AMEX:GDX AMEX:SPY NYSE:LLY
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SPCXP$1178M(v/oi12.8) MU≈$268M(v/oi22.8) SNDKC$264M(v/oi18.3) QQQ≈$262M(v/oi99.0) AMATP$231M(v/oi9.4)
+  今日: SPCXP$1178M(v/oi12.8) MU≈$294M(v/oi22.8) SNDKC$264M(v/oi18.3) AMATP$231M(v/oi9.4) AMDC$222M(v/oi91.3)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
