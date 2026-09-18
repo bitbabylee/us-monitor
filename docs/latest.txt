@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-17 收盘(ET)
-  生成 09-18 04:42 纽约 = 09-18 16:42 新加坡
+  生成 09-18 06:07 纽约 = 09-18 18:07 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -67,7 +67,7 @@
             NASDAQ:SMH🟢  NYSE:GEV🔴  NYSE:CAT🔴  NASDAQ:CRWD🟡 
             NYSE:ANET🟡  NASDAQ:CRDO🟢  NASDAQ:CIBR🟡  NASDAQ:SPCX🟢 
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🟢 
-  盘前±2%: NASDAQ:INTC+3.0% NASDAQ:LITE+2.9% NASDAQ:HOOD+2.8% NASDAQ:AAOI+2.7% NASDAQ:AXTI+2.6% NYSE:BE+2.4% NASDAQ:APLD+2.3% NASDAQ:CIFR+2.1%
+  盘前±2%: NASDAQ:HOOD+3.5% NASDAQ:AAOI+2.6% NASDAQ:INTC+2.5% NASDAQ:AXTI+2.4% NASDAQ:LITE+2.4% NASDAQ:CIFR+2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 58%
