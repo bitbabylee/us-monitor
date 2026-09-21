@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-18 收盘(ET)
-  生成 09-20 22:32 纽约 = 09-21 10:32 新加坡
+  生成 09-20 23:25 纽约 = 09-21 11:25 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -39,7 +39,7 @@
   日性质(因子ETF超额·非纯因子): 动量+1.0 高贝+1.2 低波-0.6 价值-0.3 → 风偏进攻日
   派发 ▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇▇ (6/吸2) → 仓位20%
   阶段C1 资金共识 恐慌4/4 共识5/5
-  宏观 ✅ATR1411% ✗10Y5.00% ✗HYG/LQD0.7500 ✗USD/JPY156.86
+  宏观 ✅ATR1411% ✗10Y5.00% ✗HYG/LQD0.7500 ✗USD/JPY156.93
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ARKG 基因组  AMEX:HACK 网络安全  AMEX:CRAK 炼化下游  AMEX:USO 原油  AMEX:BITQ 加密公司
@@ -81,21 +81,20 @@
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 58%
-  🟢合格·在买点区(19): NASDAQ:INTC NASDAQ:SNDK NASDAQ:QQQ NASDAQ:CRWD NASDAQ:AMD SSE:601208(东材) SSE:688072(拓荆) SSE:688498(源杰) SSE:688519(南亚) NYSE:ANET NASDAQ:HUT SZSE:300502(新易盛) NASDAQ:SMH NASDAQ:MU NASDAQ:CIBR NYSE:BE SZSE:002463(沪电) NASDAQ:HOOD SSE:688627(精智达)
+  🟢合格·在买点区(18): NASDAQ:INTC NASDAQ:SNDK NASDAQ:QQQ NASDAQ:CRWD NASDAQ:AMD SSE:601208(东材) SSE:688072(拓荆) SSE:688498(源杰) NYSE:ANET SSE:688519(南亚) NASDAQ:HUT NASDAQ:SMH SZSE:300502(新易盛) NASDAQ:MU NASDAQ:CIBR NYSE:BE SZSE:002463(沪电) NASDAQ:HOOD
   🟢合格·追高区勿追(1): NASDAQ:RIOT
-  🔴淘汰(11): SZSE:300476(胜宏) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:IREN NASDAQ:APLD SZSE:300394(天孚) NASDAQ:RKLB SZSE:002837(英维克) NYSE:LLY AMEX:SPY AMEX:GDX
+  🔴淘汰(11): SZSE:300499(高澜) NASDAQ:IREN SZSE:300990(同飞) NASDAQ:APLD SZSE:300476(胜宏) SZSE:300394(天孚) NASDAQ:RKLB SZSE:002837(英维克) NYSE:LLY AMEX:SPY AMEX:GDX
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: SNDKC$452M(v/oi17.5) MUC$228M(v/oi99.0) QQQC$215M(v/oi56.2) HOODC$68M(v/oi21.4) SPCXC$58M(v/oi27.6)
-  T+1核对: BEC245(09-25)✗未增 BEC267.5(09-25)✗未增 BEC270(09-25)✗未增 BEC272.5(09-25)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】50只(强42)·⚠️旧快照
-  今日强信号: NYSE:NEM🔗 NYSE:RDW NYSE:ASX NYSE:AU NASDAQ:COHU NYSE:AG NYSE:ERO NYSE:ALB
-  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:NEM AMEX:GDX NYSE:AEM NASDAQ:HOOD NASDAQ:NVDA NASDAQ:INTC NASDAQ:CRDO NYSE:CAT
-  池外强信号(仅提示, 不入信号链): NYSE:NEM NYSE:RDW NYSE:ASX NYSE:AU NASDAQ:COHU NYSE:AG
+【波哥七维·外部体系】50只(强46)·⚠️旧快照
+  今日强信号: NYSE:CRCL NASDAQ:IREN🔗 NYSE:TRGP NASDAQ:POET NYSE:HBM AMEX:EWT NYSE:STM NASDAQ:IF1!
+  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:IREN NYSE:TSM NYSE:NEM AMEX:GDX NYSE:AEM NASDAQ:HOOD NASDAQ:NVDA NASDAQ:INTC
+  池外强信号(仅提示, 不入信号链): NYSE:CRCL NYSE:TRGP NASDAQ:POET NYSE:HBM AMEX:EWT NYSE:STM
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
