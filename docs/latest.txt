@@ -1,94 +1,82 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-09-18 收盘(ET)
-  生成 09-21 14:18 纽约 = 09-22 02:18 新加坡
+  波哥信号 · 美股日报  数据截至 2026-09-21 收盘(ET)
+  生成 09-21 16:33 纽约 = 09-22 04:33 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 20% · 阶段C1 · 宏观1/4 · 动量MTUM
+【结论】仓位上限 20% · 阶段C1 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
-【候选】17 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:LITE   口袋支点      日内:⚪观望
-  NASDAQ:AAOI   口袋支点      日内:⚪观望
-  NASDAQ:AMAT   口袋支点      日内:🟡警告:临近前高
-  NASDAQ:SNDK   口袋支点      日内:🔴规避/止损
+【候选】14 只（形态+板块确认+无财报风险·未回测）
+  NYSE:BE       10EMA回调   日内:⚪观望
+  NASDAQ:NBIS   EMA金叉     日内:🔴锁定利润
+  NASDAQ:INTC   口袋支点      日内:🟢强动能买点
+  NASDAQ:AMAT   口袋支点      日内:🔴锁定利润
+  NASDAQ:SMH    口袋支点      日内:🔴锁定利润
   NASDAQ:QQQ    口袋支点      日内:🟢突破买点
-  NYSE:CAT      口袋支点      日内:🟢稳健买点
-  NASDAQ:CRDO   超跌反弹      日内:⚪观望
-  NASDAQ:HOOD   口袋支点      日内:⚪观望
-  NASDAQ:AMD    口袋支点      日内:🟢突破买点
-  NASDAQ:MU     口袋支点      日内:🟢稳健买点
-  NASDAQ:AXTI   口袋支点      日内:🔴锁定利润
-  NASDAQ:PLTR   口袋支点      日内:🟢突破买点
-  NASDAQ:CIBR   10EMA回调   日内:🟡警告:临近前高
-  NYSE:SNOW     10EMA回调   日内:🟢稳健买点
-  NASDAQ:RIOT   口袋支点      日内:⚪观望
-  NASDAQ:HUT    口袋支点      日内:🔥强主升浪
-  NASDAQ:APLD   口袋支点      日内:🟢强动能买点
-【否决】
-  NYSE:LLY      板块背离
-  NYSE:GEV      板块背离
-【风险】日元⚠️156.1
+  NYSE:NET      箱体突破      日内:🟢强动能买点
+  NASDAQ:CRDO   口袋支点      日内:🟢强动能买点
+  NASDAQ:AMD    口袋支点      日内:🟢强动能买点
+  NASDAQ:AXTI   口袋支点      日内:🟢突破买点
+  NASDAQ:PLTR   10EMA回调   日内:🟢突破买点
+  NASDAQ:CIBR   口袋支点      日内:🟡警告:临近前高
+  NYSE:SNOW     10EMA回调   日内:🟢突破买点
+  NASDAQ:CIFR   EMA金叉     日内:🟢黄金买点
+【风险】无近端风险事件
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7650 (MA50+0.4%) · RSI 45 · VIX 14.8
-  风格: MTUM/MAGS 4.39 站上20日均 → 动量MTUM
-  日性质(因子ETF超额·非纯因子): 动量+1.0 高贝+1.2 低波-0.6 价值-0.3 → 风偏进攻日
-  派发 ▁▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇▇ (6/吸2) → 仓位20%
+  SPX 7765 (MA50+1.9%) · RSI 56 · VIX 14.9
+  风格: MTUM/MAGS 4.33 跌破20日均 → 抱团MAGS
+  日性质(因子ETF超额·非纯因子): 动量+0.6 高贝+1.2 低波-0.9 价值-0.5 → 风偏进攻日
+  派发 ▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇▇▃ (2/吸2) → 仓位20%
   阶段C1 资金共识 恐慌4/4 共识5/5
-  宏观 ✅ATR1411% ✗10Y5.00% ✗HYG/LQD0.7500 ✗USD/JPY156.13
+  宏观 ✅ATR1420% ✗10Y4.96% ✗HYG/LQD0.7487 ✅USD/JPY157.41
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:ARKG 基因组  AMEX:CRAK 炼化下游  AMEX:HACK 网络安全  AMEX:BITQ 加密公司  NASDAQ:SKYY 云计算
-  短线改善: NASDAQ:BOTZ 机器人  AMEX:MTUM 动量  AMEX:IPO 新股  NASDAQ:SOXX 半导体主题 (Semis)  AMEX:SLV 白银
+  涨幅优先: AMEX:ARKG 基因组  AMEX:HACK 网络安全  AMEX:MAGS 七巨头  AMEX:BITQ 加密公司  AMEX:CRAK 炼化下游
+  短线改善: AMEX:ARKX 太空  AMEX:IPO 新股  NASDAQ:BOTZ 机器人  AMEX:SLV 白银  AMEX:JETS 航空
 ------------------------------------------------
 【板块】
-  强: NASDAQ:SOXX+2.6%
-  🚨砸盘: AMEX:XLC-1.5%(量1.6x)
-  主题🔥 矿转AIDC +6.7%  龙头 NASDAQ:RIOT
-  主题🔥 🏦 降息受益 +5.3%  龙头 NASDAQ:COIN
-  主题🧊 ⚡ AI电网 -2.7%
+  强: NASDAQ:SOXX+3.4% · AMEX:XLC+2.0% · AMEX:XLK+1.2%
+  主题🔥 🔥 AI算力 +3.6%  龙头 NASDAQ:INTC
+  主题🔥 ☁ 云计算  +3.5%  龙头 NASDAQ:DDOG
+  主题🔥 🛡 网络安全 +3.4%  龙头 NYSE:NET
+  主题🧊 💊 减肥药  -2.6%
+  主题🧊 🪙 黄金   -3.2%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NYSE:LLY      💡口袋支点      🟢突破买点
+   NASDAQ:INTC   💡口袋支点      🟢强动能买点
    NASDAQ:QQQ    💡口袋支点      🟢突破买点
-   NYSE:CAT      💡口袋支点      🟢稳健买点
-   NASDAQ:AMD    💡口袋支点      🟢突破买点
-   NASDAQ:MU     💡口袋支点      🟢稳健买点
-   NASDAQ:PLTR   💡口袋支点      🟢突破买点
-   NYSE:SNOW     🟢10EMA回调   🟢稳健买点
-   NASDAQ:HUT    💡口袋支点      🔥强主升浪
-   NASDAQ:APLD   💡口袋支点      🟢强动能买点
+   NYSE:NET      📦箱体突破      🟢强动能买点
+   NASDAQ:CRDO   💡口袋支点      🟢强动能买点
+   NASDAQ:AMD    💡口袋支点      🟢强动能买点
+   NASDAQ:AXTI   💡口袋支点      🟢突破买点
+   NASDAQ:PLTR   🟢10EMA回调   🟢突破买点
+   NYSE:SNOW     🟢10EMA回调   🟢突破买点
+   NASDAQ:CIFR   🌊EMA金叉     🟢黄金买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:LITE   💡口袋支点      ⚪观望
-   NASDAQ:AAOI   💡口袋支点      ⚪观望
-   NASDAQ:AMAT   💡口袋支点      🟡警告:临近前高
-   NYSE:GEV      💡口袋支点      ⚪观望
-   NASDAQ:CRDO   🚀超跌反弹      ⚪观望
-   NASDAQ:HOOD   💡口袋支点      ⚪观望
-   NASDAQ:CIBR   🟢10EMA回调   🟡警告:临近前高
-   NASDAQ:RIOT   💡口袋支点      ⚪观望
+   NYSE:BE       🟢10EMA回调   ⚪观望
+   NASDAQ:CIBR   💡口袋支点      🟡警告:临近前高
  ▶ 冲突（日线买点/日内破位）
-   NASDAQ:SNDK   💡口袋支点      🔴规避/止损
-   NASDAQ:AXTI   💡口袋支点      🔴锁定利润
-  日内异动: NYSE:BE🟢  NASDAQ:NBIS🔥  NASDAQ:RKLB🔴  NASDAQ:MSFT🔴 
-            NASDAQ:INTC🟢  NASDAQ:SMH🟢  NYSE:NET🟢  NASDAQ:CRWD🟡 
-            NYSE:ANET🟡  NASDAQ:SPCX🔴  AMEX:GDX🟢  NASDAQ:CORZ🟢 
-            NASDAQ:WULF🟢 
-  盘前±2%: NASDAQ:AXTI+12.6% NASDAQ:INTC+11.8% NASDAQ:AMD+8.7% NASDAQ:HUT+8.6% NASDAQ:RKLB+7.8% NYSE:NET+7.4% NASDAQ:NBIS+5.6% NASDAQ:CRDO+5.2% NASDAQ:CRWD+4.6% NASDAQ:AMAT+4.4% NASDAQ:HOOD+4.2% NASDAQ:WULF+3.8% NASDAQ:SMH+3.7% NYSE:BE+3.5% NASDAQ:CORZ+3.4% NASDAQ:RIOT+3.4% NYSE:ANET+3.0% NASDAQ:CIFR+2.9% NASDAQ:MU+2.8% NASDAQ:LITE+2.8% NASDAQ:IREN+2.8% NASDAQ:CIBR+2.7% NASDAQ:QQQ+2.6% NASDAQ:APLD+2.3% NASDAQ:PLTR+2.2% NASDAQ:SNDK-2.2%
+   NASDAQ:NBIS   🌊EMA金叉     🔴锁定利润
+   NASDAQ:AMAT   💡口袋支点      🔴锁定利润
+   NASDAQ:SMH    💡口袋支点      🔴锁定利润
+  日内异动: NASDAQ:AAOI🟢  NASDAQ:MSFT🟢  NYSE:LLY🟡  NYSE:GEV🔴 
+            NASDAQ:SNDK🔴  NYSE:CAT🟢  NASDAQ:CRWD🟡  NYSE:ANET🟡 
+            NASDAQ:SPCX🔴  AMEX:GDX🔴  NASDAQ:RIOT🔴 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 58%
-  🟢合格·在买点区(17): NASDAQ:INTC NASDAQ:SNDK NASDAQ:QQQ NASDAQ:CRWD NASDAQ:AMD SSE:688498(源杰) NYSE:ANET SSE:688519(南亚) NASDAQ:HUT NASDAQ:SMH NASDAQ:MU NASDAQ:CIBR SSE:601208(东材) NYSE:BE NASDAQ:HOOD SZSE:300502(新易盛) SZSE:002463(沪电)
-  🟢合格·追高区勿追(1): NASDAQ:RIOT
-  🔴淘汰(11): SZSE:300499(高澜) NASDAQ:IREN NASDAQ:APLD SZSE:300394(天孚) SZSE:300990(同飞) SZSE:002837(英维克) NASDAQ:RKLB SZSE:300476(胜宏) NYSE:LLY AMEX:SPY AMEX:GDX
+  上升趋势占比 61% · 📣AMAT S1⌐→S2↑ · CRDO S1⌐→S2↑ · AXTI S1⌐→S3⌒
+  🟢合格·在买点区(22): NASDAQ:SMH NASDAQ:SNDK NASDAQ:QQQ NASDAQ:CRWD NYSE:ANET NASDAQ:MU NASDAQ:CIBR NASDAQ:RIOT NASDAQ:HUT SSE:601208(东材) SSE:688072(拓荆) SSE:688498(源杰) SSE:688519(南亚) NYSE:BE NASDAQ:HOOD SZSE:300502(新易盛) SZSE:002463(沪电) NASDAQ:MSFT NASDAQ:PLTR NASDAQ:LITE NASDAQ:NBIS NYSE:SNOW
+  🟢合格·追高区勿追(2): NASDAQ:INTC NASDAQ:AMD
+  🔴淘汰(11): NASDAQ:RKLB NASDAQ:AXTI NASDAQ:IREN SZSE:300476(胜宏) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:APLD SZSE:300394(天孚) SZSE:002837(英维克) NYSE:LLY AMEX:GDX
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQC$771M(v/oi99.0) SNDK≈$176M(v/oi12.7) AMDC$151M(v/oi99.0) MUC$141M(v/oi99.0) INTCC$76M(v/oi99.0)
+  今日: QQQC$881M(v/oi99.0) SNDK≈$285M(v/oi13.9) AMDC$240M(v/oi99.0) MUC$188M(v/oi99.0) MSFTC$130M(v/oi74.2)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
