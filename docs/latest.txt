@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-21 收盘(ET)
-  生成 09-21 16:33 纽约 = 09-22 04:33 新加坡
+  生成 09-21 17:57 纽约 = 09-22 05:57 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -21,7 +21,7 @@
   NASDAQ:PLTR   10EMA回调   日内:🟢突破买点
   NASDAQ:CIBR   口袋支点      日内:🟡警告:临近前高
   NYSE:SNOW     10EMA回调   日内:🟢突破买点
-  NASDAQ:CIFR   EMA金叉     日内:🟢黄金买点
+  NASDAQ:CIFR   箱体突破      日内:🟢黄金买点
 【风险】无近端风险事件
 ------------------------------------------------
 
@@ -33,7 +33,7 @@
   日性质(因子ETF超额·非纯因子): 动量+0.6 高贝+1.2 低波-0.9 价值-0.5 → 风偏进攻日
   派发 ▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇▇▃ (2/吸2) → 仓位20%
   阶段C1 资金共识 恐慌4/4 共识5/5
-  宏观 ✅ATR1420% ✗10Y4.96% ✗HYG/LQD0.7487 ✅USD/JPY157.41
+  宏观 ✅ATR1420% ✗10Y4.96% ✗HYG/LQD0.7487 ✅USD/JPY157.28
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ARKG 基因组  AMEX:HACK 网络安全  AMEX:MAGS 七巨头  AMEX:BITQ 加密公司  AMEX:CRAK 炼化下游
@@ -57,7 +57,7 @@
    NASDAQ:AXTI   💡口袋支点      🟢突破买点
    NASDAQ:PLTR   🟢10EMA回调   🟢突破买点
    NYSE:SNOW     🟢10EMA回调   🟢突破买点
-   NASDAQ:CIFR   🌊EMA金叉     🟢黄金买点
+   NASDAQ:CIFR   📦箱体突破      🟢黄金买点
  ▶ 等时机（日内未给买点）
    NYSE:BE       🟢10EMA回调   ⚪观望
    NASDAQ:CIBR   💡口袋支点      🟡警告:临近前高
@@ -70,7 +70,7 @@
             NASDAQ:SPCX🔴  AMEX:GDX🔴  NASDAQ:RIOT🔴 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 61% · 📣AMAT S1⌐→S2↑ · CRDO S1⌐→S2↑ · AXTI S1⌐→S3⌒
+  上升趋势占比 61%
   🟢合格·在买点区(22): NASDAQ:SMH NASDAQ:SNDK NASDAQ:QQQ NASDAQ:CRWD NYSE:ANET NASDAQ:MU NASDAQ:CIBR NASDAQ:RIOT NASDAQ:HUT SSE:601208(东材) SSE:688072(拓荆) SSE:688498(源杰) SSE:688519(南亚) NYSE:BE NASDAQ:HOOD SZSE:300502(新易盛) SZSE:002463(沪电) NASDAQ:MSFT NASDAQ:PLTR NASDAQ:LITE NASDAQ:NBIS NYSE:SNOW
   🟢合格·追高区勿追(2): NASDAQ:INTC NASDAQ:AMD
   🔴淘汰(11): NASDAQ:RKLB NASDAQ:AXTI NASDAQ:IREN SZSE:300476(胜宏) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:APLD SZSE:300394(天孚) SZSE:002837(英维克) NYSE:LLY AMEX:GDX
