@@ -1,0 +1,147 @@
+{
+ "day": "2026-09-21",
+ "picks": [
+  {
+   "market": "MACRO",
+   "b": "XAUUSD",
+   "nm": "黄金现货",
+   "dir": 1,
+   "px": 4403.6,
+   "chg1": -0.48,
+   "score": 3.3,
+   "book": "0920 Macro 0014 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "TOPIX1!",
+   "nm": "东证指数期货（TOPIX F",
+   "dir": 1,
+   "px": 65018.95,
+   "chg1": 1.44,
+   "score": 3.3,
+   "book": "0920 Macro 0014 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "IC1!",
+   "nm": "中证500股指期货（中国金融",
+   "dir": 1,
+   "px": 7799.61,
+   "chg1": 1.89,
+   "score": 3.3,
+   "book": "0920 Macro 0014 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "USOIL",
+   "nm": "Crude Oil Oct ",
+   "dir": -1,
+   "px": 95.77,
+   "chg1": -0.32,
+   "score": 3.0,
+   "book": "0920 Macro 0014 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "3067",
+   "nm": "安硕恒生科技",
+   "dir": 1,
+   "px": 9.31,
+   "chg1": 2.31,
+   "score": 3.0,
+   "book": "0920 Macro 0014 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "FESB1!",
+   "nm": "欧洲银行股期货(Eurex)",
+   "dir": -1,
+   "px": 635.45,
+   "chg1": -1.16,
+   "score": 3.3,
+   "book": "0920 Macro 0014 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "BTCUSDT",
+   "nm": "Bitcoin USD",
+   "dir": 1,
+   "px": 81816.0,
+   "chg1": 0.84,
+   "score": 3.3,
+   "book": "0920 Macro 0014 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "TWN1!",
+   "nm": "台湾指数期货(SGX)",
+   "dir": 1,
+   "px": 47368.04,
+   "chg1": 2.28,
+   "score": 3.3,
+   "book": "0920 Macro 0014 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "K2I1!",
+   "nm": "韩国KOSPI200指数期货",
+   "dir": 1,
+   "px": 6956.54,
+   "chg1": 1.19,
+   "score": 3.3,
+   "book": "0920 Macro 0014 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "IAI",
+   "nm": "iShares U.S. B",
+   "dir": 1,
+   "px": 184.8,
+   "chg1": 0.98,
+   "score": 2.3,
+   "book": "0920 Macro 0014 bjt",
+   "page": 22
+  },
+  {
+   "market": "MACRO",
+   "b": "IGV",
+   "nm": "软件科技ETF",
+   "dir": -1,
+   "px": 104.35,
+   "chg1": -1.2,
+   "score": 2.0,
+   "book": "0920 Macro 0014 bjt",
+   "page": 44
+  },
+  {
+   "market": "MACRO",
+   "b": "ETHUSDT",
+   "nm": "Ethereum USD",
+   "dir": 1,
+   "px": 2695.27,
+   "chg1": 2.42,
+   "score": 2.3,
+   "book": "0920 Macro 0014 bjt",
+   "page": 53
+  }
+ ],
+ "n_cand": 25,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/0920 NY 收盘0755_宏观",
+   "stem": "0920 Macro 0014 bjt",
+   "stamp": "2026-09-21 00:14",
+   "market": "MACRO",
+   "n": 54
+  }
+ ]
+}
