@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-21 收盘(ET)
-  生成 09-22 03:58 纽约 = 09-22 15:58 新加坡
+  生成 09-22 04:44 纽约 = 09-22 16:44 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -73,17 +73,16 @@
   日内异动: NASDAQ:AAOI🟢  NASDAQ:MSFT🟢  NYSE:GEV🔴  NASDAQ:SNDK🔴 
             NYSE:CAT🟢  NASDAQ:CRWD🟡  NYSE:ANET🟡  AMEX:GDX🔴 
             NASDAQ:RIOT🔴 
-  盘前±2%: NASDAQ:RKLB+2.8% NASDAQ:AAOI+2.5%
+  盘前±2%: NASDAQ:AXTI-3.1% NASDAQ:CRDO-2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 61% · 📣兆易 S3⌒→S1⌐
+  上升趋势占比 61%
   🟢合格·在买点区(22): NASDAQ:SMH NASDAQ:SNDK NASDAQ:QQQ NASDAQ:CRWD NYSE:ANET NASDAQ:MU NASDAQ:CIBR NASDAQ:RIOT NASDAQ:HUT SSE:601208(东材) SSE:688072(拓荆) NYSE:BE NASDAQ:HOOD SSE:688519(南亚) NASDAQ:MSFT NASDAQ:PLTR SZSE:300502(新易盛) SZSE:002463(沪电) NASDAQ:LITE NASDAQ:NBIS NYSE:SNOW SSE:688498(源杰)
   🟢合格·追高区勿追(2): NASDAQ:INTC NASDAQ:AMD
   🔴淘汰(13): NASDAQ:RKLB NASDAQ:AXTI NASDAQ:IREN SZSE:300476(胜宏) SZSE:300499(高澜) NASDAQ:APLD SZSE:300990(同飞) SZSE:300394(天孚) SSE:600183(生益) SZSE:301018(申菱) NYSE:LLY SZSE:002837(英维克) AMEX:GDX
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: MUC$288M SNDK≈$284M AMDC$275M(v/oi20.0) QQQC$234M(v/oi99.0) INTCC$107M(v/oi99.0)
-  T+1核对: BEC267.5(09-25)✗未增 BEC270(09-25)✗未增 BEC272.5(09-25)✗未增 BEC277.5(09-25)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
