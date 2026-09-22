@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-22 收盘(ET)
-  生成 09-22 16:33 纽约 = 09-23 04:33 新加坡
+  生成 09-22 17:38 纽约 = 09-23 05:38 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -67,21 +67,21 @@
             NASDAQ:CIFR🟡 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 61% · 📣CIFR S1⌐→S3⌒
+  上升趋势占比 61%
   🟢合格·在买点区(20): NASDAQ:INTC NASDAQ:SMH NASDAQ:CRWD NYSE:ANET NASDAQ:AMD NASDAQ:CIBR NASDAQ:RIOT NASDAQ:HUT SSE:601208(东材) SSE:688072(拓荆) NYSE:BE NASDAQ:HOOD NASDAQ:PLTR SSE:688519(南亚) SZSE:300502(新易盛) SZSE:002463(沪电) NASDAQ:NBIS NASDAQ:LITE NASDAQ:MSFT SSE:688498(源杰)
   🟢合格·追高区勿追(2): NASDAQ:SNDK NASDAQ:MU
   🔴淘汰(14): NASDAQ:RKLB NASDAQ:AXTI NASDAQ:IREN NASDAQ:CIFR NASDAQ:APLD SZSE:300476(胜宏) SZSE:300499(高澜) SZSE:300990(同飞) SZSE:300394(天孚) SSE:600183(生益) SZSE:301018(申菱) NYSE:LLY AMEX:GDX SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUC$854M(v/oi80.3) SNDKC$653M(v/oi23.7) QQQC$570M(v/oi99.0) AMDC$168M(v/oi40.5) SPCXC$59M(v/oi6.6)
+  今日: MUC$854M(v/oi80.3) SNDKC$653M(v/oi23.7) QQQC$571M(v/oi99.0) AMDC$168M(v/oi40.5) SPCXC$59M(v/oi6.6)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】50只(强50)·⚠️旧快照
-  今日强信号: NASDAQ:CRWV🔗 NYSE:UAMY NYSE:ERO NASDAQ:ADEA NASDAQ:FESB1! AMEX:UUUU NASDAQ:NVTS NASDAQ:ROST
-  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:CRWV NASDAQ:CORZ NASDAQ:AVGO NASDAQ:CEG NASDAQ:IREN NYSE:TSM NYSE:NEM AMEX:GDX
-  池外强信号(仅提示, 不入信号链): NASDAQ:CRWV NYSE:UAMY NYSE:ERO NASDAQ:ADEA NASDAQ:FESB1! AMEX:UUUU
+【波哥七维·外部体系】48只(强34)·⚠️旧快照
+  今日强信号: NYSE:NEM🔗 NYSE:ALB NASDAQ:KALU NYSE:MP NYSE:CCJ NASDAQ:KLIC NASDAQ:CRWV🔗 NYSE:UAMY
+  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:NEM NASDAQ:CRWV NASDAQ:CORZ NASDAQ:AVGO NASDAQ:CEG NASDAQ:IREN NYSE:TSM NASDAQ:HOOD
+  池外强信号(仅提示, 不入信号链): NYSE:NEM NYSE:ALB NASDAQ:KALU NYSE:MP NYSE:CCJ NASDAQ:KLIC
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
