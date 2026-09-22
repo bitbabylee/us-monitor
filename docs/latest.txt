@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-21 收盘(ET)
-  生成 09-22 06:06 纽约 = 09-22 18:06 新加坡
+  生成 09-22 10:12 纽约 = 09-22 22:12 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -9,19 +9,19 @@
 ------------------------------------------------
 【候选】14 只（形态+板块确认+无财报风险·未回测）
   NYSE:BE       10EMA回调   日内:⚪观望
-  NASDAQ:NBIS   EMA金叉     日内:🔴锁定利润
-  NASDAQ:INTC   口袋支点      日内:🟢强动能买点
-  NASDAQ:AMAT   口袋支点      日内:🔴锁定利润
-  NASDAQ:SMH    口袋支点      日内:🔴锁定利润
+  NASDAQ:NBIS   EMA金叉     日内:⚪观望
+  NASDAQ:INTC   口袋支点      日内:🟡弱突破预警
+  NASDAQ:AMAT   口袋支点      日内:⚪观望
+  NASDAQ:SMH    口袋支点      日内:🟢突破买点
   NASDAQ:QQQ    口袋支点      日内:🟢突破买点
-  NYSE:NET      箱体突破      日内:🟢强动能买点
-  NASDAQ:CRDO   口袋支点      日内:🟢强动能买点
-  NASDAQ:AMD    口袋支点      日内:🟢强动能买点
-  NASDAQ:AXTI   口袋支点      日内:🟢突破买点
-  NASDAQ:PLTR   10EMA回调   日内:🟢突破买点
-  NASDAQ:CIBR   口袋支点      日内:🟡警告:临近前高
-  NYSE:SNOW     10EMA回调   日内:🟢突破买点
-  NASDAQ:CIFR   箱体突破      日内:🟢黄金买点
+  NYSE:NET      箱体突破      日内:🟢稳健买点
+  NASDAQ:CRDO   口袋支点      日内:🟢突破买点
+  NASDAQ:AMD    口袋支点      日内:🟢突破买点
+  NASDAQ:AXTI   口袋支点      日内:⚪观望
+  NASDAQ:PLTR   10EMA回调   日内:⚪观望
+  NASDAQ:CIBR   口袋支点      日内:⚪观望
+  NYSE:SNOW     10EMA回调   日内:⚪观望
+  NASDAQ:CIFR   箱体突破      日内:⚪观望
 【否决】
   NYSE:LLY      板块背离
   NASDAQ:SPCX   板块背离
@@ -39,8 +39,8 @@
   宏观 ✅ATR1420% ✗10Y4.96% ✗HYG/LQD0.7487 ✅USD/JPY157.05
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:ARKG 基因组  AMEX:HACK 网络安全  AMEX:MAGS 七巨头  AMEX:BITQ 加密公司  AMEX:CRAK 炼化下游
-  短线改善: AMEX:ARKX 太空  AMEX:IPO 新股  NASDAQ:BOTZ 机器人  AMEX:SLV 白银  AMEX:JETS 航空
+  涨幅优先: AMEX:ARKG 基因组  AMEX:BITQ 加密公司  AMEX:MAGS 七巨头  AMEX:BLOK 区块链  NASDAQ:AIQ AI主题
+  短线改善: AMEX:PRNT 3D打印  AMEX:JETS 航空  NASDAQ:BOTZ 机器人  AMEX:XBI 生物科技  AMEX:ARKX 太空
 ------------------------------------------------
 【板块】
   强: NASDAQ:SOXX+3.4% · AMEX:XLC+2.3% · AMEX:XLK+1.3%
@@ -52,28 +52,27 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:INTC   💡口袋支点      🟢强动能买点
+   NASDAQ:SMH    💡口袋支点      🟢突破买点
    NASDAQ:QQQ    💡口袋支点      🟢突破买点
-   NYSE:NET      📦箱体突破      🟢强动能买点
-   NASDAQ:CRDO   💡口袋支点      🟢强动能买点
-   NASDAQ:AMD    💡口袋支点      🟢强动能买点
-   NASDAQ:AXTI   💡口袋支点      🟢突破买点
-   NASDAQ:PLTR   🟢10EMA回调   🟢突破买点
-   NYSE:SNOW     🟢10EMA回调   🟢突破买点
-   NASDAQ:CIFR   📦箱体突破      🟢黄金买点
+   NYSE:NET      📦箱体突破      🟢稳健买点
+   NASDAQ:CRDO   💡口袋支点      🟢突破买点
+   NASDAQ:AMD    💡口袋支点      🟢突破买点
+   NASDAQ:SPCX   🟢10EMA回调   🟢稳健买点
  ▶ 等时机（日内未给买点）
    NYSE:BE       🟢10EMA回调   ⚪观望
+   NASDAQ:NBIS   🌊EMA金叉     ⚪观望
    NYSE:LLY      💡口袋支点      🟡警告:临近前高
-   NASDAQ:CIBR   💡口袋支点      🟡警告:临近前高
- ▶ 冲突（日线买点/日内破位）
-   NASDAQ:NBIS   🌊EMA金叉     🔴锁定利润
-   NASDAQ:AMAT   💡口袋支点      🔴锁定利润
-   NASDAQ:SMH    💡口袋支点      🔴锁定利润
-   NASDAQ:SPCX   🟢10EMA回调   🔴规避/止损
-  日内异动: NASDAQ:AAOI🟢  NASDAQ:MSFT🟢  NYSE:GEV🔴  NASDAQ:SNDK🔴 
-            NYSE:CAT🟢  NASDAQ:CRWD🟡  NYSE:ANET🟡  AMEX:GDX🔴 
-            NASDAQ:RIOT🔴 
-  盘前±2%: NASDAQ:RKLB+2.9%
+   NASDAQ:INTC   💡口袋支点      🟡弱突破预警
+   NASDAQ:AMAT   💡口袋支点      ⚪观望
+   NASDAQ:AXTI   💡口袋支点      ⚪观望
+   NASDAQ:PLTR   🟢10EMA回调   ⚪观望
+   NASDAQ:CIBR   💡口袋支点      ⚪观望
+   NYSE:SNOW     🟢10EMA回调   ⚪观望
+   NASDAQ:CIFR   📦箱体突破      ⚪观望
+  日内异动: NASDAQ:RKLB🟢  NYSE:GEV🟢  NYSE:CAT🟢  NASDAQ:CRWD🟢 
+            NASDAQ:MU🟢  NASDAQ:IREN🟢  NASDAQ:RIOT🟢  NASDAQ:HUT🟢 
+            NASDAQ:WULF🟡  NASDAQ:APLD🟢 
+  盘前±2%: NASDAQ:SNDK+6.9% NASDAQ:HUT+5.3% NASDAQ:NBIS+5.0% NASDAQ:RIOT+4.2% NASDAQ:AXTI-3.7% NASDAQ:CIFR+3.3% NASDAQ:IREN+3.3% NASDAQ:MU+3.2% NASDAQ:LITE+3.2% NASDAQ:CORZ+2.6% NASDAQ:APLD+2.4% NASDAQ:WULF+2.3%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 61%
@@ -82,7 +81,7 @@
   🔴淘汰(13): NASDAQ:RKLB NASDAQ:AXTI NASDAQ:IREN SZSE:300476(胜宏) SZSE:300499(高澜) NASDAQ:APLD SZSE:300990(同飞) SZSE:300394(天孚) SSE:600183(生益) SZSE:301018(申菱) NYSE:LLY SZSE:002837(英维克) AMEX:GDX
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUC$288M SNDK≈$284M AMDC$275M(v/oi20.0) QQQC$234M(v/oi99.0) INTCC$107M(v/oi99.0)
+  今日: SNDKC$323M(v/oi5.3) MUC$180M(v/oi10.7) QQQC$98M(v/oi53.0) AMDC$41M(v/oi13.8) SPCXC$29M(v/oi3.0)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
