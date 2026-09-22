@@ -1,68 +1,68 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-09-18 21:30 UTC",
-   "as_of": "2026-09-18",
+   "generated": "2026-09-21 21:30 UTC",
+   "as_of": "2026-09-21",
    "market_gate": {
-    "status": "red",
+    "status": "green",
     "symbol": "^IXIC",
-    "date": "2026-09-18",
-    "ma10": 26268.38,
-    "ma20": 26267.11
+    "date": "2026-09-21",
+    "ma10": 26329.89,
+    "ma20": 26314.19
    },
    "universe_n": 44,
    "data_n": 44,
    "signals": [
     {
-     "signal_id": "swing_us:ARKG:2026-09-18:swing_us:ARKG:2026-09-17:ma_bull_align:IDNR4",
+     "signal_id": "swing_us:DAPP:2026-09-21:swing_us:DAPP:2026-09-10:ma_bull_align:NR7",
      "profile": "swing_us",
-     "ticker": "ARKG",
-     "date": "2026-09-18",
-     "setup_id": "swing_us:ARKG:2026-09-17:ma_bull_align",
+     "ticker": "DAPP",
+     "date": "2026-09-21",
+     "setup_id": "swing_us:DAPP:2026-09-10:ma_bull_align",
      "setup_names": [
       "ma_bull_align"
      ],
-     "setup_date": "2026-09-17",
-     "setup_age_bars": 1,
+     "setup_date": "2026-09-10",
+     "setup_age_bars": 7,
      "triggers": [
-      "IDNR4"
+      "NR7"
      ],
      "plan": {
-      "entry_stop": 52.34,
-      "entry_limit": 52.6,
-      "stop": 50.88,
-      "risk": 1.46,
-      "stop_pct": 2.79,
-      "adr20": 3.37,
-      "stop_adr_ratio": 0.83,
+      "entry_stop": 21.85,
+      "entry_limit": 21.96,
+      "stop": 21.34,
+      "risk": 0.51,
+      "stop_pct": 2.33,
+      "adr20": 4.39,
+      "stop_adr_ratio": 0.53,
       "grade": "warn",
-      "target_1R": 53.8,
-      "target_2R": 55.26,
-      "position_pct": 8.95,
+      "target_1R": 22.36,
+      "target_2R": 22.87,
+      "position_pct": 10.71,
       "action": "half_size"
      },
      "risk_check": {
-      "entry_stop": 52.34,
-      "entry_limit": 52.6,
-      "stop": 50.88,
-      "risk": 1.46,
-      "stop_pct": 2.79,
-      "adr20": 3.37,
-      "stop_adr_ratio": 0.83,
+      "entry_stop": 21.85,
+      "entry_limit": 21.96,
+      "stop": 21.34,
+      "risk": 0.51,
+      "stop_pct": 2.33,
+      "adr20": 4.39,
+      "stop_adr_ratio": 0.53,
       "grade": "warn",
-      "target_1R": 53.8,
-      "target_2R": 55.26,
-      "position_pct": 8.95,
+      "target_1R": 22.36,
+      "target_2R": 22.87,
+      "position_pct": 10.71,
       "action": "half_size"
      },
      "market_gate": {
-      "status": "red",
+      "status": "green",
       "symbol": "^IXIC",
-      "date": "2026-09-18",
-      "ma10": 26268.38,
-      "ma20": 26267.11
+      "date": "2026-09-21",
+      "ma10": 26329.89,
+      "ma20": 26314.19
      },
-     "environment": "环境逆风",
+     "environment": "环境正常",
      "outcomes": {}
     }
    ]
@@ -82,5 +82,5 @@
    "signals": []
   }
  },
- "updated": "2026-09-21 08:00 UTC"
+ "updated": "2026-09-21 21:30 UTC"
 }
