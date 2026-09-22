@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-21 收盘(ET)
-  生成 09-21 19:26 纽约 = 09-22 07:26 新加坡
+  生成 09-21 23:22 纽约 = 09-22 11:22 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -22,6 +22,9 @@
   NASDAQ:CIBR   口袋支点      日内:🟡警告:临近前高
   NYSE:SNOW     10EMA回调   日内:🟢突破买点
   NASDAQ:CIFR   箱体突破      日内:🟢黄金买点
+【否决】
+  NYSE:LLY      板块背离
+  NASDAQ:SPCX   板块背离
 【风险】无近端风险事件
 ------------------------------------------------
 
@@ -30,17 +33,17 @@
 【大盘】
   SPX 7765 (MA50+1.9%) · RSI 56 · VIX 14.9
   风格: MTUM/MAGS 4.33 跌破20日均 → 抱团MAGS
-  日性质(因子ETF超额·非纯因子): 动量+0.6 高贝+1.2 低波-0.9 价值-0.5 → 风偏进攻日
+  日性质(因子ETF超额·非纯因子): 动量+0.6 高贝+1.3 低波-0.9 价值-0.5 → 风偏进攻日
   派发 ▂▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇▇▃ (2/吸2) → 仓位20%
   阶段C1 资金共识 恐慌4/4 共识5/5
-  宏观 ✅ATR1420% ✗10Y4.96% ✗HYG/LQD0.7487 ✅USD/JPY157.36
+  宏观 ✅ATR1420% ✗10Y4.96% ✗HYG/LQD0.7487 ✅USD/JPY157.49
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ARKG 基因组  AMEX:HACK 网络安全  AMEX:MAGS 七巨头  AMEX:BITQ 加密公司  AMEX:CRAK 炼化下游
   短线改善: AMEX:ARKX 太空  AMEX:IPO 新股  NASDAQ:BOTZ 机器人  AMEX:SLV 白银  AMEX:JETS 航空
 ------------------------------------------------
 【板块】
-  强: NASDAQ:SOXX+3.4% · AMEX:XLC+2.0% · AMEX:XLK+1.2%
+  强: NASDAQ:SOXX+3.4% · AMEX:XLC+2.3% · AMEX:XLK+1.3%
   主题🔥 🔥 AI算力 +3.6%  龙头 NASDAQ:INTC
   主题🔥 ☁ 云计算  +3.5%  龙头 NASDAQ:DDOG
   主题🔥 🛡 网络安全 +3.4%  龙头 NYSE:NET
@@ -60,32 +63,34 @@
    NASDAQ:CIFR   📦箱体突破      🟢黄金买点
  ▶ 等时机（日内未给买点）
    NYSE:BE       🟢10EMA回调   ⚪观望
+   NYSE:LLY      💡口袋支点      🟡警告:临近前高
    NASDAQ:CIBR   💡口袋支点      🟡警告:临近前高
  ▶ 冲突（日线买点/日内破位）
    NASDAQ:NBIS   🌊EMA金叉     🔴锁定利润
    NASDAQ:AMAT   💡口袋支点      🔴锁定利润
    NASDAQ:SMH    💡口袋支点      🔴锁定利润
-  日内异动: NASDAQ:AAOI🟢  NASDAQ:MSFT🟢  NYSE:LLY🟡  NYSE:GEV🔴 
-            NASDAQ:SNDK🔴  NYSE:CAT🟢  NASDAQ:CRWD🟡  NYSE:ANET🟡 
-            NASDAQ:SPCX🔴  AMEX:GDX🔴  NASDAQ:RIOT🔴 
-  盘前±2%: NASDAQ:AAOI+2.6%
+   NASDAQ:SPCX   🟢10EMA回调   🔴规避/止损
+  日内异动: NASDAQ:AAOI🟢  NASDAQ:MSFT🟢  NYSE:GEV🔴  NASDAQ:SNDK🔴 
+            NYSE:CAT🟢  NASDAQ:CRWD🟡  NYSE:ANET🟡  AMEX:GDX🔴 
+            NASDAQ:RIOT🔴 
+  盘前±2%: NASDAQ:RKLB+2.8% NASDAQ:AAOI+2.5%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 61%
-  🟢合格·在买点区(22): NASDAQ:SMH NASDAQ:SNDK NASDAQ:QQQ NASDAQ:CRWD NYSE:ANET NASDAQ:MU NASDAQ:CIBR NASDAQ:RIOT NASDAQ:HUT SSE:601208(东材) SSE:688072(拓荆) SSE:688498(源杰) SSE:688519(南亚) NYSE:BE NASDAQ:HOOD SZSE:300502(新易盛) SZSE:002463(沪电) NASDAQ:MSFT NASDAQ:PLTR NASDAQ:LITE NASDAQ:NBIS NYSE:SNOW
+  上升趋势占比 61% · 📣兆易 S1⌐→S3⌒
+  🟢合格·在买点区(23): NASDAQ:SMH NASDAQ:SNDK NASDAQ:QQQ NASDAQ:CRWD NYSE:ANET NASDAQ:MU NASDAQ:CIBR NASDAQ:RIOT NASDAQ:HUT SSE:601208(东材) SSE:688072(拓荆) NYSE:BE NASDAQ:HOOD SSE:688519(南亚) SZSE:300502(新易盛) NASDAQ:MSFT NASDAQ:PLTR SZSE:002463(沪电) NASDAQ:LITE NASDAQ:NBIS NYSE:SNOW SZSE:300308(旭创) SSE:688498(源杰)
   🟢合格·追高区勿追(2): NASDAQ:INTC NASDAQ:AMD
-  🔴淘汰(11): NASDAQ:RKLB NASDAQ:AXTI NASDAQ:IREN SZSE:300476(胜宏) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:APLD SZSE:300394(天孚) SZSE:002837(英维克) NYSE:LLY AMEX:GDX
+  🔴淘汰(12): NASDAQ:RKLB NASDAQ:AXTI NASDAQ:IREN SZSE:300476(胜宏) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:APLD SSE:603986(兆易) SZSE:300394(天孚) SZSE:002837(英维克) NYSE:LLY AMEX:GDX
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQC$881M(v/oi99.0) SNDK≈$285M(v/oi13.9) AMDC$240M(v/oi99.0) MUC$188M(v/oi99.0) MSFTC$130M(v/oi74.2)
+  今日: MUC$290M(v/oi79.1) SNDK≈$285M(v/oi13.9) AMDC$277M(v/oi34.3) QQQC$236M(v/oi99.0) INTCC$107M(v/oi99.0)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】50只(强46)·⚠️旧快照
-  今日强信号: NYSE:CRCL NASDAQ:IREN🔗 NYSE:TRGP NASDAQ:POET NYSE:HBM AMEX:EWT NYSE:STM NASDAQ:IF1!
-  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:IREN NYSE:TSM NYSE:NEM AMEX:GDX NYSE:AEM NASDAQ:HOOD NASDAQ:NVDA NASDAQ:INTC
-  池外强信号(仅提示, 不入信号链): NYSE:CRCL NYSE:TRGP NASDAQ:POET NYSE:HBM AMEX:EWT NYSE:STM
+【波哥七维·外部体系】50只(强50)·⚠️旧快照
+  今日强信号: NASDAQ:CRWV🔗 NYSE:UAMY NYSE:ERO NASDAQ:ADEA NASDAQ:FESB1! AMEX:UUUU NASDAQ:NVTS NASDAQ:ROST
+  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:CRWV NASDAQ:CORZ NASDAQ:AVGO NASDAQ:CEG NASDAQ:IREN NYSE:TSM NYSE:NEM AMEX:GDX
+  池外强信号(仅提示, 不入信号链): NASDAQ:CRWV NYSE:UAMY NYSE:ERO NASDAQ:ADEA NASDAQ:FESB1! AMEX:UUUU
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
