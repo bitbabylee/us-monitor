@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-23 收盘(ET)
-  生成 09-23 16:33 纽约 = 09-24 04:33 新加坡
+  生成 09-23 17:25 纽约 = 09-24 05:25 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -30,7 +30,7 @@
   日性质(因子ETF超额·非纯因子): 动量+0.9 高贝+0.8 低波+0.3 价值+0.3 → 风偏进攻日
   派发 ▃▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇▇▃▄ (3/吸2) → 仓位40%
   阶段C1 资金共识 恐慌3/4 共识4/5 缺:近三日突破20日线伴随放
-  宏观 ✅ATR1420% ✗10Y5.11% ✅HYG/LQD0.7518 ✅USD/JPY158.34
+  宏观 ✅ATR1420% ✗10Y5.11% ✅HYG/LQD0.7518 ✅USD/JPY158.30
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ARKG 基因组  AMEX:HACK 网络安全  AMEX:BITQ 加密公司  AMEX:XLK 科技板块 (Technology)  AMEX:MAGS 七巨头
@@ -60,7 +60,7 @@
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 61% · 📣高澜 S3⌒→S1⌐
+  上升趋势占比 61%
   🟢合格·在买点区(19): NASDAQ:INTC NASDAQ:SMH NASDAQ:SNDK NYSE:ANET NASDAQ:AMD NASDAQ:MU NASDAQ:PLTR NASDAQ:CIBR NASDAQ:RIOT NASDAQ:HUT SSE:601208(东材) SSE:688072(拓荆) SZSE:002463(沪电) NYSE:BE NASDAQ:HOOD SZSE:300502(新易盛) NASDAQ:MSFT NASDAQ:LITE SSE:688498(源杰)
   🟢合格·追高区勿追(1): NASDAQ:CRWD
   🔴淘汰(14): NASDAQ:RKLB NASDAQ:AXTI NASDAQ:IREN SZSE:300476(胜宏) SZSE:300990(同飞) NASDAQ:APLD SZSE:300394(天孚) SSE:601138(富联) SSE:600183(生益) NYSE:SNOW SZSE:301018(申菱) NYSE:LLY SZSE:002837(英维克) AMEX:GDX
@@ -71,10 +71,10 @@
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】48只(强34)·⚠️旧快照
-  今日强信号: NYSE:NEM🔗 NYSE:ALB NASDAQ:KALU NYSE:MP NYSE:CCJ NASDAQ:KLIC NASDAQ:CRWV🔗 NYSE:UAMY
-  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:NEM NASDAQ:CRWV NASDAQ:CORZ NASDAQ:AVGO NASDAQ:CEG NASDAQ:IREN NYSE:TSM NASDAQ:HOOD
-  池外强信号(仅提示, 不入信号链): NYSE:NEM NYSE:ALB NASDAQ:KALU NYSE:MP NYSE:CCJ NASDAQ:KLIC
+【波哥七维·外部体系】39只(强27)·⚠️旧快照
+  今日强信号: AMEX:XLE NYSE:DOW NYSE:NEM🔗 NYSE:ALB NASDAQ:KALU NYSE:MP NYSE:CCJ NASDAQ:KLIC
+  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:NEM NASDAQ:CRWV NASDAQ:CORZ NASDAQ:AVGO NASDAQ:CEG NYSE:CAT
+  池外强信号(仅提示, 不入信号链): AMEX:XLE NYSE:DOW NYSE:NEM NYSE:ALB NASDAQ:KALU NYSE:MP
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
