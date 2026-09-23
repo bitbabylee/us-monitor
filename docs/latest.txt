@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-21 收盘(ET)
-  生成 09-23 04:36 纽约 = 09-23 16:36 新加坡
+  生成 09-23 06:06 纽约 = 09-23 18:06 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -77,7 +77,7 @@
             NYSE:GEV🟡  NASDAQ:SNDK🔴  NYSE:CAT🟢  NASDAQ:CRWD🟡 
             NYSE:ANET🟢  NASDAQ:MU🟢  AMEX:GDX🔴  NASDAQ:IREN🟢 
             NASDAQ:RIOT🟢 
-  盘前±2%: NASDAQ:SNDK+6.5% NASDAQ:RKLB+5.3% NASDAQ:MU+4.8% NASDAQ:HUT+4.2% NASDAQ:CORZ+3.5% NASDAQ:RIOT+3.4% NASDAQ:IREN+2.9% NYSE:BE+2.9% NASDAQ:AXTI-2.9% NASDAQ:APLD+2.3% NASDAQ:CRDO+2.2% NASDAQ:NBIS+2.1%
+  盘前±2%: NASDAQ:SNDK+6.5% NASDAQ:RKLB+5.1% NASDAQ:MU+4.7% NASDAQ:HUT+3.6% NASDAQ:RIOT+3.4% NASDAQ:CORZ+3.1% NYSE:BE+3.0% NASDAQ:AXTI-2.8% NASDAQ:IREN+2.7% NASDAQ:APLD+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 61%
