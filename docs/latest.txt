@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-21 收盘(ET)
-  生成 09-23 03:52 纽约 = 09-23 15:52 新加坡
+  生成 09-23 04:36 纽约 = 09-23 16:36 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -77,17 +77,16 @@
             NYSE:GEV🟡  NASDAQ:SNDK🔴  NYSE:CAT🟢  NASDAQ:CRWD🟡 
             NYSE:ANET🟢  NASDAQ:MU🟢  AMEX:GDX🔴  NASDAQ:IREN🟢 
             NASDAQ:RIOT🟢 
-  盘前±2%: NASDAQ:SNDK+7.5% NASDAQ:MU+5.1% AMEX:GDX+3.5% NASDAQ:RIOT+3.4% NASDAQ:HUT+3.3% NASDAQ:RKLB+3.0% NASDAQ:CRDO+2.9% NASDAQ:IREN+2.5% NASDAQ:CORZ+2.0% NASDAQ:INTC+2.0%
+  盘前±2%: NASDAQ:SNDK+6.5% NASDAQ:RKLB+5.3% NASDAQ:MU+4.8% NASDAQ:HUT+4.2% NASDAQ:CORZ+3.5% NASDAQ:RIOT+3.4% NASDAQ:IREN+2.9% NYSE:BE+2.9% NASDAQ:AXTI-2.9% NASDAQ:APLD+2.3% NASDAQ:CRDO+2.2% NASDAQ:NBIS+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 61% · 📣高澜 S3⌒→S1⌐
+  上升趋势占比 61%
   🟢合格·在买点区(21): NASDAQ:SMH NASDAQ:SNDK NASDAQ:QQQ NASDAQ:CRWD NYSE:ANET NASDAQ:MU NASDAQ:CIBR NASDAQ:RIOT NASDAQ:HUT SSE:601208(东材) SSE:688072(拓荆) SZSE:002463(沪电) NYSE:BE NASDAQ:HOOD NASDAQ:MSFT NASDAQ:PLTR SZSE:300502(新易盛) NASDAQ:LITE NASDAQ:NBIS NYSE:SNOW SSE:688498(源杰)
   🟢合格·追高区勿追(2): NASDAQ:INTC NASDAQ:AMD
   🔴淘汰(13): NASDAQ:RKLB NASDAQ:AXTI NASDAQ:IREN SZSE:300476(胜宏) SZSE:300990(同飞) NASDAQ:APLD SZSE:300394(天孚) SSE:601138(富联) SSE:600183(生益) SZSE:301018(申菱) NYSE:LLY SZSE:002837(英维克) AMEX:GDX
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: MUC$855M SNDKC$645M AMDC$164M QQQC$144M SPCXC$59M
-  T+1核对: BEC277.5(09-25)✗未增 BEC285(09-25)✗未增 BEC287.5(09-25)✗未增 BEP242.5(09-25)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
