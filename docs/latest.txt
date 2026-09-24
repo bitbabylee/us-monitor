@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-23 收盘(ET)
-  生成 09-24 06:06 纽约 = 09-24 18:06 新加坡
+  生成 09-24 10:04 纽约 = 09-24 22:04 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,13 +8,13 @@
 【结论】仓位上限 40% · 阶段C1 · 宏观3/4 · 动量MTUM
 ------------------------------------------------
 【候选】7 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:NBIS   10EMA回调   日内:🔴规避/止损
+  NASDAQ:NBIS   10EMA回调   日内:🟢黄金买点
   NASDAQ:MSFT   10EMA回调   日内:⚪观望
-  NYSE:CAT      口袋支点      日内:🟢强动能买点
-  NYSE:ANET     10EMA回调   日内:🔴规避/止损
+  NYSE:CAT      口袋支点      日内:🟢稳健买点
+  NYSE:ANET     10EMA回调   日内:🔴锁定利润
   NASDAQ:PLTR   口袋支点      日内:⚪观望
-  NASDAQ:CIBR   口袋支点      日内:🟢突破买点
-  NYSE:SNOW     10EMA回调   日内:🔴规避/止损
+  NASDAQ:CIBR   口袋支点      日内:🟢稳健买点
+  NYSE:SNOW     10EMA回调   日内:⚪观望
 【否决】
   NASDAQ:LITE   板块背离
 【风险】无近端风险事件
@@ -34,7 +34,7 @@
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ARKG 基因组  AMEX:HACK 网络安全  AMEX:BITQ 加密公司  AMEX:XLK 科技板块 (Technology)  AMEX:MAGS 七巨头
-  短线改善: AMEX:PRNT 3D打印  AMEX:ARKQ 自动驾驶科技  AMEX:ARKX 太空  AMEX:IPO 新股  AMEX:ROBO 自动化
+  短线改善: AMEX:PRNT 3D打印  AMEX:ARKX 太空  AMEX:IPO 新股  AMEX:ROBO 自动化
 ------------------------------------------------
 【板块】
   强: AMEX:XLB+1.9% · AMEX:XLE+1.7% · AMEX:XLP+1.3%
@@ -43,22 +43,20 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NYSE:CAT      💡口袋支点      🟢强动能买点
-   NASDAQ:CIBR   💡口袋支点      🟢突破买点
+   NASDAQ:NBIS   🟢10EMA回调   🟢黄金买点
+   NYSE:CAT      💡口袋支点      🟢稳健买点
+   NASDAQ:CIBR   💡口袋支点      🟢稳健买点
  ▶ 等时机（日内未给买点）
    NASDAQ:LITE   🟢10EMA回调   ⚪观望
    NASDAQ:MSFT   🟢10EMA回调   ⚪观望
    NASDAQ:PLTR   💡口袋支点      ⚪观望
+   NYSE:SNOW     🟢10EMA回调   ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NASDAQ:NBIS   🟢10EMA回调   🔴规避/止损
-   NYSE:ANET     🟢10EMA回调   🔴规避/止损
-   NYSE:SNOW     🟢10EMA回调   🔴规避/止损
-  日内异动: NASDAQ:RKLB🔴  NASDAQ:AAOI🔴  NYSE:LLY🔴  NASDAQ:AMAT🟡 
-            NASDAQ:SMH🟢  NASDAQ:SNDK🔴  NASDAQ:QQQ🔴  NASDAQ:CRWD🟢 
-            NASDAQ:CRDO🟢  NASDAQ:HOOD🔴  NASDAQ:AMD🟢  NASDAQ:MU🔴 
-            NASDAQ:AXTI🔴  NASDAQ:SPCX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
-            NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AXTI-4.5% NASDAQ:CRDO-4.1% NASDAQ:INTC-3.4% NASDAQ:HUT-3.0% NYSE:BE-3.0% NASDAQ:IREN-2.9% NASDAQ:SNDK-2.8% NASDAQ:AMAT-2.7% NASDAQ:LITE-2.7% NASDAQ:AAOI-2.5% NASDAQ:MU-2.5% NASDAQ:CORZ-2.5% NASDAQ:AMD-2.4% NYSE:GEV-2.3% NASDAQ:RKLB-2.3% NASDAQ:CIFR-2.2% NASDAQ:HOOD-2.2% NASDAQ:SMH-2.2% NYSE:NET-2.1%
+   NYSE:ANET     🟢10EMA回调   🔴锁定利润
+  日内异动: NYSE:BE🔴  NASDAQ:AAOI🔴  NYSE:LLY🟢  NASDAQ:INTC🟡 
+            NASDAQ:AMAT🟡  NASDAQ:SMH🟢  NASDAQ:SNDK🟢  NASDAQ:QQQ🟢 
+            NYSE:NET🟡  NASDAQ:CRDO🔴  NASDAQ:AMD🟡  NASDAQ:AXTI🔴 
+  盘前±2%: NYSE:BE-6.4% NASDAQ:NBIS+5.3% NYSE:LLY+3.1% NASDAQ:IREN-2.5% NASDAQ:SNDK-2.4% NASDAQ:INTC+2.2% NASDAQ:MU-2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 58%
@@ -67,7 +65,7 @@
   🔴淘汰(16): NASDAQ:RKLB NASDAQ:AXTI NASDAQ:IREN SZSE:300476(胜宏) SZSE:300990(同飞) NASDAQ:APLD NYSE:SNOW SSE:688519(南亚) SZSE:300394(天孚) NYSE:LLY SSE:688627(精智达) SZSE:002463(沪电) SZSE:301018(申菱) AMEX:GDX SSE:600183(生益) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDK≈$207M MU≈$185M QQQ≈$181M PLTRC$97M AMD≈$65M
+  今日: SNDKC$89M(v/oi6.8) MUC$80M(v/oi2.3) QQQ≈$76M(v/oi54.7) AMDC$60M(v/oi5.4) NBISC$23M
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
