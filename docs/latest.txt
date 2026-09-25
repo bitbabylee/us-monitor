@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-24 收盘(ET)
-  生成 09-25 04:38 纽约 = 09-25 16:38 新加坡
+  生成 09-25 06:06 纽约 = 09-25 18:06 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -14,7 +14,7 @@
   NASDAQ:SMH    10EMA回调   日内:🟢突破买点
   NASDAQ:SNDK   10EMA回调   日内:⚪观望
   NASDAQ:HOOD   10EMA回调   日内:⚪观望
-  NASDAQ:AMD    口袋支点      日内:🟢突破买点
+  NASDAQ:AMD    口袋支点      日内:🟡跳空低开,买点降级
   NASDAQ:AXTI   10EMA回调   日内:🔴锁定利润
   NASDAQ:PLTR   口袋支点      日内:🟢稳健买点
   NYSE:SNOW     10EMA回调   日内:⚪观望
@@ -54,7 +54,6 @@
    NASDAQ:LITE   🟢10EMA回调   🟢稳健买点
    NASDAQ:MSFT   🟢10EMA回调   🟢突破买点
    NASDAQ:SMH    🟢10EMA回调   🟢突破买点
-   NASDAQ:AMD    💡口袋支点      🟢突破买点
    NASDAQ:PLTR   💡口袋支点      🟢稳健买点
  ▶ 等时机（日内未给买点）
    NYSE:LLY      💡口袋支点      🟡警告:临近前高
@@ -62,6 +61,7 @@
    NASDAQ:QQQ    🟢10EMA回调   🟡警告:临近前高
    NYSE:ANET     🟢10EMA回调   🟡警告:临近前高
    NASDAQ:HOOD   🟢10EMA回调   ⚪观望
+   NASDAQ:AMD    💡口袋支点      🟡跳空低开,买点降级
    NYSE:SNOW     🟢10EMA回调   ⚪观望
    NASDAQ:IREN   🟢10EMA回调   🟡跳空低开,买点降级
    NASDAQ:CIFR   🟢10EMA回调   ⚪观望
@@ -69,10 +69,10 @@
  ▶ 冲突（日线买点/日内破位）
    NASDAQ:RKLB   📦箱体突破      🔴锁定利润
    NASDAQ:AXTI   🟢10EMA回调   🔴锁定利润
-  日内异动: NYSE:BE🟡  NASDAQ:NBIS🟢  NASDAQ:INTC🟡  NASDAQ:AMAT🟡 
+  日内异动: NYSE:BE🟡  NASDAQ:NBIS🟢  NASDAQ:INTC🟢  NASDAQ:AMAT🟡 
             NYSE:GEV🟢  NYSE:CAT🟢  NASDAQ:CRDO🟡  NASDAQ:MU🟡 
             NASDAQ:SPCX🟢  NASDAQ:CORZ🟢  NASDAQ:RIOT🔴 
-  盘前±2%: NASDAQ:AXTI+3.7% NYSE:BE+2.5% NASDAQ:SNDK+2.5% NASDAQ:CRDO+2.5% NASDAQ:AAOI+2.3% NASDAQ:AMD+2.2% NASDAQ:INTC+2.0%
+  盘前±2%: NASDAQ:AXTI+3.6% NASDAQ:CRDO+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 58%
