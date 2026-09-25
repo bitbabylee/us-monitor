@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-25 收盘(ET)
-  生成 09-25 16:33 纽约 = 09-26 04:33 新加坡
+  生成 09-25 17:31 纽约 = 09-26 05:31 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -33,7 +33,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.2 高贝+0.6 低波-0.4 价值+0.0 → 中性日
   派发 ▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃ (2/吸1) → 仓位80%
   阶段C1 资金共识 恐慌3/4 共识4/5 缺:近三日突破20日线伴随放
-  宏观 ✅ATR1420% ✗10Y5.18% ✅HYG/LQD0.7544 ✅USD/JPY158.81
+  宏观 ✅ATR1420% ✗10Y5.18% ✅HYG/LQD0.7544 ✅USD/JPY157.18
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ARKG 基因组  AMEX:MAGS 七巨头  AMEX:XLK 科技板块 (Technology)  NASDAQ:SMH 半导体  NASDAQ:SOXX 半导体主题 (Semis)
@@ -67,7 +67,7 @@
             NASDAQ:WULF🔴  NASDAQ:APLD🔴 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 58% · 📣IREN S3⌒→S4↓
+  上升趋势占比 58%
   🟢合格·在买点区(19): NYSE:BE NASDAQ:MSFT NASDAQ:INTC NASDAQ:SMH NASDAQ:SNDK NASDAQ:CRWD NYSE:ANET NASDAQ:AMD NASDAQ:MU NASDAQ:PLTR NASDAQ:CIBR NASDAQ:RIOT SSE:601208(东材) SSE:688072(拓荆) NASDAQ:NBIS NASDAQ:HUT NASDAQ:HOOD NASDAQ:LITE SSE:688498(源杰)
   🟢合格·追高区勿追(0): 无
   🔴淘汰(14): NASDAQ:RKLB NASDAQ:AXTI SZSE:300476(胜宏) SZSE:300990(同飞) NASDAQ:APLD NASDAQ:IREN SSE:688519(南亚) SZSE:300394(天孚) SSE:688627(精智达) SZSE:002463(沪电) SZSE:301018(申菱) AMEX:GDX SSE:600183(生益) SZSE:002837(英维克)
@@ -78,10 +78,10 @@
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】25只(强11)·⚠️旧快照
-  今日强信号: NYSE:PL AMEX:XLE NYSE:OXY NASDAQ:GOOG NYSE:DOW NYSE:NEM🔗 NYSE:ALB NASDAQ:KALU
-  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:NEM NYSE:BE
-  池外强信号(仅提示, 不入信号链): NYSE:PL AMEX:XLE NYSE:OXY NASDAQ:GOOG NYSE:DOW NYSE:NEM
+【波哥七维·外部体系】34只(强14)·⚠️旧快照
+  今日强信号: NYSE:DELL NASDAQ:ALM NASDAQ:ADEA NASDAQ:FESB1! NYSE:CAT🔗 NYSE:SOC AMEX:EWT NASDAQ:GFS
+  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:CAT NASDAQ:SMH NYSE:BE
+  池外强信号(仅提示, 不入信号链): NYSE:DELL NASDAQ:ALM NASDAQ:ADEA NASDAQ:FESB1! NYSE:SOC AMEX:EWT
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
