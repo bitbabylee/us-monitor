@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-24 收盘(ET)
-  生成 09-24 23:23 纽约 = 09-25 11:23 新加坡
+  生成 09-25 03:53 纽约 = 09-25 15:53 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -14,7 +14,7 @@
   NASDAQ:SMH    10EMA回调   日内:🟢突破买点
   NASDAQ:SNDK   10EMA回调   日内:⚪观望
   NASDAQ:HOOD   10EMA回调   日内:⚪观望
-  NASDAQ:AMD    口袋支点      日内:🟡跳空低开,买点降级
+  NASDAQ:AMD    口袋支点      日内:🟢突破买点
   NASDAQ:AXTI   10EMA回调   日内:🔴锁定利润
   NASDAQ:PLTR   口袋支点      日内:🟢稳健买点
   NYSE:SNOW     10EMA回调   日内:⚪观望
@@ -38,7 +38,7 @@
   日性质(因子ETF超额·非纯因子): 动量+0.2 高贝-0.1 低波-0.3 价值-0.2 → 中性日
   派发 ▃▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇▇▃▅▄ (3/吸2) → 仓位20%
   阶段P1 恐慌已释放 恐慌3/4 共识3/5 缺:ratio站上20日均值
-  宏观 ✅ATR1420% ✗10Y5.16% ✅HYG/LQD0.7551 ✅USD/JPY158.26
+  宏观 ✅ATR1419% ✗10Y5.16% ✅HYG/LQD0.7551 ✅USD/JPY158.26
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ARKG 基因组  AMEX:BITQ 加密公司  AMEX:HACK 网络安全  AMEX:XLK 科技板块 (Technology)  AMEX:MAGS 七巨头
@@ -54,6 +54,7 @@
    NASDAQ:LITE   🟢10EMA回调   🟢稳健买点
    NASDAQ:MSFT   🟢10EMA回调   🟢突破买点
    NASDAQ:SMH    🟢10EMA回调   🟢突破买点
+   NASDAQ:AMD    💡口袋支点      🟢突破买点
    NASDAQ:PLTR   💡口袋支点      🟢稳健买点
  ▶ 等时机（日内未给买点）
    NYSE:LLY      💡口袋支点      🟡警告:临近前高
@@ -61,7 +62,6 @@
    NASDAQ:QQQ    🟢10EMA回调   🟡警告:临近前高
    NYSE:ANET     🟢10EMA回调   🟡警告:临近前高
    NASDAQ:HOOD   🟢10EMA回调   ⚪观望
-   NASDAQ:AMD    💡口袋支点      🟡跳空低开,买点降级
    NYSE:SNOW     🟢10EMA回调   ⚪观望
    NASDAQ:IREN   🟢10EMA回调   🟡跳空低开,买点降级
    NASDAQ:CIFR   🟢10EMA回调   ⚪观望
@@ -69,7 +69,7 @@
  ▶ 冲突（日线买点/日内破位）
    NASDAQ:RKLB   📦箱体突破      🔴锁定利润
    NASDAQ:AXTI   🟢10EMA回调   🔴锁定利润
-  日内异动: NYSE:BE🟡  NASDAQ:NBIS🟢  NASDAQ:INTC🟢  NASDAQ:AMAT🟡 
+  日内异动: NYSE:BE🟡  NASDAQ:NBIS🟢  NASDAQ:INTC🟡  NASDAQ:AMAT🟡 
             NYSE:GEV🟢  NYSE:CAT🟢  NASDAQ:CRDO🟡  NASDAQ:MU🟡 
             NASDAQ:SPCX🟢  NASDAQ:CORZ🟢  NASDAQ:RIOT🔴 
 ------------------------------------------------
@@ -80,7 +80,8 @@
   🔴淘汰(15): NASDAQ:RKLB NASDAQ:AXTI SZSE:300476(胜宏) SZSE:300990(同飞) NASDAQ:IREN NASDAQ:APLD SSE:688519(南亚) SZSE:300394(天孚) NYSE:SNOW SSE:688627(精智达) SZSE:002463(沪电) SZSE:301018(申菱) SSE:600183(生益) AMEX:GDX SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUC$500M(v/oi34.4) AMDC$294M(v/oi32.7) SNDK≈$292M(v/oi23.5) QQQ≈$245M(v/oi42.7) INTCC$111M(v/oi46.1)
+  今日: MUC$511M SNDK≈$294M AMDC$293M QQQ≈$248M INTCC$111M
+  T+1核对: BEC250(09-25)✗未增 BEC255(09-25)✗未增 BEC257.5(09-25)✗未增 BEC260(09-25)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
