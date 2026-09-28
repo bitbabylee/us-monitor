@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-25 收盘(ET)
-  生成 09-28 06:07 纽约 = 09-28 18:07 新加坡
+  生成 09-28 10:03 纽约 = 09-28 22:03 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,13 +8,13 @@
 【结论】仓位上限 80% · 阶段C1 · 宏观3/4 · 动量MTUM
 ------------------------------------------------
 【候选】8 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:LITE   10EMA回调   日内:🟢突破买点
-  NASDAQ:MSFT   箱体突破      日内:🟢黄金买点
+  NASDAQ:LITE   10EMA回调   日内:🔴规避/止损
+  NASDAQ:MSFT   箱体突破      日内:⚪观望
   NASDAQ:SNDK   10EMA回调   日内:⚪观望
-  NASDAQ:QQQ    10EMA回调   日内:🟢稳健买点
-  NASDAQ:CRDO   口袋支点      日内:🔴锁定利润
-  NASDAQ:HOOD   10EMA回调   日内:🟢稳健买点
-  NASDAQ:CIBR   10EMA回调   日内:🔴规避/止损
+  NASDAQ:QQQ    10EMA回调   日内:⚪观望
+  NASDAQ:CRDO   口袋支点      日内:🔴规避/止损
+  NASDAQ:HOOD   10EMA回调   日内:⚪观望
+  NASDAQ:CIBR   10EMA回调   日内:🟢稳健买点
   NYSE:SNOW     10EMA回调   日内:⚪观望
 【否决】
   NASDAQ:SPCX   板块背离
@@ -35,8 +35,8 @@
   宏观 ✅ATR1419% ✗10Y5.18% ✅HYG/LQD0.7544 ✅USD/JPY158.81
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:ARKG 基因组  AMEX:MAGS 七巨头  AMEX:XLK 科技板块 (Technology)  NASDAQ:SMH 半导体  NASDAQ:SOXX 半导体主题 (Semis)
-  短线改善: AMEX:XLV 医疗健康 (Health Care)  AMEX:ROBO 自动化  AMEX:PRNT 3D打印  AMEX:DBA 农产品  AMEX:IPO 新股
+  涨幅优先: AMEX:USO 原油  AMEX:ARKG 基因组  AMEX:MAGS 七巨头  AMEX:XLK 科技板块 (Technology)  AMEX:CRAK 炼化下游
+  短线改善: AMEX:XLV 医疗健康 (Health Care)  AMEX:ITB 住宅建筑
 ------------------------------------------------
 【板块】
   强: 无
@@ -46,34 +46,31 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:LITE   🟢10EMA回调   🟢突破买点
-   NASDAQ:MSFT   📦箱体突破      🟢黄金买点
-   NASDAQ:QQQ    🟢10EMA回调   🟢稳健买点
-   NASDAQ:HOOD   🟢10EMA回调   🟢稳健买点
+   NASDAQ:CIBR   🟢10EMA回调   🟢稳健买点
  ▶ 等时机（日内未给买点）
+   NASDAQ:MSFT   📦箱体突破      ⚪观望
    NASDAQ:SNDK   🟢10EMA回调   ⚪观望
+   NASDAQ:QQQ    🟢10EMA回调   ⚪观望
+   NASDAQ:HOOD   🟢10EMA回调   ⚪观望
    NYSE:SNOW     🟢10EMA回调   ⚪观望
    NASDAQ:SPCX   🟢10EMA回调   ⚪观望
+   NASDAQ:CIFR   🟢10EMA回调   ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NASDAQ:CRDO   💡口袋支点      🔴锁定利润
-   NASDAQ:CIBR   🟢10EMA回调   🔴规避/止损
-   NASDAQ:CIFR   🟢10EMA回调   🔴规避/止损
-  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:INTC🔴  NASDAQ:AMAT🟢 
-            NYSE:GEV🟢  NYSE:CAT🟢  NYSE:NET🔴  NASDAQ:CRWD🔴 
-            NYSE:ANET🔴  NASDAQ:AMD🔴  NASDAQ:MU🔴  NASDAQ:AXTI🔴 
-            NASDAQ:PLTR🔴  AMEX:GDX🟢  NASDAQ:CORZ🔴  NASDAQ:RIOT🟢 
-            NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: AMEX:GDX-5.1% NASDAQ:AXTI-4.1% NASDAQ:HOOD-3.6% NYSE:BE-3.5% NASDAQ:SNDK-3.5% NASDAQ:INTC-3.5% NASDAQ:CRDO-3.4% NASDAQ:AMAT-2.7% NASDAQ:AMD-2.6% NASDAQ:NBIS-2.5% NASDAQ:AAOI-2.1% NASDAQ:CORZ-2.1% NASDAQ:MU-2.1% NASDAQ:IREN-2.1% NASDAQ:RIOT-2.1% NASDAQ:CIFR-2.1% NYSE:GEV-2.0%
+   NASDAQ:LITE   🟢10EMA回调   🔴规避/止损
+   NASDAQ:CRDO   💡口袋支点      🔴规避/止损
+  日内异动: NASDAQ:NBIS🟢  NASDAQ:RKLB🟢  NASDAQ:AAOI🔴  NYSE:LLY🟢 
+            NYSE:GEV🟢  NYSE:CAT🟢  NASDAQ:CRWD🟢  NASDAQ:AXTI🔴 
+            NASDAQ:IREN🟢 
+  盘前±2%: NYSE:BE-6.7% NASDAQ:AXTI-6.2% NASDAQ:CRDO-5.8% NASDAQ:AAOI-3.9% AMEX:GDX-3.8% NASDAQ:INTC-3.6% NASDAQ:LITE-3.5% NASDAQ:SNDK-3.3% NYSE:SNOW-2.8% NASDAQ:AMD-2.7% NASDAQ:APLD-2.6% NASDAQ:MU-2.4% NASDAQ:RIOT-2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 54% · 📣申菱 S2↑→S1⌐
+  上升趋势占比 54%
   🟢合格·在买点区(18): NYSE:BE NASDAQ:MSFT NASDAQ:INTC NASDAQ:SMH NASDAQ:SNDK NASDAQ:CRWD NYSE:ANET NASDAQ:AMD NASDAQ:MU NASDAQ:PLTR NASDAQ:CIBR NASDAQ:RIOT NASDAQ:NBIS NASDAQ:HUT SSE:601208(东材) NASDAQ:HOOD NASDAQ:LITE SSE:688498(源杰)
   🟢合格·追高区勿追(0): 无
   🔴淘汰(12): NASDAQ:RKLB NASDAQ:AXTI SZSE:300990(同飞) NASDAQ:APLD NASDAQ:IREN SSE:688519(南亚) AMEX:GDX SSE:688627(精智达) SSE:600183(生益) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUC$374M SNDKC$303M QQQ≈$145M MSFTC$54M AMDC$45M
-  T+1核对: BEC245(10-02)✗未增 BEC277.5(10-02)✗未增 BEC280(10-02)✗未增 BEC282.5(10-02)✗未增
+  今日: SNDKC$213M MUC$77M(v/oi4.9) QQQP$49M(v/oi20.0) AMD≈$15M(v/oi7.3) SPCXC$11M(v/oi2.7)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
