@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-28 收盘(ET)
-  生成 09-28 16:33 纽约 = 09-29 04:33 新加坡
+  生成 09-28 18:02 纽约 = 09-29 06:02 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -34,7 +34,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.2 高贝-1.0 低波+0.3 价值-0.7 → 中性日
   派发 ▃▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▄ (3/吸1) → 仓位60%
   阶段P0 恐慌未释放 恐慌2/4 共识3/5 缺:双指数五日收益率均为正
-  宏观 ✅ATR1427% ✗10Y5.24% ✅HYG/LQD0.7567 ✅USD/JPY157.46
+  宏观 ✅ATR1427% ✗10Y5.24% ✅HYG/LQD0.7567 ✅USD/JPY157.37
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:USO 原油  AMEX:ARKG 基因组  AMEX:CRAK 炼化下游  AMEX:MJ 大麻  AMEX:DBC 大宗商品
@@ -72,13 +72,13 @@
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 58% · 📣GDX S3⌒→S1⌐
-  🟢合格·在买点区(17): NASDAQ:MSFT NASDAQ:INTC NASDAQ:SMH NASDAQ:CRWD NYSE:ANET NASDAQ:AMD NASDAQ:MU NASDAQ:PLTR NASDAQ:CIBR SSE:601208(东材) SSE:688072(拓荆) NASDAQ:SNDK NYSE:BE NASDAQ:RIOT NASDAQ:NBIS AMEX:SPY SSE:688498(源杰)
+  上升趋势占比 54% · 📣天孚 S3⌒→S1⌐ · 新易盛 S2↑→S1⌐ · 申菱 S2↑→S1⌐
+  🟢合格·在买点区(16): NASDAQ:MSFT NASDAQ:INTC NASDAQ:SMH NASDAQ:CRWD NYSE:ANET NASDAQ:AMD NASDAQ:MU NASDAQ:PLTR NASDAQ:CIBR NASDAQ:SNDK NYSE:BE SSE:601208(东材) NASDAQ:RIOT NASDAQ:NBIS AMEX:SPY SSE:688498(源杰)
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(14): NASDAQ:RKLB SZSE:300476(胜宏) SZSE:300990(同飞) NASDAQ:AXTI SSE:688519(南亚) SZSE:300394(天孚) NYSE:SNOW NASDAQ:APLD SSE:688627(精智达) SZSE:002463(沪电) SZSE:301018(申菱) NASDAQ:IREN SSE:600183(生益) SZSE:002837(英维克)
+  🔴淘汰(12): NASDAQ:RKLB NASDAQ:AXTI SZSE:300990(同飞) NYSE:SNOW NASDAQ:APLD SSE:688519(南亚) NASDAQ:IREN SSE:688627(精智达) SSE:600183(生益) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MU≈$343M(v/oi99.0) QQQ≈$295M(v/oi99.0) SNDK≈$209M(v/oi18.4) AMD≈$67M(v/oi99.0) SPCX≈$34M(v/oi7.5)
+  今日: MU≈$343M(v/oi99.0) QQQ≈$306M(v/oi99.0) SNDK≈$209M(v/oi18.4) AMD≈$67M(v/oi99.0) SPCX≈$34M(v/oi7.5)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
