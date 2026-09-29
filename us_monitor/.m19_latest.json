@@ -1,33 +1,73 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-09-25 21:30 UTC",
-   "as_of": "2026-09-25",
+   "generated": "2026-09-28 21:30 UTC",
+   "as_of": "2026-09-28",
    "market_gate": {
     "status": "green",
     "symbol": "^IXIC",
-    "date": "2026-09-25",
-    "ma10": 26639.77,
-    "ma20": 26483.46
+    "date": "2026-09-28",
+    "ma10": 26703.17,
+    "ma20": 26504.36
    },
    "universe_n": 44,
    "data_n": 44,
-   "signals": []
+   "signals": [
+    {
+     "signal_id": "swing_us:BUG:2026-09-28:swing_us:BUG:2026-09-14:ma_bull_align:GDR",
+     "profile": "swing_us",
+     "ticker": "BUG",
+     "date": "2026-09-28",
+     "setup_id": "swing_us:BUG:2026-09-14:ma_bull_align",
+     "setup_names": [
+      "ma_bull_align"
+     ],
+     "setup_date": "2026-09-14",
+     "setup_age_bars": 10,
+     "triggers": [
+      "GDR"
+     ],
+     "plan": null,
+     "risk_check": {
+      "entry_stop": 45.78,
+      "entry_limit": 46.01,
+      "stop": 43.68,
+      "risk": 2.1,
+      "stop_pct": 4.59,
+      "adr20": 3.48,
+      "stop_adr_ratio": 1.32,
+      "grade": "拒",
+      "target_1R": 47.88,
+      "target_2R": 49.98,
+      "position_pct": 10.89,
+      "action": "reject"
+     },
+     "market_gate": {
+      "status": "green",
+      "symbol": "^IXIC",
+      "date": "2026-09-28",
+      "ma10": 26703.17,
+      "ma20": 26504.36
+     },
+     "environment": "环境正常",
+     "outcomes": {}
+    }
+   ]
   },
   "cn_pullback": {
-   "generated": "2026-09-28 08:00 UTC",
-   "as_of": "2026-09-24",
+   "generated": "2026-09-29 08:00 UTC",
+   "as_of": "2026-09-28",
    "market_gate": {
     "status": "green",
     "symbol": "^IXIC",
-    "date": "2026-09-25",
-    "ma10": 26639.77,
-    "ma20": 26483.46
+    "date": "2026-09-28",
+    "ma10": 26703.17,
+    "ma20": 26504.36
    },
-   "universe_n": 6,
-   "data_n": 6,
+   "universe_n": 3,
+   "data_n": 3,
    "signals": []
   }
  },
- "updated": "2026-09-28 08:00 UTC"
+ "updated": "2026-09-29 08:00 UTC"
 }
