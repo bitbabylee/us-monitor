@@ -1,10 +1,10 @@
-# 波哥待机清单 2026-09-29
+# 波哥待机清单 2026-09-30
 # 仅包含通过优势预筛的 ETF + 个股；不是入场指令。
 # 大盘门: 关闭
 AMEX:ARKG
-AMEX:XLV
 AMEX:XLK
+AMEX:XLV
 NASDAQ:SMH
 AMEX:MAGS
-NASDAQ:SOXX
 AMEX:MTUM
+NASDAQ:SOXX
