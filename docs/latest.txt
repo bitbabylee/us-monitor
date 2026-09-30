@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-29 收盘(ET)
-  生成 09-29 19:50 纽约 = 09-30 07:50 新加坡
+  生成 09-30 06:06 纽约 = 09-30 18:06 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -28,9 +28,10 @@
   AMEX:GDX      超跌反弹      日内:🟢突破买点
 【否决】
   NYSE:LLY      板块背离
-【风险】财报 明日 NASDAQ:MU?
+【风险】财报 今日NASDAQ:MU?待出·回避
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   09-30 周三  NASDAQ:MU?
+  10-07 周三  NASDAQ:APLD?
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
@@ -41,7 +42,7 @@
   日性质(因子ETF超额·非纯因子): 动量+0.6 高贝+1.1 低波+0.1 价值+0.1 → 风偏进攻日
   派发 ▃▃▃▃▄▄▄▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅ (4/吸1) → 仓位40%
   阶段P0 恐慌未释放 恐慌1/4 共识3/5 缺:双指数五日收益率均为正
-  宏观 ✅ATR1425% ✗10Y5.26% ✅HYG/LQD0.7554 ✅USD/JPY157.45
+  宏观 ✅ATR1425% ✗10Y5.26% ✅HYG/LQD0.7554 ✅USD/JPY157.36
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ARKG 基因组  AMEX:USO 原油  AMEX:CRAK 炼化下游  AMEX:XLV 医疗健康 (Health Care)  AMEX:XLK 科技板块 (Technology)
@@ -75,23 +76,25 @@
    NASDAQ:AXTI   💡口袋支点      🔴规避/止损
   日内异动: NASDAQ:CRWD🟡  NASDAQ:HOOD🔴  NYSE:SNOW🟢  NASDAQ:IREN🔴 
             NASDAQ:CORZ🔴  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:APLD🟢 
+  盘前±2%: NASDAQ:HOOD+2.9% NASDAQ:NBIS+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 54%
-  🟢合格·在买点区(13): NYSE:BE NASDAQ:MSFT NASDAQ:INTC NASDAQ:CRWD NYSE:ANET NASDAQ:AMD NASDAQ:PLTR NASDAQ:CIBR NASDAQ:SMH NASDAQ:NBIS NASDAQ:MU NASDAQ:QQQ SSE:601208(东材)
+  🟢合格·在买点区(12): NYSE:BE NASDAQ:MSFT NASDAQ:INTC NASDAQ:CRWD NYSE:ANET NASDAQ:AMD NASDAQ:PLTR NASDAQ:CIBR NASDAQ:SMH NASDAQ:NBIS NASDAQ:MU NASDAQ:QQQ
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(15): NASDAQ:RKLB NASDAQ:AXTI SZSE:300990(同飞) NASDAQ:APLD NASDAQ:RIOT NASDAQ:HUT SSE:688519(南亚) SZSE:300394(天孚) NASDAQ:IREN SSE:688627(精智达) SZSE:300476(胜宏) SSE:600183(生益) SSE:688498(源杰) SZSE:002463(沪电) SZSE:002837(英维克)
+  🔴淘汰(16): NASDAQ:RKLB NASDAQ:AXTI SZSE:300990(同飞) NASDAQ:APLD SSE:601208(东材) NASDAQ:RIOT NASDAQ:HUT SZSE:300394(天孚) SSE:688519(南亚) NASDAQ:IREN SSE:688627(精智达) SSE:600183(生益) SSE:688498(源杰) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQC$374M(v/oi99.0) MUC$363M(v/oi25.5) SNDKC$184M(v/oi7.8) AMD≈$74M(v/oi31.7) SPCXC$70M(v/oi8.3)
+  今日: MUC$363M QQQ≈$230M SNDKC$184M AMD≈$75M SPCXC$70M
+  T+1核对: BEC250(10-02)✗未增 BEC282.5(10-02)✗未增 BEC285(10-02)✗未增 BEC287.5(10-02)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】35只(强13)·⚠️旧快照
-  今日强信号: NYSE:DELL NASDAQ:ALM NASDAQ:ADEA NASDAQ:FESB1! NYSE:CAT🔗 NYSE:SOC AMEX:EWT NASDAQ:GFS
-  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:CAT NASDAQ:SMH NYSE:BE
-  池外强信号(仅提示, 不入信号链): NYSE:DELL NASDAQ:ALM NASDAQ:ADEA NASDAQ:FESB1! NYSE:SOC AMEX:EWT
+【波哥七维·外部体系】32只(强12)·⚠️旧快照
+  今日强信号: NYSE:ASX NASDAQ:TWN1! NYSE:GLW NASDAQ:HSIDI NYSE:DELL NASDAQ:ALM NASDAQ:ADEA NASDAQ:FESB1!
+  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:CAT NASDAQ:SMH NYSE:AEM NASDAQ:CIBR
+  池外强信号(仅提示, 不入信号链): NYSE:ASX NASDAQ:TWN1! NYSE:GLW NASDAQ:HSIDI NYSE:DELL NASDAQ:ALM
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
