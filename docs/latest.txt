@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-09-30 收盘(ET)
-  生成 10-01 06:06 纽约 = 10-01 18:06 新加坡
+  生成 10-01 10:03 纽约 = 10-01 22:03 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -12,10 +12,10 @@
   NASDAQ:INTC   10EMA回调   日内:⚪观望
   NASDAQ:SNDK   10EMA回调   日内:⚪观望
   NASDAQ:QQQ    10EMA回调   日内:🔴规避/止损
-  NYSE:NET      10EMA回调   日内:🔴规避/止损
-  NASDAQ:AMD    10EMA回调   日内:🔴锁定利润
+  NYSE:NET      10EMA回调   日内:🟢黄金买点
+  NASDAQ:AMD    10EMA回调   日内:⚪观望
   NASDAQ:PLTR   10EMA回调   日内:⚪观望
-  NASDAQ:CIBR   口袋支点      日内:⚪观望
+  NASDAQ:CIBR   口袋支点      日内:🟢黄金买点
 【否决】
   NYSE:BE       板块背离
   NYSE:GEV      板块背离
@@ -36,8 +36,8 @@
   宏观 ✅ATR1422% ✗10Y5.29% ✅HYG/LQD0.7556 ✅USD/JPY157.40
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:ARKG 基因组  AMEX:XLK 科技板块 (Technology)  AMEX:CRAK 炼化下游  AMEX:MAGS 七巨头  NASDAQ:SMH 半导体
-  短线改善: AMEX:XBI 生物科技  AMEX:XRT 零售
+  涨幅优先: AMEX:ARKG 基因组  AMEX:XLK 科技板块 (Technology)  AMEX:HACK 网络安全  NASDAQ:SMH 半导体  AMEX:MAGS 七巨头
+  短线改善: NASDAQ:HERO 游戏  AMEX:XBI 生物科技
 ------------------------------------------------
 【板块】
   强: 无
@@ -47,33 +47,32 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:SPCX   🟢10EMA回调   🟢突破买点
+   NYSE:NET      🟢10EMA回调   🟢黄金买点
+   NASDAQ:CIBR   💡口袋支点      🟢黄金买点
  ▶ 等时机（日内未给买点）
+   NYSE:BE       🟢10EMA回调   ⚪观望
    NASDAQ:LITE   🟢10EMA回调   ⚪观望
    NASDAQ:INTC   🟢10EMA回调   ⚪观望
+   NYSE:GEV      🟢10EMA回调   ⚪观望
    NASDAQ:SNDK   🟢10EMA回调   ⚪观望
+   NASDAQ:AMD    🟢10EMA回调   ⚪观望
    NASDAQ:PLTR   🟢10EMA回调   ⚪观望
-   NASDAQ:CIBR   💡口袋支点      ⚪观望
+   NASDAQ:SPCX   🟢10EMA回调   ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NYSE:BE       🟢10EMA回调   🔴规避/止损
-   NYSE:GEV      🟢10EMA回调   🔴规避/止损
    NASDAQ:QQQ    🟢10EMA回调   🔴规避/止损
-   NYSE:NET      🟢10EMA回调   🔴规避/止损
-   NASDAQ:AMD    🟢10EMA回调   🔴锁定利润
-  日内异动: NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:AAOI🟢  NYSE:LLY🔴 
-            NASDAQ:AMAT🟢  NYSE:CAT🔴  NASDAQ:HOOD🔴  AMEX:GDX🔴 
-            NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:RKLB+2.7% NYSE:BE+2.5% NASDAQ:AXTI+2.2% NASDAQ:CRDO+2.2%
+  日内异动: NASDAQ:NBIS🔴  NASDAQ:AMAT🟢  NASDAQ:CRWD🟡  NASDAQ:MU🔴 
+            AMEX:GDX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
+            NASDAQ:CIFR🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:AXTI+4.5% NASDAQ:LITE+4.3% NASDAQ:RIOT-3.8% NASDAQ:CIFR-3.5% NASDAQ:AMAT+3.4% NASDAQ:CRDO+3.1% NASDAQ:IREN-2.8% NASDAQ:HUT-2.8% NASDAQ:MU-2.5% NASDAQ:APLD-2.3% NASDAQ:NBIS-2.3% NASDAQ:CORZ-2.1% NASDAQ:PLTR+2.1% NASDAQ:WULF-2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 50% · 📣RIOT S2↑→S1⌐ · HUT S2↑→S1⌐
+  上升趋势占比 50%
   🟢合格·在买点区(13): NASDAQ:MSFT NASDAQ:INTC NASDAQ:SMH NASDAQ:CRWD NYSE:ANET NASDAQ:AMD NASDAQ:PLTR NYSE:SNOW NYSE:BE NASDAQ:CIBR NASDAQ:QQQ NASDAQ:MU NASDAQ:NBIS
   🟢合格·追高区勿追(0): 无
   🔴淘汰(15): NASDAQ:RKLB NASDAQ:AXTI SZSE:300990(同飞) SSE:601208(东材) NYSE:LLY NASDAQ:APLD SZSE:300394(天孚) SSE:688519(南亚) NASDAQ:IREN SSE:688627(精智达) SSE:600183(生益) SSE:688498(源杰) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUC$517M SNDKC$191M QQQ≈$191M SPCXC$57M AMDC$56M
-  T+1核对: BEC282.5(10-02)✗未增 BEC295(10-02)✗未增 BEC375(10-02)✗未增 BEP270(10-02)✗未增
+  今日: MUC$122M(v/oi3.4) QQQ≈$64M(v/oi20.7) SNDKC$56M(v/oi1.6) MSFTC$29M(v/oi7.6) AMDC$22M(v/oi3.5)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
