@@ -1,33 +1,86 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-09-29 21:30 UTC",
-   "as_of": "2026-09-29",
+   "generated": "2026-09-30 21:30 UTC",
+   "as_of": "2026-09-30",
    "market_gate": {
     "status": "green",
     "symbol": "^IXIC",
-    "date": "2026-09-29",
-    "ma10": 26784.77,
-    "ma20": 26525.69
+    "date": "2026-09-30",
+    "ma10": 26873.03,
+    "ma20": 26563.76
    },
    "universe_n": 44,
    "data_n": 44,
-   "signals": []
+   "signals": [
+    {
+     "signal_id": "swing_us:ARKG:2026-09-30:swing_us:ARKG:2026-09-17:ma_bull_align:NR7",
+     "profile": "swing_us",
+     "ticker": "ARKG",
+     "date": "2026-09-30",
+     "setup_id": "swing_us:ARKG:2026-09-17:ma_bull_align",
+     "setup_names": [
+      "ma_bull_align"
+     ],
+     "setup_date": "2026-09-17",
+     "setup_age_bars": 9,
+     "triggers": [
+      "NR7"
+     ],
+     "plan": {
+      "entry_stop": 55.58,
+      "entry_limit": 55.85,
+      "stop": 54.01,
+      "risk": 1.57,
+      "stop_pct": 2.83,
+      "adr20": 3.55,
+      "stop_adr_ratio": 0.8,
+      "grade": "warn",
+      "target_1R": 57.15,
+      "target_2R": 58.72,
+      "position_pct": 8.85,
+      "action": "half_size"
+     },
+     "risk_check": {
+      "entry_stop": 55.58,
+      "entry_limit": 55.85,
+      "stop": 54.01,
+      "risk": 1.57,
+      "stop_pct": 2.83,
+      "adr20": 3.55,
+      "stop_adr_ratio": 0.8,
+      "grade": "warn",
+      "target_1R": 57.15,
+      "target_2R": 58.72,
+      "position_pct": 8.85,
+      "action": "half_size"
+     },
+     "market_gate": {
+      "status": "green",
+      "symbol": "^IXIC",
+      "date": "2026-09-30",
+      "ma10": 26873.03,
+      "ma20": 26563.76
+     },
+     "environment": "环境正常",
+     "outcomes": {}
+    }
+   ]
   },
   "cn_pullback": {
-   "generated": "2026-09-30 08:00 UTC",
-   "as_of": "2026-09-29",
+   "generated": "2026-10-01 08:00 UTC",
+   "as_of": "2026-09-30",
    "market_gate": {
     "status": "green",
     "symbol": "^IXIC",
-    "date": "2026-09-29",
-    "ma10": 26784.77,
-    "ma20": 26525.69
+    "date": "2026-09-30",
+    "ma10": 26873.03,
+    "ma20": 26563.76
    },
-   "universe_n": 7,
-   "data_n": 7,
+   "universe_n": 8,
+   "data_n": 8,
    "signals": []
   }
  },
- "updated": "2026-09-30 08:00 UTC"
+ "updated": "2026-10-01 08:00 UTC"
 }
