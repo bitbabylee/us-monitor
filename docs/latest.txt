@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-01 收盘(ET)
-  生成 10-01 20:00 纽约 = 10-02 08:00 新加坡
+  生成 10-02 06:06 纽约 = 10-02 18:06 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -40,11 +40,11 @@
   日性质(因子ETF超额·非纯因子): 动量+0.9 高贝+1.3 低波+0.4 价值+1.0 → 风偏进攻日
   派发 ▃▃▄▄▄▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅ (4/吸1) → 仓位20%
   阶段C1 资金共识 恐慌3/4 共识4/5 缺:近三日突破20日线伴随放
-  宏观 ✅ATR1421% ✗10Y5.24% ✅HYG/LQD0.7537 ✅USD/JPY157.94
+  宏观 ✅ATR1421% ✗10Y5.24% ✅HYG/LQD0.7537 ✅USD/JPY157.56
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:ARKG 基因组  NASDAQ:SMH 半导体  AMEX:XLK 科技板块 (Technology)  NASDAQ:SOXX 半导体主题 (Semis)  AMEX:CRAK 炼化下游
-  短线改善: AMEX:XLE 能源板块 (Energy)  AMEX:XBI 生物科技  AMEX:XRT 零售  AMEX:XLU 公用事业/AI电网 (Utilities)
+  涨幅优先: AMEX:XLK 科技板块 (Technology)  NASDAQ:SMH 半导体  NASDAQ:SOXX 半导体主题 (Semis)  AMEX:ARKG 基因组  AMEX:MTUM 动量
+  短线改善: AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  NASDAQ:WCLD 云软件  AMEX:PRNT 3D打印  AMEX:XRT 零售
 ------------------------------------------------
 【板块】
   强: AMEX:XLE+1.8% · NASDAQ:SOXX+1.2%
@@ -72,10 +72,11 @@
    NASDAQ:MSFT   🟢10EMA回调   🔴规避/止损
    NASDAQ:SPCX   🟢10EMA回调   🔴规避/止损
  ▶ 财报窗口（信号作废）
-   NASDAQ:MU     💡口袋支点      📊 财报后第1日(09-30?
+   NASDAQ:MU     💡口袋支点      📊 财报后第2日(09-30?
   日内异动: NYSE:LLY🟢  NASDAQ:AMAT🟢  NASDAQ:SMH🟢  NASDAQ:QQQ🟢 
             NASDAQ:CRWD🟢  NASDAQ:HOOD🔴  NASDAQ:CIBR🟢  AMEX:GDX🔴 
             NASDAQ:CORZ🟢  NASDAQ:HUT🔥  NASDAQ:APLD🟢 
+  盘前±2%: NASDAQ:RIOT+2.3% NASDAQ:CIFR+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 50%
@@ -84,15 +85,16 @@
   🔴淘汰(16): NASDAQ:RKLB NYSE:GEV NASDAQ:AXTI SZSE:300990(同飞) SSE:601208(东材) NASDAQ:HOOD NYSE:LLY SZSE:300394(天孚) NASDAQ:APLD SSE:688519(南亚) SSE:688627(精智达) SSE:600183(生益) SSE:688498(源杰) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUC$1386M(v/oi16.8) SNDKC$275M(v/oi14.0) QQQ≈$259M(v/oi29.5) AMDC$107M(v/oi15.0) LITEC$89M(v/oi24.6)
+  今日: MUC$1378M SNDKC$276M QQQ≈$259M AMDC$108M LITEC$84M
+  T+1核对: BEC272.5(10-02)✗未增 BEC275(10-02)✗未增 BEC277.5(10-02)✗未增 BEC280(10-02)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】25只(强6)·⚠️旧快照
-  今日强信号: NYSE:MP AMEX:EWZ NYSE:ASX NYSE:GLW NASDAQ:HHI1! NASDAQ:HSIDI
-  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:AMD NASDAQ:CIBR NASDAQ:SMH NYSE:AEM
-  池外强信号(仅提示, 不入信号链): NYSE:MP AMEX:EWZ NYSE:ASX NYSE:GLW NASDAQ:HHI1! NASDAQ:HSIDI
+【波哥七维·外部体系】37只(强17)·⚠️旧快照
+  今日强信号: AMEX:XLE NYSE:CAT🔗 NYSE:SDRL NYSE:DOCN NYSE:TRGP NYSE:OXY NYSE:IBM AMEX:PXJ
+  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:CAT NASDAQ:MU NASDAQ:CORZ NASDAQ:AMD NASDAQ:CIBR NASDAQ:SMH NYSE:AEM
+  池外强信号(仅提示, 不入信号链): AMEX:XLE NYSE:SDRL NYSE:DOCN NYSE:TRGP NYSE:OXY NYSE:IBM
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
