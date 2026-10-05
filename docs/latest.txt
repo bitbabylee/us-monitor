@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-02 收盘(ET)
-  生成 10-04 22:31 纽约 = 10-05 10:31 新加坡
+  生成 10-05 06:07 纽约 = 10-05 18:07 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -34,7 +34,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.1 高贝+0.5 低波-0.6 价值-0.8 → 中性日
   派发 ▃▄▄▄▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄ (3/吸0) → 仓位60%
   阶段C1 资金共识 恐慌3/4 共识4/5 缺:近三日突破20日线伴随放
-  宏观 ✅ATR1422% ✗10Y5.28% ✅HYG/LQD0.7553 ✅USD/JPY157.76
+  宏观 ✅ATR1422% ✗10Y5.28% ✅HYG/LQD0.7553 ✅USD/JPY157.93
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:HACK 网络安全  NASDAQ:SMH 半导体  AMEX:ARKG 基因组  AMEX:XLK 科技板块 (Technology)  NASDAQ:SOXX 半导体主题 (Semis)
@@ -62,6 +62,7 @@
   日内异动: NASDAQ:LITE🔴  NYSE:GEV🟢  NASDAQ:SNDK🔴  NASDAQ:CRWD🟢 
             NASDAQ:HOOD🔴  NASDAQ:MU🔴  AMEX:GDX🟢  NASDAQ:CORZ🔴 
             NASDAQ:RIOT🔴  NASDAQ:CIFR🔴 
+  盘前±2%: NASDAQ:INTC-4.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 52%
@@ -70,16 +71,16 @@
   🔴淘汰(17): NYSE:GEV NYSE:CAT NASDAQ:AXTI NASDAQ:RKLB SZSE:300990(同飞) NASDAQ:APLD SSE:601208(东材) NYSE:LLY SZSE:300394(天孚) NASDAQ:HUT SSE:688519(南亚) SSE:688627(精智达) SSE:600183(生益) SSE:688498(源杰) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SPCXC$141M(v/oi41.6) SNDK≈$137M(v/oi14.3) QQQ≈$106M(v/oi99.0) MU≈$92M(v/oi33.9) LITEC$52M(v/oi13.0)
+  今日: SPCXC$141M SNDK≈$137M QQQ≈$106M MU≈$93M LITEC$50M
   T+1核对: BEC245(10-09)✗未增 BEC285(10-09)✗未增 BEC287.5(10-09)✗未增 BEC292.5(10-09)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】37只(强17)·⚠️旧快照
-  今日强信号: AMEX:XLE NYSE:CAT🔗 NYSE:SDRL NYSE:DOCN NYSE:TRGP NYSE:OXY NYSE:IBM AMEX:PXJ
-  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:CAT NASDAQ:MU NASDAQ:CORZ NASDAQ:AMD NASDAQ:CIBR NASDAQ:SMH NYSE:AEM
-  池外强信号(仅提示, 不入信号链): AMEX:XLE NYSE:SDRL NYSE:DOCN NYSE:TRGP NYSE:OXY NYSE:IBM
+【波哥七维·外部体系】44只(强23)·⚠️旧快照
+  今日强信号: NYSE:DELL NYSE:ERO NASDAQ:ARM NYSE:SCCO NYSE:HASI NASDAQ:GOOG AMEX:EWT AMEX:XLE
+  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:CAT NASDAQ:MU NASDAQ:CORZ NASDAQ:AMD NASDAQ:CIBR
+  池外强信号(仅提示, 不入信号链): NYSE:DELL NYSE:ERO NASDAQ:ARM NYSE:SCCO NYSE:HASI NASDAQ:GOOG
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
