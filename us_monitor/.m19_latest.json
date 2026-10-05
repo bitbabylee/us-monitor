@@ -1,66 +1,66 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-10-01 21:30 UTC",
-   "as_of": "2026-10-01",
+   "generated": "2026-10-02 21:30 UTC",
+   "as_of": "2026-10-02",
    "market_gate": {
     "status": "green",
     "symbol": "^IXIC",
-    "date": "2026-10-01",
-    "ma10": 26918.36,
-    "ma20": 26596.44
+    "date": "2026-10-02",
+    "ma10": 26985.19,
+    "ma20": 26626.78
    },
    "universe_n": 44,
    "data_n": 44,
    "signals": [
     {
-     "signal_id": "swing_us:BUG:2026-10-01:swing_us:BUG:2026-09-14:ma_bull_align:IDNR4",
+     "signal_id": "swing_us:BUG:2026-10-02:swing_us:BUG:2026-09-14:ma_bull_align:NR7",
      "profile": "swing_us",
      "ticker": "BUG",
-     "date": "2026-10-01",
+     "date": "2026-10-02",
      "setup_id": "swing_us:BUG:2026-09-14:ma_bull_align",
      "setup_names": [
       "ma_bull_align"
      ],
      "setup_date": "2026-09-14",
-     "setup_age_bars": 13,
+     "setup_age_bars": 14,
      "triggers": [
-      "IDNR4"
+      "NR7"
      ],
      "plan": {
-      "entry_stop": 47.01,
-      "entry_limit": 47.25,
-      "stop": 45.7,
-      "risk": 1.31,
-      "stop_pct": 2.79,
-      "adr20": 3.29,
-      "stop_adr_ratio": 0.85,
+      "entry_stop": 47.78,
+      "entry_limit": 48.02,
+      "stop": 46.77,
+      "risk": 1.01,
+      "stop_pct": 2.11,
+      "adr20": 3.25,
+      "stop_adr_ratio": 0.65,
       "grade": "warn",
-      "target_1R": 48.32,
-      "target_2R": 49.63,
-      "position_pct": 8.97,
+      "target_1R": 48.79,
+      "target_2R": 49.79,
+      "position_pct": 11.86,
       "action": "half_size"
      },
      "risk_check": {
-      "entry_stop": 47.01,
-      "entry_limit": 47.25,
-      "stop": 45.7,
-      "risk": 1.31,
-      "stop_pct": 2.79,
-      "adr20": 3.29,
-      "stop_adr_ratio": 0.85,
+      "entry_stop": 47.78,
+      "entry_limit": 48.02,
+      "stop": 46.77,
+      "risk": 1.01,
+      "stop_pct": 2.11,
+      "adr20": 3.25,
+      "stop_adr_ratio": 0.65,
       "grade": "warn",
-      "target_1R": 48.32,
-      "target_2R": 49.63,
-      "position_pct": 8.97,
+      "target_1R": 48.79,
+      "target_2R": 49.79,
+      "position_pct": 11.86,
       "action": "half_size"
      },
      "market_gate": {
       "status": "green",
       "symbol": "^IXIC",
-      "date": "2026-10-01",
-      "ma10": 26918.36,
-      "ma20": 26596.44
+      "date": "2026-10-02",
+      "ma10": 26985.19,
+      "ma20": 26626.78
      },
      "environment": "环境正常",
      "outcomes": {}
@@ -68,19 +68,19 @@
    ]
   },
   "cn_pullback": {
-   "generated": "2026-10-02 08:00 UTC",
+   "generated": "2026-10-05 08:00 UTC",
    "as_of": "2026-09-30",
    "market_gate": {
     "status": "green",
     "symbol": "^IXIC",
-    "date": "2026-10-01",
-    "ma10": 26918.36,
-    "ma20": 26596.44
+    "date": "2026-10-02",
+    "ma10": 26985.19,
+    "ma20": 26626.78
    },
-   "universe_n": 7,
-   "data_n": 6,
+   "universe_n": 8,
+   "data_n": 7,
    "signals": []
   }
  },
- "updated": "2026-10-02 08:00 UTC"
+ "updated": "2026-10-05 08:00 UTC"
 }
