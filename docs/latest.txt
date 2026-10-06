@@ -1,27 +1,31 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-10-02 收盘(ET)
-  生成 10-05 21:22 纽约 = 10-06 09:22 新加坡
+  波哥信号 · 美股日报  数据截至 2026-10-05 收盘(ET)
+  生成 10-06 06:06 纽约 = 10-06 18:06 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 100% · 阶段C1 · 宏观3/4 · 动量MTUM
+【结论】仓位上限 100% · 阶段P0 · 宏观3/4 · 动量MTUM
 ------------------------------------------------
-【候选】11 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:NBIS   10EMA回调   日内:🔴规避/止损
-  NASDAQ:AAOI   口袋支点      日内:🔥强主升浪
-  NASDAQ:MSFT   10EMA回调   日内:⚪观望
-  NASDAQ:INTC   10EMA回调   日内:⚪观望
-  NYSE:CAT      口袋支点      日内:🟢突破买点
-  NYSE:NET      10EMA回调   日内:⚪观望
-  NYSE:ANET     10EMA回调   日内:⚪观望
-  NASDAQ:CRDO   口袋支点      日内:⚪观望
-  NASDAQ:AXTI   口袋支点      日内:⚪观望
+【候选】7 只（形态+板块确认+无财报风险·未回测）
+  NYSE:BE       10EMA回调   日内:⚪观望
+  NASDAQ:MSFT   口袋支点      日内:⚪观望
+  NYSE:GEV      10EMA回调   日内:🟢稳健买点
+  NYSE:NET      口袋支点      日内:⚪观望
+  NASDAQ:HOOD   10EMA回调   日内:🟢稳健买点
   NASDAQ:PLTR   10EMA回调   日内:🟢稳健买点
   NYSE:SNOW     10EMA回调   日内:🔴规避/止损
 【否决】
+  NASDAQ:NBIS   板块背离
+  NASDAQ:RKLB   板块背离
+  NASDAQ:AAOI   板块背离
+  NASDAQ:QQQ    板块背离
+  NYSE:CAT      板块背离
+  NYSE:ANET     板块背离
+  NASDAQ:MU     板块背离
+  NASDAQ:CIBR   板块背离
   NASDAQ:SPCX   板块背离
-【风险】无近端风险事件
+【风险】财报 明日 NASDAQ:APLD?
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   10-07 周三  NASDAQ:APLD?
 ------------------------------------------------
@@ -30,57 +34,63 @@
 ================================================
 【大盘】
   SPX 7774 (MA50+1.4%) · RSI 67⚠️偏热 · VIX 15.5
-  风格: MTUM/MAGS 4.45 站上20日均 → 动量MTUM
-  日性质(因子ETF超额·非纯因子): 动量-0.1 高贝+0.5 低波-0.6 价值-0.8 → 中性日
-  派发 ▄▄▄▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁ (0/吸0) → 仓位100%
-  阶段C1 资金共识 恐慌3/4 共识4/5 缺:近三日突破20日线伴随放
-  宏观 ✅ATR1422% ✗10Y5.31% ✅HYG/LQD0.7553 ✅USD/JPY157.87
+  风格: MTUM/MAGS 4.40 站上20日均 → 动量MTUM
+  日性质(因子ETF超额·非纯因子): 动量-0.6 高贝-0.2 低波+0.1 价值-0.9 → 中性日
+  派发 ▄▄▄▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁ (0/吸1) → 仓位100%
+  阶段P0 恐慌未释放 恐慌2/4 共识4/5 缺:近三日突破20日线伴随放
+  宏观 ✅ATR1426% ✗10Y5.31% ✅HYG/LQD0.7560 ✅USD/JPY157.73
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:HACK 网络安全  NASDAQ:SMH 半导体  AMEX:ARKG 基因组  AMEX:XLK 科技板块 (Technology)  NASDAQ:SOXX 半导体主题 (Semis)
-  短线改善: AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  AMEX:PAVE 基建  AMEX:XRT 零售  AMEX:XLU 公用事业/AI电网 (Utilities)
+  涨幅优先: AMEX:ARKG 基因组  NASDAQ:SMH 半导体  AMEX:HACK 网络安全  NASDAQ:SOXX 半导体主题 (Semis)  AMEX:XLK 科技板块 (Technology)
+  短线改善: AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  AMEX:COPX 铜矿  AMEX:PAVE 基建  NASDAQ:UFO 卫星
 ------------------------------------------------
 【板块】
-  强: NASDAQ:SOXX+1.4%
+  强: 无
+  🚨砸盘: AMEX:XLRE-1.0%(量1.5x)
+  主题🧊 矿转AIDC -2.6%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
+   NASDAQ:RKLB   🟢10EMA回调   🟢黄金买点
    NASDAQ:AAOI   💡口袋支点      🔥强主升浪
+   NYSE:GEV      🟢10EMA回调   🟢稳健买点
    NYSE:CAT      💡口袋支点      🟢突破买点
+   NASDAQ:HOOD   🟢10EMA回调   🟢稳健买点
    NASDAQ:PLTR   🟢10EMA回调   🟢稳健买点
-   NASDAQ:SPCX   📦箱体突破      🟢强动能买点
+   NASDAQ:SPCX   💡口袋支点      🟢强动能买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:MSFT   🟢10EMA回调   ⚪观望
-   NASDAQ:INTC   🟢10EMA回调   ⚪观望
-   NYSE:NET      🟢10EMA回调   ⚪观望
+   NYSE:BE       🟢10EMA回调   ⚪观望
+   NASDAQ:MSFT   💡口袋支点      ⚪观望
+   NASDAQ:QQQ    🟢10EMA回调   🟡警告:临近前高
+   NYSE:NET      💡口袋支点      ⚪观望
    NYSE:ANET     🟢10EMA回调   ⚪观望
-   NASDAQ:CRDO   💡口袋支点      ⚪观望
-   NASDAQ:AXTI   💡口袋支点      ⚪观望
+   NASDAQ:MU     🟢10EMA回调   ⚪观望
+   NASDAQ:CIBR   💡口袋支点      🟡警告:临近前高
  ▶ 冲突（日线买点/日内破位）
    NASDAQ:NBIS   🟢10EMA回调   🔴规避/止损
    NYSE:SNOW     🟢10EMA回调   🔴规避/止损
-  日内异动: NASDAQ:RKLB🟢  NYSE:LLY🔴  NASDAQ:AMAT🟢  NASDAQ:SMH🟢 
-            NYSE:GEV🟢  NASDAQ:SNDK🔴  NASDAQ:QQQ🟢  NASDAQ:CRWD🟢 
-            NASDAQ:HOOD🟢  NASDAQ:AMD🟢  NASDAQ:CIBR🟢  AMEX:GDX🟢 
+  日内异动: NYSE:LLY🔴  NASDAQ:AMAT🟢  NASDAQ:SMH🟡  NASDAQ:SNDK🔴 
+            NASDAQ:CRWD🟡  NASDAQ:AMD🟢  NASDAQ:AXTI🟡  AMEX:GDX🟢 
             NASDAQ:IREN🟢  NASDAQ:CORZ🔴 
-  盘前±2%: NASDAQ:SPCX+8.4% NASDAQ:AAOI+5.5% NASDAQ:WULF-4.2% NASDAQ:NBIS-3.7% NYSE:NET+3.5% NASDAQ:IREN-2.9% NASDAQ:INTC-2.4% NASDAQ:APLD-2.3% NASDAQ:CRDO-2.3% NASDAQ:RIOT-2.2%
+  盘前±2%: NASDAQ:APLD+2.8% NYSE:SNOW-2.3%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 52%
-  🟢合格·在买点区(15): NYSE:BE NASDAQ:MSFT NASDAQ:SMH NASDAQ:QQQ NASDAQ:CRWD NYSE:ANET NASDAQ:AMD NASDAQ:CIBR NYSE:SNOW NASDAQ:NBIS NYSE:NET NASDAQ:MU NASDAQ:PLTR AMEX:SPY NASDAQ:INTC
+  🟢合格·在买点区(16): NYSE:BE NASDAQ:LITE NASDAQ:MSFT NASDAQ:SMH NASDAQ:QQQ NYSE:NET NASDAQ:CRWD NYSE:ANET NASDAQ:AMD NASDAQ:CIBR AMEX:SPY NYSE:SNOW NASDAQ:PLTR NASDAQ:MU NASDAQ:NBIS NASDAQ:INTC
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(17): NYSE:GEV NYSE:CAT NASDAQ:AXTI NASDAQ:RKLB SZSE:300990(同飞) NASDAQ:APLD SSE:601208(东材) NYSE:LLY SZSE:300394(天孚) NASDAQ:HUT SSE:688519(南亚) SSE:688627(精智达) SSE:600183(生益) SSE:688498(源杰) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
+  🔴淘汰(16): NYSE:GEV NYSE:CAT NASDAQ:AXTI NASDAQ:RKLB SZSE:300990(同飞) SSE:601208(东材) NASDAQ:APLD SZSE:300394(天孚) NASDAQ:HUT SSE:688519(南亚) SSE:688627(精智达) SSE:600183(生益) SSE:688498(源杰) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SPCXC$316M(v/oi99.0) MUC$149M(v/oi28.7) SNDK≈$123M(v/oi12.8) QQQ≈$120M(v/oi99.0) AMDC$76M(v/oi11.7)
+  今日: SPCXC$315M MUC$148M SNDK≈$124M QQQ≈$120M AMDC$75M
+  T+1核对: BEC267.5(10-09)✗未增 BEC282.5(10-09)✗未增 BEC285(10-09)✗未增 BEC287.5(10-09)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】44只(强23)·⚠️旧快照
-  今日强信号: NYSE:DELL NYSE:ERO NASDAQ:ARM NYSE:SCCO NYSE:HASI NASDAQ:GOOG AMEX:EWT AMEX:XLE
-  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:CAT NASDAQ:MU NASDAQ:CORZ NASDAQ:AMD NASDAQ:CIBR
-  池外强信号(仅提示, 不入信号链): NYSE:DELL NYSE:ERO NASDAQ:ARM NYSE:SCCO NYSE:HASI NASDAQ:GOOG
+【波哥七维·外部体系】45只(强26)·⚠️旧快照
+  今日强信号: NASDAQ:STX NASDAQ:WDC NYSE:SQM NYSE:SOC NYSE:AA AMEX:EWT NYSE:CCJ NYSE:BORR
+  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:CEG NYSE:CAT NASDAQ:CORZ NASDAQ:MU
+  池外强信号(仅提示, 不入信号链): NASDAQ:STX NASDAQ:WDC NYSE:SQM NYSE:SOC NYSE:AA AMEX:EWT
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
