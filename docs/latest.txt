@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-06 收盘(ET)
-  生成 10-06 18:14 纽约 = 10-07 06:14 新加坡
+  生成 10-06 19:56 纽约 = 10-07 07:56 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -31,7 +31,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.1 高贝+0.2 低波+0.2 价值-0.3 → 中性日
   派发 ▄▄▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁ (0/吸1) → 仓位100%
   阶段P0 恐慌未释放 恐慌2/4 共识3/5 缺:ratio站上20日均值
-  宏观 ✅ATR1418% ✗10Y5.27% ✅HYG/LQD0.7565 ✅USD/JPY158.16
+  宏观 ✅ATR1418% ✗10Y5.27% ✅HYG/LQD0.7565 ✅USD/JPY158.27
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:HACK 网络安全  NASDAQ:SKYY 云计算  AMEX:IGV 软件  NASDAQ:SMH 半导体  AMEX:XLK 科技板块 (Technology)
@@ -55,10 +55,10 @@
    NASDAQ:PLTR   🟢10EMA回调   ⚪观望
  ▶ 冲突（日线买点/日内破位）
    NYSE:SNOW     🟢10EMA回调   🔴规避/止损
-  日内异动: NYSE:BE🟢  NASDAQ:LITE🟢  NYSE:LLY🟢  NASDAQ:INTC🔴 
-            NASDAQ:AMAT🔴  NASDAQ:SMH🔴  NASDAQ:SNDK🔴  NYSE:NET🔴 
-            NASDAQ:HOOD🔴  NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:SPCX🔴 
-            AMEX:GDX🟡  NASDAQ:RIOT🔴  NASDAQ:WULF🟢  NASDAQ:APLD🟢 
+  日内异动: NYSE:BE🟢  NASDAQ:LITE🟢  NASDAQ:INTC🔴  NASDAQ:AMAT🔴 
+            NASDAQ:SMH🔴  NASDAQ:SNDK🔴  NYSE:NET🔴  NASDAQ:HOOD🔴 
+            NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:SPCX🔴  AMEX:GDX🟡 
+            NASDAQ:RIOT🔴  NASDAQ:WULF🟢  NASDAQ:APLD🟢 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 52%
