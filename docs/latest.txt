@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-06 收盘(ET)
-  生成 10-06 16:33 纽约 = 10-07 04:33 新加坡
+  生成 10-06 18:14 纽约 = 10-07 06:14 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -31,7 +31,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.1 高贝+0.2 低波+0.2 价值-0.3 → 中性日
   派发 ▄▄▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁ (0/吸1) → 仓位100%
   阶段P0 恐慌未释放 恐慌2/4 共识3/5 缺:ratio站上20日均值
-  宏观 ✅ATR1418% ✗10Y5.27% ✅HYG/LQD0.7565 ✅USD/JPY158.15
+  宏观 ✅ATR1418% ✗10Y5.27% ✅HYG/LQD0.7565 ✅USD/JPY158.16
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:HACK 网络安全  NASDAQ:SKYY 云计算  AMEX:IGV 软件  NASDAQ:SMH 半导体  AMEX:XLK 科技板块 (Technology)
@@ -55,19 +55,19 @@
    NASDAQ:PLTR   🟢10EMA回调   ⚪观望
  ▶ 冲突（日线买点/日内破位）
    NYSE:SNOW     🟢10EMA回调   🔴规避/止损
-  日内异动: NYSE:BE🟢  NASDAQ:LITE🟢  NASDAQ:INTC🔴  NASDAQ:AMAT🔴 
-            NASDAQ:SMH🔴  NASDAQ:SNDK🔴  NYSE:NET🔴  NASDAQ:HOOD🔴 
-            NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:SPCX🔴  AMEX:GDX🟡 
-            NASDAQ:RIOT🔴  NASDAQ:WULF🟢  NASDAQ:APLD🟢 
+  日内异动: NYSE:BE🟢  NASDAQ:LITE🟢  NYSE:LLY🟢  NASDAQ:INTC🔴 
+            NASDAQ:AMAT🔴  NASDAQ:SMH🔴  NASDAQ:SNDK🔴  NYSE:NET🔴 
+            NASDAQ:HOOD🔴  NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:SPCX🔴 
+            AMEX:GDX🟡  NASDAQ:RIOT🔴  NASDAQ:WULF🟢  NASDAQ:APLD🟢 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 52% · 📣RKLB S4↓→S1⌐
+  上升趋势占比 52%
   🟢合格·在买点区(15): NYSE:BE NASDAQ:NBIS NASDAQ:LITE NASDAQ:MSFT NASDAQ:SMH NASDAQ:QQQ NASDAQ:CRWD NASDAQ:CIBR AMEX:SPY NASDAQ:PLTR NYSE:NET NASDAQ:MU NYSE:SNOW NYSE:ANET NASDAQ:AMD
   🟢合格·追高区勿追(0): 无
   🔴淘汰(15): NYSE:GEV NYSE:CAT NASDAQ:AXTI SZSE:300990(同飞) NASDAQ:APLD SSE:601208(东材) NASDAQ:HUT SZSE:300394(天孚) SSE:688519(南亚) SSE:688627(精智达) SSE:600183(生益) SSE:688498(源杰) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQP$213M(v/oi99.0) AMDC$201M(v/oi99.0) MU≈$180M(v/oi24.4) SNDK≈$162M(v/oi11.9) SPCX≈$106M(v/oi68.6)
+  今日: QQQP$217M(v/oi99.0) AMDC$201M(v/oi99.0) MU≈$180M(v/oi24.4) SNDK≈$162M(v/oi11.9) SPCX≈$106M(v/oi68.6)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
