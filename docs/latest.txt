@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-05 收盘(ET)
-  生成 10-06 10:03 纽约 = 10-06 22:03 新加坡
+  生成 10-06 14:33 纽约 = 10-07 02:33 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,12 +8,12 @@
 【结论】仓位上限 100% · 阶段P0 · 宏观3/4 · 动量MTUM
 ------------------------------------------------
 【候选】7 只（形态+板块确认+无财报风险·未回测）
-  NYSE:BE       10EMA回调   日内:⚪观望
-  NASDAQ:MSFT   口袋支点      日内:🟢稳健买点
+  NYSE:BE       10EMA回调   日内:🔴锁定利润
+  NASDAQ:MSFT   口袋支点      日内:⚪观望
   NYSE:GEV      10EMA回调   日内:⚪观望
-  NYSE:NET      口袋支点      日内:⚪观望
-  NASDAQ:HOOD   10EMA回调   日内:⚪观望
-  NASDAQ:PLTR   10EMA回调   日内:🟢稳健买点
+  NYSE:NET      口袋支点      日内:🔴规避/止损
+  NASDAQ:HOOD   10EMA回调   日内:🔴规避/止损
+  NASDAQ:PLTR   10EMA回调   日内:⚪观望
   NYSE:SNOW     10EMA回调   日内:⚪观望
 【否决】
   NASDAQ:NBIS   板块背离
@@ -41,8 +41,8 @@
   宏观 ✅ATR1426% ✗10Y5.31% ✅HYG/LQD0.7560 ✅USD/JPY157.73
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:HACK 网络安全  AMEX:ARKG 基因组  NASDAQ:SMH 半导体  NASDAQ:SKYY 云计算  AMEX:IGV 软件
-  短线改善: AMEX:XLE 能源板块 (Energy)  AMEX:PRNT 3D打印  NASDAQ:ESPO 电竞  NASDAQ:HERO 游戏  AMEX:PAVE 基建
+  涨幅优先: AMEX:HACK 网络安全  NASDAQ:SMH 半导体  NASDAQ:SOXX 半导体主题 (Semis)  NASDAQ:SKYY 云计算  AMEX:IGV 软件
+  短线改善: AMEX:XLE 能源板块 (Energy)  NASDAQ:ESPO 电竞  AMEX:COPX 铜矿  NASDAQ:BOTZ 机器人  NASDAQ:UFO 卫星
 ------------------------------------------------
 【板块】
   强: 无
@@ -50,27 +50,29 @@
   主题🧊 矿转AIDC -2.6%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
- ▶ 日线+日内同向
-   NASDAQ:MSFT   💡口袋支点      🟢稳健买点
-   NASDAQ:QQQ    🟢10EMA回调   🟢稳健买点
-   NYSE:CAT      💡口袋支点      🟢黄金买点
-   NYSE:ANET     🟢10EMA回调   🟢黄金买点
-   NASDAQ:PLTR   🟢10EMA回调   🟢稳健买点
-   NASDAQ:SPCX   💡口袋支点      🟢黄金买点
  ▶ 等时机（日内未给买点）
-   NYSE:BE       🟢10EMA回调   ⚪观望
-   NASDAQ:NBIS   🟢10EMA回调   ⚪观望
    NASDAQ:RKLB   🟢10EMA回调   ⚪观望
-   NASDAQ:AAOI   💡口袋支点      ⚪观望
+   NASDAQ:MSFT   💡口袋支点      ⚪观望
    NYSE:GEV      🟢10EMA回调   ⚪观望
-   NYSE:NET      💡口袋支点      ⚪观望
-   NASDAQ:HOOD   🟢10EMA回调   ⚪观望
+   NASDAQ:QQQ    🟢10EMA回调   ⚪观望
+   NYSE:CAT      💡口袋支点      ⚪观望
    NASDAQ:MU     🟢10EMA回调   ⚪观望
+   NASDAQ:PLTR   🟢10EMA回调   ⚪观望
    NASDAQ:CIBR   💡口袋支点      ⚪观望
    NYSE:SNOW     🟢10EMA回调   ⚪观望
-  日内异动: NASDAQ:LITE🟢  NYSE:LLY🟢  NASDAQ:SMH🟢  NASDAQ:CRWD🟢 
-            NASDAQ:AMD🟢  NASDAQ:CORZ🟢  NASDAQ:RIOT🟢  NASDAQ:CIFR🟢 
-  盘前±2%: NASDAQ:RKLB+6.4% NASDAQ:NBIS+6.4% NYSE:GEV+5.9% NASDAQ:AAOI+5.9% NASDAQ:CRDO+5.0% NASDAQ:CRWD+3.9% NYSE:BE+2.7% NASDAQ:APLD+2.6% NYSE:CAT+2.5% NASDAQ:PLTR+2.2% NASDAQ:CIBR+2.1% NASDAQ:SPCX+2.0%
+   NASDAQ:SPCX   💡口袋支点      ⚪观望
+ ▶ 冲突（日线买点/日内破位）
+   NYSE:BE       🟢10EMA回调   🔴锁定利润
+   NASDAQ:NBIS   🟢10EMA回调   🔴锁定利润
+   NASDAQ:AAOI   💡口袋支点      🔴锁定利润
+   NYSE:NET      💡口袋支点      🔴规避/止损
+   NYSE:ANET     🟢10EMA回调   🔴锁定利润
+   NASDAQ:HOOD   🟢10EMA回调   🔴规避/止损
+  日内异动: NASDAQ:LITE🟢  NYSE:LLY🟢  NASDAQ:INTC🔴  NASDAQ:AMAT🔴 
+            NASDAQ:SMH🔴  NASDAQ:AMD🔴  NASDAQ:AXTI🟢  AMEX:GDX🔴 
+            NASDAQ:IREN🟢  NASDAQ:CORZ🟢  NASDAQ:RIOT🔴  NASDAQ:CIFR🟢 
+            NASDAQ:HUT🟢  NASDAQ:WULF🟢  NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:NBIS+8.8% NASDAQ:AAOI+6.8% NASDAQ:CRDO+4.0% NYSE:BE+4.0% NYSE:GEV+3.9% NASDAQ:IREN+3.4% NASDAQ:AMD+3.4% NYSE:ANET+3.4% NASDAQ:LITE+3.4% NASDAQ:RKLB+2.9% NASDAQ:CRWD+2.3% NASDAQ:AMAT-2.2% NASDAQ:SNDK-2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 52%
@@ -79,7 +81,7 @@
   🔴淘汰(16): NYSE:GEV NYSE:CAT NASDAQ:AXTI NASDAQ:RKLB SZSE:300990(同飞) SSE:601208(东材) NASDAQ:APLD SZSE:300394(天孚) NASDAQ:HUT SSE:688519(南亚) SSE:688627(精智达) SSE:600183(生益) SSE:688498(源杰) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: AMDC$75M(v/oi10.7) SNDK≈$66M MUC$65M(v/oi5.0) SPCXC$59M(v/oi13.6) QQQ≈$38M(v/oi89.8)
+  今日: AMDC$235M(v/oi99.0) QQQ≈$171M(v/oi99.0) MUC$159M(v/oi19.3) SNDK≈$127M(v/oi8.3) NBISC$118M(v/oi15.3)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
