@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-07 收盘(ET)
-  生成 10-07 16:33 纽约 = 10-08 04:33 新加坡
+  生成 10-07 18:16 纽约 = 10-08 06:16 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -34,7 +34,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.4 高贝-0.7 低波-0.0 价值+0.7 → 价值轮动日
   派发 ▄▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▁ (0/吸1) → 仓位100%
   阶段P0 恐慌未释放 恐慌1/4 共识3/5 缺:ratio站上20日均值
-  宏观 ✅ATR1414% ✗10Y5.28% ✅HYG/LQD0.7559 ✅USD/JPY158.05
+  宏观 ✅ATR1414% ✗10Y5.28% ✅HYG/LQD0.7559 ✅USD/JPY158.00
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:HACK 网络安全  NASDAQ:SKYY 云计算  AMEX:IGV 软件  AMEX:CRAK 炼化下游  AMEX:XLK 科技板块 (Technology)
@@ -69,9 +69,10 @@
             NASDAQ:SNDK🟡  NYSE:CAT🔴  NYSE:NET🔴  NASDAQ:HOOD🟡 
             NASDAQ:AMD🟡  NASDAQ:MU🟡  NASDAQ:IREN🔴  NASDAQ:CORZ🟡 
             NASDAQ:CIFR🔴  NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:APLD+3.6%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 50% · 📣CAT S3⌒→S1⌐ · HUT S2↑→S1⌐
+  上升趋势占比 50%
   🟢合格·在买点区(14): NYSE:BE NASDAQ:LITE NASDAQ:MSFT NASDAQ:SMH NASDAQ:QQQ NASDAQ:CRWD NASDAQ:PLTR NASDAQ:CIBR AMEX:SPY NASDAQ:MU NASDAQ:NBIS NYSE:NET NYSE:ANET NASDAQ:AMD
   🟢合格·追高区勿追(0): 无
   🔴淘汰(14): NYSE:GEV NASDAQ:AXTI SZSE:300990(同飞) SSE:601208(东材) NASDAQ:HOOD SZSE:300394(天孚) NASDAQ:APLD SSE:688519(南亚) SSE:688627(精智达) SSE:600183(生益) SSE:688498(源杰) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
