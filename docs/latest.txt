@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-06 收盘(ET)
-  生成 10-07 06:07 纽约 = 10-07 18:07 新加坡
+  生成 10-07 10:03 纽约 = 10-07 22:03 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,11 +8,11 @@
 【结论】仓位上限 100% · 阶段P0 · 宏观3/4 · 动量MTUM
 ------------------------------------------------
 【候选】5 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:NBIS   口袋支点      日内:🟡警告:临近前高
+  NASDAQ:NBIS   口袋支点      日内:⚪观望
   NASDAQ:RKLB   口袋支点      日内:⚪观望
-  NYSE:GEV      口袋支点      日内:⚪观望
+  NYSE:GEV      口袋支点      日内:🔴规避/止损
   NASDAQ:PLTR   10EMA回调   日内:⚪观望
-  NYSE:SNOW     10EMA回调   日内:🔴规避/止损
+  NYSE:SNOW     10EMA回调   日内:🟢稳健买点
 【否决】
   NASDAQ:AAOI   板块背离
   NYSE:ANET     板块背离
@@ -34,8 +34,8 @@
   宏观 ✅ATR1418% ✗10Y5.27% ✅HYG/LQD0.7565 ✅USD/JPY157.96
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:HACK 网络安全  NASDAQ:SKYY 云计算  AMEX:IGV 软件  NASDAQ:SMH 半导体  AMEX:XLK 科技板块 (Technology)
-  短线改善: AMEX:IPO 新股  NASDAQ:UFO 卫星  NASDAQ:BOTZ 机器人  AMEX:UNG 天然气  AMEX:DBA 农产品
+  涨幅优先: AMEX:HACK 网络安全  NASDAQ:SMH 半导体  AMEX:XLK 科技板块 (Technology)  NASDAQ:SOXX 半导体主题 (Semis)  NASDAQ:SKYY 云计算
+  短线改善: AMEX:USMV 低波  AMEX:IPO 新股  AMEX:XLY 可选消费 (Discretionary)  AMEX:XLU 公用事业/AI电网 (Utilities)  AMEX:NLR 核能
 ------------------------------------------------
 【板块】
   强: AMEX:XLU+2.4%
@@ -44,22 +44,21 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NYSE:ANET     💡口袋支点      🟢突破买点
-   NASDAQ:AMD    💡口袋支点      🟢稳健买点
-   NASDAQ:CIBR   📦箱体突破      🟢黄金买点
+   NYSE:SNOW     🟢10EMA回调   🟢稳健买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:NBIS   💡口袋支点      🟡警告:临近前高
+   NASDAQ:NBIS   💡口袋支点      ⚪观望
    NASDAQ:RKLB   💡口袋支点      ⚪观望
-   NASDAQ:AAOI   💡口袋支点      ⚪观望
-   NYSE:GEV      💡口袋支点      ⚪观望
+   NYSE:ANET     💡口袋支点      ⚪观望
+   NASDAQ:AMD    💡口袋支点      ⚪观望
    NASDAQ:PLTR   🟢10EMA回调   ⚪观望
+   NASDAQ:CIBR   📦箱体突破      ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NYSE:SNOW     🟢10EMA回调   🔴规避/止损
-  日内异动: NYSE:BE🟢  NASDAQ:LITE🟢  NASDAQ:INTC🔴  NASDAQ:AMAT🔴 
-            NASDAQ:SMH🔴  NASDAQ:SNDK🔴  NYSE:NET🔴  NASDAQ:HOOD🔴 
-            NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:SPCX🔴  AMEX:GDX🟡 
-            NASDAQ:RIOT🔴  NASDAQ:WULF🟢  NASDAQ:APLD🟢 
-  盘前±2%: NASDAQ:AAOI-3.4% NASDAQ:AXTI-3.4% NASDAQ:LITE-2.3% NASDAQ:CRDO-2.3% NYSE:BE-2.2% NASDAQ:MU-2.2% NASDAQ:SNDK-2.1% NASDAQ:SPCX-2.1% NASDAQ:RIOT-2.1% NASDAQ:IREN-2.1% NASDAQ:WULF-2.0%
+   NASDAQ:AAOI   💡口袋支点      🔴规避/止损
+   NYSE:GEV      💡口袋支点      🔴规避/止损
+  日内异动: NASDAQ:INTC🟢  NASDAQ:AMAT🟡  NASDAQ:SNDK🟡  NYSE:CAT🔴 
+            AMEX:GDX🟡  NASDAQ:CORZ🟡  NASDAQ:RIOT🟡  NASDAQ:CIFR🟡 
+            NASDAQ:HUT🟡 
+  盘前±2%: NASDAQ:AAOI-6.9% NYSE:CAT-5.2% NASDAQ:RKLB-4.9% NYSE:GEV-4.7% NASDAQ:APLD-4.4% NASDAQ:AXTI-4.3% NASDAQ:NBIS-4.2% NASDAQ:CRDO-4.1% NASDAQ:HUT-4.0% NASDAQ:WULF-4.0% NASDAQ:CIFR-3.4% AMEX:GDX-3.4% NASDAQ:RIOT-3.4% NASDAQ:IREN-3.3% NASDAQ:CORZ-3.3% NASDAQ:HOOD-3.3% NASDAQ:CRWD-3.3% NASDAQ:LITE-3.1% NYSE:LLY+2.4% NYSE:NET-2.3% NYSE:ANET-2.2% NASDAQ:AMAT-2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 52%
@@ -68,8 +67,7 @@
   🔴淘汰(15): NYSE:GEV NYSE:CAT NASDAQ:AXTI SZSE:300990(同飞) NASDAQ:APLD SSE:601208(东材) NASDAQ:HUT SZSE:300394(天孚) SSE:688519(南亚) SSE:688627(精智达) SSE:600183(生益) SSE:688498(源杰) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: AMDC$199M MU≈$177M SNDK≈$160M SPCX≈$106M NBISC$103M
-  T+1核对: BEC292.5(10-09)✗未增 BEC295(10-09)✗未增 BEC297.5(10-09)✗未增 BEC300(10-09)✗未增
+  今日: MUC$89M(v/oi24.2) SNDK≈$61M(v/oi5.9) QQQP$60M(v/oi22.1) AMDC$46M(v/oi4.6) LITEC$24M
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
