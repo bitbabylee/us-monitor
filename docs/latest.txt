@@ -1,83 +1,73 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-10-07 收盘(ET)
-  生成 10-08 14:58 纽约 = 10-09 02:58 新加坡
+  波哥信号 · 美股日报  数据截至 2026-10-08 收盘(ET)
+  生成 10-08 16:33 纽约 = 10-09 04:33 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
 【结论】仓位上限 100% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
-【候选】3 只（形态+板块确认+无财报风险·未回测）
-  NYSE:BE       10EMA回调   日内:🔴规避/止损
-  NYSE:LLY      EMA金叉     日内:🔴规避/止损
-  NYSE:GEV      10EMA回调   日内:⚪观望
+【候选】5 只（形态+板块确认+无财报风险·未回测）
+  NYSE:GEV      口袋支点      日内:⚪观望
+  NASDAQ:CRWD   10EMA回调   日内:🔴规避/止损
+  NYSE:SNOW     10EMA回调   日内:🟢强动能买点
+  NASDAQ:SPCX   10EMA回调   日内:🔴规避/止损
+  AMEX:GDX      超跌反弹      日内:🟢突破买点
 【否决】
-  NASDAQ:RKLB   板块背离
-  NASDAQ:AMAT   板块背离
-  NASDAQ:QQQ    板块背离
-  NASDAQ:CRWD   板块背离
+  NASDAQ:MSFT   板块背离
   NYSE:ANET     板块背离
-  NASDAQ:CRDO   板块背离
-  NASDAQ:AXTI   板块背离
-  NASDAQ:PLTR   板块背离
-  AMEX:GDX      板块背离
+  NASDAQ:CIBR   板块背离
 【风险】无近端风险事件
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7802 (MA50+1.6%) · RSI 66⚠️偏热 · VIX 15.1
-  风格: MTUM/MAGS 4.38 跌破20日均 → 抱团MAGS
-  日性质(因子ETF超额·非纯因子): 动量-0.4 高贝-0.7 低波-0.0 价值+0.7 → 价值轮动日
-  派发 ▄▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂ (1/吸1) → 仓位100%
-  阶段P0 恐慌未释放 恐慌1/4 共识3/5 缺:ratio站上20日均值
-  宏观 ✅ATR1414% ✗10Y5.28% ✅HYG/LQD0.7559 ✅USD/JPY158.30
+  SPX 7765 (MA50+1.0%) · RSI 61 · VIX 15.4
+  风格: MTUM/MAGS 4.35 跌破20日均 → 抱团MAGS
+  日性质(因子ETF超额·非纯因子): 动量-1.2 高贝-1.7 低波+1.0 价值-0.1 → 去杠杆/轮动日
+  派发 ▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▂ (1/吸1) → 仓位100%
+  阶段P0 恐慌未释放 恐慌1/4 共识2/5 缺:双指数五日收益率均为正
+  宏观 ✅ATR1422% ✗10Y5.23% ✅HYG/LQD0.7528 ✅USD/JPY157.91
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:HACK 网络安全  AMEX:IEO 油气上游  AMEX:CRAK 炼化下游  AMEX:XLK 科技板块 (Technology)  NASDAQ:SKYY 云计算
-  短线改善: AMEX:XLE 能源板块 (Energy)  AMEX:USMV 低波  AMEX:XLY 可选消费 (Discretionary)  AMEX:XLU 公用事业/AI电网 (Utilities)
+  涨幅优先: AMEX:HACK 网络安全  AMEX:IEO 油气上游  NASDAQ:SKYY 云计算  AMEX:CRAK 炼化下游  NASDAQ:WCLD 云软件
+  短线改善: AMEX:XRT 零售  AMEX:XLY 可选消费 (Discretionary)  AMEX:XLB 基础材料 (Materials)  AMEX:XLF 金融板块 (Financials)  AMEX:XLU 公用事业/AI电网 (Utilities)
 ------------------------------------------------
 【板块】
-  强: AMEX:XLV+1.3%
-  🚨砸盘: AMEX:XLRE-1.0%(量1.4x)
-  主题🧊 ☁️ 云计算 -2.2%
-  主题🧊 🚀 军工   -2.3%
-  主题🧊 🪙 黄金   -2.6%
-  主题🧊 传统工业重机 -3.7%
-  主题🧊 矿转AIDC -4.3%
+  强: AMEX:XLE+3.4% · AMEX:XLP+2.5% · AMEX:GDX+1.9% · AMEX:XLF+1.3% · AMEX:XLC+1.2% · AMEX:XLRE+1.1% · AMEX:ITA+1.1% · AMEX:XLB+1.0%
+  🚨砸盘: NASDAQ:SOXX-2.9%(量1.5x)
+  主题🔥 🪙 黄金   +2.2%  龙头 NYSE:GOLD
+  主题🧊 🔥 AI算力 -3.6%
+  主题🧊 ⚡ AI电网 -3.7%
+  主题🧊 矿转AIDC -5.8%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   AMEX:GDX      🚀超跌反弹      🟢稳健买点
+   NYSE:SNOW     🟢10EMA回调   🟢强动能买点
+   AMEX:GDX      🚀超跌反弹      🟢突破买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:AMAT   🟢10EMA回调   ⚪观望
-   NYSE:GEV      🟢10EMA回调   ⚪观望
-   NYSE:ANET     💡口袋支点      ⚪观望
-   NASDAQ:PLTR   🟢10EMA回调   ⚪观望
+   NYSE:GEV      💡口袋支点      ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NYSE:BE       🟢10EMA回调   🔴规避/止损
-   NASDAQ:RKLB   🟢10EMA回调   🔴规避/止损
-   NYSE:LLY      🌊EMA金叉     🔴规避/止损
-   NASDAQ:QQQ    🟢10EMA回调   🔴规避/止损
+   NASDAQ:MSFT   🟢10EMA回调   🔴规避/止损
    NASDAQ:CRWD   🟢10EMA回调   🔴规避/止损
-   NASDAQ:CRDO   🟢10EMA回调   🔴规避/止损
-   NASDAQ:AXTI   🟢10EMA回调   🔴规避/止损
-  日内异动: NASDAQ:NBIS🔴  NASDAQ:LITE🔴  NASDAQ:AAOI🔴  NASDAQ:MSFT🔴 
-            NASDAQ:INTC🔴  NASDAQ:SMH🔴  NASDAQ:SNDK🔴  NYSE:CAT🔴 
-            NASDAQ:AMD🔴  NASDAQ:MU🔴  NASDAQ:CIBR🔴  NASDAQ:SPCX🔴 
-            NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴 
-            NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AAOI-12.7% NASDAQ:HUT-10.4% NASDAQ:AXTI-10.1% NASDAQ:RIOT-8.7% NASDAQ:CIFR-7.9% NASDAQ:IREN-7.5% NYSE:BE-7.2% NASDAQ:NBIS-7.2% NASDAQ:INTC-6.0% NASDAQ:LITE-5.7% NASDAQ:RKLB-5.4% NASDAQ:WULF-5.2% NASDAQ:SNDK-5.0% NASDAQ:AMD-4.5% NASDAQ:MU-4.4% NASDAQ:CRDO-4.4% NASDAQ:CORZ-4.0% NASDAQ:SPCX-3.2% NASDAQ:SMH-3.2% NYSE:LLY-2.5% NASDAQ:AMAT-2.5% NYSE:SNOW+2.4% NASDAQ:APLD-2.4% NYSE:CAT-2.2% NASDAQ:HOOD-2.2%
+   NYSE:ANET     🟢10EMA回调   🔴规避/止损
+   NASDAQ:CIBR   🟢10EMA回调   🔴规避/止损
+   NASDAQ:SPCX   🟢10EMA回调   🔴规避/止损
+  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:LITE🔴 
+            NASDAQ:AAOI🔴  NASDAQ:INTC🔴  NASDAQ:SMH🔴  NASDAQ:SNDK🔴 
+            NASDAQ:QQQ🔴  NYSE:CAT🔴  NASDAQ:AMD🔴  NASDAQ:MU🔴 
+            NASDAQ:AXTI🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
+            NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 49%
-  🟢合格·在买点区(15): NYSE:BE NASDAQ:LITE NASDAQ:MSFT NASDAQ:SMH NASDAQ:QQQ NASDAQ:CRWD NASDAQ:PLTR NASDAQ:CIBR AMEX:SPY NASDAQ:MU NASDAQ:NBIS NYSE:NET SSE:601208(东材) NYSE:ANET NASDAQ:AMD
+  上升趋势占比 49% · 📣AXTI S3⌒→S1⌐
+  🟢合格·在买点区(14): NASDAQ:LITE NASDAQ:MSFT NASDAQ:QQQ NASDAQ:CRWD NASDAQ:PLTR NASDAQ:CIBR NYSE:SNOW AMEX:SPY NASDAQ:SMH SSE:601208(东材) NYSE:NET NASDAQ:MU NYSE:ANET NASDAQ:AMD
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(12): NYSE:GEV NASDAQ:AXTI SZSE:300990(同飞) NASDAQ:HOOD SSE:688519(南亚) SSE:688072(拓荆) NASDAQ:APLD SSE:600183(生益) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克) SSE:688498(源杰)
+  🔴淘汰(14): NYSE:GEV SZSE:300990(同飞) NASDAQ:NBIS NASDAQ:SNDK NASDAQ:INTC NASDAQ:HOOD SSE:688519(南亚) SSE:688072(拓荆) NASDAQ:APLD SSE:600183(生益) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克) SSE:688498(源杰)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQP$1349M(v/oi99.0) MUP$393M(v/oi27.4) SNDK≈$216M(v/oi68.7) AMD≈$120M(v/oi16.4) PLTR≈$74M(v/oi99.0)
+  今日: QQQP$1030M(v/oi99.0) MUP$477M(v/oi32.5) SNDK≈$269M(v/oi90.5) SPCXP$118M(v/oi6.4) AMD≈$117M(v/oi25.2)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
