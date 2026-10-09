@@ -1,26 +1,21 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-10-07 收盘(ET)
-  生成 10-08 20:32 纽约 = 10-09 08:32 新加坡
+  波哥信号 · 美股日报  数据截至 2026-10-08 收盘(ET)
+  生成 10-09 06:07 纽约 = 10-09 18:07 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 100% · 阶段P0 · 宏观3/4 · 抱团MAGS
+【结论】仓位上限 80% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
-【候选】3 只（形态+板块确认+无财报风险·未回测）
-  NYSE:BE       10EMA回调   日内:🔴规避/止损
-  NYSE:LLY      EMA金叉     日内:⚪观望
-  NYSE:GEV      10EMA回调   日内:⚪观望
+【候选】4 只（形态+板块确认+无财报风险·未回测）
+  NYSE:GEV      口袋支点      日内:⚪观望
+  NASDAQ:CRWD   10EMA回调   日内:🔴规避/止损
+  NASDAQ:SPCX   10EMA回调   日内:🔴规避/止损
+  AMEX:GDX      超跌反弹      日内:🟢突破买点
 【否决】
-  NASDAQ:RKLB   板块背离
-  NASDAQ:AMAT   板块背离
-  NASDAQ:QQQ    板块背离
-  NASDAQ:CRWD   板块背离
+  NASDAQ:MSFT   板块背离
   NYSE:ANET     板块背离
-  NASDAQ:CRDO   板块背离
-  NASDAQ:AXTI   板块背离
-  NASDAQ:PLTR   板块背离
-  AMEX:GDX      板块背离
+  NASDAQ:CIBR   板块背离
 【风险】无近端风险事件
 ------------------------------------------------
 
@@ -28,63 +23,59 @@
 ================================================
 【大盘】
   SPX 7765 (MA50+1.0%) · RSI 61 · VIX 15.4
-  风格: MTUM/MAGS 4.38 跌破20日均 → 抱团MAGS
-  日性质(因子ETF超额·非纯因子): 动量-0.4 高贝-0.7 低波-0.0 价值+0.7 → 价值轮动日
-  派发 ▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▂ (1/吸1) → 仓位100%
-  阶段P0 恐慌未释放 恐慌2/4 共识3/5 缺:ratio站上20日均值
-  宏观 ✅ATR1414% ✗10Y5.23% ✅HYG/LQD0.7559 ✅USD/JPY158.03
+  风格: MTUM/MAGS 4.35 跌破20日均 → 抱团MAGS
+  日性质(因子ETF超额·非纯因子): 动量-1.2 高贝-1.7 低波+1.0 价值-0.1 → 去杠杆/轮动日
+  派发 ▄▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▃ (2/吸1) → 仓位80%
+  阶段P0 恐慌未释放 恐慌1/4 共识2/5 缺:双指数五日收益率均为正
+  宏观 ✅ATR1422% ✗10Y5.23% ✅HYG/LQD0.7528 ✅USD/JPY158.06
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:HACK 网络安全  NASDAQ:SKYY 云计算  AMEX:IGV 软件  AMEX:CRAK 炼化下游  AMEX:XLK 科技板块 (Technology)
-  短线改善: AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  AMEX:USMV 低波  AMEX:IPO 新股  AMEX:XLY 可选消费 (Discretionary)
+  涨幅优先: AMEX:HACK 网络安全  AMEX:IEO 油气上游  NASDAQ:SKYY 云计算  AMEX:CRAK 炼化下游  NASDAQ:WCLD 云软件
+  短线改善: AMEX:XRT 零售  AMEX:XLY 可选消费 (Discretionary)  AMEX:XLB 基础材料 (Materials)  AMEX:XLF 金融板块 (Financials)  AMEX:XLU 公用事业/AI电网 (Utilities)
 ------------------------------------------------
 【板块】
-  强: AMEX:XLV+1.3%
-  主题🧊 ☁️ 云计算 -2.2%
-  主题🧊 🚀 军工   -2.3%
-  主题🧊 🪙 黄金   -2.6%
-  主题🧊 传统工业重机 -3.7%
-  主题🧊 矿转AIDC -4.3%
+  强: AMEX:XLE+3.4% · AMEX:XLP+2.5% · AMEX:GDX+1.9% · AMEX:XLF+1.3% · AMEX:XLC+1.2% · AMEX:XLRE+1.1% · AMEX:ITA+1.1% · AMEX:XLB+1.0%
+  🚨砸盘: NASDAQ:SOXX-2.9%(量1.6x)
+  主题🔥 🪙 黄金   +2.2%  龙头 NYSE:GOLD
+  主题🧊 🔥 AI算力 -3.6%
+  主题🧊 ⚡ AI电网 -3.7%
+  主题🧊 矿转AIDC -5.8%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
    AMEX:GDX      🚀超跌反弹      🟢突破买点
  ▶ 等时机（日内未给买点）
-   NYSE:LLY      🌊EMA金叉     ⚪观望
-   NASDAQ:AMAT   🟢10EMA回调   ⚪观望
-   NYSE:GEV      🟢10EMA回调   ⚪观望
-   NASDAQ:CRDO   🟢10EMA回调   ⚪观望
-   NASDAQ:PLTR   🟢10EMA回调   ⚪观望
+   NYSE:GEV      💡口袋支点      ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NYSE:BE       🟢10EMA回调   🔴规避/止损
-   NASDAQ:RKLB   🟢10EMA回调   🔴规避/止损
-   NASDAQ:QQQ    🟢10EMA回调   🔴规避/止损
+   NASDAQ:MSFT   🟢10EMA回调   🔴规避/止损
    NASDAQ:CRWD   🟢10EMA回调   🔴规避/止损
-   NYSE:ANET     💡口袋支点      🔴规避/止损
-   NASDAQ:AXTI   🟢10EMA回调   🔴规避/止损
-  日内异动: NASDAQ:NBIS🔴  NASDAQ:LITE🔴  NASDAQ:AAOI🔴  NASDAQ:MSFT🔴 
-            NASDAQ:INTC🔴  NASDAQ:SMH🔴  NASDAQ:SNDK🔴  NYSE:CAT🔴 
-            NASDAQ:AMD🔴  NASDAQ:MU🔴  NASDAQ:CIBR🔴  NYSE:SNOW🟢 
-            NASDAQ:SPCX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
-            NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴 
-  盘前±2%: NASDAQ:AAOI-12.2% NASDAQ:HUT-10.2% NASDAQ:AXTI-9.3% NASDAQ:RIOT-8.7% NASDAQ:IREN-7.1% NASDAQ:CIFR-7.0% NASDAQ:NBIS-6.9% NYSE:BE-6.3% NASDAQ:INTC-5.5% NASDAQ:LITE-5.5% NASDAQ:WULF-4.9% NASDAQ:MU-4.8% NASDAQ:RKLB-4.8% NASDAQ:SNDK-4.7% NASDAQ:AMD-4.3% NASDAQ:CRDO-4.2% NYSE:SNOW+3.5% NASDAQ:SMH-2.9% NASDAQ:AMAT-2.8% NASDAQ:HOOD-2.3% NASDAQ:PLTR+2.3% NYSE:ANET-2.2% NASDAQ:CORZ-2.1% NYSE:CAT-2.1%
+   NYSE:ANET     🟢10EMA回调   🔴规避/止损
+   NASDAQ:CIBR   🟢10EMA回调   🔴规避/止损
+   NASDAQ:SPCX   🟢10EMA回调   🔴规避/止损
+  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:LITE🔴 
+            NASDAQ:AAOI🔴  NASDAQ:INTC🔴  NASDAQ:SMH🔴  NASDAQ:SNDK🔴 
+            NASDAQ:QQQ🔴  NYSE:CAT🔴  NASDAQ:AMD🔴  NASDAQ:MU🔴 
+            NASDAQ:AXTI🔴  NYSE:SNOW🟢  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
+            NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴 
+  盘前±2%: NASDAQ:AAOI+5.2% NASDAQ:SPCX+4.2% NASDAQ:LITE+4.1% NASDAQ:AXTI+3.3% NASDAQ:IREN+3.3% NASDAQ:NBIS+3.0% NASDAQ:CIFR+2.5% NYSE:BE+2.5% NASDAQ:HUT+2.4% NASDAQ:AMAT+2.3% NASDAQ:RIOT+2.3% AMEX:GDX+2.2% NASDAQ:CORZ+2.1% NASDAQ:WULF+2.1% NASDAQ:CRDO+2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 49% · 📣AXTI S1⌐→S3⌒
-  🟢合格·在买点区(15): NYSE:BE NASDAQ:LITE NASDAQ:MSFT NASDAQ:SMH NASDAQ:QQQ NASDAQ:CRWD NASDAQ:PLTR NASDAQ:CIBR AMEX:SPY NASDAQ:MU NASDAQ:NBIS NYSE:NET SSE:601208(东材) NYSE:ANET NASDAQ:AMD
+  上升趋势占比 45% · 📣AXTI S3⌒→S1⌐ · 沪电 S2↑→S1⌐ · 源杰 S2↑→S1⌐
+  🟢合格·在买点区(13): NASDAQ:LITE NASDAQ:MSFT NASDAQ:QQQ NASDAQ:CRWD NASDAQ:PLTR NASDAQ:CIBR NYSE:SNOW AMEX:SPY NASDAQ:SMH NYSE:NET NASDAQ:MU NYSE:ANET NASDAQ:AMD
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(12): NYSE:GEV NASDAQ:AXTI SZSE:300990(同飞) NASDAQ:HOOD SSE:688519(南亚) SSE:688072(拓荆) NASDAQ:APLD SSE:600183(生益) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克) SSE:688498(源杰)
+  🔴淘汰(13): NYSE:GEV NASDAQ:NBIS NASDAQ:SNDK NASDAQ:INTC SZSE:300990(同飞) SSE:601208(东材) NASDAQ:HOOD SSE:688072(拓荆) NASDAQ:APLD SSE:688519(南亚) SSE:600183(生益) SZSE:300476(胜宏) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUP$477M(v/oi32.5) QQQP$280M(v/oi45.3) SNDK≈$269M(v/oi90.5) AMD≈$117M(v/oi25.2) PLTRC$98M(v/oi99.0)
+  今日: MUP$472M QQQP$283M SNDK≈$271M AMD≈$117M PLTRC$98M
+  T+1核对: BEC265(10-09)✗未增 BEC270(10-09)✗未增 BEC272.5(10-09)✗未增 BEC275(10-09)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】34只(强17)·⚠️旧快照
-  今日强信号: AMEX:XLE NYSE:ALB NASDAQ:SSRM NYSE:SDRL NYSE:AEM🔗 AMEX:UUUU NASDAQ:NBIS🔗 NASDAQ:HSIDI
-  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:AEM NASDAQ:NBIS NASDAQ:CEG NASDAQ:CRDO NASDAQ:CORZ
-  池外强信号(仅提示, 不入信号链): AMEX:XLE NYSE:ALB NASDAQ:SSRM NYSE:SDRL NYSE:AEM AMEX:UUUU
+【波哥七维·外部体系】30只(强13)·⚠️旧快照
+  今日强信号: NYSE:NEM🔗 AMEX:GDX🔗 NYSE:AEM🔗 NYSE:OXY NYSE:IBM NASDAQ:MU🔗 AMEX:XLE NYSE:ALB
+  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:NEM AMEX:GDX NYSE:AEM NASDAQ:MU NASDAQ:NBIS NYSE:GEV NASDAQ:CRDO
+  池外强信号(仅提示, 不入信号链): NYSE:NEM NYSE:AEM NYSE:OXY NYSE:IBM AMEX:XLE NYSE:ALB
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
