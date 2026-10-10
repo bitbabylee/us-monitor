@@ -1,29 +1,20 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-10-09 收盘(ET)
-  生成 10-09 18:26 纽约 = 10-10 06:26 新加坡
+  波哥信号 · 美股日报  数据截至 2026-10-08 收盘(ET)
+  生成 10-09 20:08 纽约 = 10-10 08:08 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
 【结论】仓位上限 80% · 阶段P0 · 宏观3/4 · 抱团MAGS
 ------------------------------------------------
-【候选】12 只（形态+板块确认+无财报风险·未回测）
-  NYSE:BE       10EMA回调   日内:🟢突破买点
-  NASDAQ:MSFT   10EMA回调   日内:🟡警告:临近前高
-  NYSE:LLY      10EMA回调   日内:🟢突破买点
-  NYSE:GEV      10EMA回调   日内:⚪观望
-  NYSE:NET      10EMA回调   日内:🔴锁定利润
+【候选】4 只（形态+板块确认+无财报风险·未回测）
+  NYSE:GEV      口袋支点      日内:🟢稳健买点
   NASDAQ:CRWD   10EMA回调   日内:🟢突破买点
-  NASDAQ:HOOD   超跌反弹      日内:🟢突破买点
-  NASDAQ:PLTR   箱体突破      日内:🟢强动能买点
-  NYSE:SNOW     口袋支点      日内:🟢强动能买点
   NASDAQ:SPCX   10EMA回调   日内:⚪观望
   AMEX:GDX      超跌反弹      日内:🟢黄金买点
-  NASDAQ:HUT    超跌反弹      日内:🔥强主升浪
 【否决】
-  NASDAQ:AMAT   板块背离
-  NASDAQ:QQQ    板块背离
-  NASDAQ:CRDO   板块背离
+  NASDAQ:MSFT   板块背离
+  NYSE:ANET     板块背离
   NASDAQ:CIBR   板块背离
 【风险】无近端风险事件
 ------------------------------------------------
@@ -32,53 +23,48 @@
 ================================================
 【大盘】
   SPX 7812 (MA50+1.5%) · RSI 55 · VIX 14.8
-  风格: MTUM/MAGS 4.34 跌破20日均 → 抱团MAGS
-  日性质(因子ETF超额·非纯因子): 动量+0.2 高贝+0.8 低波-0.1 价值-0.9 → 风偏进攻日
+  风格: MTUM/MAGS 4.35 跌破20日均 → 抱团MAGS
+  日性质(因子ETF超额·非纯因子): 动量-1.2 高贝-1.7 低波+1.0 价值-0.1 → 去杠杆/轮动日
   派发 ▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▃▃ (2/吸1) → 仓位80%
-  阶段P0 恐慌未释放 恐慌1/4 共识2/5 缺:双指数五日收益率均为正
-  宏观 ✅ATR1411% ✗10Y5.24% ✅HYG/LQD0.7541 ✅USD/JPY158.25
+  阶段P0 恐慌未释放 恐慌2/4 共识2/5 缺:双指数五日收益率均为正
+  宏观 ✅ATR1422% ✗10Y5.24% ✅HYG/LQD0.7528 ✅USD/JPY158.25
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:HACK 网络安全  NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:IGV 软件  AMEX:UNG 天然气
-  短线改善: NASDAQ:PPH 制药  AMEX:XLY 可选消费 (Discretionary)  AMEX:DBC 大宗商品  AMEX:XRT 零售  AMEX:GLD 黄金
+  涨幅优先: AMEX:HACK 网络安全  AMEX:IEO 油气上游  NASDAQ:SKYY 云计算  AMEX:CRAK 炼化下游  NASDAQ:WCLD 云软件
+  短线改善: AMEX:XRT 零售  AMEX:XLY 可选消费 (Discretionary)  AMEX:XLB 基础材料 (Materials)  AMEX:XLF 金融板块 (Financials)  AMEX:XLU 公用事业/AI电网 (Utilities)
 ------------------------------------------------
 【板块】
-  强: AMEX:GDX+2.4% · AMEX:XLRE+1.3%
-  主题🔥 🛡 网络安全 +5.1%  龙头 NASDAQ:ZS
-  主题🔥 ☁ 云计算  +2.5%  龙头 NASDAQ:DDOG
+  强: AMEX:XLE+3.4% · AMEX:XLP+2.5% · AMEX:GDX+1.9% · AMEX:XLF+1.3% · AMEX:XLC+1.2% · AMEX:XLRE+1.1% · AMEX:ITA+1.1% · AMEX:XLB+1.0%
+  主题🔥 🪙 黄金   +2.2%  龙头 NYSE:GOLD
+  主题🧊 🔥 AI算力 -3.6%
+  主题🧊 ⚡ AI电网 -3.7%
+  主题🧊 矿转AIDC -5.8%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NYSE:BE       🟢10EMA回调   🟢突破买点
-   NYSE:LLY      🟢10EMA回调   🟢突破买点
-   NASDAQ:QQQ    🟢10EMA回调   🟢稳健买点
+   NYSE:GEV      💡口袋支点      🟢稳健买点
    NASDAQ:CRWD   🟢10EMA回调   🟢突破买点
-   NASDAQ:HOOD   🚀超跌反弹      🟢突破买点
-   NASDAQ:PLTR   📦箱体突破      🟢强动能买点
+   NYSE:ANET     🟢10EMA回调   🟢稳健买点
    NASDAQ:CIBR   🟢10EMA回调   🟢强动能买点
-   NYSE:SNOW     💡口袋支点      🟢强动能买点
    AMEX:GDX      🚀超跌反弹      🟢黄金买点
-   NASDAQ:HUT    🚀超跌反弹      🔥强主升浪
  ▶ 等时机（日内未给买点）
    NASDAQ:MSFT   🟢10EMA回调   🟡警告:临近前高
-   NASDAQ:AMAT   🟢10EMA回调   ⚪观望
-   NYSE:GEV      🟢10EMA回调   ⚪观望
-   NASDAQ:CRDO   🟢10EMA回调   ⚪观望
    NASDAQ:SPCX   🟢10EMA回调   ⚪观望
- ▶ 冲突（日线买点/日内破位）
-   NYSE:NET      🟢10EMA回调   🔴锁定利润
-  日内异动: NASDAQ:AAOI🔴  NASDAQ:INTC🔴  NASDAQ:SMH🔴  NASDAQ:SNDK🔴 
-            NYSE:CAT🟢  NYSE:ANET🟢  NASDAQ:AMD🔴  NASDAQ:MU🔴 
-            NASDAQ:AXTI🔴  NASDAQ:IREN🟢  NASDAQ:RIOT🟢  NASDAQ:WULF🟢 
+  日内异动: NYSE:BE🟢  NASDAQ:AAOI🔴  NYSE:LLY🟢  NASDAQ:INTC🔴 
+            NASDAQ:SMH🔴  NASDAQ:SNDK🔴  NASDAQ:QQQ🟢  NYSE:NET🔴 
+            NASDAQ:HOOD🟢  NASDAQ:AMD🔴  NASDAQ:MU🔴  NASDAQ:AXTI🔴 
+            NASDAQ:PLTR🟢  NYSE:SNOW🟢  NASDAQ:IREN🟢  NASDAQ:RIOT🟢 
+            NASDAQ:HUT🔥  NASDAQ:WULF🟢 
+  盘前±2%: NYSE:SNOW+7.5% NYSE:NET+5.8% NASDAQ:HUT+5.7% NASDAQ:LITE+5.6% NASDAQ:PLTR+5.0% NASDAQ:CRWD+4.8% NASDAQ:AXTI-4.0% NASDAQ:AAOI+3.9% NASDAQ:CIBR+3.8% NYSE:ANET+3.0% AMEX:GDX+3.0% NASDAQ:INTC-2.5% NASDAQ:MSFT+2.4% NYSE:BE+2.3%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 45%
-  🟢合格·在买点区(12): NASDAQ:LITE NASDAQ:MSFT NASDAQ:QQQ NYSE:NET NASDAQ:CRWD NASDAQ:CIBR AMEX:SPY NYSE:BE NASDAQ:SMH NYSE:LLY NYSE:ANET NASDAQ:AMD
-  🟢合格·追高区勿追(2): NASDAQ:PLTR NYSE:SNOW
-  🔴淘汰(14): NYSE:GEV NASDAQ:NBIS SZSE:300990(同飞) NASDAQ:INTC SSE:601208(东材) NASDAQ:HOOD NASDAQ:SNDK SSE:688072(拓荆) NASDAQ:APLD SSE:688519(南亚) AMEX:GDX SSE:600183(生益) SZSE:300476(胜宏) SZSE:002837(英维克)
+  上升趋势占比 45% · 📣GDX S3⌒→S1⌐
+  🟢合格·在买点区(13): NASDAQ:LITE NASDAQ:MSFT NASDAQ:QQQ NASDAQ:CRWD NASDAQ:PLTR NASDAQ:CIBR NYSE:SNOW AMEX:SPY NASDAQ:SMH NYSE:NET NASDAQ:MU NYSE:ANET NASDAQ:AMD
+  🟢合格·追高区勿追(0): 无
+  🔴淘汰(13): NYSE:GEV NASDAQ:NBIS NASDAQ:SNDK NASDAQ:INTC SZSE:300990(同飞) SSE:601208(东材) NASDAQ:HOOD SSE:688072(拓荆) NASDAQ:APLD SSE:688519(南亚) SSE:600183(生益) SZSE:300476(胜宏) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: PLTRC$316M(v/oi99.0) QQQC$259M(v/oi99.0) SNDK≈$194M(v/oi29.8) MU≈$141M(v/oi63.1) AMD≈$66M(v/oi99.0)
+  今日: PLTRC$122M(v/oi76.9) SNDKP$122M(v/oi4.7) QQQ≈$78M(v/oi67.3) MU≈$70M(v/oi42.8) LITE≈$37M(v/oi18.6)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
