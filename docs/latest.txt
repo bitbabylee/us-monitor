@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-12 收盘(ET)
-  生成 10-12 17:22 纽约 = 10-13 05:22 新加坡
+  生成 10-12 18:20 纽约 = 10-13 06:20 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -30,7 +30,7 @@
   日性质(因子ETF超额·非纯因子): 动量-1.5 高贝-2.1 低波+0.3 价值-0.8 → 去杠杆/轮动日
   派发 ▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃ (2/吸1) → 仓位80%
   阶段P0 恐慌未释放 恐慌1/4 共识1/5 缺:SMH站上20日线
-  宏观 ✅ATR1411% ✗10Y5.24% ✗HYG/LQD0.7535 ✅USD/JPY158.60
+  宏观 ✅ATR1411% ✗10Y5.24% ✗HYG/LQD0.7535 ✅USD/JPY158.57
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:HACK 网络安全  NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:IEO 油气上游  AMEX:IGV 软件
@@ -59,10 +59,9 @@
    NYSE:ANET     🟢10EMA回调   🔴规避/止损
   日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:LITE🔴 
             NASDAQ:AAOI🔴  NASDAQ:MSFT🟢  NASDAQ:INTC🔴  NASDAQ:AMAT🟢 
-            NASDAQ:SMH🔴  NASDAQ:SNDK🟡  NASDAQ:CRDO🔴  NASDAQ:AMD🟢 
-            NASDAQ:MU🟡  NASDAQ:AXTI🔴  NASDAQ:CIBR🔴  NYSE:SNOW🔴 
-            NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴 
-            NASDAQ:WULF🔴 
+            NASDAQ:SMH🔴  NASDAQ:CRDO🔴  NASDAQ:AXTI🔴  NASDAQ:PLTR🟢 
+            NASDAQ:CIBR🔴  NYSE:SNOW🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
+            NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:WULF🔴 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 45%
