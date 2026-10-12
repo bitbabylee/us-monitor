@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-09 收盘(ET)
-  生成 10-11 22:32 纽约 = 10-12 10:32 新加坡
+  生成 10-12 06:07 纽约 = 10-12 18:07 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -36,7 +36,7 @@
   日性质(因子ETF超额·非纯因子): 动量+0.2 高贝+0.8 低波-0.1 价值-0.9 → 风偏进攻日
   派发 ▄▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▃▃ (2/吸1) → 仓位80%
   阶段P0 恐慌未释放 恐慌1/4 共识2/5 缺:双指数五日收益率均为正
-  宏观 ✅ATR1411% ✗10Y5.24% ✅HYG/LQD0.7541 ✅USD/JPY158.18
+  宏观 ✅ATR1411% ✗10Y5.24% ✅HYG/LQD0.7541 ✅USD/JPY158.06
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:HACK 网络安全  NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:IGV 软件  AMEX:UNG 天然气
@@ -70,24 +70,25 @@
   日内异动: NASDAQ:AAOI🔴  NASDAQ:INTC🔴  NASDAQ:SMH🔴  NASDAQ:SNDK🔴 
             NYSE:CAT🟢  NYSE:ANET🟢  NASDAQ:AMD🔴  NASDAQ:MU🔴 
             NASDAQ:AXTI🔴  NASDAQ:IREN🟢  NASDAQ:RIOT🟢  NASDAQ:WULF🟢 
+  盘前±2%: NASDAQ:IREN+5.3% NASDAQ:AAOI-2.2% NASDAQ:MU-2.2% NASDAQ:AXTI-2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 45% · 📣GDX S1⌐→S3⌒ · 沪电 S1⌐→S2↑ · 东材 S2↑→S1⌐
+  上升趋势占比 43% · 📣沪电 S2↑→S1⌐
   🟢合格·在买点区(12): NASDAQ:LITE NASDAQ:MSFT NASDAQ:QQQ NYSE:NET NASDAQ:CRWD NASDAQ:CIBR AMEX:SPY NYSE:BE NASDAQ:SMH NYSE:LLY NYSE:ANET NASDAQ:AMD
   🟢合格·追高区勿追(2): NASDAQ:PLTR NYSE:SNOW
-  🔴淘汰(14): NYSE:GEV SZSE:300990(同飞) NASDAQ:NBIS SSE:688072(拓荆) NASDAQ:INTC NASDAQ:HOOD NASDAQ:SNDK NASDAQ:APLD SSE:688519(南亚) AMEX:GDX SSE:600183(生益) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
+  🔴淘汰(13): NYSE:GEV SZSE:300990(同飞) NASDAQ:NBIS SSE:688072(拓荆) NASDAQ:INTC NASDAQ:HOOD NASDAQ:SNDK NASDAQ:APLD SSE:688519(南亚) AMEX:GDX SSE:600183(生益) SZSE:300476(胜宏) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: PLTRC$122M(v/oi76.9) SNDKP$122M(v/oi4.7) QQQ≈$78M(v/oi67.3) MU≈$70M(v/oi42.8) LITE≈$36M(v/oi18.6)
+  今日: PLTRC$120M SNDK≈$117M QQQ≈$78M MU≈$71M LITE≈$35M
   T+1核对: BEP155(10-23)✗未增 NBISC222.5(10-16)✗未增 RKLBC67(10-16)✗未增 RKLBC68(10-16)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】30只(强13)·⚠️旧快照
-  今日强信号: NYSE:NEM🔗 AMEX:GDX🔗 NYSE:AEM🔗 NYSE:OXY NYSE:IBM NASDAQ:MU🔗 AMEX:XLE NYSE:ALB
-  🔗两套方法共同覆盖(独立得出, 非互证): NYSE:NEM AMEX:GDX NYSE:AEM NASDAQ:MU NASDAQ:NBIS NYSE:GEV NASDAQ:CRDO
-  池外强信号(仅提示, 不入信号链): NYSE:NEM NYSE:AEM NYSE:OXY NYSE:IBM AMEX:XLE NYSE:ALB
+【波哥七维·外部体系】43只(强18)·⚠️旧快照
+  今日强信号: NASDAQ:LITE🔗 NYSE:ASX NASDAQ:JAGGF NYSE:ERO NYSE:AU NYSE:SCCO AMEX:NG NYSE:KEYS
+  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:LITE NASDAQ:CIBR AMEX:GDX NYSE:AEM NYSE:NEM NASDAQ:MU NYSE:GEV NASDAQ:CEG
+  池外强信号(仅提示, 不入信号链): NYSE:ASX NASDAQ:JAGGF NYSE:ERO NYSE:AU NYSE:SCCO AMEX:NG
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
