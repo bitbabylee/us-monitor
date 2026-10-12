@@ -1,0 +1,125 @@
+{
+ "day": "2026-10-12",
+ "picks": [
+  {
+   "market": "MACRO",
+   "b": "HSI1!",
+   "nm": "恒生指数期货",
+   "dir": 1,
+   "px": 24211.35,
+   "chg1": 1.79,
+   "score": 2.3,
+   "book": "1011 Macro 0843 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "BTCUSDT",
+   "nm": "比特币",
+   "dir": 1,
+   "px": 83830.33,
+   "chg1": 0.19,
+   "score": 2.3,
+   "book": "1011 Macro 0843 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "USOIL",
+   "nm": "Crude Oil Nov ",
+   "dir": -1,
+   "px": 90.51,
+   "chg1": -1.46,
+   "score": 2.3,
+   "book": "1011 Macro 0843 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "FDAX1!",
+   "nm": "",
+   "dir": 1,
+   "px": null,
+   "chg1": null,
+   "score": 2.3,
+   "book": "1011 Macro 0843 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "XAUUSD",
+   "nm": "黄金现货",
+   "dir": 1,
+   "px": 4234.1,
+   "chg1": 0.42,
+   "score": 1.3,
+   "book": "1011 Macro 0843 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "XLF",
+   "nm": "State Street F",
+   "dir": 1,
+   "px": 54.73,
+   "chg1": 0.92,
+   "score": 1.0,
+   "book": "1011 Macro 0843 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "YM1!",
+   "nm": "道琼斯E-mini（5美元）",
+   "dir": 1,
+   "px": 52056.0,
+   "chg1": 0.25,
+   "score": 1.0,
+   "book": "1011 Macro 0843 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "IC1!",
+   "nm": "中证500股指期货（中国金融",
+   "dir": -1,
+   "px": 7251.01,
+   "chg1": 0.04,
+   "score": 1.0,
+   "book": "1011 Macro 0843 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "IM1!",
+   "nm": "中证1000指数期货（CSI",
+   "dir": -1,
+   "px": 7155.91,
+   "chg1": 0.24,
+   "score": 1.0,
+   "book": "1011 Macro 0843 bjt",
+   "page": 1
+  },
+  {
+   "market": "MACRO",
+   "b": "K2I1!",
+   "nm": "韩国KOSPI200指数期货",
+   "dir": -1,
+   "px": 6539.01,
+   "chg1": -1.31,
+   "score": 1.3,
+   "book": "1011 Macro 0843 bjt",
+   "page": 1
+  }
+ ],
+ "n_cand": 10,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1011 NY 收盘0830_宏观",
+   "stem": "1011 Macro 0843 bjt",
+   "stamp": "2026-10-12 08:43",
+   "market": "MACRO",
+   "n": 58
+  }
+ ]
+}
