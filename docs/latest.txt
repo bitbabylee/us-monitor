@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-12 收盘(ET)
-  生成 10-12 18:20 纽约 = 10-13 06:20 新加坡
+  生成 10-12 22:10 纽约 = 10-13 10:10 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -30,7 +30,7 @@
   日性质(因子ETF超额·非纯因子): 动量-1.5 高贝-2.1 低波+0.3 价值-0.8 → 去杠杆/轮动日
   派发 ▅▅▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃ (2/吸1) → 仓位80%
   阶段P0 恐慌未释放 恐慌1/4 共识1/5 缺:SMH站上20日线
-  宏观 ✅ATR1411% ✗10Y5.24% ✗HYG/LQD0.7535 ✅USD/JPY158.57
+  宏观 ✅ATR1411% ✗10Y5.24% ✗HYG/LQD0.7535 ✅USD/JPY158.31
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:HACK 网络安全  NASDAQ:SKYY 云计算  NASDAQ:WCLD 云软件  AMEX:IEO 油气上游  AMEX:IGV 软件
@@ -59,18 +59,20 @@
    NYSE:ANET     🟢10EMA回调   🔴规避/止损
   日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:LITE🔴 
             NASDAQ:AAOI🔴  NASDAQ:MSFT🟢  NASDAQ:INTC🔴  NASDAQ:AMAT🟢 
-            NASDAQ:SMH🔴  NASDAQ:CRDO🔴  NASDAQ:AXTI🔴  NASDAQ:PLTR🟢 
-            NASDAQ:CIBR🔴  NYSE:SNOW🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
-            NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:WULF🔴 
+            NASDAQ:SMH🔴  NASDAQ:SNDK🟡  NASDAQ:CRDO🔴  NASDAQ:AMD🟢 
+            NASDAQ:AXTI🔴  NASDAQ:PLTR🟢  NASDAQ:CIBR🔴  NYSE:SNOW🔴 
+            NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴 
+            NASDAQ:WULF🔴 
+  盘前±2%: NASDAQ:SNDK-2.2% NASDAQ:CRDO-2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 45%
+  上升趋势占比 41% · 📣生益 S2↑→S1⌐ · 东材 S2↑→S1⌐
   🟢合格·在买点区(13): NASDAQ:LITE NASDAQ:MSFT NASDAQ:CRWD NASDAQ:PLTR NASDAQ:CIBR NYSE:SNOW AMEX:SPY NYSE:LLY NYSE:NET NASDAQ:QQQ NASDAQ:AMAT NYSE:ANET NASDAQ:AMD
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(17): NYSE:GEV NASDAQ:MU SZSE:300990(同飞) NASDAQ:HOOD SSE:601208(东材) NASDAQ:CRDO NASDAQ:INTC SSE:688072(拓荆) NASDAQ:NBIS NYSE:BE NASDAQ:APLD SSE:688519(南亚) NASDAQ:SNDK SSE:600183(生益) SZSE:300476(胜宏) AMEX:GDX SZSE:002837(英维克)
+  🔴淘汰(15): NYSE:GEV NASDAQ:MU NASDAQ:HOOD SSE:688072(拓荆) SZSE:300990(同飞) NASDAQ:CRDO NASDAQ:INTC NASDAQ:NBIS NYSE:BE NASDAQ:APLD NASDAQ:SNDK SSE:688519(南亚) AMEX:GDX SZSE:300476(胜宏) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDK≈$227M(v/oi42.4) QQQP$192M(v/oi99.0) MU≈$118M(v/oi99.0) AMD≈$55M(v/oi99.0) PLTRC$54M(v/oi14.0)
+  今日: SNDK≈$227M(v/oi42.4) MU≈$189M(v/oi66.5) AMD≈$89M(v/oi48.0) QQQ≈$75M(v/oi99.0) MSFTC$60M(v/oi30.3)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
