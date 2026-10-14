@@ -1,33 +1,33 @@
 {
  "profiles": {
   "swing_us": {
-   "generated": "2026-10-12 21:30 UTC",
-   "as_of": "2026-10-12",
+   "generated": "2026-10-13 21:30 UTC",
+   "as_of": "2026-10-13",
    "market_gate": {
     "status": "green",
     "symbol": "^IXIC",
-    "date": "2026-10-12",
-    "ma10": 27214.23,
-    "ma20": 26958.7
+    "date": "2026-10-13",
+    "ma10": 27254.91,
+    "ma20": 27019.84
    },
    "universe_n": 44,
    "data_n": 44,
    "signals": []
   },
   "cn_pullback": {
-   "generated": "2026-10-13 08:00 UTC",
-   "as_of": "2026-10-09",
+   "generated": "2026-10-14 08:00 UTC",
+   "as_of": "2026-10-13",
    "market_gate": {
     "status": "green",
     "symbol": "^IXIC",
-    "date": "2026-10-12",
-    "ma10": 27214.23,
-    "ma20": 26958.7
+    "date": "2026-10-13",
+    "ma10": 27254.91,
+    "ma20": 27019.84
    },
-   "universe_n": 2,
-   "data_n": 2,
+   "universe_n": 7,
+   "data_n": 7,
    "signals": []
   }
  },
- "updated": "2026-10-13 08:00 UTC"
+ "updated": "2026-10-14 08:00 UTC"
 }
