@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-13 收盘(ET)
-  生成 10-14 10:10 纽约 = 10-14 22:10 新加坡
+  生成 10-14 13:29 纽约 = 10-15 01:29 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,14 +8,14 @@
 【结论】仓位上限 80% · 阶段P0 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
 【候选】11 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:INTC   超跌反弹      日内:⚪观望
-  NYSE:GEV      10EMA回调   日内:⚪观望
+  NASDAQ:INTC   超跌反弹      日内:🔴规避/止损
+  NYSE:GEV      10EMA回调   日内:🔴规避/止损
   NASDAQ:HOOD   超跌反弹      日内:🔴规避/止损
-  NASDAQ:MU     超跌反弹      日内:⚪观望
-  NASDAQ:IREN   超跌反弹      日内:⚪观望
+  NASDAQ:MU     超跌反弹      日内:🔴规避/止损
+  NASDAQ:IREN   超跌反弹      日内:🔴规避/止损
   NASDAQ:CORZ   超跌反弹      日内:🔴规避/止损
   NASDAQ:RIOT   超跌反弹      日内:🔴规避/止损
-  NASDAQ:CIFR   超跌反弹      日内:⚪观望
+  NASDAQ:CIFR   超跌反弹      日内:🔴规避/止损
   NASDAQ:HUT    超跌反弹      日内:🔴规避/止损
   NASDAQ:WULF   超跌反弹      日内:🔴规避/止损
   NASDAQ:APLD   超跌反弹      日内:🔴规避/止损
@@ -38,8 +38,8 @@
   宏观 ✅ATR149% ✗10Y5.22% ✗HYG/LQD0.7517 ✅USD/JPY158.52
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:CRAK 炼化下游  AMEX:XLE 能源板块 (Energy)  AMEX:IEO 油气上游  AMEX:MAGS 七巨头  NASDAQ:WCLD 云软件
-  短线改善: AMEX:DBC 大宗商品  AMEX:USO 原油  AMEX:XHE 医疗设备  AMEX:XLU 公用事业/AI电网 (Utilities)  AMEX:XRT 零售
+  涨幅优先: AMEX:CRAK 炼化下游  AMEX:XLE 能源板块 (Energy)  AMEX:IEO 油气上游  AMEX:MAGS 七巨头  NASDAQ:ESPO 电竞
+  短线改善: AMEX:DBC 大宗商品  AMEX:USO 原油  NASDAQ:HERO 游戏  AMEX:XRT 零售  AMEX:XLU 公用事业/AI电网 (Utilities)
 ------------------------------------------------
 【板块】
   强: AMEX:XLE+1.8%
@@ -50,34 +50,36 @@
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 等时机（日内未给买点）
    NYSE:LLY      🟢10EMA回调   🟡警告:临近前高
-   NASDAQ:INTC   🚀超跌反弹      ⚪观望
-   NYSE:GEV      🟢10EMA回调   ⚪观望
-   NASDAQ:SNDK   🚀超跌反弹      🟡跳空低开,买点降级
-   NASDAQ:QQQ    🟢10EMA回调   ⚪观望
-   NYSE:NET      🟢10EMA回调   ⚪观望
-   NASDAQ:MU     🚀超跌反弹      ⚪观望
-   NASDAQ:IREN   🚀超跌反弹      ⚪观望
-   NASDAQ:CIFR   🚀超跌反弹      ⚪观望
  ▶ 冲突（日线买点/日内破位）
+   NASDAQ:INTC   🚀超跌反弹      🔴规避/止损
+   NYSE:GEV      🟢10EMA回调   🔴规避/止损
+   NASDAQ:SNDK   🚀超跌反弹      🔴规避/止损
+   NASDAQ:QQQ    🟢10EMA回调   🔴规避/止损
+   NYSE:NET      🟢10EMA回调   🔴规避/止损
    NASDAQ:HOOD   🚀超跌反弹      🔴规避/止损
+   NASDAQ:MU     🚀超跌反弹      🔴规避/止损
+   NASDAQ:IREN   🚀超跌反弹      🔴规避/止损
    NASDAQ:CORZ   🚀超跌反弹      🔴规避/止损
    NASDAQ:RIOT   🚀超跌反弹      🔴规避/止损
+   NASDAQ:CIFR   🚀超跌反弹      🔴规避/止损
    NASDAQ:HUT    🚀超跌反弹      🔴规避/止损
    NASDAQ:WULF   🚀超跌反弹      🔴规避/止损
    NASDAQ:APLD   🚀超跌反弹      🔴规避/止损
-  日内异动: NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:LITE🟡  NASDAQ:MSFT🔴 
-            NASDAQ:AMAT🟡  NASDAQ:CRWD🟡  NYSE:ANET🟢  NASDAQ:AXTI🟡 
-            NASDAQ:PLTR🟢  NASDAQ:SPCX🟢  AMEX:GDX🔴 
-  盘前±2%: NASDAQ:NBIS-9.7% NASDAQ:IREN-8.7% NASDAQ:WULF-8.6% NASDAQ:HUT-8.2% NASDAQ:APLD-7.9% NASDAQ:CORZ-7.5% NASDAQ:CIFR-7.1% NASDAQ:RIOT-6.0% NASDAQ:AAOI-5.5% NASDAQ:HOOD-5.3% AMEX:GDX-4.0% NYSE:BE-4.0% NYSE:GEV-3.9% NYSE:LLY+3.7% NASDAQ:LITE-3.5% NASDAQ:RKLB-3.2% NASDAQ:CRWD-3.1% NASDAQ:AMD-3.0% NASDAQ:CRDO-2.9% NASDAQ:INTC-2.3% NASDAQ:SNDK-2.1%
+  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:LITE🔴 
+            NASDAQ:AAOI🔴  NASDAQ:MSFT🔴  NASDAQ:AMAT🔴  NASDAQ:SMH🔴 
+            NYSE:CAT🔴  NYSE:ANET🔴  NASDAQ:CRDO🔴  NASDAQ:AMD🔴 
+            NASDAQ:AXTI🔴  NASDAQ:PLTR🔴  NASDAQ:CIBR🔴  NYSE:SNOW🔴 
+            AMEX:GDX🔴 
+  盘前±2%: NASDAQ:HUT-12.1% NASDAQ:CIFR-11.7% NASDAQ:WULF-10.9% NASDAQ:IREN-10.8% NASDAQ:AAOI-10.7% NASDAQ:CORZ-10.3% NASDAQ:NBIS-10.3% NASDAQ:APLD-10.0% NASDAQ:RIOT-9.4% NYSE:BE-9.2% NASDAQ:LITE-8.4% NASDAQ:CRDO-8.3% NASDAQ:HOOD-7.9% NYSE:GEV-7.3% NASDAQ:RKLB-6.3% NASDAQ:AXTI-5.7% NASDAQ:AMD-5.7% NYSE:NET-5.1% NYSE:SNOW-4.9% NASDAQ:SNDK-4.7% AMEX:GDX-4.6% NYSE:ANET-4.3% NASDAQ:INTC-4.1% NASDAQ:CRWD-4.0% NYSE:LLY+3.9% NASDAQ:SMH-3.6% NASDAQ:AMAT-3.6% NYSE:CAT-3.4% NASDAQ:PLTR-3.2% NASDAQ:MU-3.1% NASDAQ:CIBR-3.1% NASDAQ:SPCX-2.2%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 43%
   🟢合格·在买点区(8): NASDAQ:MSFT NASDAQ:PLTR NASDAQ:CIBR NYSE:SNOW AMEX:SPY NYSE:NET NASDAQ:CRWD NYSE:ANET
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(19): NYSE:GEV SZSE:300990(同飞) NASDAQ:LITE NASDAQ:HOOD NASDAQ:QQQ SSE:688072(拓荆) NASDAQ:CRDO NASDAQ:INTC NASDAQ:MU SSE:688519(南亚) NYSE:BE NASDAQ:NBIS NASDAQ:AMD NASDAQ:SNDK NASDAQ:APLD SSE:600183(生益) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
+  🔴淘汰(18): NYSE:GEV SZSE:300990(同飞) NASDAQ:LITE NASDAQ:HOOD NASDAQ:QQQ NASDAQ:CRDO NASDAQ:INTC NASDAQ:MU NYSE:BE NASDAQ:NBIS NASDAQ:AMD SSE:688519(南亚) NASDAQ:SNDK NASDAQ:APLD SSE:600183(生益) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKP$103M(v/oi2.5) MU≈$83M(v/oi6.4) QQQ≈$53M(v/oi78.0) AMD≈$38M(v/oi7.6) MSFTC$21M(v/oi2.9)
+  今日: QQQP$713M(v/oi99.0) MU≈$260M(v/oi63.3) SNDKP$164M(v/oi9.7) AMD≈$121M(v/oi78.2) BEP$39M(v/oi4.2)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
