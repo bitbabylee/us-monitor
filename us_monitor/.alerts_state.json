@@ -1,6 +1,6 @@
 {
- "fib_stage": "zone",
- "ma20_above": true,
+ "fib_stage": "below618",
+ "ma20_above": false,
  "fired": {
   "qqq_680": "2026-08-07"
  }
