@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-14 收盘(ET)
-  生成 10-14 16:33 纽约 = 10-15 04:33 新加坡
+  生成 10-14 18:07 纽约 = 10-15 06:07 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -22,7 +22,7 @@
   日性质(因子ETF超额·非纯因子): 动量-1.5 高贝-3.0 低波+1.1 价值-0.5 → 去杠杆/轮动日
   派发 ▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃▃▃ (2/吸1) → 仓位80%
   阶段P0 恐慌未释放 恐慌2/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1415% ✗10Y5.19% ✗HYG/LQD0.7482 ✅USD/JPY158.31
+  宏观 ✅ATR1415% ✗10Y5.19% ✗HYG/LQD0.7482 ✅USD/JPY158.26
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  AMEX:XLV 医疗健康 (Health Care)  AMEX:UNG 天然气
@@ -30,7 +30,7 @@
 ------------------------------------------------
 【板块】
   强: AMEX:XLV+3.6% · AMEX:XLP+3.3% · AMEX:XLE+1.7% · AMEX:ITA+1.2%
-  🚨砸盘: AMEX:XLK-1.9%(量1.6x) · AMEX:GDX-3.3%(量1.5x) · NASDAQ:SOXX-3.4%(量1.5x)
+  🚨砸盘: AMEX:XLK-1.9%(量1.6x) · AMEX:GDX-3.3%(量1.6x) · NASDAQ:SOXX-3.4%(量1.6x)
   主题🧊 🔥 AI算力 -2.9%
   主题🧊 🪙 黄金   -3.1%
   主题🧊 ️ 网络安全 -3.9%
@@ -48,18 +48,20 @@
             NASDAQ:INTC🔴  NASDAQ:AMAT🔴  NASDAQ:SMH🔴  NYSE:GEV🔴 
             NASDAQ:SNDK🔴  NASDAQ:QQQ🔴  NYSE:CAT🔴  NYSE:NET🔴 
             NYSE:ANET🔴  NASDAQ:CRDO🔴  NASDAQ:HOOD🔴  NASDAQ:AMD🔴 
-            NASDAQ:MU🔴  NASDAQ:PLTR🔴  NASDAQ:CIBR🔴  NYSE:SNOW🔴 
-            AMEX:GDX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
-            NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
+            NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:PLTR🔴  NASDAQ:CIBR🔴 
+            NYSE:SNOW🔴  AMEX:GDX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
+            NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴 
+            NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:RKLB-6.6%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 38% · 📣NBIS S2↑→S1⌐ · GEV S3⌒→S1⌐ · SNDK S2↑→S1⌐
+  上升趋势占比 38%
   🟢合格·在买点区(5): NASDAQ:MSFT NYSE:LLY NASDAQ:PLTR NASDAQ:CIBR NYSE:ANET
   🟢合格·追高区勿追(0): 无
   🔴淘汰(17): SZSE:300990(同飞) NYSE:SNOW NASDAQ:SMH SSE:688072(拓荆) SSE:688519(南亚) NASDAQ:INTC NASDAQ:MU NASDAQ:LITE NASDAQ:HOOD NASDAQ:QQQ NASDAQ:APLD NYSE:BE NASDAQ:AMD SSE:600183(生益) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQP$1195M(v/oi99.0) MUP$521M(v/oi99.0) SNDKP$224M(v/oi13.3) AMD≈$157M(v/oi99.0) NBISP$98M(v/oi28.7)
+  今日: QQQP$1227M(v/oi99.0) MUP$519M(v/oi99.0) SNDKP$224M(v/oi13.3) AMD≈$157M(v/oi99.0) NBISP$98M(v/oi28.7)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
