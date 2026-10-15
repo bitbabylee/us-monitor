@@ -1,17 +1,19 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-14 收盘(ET)
-  生成 10-14 19:20 纽约 = 10-15 07:20 新加坡
+  生成 10-15 06:06 纽约 = 10-15 18:06 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 80% · 阶段P0 · 宏观2/4 · 抱团MAGS
+【结论】仓位上限 60% · 阶段P0 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
 【候选】1 只（形态+板块确认+无财报风险·未回测）
   NYSE:LLY      箱体突破      日内:🟡警告:临近前高
 【否决】
   NASDAQ:MSFT   板块背离
 【风险】无近端风险事件
+【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
+  10-22 周四  NYSE:BE✓
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
@@ -20,9 +22,9 @@
   SPX 7719 (MA50+0.2%) · RSI 52 · VIX 16.9
   风格: MTUM/MAGS 4.18 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量-1.5 高贝-3.0 低波+1.1 价值-0.5 → 去杠杆/轮动日
-  派发 ▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃▃▃ (2/吸1) → 仓位80%
+  派发 ▅▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃▃▄ (3/吸1) → 仓位60%
   阶段P0 恐慌未释放 恐慌2/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1415% ✗10Y5.19% ✗HYG/LQD0.7482 ✅USD/JPY158.05
+  宏观 ✅ATR1415% ✗10Y5.19% ✗HYG/LQD0.7482 ✅USD/JPY158.32
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:CRAK 炼化下游  AMEX:IEO 油气上游  AMEX:XLE 能源板块 (Energy)  AMEX:XLV 医疗健康 (Health Care)  AMEX:UNG 天然气
@@ -52,24 +54,25 @@
             NYSE:SNOW🔴  AMEX:GDX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
             NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴 
             NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:RKLB-6.0% NASDAQ:AXTI-3.9% NASDAQ:NBIS-3.7% NASDAQ:SNDK-3.4% NYSE:BE-3.4% NASDAQ:MU-2.6% NASDAQ:HUT-2.4% NASDAQ:CIFR-2.3% NASDAQ:AAOI-2.3% NASDAQ:AMD-2.2% NASDAQ:INTC-2.1% NASDAQ:LITE-2.0%
+  盘前±2%: NASDAQ:RKLB-9.6% NASDAQ:AXTI-7.3% NYSE:BE-5.3% NASDAQ:SNDK-4.6% NASDAQ:CIFR-4.5% NASDAQ:APLD-4.5% NASDAQ:CRDO-4.2% NASDAQ:AAOI-4.2% NASDAQ:NBIS-4.1% NASDAQ:LITE-4.1% NASDAQ:HUT-4.0% NASDAQ:MU-3.9% NASDAQ:WULF-3.7% NASDAQ:INTC-3.3% NASDAQ:RIOT-3.2% NYSE:GEV-3.2% NASDAQ:IREN-3.1% NYSE:SNOW-3.0% NASDAQ:CORZ-3.0% NASDAQ:SPCX-2.9% NYSE:CAT-2.6% NYSE:NET-2.6% NASDAQ:AMD-2.5% NASDAQ:CRWD-2.4% NYSE:ANET-2.3% NASDAQ:AMAT-2.2% AMEX:GDX+2.2% NASDAQ:SMH-2.1% NASDAQ:HOOD-2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 38%
+  上升趋势占比 36% · 📣生益 S2↑→S1⌐
   🟢合格·在买点区(5): NASDAQ:MSFT NYSE:LLY NASDAQ:PLTR NASDAQ:CIBR NYSE:ANET
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(17): SZSE:300990(同飞) NYSE:SNOW NASDAQ:SMH SSE:688072(拓荆) SSE:688519(南亚) NASDAQ:INTC NASDAQ:MU NASDAQ:LITE NASDAQ:HOOD NASDAQ:QQQ NASDAQ:APLD NYSE:BE NASDAQ:AMD SSE:600183(生益) SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
+  🔴淘汰(16): SZSE:300990(同飞) NYSE:SNOW SSE:688072(拓荆) NASDAQ:SMH NASDAQ:INTC SSE:688519(南亚) NASDAQ:MU NASDAQ:LITE NASDAQ:HOOD NASDAQ:QQQ NASDAQ:APLD NYSE:BE NASDAQ:AMD SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQP$1227M(v/oi99.0) MUP$519M(v/oi99.0) SNDKP$224M(v/oi13.3) AMD≈$157M(v/oi99.0) NBISP$98M(v/oi28.7)
+  今日: QQQP$471M MU≈$272M SNDKP$210M AMD≈$105M NBISP$98M
+  T+1核对: BEC235(10-16)✗未增 BEC237.5(10-16)✗未增 BEC240(10-16)✗未增 BEC242.5(10-16)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】42只(强11)·⚠️旧快照
-  今日强信号: NYSE:ASX NASDAQ:LITE🔗 NASDAQ:JAGGF NYSE:ERO NYSE:AU NYSE:SCCO AMEX:NG NYSE:KEYS
-  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:LITE NASDAQ:CIBR NASDAQ:IREN NASDAQ:INTC NASDAQ:AMD NYSE:BE NASDAQ:CORZ NASDAQ:CEG
-  池外强信号(仅提示, 不入信号链): NYSE:ASX NASDAQ:JAGGF NYSE:ERO NYSE:AU NYSE:SCCO AMEX:NG
+【波哥七维·外部体系】29只(强3)·⚠️旧快照
+  今日强信号: NASDAQ:GFS NYSE:DOW NYSE:ASX
+  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:IREN NASDAQ:INTC NYSE:BE NASDAQ:AMD NASDAQ:CORZ NASDAQ:CEG NYSE:GEV
+  池外强信号(仅提示, 不入信号链): NASDAQ:GFS NYSE:DOW NYSE:ASX
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
