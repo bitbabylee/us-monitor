@@ -1,0 +1,31 @@
+<b>24 小时精选</b> 10-16 06:47 · 13 册 · 候选 101 只
+今天 12 只：翻多 1 只、翻空 11 只。其中 11 只是 3D 和 1D 同时给信号。
+
+<b>【美股】</b>
+<i>3D+1D 同时翻空</i>
+　<code>PENG</code> Penguin Solu
+　<code>OII</code> Oceaneering 
+　<code>DASH</code> DoorDash,
+　<code>SEI</code> Solaris Ener
+<i>3D+1D 同时翻多</i>
+　<code>BKNG</code> Booking Hold
+
+<b>【A 股】</b>
+<i>3D+1D 同时翻空</i>
+　<code>600641</code> 先导基电
+　<code>515180</code> 红利ETF易方达
+　<code>515220</code> 煤炭ETF国泰
+
+<b>【亚太】</b>
+<i>3D+1D 同时翻空</i>
+　<code>4004</code> 力森诺科控股（Reson
+　<code>4063</code> 信越化学
+
+<b>【宏观】</b>
+<i>3D+1D 同时翻空</i>
+　<code>XAGUSD</code> 白银现货/Silver 
+<i>日线刚翻空、3D 没跟</i>
+　<code>XLE</code> 道富能源精选行业SPDR
+
+板块共振：美股半导体/AI芯片空 3 只；美股软件/安全空 3 只
+https://bitbabylee.github.io/us-monitor/daily/

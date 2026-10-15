@@ -58,58 +58,58 @@
   },
   {
    "market": "US",
-   "b": "PENG",
-   "nm": "Penguin Soluti",
-   "dir": -1,
-   "px": 67.59,
-   "chg1": -13.57,
-   "score": 3.3,
-   "book": "1014 US 1630 nyt",
-   "page": 47
-  },
-  {
-   "market": "US",
-   "b": "OII",
-   "nm": "Oceaneering In",
-   "dir": -1,
-   "px": 43.53,
-   "chg1": -2.83,
-   "score": 3.3,
-   "book": "1014 US 1630 nyt",
-   "page": 46
-  },
-  {
-   "market": "US",
-   "b": "BKNG",
-   "nm": "Booking Holdin",
+   "b": "CAVA",
+   "nm": "CAVA Group,",
    "dir": 1,
-   "px": 160.68,
-   "chg1": 2.01,
+   "px": 55.4,
+   "chg1": 7.39,
    "score": 3.3,
-   "book": "1014 US 1630 nyt",
+   "book": "1015 US 1630 nyt",
    "page": 3
   },
   {
    "market": "US",
-   "b": "DASH",
-   "nm": "DoorDash,",
+   "b": "DAR",
+   "nm": "Darling Ingred",
    "dir": -1,
-   "px": 184.01,
-   "chg1": -4.7,
+   "px": 60.87,
+   "chg1": -2.42,
    "score": 3.3,
-   "book": "1014 US 1630 nyt",
-   "page": 40
+   "book": "1015 US 1630 nyt",
+   "page": 74
   },
   {
    "market": "US",
-   "b": "SEI",
-   "nm": "Solaris Energy",
-   "dir": -1,
-   "px": 69.37,
-   "chg1": -10.87,
+   "b": "COIN",
+   "nm": "Coinbase Globa",
+   "dir": 1,
+   "px": 183.81,
+   "chg1": 6.32,
    "score": 3.3,
-   "book": "1014 US 1630 nyt",
-   "page": 48
+   "book": "1015 US 1630 nyt",
+   "page": 4
+  },
+  {
+   "market": "US",
+   "b": "CRCL",
+   "nm": "Circle互联网集团（Ci",
+   "dir": 1,
+   "px": 86.97,
+   "chg1": 9.33,
+   "score": 3.3,
+   "book": "1015 US 1630 nyt",
+   "page": 5
+  },
+  {
+   "market": "US",
+   "b": "TEM",
+   "nm": "Tempus AI,",
+   "dir": 1,
+   "px": 71.13,
+   "chg1": 4.11,
+   "score": 3.3,
+   "book": "1015 US 1630 nyt",
+   "page": 7
   },
   {
    "market": "MACRO",
@@ -134,7 +134,7 @@
    "page": 25
   }
  ],
- "n_cand": 101,
+ "n_cand": 80,
  "books": [
   {
    "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1014 NY 收盘0430_美股",
@@ -219,6 +219,13 @@
    "stamp": "2026-10-16 00:00",
    "market": "MACRO",
    "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1015 NY 收盘0430_美股",
+   "stem": "1015 US 1630 nyt",
+   "stamp": "2026-10-16 05:41",
+   "market": "US",
+   "n": 248
   },
   {
    "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1015 NY 收盘0500_美股ETF",
