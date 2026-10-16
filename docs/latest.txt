@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-16 收盘(ET)
-  生成 10-16 18:24 纽约 = 10-17 06:24 新加坡
+  生成 10-16 18:56 纽约 = 10-17 06:56 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -47,7 +47,7 @@
             NASDAQ:SMH🔴  NASDAQ:SNDK🔴  NASDAQ:QQQ🔴  NASDAQ:CRWD🔴 
             NYSE:ANET🔴  NASDAQ:CRDO🔴  NASDAQ:HOOD🔴  NASDAQ:AMD🔴 
             NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:PLTR🔴  NASDAQ:CIBR🔴 
-            NYSE:SNOW🔴  NASDAQ:SPCX🟢  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
+            NYSE:SNOW🔴  NASDAQ:SPCX🟡  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
             NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴 
             NASDAQ:APLD🔴 
 ------------------------------------------------
