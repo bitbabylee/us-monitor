@@ -1,9 +1,12 @@
-# 波哥待机清单 2026-10-16
+# 波哥待机清单 2026-10-17
 # 仅包含通过优势预筛的 ETF + 个股；不是入场指令。
 # 大盘门: 开启
 AMEX:IEO
 AMEX:XLE
+AMEX:IHI
 AMEX:XLP
-AMEX:USMV
+NASDAQ:PPH
+AMEX:XRT
 AMEX:MAGS
+AMEX:USMV
 AMEX:XLY
