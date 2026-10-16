@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-15 收盘(ET)
-  生成 10-15 19:17 纽约 = 10-16 07:17 新加坡
+  生成 10-16 06:07 纽约 = 10-16 18:07 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -22,6 +22,7 @@
   NASDAQ:WULF   超跌反弹      日内:🟡跳空低开,买点降级
   NASDAQ:APLD   超跌反弹      日内:🟡跳空低开,买点降级
 【否决】
+  NASDAQ:MSFT   板块背离
   NASDAQ:INTC   板块背离
   NASDAQ:SMH    板块背离
   NASDAQ:SNDK   板块背离
@@ -39,9 +40,9 @@
   SPX 7744 (MA50+0.5%) · RSI 50 · VIX 16.5
   风格: MTUM/MAGS 4.15 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量-1.4 高贝-0.1 低波+0.7 价值+0.8 → 价值轮动日
-  派发 ▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃▃▄▄ (3/吸1) → 仓位60%
+  派发 ▅▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃▃▄▄ (3/吸2) → 仓位60%
   阶段P0 恐慌未释放 恐慌2/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1420% ✗10Y5.09% ✗HYG/LQD0.7452 ✅USD/JPY158.11
+  宏观 ✅ATR1420% ✗10Y5.09% ✗HYG/LQD0.7452 ✅USD/JPY157.96
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:XLV 医疗健康 (Health Care)  NASDAQ:ESPO 电竞  AMEX:IEO 油气上游  NASDAQ:WCLD 云软件  AMEX:XLE 能源板块 (Energy)
@@ -58,6 +59,7 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
+   NASDAQ:MSFT   💡口袋支点      🟢突破买点
    AMEX:GDX      🚀超跌反弹      🟢强动能买点
  ▶ 等时机（日内未给买点）
    NASDAQ:NBIS   🚀超跌反弹      🟡跳空低开,买点降级
@@ -79,27 +81,28 @@
    NASDAQ:INTC   🚀超跌反弹      🔴锁定利润
    NYSE:CAT      🚀超跌反弹      🔴锁定利润
    NASDAQ:AMD    🚀超跌反弹      🔴锁定利润
-  日内异动: NYSE:BE🔴  NASDAQ:LITE🟡  NASDAQ:AAOI🔴  NASDAQ:MSFT🟢 
-            NASDAQ:AMAT🔴  NYSE:GEV🟡  NASDAQ:QQQ🟢  NASDAQ:CRWD🟡 
-            NYSE:ANET🟡  NASDAQ:CRDO🟡  NASDAQ:PLTR🟡  NASDAQ:CIBR🟢 
-            NYSE:SNOW🟡  NASDAQ:SPCX🟡 
+  日内异动: NYSE:BE🔴  NASDAQ:LITE🟡  NASDAQ:AAOI🔴  NASDAQ:AMAT🟡 
+            NYSE:GEV🟡  NASDAQ:QQQ🟢  NASDAQ:CRWD🟡  NASDAQ:CRDO🟡 
+            NASDAQ:PLTR🟡  NASDAQ:CIBR🟢  NYSE:SNOW🟡  NASDAQ:SPCX🟡 
+  盘前±2%: NASDAQ:AAOI+2.2% NASDAQ:SPCX+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 32%
+  上升趋势占比 30% · 📣沪电 S2↑→S1⌐
   🟢合格·在买点区(5): NASDAQ:MSFT NYSE:LLY NASDAQ:PLTR NASDAQ:CIBR NYSE:ANET
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(15): SZSE:300990(同飞) NYSE:SNOW SSE:688072(拓荆) NASDAQ:SMH NASDAQ:MU SSE:688519(南亚) NASDAQ:HOOD NASDAQ:LITE NASDAQ:QQQ NASDAQ:APLD NASDAQ:WULF NASDAQ:AMD SZSE:300476(胜宏) SZSE:002463(沪电) SZSE:002837(英维克)
+  🔴淘汰(13): SZSE:300990(同飞) NYSE:SNOW NASDAQ:SMH NASDAQ:MU NASDAQ:HOOD SSE:688519(南亚) NASDAQ:LITE NASDAQ:QQQ NASDAQ:APLD NASDAQ:WULF NASDAQ:AMD SZSE:300476(胜宏) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQC$1182M(v/oi99.0) MU≈$930M(v/oi99.0) SMHP$519M(v/oi18.2) SNDK≈$372M(v/oi27.4) AMD≈$266M(v/oi99.0)
+  今日: MU≈$919M SMHP$530M QQQ≈$400M SNDK≈$369M AMD≈$266M
+  T+1核对: BEC220(10-16)✗未增 BEC230(10-16)✗未增 BEC232.5(10-16)✗未增 BEC235(10-16)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
 ================================================
-【波哥七维·外部体系】29只(强3)·⚠️旧快照
-  今日强信号: NASDAQ:GFS NYSE:DOW NYSE:ASX
-  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:IREN NASDAQ:INTC NYSE:BE NASDAQ:AMD NASDAQ:CORZ NASDAQ:CEG NYSE:GEV
-  池外强信号(仅提示, 不入信号链): NASDAQ:GFS NYSE:DOW NYSE:ASX
+【波哥七维·外部体系】50只(强14)·⚠️旧快照
+  今日强信号: NASDAQ:MU🔗 NASDAQ:ARM NYSE:DOCN NASDAQ:HOOD🔗 NASDAQ:NBIS🔗 AMEX:IGV NYSE:CRCL NASDAQ:CORZ🔗
+  🔗两套方法共同覆盖(独立得出, 非互证): NASDAQ:MU NASDAQ:HOOD NASDAQ:NBIS NASDAQ:CORZ NYSE:GEV NYSE:NEM NASDAQ:SNDK NASDAQ:AXTI
+  池外强信号(仅提示, 不入信号链): NASDAQ:ARM NYSE:DOCN AMEX:IGV NYSE:CRCL NASDAQ:HHI1! NASDAQ:KLIC
   说明: 波哥为独立体系, 本段只做对照·不影响候选/否决判定
 ------------------------------------------------
 【口径】仓位=CAMSLIM独立; 阶段+宏观=高老师(即Brendon)同一体系两层;
