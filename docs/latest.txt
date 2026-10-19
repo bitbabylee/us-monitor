@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-16 收盘(ET)
-  生成 10-17 22:32 纽约 = 10-18 10:32 新加坡
+  生成 10-18 22:31 纽约 = 10-19 10:31 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -23,7 +23,7 @@
   日性质(因子ETF超额·非纯因子): 动量-1.7 高贝-2.4 低波+0.8 价值-0.6 → 去杠杆/轮动日
   派发 ▆▇█▇▇▃▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃▃▄▄▄ (3/吸2) → 仓位60%
   阶段P0 恐慌未释放 恐慌2/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1434% ✗10Y5.10% ✗HYG/LQD0.7433 ✅USD/JPY157.99
+  宏观 ✅ATR1434% ✗10Y5.10% ✗HYG/LQD0.7433 ✅USD/JPY157.93
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:IEO 油气上游  AMEX:USO 原油  AMEX:XLE 能源板块 (Energy)  AMEX:XLV 医疗健康 (Health Care)  AMEX:XLP 必选消费 (Staples)
@@ -48,18 +48,18 @@
             NASDAQ:SMH🔴  NASDAQ:SNDK🔴  NASDAQ:QQQ🔴  NASDAQ:CRWD🔴 
             NYSE:ANET🔴  NASDAQ:CRDO🔴  NASDAQ:HOOD🔴  NASDAQ:AMD🔴 
             NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:PLTR🔴  NASDAQ:CIBR🔴 
-            NYSE:SNOW🔴  NASDAQ:SPCX🟡  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
+            NYSE:SNOW🔴  NASDAQ:SPCX🟢  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
             NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴 
             NASDAQ:APLD🔴 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 27%
+  上升趋势占比 25% · 📣南亚 S2↑→S1⌐
   🟢合格·在买点区(2): NASDAQ:MSFT NYSE:LLY
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(18): SZSE:300990(同飞) NASDAQ:CIBR NASDAQ:CRWD NYSE:NET AMEX:SPY AMEX:GDX SSE:688519(南亚) NASDAQ:MU NASDAQ:HOOD NYSE:SNOW NASDAQ:WULF NASDAQ:APLD NASDAQ:QQQ SZSE:300476(胜宏) NYSE:ANET NASDAQ:AMD NASDAQ:IREN SZSE:002837(英维克)
+  🔴淘汰(18): SZSE:300990(同飞) NASDAQ:CIBR NASDAQ:CRWD NYSE:NET AMEX:SPY AMEX:GDX SSE:688072(拓荆) NASDAQ:MU NASDAQ:HOOD NYSE:SNOW NASDAQ:WULF NASDAQ:APLD NASDAQ:QQQ NYSE:ANET NASDAQ:AMD NASDAQ:IREN SZSE:300476(胜宏) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQP$456M(v/oi99.0) SNDKP$169M(v/oi17.7) MUP$153M(v/oi59.9) SMHP$58M(v/oi99.0) AMDP$57M(v/oi46.9)
+  今日: QQQP$456M(v/oi99.0) SNDKP$172M(v/oi17.7) MUP$154M(v/oi59.9) NBISP$58M(v/oi65.1) SMHP$58M(v/oi99.0)
   T+1核对: BEC190(10-23)✗未增 BEC220(10-23)✗未增 BEC225(10-23)✗未增 BEC235(10-23)✗未增
 ------------------------------------------------
 
