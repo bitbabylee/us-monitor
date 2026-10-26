@@ -1,28 +1,40 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-10-23 收盘(ET)
-  生成 10-26 14:50 纽约 = 10-27 02:50 新加坡
+  波哥信号 · 美股日报  数据截至 2026-10-26 收盘(ET)
+  生成 10-26 19:59 纽约 = 10-27 07:59 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 40% · 阶段P0 · 宏观2/4 · 抱团MAGS
+【结论】仓位上限 40% · 阶段P1 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
-【候选】7 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:AMAT   超跌反弹      日内:🟢突破买点
-  NASDAQ:SMH    超跌反弹      日内:🟢突破买点
-  NASDAQ:QQQ    超跌反弹      日内:🟢强动能买点
-  NYSE:ANET     超跌反弹      日内:🔴锁定利润
+【候选】17 只（形态+板块确认+无财报风险·未回测）
+  NYSE:BE       超跌反弹      日内:⚪观望
+  NASDAQ:RKLB   超跌反弹      日内:🟡警告:临近前高
+  NASDAQ:LITE   超跌反弹      日内:🔴锁定利润
+  NASDAQ:AAOI   超跌反弹      日内:🔴锁定利润
+  NASDAQ:AMAT   超跌反弹      日内:⚪观望
+  NASDAQ:SMH    超跌反弹      日内:⚪观望
+  NASDAQ:QQQ    超跌反弹      日内:⚪观望
+  NYSE:ANET     超跌反弹      日内:⚪观望
+  NASDAQ:CRDO   超跌反弹      日内:⚪观望
   NASDAQ:AMD    超跌反弹      日内:🟢突破买点
-  NASDAQ:MU     超跌反弹      日内:🟢突破买点
-  NASDAQ:CIBR   EMA金叉     日内:🟢突破买点
+  NASDAQ:MU     超跌反弹      日内:🟢稳健买点
+  NASDAQ:SPCX   超跌反弹      日内:⚪观望
+  NASDAQ:IREN   超跌反弹      日内:⚪观望
+  NASDAQ:CORZ   超跌反弹      日内:⚪观望
+  NASDAQ:RIOT   超跌反弹      日内:🟡跳空低开,买点降级
+  NASDAQ:HUT    超跌反弹      日内:⚪观望
+  NASDAQ:WULF   超跌反弹      日内:⚪观望
 【否决】
-  NASDAQ:RKLB   板块背离
   NASDAQ:MSFT   财报窗口?
-  NYSE:LLY      财报窗口✓
   NASDAQ:INTC   财报窗口?
+  NYSE:GEV      财报窗口?
+  NASDAQ:SNDK   财报窗口✓
+  NYSE:CAT      财报窗口✓
+  NASDAQ:AXTI   财报窗口?
   NASDAQ:PLTR   财报窗口?
-  NASDAQ:WULF   板块背离
-【风险】财报 明日 NASDAQ:HOOD? · 日元⚠️156.5
+  NASDAQ:CIFR   财报窗口?
+【风险】财报 明日 NASDAQ:HOOD?
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   10-27 周二  NASDAQ:HOOD?
   10-28 周三  NYSE:GEV? NASDAQ:MSFT?
@@ -33,59 +45,65 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7624 (MA50-1.0%) · RSI 37 · VIX 19.5
-  风格: MTUM/MAGS 4.13 跌破20日均 → 抱团MAGS
-  日性质(因子ETF超额·非纯因子): 动量+0.8 高贝-0.1 低波-0.0 价值+0.2 → 中性日
-  派发 ▃▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅ (4/吸3) → 仓位40%
-  阶段P0 恐慌未释放 恐慌0/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1468% ✗10Y4.99% ✅HYG/LQD0.7419 ✗USD/JPY156.49
+  SPX 7677 (MA50-0.3%) · RSI 38 · VIX 18.4
+  风格: MTUM/MAGS 4.17 跌破20日均 → 抱团MAGS
+  日性质(因子ETF超额·非纯因子): 动量+1.1 高贝+1.0 低波-0.3 价值+0.0 → 风偏进攻日
+  派发 ▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅ (4/吸3) → 仓位40%
+  阶段P1 恐慌已释放 恐慌3/4 共识0/5 缺:QQQ站上20日线*
+  宏观 ✅ATR1471% ✗10Y4.99% ✗HYG/LQD0.7422 ✅USD/JPY157.54
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:HACK 网络安全  NASDAQ:WCLD 云软件  AMEX:USO 原油  AMEX:IEO 油气上游  NASDAQ:SKYY 云计算
-  短线改善: NASDAQ:AIQ AI主题  AMEX:ARKG 基因组  AMEX:PRNT 3D打印  AMEX:XBI 生物科技  AMEX:XLRE 房地产 (Real Estate)
+  涨幅优先: NASDAQ:WCLD 云软件  AMEX:HACK 网络安全  AMEX:USO 原油  AMEX:XLE 能源板块 (Energy)  AMEX:IEO 油气上游
+  短线改善: AMEX:ARKG 基因组  AMEX:XLRE 房地产 (Real Estate)  AMEX:KBE 银行  AMEX:XLK 科技板块 (Technology)  AMEX:XBI 生物科技
 ------------------------------------------------
 【板块】
-  强: AMEX:XLE+3.1% · NASDAQ:SOXX+1.0% · AMEX:XLK+1.0%
-  🚨砸盘: AMEX:XLP-1.4%(量1.4x)
-  主题🔥 🛡 网络安全 +6.1%  龙头 NASDAQ:CRWD
-  主题🔥 ☁ 云计算  +2.2%  龙头 NASDAQ:DDOG
-  主题🧊 矿转AIDC -2.2%
-  主题🧊 💊 减肥药  -2.5%
+  强: NASDAQ:SOXX+2.1% · AMEX:ITA+1.7%
+  🚨砸盘: AMEX:XLC-2.3%(量1.4x)
+  主题🔥 🚀 军工   +2.7%  龙头 NYSE:LMT
+  主题🧊 🏦 降息受益 -2.9%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:AMAT   🚀超跌反弹      🟢突破买点
-   NASDAQ:SMH    🚀超跌反弹      🟢突破买点
-   NASDAQ:QQQ    🚀超跌反弹      🟢强动能买点
    NASDAQ:AMD    🚀超跌反弹      🟢突破买点
-   NASDAQ:MU     🚀超跌反弹      🟢突破买点
-   NASDAQ:CIBR   🌊EMA金叉     🟢突破买点
-   NASDAQ:WULF   🚀超跌反弹      🔥强主升浪
+   NASDAQ:MU     🚀超跌反弹      🟢稳健买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:RKLB   🚀超跌反弹      🟡弱突破预警
+   NYSE:BE       🚀超跌反弹      ⚪观望
+   NASDAQ:RKLB   🚀超跌反弹      🟡警告:临近前高
+   NASDAQ:AMAT   🚀超跌反弹      ⚪观望
+   NASDAQ:SMH    🚀超跌反弹      ⚪观望
+   NASDAQ:QQQ    🚀超跌反弹      ⚪观望
+   NYSE:ANET     🚀超跌反弹      ⚪观望
+   NASDAQ:CRDO   🚀超跌反弹      ⚪观望
+   NASDAQ:SPCX   🚀超跌反弹      ⚪观望
+   NASDAQ:IREN   🚀超跌反弹      ⚪观望
+   NASDAQ:CORZ   🚀超跌反弹      ⚪观望
+   NASDAQ:RIOT   🚀超跌反弹      🟡跳空低开,买点降级
+   NASDAQ:HUT    🚀超跌反弹      ⚪观望
+   NASDAQ:WULF   🚀超跌反弹      ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NYSE:ANET     🚀超跌反弹      🔴锁定利润
+   NASDAQ:LITE   🚀超跌反弹      🔴锁定利润
+   NASDAQ:AAOI   🚀超跌反弹      🔴锁定利润
  ▶ 财报窗口（信号作废）
    NASDAQ:MSFT   🟢10EMA回调   ⚠️ 2日后(10-28)财?
-   NYSE:LLY      🟢10EMA回调   ⚠️ 3日后(10-29)财✓
    NASDAQ:INTC   🚀超跌反弹      ⚠️ 3日后(10-29)财?
+   NYSE:GEV      🚀超跌反弹      ⚠️ 2日后(10-28)财?
+   NASDAQ:SNDK   🚀超跌反弹      ⚠️ 3日后(10-29)财✓
+   NYSE:CAT      🚀超跌反弹      ⚠️ 3日后(10-29)财✓
+   NASDAQ:AXTI   🚀超跌反弹      ⚠️ 3日后(10-29)财?
    NASDAQ:PLTR   🟢10EMA回调   ⚠️ 7日后(11-02)财?
-  日内异动: NYSE:BE🟡  NASDAQ:NBIS🔴  NASDAQ:LITE🔥  NASDAQ:AAOI🔥 
-            NYSE:GEV🟡  NYSE:CAT🟢  NYSE:NET🟢  NASDAQ:CRWD🔴 
-            NASDAQ:CRDO🟡  NASDAQ:HOOD🟢  NASDAQ:AXTI🔥  NYSE:SNOW🟢 
-            NASDAQ:SPCX🟢  AMEX:GDX🟢  NASDAQ:IREN🔴  NASDAQ:CORZ🟡 
-            NASDAQ:RIOT🟡  NASDAQ:CIFR🟡  NASDAQ:HUT🟡  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:LITE+10.1% NASDAQ:AAOI+9.9% NASDAQ:AXTI+9.6% NASDAQ:WULF+9.2% NYSE:BE+7.7% NASDAQ:INTC+5.8% NYSE:GEV+5.3% NASDAQ:CORZ+5.2% NASDAQ:HUT+4.8% NASDAQ:IREN+4.7% NASDAQ:CRDO+4.6% NASDAQ:MU+4.0% NASDAQ:RKLB+4.0% NASDAQ:AMAT+3.8% NYSE:ANET+3.6% NASDAQ:SMH+3.3% NASDAQ:AMD+3.2% NYSE:SNOW+2.5% NASDAQ:SNDK+2.5% NASDAQ:CIBR+2.5% NASDAQ:RIOT+2.4% NASDAQ:CRWD+2.2% NASDAQ:HOOD-2.1%
+   NASDAQ:CIFR   🚀超跌反弹      ⚠️ 7日后(11-02)财?
+  日内异动: NASDAQ:NBIS🔴  NYSE:LLY🟢  NYSE:NET🟢  NASDAQ:CRWD🟢 
+            NASDAQ:CIBR🟢  NYSE:SNOW🟢  AMEX:GDX🟢 
+  盘前±2%: NASDAQ:CRDO+5.4% NASDAQ:AXTI+2.5% NASDAQ:AAOI+2.5% NASDAQ:LITE+2.4% NYSE:BE+2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 21% · 📣同飞 S2↑→S1⌐ · 江波龙 S1⌐→S4↓
-  🟢合格·在买点区(4): NYSE:LLY NASDAQ:CRWD NASDAQ:CIBR NASDAQ:MSFT
+  上升趋势占比 21% · 📣ANET S1⌐→S2↑ · HOOD S2↑→S1⌐
+  🟢合格·在买点区(5): NYSE:LLY NASDAQ:CIBR NASDAQ:MSFT NASDAQ:CRWD NYSE:NET
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(16): NYSE:SNOW SZSE:300476(胜宏) NASDAQ:RKLB NASDAQ:APLD NASDAQ:WULF SZSE:301308(江波龙) SZSE:300499(高澜) AMEX:SPY NASDAQ:MU NASDAQ:HOOD NASDAQ:QQQ NASDAQ:CIFR NASDAQ:AMD NASDAQ:IREN NASDAQ:CORZ SZSE:002837(英维克)
+  🔴淘汰(15): AMEX:SPY SZSE:300476(胜宏) NASDAQ:RKLB NASDAQ:WULF NASDAQ:APLD SZSE:301308(江波龙) SZSE:300499(高澜) NASDAQ:MU NASDAQ:QQQ NASDAQ:AMD NASDAQ:CIFR NYSE:ANET NASDAQ:IREN NASDAQ:CORZ SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQC$387M(v/oi99.0) MUC$290M(v/oi99.0) SNDK≈$120M(v/oi11.2) INTCC$98M(v/oi7.7) AMDC$71M(v/oi38.5)
-  T+1核对: BEC185(10-30)✗未增 BEC200(10-30)✗未增 BEC210(10-30)✗未增 BEC215(10-30)✗未增
+  今日: QQQ≈$300M(v/oi99.0) MU≈$171M(v/oi99.0) SNDK≈$142M(v/oi14.3) INTCC$100M(v/oi7.7) AMDC$68M(v/oi58.0)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
