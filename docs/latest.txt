@@ -1,45 +1,47 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-10-26 收盘(ET)
-  生成 10-26 19:59 纽约 = 10-27 07:59 新加坡
+  生成 10-27 14:11 纽约 = 10-28 02:11 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 40% · 阶段P1 · 宏观2/4 · 抱团MAGS
+【结论】仓位上限 40% · 阶段P1 · 宏观1/4 · 抱团MAGS
 ------------------------------------------------
-【候选】17 只（形态+板块确认+无财报风险·未回测）
+【候选】16 只（形态+板块确认+无财报风险·未回测）
   NYSE:BE       超跌反弹      日内:⚪观望
-  NASDAQ:RKLB   超跌反弹      日内:🟡警告:临近前高
+  NASDAQ:RKLB   超跌反弹      日内:🔴锁定利润
   NASDAQ:LITE   超跌反弹      日内:🔴锁定利润
   NASDAQ:AAOI   超跌反弹      日内:🔴锁定利润
-  NASDAQ:AMAT   超跌反弹      日内:⚪观望
-  NASDAQ:SMH    超跌反弹      日内:⚪观望
-  NASDAQ:QQQ    超跌反弹      日内:⚪观望
-  NYSE:ANET     超跌反弹      日内:⚪观望
-  NASDAQ:CRDO   超跌反弹      日内:⚪观望
-  NASDAQ:AMD    超跌反弹      日内:🟢突破买点
-  NASDAQ:MU     超跌反弹      日内:🟢稳健买点
+  NASDAQ:AMAT   超跌反弹      日内:🔴锁定利润
+  NASDAQ:SMH    超跌反弹      日内:🟡弱突破预警
+  NASDAQ:QQQ    超跌反弹      日内:🟢突破买点
+  NASDAQ:CRDO   超跌反弹      日内:🟢突破买点
+  NASDAQ:MU     超跌反弹      日内:🟡弱突破预警
   NASDAQ:SPCX   超跌反弹      日内:⚪观望
   NASDAQ:IREN   超跌反弹      日内:⚪观望
-  NASDAQ:CORZ   超跌反弹      日内:⚪观望
-  NASDAQ:RIOT   超跌反弹      日内:🟡跳空低开,买点降级
-  NASDAQ:HUT    超跌反弹      日内:⚪观望
+  NASDAQ:CORZ   超跌反弹      日内:🟢稳健买点
+  NASDAQ:RIOT   超跌反弹      日内:🟢黄金买点
+  NASDAQ:HUT    超跌反弹      日内:🟢稳健买点
   NASDAQ:WULF   超跌反弹      日内:⚪观望
+  NASDAQ:APLD   超跌反弹      日内:🔴锁定利润
 【否决】
   NASDAQ:MSFT   财报窗口?
   NASDAQ:INTC   财报窗口?
   NYSE:GEV      财报窗口?
   NASDAQ:SNDK   财报窗口✓
   NYSE:CAT      财报窗口✓
+  NYSE:ANET     财报窗口✓
+  NASDAQ:AMD    财报窗口✓
   NASDAQ:AXTI   财报窗口?
   NASDAQ:PLTR   财报窗口?
   NASDAQ:CIFR   财报窗口?
-【风险】财报 明日 NASDAQ:HOOD?
+【风险】财报 今日NASDAQ:HOOD?待出·回避 · 明日 NYSE:GEV? · 明日 NASDAQ:MSFT? · 日元⚠️156.8
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   10-27 周二  NASDAQ:HOOD?
   10-28 周三  NYSE:GEV? NASDAQ:MSFT?
   10-29 周四  NASDAQ:AXTI? NYSE:CAT✓ NASDAQ:INTC? NYSE:LLY✓ NASDAQ:SNDK✓
   11-02 周一  NASDAQ:CIFR? NASDAQ:PLTR?
+  11-03 周二  NASDAQ:AMD✓ NYSE:ANET✓
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
@@ -48,13 +50,13 @@
   SPX 7677 (MA50-0.3%) · RSI 38 · VIX 18.4
   风格: MTUM/MAGS 4.17 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量+1.1 高贝+1.0 低波-0.3 价值+0.0 → 风偏进攻日
-  派发 ▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅ (4/吸3) → 仓位40%
+  派发 ▂▃▃▃▅▅▆▅▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅ (4/吸4) → 仓位40%
   阶段P1 恐慌已释放 恐慌3/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1471% ✗10Y4.99% ✗HYG/LQD0.7422 ✅USD/JPY157.54
+  宏观 ✅ATR1471% ✗10Y4.99% ✗HYG/LQD0.7422 ✗USD/JPY156.83
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: NASDAQ:WCLD 云软件  AMEX:HACK 网络安全  AMEX:USO 原油  AMEX:XLE 能源板块 (Energy)  AMEX:IEO 油气上游
-  短线改善: AMEX:ARKG 基因组  AMEX:XLRE 房地产 (Real Estate)  AMEX:KBE 银行  AMEX:XLK 科技板块 (Technology)  AMEX:XBI 生物科技
+  涨幅优先: AMEX:HACK 网络安全  NASDAQ:WCLD 云软件  AMEX:XLE 能源板块 (Energy)  NASDAQ:SKYY 云计算  AMEX:IGV 软件
+  短线改善: AMEX:ARKG 基因组  NASDAQ:AIQ AI主题  AMEX:ARKX 太空  AMEX:ARKQ 自动驾驶科技  AMEX:XHE 医疗设备
 ------------------------------------------------
 【板块】
   强: NASDAQ:SOXX+2.1% · AMEX:ITA+1.7%
@@ -64,46 +66,47 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:AMD    🚀超跌反弹      🟢突破买点
-   NASDAQ:MU     🚀超跌反弹      🟢稳健买点
+   NASDAQ:QQQ    🚀超跌反弹      🟢突破买点
+   NASDAQ:CRDO   🚀超跌反弹      🟢突破买点
+   NASDAQ:CORZ   🚀超跌反弹      🟢稳健买点
+   NASDAQ:RIOT   🚀超跌反弹      🟢黄金买点
+   NASDAQ:HUT    🚀超跌反弹      🟢稳健买点
  ▶ 等时机（日内未给买点）
    NYSE:BE       🚀超跌反弹      ⚪观望
-   NASDAQ:RKLB   🚀超跌反弹      🟡警告:临近前高
-   NASDAQ:AMAT   🚀超跌反弹      ⚪观望
-   NASDAQ:SMH    🚀超跌反弹      ⚪观望
-   NASDAQ:QQQ    🚀超跌反弹      ⚪观望
-   NYSE:ANET     🚀超跌反弹      ⚪观望
-   NASDAQ:CRDO   🚀超跌反弹      ⚪观望
+   NASDAQ:SMH    🚀超跌反弹      🟡弱突破预警
+   NASDAQ:MU     🚀超跌反弹      🟡弱突破预警
    NASDAQ:SPCX   🚀超跌反弹      ⚪观望
    NASDAQ:IREN   🚀超跌反弹      ⚪观望
-   NASDAQ:CORZ   🚀超跌反弹      ⚪观望
-   NASDAQ:RIOT   🚀超跌反弹      🟡跳空低开,买点降级
-   NASDAQ:HUT    🚀超跌反弹      ⚪观望
    NASDAQ:WULF   🚀超跌反弹      ⚪观望
  ▶ 冲突（日线买点/日内破位）
+   NASDAQ:RKLB   🚀超跌反弹      🔴锁定利润
    NASDAQ:LITE   🚀超跌反弹      🔴锁定利润
    NASDAQ:AAOI   🚀超跌反弹      🔴锁定利润
+   NASDAQ:AMAT   🚀超跌反弹      🔴锁定利润
+   NASDAQ:APLD   🚀超跌反弹      🔴锁定利润
  ▶ 财报窗口（信号作废）
-   NASDAQ:MSFT   🟢10EMA回调   ⚠️ 2日后(10-28)财?
-   NASDAQ:INTC   🚀超跌反弹      ⚠️ 3日后(10-29)财?
-   NYSE:GEV      🚀超跌反弹      ⚠️ 2日后(10-28)财?
-   NASDAQ:SNDK   🚀超跌反弹      ⚠️ 3日后(10-29)财✓
-   NYSE:CAT      🚀超跌反弹      ⚠️ 3日后(10-29)财✓
-   NASDAQ:AXTI   🚀超跌反弹      ⚠️ 3日后(10-29)财?
-   NASDAQ:PLTR   🟢10EMA回调   ⚠️ 7日后(11-02)财?
-   NASDAQ:CIFR   🚀超跌反弹      ⚠️ 7日后(11-02)财?
-  日内异动: NASDAQ:NBIS🔴  NYSE:LLY🟢  NYSE:NET🟢  NASDAQ:CRWD🟢 
-            NASDAQ:CIBR🟢  NYSE:SNOW🟢  AMEX:GDX🟢 
-  盘前±2%: NASDAQ:CRDO+5.4% NASDAQ:AXTI+2.5% NASDAQ:AAOI+2.5% NASDAQ:LITE+2.4% NYSE:BE+2.0%
+   NASDAQ:MSFT   🟢10EMA回调   ⚠️ 1日后(10-28)财?
+   NASDAQ:INTC   🚀超跌反弹      ⚠️ 2日后(10-29)财?
+   NYSE:GEV      🚀超跌反弹      ⚠️ 1日后(10-28)财?
+   NASDAQ:SNDK   🚀超跌反弹      ⚠️ 2日后(10-29)财✓
+   NYSE:CAT      🚀超跌反弹      ⚠️ 2日后(10-29)财✓
+   NYSE:ANET     🚀超跌反弹      ⚠️ 7日后(11-03)财✓
+   NASDAQ:AMD    🚀超跌反弹      ⚠️ 7日后(11-03)财✓
+   NASDAQ:AXTI   🚀超跌反弹      ⚠️ 2日后(10-29)财?
+   NASDAQ:PLTR   🟢10EMA回调   ⚠️ 6日后(11-02)财?
+   NASDAQ:CIFR   🚀超跌反弹      ⚠️ 6日后(11-02)财?
+  日内异动: NASDAQ:NBIS🔴  NASDAQ:CIBR🟢  NYSE:SNOW🟡  AMEX:GDX🟢 
+  盘前±2%: NASDAQ:NBIS+10.7% NASDAQ:CRDO+9.8% NASDAQ:APLD+8.9% NASDAQ:RKLB+8.2% NYSE:BE+8.1% NASDAQ:CIFR+7.3% NASDAQ:RIOT+6.3% NASDAQ:AAOI+6.3% NASDAQ:HUT+6.1% NASDAQ:IREN+6.0% NASDAQ:LITE+5.9% NYSE:ANET+5.7% NASDAQ:AMD+5.2% NASDAQ:CORZ+4.1% NASDAQ:WULF+4.0% NYSE:GEV+3.6% NASDAQ:INTC+3.2% NASDAQ:SNDK+3.2% NASDAQ:MU+3.1% NASDAQ:HOOD+3.1% NYSE:CAT+3.0% NASDAQ:SMH+2.7% NASDAQ:AXTI+2.7% NASDAQ:CRWD+2.4%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 21% · 📣ANET S1⌐→S2↑ · HOOD S2↑→S1⌐
+  上升趋势占比 21%
   🟢合格·在买点区(5): NYSE:LLY NASDAQ:CIBR NASDAQ:MSFT NASDAQ:CRWD NYSE:NET
   🟢合格·追高区勿追(0): 无
   🔴淘汰(15): AMEX:SPY SZSE:300476(胜宏) NASDAQ:RKLB NASDAQ:WULF NASDAQ:APLD SZSE:301308(江波龙) SZSE:300499(高澜) NASDAQ:MU NASDAQ:QQQ NASDAQ:AMD NASDAQ:CIFR NYSE:ANET NASDAQ:IREN NASDAQ:CORZ SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQ≈$300M(v/oi99.0) MU≈$171M(v/oi99.0) SNDK≈$142M(v/oi14.3) INTCC$100M(v/oi7.7) AMDC$68M(v/oi58.0)
+  今日: QQQC$481M(v/oi99.0) MUC$225M(v/oi60.3) AMDC$144M(v/oi35.9) SNDK≈$104M(v/oi12.5) INTCC$71M(v/oi47.1)
+  T+1核对: BEC190(10-30)✗未增 BEC197.5(10-30)✗未增 BEC200(10-30)✗未增 BEC202.5(10-30)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
