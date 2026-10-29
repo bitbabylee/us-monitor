@@ -4,23 +4,23 @@
    "capex_ocf": {
     "ORCL": 161.0,
     "AMZN": 107.0,
-    "GOOGL": 71.0,
-    "MSFT": 63.0
+    "GOOGL": 89.0,
+    "MSFT": 69.0
    },
    "rpo_gap": {
     "ORCL": 130.0,
     "AMZN": -94.0,
-    "GOOGL": -282.0,
-    "MSFT": -1.0
+    "GOOGL": -155.0,
+    "MSFT": 25.0
    },
    "t1": {
     "ORCL": 0.37,
     "AMZN": 0.18,
     "GOOGL": 0.34,
-    "MSFT": 0.72
+    "MSFT": 0.62
    }
   }
  },
- "fetched": "2026-10-29 00:07 UTC",
+ "fetched": "2026-10-29 18:37 UTC",
  "latest_q": "2026Q2"
 }

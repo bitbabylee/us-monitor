@@ -1,120 +1,106 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-10-27 收盘(ET)
-  生成 10-28 20:07 纽约 = 10-29 08:07 新加坡
+  波哥信号 · 美股日报  数据截至 2026-10-28 收盘(ET)
+  生成 10-29 14:37 纽约 = 10-30 02:37 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 60% · 阶段P1 · 宏观3/4 · 抱团MAGS
+【结论】仓位上限 60% · 阶段P1 · 宏观3/4 · 动量MTUM
 ------------------------------------------------
-【候选】14 只（形态+板块确认+无财报风险·未回测）
-  NYSE:BE       超跌反弹      日内:🟢突破买点
-  NASDAQ:NBIS   超跌反弹      日内:🔥强主升浪
-  NASDAQ:LITE   超跌反弹      日内:🟢强动能买点
-  NASDAQ:AAOI   超跌反弹      日内:🔥强主升浪
-  NASDAQ:AMAT   超跌反弹      日内:🔴锁定利润
-  NASDAQ:SMH    超跌反弹      日内:🟢突破买点
-  NASDAQ:QQQ    超跌反弹      日内:🟡警告:临近前高
-  NASDAQ:CRWD   EMA金叉     日内:🔴规避/止损
-  NASDAQ:CRDO   超跌反弹      日内:⚪观望
-  NASDAQ:MU     超跌反弹      日内:🟢强动能买点
-  NASDAQ:IREN   超跌反弹      日内:🔥强主升浪
-  NASDAQ:CORZ   超跌反弹      日内:🟢强动能买点
-  NASDAQ:WULF   超跌反弹      日内:🔥强主升浪
-  NASDAQ:APLD   超跌反弹      日内:🔥强主升浪
+【候选】9 只（形态+板块确认+无财报风险·未回测）
+  NYSE:BE       超跌反弹      日内:🔴规避/止损
+  NASDAQ:NBIS   超跌反弹      日内:🔴规避/止损
+  NASDAQ:RKLB   超跌反弹      日内:🔴规避/止损
+  NASDAQ:AMAT   超跌反弹      日内:🟢强动能买点
+  NASDAQ:SMH    超跌反弹      日内:⚪观望
+  NASDAQ:QQQ    超跌反弹      日内:⚪观望
+  NASDAQ:CRDO   超跌反弹      日内:🔴规避/止损
+  NASDAQ:MU     超跌反弹      日内:🔴规避/止损
+  NASDAQ:APLD   超跌反弹      日内:🔴规避/止损
 【否决】
-  NASDAQ:RKLB   板块背离
-  NASDAQ:MSFT   财报窗口?
+  NASDAQ:LITE   财报窗口✓
+  NASDAQ:AAOI   财报窗口✓
   NYSE:LLY      财报窗口✓
   NASDAQ:INTC   财报窗口?
   NYSE:GEV      财报窗口?
   NASDAQ:SNDK   财报窗口✓
-  NYSE:CAT      财报窗口✓
-  NYSE:ANET     财报窗口✓
+  NASDAQ:HOOD   财报窗口?
   NASDAQ:AMD    财报窗口✓
   NASDAQ:AXTI   财报窗口?
   NASDAQ:PLTR   财报窗口?
-  NASDAQ:SPCX   板块背离
+  NASDAQ:IREN   财报窗口?
+  NASDAQ:CORZ   财报窗口?
   NASDAQ:RIOT   财报窗口?
   NASDAQ:CIFR   财报窗口?
-  NASDAQ:HUT    财报窗口?
-【风险】财报 今日NYSE:GEV?已出·观察期 · 今日NASDAQ:MSFT?已出·观察期 · 明日 NASDAQ:AXTI? · 明日 NYSE:CAT✓ · 明日 NASDAQ:INTC? · 明日 NYSE:LLY✓ · 明日 NASDAQ:SNDK✓
+【风险】财报 今日NASDAQ:AXTI?待出·回避 · 今日NYSE:CAT✓待出·回避 · 今日NASDAQ:INTC?待出·回避 · 今日NYSE:LLY✓待出·回避 · 今日NASDAQ:SNDK✓待出·回避
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
-  10-28 周三  NYSE:GEV? NASDAQ:MSFT?
   10-29 周四  NASDAQ:AXTI? NYSE:CAT✓ NASDAQ:INTC? NYSE:LLY✓ NASDAQ:SNDK✓
   11-02 周一  NASDAQ:CIFR? NASDAQ:PLTR?
   11-03 周二  NASDAQ:AMD✓ NYSE:ANET✓
   11-04 周三  NASDAQ:HUT? NASDAQ:RIOT?
+  11-05 周四  NASDAQ:AAOI✓ NASDAQ:CORZ? NASDAQ:IREN? NASDAQ:LITE✓ NYSE:NET✓
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
   SPX 7744 (MA50+0.6%) · RSI 48 · VIX 16.9
-  风格: MTUM/MAGS 4.19 跌破20日均 → 抱团MAGS
-  日性质(因子ETF超额·非纯因子): 动量+1.1 高贝+2.4 低波-0.9 价值+0.5 → 风偏进攻日
-  派发 ▃▃▅▅▆▅▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▄ (3/吸4) → 仓位60%
+  风格: MTUM/MAGS 4.26 站上20日均 → 动量MTUM
+  日性质(因子ETF超额·非纯因子): 动量+1.0 高贝+1.2 低波-0.5 价值+0.6 → 风偏进攻日
+  派发 ▃▃▅▅▆▅▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▄ (3/吸5) → 仓位60%
   阶段P1 恐慌已释放 恐慌4/4 共识1/5 缺:QQQ站上20日线*
-  宏观 ✅ATR1472% ✗10Y5.05% ✅HYG/LQD0.7440 ✅USD/JPY157.94
+  宏观 ✅ATR1465% ✗10Y5.05% ✅HYG/LQD0.7456 ✅USD/JPY157.99
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:HACK 网络安全  NASDAQ:WCLD 云软件  AMEX:IGV 软件  NASDAQ:SKYY 云计算  AMEX:USO 原油
-  短线改善: AMEX:ARKG 基因组  NASDAQ:AIQ AI主题  AMEX:XLK 科技板块 (Technology)  AMEX:KRE 区域银行  AMEX:XHE 医疗设备
+  涨幅优先: AMEX:USO 原油  AMEX:OIH 油服  AMEX:HACK 网络安全  AMEX:XLE 能源板块 (Energy)  AMEX:IHI 医疗器械
+  短线改善: AMEX:XBI 生物科技  AMEX:VLUE 价值  AMEX:ARKX 太空  AMEX:XLK 科技板块 (Technology)  AMEX:XLF 金融板块 (Financials)
 ------------------------------------------------
 【板块】
-  强: NASDAQ:SOXX+3.3% · AMEX:GDX+2.1% · AMEX:XLK+1.1%
-  主题🔥 矿转AIDC +7.0%  龙头 NASDAQ:CIFR
-  主题🔥 ⚡ AI电网 +4.6%  龙头 NYSE:SMR
-  主题🔥 🏦 降息受益 +3.6%  龙头 NASDAQ:SOFI
-  主题🔥 ☁ 云计算  +3.2%  龙头 NASDAQ:NBIS
-  主题🔥 🔥 AI算力 +2.7%  龙头 NASDAQ:AMD
-  主题🔥 🪙 黄金   +2.1%  龙头 NYSE:AGI
+  强: NASDAQ:SOXX+1.8%
+  主题🔥 矿转AIDC +4.7%  龙头 NASDAQ:RIOT
+  主题🔥 ☁ 云计算  +2.7%  龙头 NASDAQ:CRWV
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NYSE:BE       🚀超跌反弹      🟢突破买点
-   NASDAQ:NBIS   🚀超跌反弹      🔥强主升浪
-   NASDAQ:LITE   🚀超跌反弹      🟢强动能买点
-   NASDAQ:AAOI   🚀超跌反弹      🔥强主升浪
-   NASDAQ:SMH    🚀超跌反弹      🟢突破买点
-   NASDAQ:MU     🚀超跌反弹      🟢强动能买点
-   NASDAQ:IREN   🚀超跌反弹      🔥强主升浪
-   NASDAQ:CORZ   🚀超跌反弹      🟢强动能买点
-   NASDAQ:WULF   🚀超跌反弹      🔥强主升浪
-   NASDAQ:APLD   🚀超跌反弹      🔥强主升浪
+   NASDAQ:AMAT   🚀超跌反弹      🟢强动能买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:RKLB   🚀超跌反弹      ⚪观望
-   NASDAQ:QQQ    🚀超跌反弹      🟡警告:临近前高
-   NASDAQ:CRDO   🚀超跌反弹      ⚪观望
-   NASDAQ:SPCX   🚀超跌反弹      ⚪观望
+   NASDAQ:SMH    🚀超跌反弹      ⚪观望
+   NASDAQ:QQQ    🚀超跌反弹      ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   NASDAQ:AMAT   🚀超跌反弹      🔴锁定利润
-   NASDAQ:CRWD   🌊EMA金叉     🔴规避/止损
+   NYSE:BE       🚀超跌反弹      🔴规避/止损
+   NASDAQ:NBIS   🚀超跌反弹      🔴规避/止损
+   NASDAQ:RKLB   🚀超跌反弹      🔴规避/止损
+   NASDAQ:CRDO   🚀超跌反弹      🔴规避/止损
+   NASDAQ:MU     🚀超跌反弹      🔴规避/止损
+   NASDAQ:APLD   🚀超跌反弹      🔴规避/止损
  ▶ 财报窗口（信号作废）
-   NASDAQ:MSFT   🟢10EMA回调   ⚠️ 今日(盘后?)财报, ?
-   NYSE:LLY      🟢10EMA回调   ⚠️ 1日后(10-29)财✓
-   NASDAQ:INTC   🚀超跌反弹      ⚠️ 1日后(10-29)财?
-   NYSE:GEV      🚀超跌反弹      ⚠️ 今日(盘后?)财报, ?
-   NASDAQ:SNDK   🚀超跌反弹      ⚠️ 1日后(10-29)财✓
-   NYSE:CAT      🚀超跌反弹      ⚠️ 1日后(10-29)财✓
-   NYSE:ANET     🚀超跌反弹      ⚠️ 6日后(11-03)财✓
-   NASDAQ:AMD    🚀超跌反弹      ⚠️ 6日后(11-03)财✓
-   NASDAQ:AXTI   🚀超跌反弹      ⚠️ 1日后(10-29)财?
-   NASDAQ:PLTR   🟢10EMA回调   ⚠️ 5日后(11-02)财?
-   NASDAQ:RIOT   🚀超跌反弹      ⚠️ 7日后(11-04)财?
-   NASDAQ:CIFR   🚀超跌反弹      ⚠️ 5日后(11-02)财?
-   NASDAQ:HUT    🚀超跌反弹      ⚠️ 7日后(11-04)财?
-  日内异动: NYSE:NET🔴  NASDAQ:HOOD🟡  NASDAQ:CIBR🔴  AMEX:GDX🟢 
-  盘前±2%: NASDAQ:LITE+14.6% NASDAQ:AXTI+7.4% NASDAQ:CRWD-6.9% NASDAQ:CIBR-6.3% NYSE:NET-6.3% NASDAQ:AAOI+5.7% NASDAQ:RIOT+4.8% NASDAQ:HOOD-4.6% NASDAQ:SNDK+4.5% NYSE:GEV-3.5% NASDAQ:SPCX-3.4% NASDAQ:CORZ+3.3% NASDAQ:MU+3.3% NASDAQ:WULF+3.2% NASDAQ:AMAT+3.0% NASDAQ:MSFT+2.8% NYSE:SNOW-2.8% NYSE:LLY+2.4% NASDAQ:HUT+2.2% NYSE:ANET-2.1%
+   NASDAQ:LITE   🚀超跌反弹      ⚠️ 7日后(11-05)财✓
+   NASDAQ:AAOI   🚀超跌反弹      ⚠️ 7日后(11-05)财✓
+   NYSE:LLY      🟢10EMA回调   ⚠️ 今日(盘后?)财报, ✓
+   NASDAQ:INTC   🚀超跌反弹      ⚠️ 今日(盘后?)财报, ?
+   NYSE:GEV      🚀超跌反弹      📊 财报后第1日(10-28?
+   NASDAQ:SNDK   🚀超跌反弹      ⚠️ 今日(盘后?)财报, ✓
+   NASDAQ:HOOD   🚀超跌反弹      📊 财报后第2日(10-27?
+   NASDAQ:AMD    🚀超跌反弹      ⚠️ 5日后(11-03)财✓
+   NASDAQ:AXTI   💡口袋支点      ⚠️ 今日(盘后?)财报, ?
+   NASDAQ:PLTR   🟢10EMA回调   ⚠️ 4日后(11-02)财?
+   NASDAQ:IREN   🚀超跌反弹      ⚠️ 7日后(11-05)财?
+   NASDAQ:CORZ   🚀超跌反弹      ⚠️ 7日后(11-05)财?
+   NASDAQ:RIOT   💡口袋支点      ⚠️ 6日后(11-04)财?
+   NASDAQ:CIFR   🚀超跌反弹      ⚠️ 4日后(11-02)财?
+  日内异动: NASDAQ:MSFT🟢  NASDAQ:CRWD🟡  NASDAQ:CIBR🟡  AMEX:GDX🔴 
+            NASDAQ:HUT🔴  NASDAQ:WULF🔴 
+  盘前±2%: NASDAQ:IREN-9.7% NYSE:CAT-9.3% NASDAQ:CIFR-9.3% NASDAQ:CRDO-7.2% NASDAQ:WULF-6.7% NASDAQ:NBIS-6.7% NYSE:LLY+6.3% NASDAQ:APLD-5.7% NASDAQ:HUT-5.6% NASDAQ:AXTI-5.5% NASDAQ:MU-5.4% NASDAQ:SNDK-5.3% NASDAQ:RIOT-5.3% NASDAQ:INTC-4.7% NASDAQ:CORZ-4.6% NYSE:NET-4.1% NYSE:SNOW-3.7% AMEX:GDX-3.6% NYSE:BE-3.5% NASDAQ:CIBR-3.2% NASDAQ:AAOI-3.0% NASDAQ:AMD-2.8% NASDAQ:CRWD-2.4%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 25% · 📣同飞 S1⌐→S2↑ · 佰维 S1⌐→S4↓
-  🟢合格·在买点区(4): NYSE:LLY NASDAQ:CIBR NASDAQ:CRWD NASDAQ:MSFT
+  上升趋势占比 27% · 📣LITE S1⌐→S2↑ · AAOI S1⌐→S4↓
+  🟢合格·在买点区(6): NYSE:LLY AMEX:SPY NASDAQ:CIBR NASDAQ:MSFT NASDAQ:CRWD NASDAQ:PLTR
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(17): NASDAQ:RKLB NASDAQ:WULF NASDAQ:SMH SSE:688525(佰维) NASDAQ:APLD SZSE:300476(胜宏) NASDAQ:MU SZSE:301308(江波龙) SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:QQQ NASDAQ:AMD NYSE:ANET NASDAQ:CIFR NASDAQ:IREN NASDAQ:CORZ SZSE:002837(英维克)
+  🔴淘汰(19): NASDAQ:APLD NASDAQ:MU NASDAQ:RKLB NASDAQ:WULF NASDAQ:SMH SSE:688525(佰维) SZSE:300476(胜宏) SZSE:301308(江波龙) NASDAQ:LITE SZSE:300499(高澜) SZSE:300990(同飞) NASDAQ:AAOI NASDAQ:QQQ NASDAQ:AMD NYSE:ANET NASDAQ:CIFR NASDAQ:CORZ NASDAQ:IREN SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUC$322M(v/oi17.8) SNDKC$253M(v/oi10.1) QQQ≈$147M(v/oi87.5) AMDC$113M(v/oi17.8) MSFTC$92M(v/oi11.5)
+  今日: QQQP$429M(v/oi99.0) MU≈$216M(v/oi21.3) SNDK≈$100M(v/oi9.1) MSFTC$99M(v/oi18.6) AMD≈$91M(v/oi16.6)
+  T+1核对: BEC222.5(10-30)✗未增 BEC225(10-30)✗未增 BEC232.5(10-30)✗未增 BEC245(10-30)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
