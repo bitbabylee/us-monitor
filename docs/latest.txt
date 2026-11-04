@@ -1,15 +1,35 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-11-02 收盘(ET)
-  生成 11-03 14:45 纽约 = 11-04 03:45 新加坡
+  波哥信号 · 美股日报  数据截至 2026-11-03 收盘(ET)
+  生成 11-03 19:44 纽约 = 11-04 08:44 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 20% · 阶段P0 · 宏观2/4 · 抱团MAGS
+【结论】仓位上限 20% · 阶段P0 · 宏观1/4 · 抱团MAGS
 ------------------------------------------------
-【候选】1 只（形态+板块确认+无财报风险·未回测）
-  AMEX:GDX      超跌反弹      日内:🔴规避/止损
-【风险】财报 今日NASDAQ:AMD✓待出·回避 · 今日NYSE:ANET✓待出·回避 · 明日 NASDAQ:HUT? · 明日 NASDAQ:RIOT?
+【候选】10 只（形态+板块确认+无财报风险·未回测）
+  NYSE:BE       超跌反弹      日内:⚪观望
+  NASDAQ:NBIS   超跌反弹      日内:🟢突破买点
+  NASDAQ:MSFT   超跌反弹      日内:🟢突破买点
+  NASDAQ:SNDK   超跌反弹      日内:🟢稳健买点
+  NASDAQ:QQQ    超跌反弹      日内:⚪观望
+  NYSE:CAT      超跌反弹      日内:🟢突破买点
+  NASDAQ:CRDO   超跌反弹      日内:🔴锁定利润
+  NASDAQ:HOOD   超跌反弹      日内:🟢突破买点
+  NYSE:SNOW     超跌反弹      日内:🟡跳空低开,买点降级
+  NASDAQ:SPCX   超跌反弹      日内:⚪观望
+【否决】
+  NASDAQ:AAOI   财报窗口✓
+  NYSE:NET      财报窗口✓
+  NYSE:ANET     财报窗口✓
+  NASDAQ:AMD    财报窗口✓
+  NASDAQ:PLTR   财报窗口?
+  NASDAQ:IREN   财报窗口?
+  NASDAQ:CORZ   财报窗口?
+  NASDAQ:RIOT   财报窗口?
+  NASDAQ:CIFR   财报窗口?
+  NASDAQ:HUT    财报窗口?
+【风险】财报 今日NASDAQ:AMD✓已出·观察期 · 今日NYSE:ANET✓已出·观察期 · 明日 NASDAQ:HUT? · 明日 NASDAQ:RIOT?
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   11-03 周二  NASDAQ:AMD✓ NYSE:ANET✓
   11-04 周三  NASDAQ:HUT? NASDAQ:RIOT?
@@ -21,47 +41,63 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7541 (MA50-2.0%) · RSI 32 · VIX 21.1
-  风格: MTUM/MAGS 4.03 跌破20日均 → 抱团MAGS
-  日性质(因子ETF超额·非纯因子): 动量-2.7 高贝-1.3 低波+0.6 价值-0.5 → 去杠杆/轮动日
-  派发 ▅▆▅▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇ (6/吸5) → 仓位20%
+  SPX 7569 (MA50-1.6%) · RSI 39 · VIX 20.8
+  风格: MTUM/MAGS 4.05 跌破20日均 → 抱团MAGS
+  日性质(因子ETF超额·非纯因子): 动量+0.9 高贝+1.3 低波-0.6 价值-0.2 → 风偏进攻日
+  派发 ▆▅▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇ (6/吸5) → 仓位20%
   阶段P0 恐慌未释放 恐慌0/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1486% ✗10Y4.89% ✅HYG/LQD0.7414 ✅USD/JPY157.68
+  宏观 ✗ATR1480% ✗10Y4.95% ✗HYG/LQD0.7422 ✅USD/JPY158.37
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:XLB 基础材料 (Materials)  AMEX:XLP 必选消费 (Staples)  NASDAQ:PPH 制药  AMEX:XLV 医疗健康 (Health Care)  AMEX:IHI 医疗器械
-  短线改善: AMEX:MJ 大麻  AMEX:MOO 农业  AMEX:FAN 风电  AMEX:XLI 工业板块 (Industrials)  AMEX:XBI 生物科技
+  涨幅优先: AMEX:IHI 医疗器械  NASDAQ:PPH 制药  AMEX:XLP 必选消费 (Staples)  AMEX:XLV 医疗健康 (Health Care)  AMEX:XLRE 房地产 (Real Estate)
+  短线改善: AMEX:MJ 大麻  AMEX:MOO 农业  AMEX:FAN 风电  AMEX:XBI 生物科技  AMEX:TAN 太阳能
 ------------------------------------------------
 【板块】
-  强: AMEX:GDX+3.2% · AMEX:XLY+2.9% · AMEX:ITA+2.8% · AMEX:XLF+2.3% · AMEX:XLB+2.2% · AMEX:XLP+2.1% · AMEX:XLI+1.9% · AMEX:XLRE+1.6% · AMEX:XLU+1.0%
-  🚨砸盘: AMEX:XLK-2.5%(量1.6x) · AMEX:XLE-3.5%(量1.6x)
-  主题🔥 🪙 黄金   +3.3%  龙头 NYSE:GOLD
-  主题🧊 ⚡ AI电网 -2.8%
-  主题🧊 🔥 AI算力 -3.9%
-  主题🧊 ️ 网络安全 -4.7%
-  主题🧊 矿转AIDC -6.7%
-  主题🧊 ☁️ 云计算 -7.0%
+  强: NASDAQ:SOXX+2.2% · AMEX:XLK+1.0%
+  🚨砸盘: AMEX:XLY-1.0%(量1.4x) · AMEX:XLP-2.4%(量1.4x)
+  主题🔥 矿转AIDC +14.3%  龙头 NASDAQ:RIOT
+  主题🔥 ⚡ AI电网 +3.6%  龙头 NYSE:BE
+  主题🔥 ☁ 云计算  +3.1%  龙头 NASDAQ:NBIS
+  主题🔥 🔥 AI算力 +2.1%  龙头 NASDAQ:AMD
+  主题🧊 🪙 黄金   -2.3%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
+ ▶ 日线+日内同向
+   NASDAQ:NBIS   🚀超跌反弹      🟢突破买点
+   NASDAQ:MSFT   🚀超跌反弹      🟢突破买点
+   NASDAQ:SNDK   🚀超跌反弹      🟢稳健买点
+   NYSE:CAT      🚀超跌反弹      🟢突破买点
+   NASDAQ:HOOD   🚀超跌反弹      🟢突破买点
+ ▶ 等时机（日内未给买点）
+   NYSE:BE       🚀超跌反弹      ⚪观望
+   NASDAQ:QQQ    🚀超跌反弹      ⚪观望
+   NYSE:SNOW     🚀超跌反弹      🟡跳空低开,买点降级
+   NASDAQ:SPCX   🚀超跌反弹      ⚪观望
  ▶ 冲突（日线买点/日内破位）
-   AMEX:GDX      🚀超跌反弹      🔴规避/止损
-  日内异动: NASDAQ:NBIS🟢  NASDAQ:LITE🔴  NASDAQ:AAOI🔴  NASDAQ:MSFT🟢 
-            NASDAQ:INTC🔴  NASDAQ:AMAT🔴  NYSE:GEV🔴  NYSE:CAT🟡 
-            NASDAQ:CRWD🔴  NYSE:ANET🟢  NASDAQ:CRDO🟡  NASDAQ:HOOD🟢 
-            NASDAQ:MU🔴  NASDAQ:PLTR🔴  NASDAQ:SPCX🟢  NASDAQ:IREN🟢 
-            NASDAQ:CORZ🔥  NASDAQ:RIOT🟢  NASDAQ:CIFR🔥  NASDAQ:HUT🔥 
+   NASDAQ:CRDO   🚀超跌反弹      🔴锁定利润
+ ▶ 财报窗口（信号作废）
+   NASDAQ:AAOI   🚀超跌反弹      ⚠️ 2日后(11-05)财✓
+   NYSE:NET      🚀超跌反弹      ⚠️ 2日后(11-05)财✓
+   NYSE:ANET     🚀超跌反弹      ⚠️ 今日(盘后?)财报, ✓
+   NASDAQ:AMD    🚀超跌反弹      ⚠️ 今日(盘后?)财报, ✓
+   NASDAQ:PLTR   🚀超跌反弹      📊 财报后第1日(11-02?
+   NASDAQ:IREN   🚀超跌反弹      ⚠️ 2日后(11-05)财?
+   NASDAQ:CORZ   💡口袋支点      ⚠️ 2日后(11-05)财?
+   NASDAQ:RIOT   💡口袋支点      ⚠️ 1日后(11-04)财?
+   NASDAQ:CIFR   🚀超跌反弹      📊 财报后第1日(11-02?
+   NASDAQ:HUT    🚀超跌反弹      ⚠️ 1日后(11-04)财?
+  日内异动: NASDAQ:RKLB🟢  NASDAQ:INTC🔴  NYSE:GEV🟡  AMEX:GDX🔴 
             NASDAQ:WULF🔥  NASDAQ:APLD🟢 
-  盘前±2%: NASDAQ:CIFR+17.5% NASDAQ:HUT+16.7% NASDAQ:RIOT+15.8% NASDAQ:WULF+13.8% NASDAQ:CORZ+11.4% NASDAQ:IREN+10.5% NASDAQ:APLD+9.3% NYSE:BE+9.0% NASDAQ:CRDO+7.9% NYSE:GEV+6.9% NASDAQ:AXTI+6.7% NASDAQ:NBIS+6.5% NASDAQ:AMD+4.4% NASDAQ:SPCX+3.7% NASDAQ:SNDK+3.5% NASDAQ:RKLB+3.2% NYSE:ANET+3.1% NYSE:NET+3.1% NASDAQ:MSFT+2.9% NASDAQ:MU+2.0% NASDAQ:PLTR-2.0%
+  盘前±2%: NYSE:ANET+8.4% NASDAQ:AMD+4.6% NASDAQ:HUT-4.3% NASDAQ:CIFR-4.3% NASDAQ:WULF-3.8% NYSE:SNOW-3.0% NASDAQ:CRDO-2.2% NASDAQ:SPCX-2.2% NASDAQ:IREN-2.2% NASDAQ:RIOT-2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 12% · 📣圣泉 S4↓→S1⌐
+  上升趋势占比 16% · 📣NET S1⌐→S2↑ · AMD S1⌐→S2↑ · 圣泉 S1⌐→S4↓
   🟢合格·在买点区(1): NYSE:LLY
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(20): NASDAQ:CRWD NASDAQ:RKLB SZSE:300499(高澜) NASDAQ:WULF NASDAQ:AAOI NASDAQ:CORZ NASDAQ:CIBR SZSE:301308(江波龙) NYSE:SNOW NASDAQ:PLTR NASDAQ:MSFT NASDAQ:APLD SSE:601138(富联) AMEX:SPY SSE:688525(佰维) NASDAQ:CIFR NASDAQ:IREN SZSE:300476(胜宏) SZSE:300394(天孚) SZSE:002837(英维克)
+  🔴淘汰(22): NASDAQ:CORZ NASDAQ:WULF NASDAQ:RKLB SZSE:300499(高澜) NASDAQ:MSFT NASDAQ:AAOI NASDAQ:APLD NASDAQ:CIBR NASDAQ:AMD NYSE:SNOW SZSE:301308(江波龙) NYSE:NET NASDAQ:PLTR AMEX:SPY NASDAQ:CIFR SSE:601138(富联) SSE:605589(圣泉) NASDAQ:IREN SSE:688525(佰维) SZSE:300394(天孚) SZSE:300476(胜宏) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQ≈$262M(v/oi99.0) MU≈$226M(v/oi25.6) SNDK≈$125M(v/oi9.4) AMD≈$90M(v/oi15.3) PLTR≈$60M(v/oi28.3)
-  T+1核对: BEC195(11-06)✗未增 BEC197.5(11-06)✗未增 BEC202.5(11-06)✗未增 BEC205(11-06)✗未增
+  今日: MU≈$227M(v/oi29.6) QQQ≈$152M(v/oi47.6) AMD≈$132M(v/oi31.6) SNDK≈$124M(v/oi12.0) PLTR≈$73M(v/oi31.9)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
