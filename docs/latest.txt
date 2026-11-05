@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-11-04 收盘(ET)
-  生成 11-04 19:58 纽约 = 11-05 08:58 新加坡
+  生成 11-05 15:13 纽约 = 11-06 04:13 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -8,19 +8,19 @@
 【结论】仓位上限 20% · 阶段P0 · 宏观1/4 · 抱团MAGS
 ------------------------------------------------
 【候选】3 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:MSFT   口袋支点      日内:🟢突破买点
-  NASDAQ:HOOD   超跌反弹      日内:🟢突破买点
-  AMEX:GDX      口袋支点      日内:🟢强动能买点
+  NASDAQ:MSFT   口袋支点      日内:🔴规避/止损
+  NASDAQ:HOOD   超跌反弹      日内:🔴规避/止损
+  AMEX:GDX      口袋支点      日内:🟢稳健买点
 【否决】
   NASDAQ:QQQ    板块背离
   NASDAQ:AMD    财报窗口✓
-  NASDAQ:PLTR   财报窗口?
-【风险】财报 今日NASDAQ:HUT?已出·观察期 · 今日NASDAQ:RIOT?已出·观察期 · 明日 NASDAQ:AAOI✓ · 明日 NASDAQ:CORZ? · 明日 NASDAQ:IREN? · 明日 NYSE:NET✓
+  NASDAQ:PLTR   板块背离
+【风险】财报 今日NASDAQ:AAOI✓待出·回避 · 今日NASDAQ:IREN?待出·回避 · 今日NYSE:NET✓待出·回避 · 明日 NASDAQ:WULF?
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
-  11-04 周三  NASDAQ:HUT? NASDAQ:RIOT?
-  11-05 周四  NASDAQ:AAOI✓ NASDAQ:CORZ? NASDAQ:IREN? NYSE:NET✓
+  11-05 周四  NASDAQ:AAOI✓ NASDAQ:IREN? NYSE:NET✓
   11-06 周五  NASDAQ:WULF?
   11-09 周一  NASDAQ:RKLB✓
+  11-12 周四  NASDAQ:AMAT✓ NASDAQ:NBIS✓
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
@@ -29,17 +29,17 @@
   SPX 7689 (MA50-0.1%) · RSI 46 · VIX 16.6
   风格: MTUM/MAGS 3.88 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量-3.6 高贝-2.3 低波+0.1 价值-1.5 → 去杠杆/轮动日
-  派发 ▅▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆ (5/吸5) → 仓位20%
+  派发 ▅▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆ (5/吸6) → 仓位20%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1482% ✗10Y4.89% ✗HYG/LQD0.7418 ✅USD/JPY158.13
+  宏观 ✗ATR1482% ✗10Y4.89% ✗HYG/LQD0.7418 ✅USD/JPY158.47
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:IHI 医疗器械  AMEX:XLV 医疗健康 (Health Care)  NASDAQ:PPH 制药  AMEX:XLP 必选消费 (Staples)  AMEX:XHE 医疗设备
-  短线改善: AMEX:MJ 大麻  AMEX:IWM 小盘  NASDAQ:FINX 金融科技  AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:XLI 工业板块 (Industrials)
+  涨幅优先: AMEX:IHI 医疗器械  AMEX:XLP 必选消费 (Staples)  AMEX:XLV 医疗健康 (Health Care)  NASDAQ:SOXX 半导体主题 (Semis)  AMEX:XLRE 房地产 (Real Estate)
+  短线改善: AMEX:MJ 大麻  AMEX:GLD 黄金  AMEX:TAN 太阳能  AMEX:ITA 国防军工 (Defense)  AMEX:GDX 黄金矿业 (Gold Miners)
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+7.4% · AMEX:XLY+2.6% · AMEX:XLF+1.9% · AMEX:XLC+1.8% · AMEX:XLP+1.7% · AMEX:XLRE+1.7% · AMEX:XLV+1.4%
-  🚨砸盘: AMEX:XLU-1.2%(量1.6x) · AMEX:XLI-2.7%(量1.5x) · NASDAQ:SOXX-4.8%(量1.5x) · AMEX:XLE-6.4%(量2.0x)
+  🚨砸盘: AMEX:XLU-1.2%(量1.6x) · AMEX:XLI-2.7%(量1.5x) · AMEX:XLE-6.4%(量2.0x)
   主题🔥 🪙 黄金   +7.9%  龙头 NYSE:WPM
   主题🔥 🏦 降息受益 +4.6%  龙头 NYSE:XYZ
   主题🔥 💊 减肥药  +2.6%  龙头 NASDAQ:VKTX
@@ -53,29 +53,31 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:MSFT   💡口袋支点      🟢突破买点
-   NASDAQ:HOOD   🚀超跌反弹      🟢突破买点
-   AMEX:GDX      💡口袋支点      🟢强动能买点
- ▶ 等时机（日内未给买点）
-   NASDAQ:QQQ    🚀超跌反弹      ⚪观望
+   AMEX:GDX      💡口袋支点      🟢稳健买点
+ ▶ 冲突（日线买点/日内破位）
+   NASDAQ:MSFT   💡口袋支点      🔴规避/止损
+   NASDAQ:QQQ    🚀超跌反弹      🔴规避/止损
+   NASDAQ:HOOD   🚀超跌反弹      🔴规避/止损
+   NASDAQ:PLTR   🚀超跌反弹      🔴规避/止损
  ▶ 财报窗口（信号作废）
-   NASDAQ:AMD    🚀超跌反弹      📊 财报后第1日(11-03✓
-   NASDAQ:PLTR   🚀超跌反弹      📊 财报后第2日(11-02?
-  日内异动: NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:AAOI🔴  NASDAQ:INTC🔴 
-            NASDAQ:SMH🔴  NYSE:GEV🔴  NASDAQ:SNDK🔴  NYSE:CAT🔴 
+   NASDAQ:AMD    🚀超跌反弹      📊 财报后第2日(11-03✓
+  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:LITE🔴 
+            NASDAQ:AAOI🔴  NYSE:LLY🔴  NASDAQ:AMAT🔴  NASDAQ:SMH🔴 
+            NYSE:GEV🔴  NASDAQ:SNDK🔴  NYSE:CAT🔴  NYSE:NET🔴 
             NYSE:ANET🔴  NASDAQ:CRDO🔴  NASDAQ:MU🔴  NASDAQ:AXTI🔴 
-            NASDAQ:IREN🔴  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🔴 
-            NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NYSE:BE-2.9% NASDAQ:SNDK-2.6% NASDAQ:MU-2.6% NASDAQ:NBIS-2.6% NASDAQ:AXTI-2.4%
+            NASDAQ:CIBR🔴  NASDAQ:SPCX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
+            NASDAQ:RIOT🟡  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:AXTI-20.8% NASDAQ:SNDK-19.3% NASDAQ:AAOI-19.1% NASDAQ:LITE-16.0% NASDAQ:CRDO-15.8% NYSE:BE-15.7% NASDAQ:AMD-15.4% NASDAQ:MU-15.2% NASDAQ:NBIS-15.0% NASDAQ:IREN-14.5% NASDAQ:APLD-13.2% NASDAQ:RKLB-12.4% NASDAQ:CIFR-12.2% NASDAQ:WULF-12.1% NASDAQ:AMAT-12.0% NYSE:NET-10.7% NASDAQ:HOOD-10.7% NASDAQ:SMH-10.2% NYSE:ANET-10.2% NASDAQ:PLTR-10.0% NASDAQ:CRWD-9.5% NASDAQ:CORZ-8.3% NASDAQ:SPCX-8.3% NASDAQ:INTC-7.8% NYSE:SNOW-6.9% NYSE:GEV-6.9% NASDAQ:CIBR-6.6% NASDAQ:QQQ-6.0% NYSE:CAT-5.8% NASDAQ:HUT-4.9% NASDAQ:MSFT-3.7% NASDAQ:RIOT-2.9% NYSE:LLY-2.7%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 16% · 📣NET S2↑→S1⌐ · ANET S1⌐→S2↑
+  上升趋势占比 16%
   🟢合格·在买点区(2): NASDAQ:MSFT NYSE:LLY
   🟢合格·追高区勿追(0): 无
   🔴淘汰(20): NASDAQ:CRWD NASDAQ:WULF NASDAQ:RKLB NASDAQ:IREN SZSE:300499(高澜) NASDAQ:CIBR SZSE:301308(江波龙) NASDAQ:CORZ NASDAQ:AMD NYSE:SNOW NASDAQ:APLD NASDAQ:AAOI SSE:601138(富联) NASDAQ:PLTR SSE:688525(佰维) SSE:605589(圣泉) NASDAQ:CIFR SZSE:300476(胜宏) SZSE:300394(天孚) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUP$283M(v/oi54.5) QQQP$236M(v/oi21.2) SNDKP$187M(v/oi12.7) AMD≈$95M(v/oi13.8) MSFTC$83M(v/oi44.1)
+  今日: QQQP$842M(v/oi99.0) MUP$799M(v/oi99.0) SNDKP$431M(v/oi37.3) AMDP$205M(v/oi99.0) SMHP$165M(v/oi20.8)
+  T+1核对: BEC190(11-06)✗未增 BEC192.5(11-06)✗未增 BEC195(11-06)✗未增 BEC197.5(11-06)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
