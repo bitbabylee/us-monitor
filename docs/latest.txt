@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-11-04 收盘(ET)
-  生成 11-05 15:13 纽约 = 11-06 04:13 新加坡
+  生成 11-05 20:00 纽约 = 11-06 09:00 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -10,36 +10,42 @@
 【候选】3 只（形态+板块确认+无财报风险·未回测）
   NASDAQ:MSFT   口袋支点      日内:🔴规避/止损
   NASDAQ:HOOD   超跌反弹      日内:🔴规避/止损
-  AMEX:GDX      口袋支点      日内:🟢稳健买点
+  AMEX:GDX      口袋支点      日内:⚪观望
 【否决】
   NASDAQ:QQQ    板块背离
   NASDAQ:AMD    财报窗口✓
   NASDAQ:PLTR   板块背离
-【风险】财报 今日NASDAQ:AAOI✓待出·回避 · 今日NASDAQ:IREN?待出·回避 · 今日NYSE:NET✓待出·回避 · 明日 NASDAQ:WULF?
+【风险】财报 今日NASDAQ:AAOI✓已出·观察期 · 今日NASDAQ:IREN?已出·观察期 · 今日NYSE:NET✓已出·观察期 · 明日 NASDAQ:WULF?
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   11-05 周四  NASDAQ:AAOI✓ NASDAQ:IREN? NYSE:NET✓
   11-06 周五  NASDAQ:WULF?
   11-09 周一  NASDAQ:RKLB✓
   11-12 周四  NASDAQ:AMAT✓ NASDAQ:NBIS✓
+【恐慌买入计划】🔔进行中(冷静时写死的规则)
+  ①恐慌档 ✅已触发11-05 — 派发6(峰6) 距60日高-5.9% · 门槛 派发≥6 且 回撤≤-5.0%
+  ②释放档 ○待触发 — 阶段P0
+  ③确认档 ○待触发 — 阶段P0 · 派发6 · 未站上MA50
+  买什么: 指数(QQQ/SPY)不是个股——指数不归零/不需基本面判断/不被单票爆雷打脸, "机会几乎不会错"只在指数上成立
+  纪律: 每档只动预留现金1/3 · 框架底无止损位 · 单档触发一次不重复
 ------------------------------------------------
 
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7689 (MA50-0.1%) · RSI 46 · VIX 16.6
+  SPX 7354 (MA50-4.3%) · RSI 35 · VIX 28.2
   风格: MTUM/MAGS 3.88 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量-3.6 高贝-2.3 低波+0.1 价值-1.5 → 去杠杆/轮动日
-  派发 ▅▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆ (5/吸6) → 仓位20%
+  派发 ▄▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆▇ (6/吸6) → 仓位20%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1482% ✗10Y4.89% ✗HYG/LQD0.7418 ✅USD/JPY158.47
+  宏观 ✗ATR1482% ✗10Y4.84% ✗HYG/LQD0.7418 ✅USD/JPY157.80
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:IHI 医疗器械  AMEX:XLP 必选消费 (Staples)  AMEX:XLV 医疗健康 (Health Care)  NASDAQ:SOXX 半导体主题 (Semis)  AMEX:XLRE 房地产 (Real Estate)
-  短线改善: AMEX:MJ 大麻  AMEX:GLD 黄金  AMEX:TAN 太阳能  AMEX:ITA 国防军工 (Defense)  AMEX:GDX 黄金矿业 (Gold Miners)
+  涨幅优先: AMEX:IHI 医疗器械  NASDAQ:SOXX 半导体主题 (Semis)  AMEX:XLV 医疗健康 (Health Care)  NASDAQ:PPH 制药  AMEX:XLP 必选消费 (Staples)
+  短线改善: AMEX:MJ 大麻  AMEX:IWM 小盘  NASDAQ:FINX 金融科技  AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:XLI 工业板块 (Industrials)
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+7.4% · AMEX:XLY+2.6% · AMEX:XLF+1.9% · AMEX:XLC+1.8% · AMEX:XLP+1.7% · AMEX:XLRE+1.7% · AMEX:XLV+1.4%
-  🚨砸盘: AMEX:XLU-1.2%(量1.6x) · AMEX:XLI-2.7%(量1.5x) · AMEX:XLE-6.4%(量2.0x)
+  🚨砸盘: AMEX:XLU-1.2%(量1.8x) · AMEX:XLK-1.7%(量2.9x) · AMEX:XLI-2.7%(量2.2x) · AMEX:ITA-3.2%(量2.9x) · NASDAQ:SOXX-4.8%(量2.2x) · AMEX:XLE-6.4%(量1.9x)
   主题🔥 🪙 黄金   +7.9%  龙头 NYSE:WPM
   主题🔥 🏦 降息受益 +4.6%  龙头 NYSE:XYZ
   主题🔥 💊 减肥药  +2.6%  龙头 NASDAQ:VKTX
@@ -52,8 +58,8 @@
   主题🧊 矿转AIDC -11.4%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
- ▶ 日线+日内同向
-   AMEX:GDX      💡口袋支点      🟢稳健买点
+ ▶ 等时机（日内未给买点）
+   AMEX:GDX      💡口袋支点      ⚪观望
  ▶ 冲突（日线买点/日内破位）
    NASDAQ:MSFT   💡口袋支点      🔴规避/止损
    NASDAQ:QQQ    🚀超跌反弹      🔴规避/止损
@@ -61,23 +67,23 @@
    NASDAQ:PLTR   🚀超跌反弹      🔴规避/止损
  ▶ 财报窗口（信号作废）
    NASDAQ:AMD    🚀超跌反弹      📊 财报后第2日(11-03✓
-  日内异动: NYSE:BE🔴  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:LITE🔴 
-            NASDAQ:AAOI🔴  NYSE:LLY🔴  NASDAQ:AMAT🔴  NASDAQ:SMH🔴 
-            NYSE:GEV🔴  NASDAQ:SNDK🔴  NYSE:CAT🔴  NYSE:NET🔴 
+  日内异动: NYSE:BE🟡  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NASDAQ:LITE🔴 
+            NASDAQ:AAOI🔴  NYSE:LLY🔴  NASDAQ:INTC🔴  NASDAQ:AMAT🔴 
+            NASDAQ:SMH🔴  NYSE:GEV🔴  NASDAQ:SNDK🔴  NYSE:CAT🔴 
             NYSE:ANET🔴  NASDAQ:CRDO🔴  NASDAQ:MU🔴  NASDAQ:AXTI🔴 
-            NASDAQ:CIBR🔴  NASDAQ:SPCX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
-            NASDAQ:RIOT🟡  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AXTI-20.8% NASDAQ:SNDK-19.3% NASDAQ:AAOI-19.1% NASDAQ:LITE-16.0% NASDAQ:CRDO-15.8% NYSE:BE-15.7% NASDAQ:AMD-15.4% NASDAQ:MU-15.2% NASDAQ:NBIS-15.0% NASDAQ:IREN-14.5% NASDAQ:APLD-13.2% NASDAQ:RKLB-12.4% NASDAQ:CIFR-12.2% NASDAQ:WULF-12.1% NASDAQ:AMAT-12.0% NYSE:NET-10.7% NASDAQ:HOOD-10.7% NASDAQ:SMH-10.2% NYSE:ANET-10.2% NASDAQ:PLTR-10.0% NASDAQ:CRWD-9.5% NASDAQ:CORZ-8.3% NASDAQ:SPCX-8.3% NASDAQ:INTC-7.8% NYSE:SNOW-6.9% NYSE:GEV-6.9% NASDAQ:CIBR-6.6% NASDAQ:QQQ-6.0% NYSE:CAT-5.8% NASDAQ:HUT-4.9% NASDAQ:MSFT-3.7% NASDAQ:RIOT-2.9% NYSE:LLY-2.7%
+            NASDAQ:CIBR🔴  NYSE:SNOW🔴  NASDAQ:SPCX🔴  NASDAQ:IREN🔴 
+            NASDAQ:CORZ🔴  NASDAQ:RIOT🔴  NASDAQ:CIFR🔴  NASDAQ:HUT🟢 
+            NASDAQ:WULF🔴  NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:AAOI-26.9% NASDAQ:AXTI-21.3% NASDAQ:SNDK-18.5% NASDAQ:LITE-16.0% NASDAQ:AMD-14.5% NASDAQ:MU-14.1% NASDAQ:CRDO-13.8% NASDAQ:NBIS-13.1% NYSE:BE-13.1% NASDAQ:WULF-12.1% NASDAQ:AMAT-11.9% NASDAQ:APLD-11.5% NASDAQ:RKLB-11.1% NASDAQ:SMH-9.8% NASDAQ:PLTR-9.7% NYSE:ANET-9.3% NASDAQ:INTC-9.3% NASDAQ:CIFR-9.2% NASDAQ:HOOD-9.1% NASDAQ:CRWD-8.7% NASDAQ:IREN-8.2% NASDAQ:CORZ-7.5% NASDAQ:SPCX-6.8% NYSE:GEV-6.5% NYSE:SNOW-6.0% NASDAQ:QQQ-5.9% NASDAQ:CIBR-5.9% NYSE:CAT-5.6% NYSE:NET+5.1% NASDAQ:MSFT-4.1% NYSE:LLY-3.6%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 16%
+  上升趋势占比 16% · 📣新易盛 S1⌐→S4↓
   🟢合格·在买点区(2): NASDAQ:MSFT NYSE:LLY
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(20): NASDAQ:CRWD NASDAQ:WULF NASDAQ:RKLB NASDAQ:IREN SZSE:300499(高澜) NASDAQ:CIBR SZSE:301308(江波龙) NASDAQ:CORZ NASDAQ:AMD NYSE:SNOW NASDAQ:APLD NASDAQ:AAOI SSE:601138(富联) NASDAQ:PLTR SSE:688525(佰维) SSE:605589(圣泉) NASDAQ:CIFR SZSE:300476(胜宏) SZSE:300394(天孚) SZSE:002837(英维克)
+  🔴淘汰(21): NASDAQ:CRWD NASDAQ:WULF NASDAQ:RKLB NASDAQ:IREN SZSE:300499(高澜) NASDAQ:CIBR SZSE:301308(江波龙) NASDAQ:CORZ NASDAQ:AMD NYSE:SNOW NASDAQ:APLD NASDAQ:AAOI NASDAQ:PLTR SSE:601138(富联) SSE:688525(佰维) SSE:605589(圣泉) NASDAQ:CIFR SZSE:300502(新易盛) SZSE:300476(胜宏) SZSE:300394(天孚) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQP$842M(v/oi99.0) MUP$799M(v/oi99.0) SNDKP$431M(v/oi37.3) AMDP$205M(v/oi99.0) SMHP$165M(v/oi20.8)
-  T+1核对: BEC190(11-06)✗未增 BEC192.5(11-06)✗未增 BEC195(11-06)✗未增 BEC197.5(11-06)✗未增
+  今日: QQQP$1472M(v/oi99.0) MUP$1235M(v/oi99.0) SNDKP$714M(v/oi41.5) AMDP$587M(v/oi99.0) SMHP$344M(v/oi21.2)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
