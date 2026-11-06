@@ -1,0 +1,32 @@
+name: G6 页面
+
+# docs/g6/ 由 Desktop/WM6813/G6_daily.py 每天通过 API 提交；这里只把 main 上现成的 docs/ 重新部署，不重跑看板。
+on:
+  push:
+    branches: [main]
+    paths: ['docs/g6/**']
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: dashboard
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4
