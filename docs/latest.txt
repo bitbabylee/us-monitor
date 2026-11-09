@@ -1,29 +1,36 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-11-06 收盘(ET)
-  生成 11-06 19:11 纽约 = 11-07 08:11 新加坡
+  波哥信号 · 美股日报  数据截至 2026-11-09 收盘(ET)
+  生成 11-09 17:38 纽约 = 11-10 06:38 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
-【结论】仓位上限 20% · 阶段P0 · 宏观1/4 · 抱团MAGS
+【结论】仓位上限 20% · 阶段P1 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
-【候选】4 只（形态+板块确认+无财报风险·未回测）
+【候选】13 只（形态+板块确认+无财报风险·未回测）
+  NASDAQ:LITE   超跌反弹      日内:🟢稳健买点
+  NASDAQ:AAOI   超跌反弹      日内:🟢稳健买点
+  NASDAQ:MSFT   10EMA回调   日内:🟢稳健买点
   NASDAQ:INTC   超跌反弹      日内:🔴锁定利润
+  NASDAQ:SMH    超跌反弹      日内:🔴锁定利润
+  NASDAQ:SNDK   超跌反弹      日内:🔴锁定利润
+  NASDAQ:QQQ    超跌反弹      日内:🟢突破买点
+  NYSE:CAT      超跌反弹      日内:🟢突破买点
   NASDAQ:HOOD   超跌反弹      日内:⚪观望
-  NASDAQ:PLTR   超跌反弹      日内:⚪观望
-  NASDAQ:CIFR   超跌反弹      日内:🔥强主升浪
+  NASDAQ:MU     超跌反弹      日内:🟢突破买点
+  NASDAQ:PLTR   超跌反弹      日内:🟢突破买点
+  AMEX:GDX      箱体突破      日内:🟢黄金买点
+  NASDAQ:CIFR   超跌反弹      日内:🟢突破买点
 【否决】
-  NASDAQ:AAOI   财报窗口✓
-  NASDAQ:HUT    财报窗口?
-【风险】财报 今日NASDAQ:WULF?已出·观察期
+  NASDAQ:AMAT   财报窗口✓
+【风险】财报 今日NASDAQ:RKLB✓已出·观察期
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
-  11-06 周五  NASDAQ:WULF?
   11-09 周一  NASDAQ:RKLB✓
   11-12 周四  NASDAQ:AMAT✓ NASDAQ:NBIS✓
 【恐慌买入计划】🔔进行中(冷静时写死的规则)
-  ①恐慌档 ✅已触发11-05 — 派发7(峰7) 距60日高-5.7% · 门槛 派发≥6 且 回撤≤-5.0%
-  ②释放档 ○待触发 — 阶段P0
-  ③确认档 ○待触发 — 阶段P0 · 派发7 · 未站上MA50
+  ①恐慌档 ✅已触发11-05 — 派发6(峰7) 距60日高-3.4% · 门槛 派发≥6 且 回撤≤-5.0%
+  ②释放档 ✅已触发11-09 — 阶段P1
+  ③确认档 ○待触发 — 阶段P1 · 派发6 · 未站上MA50
   买什么: 指数(QQQ/SPY)不是个股——指数不归零/不需基本面判断/不被单票爆雷打脸, "机会几乎不会错"只在指数上成立
   纪律: 每档只动预留现金1/3 · 框架底无止损位 · 单档触发一次不重复
 ------------------------------------------------
@@ -31,51 +38,63 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7377 (MA50-3.9%) · RSI 35 · VIX 25.6
-  风格: MTUM/MAGS 0.94 跌破20日均 → 抱团MAGS
-  日性质(因子ETF超额·非纯因子): 动量+1.5 高贝+2.4 低波-0.8 价值-0.2 → 风偏进攻日
-  派发 ▁▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆██ (7/吸6) → 仓位20%
-  阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1491% ✗10Y4.86% ✗HYG/LQD0.7388 ✅USD/JPY157.50
+  SPX 7550 (MA50-1.6%) · RSI 43 · VIX 19.9
+  风格: MTUM/MAGS 0.97 跌破20日均 → 抱团MAGS
+  日性质(因子ETF超额·非纯因子): 动量+2.5 高贝+3.2 低波-0.7 价值+0.4 → 风偏进攻日
+  派发 ▁▂▃▃▃▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆██▇ (6/吸5) → 仓位20%
+  阶段P1 恐慌已释放 恐慌4/4 共识0/5 缺:QQQ站上20日线*
+  宏观 ✗ATR1495% ✗10Y4.86% ✅HYG/LQD0.7405 ✅USD/JPY157.92
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:IHI 医疗器械  NASDAQ:HERO 游戏  AMEX:XLP 必选消费 (Staples)  AMEX:XLRE 房地产 (Real Estate)  AMEX:XHE 医疗设备
-  短线改善: AMEX:MJ 大麻  AMEX:GDXJ 小金矿  NASDAQ:FINX 金融科技  AMEX:GLD 黄金  NASDAQ:ICLN 清洁能源
+  涨幅优先: AMEX:IHI 医疗器械  NASDAQ:HERO 游戏  AMEX:XHE 医疗设备  AMEX:XRT 零售  AMEX:XLV 医疗健康 (Health Care)
+  短线改善: AMEX:GDXJ 小金矿  AMEX:XLC 通讯服务 (Communication)  AMEX:IWM 小盘  AMEX:TAN 太阳能  AMEX:MJ 大麻
 ------------------------------------------------
 【板块】
-  强: NASDAQ:SOXX+3.2% · AMEX:GDX+1.8% · AMEX:XLK+1.1%
-  主题🔥 矿转AIDC +12.8%  龙头 NASDAQ:IREN
-  主题🔥 ⚡ AI电网 +8.4%  龙头 NYSE:OKLO
-  主题🔥 🔥 AI算力 +5.3%  龙头 NASDAQ:AMD
-  主题🔥 ☁ 云计算  +4.0%  龙头 NASDAQ:NBIS
-  主题🔥 🚀 军工   +2.4%  龙头 NASDAQ:AVAV
-  主题🔥 🛡 网络安全 +2.1%  龙头 NYSE:NET
+  强: NASDAQ:SOXX+5.1% · AMEX:GDX+2.0% · AMEX:ITA+1.5% · AMEX:XLI+1.5% · AMEX:XLK+1.4%
+  主题🔥 ⚡ AI电网 +7.3%  龙头 NYSE:OKLO
+  主题🔥 🚀 军工   +4.0%  龙头 NASDAQ:AVAV
+  主题🔥 矿转AIDC +3.6%  龙头 NASDAQ:WULF
+  主题🔥 🛡 网络安全 +3.4%  龙头 NYSE:NET
+  主题🔥 🔥 AI算力 +3.1%  龙头 NASDAQ:AMD
+  主题🔥 传统工业重机 +2.9%  龙头 NYSE:CAT
+  主题🔥 💊 减肥药  +2.6%  龙头 NASDAQ:VKTX
+  主题🔥 ☁ 云计算  +2.6%  龙头 NASDAQ:NBIS
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NASDAQ:CIFR   🚀超跌反弹      🔥强主升浪
+   NASDAQ:LITE   🚀超跌反弹      🟢稳健买点
+   NASDAQ:AAOI   🚀超跌反弹      🟢稳健买点
+   NASDAQ:MSFT   🟢10EMA回调   🟢稳健买点
+   NASDAQ:QQQ    🚀超跌反弹      🟢突破买点
+   NYSE:CAT      🚀超跌反弹      🟢突破买点
+   NASDAQ:MU     🚀超跌反弹      🟢突破买点
+   NASDAQ:PLTR   🚀超跌反弹      🟢突破买点
+   AMEX:GDX      📦箱体突破      🟢黄金买点
+   NASDAQ:CIFR   🚀超跌反弹      🟢突破买点
  ▶ 等时机（日内未给买点）
    NASDAQ:HOOD   🚀超跌反弹      ⚪观望
-   NASDAQ:PLTR   🚀超跌反弹      ⚪观望
  ▶ 冲突（日线买点/日内破位）
    NASDAQ:INTC   🚀超跌反弹      🔴锁定利润
+   NASDAQ:SMH    🚀超跌反弹      🔴锁定利润
+   NASDAQ:SNDK   🚀超跌反弹      🔴锁定利润
  ▶ 财报窗口（信号作废）
-   NASDAQ:AAOI   🚀超跌反弹      📊 财报后第1日(11-05✓
-   NASDAQ:HUT    🚀超跌反弹      📊 财报后第2日(11-04?
-  日内异动: NYSE:BE🔴  NASDAQ:RKLB🔥  NASDAQ:LITE🟢  NASDAQ:AMAT🔴 
-            NASDAQ:SMH🔴  NYSE:GEV🔴  NASDAQ:SNDK🔴  NYSE:NET🔴 
-            NASDAQ:CRWD🔴  NYSE:ANET🟢  NASDAQ:CIBR🔴  NASDAQ:SPCX🟢 
-            AMEX:GDX🟡  NASDAQ:CORZ🟢  NASDAQ:RIOT🔥  NASDAQ:WULF🔥 
-            NASDAQ:APLD🔴 
+   NASDAQ:AMAT   🚀超跌反弹      ⚠️ 3日后(11-12)财✓
+  日内异动: NYSE:BE🟢  NASDAQ:NBIS🔴  NASDAQ:RKLB🔴  NYSE:LLY🔴 
+            NYSE:GEV🟢  NYSE:NET🟢  NASDAQ:CRWD🔴  NYSE:ANET🟢 
+            NASDAQ:CRDO🟢  NASDAQ:AMD🔴  NASDAQ:AXTI🔴  NASDAQ:CIBR🟢 
+            NASDAQ:SPCX🟡  NASDAQ:CORZ🟢  NASDAQ:RIOT🟢  NASDAQ:HUT🟢 
+            NASDAQ:WULF🟢  NASDAQ:APLD🟢 
+  盘前±2%: NASDAQ:RKLB-5.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 10% · 📣PLTR S1⌐→S2↑ · GDX S1⌐→S3⌒
-  🟢合格·在买点区(1): NYSE:LLY
+  上升趋势占比 18% · 📣NET S1⌐→S2↑ · ANET S1⌐→S2↑ · AMD S1⌐→S2↑
+  🟢合格·在买点区(2): NASDAQ:MSFT NYSE:LLY
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(21): AMEX:GDX NASDAQ:RKLB NASDAQ:WULF NASDAQ:IREN SZSE:300499(高澜) SZSE:301308(江波龙) NASDAQ:CRWD NASDAQ:CORZ NASDAQ:CIBR NASDAQ:APLD NYSE:SNOW NASDAQ:AAOI NASDAQ:PLTR SSE:605589(圣泉) NASDAQ:CIFR SSE:601138(富联) SSE:688525(佰维) SZSE:300502(新易盛) SZSE:300476(胜宏) SZSE:300394(天孚) SZSE:002837(英维克)
+  🔴淘汰(24): AMEX:GDX NASDAQ:RKLB NASDAQ:WULF NYSE:NET NASDAQ:CRWD NASDAQ:IREN SZSE:300499(高澜) NASDAQ:AMD NASDAQ:CORZ SZSE:301308(江波龙) NASDAQ:CIBR NASDAQ:APLD NYSE:SNOW AMEX:SPY NASDAQ:AAOI NASDAQ:PLTR SSE:601138(富联) SSE:605589(圣泉) NASDAQ:CIFR SSE:688525(佰维) SZSE:300502(新易盛) SZSE:300476(胜宏) SZSE:300394(天孚) SZSE:002837(英维克)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKP$527M(v/oi10.2) INTCP$128M(v/oi8.5) QQQP$103M(v/oi21.5) LITEP$64M(v/oi7.3) CATP$64M(v/oi10.9)
+  今日: QQQC$755M(v/oi99.0) SNDKP$472M(v/oi21.0) AMDC$410M(v/oi99.0) INTCP$379M(v/oi33.0) MUC$247M(v/oi99.0)
+  T+1核对: BEC170(11-13)✗未增 BEC175(11-13)✗未增 BEC182.5(11-13)✗未增 BEC185(11-13)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
