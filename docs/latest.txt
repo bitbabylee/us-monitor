@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-11-11 收盘(ET)
-  生成 11-12 15:17 纽约 = 11-13 04:17 新加坡
+  生成 11-12 20:17 纽约 = 11-13 09:17 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -11,17 +11,17 @@
   NASDAQ:AAOI   超跌反弹      日内:⚪观望
   NASDAQ:INTC   超跌反弹      日内:⚪观望
   NASDAQ:SNDK   超跌反弹      日内:⚪观望
-  NYSE:CAT      超跌反弹      日内:🟡警告:临近前高
+  NYSE:CAT      超跌反弹      日内:🟡弱突破预警
   NASDAQ:HOOD   超跌反弹      日内:⚪观望
 【否决】
   AMEX:GDX      板块背离
-【风险】财报 今日NASDAQ:AMAT✓待出·回避 · 今日NASDAQ:NBIS✓待出·回避
+【风险】财报 今日NASDAQ:AMAT✓已出·观察期 · 今日NASDAQ:NBIS✓已出·观察期
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   11-12 周四  NASDAQ:AMAT✓ NASDAQ:NBIS✓
 【恐慌买入计划】🔔进行中(冷静时写死的规则)
-  ①恐慌档 ✅已触发11-05 — 派发5(峰7) 距60日高-2.6% · 门槛 派发≥6 且 回撤≤-5.0%
+  ①恐慌档 ✅已触发11-05 — 派发4(峰7) 距60日高-2.9% · 门槛 派发≥6 且 回撤≤-5.0%
   ②释放档 ✅已触发11-09 — 阶段P1
-  ③确认档 ○待触发 — 阶段P1 · 派发5 · 未站上MA50
+  ③确认档 ○待触发 — 阶段P1 · 派发4 · 未站上MA50
   买什么: 指数(QQQ/SPY)不是个股——指数不归零/不需基本面判断/不被单票爆雷打脸, "机会几乎不会错"只在指数上成立
   纪律: 每档只动预留现金1/3 · 框架底无止损位 · 单档触发一次不重复
 ------------------------------------------------
@@ -29,16 +29,16 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7619 (MA50-0.7%) · RSI 48 · VIX 17.5
+  SPX 7592 (MA50-1.0%) · RSI 49 · VIX 18.7
   风格: MTUM/MAGS 1.01 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量+2.5 高贝+1.8 低波-0.3 价值+1.6 → 风偏进攻日
-  派发 ▃▃▃▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆██▇▇▆ (5/吸6) → 仓位20%
+  派发 ▃▃▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆██▇▇▆▅ (4/吸6) → 仓位20%
   阶段P1 恐慌已释放 恐慌3/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1495% ✗10Y5.00% ✅HYG/LQD0.7440 ✅USD/JPY158.71
+  宏观 ✗ATR1495% ✗10Y5.10% ✅HYG/LQD0.7440 ✅USD/JPY159.88
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: NASDAQ:PPH 制药  AMEX:XLV 医疗健康 (Health Care)  AMEX:XLP 必选消费 (Staples)  AMEX:JETS 航空  AMEX:ITA 国防军工 (Defense)
-  短线改善: AMEX:MOO 农业  AMEX:ARKX 太空  AMEX:KRE 区域银行  AMEX:XLI 工业板块 (Industrials)  AMEX:OIH 油服
+  涨幅优先: NASDAQ:HERO 游戏  NASDAQ:PPH 制药  AMEX:XLV 医疗健康 (Health Care)  AMEX:JETS 航空  AMEX:XLP 必选消费 (Staples)
+  短线改善: AMEX:XLC 通讯服务 (Communication)  AMEX:GDX 黄金矿业 (Gold Miners)  AMEX:PAVE 基建  AMEX:ARKX 太空  AMEX:SLX 钢铁
 ------------------------------------------------
 【板块】
   强: NASDAQ:SOXX+4.7% · AMEX:XLK+1.9%
@@ -53,25 +53,25 @@
    NASDAQ:AAOI   🚀超跌反弹      ⚪观望
    NASDAQ:INTC   🚀超跌反弹      ⚪观望
    NASDAQ:SNDK   🚀超跌反弹      ⚪观望
-   NYSE:CAT      🚀超跌反弹      🟡警告:临近前高
+   NYSE:CAT      🚀超跌反弹      🟡弱突破预警
    NASDAQ:HOOD   🚀超跌反弹      ⚪观望
-   AMEX:GDX      🟢10EMA回调   ⚪观望
-  日内异动: NYSE:BE🟡  NASDAQ:NBIS🟡  NASDAQ:LITE🟡  NASDAQ:AMAT🔴 
-            NYSE:NET🟡  NASDAQ:CRWD🔴  NYSE:ANET🔴  NASDAQ:CRDO🟡 
-            NASDAQ:AMD🔴  NASDAQ:MU🟡  NASDAQ:AXTI🟡  NASDAQ:PLTR🟢 
-            NASDAQ:CIBR🟢  NYSE:SNOW🟡  NASDAQ:SPCX🔴  NASDAQ:IREN🔴 
-            NASDAQ:CORZ🟡  NASDAQ:CIFR🟡  NASDAQ:WULF🔴 
-  盘前±2%: NASDAQ:NBIS-18.1% NASDAQ:IREN-8.8% NASDAQ:AXTI-7.9% NASDAQ:APLD-6.1% NASDAQ:SNDK-5.7% NASDAQ:AMD+5.5% NASDAQ:AAOI-5.2% NASDAQ:AMAT-4.5% NYSE:ANET+4.4% NASDAQ:LITE-3.8% NYSE:BE-3.6% NASDAQ:WULF-3.3% AMEX:GDX-3.3% NASDAQ:HOOD-2.8% NASDAQ:RKLB-2.5% NASDAQ:MU-2.5%
+ ▶ 冲突（日线买点/日内破位）
+   AMEX:GDX      🟢10EMA回调   🔴规避/止损
+  日内异动: NYSE:BE🟡  NASDAQ:RKLB🔴  NASDAQ:LITE🟡  NYSE:LLY🔴 
+            NASDAQ:SMH🟡  NYSE:NET🟡  NASDAQ:CRWD🟢  NYSE:ANET🟢 
+            NASDAQ:AMD🟢  NASDAQ:MU🟡  NASDAQ:PLTR🟢  NASDAQ:CIBR🟢 
+            NYSE:SNOW🟡  NASDAQ:SPCX🔴  NASDAQ:IREN🟡  NASDAQ:CORZ🟡 
+            NASDAQ:RIOT🔴  NASDAQ:CIFR🟡  NASDAQ:APLD🟡 
+  盘前±2%: NASDAQ:NBIS-15.9% NASDAQ:AMD+5.4% NYSE:ANET+5.4% NASDAQ:IREN-5.1% NASDAQ:AXTI-4.0% NASDAQ:HUT+3.5% NASDAQ:APLD-3.5% NASDAQ:HOOD-3.1% AMEX:GDX-3.0% NASDAQ:AMAT-2.9% NASDAQ:AAOI-2.9% NYSE:GEV+2.5% NASDAQ:CIFR+2.3% NASDAQ:SNDK-2.2% NASDAQ:RKLB-2.0%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 18%
   🟢合格·在买点区(1): NYSE:LLY
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(24): NASDAQ:RKLB NASDAQ:WULF NASDAQ:CORZ SZSE:300499(高澜) SSE:688525(佰维) SZSE:300476(胜宏) NASDAQ:MSFT SZSE:002837(英维克) SSE:605589(圣泉) SZSE:301308(江波龙) NASDAQ:CRWD NASDAQ:IREN SZSE:001309(德明利) NASDAQ:APLD NYSE:SNOW NASDAQ:CIBR AMEX:SPY SSE:601138(富联) NASDAQ:AAOI NASDAQ:PLTR NASDAQ:CIFR NYSE:CAT SZSE:300502(新易盛) SZSE:300394(天孚)
+  🔴淘汰(24): NASDAQ:RKLB NASDAQ:WULF NASDAQ:CORZ SZSE:300499(高澜) SSE:688525(佰维) NASDAQ:MSFT SZSE:300476(胜宏) SZSE:002837(英维克) SZSE:301308(江波龙) SSE:605589(圣泉) NASDAQ:CRWD NASDAQ:IREN NASDAQ:APLD SZSE:001309(德明利) NYSE:SNOW NASDAQ:CIBR AMEX:SPY NASDAQ:AAOI NASDAQ:PLTR SSE:601138(富联) NASDAQ:CIFR NYSE:CAT SZSE:300502(新易盛) SZSE:300394(天孚)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQP$556M(v/oi99.0) AMDC$436M(v/oi99.0) SNDKP$422M(v/oi10.2) MUC$359M(v/oi28.0) INTCP$223M(v/oi8.1)
-  T+1核对: BEC197.5(11-13)✗未增 BEC207.5(11-13)✗未增 BEC210(11-13)✗未增 BEC212.5(11-13)✗未增
+  今日: SNDKP$569M(v/oi12.4) INTCP$545M(v/oi9.8) AMDC$441M(v/oi99.0) MUC$429M(v/oi32.4) QQQ≈$191M(v/oi19.4)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
