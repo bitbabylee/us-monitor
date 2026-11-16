@@ -1,21 +1,21 @@
 ================================================
-  波哥信号 · 美股日报  数据截至 2026-11-13 收盘(ET)
-  生成 11-13 19:57 纽约 = 11-14 08:57 新加坡
+  波哥信号 · 美股日报  数据截至 2026-11-16 收盘(ET)
+  生成 11-16 17:27 纽约 = 11-17 06:27 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
 【结论】仓位上限 20% · 阶段P0 · 宏观2/4 · 抱团MAGS
 ------------------------------------------------
-【候选】3 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:RKLB   10EMA回调   日内:⚪观望
-  NYSE:LLY      10EMA回调   日内:🟢突破买点
+【候选】1 只（形态+板块确认+无财报风险·未回测）
   NASDAQ:RIOT   10EMA回调   日内:⚪观望
+【否决】
+  NYSE:ANET     板块背离
 【风险】无近端风险事件
 【恐慌买入计划】🔔进行中(冷静时写死的规则)
-  ①恐慌档 ✅已触发11-05 — 派发5(峰7) 距60日高-3.3% · 门槛 派发≥6 且 回撤≤-5.0%
+  ①恐慌档 ✅已触发11-05 — 派发6(峰7) 距60日高-5.1% · 门槛 派发≥6 且 回撤≤-5.0%
   ②释放档 ✅已触发11-09 — 阶段P0
-  ③确认档 ○待触发 — 阶段P0 · 派发5 · 未站上MA50
+  ③确认档 ○待触发 — 阶段P0 · 派发6 · 未站上MA50
   买什么: 指数(QQQ/SPY)不是个股——指数不归零/不需基本面判断/不被单票爆雷打脸, "机会几乎不会错"只在指数上成立
   纪律: 每档只动预留现金1/3 · 框架底无止损位 · 单档触发一次不重复
 ------------------------------------------------
@@ -23,45 +23,46 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7562 (MA50-1.4%) · RSI 45 · VIX 19.3
-  风格: MTUM/MAGS 0.99 跌破20日均 → 抱团MAGS
-  日性质(因子ETF超额·非纯因子): 动量-1.6 高贝-1.4 低波+0.4 价值-0.3 → 去杠杆/轮动日
-  派发 ▃▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆██▇▇▆▆▆ (5/吸6) → 仓位20%
-  阶段P0 恐慌未释放 恐慌2/4 共识1/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1497% ✗10Y5.15% ✅HYG/LQD0.7484 ✅USD/JPY159.88
+  SPX 7417 (MA50-3.2%) · RSI 38 · VIX 22.9
+  风格: MTUM/MAGS 0.98 跌破20日均 → 抱团MAGS
+  日性质(因子ETF超额·非纯因子): 动量-1.4 高贝-1.8 低波+1.1 价值-0.4 → 去杠杆/轮动日
+  派发 ▃▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆██▇▇▆▆▆▇ (6/吸6) → 仓位20%
+  阶段P0 恐慌未释放 恐慌2/4 共识0/5 缺:QQQ站上20日线*
+  宏观 ✗ATR1497% ✗10Y5.12% ✅HYG/LQD0.7464 ✅USD/JPY159.88
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: NASDAQ:PPH 制药  AMEX:XLP 必选消费 (Staples)  AMEX:XLF 金融板块 (Financials)  AMEX:XLV 医疗健康 (Health Care)  AMEX:IHI 医疗器械
-  短线改善: AMEX:XLE 能源板块 (Energy)  AMEX:IEO 油气上游  AMEX:OIH 油服  AMEX:ITA 国防军工 (Defense)  AMEX:VLUE 价值
+  涨幅优先: AMEX:XLP 必选消费 (Staples)  AMEX:UUP 美元  AMEX:XLV 医疗健康 (Health Care)  AMEX:IHI 医疗器械  AMEX:XLF 金融板块 (Financials)
+  短线改善: AMEX:XLE 能源板块 (Energy)  AMEX:IEO 油气上游  AMEX:OIH 油服  AMEX:DBA 农产品  AMEX:CRAK 炼化下游
 ------------------------------------------------
 【板块】
-  强: AMEX:XLP+1.8% · AMEX:XLC+1.4% · AMEX:XLE+1.3% · AMEX:XLF+1.2%
-  主题🔥 💊 减肥药  +3.5%  龙头 NASDAQ:VKTX
-  主题🧊 ⚡ AI电网 -2.2%
-  主题🧊 🔥 AI算力 -3.3%
-  主题🧊 ☁️ 云计算 -3.4%
-  主题🧊 矿转AIDC -3.6%
+  强: AMEX:XLP+2.2% · AMEX:XLU+2.1% · AMEX:XLRE+1.6% · AMEX:XLV+1.4% · AMEX:XLF+1.1%
+  主题🧊 🚀 军工   -2.3%
+  主题🧊 🏦 降息受益 -2.9%
+  主题🧊 ⚡ AI电网 -3.0%
+  主题🧊 ☁️ 云计算 -3.6%
+  主题🧊 🔥 AI算力 -3.9%
+  主题🧊 矿转AIDC -4.6%
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
- ▶ 日线+日内同向
-   NYSE:LLY      🟢10EMA回调   🟢突破买点
  ▶ 等时机（日内未给买点）
-   NASDAQ:RKLB   🟢10EMA回调   ⚪观望
+   NYSE:ANET     🟢10EMA回调   🟡跳空低开,买点降级
    NASDAQ:RIOT   🟢10EMA回调   ⚪观望
-  日内异动: NASDAQ:MSFT🟢  NASDAQ:SMH🟢  NASDAQ:QQQ🔴  NYSE:NET🔴 
-            NASDAQ:CRWD🟢  NYSE:ANET🔴  NASDAQ:CRDO🟢  NASDAQ:HOOD🔴 
-            NASDAQ:AMD🔴  NASDAQ:AXTI🔥  NASDAQ:PLTR🔴  NASDAQ:CIBR🔴 
-            NYSE:SNOW🔴  NASDAQ:CORZ🔥 
-  盘前±2%: NASDAQ:CIFR-3.4% NASDAQ:AAOI-2.8% NASDAQ:IREN-2.6% NASDAQ:APLD-2.6% NASDAQ:AXTI-2.6% NASDAQ:NBIS-2.6% NASDAQ:RKLB-2.6% NASDAQ:WULF-2.5% NYSE:BE-2.5% NASDAQ:LITE-2.4% NASDAQ:CRDO-2.4% NASDAQ:AMD-2.3% NASDAQ:SNDK-2.2% NASDAQ:MU-2.2% NASDAQ:CORZ-2.1% NASDAQ:RIOT-2.1% NASDAQ:CRWD+2.0% NASDAQ:SPCX-2.0% NASDAQ:AMAT-2.0%
+  日内异动: NASDAQ:RKLB🔴  NASDAQ:AAOI🔴  NASDAQ:MSFT🔴  NYSE:LLY🔴 
+            NASDAQ:INTC🔴  NASDAQ:SMH🔴  NYSE:GEV🔴  NASDAQ:QQQ🔴 
+            NYSE:CAT🔴  NASDAQ:CRWD🟢  NASDAQ:HOOD🔴  NASDAQ:AXTI🟡 
+            NASDAQ:PLTR🔴  NASDAQ:SPCX🟢  AMEX:GDX🔴  NASDAQ:CORZ🔴 
+            NASDAQ:CIFR🟡  NASDAQ:HUT🔴  NASDAQ:APLD🔴 
+  盘前±2%: NASDAQ:INTC-3.5%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 18% · 📣GEV S1⌐→S4↓
+  上升趋势占比 16% · 📣SPY S2↑→S1⌐ · 旭创 S1⌐→S4↓
   🟢合格·在买点区(1): NYSE:LLY
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(25): NASDAQ:RKLB NASDAQ:CORZ NASDAQ:WULF NASDAQ:MSFT SSE:688525(佰维) NYSE:SNOW NASDAQ:PLTR NASDAQ:APLD NYSE:GEV SZSE:300499(高澜) NASDAQ:CIBR NASDAQ:CRWD NASDAQ:AXTI NYSE:CAT SZSE:001309(德明利) SZSE:301308(江波龙) SZSE:002837(英维克) NASDAQ:CIFR SSE:605589(圣泉) NASDAQ:AAOI SZSE:300502(新易盛) SZSE:300394(天孚) NASDAQ:IREN SZSE:300476(胜宏) SSE:601138(富联)
+  🔴淘汰(26): NASDAQ:RKLB NASDAQ:CORZ NASDAQ:WULF NASDAQ:MSFT NYSE:SNOW NASDAQ:CRWD NASDAQ:CIBR NASDAQ:PLTR NASDAQ:CIFR SSE:688525(佰维) NASDAQ:AXTI NASDAQ:APLD NYSE:CAT SSE:605589(圣泉) SZSE:301308(江波龙) SZSE:300502(新易盛) SZSE:002837(英维克) NYSE:GEV NASDAQ:AAOI SZSE:300394(天孚) SZSE:300308(旭创) SZSE:001309(德明利) NASDAQ:IREN SZSE:300499(高澜) SZSE:300476(胜宏) SSE:601138(富联)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: SNDKP$481M(v/oi12.4) MUC$182M(v/oi49.7) INTCP$173M(v/oi12.3) QQQ≈$163M(v/oi99.0) CATP$115M(v/oi5.2)
+  今日: QQQP$667M(v/oi99.0) SNDKP$500M(v/oi11.2) MUP$227M(v/oi99.0) AMD≈$136M(v/oi99.0) INTCP$111M(v/oi49.9)
+  T+1核对: BEC155(11-20)✅开仓 BEC187.5(11-20)✗未增 BEC192.5(11-20)✗未增 BEC197.5(11-20)✅开仓
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
