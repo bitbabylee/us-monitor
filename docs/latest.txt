@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-11-17 收盘(ET)
-  生成 11-18 15:49 纽约 = 11-19 04:49 新加坡
+  生成 11-18 20:56 纽约 = 11-19 09:56 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -9,14 +9,14 @@
 ------------------------------------------------
 【候选】2 只（形态+板块确认+无财报风险·未回测）
   NYSE:LLY      10EMA回调   日内:🔴规避/止损
-  NYSE:ANET     10EMA回调   日内:🟢强动能买点
+  NYSE:ANET     10EMA回调   日内:🟢突破买点
 【否决】
   NASDAQ:RIOT   板块背离
 【风险】无近端风险事件
 【恐慌买入计划】🔔进行中(冷静时写死的规则)
-  ①恐慌档 ✅已触发11-05 — 派发8(峰8) 距60日高-6.1% · 门槛 派发≥6 且 回撤≤-5.0%
+  ①恐慌档 ✅已触发11-05 — 派发7(峰8) 距60日高-6.3% · 门槛 派发≥6 且 回撤≤-5.0%
   ②释放档 ✅已触发11-09 — 阶段P0
-  ③确认档 ○待触发 — 阶段P0 · 派发8 · 未站上MA50
+  ③确认档 ○待触发 — 阶段P0 · 派发7 · 未站上MA50
   买什么: 指数(QQQ/SPY)不是个股——指数不归零/不需基本面判断/不被单票爆雷打脸, "机会几乎不会错"只在指数上成立
   纪律: 每档只动预留现金1/3 · 框架底无止损位 · 单档触发一次不重复
 ------------------------------------------------
@@ -24,16 +24,16 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7341 (MA50-4.1%) · RSI 34 · VIX 25.5
+  SPX 7324 (MA50-4.2%) · RSI 35 · VIX 24.6
   风格: MTUM/MAGS 0.98 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量+0.4 高贝+0.0 低波-0.4 价值-0.4 → 中性日
-  派发 ▄▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆██▇▇▆▆▆██ (8/吸6) → 仓位20%
-  阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1499% ✗10Y5.10% ✅HYG/LQD0.7459 ✅USD/JPY159.52
+  派发 ▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆██▇▇▆▆▆███ (7/吸6) → 仓位20%
+  阶段P0 恐慌未释放 恐慌0/4 共识0/5 缺:QQQ站上20日线*
+  宏观 ✗ATR1499% ✗10Y5.07% ✅HYG/LQD0.7459 ✅USD/JPY159.40
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:XLP 必选消费 (Staples)  AMEX:UUP 美元  AMEX:XLU 公用事业/AI电网 (Utilities)  AMEX:XLV 医疗健康 (Health Care)  AMEX:IHI 医疗器械
-  短线改善: AMEX:XLE 能源板块 (Energy)
+  涨幅优先: AMEX:XLP 必选消费 (Staples)  AMEX:UUP 美元  AMEX:IHI 医疗器械  AMEX:XLU 公用事业/AI电网 (Utilities)  AMEX:XLV 医疗健康 (Health Care)
+  短线改善: AMEX:XLE 能源板块 (Energy)  AMEX:IEO 油气上游  AMEX:DBA 农产品  AMEX:CRAK 炼化下游
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+1.8% · NASDAQ:SOXX+1.2%
@@ -42,25 +42,25 @@
 ------------------------------------------------
 【个股信号】日线资格 × 日内时机（同源串联·未回测）
  ▶ 日线+日内同向
-   NYSE:ANET     🟢10EMA回调   🟢强动能买点
+   NYSE:ANET     🟢10EMA回调   🟢突破买点
    NASDAQ:RIOT   🟢10EMA回调   🟢强动能买点
  ▶ 冲突（日线买点/日内破位）
    NYSE:LLY      🟢10EMA回调   🔴规避/止损
-  日内异动: NASDAQ:NBIS🔴  NASDAQ:MSFT🟢  NASDAQ:QQQ🟢  NYSE:NET🟢 
-            NASDAQ:CRWD🔴  NASDAQ:HOOD🟢  NASDAQ:AMD🟢  NASDAQ:PLTR🟢 
-            NASDAQ:CIBR🔴  NYSE:SNOW🟢  AMEX:GDX🟡  NASDAQ:CORZ🟢 
-            NASDAQ:CIFR🔴  NASDAQ:HUT🟢  NASDAQ:WULF🟢  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:AAOI-9.9% NASDAQ:CRWD+8.2% NASDAQ:RIOT+6.5% NYSE:NET+6.0% AMEX:GDX-5.9% NASDAQ:HUT+5.5% NASDAQ:CIBR+4.7% NASDAQ:AMD+4.3% NASDAQ:IREN-3.9% NASDAQ:CORZ+3.7% NYSE:ANET+3.7% NASDAQ:WULF+3.1% NASDAQ:SNDK-2.8% NASDAQ:RKLB-2.6% NASDAQ:AXTI-2.5% NASDAQ:APLD+2.2% NYSE:SNOW+2.1% NYSE:CAT-2.0% NYSE:LLY-2.0%
+  日内异动: NASDAQ:NBIS🟢  NASDAQ:RKLB🔴  NASDAQ:MSFT🟢  NASDAQ:SMH🟢 
+            NASDAQ:SNDK🟢  NASDAQ:QQQ🟢  NYSE:NET🟢  NASDAQ:CRWD🔴 
+            NASDAQ:CRDO🟢  NASDAQ:HOOD🟢  NASDAQ:AMD🔥  NASDAQ:MU🟢 
+            NASDAQ:AXTI🟢  NASDAQ:PLTR🟢  NASDAQ:CIBR🟢  NYSE:SNOW🟢 
+            AMEX:GDX🟡  NASDAQ:HUT🟢  NASDAQ:APLD🟢 
+  盘前±2%: NASDAQ:CRWD+14.4% NYSE:NET+9.4% NASDAQ:RIOT+8.6% NASDAQ:AAOI-8.1% NASDAQ:CIBR+7.4% NASDAQ:HUT+7.4% NASDAQ:AMD+6.7% NASDAQ:WULF+5.7% NYSE:ANET+5.6% AMEX:GDX-5.4% NASDAQ:CIFR+4.8% NASDAQ:APLD+4.1% NASDAQ:CORZ+4.0% NYSE:SNOW+3.9% NASDAQ:AMAT+3.5% NASDAQ:NBIS+3.1% NYSE:LLY-2.5% NASDAQ:HOOD+2.4% NASDAQ:SPCX+2.4%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 14% · 📣LITE S1⌐→S4↓ · PLTR S2↑→S1⌐ · 申菱 S4↓→S1⌐
+  上升趋势占比 14% · 📣申菱 S1⌐→S4↓ · 兆易 S1⌐→S4↓
   🟢合格·在买点区(1): NYSE:LLY
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(26): NASDAQ:RKLB NASDAQ:CORZ NASDAQ:WULF NASDAQ:LITE NASDAQ:CIFR NYSE:GEV NYSE:CAT NASDAQ:CRWD NYSE:SNOW NASDAQ:CIBR SSE:688525(佰维) NASDAQ:APLD SSE:605589(圣泉) SZSE:301308(江波龙) NASDAQ:AXTI NASDAQ:MSFT SZSE:300502(新易盛) NASDAQ:AAOI SZSE:002837(英维克) SZSE:300394(天孚) SZSE:300308(旭创) SZSE:001309(德明利) NASDAQ:IREN SZSE:300476(胜宏) SZSE:300499(高澜) SSE:601138(富联)
+  🔴淘汰(28): NASDAQ:RKLB NASDAQ:CORZ NASDAQ:WULF SSE:605589(圣泉) SSE:688525(佰维) NASDAQ:LITE NASDAQ:CIFR NYSE:GEV NYSE:CAT NASDAQ:CRWD NYSE:SNOW NASDAQ:CIBR SSE:601138(富联) SSE:603986(兆易) NASDAQ:APLD NASDAQ:AXTI NASDAQ:MSFT NASDAQ:AAOI SZSE:301308(江波龙) SZSE:001309(德明利) SZSE:002837(英维克) SZSE:301018(申菱) NASDAQ:IREN SZSE:300499(高澜) SZSE:300502(新易盛) SZSE:300476(胜宏) SZSE:300308(旭创) SZSE:300394(天孚)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MSFTC$1096M(v/oi41.1) SNDKP$995M(v/oi12.1) MUP$471M(v/oi59.8) AMDC$288M(v/oi97.4) QQQ≈$267M(v/oi99.0)
-  T+1核对: BEC167.5(11-20)✗未增 BEC170(11-20)✗未增 BEC172.5(11-20)✗未增 BEC185(11-20)✗未增
+  今日: MSFTC$1168M(v/oi21.1) SNDKP$987M(v/oi12.2) QQQP$648M(v/oi85.9) MUP$403M(v/oi28.1) AMDC$177M(v/oi8.5)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
