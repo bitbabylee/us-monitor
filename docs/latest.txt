@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-11-18 收盘(ET)
-  生成 11-19 15:54 纽约 = 11-20 04:54 新加坡
+  生成 11-19 20:49 纽约 = 11-20 09:49 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -17,7 +17,7 @@
   NASDAQ:HOOD   板块背离
 【风险】无近端风险事件
 【恐慌买入计划】🔔进行中(冷静时写死的规则)
-  ①恐慌档 ✅已触发11-05 — 派发8(峰8) 距60日高-6.3% · 门槛 派发≥6 且 回撤≤-5.0%
+  ①恐慌档 ✅已触发11-05 — 派发8(峰8) 距60日高-8.2% · 门槛 派发≥6 且 回撤≤-5.0%
   ②释放档 ✅已触发11-09 — 阶段P0
   ③确认档 ○待触发 — 阶段P0 · 派发8 · 未站上MA50
   买什么: 指数(QQQ/SPY)不是个股——指数不归零/不需基本面判断/不被单票爆雷打脸, "机会几乎不会错"只在指数上成立
@@ -27,20 +27,19 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7324 (MA50-4.2%) · RSI 35 · VIX 24.6
+  SPX 7176 (MA50-6.1%) · RSI 34 · VIX 28.4
   风格: MTUM/MAGS 0.98 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量+0.2 高贝+0.4 低波-0.2 价值-0.7 → 中性日
-  派发 ▄▄▄▄▄▅▅▅▅▄▆▇▇▇▆██▇▇▆▆▆███ (8/吸6) → 仓位20%
+  派发 ▄▄▄▄▅▅▅▅▄▆▇▇▇▆██▇▇▆▆▆████ (8/吸5) → 仓位20%
   阶段P0 恐慌未释放 恐慌0/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1498% ✗10Y5.07% ✅HYG/LQD0.7431 ✅USD/JPY159.50
+  宏观 ✗ATR1498% ✗10Y5.05% ✅HYG/LQD0.7431 ✅USD/JPY159.34
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:XLP 必选消费 (Staples)  AMEX:UUP 美元  AMEX:XLU 公用事业/AI电网 (Utilities)  AMEX:IHI 医疗器械  AMEX:UNG 天然气
-  短线改善: AMEX:HACK 网络安全
+  涨幅优先: AMEX:UUP 美元  AMEX:XLP 必选消费 (Staples)  AMEX:XLU 公用事业/AI电网 (Utilities)  AMEX:IHI 医疗器械  AMEX:XLRE 房地产 (Real Estate)
 ------------------------------------------------
 【板块】
   强: AMEX:XLY+2.1%
-  🚨砸盘: AMEX:XLV-1.9%(量1.6x) · AMEX:XLE-3.0%(量1.5x) · AMEX:GDX-5.7%(量2.0x)
+  🚨砸盘: AMEX:XLV-1.9%(量1.5x)
   主题🔥 🛡 网络安全 +5.9%  龙头 NYSE:S
   主题🔥 矿转AIDC +3.2%  龙头 NASDAQ:RIOT
   主题🧊 💊 减肥药  -2.4%
@@ -61,17 +60,16 @@
             NASDAQ:AMD🔴  NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:PLTR🔴 
             NASDAQ:SPCX🔴  AMEX:GDX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴 
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:NBIS-7.9% NASDAQ:AMD-7.1% NASDAQ:IREN-5.3% NASDAQ:CORZ-4.7% NASDAQ:SPCX-3.9% NASDAQ:AMAT-3.8% NASDAQ:CRDO-3.8% NYSE:SNOW-3.5% NASDAQ:RKLB-3.4% AMEX:GDX-3.3% NYSE:CAT-3.1% NASDAQ:WULF-3.0% NASDAQ:LITE-3.0% NASDAQ:INTC+2.6% NASDAQ:CRWD+2.5% NASDAQ:AAOI-2.4% NASDAQ:RIOT-2.3% NASDAQ:APLD-2.2% NYSE:LLY-2.2% NASDAQ:SNDK-2.1% NASDAQ:HUT-2.0% NASDAQ:SMH-2.0%
+  盘前±2%: NASDAQ:NBIS-11.6% NASDAQ:AMD-10.9% NASDAQ:IREN-7.7% NASDAQ:CRDO-6.3% NASDAQ:AAOI-6.2% NASDAQ:CORZ-6.0% NASDAQ:WULF-5.4% NASDAQ:AMAT-5.3% NASDAQ:LITE-5.2% AMEX:GDX-5.2% NASDAQ:HUT-5.1% NASDAQ:SNDK-5.1% NASDAQ:AXTI-5.0% NASDAQ:RKLB-5.0% NASDAQ:SPCX-5.0% NYSE:CAT-4.8% NYSE:SNOW-4.5% NYSE:BE-4.5% NASDAQ:RIOT-4.3% NYSE:ANET-4.3% NASDAQ:APLD-4.2% NASDAQ:SMH-4.0% NASDAQ:MU-4.0% NASDAQ:PLTR-3.6% NYSE:GEV-3.3% NYSE:LLY-2.8% NASDAQ:QQQ-2.7% NASDAQ:MSFT-2.6% NASDAQ:CIFR-2.5%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 14% · 📣兆易 S4↓→S1⌐
+  上升趋势占比 14% · 📣同飞 S1⌐→S4↓ · 兆易 S1⌐→S4↓
   🟢合格·在买点区(1): NYSE:LLY
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(26): NASDAQ:CORZ NASDAQ:WULF NASDAQ:RKLB NYSE:SNOW NASDAQ:LITE NASDAQ:CIBR SSE:605589(圣泉) SSE:688525(佰维) SZSE:001309(德明利) NASDAQ:CIFR SZSE:301308(江波龙) NASDAQ:APLD NASDAQ:MSFT NYSE:CAT NYSE:GEV SSE:601138(富联) SZSE:002837(英维克) NASDAQ:AXTI SZSE:301018(申菱) NASDAQ:AAOI SZSE:300499(高澜) NASDAQ:IREN SZSE:300502(新易盛) SZSE:300476(胜宏) SZSE:300308(旭创) SZSE:300394(天孚)
+  🔴淘汰(28): NASDAQ:CORZ NASDAQ:WULF NASDAQ:RKLB NYSE:SNOW NASDAQ:LITE NASDAQ:CIBR SSE:605589(圣泉) SSE:688525(佰维) NASDAQ:CIFR NASDAQ:APLD NASDAQ:MSFT NYSE:CAT NYSE:GEV SSE:601138(富联) SSE:603986(兆易) SZSE:300990(同飞) NASDAQ:AXTI NASDAQ:AAOI SZSE:301308(江波龙) SZSE:300502(新易盛) SZSE:002837(英维克) NASDAQ:IREN SZSE:001309(德明利) SZSE:301018(申菱) SZSE:300476(胜宏) SZSE:300308(旭创) SZSE:300499(高澜) SZSE:300394(天孚)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQP$4229M(v/oi99.0) SNDKP$1890M(v/oi22.5) MUP$1859M(v/oi19.4) SMHP$1018M(v/oi7.5) AMDP$547M(v/oi42.4)
-  T+1核对: BEC167.5(11-20)✅开仓 BEC170(11-20)✗未增 BEC172.5(11-20)✗未增 BEC175(11-20)✗未增
+  今日: QQQP$2206M(v/oi93.8) MUP$1948M(v/oi19.4) SNDKP$1937M(v/oi22.5) SMHP$1040M(v/oi7.5) AMDP$517M(v/oi43.9)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
