@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-11-19 收盘(ET)
-  生成 11-20 15:40 纽约 = 11-21 04:40 新加坡
+  生成 11-20 20:38 纽约 = 11-21 09:38 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -11,7 +11,7 @@
   NYSE:ANET     10EMA回调   日内:🔴规避/止损
 【风险】无近端风险事件
 【恐慌买入计划】🔔进行中(冷静时写死的规则)
-  ①恐慌档 ✅已触发11-05 — 派发9(峰9) 距60日高-8.2% · 门槛 派发≥6 且 回撤≤-5.0%
+  ①恐慌档 ✅已触发11-05 — 派发9(峰9) 距60日高-11.6% · 门槛 派发≥6 且 回撤≤-5.0%
   ②释放档 ✅已触发11-09 — 阶段P0
   ③确认档 ○待触发 — 阶段P0 · 派发9 · 未站上MA50
   买什么: 指数(QQQ/SPY)不是个股——指数不归零/不需基本面判断/不被单票爆雷打脸, "机会几乎不会错"只在指数上成立
@@ -21,18 +21,20 @@
 ② 证 据 —— 凭什么这么判
 ================================================
 【大盘】
-  SPX 7176 (MA50-6.1%) · RSI 34 · VIX 28.4
+  SPX 6910 (MA50-9.4%) · RSI 29 · VIX 35.9
   风格: MTUM/MAGS 0.98 跌破20日均 → 抱团MAGS
   日性质(因子ETF超额·非纯因子): 动量-0.0 高贝-0.2 低波+0.5 价值+0.3 → 中性日
-  派发 ▄▄▄▄▅▅▅▅▄▆▇▇▇▆██▇▇▆▆▆████ (9/吸5) → 仓位20%
+  派发 ▄▄▄▅▅▅▅▄▆▇▇▇▆██▇▇▆▆▆█████ (9/吸5) → 仓位20%
   阶段P0 恐慌未释放 恐慌0/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1498% ✗10Y5.05% ✗HYG/LQD0.7424 ✅USD/JPY159.38
+  宏观 ✗ATR1498% ✗10Y4.91% ✗HYG/LQD0.7424 ✅USD/JPY159.71
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
-  涨幅优先: AMEX:UUP 美元  AMEX:UNG 天然气  AMEX:XLP 必选消费 (Staples)  AMEX:XLU 公用事业/AI电网 (Utilities)  NASDAQ:TLT 长债
+  涨幅优先: AMEX:UUP 美元  AMEX:XLP 必选消费 (Staples)  AMEX:IHI 医疗器械  AMEX:XLU 公用事业/AI电网 (Utilities)  NASDAQ:HERO 游戏
+  短线改善: AMEX:HACK 网络安全
 ------------------------------------------------
 【板块】
   强: AMEX:XLE+1.3%
+  🚨砸盘: AMEX:GDX-1.8%(量1.8x)
   主题🔥 🛡 网络安全 +2.7%  龙头 NASDAQ:ZS
   主题🧊 ☁️ 云计算 -3.5%
 ------------------------------------------------
@@ -47,17 +49,16 @@
             NASDAQ:PLTR🔴  NASDAQ:CIBR🔴  NYSE:SNOW🔴  NASDAQ:SPCX🔴 
             AMEX:GDX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:RIOT🔴 
             NASDAQ:CIFR🔴  NASDAQ:HUT🔴  NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:APLD-17.8% NASDAQ:AAOI-16.5% NASDAQ:IREN-16.5% NASDAQ:HUT-16.2% NASDAQ:SNDK-15.8% NYSE:BE-15.2% NASDAQ:CIFR-15.0% NASDAQ:NBIS-14.9% NASDAQ:CRDO-14.6% NASDAQ:CORZ-14.1% NASDAQ:WULF-13.9% NASDAQ:MU-13.9% NASDAQ:AMD-13.4% NASDAQ:LITE-12.7% NYSE:ANET-12.0% NASDAQ:AXTI-11.5% NASDAQ:RKLB-10.7% NASDAQ:AMAT-10.6% NASDAQ:SMH-10.1% NYSE:NET-9.8% NASDAQ:HOOD-9.4% NASDAQ:RIOT-7.9% NYSE:GEV-7.1% NASDAQ:SPCX-6.7% NASDAQ:PLTR-6.4% NASDAQ:INTC-6.1% NASDAQ:CRWD-5.9% NYSE:SNOW-5.4% NASDAQ:QQQ-5.2% NASDAQ:CIBR-5.1% AMEX:GDX-4.7% NYSE:CAT-4.6% NASDAQ:MSFT-2.8%
+  盘前±2%: NASDAQ:IREN-14.4% NASDAQ:AAOI-14.3% NASDAQ:APLD-14.0% NASDAQ:HUT-13.9% NASDAQ:SNDK-13.8% NYSE:BE-13.4% NASDAQ:NBIS-12.8% NASDAQ:CIFR-12.7% NASDAQ:WULF-12.3% NASDAQ:CORZ-12.0% NASDAQ:LITE-11.8% NASDAQ:CRDO-11.8% NASDAQ:MU-11.6% NASDAQ:CRWD-10.3% NASDAQ:AMD-10.2% NASDAQ:AXTI-9.8% NYSE:ANET-8.9% NASDAQ:SMH-8.2% NYSE:NET-7.8% NASDAQ:AMAT-7.8% NASDAQ:RKLB-7.0% NASDAQ:HOOD-6.5% NASDAQ:SPCX-6.4% NYSE:GEV-5.6% NASDAQ:RIOT-5.5% NASDAQ:PLTR-5.3% NASDAQ:INTC-4.8% NASDAQ:QQQ-4.2% NYSE:CAT-3.6% AMEX:GDX-3.5% NASDAQ:CIBR-3.5% NYSE:SNOW-3.4%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 10% · 📣AMD S2↑→S1⌐ · SNOW S2↑→S1⌐ · 同飞 S4↓→S1⌐
+  上升趋势占比 10% · 📣同飞 S1⌐→S4↓
   🟢合格·在买点区(2): NYSE:ANET NYSE:LLY
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(25): NASDAQ:CORZ NASDAQ:CIFR NASDAQ:WULF NASDAQ:RKLB SSE:688525(佰维) NASDAQ:LITE SSE:605589(圣泉) SSE:601138(富联) SSE:603986(兆易) SZSE:301308(江波龙) NASDAQ:APLD NASDAQ:AXTI NYSE:GEV SZSE:300502(新易盛) SZSE:002837(英维克) NASDAQ:MSFT NASDAQ:AAOI SZSE:001309(德明利) SZSE:301018(申菱) NYSE:CAT NASDAQ:IREN SZSE:300476(胜宏) SZSE:300308(旭创) SZSE:300499(高澜) SZSE:300394(天孚)
+  🔴淘汰(26): NASDAQ:CORZ NASDAQ:CIFR NASDAQ:WULF NASDAQ:RKLB NASDAQ:LITE SSE:601138(富联) SSE:603986(兆易) NASDAQ:APLD NASDAQ:AXTI NYSE:GEV SZSE:300990(同飞) NASDAQ:MSFT SZSE:300502(新易盛) SSE:688525(佰维) NASDAQ:AAOI SSE:605589(圣泉) NYSE:CAT NASDAQ:IREN SZSE:002837(英维克) SZSE:301308(江波龙) SZSE:300308(旭创) SZSE:300476(胜宏) SZSE:301018(申菱) SZSE:001309(德明利) SZSE:300394(天孚) SZSE:300499(高澜)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQP$3640M(v/oi99.0) SNDKP$1820M(v/oi51.1) MUP$1768M(v/oi99.0) AMDP$581M(v/oi96.0) SMHP$377M(v/oi30.0)
-  T+1核对: BEC172.5(11-20)✗未增 BEC175(11-20)✗未增 BEC180(11-20)✗未增 BEC185(11-20)✗未增
+  今日: QQQP$762M(v/oi99.0) MUP$295M(v/oi99.0) SNDKP$188M(v/oi15.5) AMDP$178M(v/oi61.6) NBISP$45M(v/oi31.3)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
