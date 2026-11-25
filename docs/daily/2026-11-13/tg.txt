@@ -1,0 +1,31 @@
+<b>24 小时精选</b> 11-13 10:32 · 13 册 · 候选 174 只
+今天 12 只：翻多 2 只、翻空 10 只。其中 11 只是 3D 和 1D 同时给信号。
+
+<b>【美股】</b>
+<i>3D+1D 同时翻空</i>
+　<code>TAN</code> Invesco Sola
+　<code>NLST</code> Netlist,（1 天前已发布财报）
+　<code>ICLN</code> iShares Glob
+　<code>ALB</code> 雅保（Albemarle
+　<code>SILJ</code> Amplify Juni
+
+<b>【A 股】</b>
+<i>3D+1D 同时翻空</i>
+　<code>512170</code> 医疗ETF华宝
+　<code>000063</code> 中兴通讯
+　<code>515180</code> 红利ETF易方达
+
+<b>【亚太】</b>
+<i>3D+1D 同时翻空</i>
+　<code>1024</code> 快手－Ｗ（7 天后出财报）
+<i>日线刚翻多、3D 没跟</i>
+　<code>2914</code> 日本烟草
+
+<b>【宏观】</b>
+<i>3D+1D 同时翻多</i>
+　<code>SPY</code> State Street
+<i>3D+1D 同时翻空</i>
+　<code>IC1!</code> 中证500股指期货（中国
+
+板块共振：美股半导体/AI芯片多 5 只
+https://bitbabylee.github.io/us-monitor/daily/

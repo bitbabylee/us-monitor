@@ -1,0 +1,147 @@
+{
+ "day": "2026-11-23",
+ "picks": [
+  {
+   "market": "MACRO",
+   "b": "TOPIX1!",
+   "nm": "东证指数期货（TOPIX F",
+   "dir": -1,
+   "px": 56436.65,
+   "chg1": -5.06,
+   "score": 3.0,
+   "book": "1122 Macro 0830 bjt",
+   "page": 16
+  },
+  {
+   "market": "MACRO",
+   "b": "KIE",
+   "nm": "State Street S",
+   "dir": -1,
+   "px": 64.07,
+   "chg1": -0.14,
+   "score": 1.3,
+   "book": "1122 Macro 0830 bjt",
+   "page": 22
+  },
+  {
+   "market": "MACRO",
+   "b": "US20Y",
+   "nm": "Treasury Yield",
+   "dir": -1,
+   "px": 5.3,
+   "chg1": -1.81,
+   "score": 1.3,
+   "book": "1122 Macro 0830 bjt",
+   "page": 20
+  },
+  {
+   "market": "MACRO",
+   "b": "US10Y",
+   "nm": "CBOE Interest ",
+   "dir": -1,
+   "px": 4.91,
+   "chg1": -2.77,
+   "score": 1.3,
+   "book": "1122 Macro 0830 bjt",
+   "page": 19
+  },
+  {
+   "market": "MACRO",
+   "b": "XLF",
+   "nm": "State Street F",
+   "dir": -1,
+   "px": 54.57,
+   "chg1": -1.82,
+   "score": 1.3,
+   "book": "1122 Macro 0830 bjt",
+   "page": 23
+  },
+  {
+   "market": "MACRO",
+   "b": "KRE",
+   "nm": "State Street S",
+   "dir": -1,
+   "px": 68.32,
+   "chg1": -1.36,
+   "score": 1.3,
+   "book": "1122 Macro 0830 bjt",
+   "page": 26
+  },
+  {
+   "market": "MACRO",
+   "b": "FESX1!",
+   "nm": "欧洲斯托克50指数期货（EU",
+   "dir": -1,
+   "px": 5941.95,
+   "chg1": -2.81,
+   "score": 1.0,
+   "book": "1122 Macro 0830 bjt",
+   "page": 25
+  },
+  {
+   "market": "MACRO",
+   "b": "FESB1!",
+   "nm": "欧洲银行股期货（Eurex）",
+   "dir": -1,
+   "px": 625.65,
+   "chg1": -2.0,
+   "score": 1.0,
+   "book": "1122 Macro 0830 bjt",
+   "page": 21
+  },
+  {
+   "market": "MACRO",
+   "b": "FDAX1!",
+   "nm": "DAX P",
+   "dir": -1,
+   "px": 24802.78,
+   "chg1": -2.6,
+   "score": 1.0,
+   "book": "1122 Macro 0830 bjt",
+   "page": 24
+  },
+  {
+   "market": "MACRO",
+   "b": "IAI",
+   "nm": "iShares U.S. B",
+   "dir": -1,
+   "px": 165.75,
+   "chg1": -3.48,
+   "score": 1.0,
+   "book": "1122 Macro 0830 bjt",
+   "page": 30
+  },
+  {
+   "market": "MACRO",
+   "b": "KBWB",
+   "nm": "Invesco KBW Ba",
+   "dir": -1,
+   "px": 81.71,
+   "chg1": -3.08,
+   "score": 1.0,
+   "book": "1122 Macro 0830 bjt",
+   "page": 33
+  },
+  {
+   "market": "MACRO",
+   "b": "SPY",
+   "nm": "State Street S",
+   "dir": -1,
+   "px": 689.81,
+   "chg1": -3.64,
+   "score": 1.0,
+   "book": "1122 Macro 0830 bjt",
+   "page": 31
+  }
+ ],
+ "n_cand": 21,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1122 NY 收盘0830_宏观",
+   "stem": "1122 Macro 0830 bjt",
+   "stamp": "2026-11-23 08:30",
+   "market": "MACRO",
+   "n": 59
+  }
+ ]
+}

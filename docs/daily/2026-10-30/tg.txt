@@ -1,0 +1,29 @@
+<b>24 小时精选</b> 10-30 10:30 · 7 册 · 候选 48 只
+今天 12 只：翻多 6 只、翻空 6 只。其中 8 只是 3D 和 1D 同时给信号。
+
+<b>【A 股】</b>
+<i>3D+1D 同时翻多</i>
+　<code>510230</code> 金融ETF国泰
+　<code>512600</code> 消费ETF嘉实
+　<code>515180</code> 红利ETF易方达
+<i>3D+1D 同时翻空</i>
+　<code>300853</code> 申昊科技
+　<code>603893</code> 瑞芯微
+　<code>001309</code> 德明利
+<i>日线刚翻多、3D 没跟</i>
+　<code>515220</code> 煤炭ETF国泰
+<i>日线刚翻空、3D 没跟</i>
+　<code>601689</code> 拓普集团
+
+<b>【亚太】</b>
+<i>3D+1D 同时翻多</i>
+　<code>2318</code> 中国平安（1 天前已发布财报）
+<i>日线刚翻空、3D 没跟</i>
+　<code>6762</code> TDK（1 天后出财报）
+
+<b>【宏观】</b>
+<i>3D+1D 同时翻空</i>
+　<code>XAUUSD</code> 黄金现货
+<i>日线刚翻多、3D 没跟</i>
+　<code>NIFTY1!</code> 印度Nifty 50指数
+https://bitbabylee.github.io/us-monitor/daily/

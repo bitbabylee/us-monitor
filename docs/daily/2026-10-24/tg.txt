@@ -1,0 +1,29 @@
+<b>24 小时精选</b> 10-24 10:30 · 12 册 · 候选 89 只
+今天 12 只：翻多 7 只、翻空 5 只。其中 11 只是 3D 和 1D 同时给信号。
+
+<b>【美股】</b>
+<i>3D+1D 同时翻空</i>
+　<code>HERO</code> Global X Vid
+　<code>BKNG</code> Booking Hold
+　<code>XLY</code> State Street
+<i>3D+1D 同时翻多</i>
+　<code>VG</code> 创业全球（Venture
+　<code>SKYY</code> First Trust 
+
+<b>【A 股】</b>
+<i>3D+1D 同时翻多</i>
+　<code>688766</code> 普冉股份
+　<code>688041</code> 海光信息
+　<code>688008</code> 澜起科技
+
+<b>【亚太】</b>
+<i>3D+1D 同时翻多</i>
+　<code>3905</code> Data Section
+<i>日线刚翻多、3D 没跟</i>
+　<code>9992</code> 泡泡玛特（RSI 25 超卖）
+
+<b>【宏观】</b>
+<i>3D+1D 同时翻空</i>
+　<code>USDJPY</code> 
+　<code>XAUUSD</code> 黄金现货（RSI 27 超卖）
+https://bitbabylee.github.io/us-monitor/daily/

@@ -1,0 +1,196 @@
+{
+ "day": "2026-11-07",
+ "picks": [
+  {
+   "market": "MACRO",
+   "b": "KBWB",
+   "nm": "Invesco KBW Ba",
+   "dir": -1,
+   "px": 88.03,
+   "chg1": -3.54,
+   "score": 3.3,
+   "book": "1106 Macro 1357 bjt",
+   "page": 24
+  },
+  {
+   "market": "MACRO",
+   "b": "IAI",
+   "nm": "iShares U.S. B",
+   "dir": -1,
+   "px": 178.65,
+   "chg1": -3.91,
+   "score": 3.3,
+   "book": "1106 Macro 1357 bjt",
+   "page": 23
+  },
+  {
+   "market": "MACRO",
+   "b": "BNKU",
+   "nm": "MicroSectors™ ",
+   "dir": -1,
+   "px": 30.39,
+   "chg1": -11.01,
+   "score": 3.3,
+   "book": "1106 Macro 1357 bjt",
+   "page": 22
+  },
+  {
+   "market": "MACRO",
+   "b": "HYPEUSDT.P",
+   "nm": "Hyperliquid 永续",
+   "dir": -1,
+   "px": 77.551,
+   "chg1": -6.9,
+   "score": 3.0,
+   "book": "1106 Macro 1357 bjt",
+   "page": 58
+  },
+  {
+   "market": "HK",
+   "b": "316",
+   "nm": "东方海外国际",
+   "dir": -1,
+   "px": 152.2,
+   "chg1": -2.56,
+   "score": 3.0,
+   "book": "1106 亚太 1620",
+   "page": 48
+  },
+  {
+   "market": "CN",
+   "b": "CN1!",
+   "nm": "富时中国A50指数期货连续合",
+   "dir": -1,
+   "px": 4054.28,
+   "chg1": -1.44,
+   "score": 3.0,
+   "book": "1106 A Share 1520",
+   "page": 39
+  },
+  {
+   "market": "HK",
+   "b": "2914",
+   "nm": "日本烟草",
+   "dir": -1,
+   "px": 6269.0,
+   "chg1": -19.31,
+   "score": 3.3,
+   "book": "1106 亚太 1620",
+   "page": 52
+  },
+  {
+   "market": "HK",
+   "b": "5334",
+   "nm": "Niterra",
+   "dir": -1,
+   "px": 3572.0,
+   "chg1": -4.13,
+   "score": 3.3,
+   "book": "1106 亚太 1620",
+   "page": 53
+  },
+  {
+   "market": "CN",
+   "b": "HSIDI",
+   "nm": "恒生创新药指数",
+   "dir": 1,
+   "px": 24476.19,
+   "chg1": -1.29,
+   "score": 3.3,
+   "book": "1106 A Share 1520",
+   "page": 4
+  },
+  {
+   "market": "HK",
+   "b": "5333",
+   "nm": "NGK",
+   "dir": -1,
+   "px": 4310.0,
+   "chg1": -8.78,
+   "score": 3.0,
+   "book": "1106 亚太 1620",
+   "page": 51
+  },
+  {
+   "market": "HK",
+   "b": "3696",
+   "nm": "英矽智能",
+   "dir": -1,
+   "px": 37.46,
+   "chg1": -4.88,
+   "score": 3.0,
+   "book": "1106 亚太 1620",
+   "page": 50
+  },
+  {
+   "market": "CN",
+   "b": "510230",
+   "nm": "金融ETF国泰",
+   "dir": 1,
+   "px": 1.36,
+   "chg1": 0.44,
+   "score": 2.3,
+   "book": "1106 A Share 1520",
+   "page": 15
+  }
+ ],
+ "n_cand": 69,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1105 NY 收盘0830_宏观",
+   "stem": "1105 Macro 0835 bjt",
+   "stamp": "2026-11-06 08:35",
+   "market": "MACRO",
+   "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1106 早盘1050_A股",
+   "stem": "1106 A Share 1050",
+   "stamp": "2026-11-06 10:57",
+   "market": "CN",
+   "n": 115
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1106 收盘1055_亚太",
+   "stem": "1106 亚太 1055",
+   "stamp": "2026-11-06 11:08",
+   "market": "HK",
+   "n": 94
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1105 NY 盘前1350_宏观",
+   "stem": "1106 Macro 1357 bjt",
+   "stamp": "2026-11-06 13:57",
+   "market": "MACRO",
+   "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1106 中午1355_A股",
+   "stem": "1106 A Share 1355",
+   "stamp": "2026-11-06 14:18",
+   "market": "CN",
+   "n": 115
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1106 盘后1520_A股",
+   "stem": "1106 A Share 1520",
+   "stamp": "2026-11-06 15:27",
+   "market": "CN",
+   "n": 115
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1106 收盘1520_亚太",
+   "stem": "1106 亚太 1520",
+   "stamp": "2026-11-06 15:38",
+   "market": "HK",
+   "n": 94
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1106 收盘1620_亚太",
+   "stem": "1106 亚太 1620",
+   "stamp": "2026-11-06 16:26",
+   "market": "HK",
+   "n": 94
+  }
+ ]
+}

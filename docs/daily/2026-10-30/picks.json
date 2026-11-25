@@ -1,0 +1,182 @@
+{
+ "day": "2026-10-30",
+ "picks": [
+  {
+   "market": "US",
+   "b": "IGV",
+   "nm": "软件科技ETF",
+   "dir": -1,
+   "px": 107.97,
+   "chg1": -3.52,
+   "score": 3.3,
+   "book": "1029 US 1630 nyt",
+   "page": 12
+  },
+  {
+   "market": "US",
+   "b": "SNOW",
+   "nm": "Snowflake",
+   "dir": -1,
+   "px": 330.27,
+   "chg1": -2.84,
+   "score": 3.0,
+   "book": "1029 US 1630 nyt",
+   "page": 88
+  },
+  {
+   "market": "US",
+   "b": "PCRX",
+   "nm": "Pacira BioScie",
+   "dir": 1,
+   "px": 36.39,
+   "chg1": -0.0,
+   "score": 3.3,
+   "book": "1029 US 1630 nyt",
+   "page": 3
+  },
+  {
+   "market": "CN",
+   "b": "510230",
+   "nm": "金融ETF国泰",
+   "dir": 1,
+   "px": 1.35,
+   "chg1": 1.27,
+   "score": 3.3,
+   "book": "1029 A Share 1618",
+   "page": 4
+  },
+  {
+   "market": "US",
+   "b": "NET",
+   "nm": "Cloudflare,",
+   "dir": -1,
+   "px": 310.3,
+   "chg1": -2.64,
+   "score": 3.3,
+   "book": "1029 US 1630 nyt",
+   "page": 85
+  },
+  {
+   "market": "CN",
+   "b": "562500",
+   "nm": "机器人ETF华夏",
+   "dir": -1,
+   "px": 0.83,
+   "chg1": -4.06,
+   "score": 3.3,
+   "book": "1030 亚太 1510",
+   "page": 6
+  },
+  {
+   "market": "CN",
+   "b": "512600",
+   "nm": "消费ETF嘉实",
+   "dir": 1,
+   "px": 0.57,
+   "chg1": 1.06,
+   "score": 3.3,
+   "book": "1029 A Share 1618",
+   "page": 5
+  },
+  {
+   "market": "US",
+   "b": "ASST",
+   "nm": "Strive,",
+   "dir": -1,
+   "px": 24.91,
+   "chg1": -9.52,
+   "score": 3.3,
+   "book": "1029 US 1630 nyt",
+   "page": 86
+  },
+  {
+   "market": "MACRO",
+   "b": "XAUUSD",
+   "nm": "黄金现货",
+   "dir": -1,
+   "px": 4038.3,
+   "chg1": -0.33,
+   "score": 3.3,
+   "book": "1029 Macro 1409 bjt",
+   "page": 34
+  },
+  {
+   "market": "HK",
+   "b": "2388",
+   "nm": "中银香港",
+   "dir": 1,
+   "px": 50.6,
+   "chg1": 2.47,
+   "score": 3.3,
+   "book": "1030 亚太 1510",
+   "page": 13
+  },
+  {
+   "market": "HK",
+   "b": "1810",
+   "nm": "小米集团－Ｗ",
+   "dir": 1,
+   "px": 26.44,
+   "chg1": 2.96,
+   "score": 3.3,
+   "book": "1030 亚太 1510",
+   "page": 14
+  },
+  {
+   "market": "MACRO",
+   "b": "NIFTY1!",
+   "nm": "印度Nifty 50指数期货",
+   "dir": 1,
+   "px": 22844.45,
+   "chg1": 0.64,
+   "score": 2.3,
+   "book": "1029 Macro 1409 bjt",
+   "page": 15
+  }
+ ],
+ "n_cand": 100,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1029 中午1355_A股",
+   "stem": "1029 A Share 1355",
+   "stamp": "2026-10-29 14:01",
+   "market": "CN",
+   "n": 112
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1028 NY 盘前1356_宏观",
+   "stem": "1029 Macro 1409 bjt",
+   "stamp": "2026-10-29 14:09",
+   "market": "MACRO",
+   "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1029 盘后1618_A股",
+   "stem": "1029 A Share 1618",
+   "stamp": "2026-10-29 16:24",
+   "market": "CN",
+   "n": 112
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1029 收盘1628_亚太",
+   "stem": "1029 亚太 1628",
+   "stamp": "2026-10-29 16:32",
+   "market": "HK",
+   "n": 91
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1029 NY 收盘0430_美股",
+   "stem": "1029 US 1630 nyt",
+   "stamp": "2026-10-30 04:54",
+   "market": "US",
+   "n": 250
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1030 收盘1510_亚太",
+   "stem": "1030 亚太 1510",
+   "stamp": "2026-10-30 15:15",
+   "market": "HK",
+   "n": 91
+  }
+ ]
+}

@@ -1,0 +1,175 @@
+{
+ "day": "2026-10-28",
+ "picks": [
+  {
+   "market": "US",
+   "b": "RCAT",
+   "nm": "Red Cat Holdin",
+   "dir": 1,
+   "px": 4.87,
+   "chg1": 10.68,
+   "score": 3.3,
+   "book": "1027 US 1630 nyt",
+   "page": 8
+  },
+  {
+   "market": "US",
+   "b": "IEO",
+   "nm": "iShares U.S. O",
+   "dir": -1,
+   "px": 147.66,
+   "chg1": -3.53,
+   "score": 3.3,
+   "book": "1027 US 1630 nyt",
+   "page": 20
+  },
+  {
+   "market": "US",
+   "b": "ONDS",
+   "nm": "Ondas",
+   "dir": 1,
+   "px": 6.65,
+   "chg1": 7.95,
+   "score": 3.3,
+   "book": "1027 US 1630 nyt",
+   "page": 7
+  },
+  {
+   "market": "US",
+   "b": "MP",
+   "nm": "MP材料（MP Materi",
+   "dir": 1,
+   "px": 40.87,
+   "chg1": 9.07,
+   "score": 3.3,
+   "book": "1027 US 1630 nyt",
+   "page": 6
+  },
+  {
+   "market": "US",
+   "b": "KO",
+   "nm": "The Coca-Cola ",
+   "dir": -1,
+   "px": 91.18,
+   "chg1": -1.64,
+   "score": 3.3,
+   "book": "1027 US 1630 nyt",
+   "page": 83
+  },
+  {
+   "market": "MACRO",
+   "b": "ZECUSDT",
+   "nm": "Zcash",
+   "dir": 1,
+   "px": 1245.24,
+   "chg1": 1.17,
+   "score": 3.3,
+   "book": "1027 Macro 2000 bjt",
+   "page": 55
+  },
+  {
+   "market": "US",
+   "b": "ALB",
+   "nm": "雅保（Albemarle）",
+   "dir": 1,
+   "px": 98.96,
+   "chg1": 5.93,
+   "score": 3.3,
+   "book": "1027 US 1630 nyt",
+   "page": 3
+  },
+  {
+   "market": "US",
+   "b": "CRSP",
+   "nm": "CRISPR Therape",
+   "dir": 1,
+   "px": 51.47,
+   "chg1": 5.02,
+   "score": 3.3,
+   "book": "1027 US 1630 nyt",
+   "page": 4
+  },
+  {
+   "market": "MACRO",
+   "b": "US10Y",
+   "nm": "CBOE Interest ",
+   "dir": -1,
+   "px": 4.99,
+   "chg1": -0.04,
+   "score": 3.3,
+   "book": "1027 Macro 2000 bjt",
+   "page": 27
+  },
+  {
+   "market": "CN",
+   "b": "603893",
+   "nm": "瑞芯微",
+   "dir": -1,
+   "px": 197.3,
+   "chg1": -6.13,
+   "score": 2.3,
+   "book": "1027 A Share 1355",
+   "page": 5
+  },
+  {
+   "market": "CN",
+   "b": "001309",
+   "nm": "德明利",
+   "dir": -1,
+   "px": 232.0,
+   "chg1": -4.34,
+   "score": 2.3,
+   "book": "1027 A Share 1355",
+   "page": 4
+  },
+  {
+   "market": "CN",
+   "b": "300676",
+   "nm": "华大基因",
+   "dir": -1,
+   "px": 38.78,
+   "chg1": -2.98,
+   "score": 2.3,
+   "book": "1027 A Share 1355",
+   "page": 13
+  }
+ ],
+ "n_cand": 71,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1026 NY 收盘0830_宏观",
+   "stem": "1026 Macro 0834 bjt",
+   "stamp": "2026-10-27 08:34",
+   "market": "MACRO",
+   "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1027 中午1355_A股",
+   "stem": "1027 A Share 1355",
+   "stamp": "2026-10-27 13:59",
+   "market": "CN",
+   "n": 111
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1026 NY 盘前1356_宏观",
+   "stem": "1027 Macro 1406 bjt",
+   "stamp": "2026-10-27 14:06",
+   "market": "MACRO",
+   "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1026 NY 盘前1955_宏观",
+   "stem": "1027 Macro 2000 bjt",
+   "stamp": "2026-10-27 20:00",
+   "market": "MACRO",
+   "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1027 NY 收盘0430_美股",
+   "stem": "1027 US 1630 nyt",
+   "stamp": "2026-10-28 04:53",
+   "market": "US",
+   "n": 249
+  }
+ ]
+}

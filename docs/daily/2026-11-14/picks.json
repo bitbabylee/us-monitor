@@ -1,0 +1,259 @@
+{
+ "day": "2026-11-14",
+ "picks": [
+  {
+   "market": "US",
+   "b": "BULL",
+   "nm": "Webull",
+   "dir": 1,
+   "px": 5.18,
+   "chg1": 4.44,
+   "score": 3.3,
+   "book": "1113 US 1730 nyt",
+   "page": 3
+  },
+  {
+   "market": "HK",
+   "b": "12",
+   "nm": "恒基地产",
+   "dir": -1,
+   "px": 29.06,
+   "chg1": -1.02,
+   "score": 3.3,
+   "book": "1113 亚太 1620",
+   "page": 47
+  },
+  {
+   "market": "US",
+   "b": "3069",
+   "nm": "华夏恒生生科",
+   "dir": -1,
+   "px": 14.82,
+   "chg1": -3.33,
+   "score": 3.3,
+   "book": "1113 US All ETF 1800 nyt",
+   "page": 43
+  },
+  {
+   "market": "CN",
+   "b": "300236",
+   "nm": "上海新阳",
+   "dir": -1,
+   "px": 75.79,
+   "chg1": -2.0,
+   "score": 3.3,
+   "book": "1113 A Share 1520",
+   "page": 13
+  },
+  {
+   "market": "CN",
+   "b": "000001",
+   "nm": "上证指数",
+   "dir": -1,
+   "px": 3634.35,
+   "chg1": -0.59,
+   "score": 3.3,
+   "book": "1113 US All ETF 1800 nyt",
+   "page": 44
+  },
+  {
+   "market": "CN",
+   "b": "300054",
+   "nm": "鼎龙股份",
+   "dir": -1,
+   "px": 58.93,
+   "chg1": -3.49,
+   "score": 3.3,
+   "book": "1113 A Share 1520",
+   "page": 41
+  },
+  {
+   "market": "MACRO",
+   "b": "XBI",
+   "nm": "State Street S",
+   "dir": -1,
+   "px": 149.06,
+   "chg1": -1.42,
+   "score": 3.3,
+   "book": "1113 Macro 2339 bjt",
+   "page": 22
+  },
+  {
+   "market": "HK",
+   "b": "2142",
+   "nm": "和铂医药－Ｂ",
+   "dir": -1,
+   "px": 10.54,
+   "chg1": -3.66,
+   "score": 3.0,
+   "book": "1113 亚太 1620",
+   "page": 41
+  },
+  {
+   "market": "MACRO",
+   "b": "CN1!",
+   "nm": "富时中国A50指数期货连续合",
+   "dir": -1,
+   "px": 4016.29,
+   "chg1": -0.68,
+   "score": 3.0,
+   "book": "1113 Macro 2339 bjt",
+   "page": 23
+  },
+  {
+   "market": "US",
+   "b": "DBA",
+   "nm": "Invesco DB Agr",
+   "dir": 1,
+   "px": 26.55,
+   "chg1": 0.95,
+   "score": 3.3,
+   "book": "1113 US All ETF 1800 nyt",
+   "page": 4
+  },
+  {
+   "market": "US",
+   "b": "NLST",
+   "nm": "Netlist,",
+   "dir": -1,
+   "px": 5.05,
+   "chg1": -11.71,
+   "score": 3.3,
+   "book": "1113 US 1730 nyt",
+   "page": 84
+  },
+  {
+   "market": "US",
+   "b": "TIGR",
+   "nm": "UP Fintech Hol",
+   "dir": 1,
+   "px": 4.14,
+   "chg1": 5.61,
+   "score": 3.3,
+   "book": "1113 US 1730 nyt",
+   "page": 4
+  }
+ ],
+ "n_cand": 215,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1112 NY 收盘0530_美股",
+   "stem": "1112 US 1730 nyt",
+   "stamp": "2026-11-13 05:53",
+   "market": "US",
+   "n": 253
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1112 NY 收盘0600_美股ETF",
+   "stem": "1112 US All ETF 1800 nyt",
+   "stamp": "2026-11-13 06:03",
+   "market": "US",
+   "n": 125
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1112 NY 收盘0830_宏观",
+   "stem": "1112 Macro 0830 bjt",
+   "stamp": "2026-11-13 08:30",
+   "market": "MACRO",
+   "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1113 早盘1050_A股",
+   "stem": "1113 A Share 1050",
+   "stamp": "2026-11-13 10:50",
+   "market": "CN",
+   "n": 115
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1113 收盘1055_亚太",
+   "stem": "1113 亚太 1055",
+   "stamp": "2026-11-13 11:02",
+   "market": "HK",
+   "n": 95
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1112 NY 盘前1350_宏观",
+   "stem": "1113 Macro 1350 bjt",
+   "stamp": "2026-11-13 13:50",
+   "market": "MACRO",
+   "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1113 中午1355_A股",
+   "stem": "1113 A Share 1355",
+   "stamp": "2026-11-13 14:11",
+   "market": "CN",
+   "n": 115
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1113 盘后1520_A股",
+   "stem": "1113 A Share 1520",
+   "stamp": "2026-11-13 15:20",
+   "market": "CN",
+   "n": 115
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1113 收盘1520_亚太",
+   "stem": "1113 亚太 1520",
+   "stamp": "2026-11-13 15:33",
+   "market": "HK",
+   "n": 95
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1113 收盘1620_亚太",
+   "stem": "1113 亚太 1620",
+   "stamp": "2026-11-13 16:20",
+   "market": "HK",
+   "n": 95
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1112 NY 盘前1952_宏观",
+   "stem": "1113 Macro 2001 bjt",
+   "stamp": "2026-11-13 20:01",
+   "market": "MACRO",
+   "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1112 NY 盘中2320_美股ETF",
+   "stem": "1113 US All ETF 1120 nyt",
+   "stamp": "2026-11-13 23:20",
+   "market": "US",
+   "n": 125
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1112 NY 盘中2321_宏观",
+   "stem": "1113 Macro 2339 bjt",
+   "stamp": "2026-11-13 23:39",
+   "market": "MACRO",
+   "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1112 NY 盘中2330_美股",
+   "stem": "1113 US QQQ 1130 nyt",
+   "stamp": "2026-11-13 23:59",
+   "market": "US",
+   "n": 106
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1113 NY 盘中2335_美股",
+   "stem": "1113 US AXTI 1135 nyt",
+   "stamp": "2026-11-14 00:13",
+   "market": "US",
+   "n": 77
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1113 NY 收盘0530_美股",
+   "stem": "1113 US 1730 nyt",
+   "stamp": "2026-11-14 05:54",
+   "market": "US",
+   "n": 253
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1113 NY 收盘0600_美股ETF",
+   "stem": "1113 US All ETF 1800 nyt",
+   "stamp": "2026-11-14 06:05",
+   "market": "US",
+   "n": 125
+  }
+ ]
+}

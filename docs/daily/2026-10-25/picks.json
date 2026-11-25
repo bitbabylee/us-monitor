@@ -1,0 +1,147 @@
+{
+ "day": "2026-10-25",
+ "picks": [
+  {
+   "market": "CN",
+   "b": "512800",
+   "nm": "银行ETF华宝",
+   "dir": -1,
+   "px": 0.85,
+   "chg1": -1.62,
+   "score": 3.3,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 43
+  },
+  {
+   "market": "US",
+   "b": "HERO",
+   "nm": "Global X Video",
+   "dir": -1,
+   "px": 27.41,
+   "chg1": -1.4,
+   "score": 3.3,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 42
+  },
+  {
+   "market": "CN",
+   "b": "515580",
+   "nm": "科技100ETF华泰柏瑞",
+   "dir": 1,
+   "px": 1.23,
+   "chg1": 3.61,
+   "score": 3.3,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 5
+  },
+  {
+   "market": "US",
+   "b": "XLY",
+   "nm": "State Street C",
+   "dir": -1,
+   "px": 113.1,
+   "chg1": -1.66,
+   "score": 3.0,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 46
+  },
+  {
+   "market": "US",
+   "b": "XBI",
+   "nm": "State Street S",
+   "dir": -1,
+   "px": 149.54,
+   "chg1": -1.38,
+   "score": 3.0,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 45
+  },
+  {
+   "market": "US",
+   "b": "SKYY",
+   "nm": "First Trust Cl",
+   "dir": 1,
+   "px": 167.36,
+   "chg1": 1.85,
+   "score": 3.3,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 4
+  },
+  {
+   "market": "US",
+   "b": "LABU",
+   "nm": "Direxion Daily",
+   "dir": -1,
+   "px": 219.6,
+   "chg1": -4.18,
+   "score": 3.0,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 44
+  },
+  {
+   "market": "US",
+   "b": "CIBR",
+   "nm": "网络安全ETF(First ",
+   "dir": 1,
+   "px": 106.12,
+   "chg1": 3.22,
+   "score": 3.0,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 6
+  },
+  {
+   "market": "US",
+   "b": "MOO",
+   "nm": "VanEck Agribus",
+   "dir": 1,
+   "px": 81.69,
+   "chg1": 0.53,
+   "score": 2.0,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 56
+  },
+  {
+   "market": "US",
+   "b": "PRNT",
+   "nm": "The 3D Printin",
+   "dir": -1,
+   "px": 24.26,
+   "chg1": -1.22,
+   "score": 2.0,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 59
+  },
+  {
+   "market": "US",
+   "b": "XLI",
+   "nm": "State Street I",
+   "dir": -1,
+   "px": 164.62,
+   "chg1": -1.27,
+   "score": 1.3,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 50
+  },
+  {
+   "market": "CN",
+   "b": "510230",
+   "nm": "金融ETF国泰",
+   "dir": -1,
+   "px": 1.32,
+   "chg1": -0.53,
+   "score": 1.0,
+   "book": "1023 US All ETF 2229 nyt",
+   "page": 53
+  }
+ ],
+ "n_cand": 23,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1023 NY 收盘1029_美股ETF",
+   "stem": "1023 US All ETF 2229 nyt",
+   "stamp": "2026-10-24 10:34",
+   "market": "US",
+   "n": 124
+  }
+ ]
+}

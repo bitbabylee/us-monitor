@@ -1,0 +1,161 @@
+{
+ "day": "2026-10-27",
+ "picks": [
+  {
+   "market": "CN",
+   "b": "300476",
+   "nm": "胜宏科技",
+   "dir": 1,
+   "px": 189.99,
+   "chg1": 3.55,
+   "score": 3.3,
+   "book": "1026 A Share 1200",
+   "page": 4
+  },
+  {
+   "market": "CN",
+   "b": "688256",
+   "nm": "寒武纪",
+   "dir": 1,
+   "px": 966.0,
+   "chg1": 3.63,
+   "score": 3.3,
+   "book": "1026 A Share 1200",
+   "page": 5
+  },
+  {
+   "market": "MACRO",
+   "b": "ZECUSDT",
+   "nm": "Zcash",
+   "dir": 1,
+   "px": 1211.1,
+   "chg1": 0.15,
+   "score": 3.3,
+   "book": "1026 Macro 1400 bjt",
+   "page": 55
+  },
+  {
+   "market": "US",
+   "b": "EWZ",
+   "nm": "安硕MSCI巴西ETF（iS",
+   "dir": -1,
+   "px": 34.15,
+   "chg1": -19.82,
+   "score": 3.3,
+   "book": "1026 US 1630 nyt",
+   "page": 14
+  },
+  {
+   "market": "US",
+   "b": "UNH",
+   "nm": "UnitedHealth G",
+   "dir": -1,
+   "px": 410.7,
+   "chg1": -1.77,
+   "score": 3.3,
+   "book": "1026 US 1630 nyt",
+   "page": 78
+  },
+  {
+   "market": "US",
+   "b": "INSW",
+   "nm": "International ",
+   "dir": 1,
+   "px": 113.75,
+   "chg1": 2.68,
+   "score": 3.3,
+   "book": "1026 US 1630 nyt",
+   "page": 3
+  },
+  {
+   "market": "US",
+   "b": "MSFT",
+   "nm": "Microsoft",
+   "dir": 1,
+   "px": 532.6,
+   "chg1": 1.54,
+   "score": 3.3,
+   "book": "1026 US 1630 nyt",
+   "page": 5
+  },
+  {
+   "market": "US",
+   "b": "NTRA",
+   "nm": "Natera,",
+   "dir": 1,
+   "px": 404.9,
+   "chg1": 0.24,
+   "score": 3.3,
+   "book": "1026 US 1630 nyt",
+   "page": 6
+  },
+  {
+   "market": "US",
+   "b": "SNPS",
+   "nm": "Synopsys,",
+   "dir": 1,
+   "px": 454.33,
+   "chg1": 5.62,
+   "score": 3.3,
+   "book": "1026 US 1630 nyt",
+   "page": 7
+  },
+  {
+   "market": "US",
+   "b": "ENPH",
+   "nm": "Enphase Energy",
+   "dir": -1,
+   "px": 30.36,
+   "chg1": -3.92,
+   "score": 3.3,
+   "book": "1026 US 1630 nyt",
+   "page": 77
+  },
+  {
+   "market": "MACRO",
+   "b": "USDJPY",
+   "nm": "",
+   "dir": -1,
+   "px": null,
+   "chg1": null,
+   "score": 3.3,
+   "book": "1026 Macro 1400 bjt",
+   "page": 57
+  },
+  {
+   "market": "CN",
+   "b": "002718",
+   "nm": "友邦吊顶",
+   "dir": 1,
+   "px": 84.19,
+   "chg1": 1.84,
+   "score": 3.3,
+   "book": "1026 A Share 1200",
+   "page": 3
+  }
+ ],
+ "n_cand": 65,
+ "books": [
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1026 中午1200_A股",
+   "stem": "1026 A Share 1200",
+   "stamp": "2026-10-26 13:24",
+   "market": "CN",
+   "n": 111
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1024 NY 盘前1355_宏观",
+   "stem": "1026 Macro 1400 bjt",
+   "stamp": "2026-10-26 14:00",
+   "market": "MACRO",
+   "n": 58
+  },
+  {
+   "dir": "/Users/clair/My Drive (0xamberlbb01@gmail.com)/盘前信号台/输出/1026 NY 收盘0430_美股",
+   "stem": "1026 US 1630 nyt",
+   "stamp": "2026-10-27 04:54",
+   "market": "US",
+   "n": 249
+  }
+ ]
+}

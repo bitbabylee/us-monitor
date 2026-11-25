@@ -1,0 +1,31 @@
+<b>24 小时精选</b> 11-20 10:30 · 23 册 · 候选 165 只
+今天 12 只：翻多 2 只、翻空 10 只。其中 11 只是 3D 和 1D 同时给信号。
+
+<b>【美股】</b>
+<i>3D+1D 同时翻空</i>
+　<code>ZETA</code> Zeta Global 
+　<code>CORZ</code> Core Scienti
+　<code>TSLA</code> 特斯拉
+　<code>APH</code> Amphenol（半导体/AI芯片 板块 9 只同动）
+　<code>ZM</code> Zoom Communi（5 天后出财报）
+
+<b>【A 股】</b>
+<i>3D+1D 同时翻多</i>
+　<code>512070</code> 证券保险ETF易方达
+<i>3D+1D 同时翻空</i>
+　<code>300025</code> 华星创业
+<i>日线刚翻多、3D 没跟</i>
+　<code>588200</code> 科创芯片ETF嘉实
+
+<b>【亚太】</b>
+<i>3D+1D 同时翻空</i>
+　<code>2197</code> 三叶草生物－Ｂ
+　<code>2914</code> 日本烟草
+
+<b>【宏观】</b>
+<i>3D+1D 同时翻空</i>
+　<code>CN1!</code> 富时中国A50指数期货连
+　<code>TOPIX1!</code> 东证指数期货（TOPIX
+
+板块共振：美股半导体/AI芯片空 9 只；美股资源/贵金属空 3 只
+https://bitbabylee.github.io/us-monitor/daily/
