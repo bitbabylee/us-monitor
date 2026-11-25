@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-11-24 收盘(ET)
-  生成 11-24 22:38 纽约 = 11-25 11:38 新加坡
+  生成 11-25 05:13 纽约 = 11-25 18:13 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -16,6 +16,7 @@
 【风险】无近端风险事件
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   12-01 周二  NASDAQ:CRDO✓
+  12-02 周三  NYSE:SNOW?
 【恐慌买入计划】🔔进行中(冷静时写死的规则)
   ①恐慌档 ✅已触发11-05 — 派发9(峰10) 距60日高-7.9% · 门槛 派发≥6 且 回撤≤-5.0%
   ②释放档 ✅已触发11-09 — 阶段P0
@@ -32,7 +33,7 @@
   日性质(因子ETF超额·非纯因子): 动量-2.7 高贝-3.9 低波+1.2 价值-1.1 → 去杠杆/轮动日
   派发 ▄▅▅▅▅▄▆▇▇▇▆██▇▇▆▆▆███████ (9/吸4) → 仓位20%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR14100% ✗10Y4.90% ✗HYG/LQD0.7364 ✅USD/JPY159.27
+  宏观 ✗ATR14100% ✗10Y4.90% ✗HYG/LQD0.7364 ✅USD/JPY159.01
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:UNG 天然气  AMEX:XLP 必选消费 (Staples)  AMEX:ITB 住宅建筑  AMEX:UUP 美元  AMEX:IHI 医疗器械
@@ -58,16 +59,17 @@
             NASDAQ:CRDO🔴  NASDAQ:MU🔴  NASDAQ:AXTI🔴  NASDAQ:SPCX🔴 
             AMEX:GDX🔴  NASDAQ:IREN🔴  NASDAQ:CORZ🔴  NASDAQ:CIFR🔴 
             NASDAQ:WULF🔴  NASDAQ:APLD🔴 
-  盘前±2%: NASDAQ:SNDK-19.0% NASDAQ:IREN-2.1%
+  盘前±2%: NASDAQ:SNDK-22.9% NASDAQ:NBIS-6.6% NASDAQ:MU-6.0% NASDAQ:AMD-6.0% NYSE:BE-6.0% NASDAQ:LITE-5.6% NASDAQ:AXTI-5.4% NASDAQ:AAOI-5.4% NASDAQ:CIFR-5.3% NASDAQ:CRDO-5.2% NASDAQ:AMAT-4.8% NASDAQ:APLD-4.8% NASDAQ:IREN-4.7% NASDAQ:HUT-4.5% NYSE:ANET-4.3% NASDAQ:SMH-4.1% NYSE:GEV-4.1% NASDAQ:PLTR-4.1% NASDAQ:INTC-4.0% NASDAQ:CORZ-4.0% NASDAQ:WULF-3.9% NASDAQ:CRWD-3.9% NYSE:NET-3.7% NYSE:SNOW-3.7% NYSE:CAT-3.6% NASDAQ:RKLB-3.5% NASDAQ:HOOD-3.3% NASDAQ:RIOT-3.1% NASDAQ:SPCX-2.9% NASDAQ:QQQ-2.5%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 10% · 📣HUT S1⌐→S4↓
+  上升趋势占比 10%
   🟢合格·在买点区(0): 无
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(32): SZSE:300394(天孚) SZSE:300476(胜宏) SSE:601138(富联) SZSE:300502(新易盛) NASDAQ:PLTR SZSE:300990(同飞) SZSE:300308(旭创) NASDAQ:HUT SSE:688498(源杰) SSE:603986(兆易) NASDAQ:RKLB SSE:605589(圣泉) NASDAQ:CIFR NASDAQ:WULF SSE:688525(佰维) NASDAQ:CRWD NASDAQ:CORZ SSE:688627(精智达) NASDAQ:LITE NASDAQ:AXTI NASDAQ:MSFT NASDAQ:AAOI NYSE:CAT NYSE:GEV AMEX:GDX SZSE:002837(英维克) NASDAQ:IREN SZSE:301308(江波龙) SZSE:301018(申菱) NASDAQ:APLD SZSE:300499(高澜) SZSE:001309(德明利)
+  🔴淘汰(32): SZSE:300502(新易盛) SZSE:300394(天孚) SSE:601138(富联) SZSE:300476(胜宏) NASDAQ:PLTR NASDAQ:HUT SZSE:300990(同飞) SZSE:300308(旭创) SSE:603986(兆易) NASDAQ:RKLB NASDAQ:CIFR NASDAQ:WULF NASDAQ:CRWD NASDAQ:CORZ SSE:688498(源杰) NASDAQ:LITE NASDAQ:AXTI NASDAQ:MSFT NASDAQ:AAOI NYSE:CAT SSE:605589(圣泉) NYSE:GEV SSE:688525(佰维) AMEX:GDX SSE:688627(精智达) NASDAQ:IREN NASDAQ:APLD SZSE:002837(英维克) SZSE:301308(江波龙) SZSE:301018(申菱) SZSE:300499(高澜) SZSE:001309(德明利)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: MUP$373M(v/oi99.0) QQQP$344M(v/oi99.0) AMD≈$304M(v/oi99.0) SNDKP$181M(v/oi20.9) LLYC$46M(v/oi8.5)
+  今日: MUP$372M QQQP$346M AMD≈$305M SNDKP$179M(v/oi15.5) LLYC$45M
+  T+1核对: BEC155(11-27)✗未增 BEC157.5(11-27)✗未增 BEC160(11-27)✗未增 BEC165(11-27)✗未增
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
