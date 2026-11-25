@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-11-25 收盘(ET)
-  生成 11-25 16:36 纽约 = 11-26 05:36 新加坡
+  生成 11-25 16:56 纽约 = 11-26 05:56 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -35,7 +35,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.3 高贝+0.1 低波+0.8 价值+0.5 → 价值轮动日
   派发 ▅▅▅▅▄▆▇▇▇▆██▇▇▆▆▆████████ (9/吸4) → 仓位20%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1499% ✗10Y4.85% ✗HYG/LQD0.7337 ✅USD/JPY159.19
+  宏观 ✗ATR1499% ✗10Y4.85% ✗HYG/LQD0.7337 ✅USD/JPY159.18
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ITB 住宅建筑  AMEX:XLP 必选消费 (Staples)  AMEX:IHI 医疗器械  NASDAQ:PPH 制药  NASDAQ:HERO 游戏
@@ -65,10 +65,10 @@
             NASDAQ:CIFR🟡  NASDAQ:HUT🟡  NASDAQ:WULF🔴  NASDAQ:APLD🟡 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 10% · 📣NBIS S1⌐→S4↓
+  上升趋势占比 10%
   🟢合格·在买点区(0): 无
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(32): SSE:601138(富联) SZSE:300476(胜宏) SZSE:300990(同飞) SSE:605589(圣泉) SZSE:300502(新易盛) NASDAQ:HUT SZSE:300308(旭创) NASDAQ:RKLB SSE:603986(兆易) SSE:688525(佰维) SSE:688498(源杰) SSE:688627(精智达) NASDAQ:WULF SZSE:300394(天孚) NASDAQ:CIFR NASDAQ:CRWD NASDAQ:AXTI NASDAQ:CORZ NYSE:CAT AMEX:GDX NASDAQ:LITE NASDAQ:AAOI SZSE:301308(江波龙) NASDAQ:MSFT NYSE:GEV SZSE:002837(英维克) NASDAQ:IREN NASDAQ:APLD SZSE:301018(申菱) SZSE:300499(高澜) SZSE:001309(德明利) NASDAQ:NBIS
+  🔴淘汰(32): SZSE:300502(新易盛) SZSE:300394(天孚) SSE:601138(富联) SZSE:300476(胜宏) NASDAQ:HUT SZSE:300990(同飞) SZSE:300308(旭创) NASDAQ:RKLB SSE:603986(兆易) NASDAQ:WULF NASDAQ:CIFR NASDAQ:CRWD SSE:688498(源杰) NASDAQ:AXTI NASDAQ:CORZ NYSE:CAT AMEX:GDX NASDAQ:LITE NASDAQ:AAOI SSE:605589(圣泉) NASDAQ:MSFT NYSE:GEV SSE:688525(佰维) SSE:688627(精智达) NASDAQ:IREN NASDAQ:APLD SZSE:002837(英维克) SZSE:301308(江波龙) SZSE:301018(申菱) NASDAQ:NBIS SZSE:300499(高澜) SZSE:001309(德明利)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
   今日: QQQC$3381M(v/oi99.0) MUC$794M(v/oi99.0) AMDC$387M(v/oi99.0) SPCXC$255M(v/oi99.0) SNDKP$170M(v/oi99.0)
