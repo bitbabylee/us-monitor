@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-11-25 收盘(ET)
-  生成 11-25 17:46 纽约 = 11-26 06:46 新加坡
+  生成 11-25 21:58 纽约 = 11-26 10:58 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -14,7 +14,6 @@
 【否决】
   NASDAQ:AAOI   板块背离
   NASDAQ:MSFT   板块背离
-  NASDAQ:SNDK   板块背离
 【风险】无近端风险事件
 【财报7日】✓已核 ?待核 —— 窗口内信号一律作废
   12-01 周二  NASDAQ:CRDO✓
@@ -35,7 +34,7 @@
   日性质(因子ETF超额·非纯因子): 动量-0.3 高贝+0.1 低波+0.8 价值+0.5 → 价值轮动日
   派发 ▅▅▅▅▄▆▇▇▇▆██▇▇▆▆▆████████ (9/吸4) → 仓位20%
   阶段P0 恐慌未释放 恐慌1/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1499% ✗10Y4.85% ✗HYG/LQD0.7337 ✅USD/JPY159.09
+  宏观 ✗ATR1499% ✗10Y4.85% ✗HYG/LQD0.7337 ✅USD/JPY159.17
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ITB 住宅建筑  AMEX:XLP 必选消费 (Staples)  AMEX:IHI 医疗器械  NASDAQ:PPH 制药  NASDAQ:HERO 游戏
@@ -43,7 +42,7 @@
 ------------------------------------------------
 【板块】
   强: AMEX:GDX+3.8% · AMEX:XLB+2.4% · AMEX:ITA+1.2% · AMEX:XLRE+1.2% · AMEX:XLC+1.2% · AMEX:XLI+1.1% · AMEX:XLE+1.0% · AMEX:XLF+1.0%
-  主题🔥 🪙 黄金   +3.9%  龙头 NYSE:WPM
+  主题🔥 🪙 黄金   +4.0%  龙头 NYSE:WPM
   主题🔥 💊 减肥药  +2.6%  龙头 NASDAQ:VKTX
   主题🔥 🚀 军工   +2.1%  龙头 NASDAQ:KTOS
 ------------------------------------------------
@@ -53,25 +52,26 @@
  ▶ 等时机（日内未给买点）
    NASDAQ:AAOI   🚀超跌反弹      🟡跳空低开,买点降级
    NASDAQ:MSFT   🚀超跌反弹      🟡跳空低开,买点降级
-   NASDAQ:SNDK   🚀超跌反弹      🟡跳空低开,买点降级
    NASDAQ:HOOD   🚀超跌反弹      🟡跳空低开,买点降级
    NASDAQ:IREN   🚀超跌反弹      🟡跳空低开,买点降级
   日内异动: NYSE:BE🟡  NASDAQ:NBIS🔴  NASDAQ:RKLB🟡  NASDAQ:LITE🟡 
             NASDAQ:INTC🟡  NASDAQ:AMAT🟡  NASDAQ:SMH🟡  NYSE:GEV🟡 
-            NASDAQ:QQQ🟡  NYSE:CAT🟡  NYSE:NET🟡  NASDAQ:CRWD🟡 
-            NYSE:ANET🟡  NASDAQ:CRDO🟡  NASDAQ:AMD🟡  NASDAQ:MU🟡 
-            NASDAQ:AXTI🔴  NASDAQ:PLTR🟡  NASDAQ:CIBR🟡  NYSE:SNOW🟡 
-            NASDAQ:SPCX🟡  AMEX:GDX🟡  NASDAQ:CORZ🔴  NASDAQ:RIOT🟡 
-            NASDAQ:CIFR🟡  NASDAQ:HUT🟡  NASDAQ:WULF🔴  NASDAQ:APLD🟡 
+            NASDAQ:SNDK🟡  NASDAQ:QQQ🟡  NYSE:CAT🟡  NYSE:NET🟡 
+            NASDAQ:CRWD🟡  NYSE:ANET🟡  NASDAQ:CRDO🟡  NASDAQ:AMD🟡 
+            NASDAQ:MU🟡  NASDAQ:AXTI🔴  NASDAQ:PLTR🟡  NASDAQ:CIBR🟡 
+            NYSE:SNOW🟡  NASDAQ:SPCX🟡  AMEX:GDX🟡  NASDAQ:CORZ🔴 
+            NASDAQ:RIOT🟡  NASDAQ:CIFR🟡  NASDAQ:HUT🟡  NASDAQ:WULF🔴 
+            NASDAQ:APLD🟡 
+  盘前±2%: NASDAQ:SNDK-18.8% NASDAQ:CORZ+4.3% NASDAQ:APLD+3.9% NASDAQ:NBIS+3.8% NASDAQ:IREN+3.7% NASDAQ:AXTI+3.4% NYSE:BE+3.2% NASDAQ:AAOI+2.9% NASDAQ:HOOD+2.7% NASDAQ:RKLB+2.6% NASDAQ:LITE+2.6% NASDAQ:WULF+2.5% NASDAQ:HUT+2.4% NASDAQ:MU+2.3% NASDAQ:CRDO+2.1%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 10%
   🟢合格·在买点区(0): 无
   🟢合格·追高区勿追(0): 无
-  🔴淘汰(32): SZSE:300502(新易盛) SZSE:300394(天孚) SSE:601138(富联) SZSE:300476(胜宏) NASDAQ:HUT SZSE:300990(同飞) SZSE:300308(旭创) NASDAQ:RKLB SSE:603986(兆易) NASDAQ:WULF NASDAQ:CIFR NASDAQ:CRWD SSE:688498(源杰) NASDAQ:AXTI NASDAQ:CORZ NYSE:CAT AMEX:GDX NASDAQ:LITE NASDAQ:AAOI SSE:605589(圣泉) NASDAQ:MSFT NYSE:GEV SSE:688525(佰维) SSE:688627(精智达) NASDAQ:IREN NASDAQ:APLD SZSE:002837(英维克) SZSE:301308(江波龙) SZSE:301018(申菱) NASDAQ:NBIS SZSE:300499(高澜) SZSE:001309(德明利)
+  🔴淘汰(32): SSE:601138(富联) SZSE:300502(新易盛) SZSE:300476(胜宏) SZSE:300394(天孚) SZSE:300308(旭创) NASDAQ:HUT SZSE:300990(同飞) NASDAQ:RKLB SSE:603986(兆易) NASDAQ:WULF NASDAQ:CIFR SSE:688498(源杰) SSE:605589(圣泉) NASDAQ:CRWD NASDAQ:AXTI NASDAQ:CORZ NYSE:CAT AMEX:GDX NASDAQ:LITE NASDAQ:AAOI SSE:688525(佰维) SSE:688627(精智达) NASDAQ:MSFT NYSE:GEV NASDAQ:IREN NASDAQ:APLD SZSE:002837(英维克) SZSE:301308(江波龙) SZSE:301018(申菱) NASDAQ:NBIS SZSE:300499(高澜) SZSE:001309(德明利)
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQC$3381M(v/oi99.0) MUC$794M(v/oi99.0) AMDC$387M(v/oi99.0) SPCXC$255M(v/oi99.0) SNDKP$170M(v/oi99.0)
+  今日: QQQ≈$533M(v/oi79.3) MU≈$292M(v/oi99.0) SNDKP$170M(v/oi99.0) AMD≈$116M(v/oi52.4) SPCXC$103M(v/oi91.3)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
