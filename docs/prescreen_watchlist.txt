@@ -1,9 +1,11 @@
-# 波哥待机清单 2026-11-27
+# 波哥待机清单 2026-11-28
 # 仅包含通过优势预筛的 ETF + 个股；不是入场指令。
 # 大盘门: 关闭
 AMEX:ITB
-AMEX:XLP
 NASDAQ:PPH
-NASDAQ:TLT
-AMEX:XLU
+AMEX:XLP
+AMEX:XLRE
+AMEX:XLY
+AMEX:XBI
 AMEX:UUP
+NASDAQ:TLT
