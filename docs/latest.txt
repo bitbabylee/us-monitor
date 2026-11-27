@@ -1,6 +1,6 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-11-27 收盘(ET)
-  生成 11-27 16:32 纽约 = 11-28 05:32 新加坡
+  生成 11-27 16:34 纽约 = 11-28 05:34 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
@@ -54,14 +54,14 @@
    NASDAQ:SNDK   🚀超跌反弹      🟡跳空低开,买点降级
   日内异动: NASDAQ:NBIS🔥  NASDAQ:RKLB🔥  NASDAQ:AAOI🔥  NASDAQ:MSFT🟢 
             NASDAQ:INTC🔥  NASDAQ:SMH🟢  NYSE:GEV🟢  NASDAQ:QQQ🟢 
-            NYSE:CAT🟢  NYSE:NET🟢  NASDAQ:CRWD🟢  NYSE:ANET🟢 
-            NASDAQ:CRDO🔥  NASDAQ:AMD🔥  NASDAQ:MU🟢  NASDAQ:AXTI🔥 
-            NASDAQ:PLTR🟢  NASDAQ:CIBR🟢  NYSE:SNOW🟢  NASDAQ:SPCX🟢 
-            AMEX:GDX🟢  NASDAQ:IREN🔥  NASDAQ:CORZ🔥  NASDAQ:CIFR🔥 
-            NASDAQ:HUT🟢  NASDAQ:WULF🟢  NASDAQ:APLD🔥 
+            NYSE:NET🟢  NASDAQ:CRWD🟢  NYSE:ANET🟢  NASDAQ:CRDO🔥 
+            NASDAQ:AMD🔥  NASDAQ:MU🔥  NASDAQ:AXTI🔥  NASDAQ:PLTR🟢 
+            NASDAQ:CIBR🟢  NYSE:SNOW🟢  NASDAQ:SPCX🟢  AMEX:GDX🟢 
+            NASDAQ:IREN🔥  NASDAQ:CORZ🔥  NASDAQ:CIFR🔥  NASDAQ:HUT🟢 
+            NASDAQ:WULF🟢  NASDAQ:APLD🔥 
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
-  上升趋势占比 12% · 📣AMAT S1⌐→S4↓ · CRDO S1⌐→S4↓ · SNOW S1⌐→S2↑
+  上升趋势占比 12%
   🟢合格·在买点区(0): 无
   🟢合格·追高区勿追(0): 无
   🔴淘汰(35): SZSE:300394(天孚) SZSE:300502(新易盛) SSE:601138(富联) SZSE:300476(胜宏) SZSE:300308(旭创) SSE:605589(圣泉) SSE:688498(源杰) SZSE:300990(同飞) SSE:688525(佰维) NASDAQ:HUT NASDAQ:RKLB SSE:688627(精智达) NYSE:SNOW NASDAQ:WULF NYSE:CAT AMEX:GDX SZSE:301308(江波龙) NASDAQ:CRDO NASDAQ:CIFR NASDAQ:AMAT NASDAQ:LITE NASDAQ:CRWD SSE:603986(兆易) NASDAQ:CORZ NASDAQ:AXTI SZSE:301018(申菱) NASDAQ:AAOI NYSE:GEV SZSE:002837(英维克) NASDAQ:MSFT NASDAQ:APLD SZSE:300499(高澜) NASDAQ:IREN SZSE:001309(德明利) NASDAQ:NBIS
