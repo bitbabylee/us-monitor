@@ -1,14 +1,13 @@
 ================================================
   波哥信号 · 美股日报  数据截至 2026-11-27 收盘(ET)
-  生成 11-27 16:34 纽约 = 11-28 05:34 新加坡
+  生成 11-27 21:51 纽约 = 11-28 10:51 新加坡
 ================================================
 
 ① 决 策 —— 今天做什么
 ================================================
 【结论】仓位上限 20% · 阶段P0 · 宏观1/4 · 抱团MAGS
 ------------------------------------------------
-【候选】2 只（形态+板块确认+无财报风险·未回测）
-  NASDAQ:SNDK   超跌反弹      日内:🟡跳空低开,买点降级
+【候选】1 只（形态+板块确认+无财报风险·未回测）
   NASDAQ:RIOT   10EMA回调   日内:🔥强主升浪
 【否决】
   NYSE:LLY      板块背离
@@ -32,7 +31,7 @@
   日性质(因子ETF超额·非纯因子): 动量+1.4 高贝+2.5 低波-0.6 价值+0.9 → 风偏进攻日
   派发 ▅▅▅▄▆▇▇▇▆██▇▇▆▆▆█████████ (7/吸4) → 仓位20%
   阶段P0 恐慌未释放 恐慌2/4 共识0/5 缺:QQQ站上20日线*
-  宏观 ✗ATR1498% ✗10Y4.94% ✗HYG/LQD0.7366 ✅USD/JPY159.56
+  宏观 ✗ATR1498% ✗10Y4.94% ✗HYG/LQD0.7366 ✅USD/JPY159.28
 ------------------------------------------------
 【主题雷达】今天钱去哪了(池外65主题·不给信号)
   涨幅优先: AMEX:ITB 住宅建筑  NASDAQ:PPH 制药  AMEX:XLP 必选消费 (Staples)  AMEX:XHB 地产链  NASDAQ:ESPO 电竞
@@ -51,14 +50,14 @@
    NASDAQ:RIOT   🟢10EMA回调   🔥强主升浪
  ▶ 等时机（日内未给买点）
    NYSE:LLY      🟢10EMA回调   ⚪观望
-   NASDAQ:SNDK   🚀超跌反弹      🟡跳空低开,买点降级
   日内异动: NASDAQ:NBIS🔥  NASDAQ:RKLB🔥  NASDAQ:AAOI🔥  NASDAQ:MSFT🟢 
-            NASDAQ:INTC🔥  NASDAQ:SMH🟢  NYSE:GEV🟢  NASDAQ:QQQ🟢 
-            NYSE:NET🟢  NASDAQ:CRWD🟢  NYSE:ANET🟢  NASDAQ:CRDO🔥 
-            NASDAQ:AMD🔥  NASDAQ:MU🔥  NASDAQ:AXTI🔥  NASDAQ:PLTR🟢 
-            NASDAQ:CIBR🟢  NYSE:SNOW🟢  NASDAQ:SPCX🟢  AMEX:GDX🟢 
-            NASDAQ:IREN🔥  NASDAQ:CORZ🔥  NASDAQ:CIFR🔥  NASDAQ:HUT🟢 
-            NASDAQ:WULF🟢  NASDAQ:APLD🔥 
+            NASDAQ:INTC🔥  NASDAQ:SMH🟢  NYSE:GEV🟢  NASDAQ:SNDK🟡 
+            NASDAQ:QQQ🟢  NYSE:CAT🟢  NYSE:NET🟢  NASDAQ:CRWD🟢 
+            NYSE:ANET🟢  NASDAQ:CRDO🔥  NASDAQ:AMD🔥  NASDAQ:MU🔥 
+            NASDAQ:AXTI🔥  NASDAQ:PLTR🟢  NASDAQ:CIBR🟢  NYSE:SNOW🟢 
+            NASDAQ:SPCX🟢  AMEX:GDX🟢  NASDAQ:IREN🔥  NASDAQ:CORZ🔥 
+            NASDAQ:CIFR🔥  NASDAQ:HUT🟢  NASDAQ:WULF🟢  NASDAQ:APLD🔥 
+  盘前±2%: NASDAQ:SNDK-9.5%
 ------------------------------------------------
 【走势中频】只给资格·不给买点(时机仍看日线形态×日内)
   上升趋势占比 12%
@@ -67,7 +66,7 @@
   🔴淘汰(35): SZSE:300394(天孚) SZSE:300502(新易盛) SSE:601138(富联) SZSE:300476(胜宏) SZSE:300308(旭创) SSE:605589(圣泉) SSE:688498(源杰) SZSE:300990(同飞) SSE:688525(佰维) NASDAQ:HUT NASDAQ:RKLB SSE:688627(精智达) NYSE:SNOW NASDAQ:WULF NYSE:CAT AMEX:GDX SZSE:301308(江波龙) NASDAQ:CRDO NASDAQ:CIFR NASDAQ:AMAT NASDAQ:LITE NASDAQ:CRWD SSE:603986(兆易) NASDAQ:CORZ NASDAQ:AXTI SZSE:301018(申菱) NASDAQ:AAOI NYSE:GEV SZSE:002837(英维克) NASDAQ:MSFT NASDAQ:APLD SZSE:300499(高澜) NASDAQ:IREN SZSE:001309(德明利) NASDAQ:NBIS
 ------------------------------------------------
 【期权异动】新钱过滤(v/oi≥1.5)·T+1确认·仅佐证
-  今日: QQQC$1024M(v/oi99.0) MUC$489M(v/oi43.1) AMDC$175M(v/oi56.9) SNDK≈$139M(v/oi18.6) PLTRC$87M(v/oi19.2)
+  今日: QQQ≈$188M(v/oi99.0) MUC$158M(v/oi24.6) SNDK≈$58M(v/oi18.6) AMDC$56M(v/oi56.9) PLTRC$35M(v/oi8.7)
 ------------------------------------------------
 
 ③ 参 考 —— 独立体系 / 背景
